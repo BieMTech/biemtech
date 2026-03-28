@@ -1,92 +1,128 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Math Kids — BieMTech</title>
-  <meta name="description" content="Math Kids — a fun math learning app for children. Coming soon from BieMTech." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f59e0b'/><text y='72' x='50' text-anchor='middle' font-size='56' fill='white' font-family='sans-serif'>🔢</text></svg>" />
-</head>
-<body>
-
-  <!-- ── Navbar ─────────────────────────────────────────── -->
-  <header class="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="navbar__logo">
-        <div class="logo-mark">BM</div>
-        BieMTech
-      </a>
-      <nav class="navbar__nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#apps" class="active">Apps</a>
-        <a href="https://biemtech.github.io/biemtech-privacy/" target="_blank" rel="noopener">Privacy</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ── Coming Soon ────────────────────────────────────── -->
-  <main class="coming-soon">
-    <div class="coming-soon__box">
-      <div class="coming-soon__icon">🔢</div>
-
-      <div class="badge" style="margin: 0 auto 20px; display:inline-flex;">Coming Soon</div>
-
-      <h1 class="coming-soon__title">Math Kids</h1>
-
-      <p class="coming-soon__subtitle">
-        A playful math learning app designed for children aged 4–10.
-        Fun exercises, colourful puzzles, and interactive games that make
-        numbers exciting — not scary.
-      </p>
-
-      <div class="store-buttons">
-        <div class="store-btn" title="Not yet available">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-          </svg>
-          App Store
-        </div>
-        <div class="store-btn" title="Not yet available">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"/>
-          </svg>
-          Google Play
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Kids — BieMTech</title>
+    <meta
+      name="description"
+      content="Math Kids — a fun math learning app for children. Coming soon from BieMTech."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f59e0b'/><text y='72' x='50' text-anchor='middle' font-size='56' fill='white' font-family='sans-serif'>🔢</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- ── Navbar ─────────────────────────────────────────── -->
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <div class="logo-mark">BM</div>
+          BieMTech
+        </a>
+        <nav class="navbar__nav">
+          <a href="index.html#about">About</a>
+          <a href="index.html#apps" class="active">Apps</a>
+          <a
+            href="https://biemtech.github.io/biemtech-privacy/"
+            target="_blank"
+            rel="noopener"
+            >Privacy</a
+          >
+        </nav>
       </div>
+    </header>
 
-      <div class="notify-box">
-        <p>Get notified when Math Kids launches on the App Store and Google Play.</p>
-        <form class="notify-form" onsubmit="handleNotify(event)">
-          <input
-            class="notify-input"
-            type="email"
-            placeholder="your@email.com"
-            required
-            autocomplete="email"
-          />
-          <button type="submit" class="btn btn-primary">Notify me</button>
-        </form>
-        <p id="notify-msg" style="margin-top:12px; font-size:13px; color:var(--primary); display:none;">
-          ✓ You're on the list! We'll reach out when it's live.
+    <!-- ── Coming Soon ────────────────────────────────────── -->
+    <main class="coming-soon">
+      <div class="coming-soon__box">
+        <div class="coming-soon__icon">🔢</div>
+
+        <div class="badge" style="margin: 0 auto 20px; display: inline-flex">
+          Coming Soon
+        </div>
+
+        <h1 class="coming-soon__title">Math Kids</h1>
+
+        <p class="coming-soon__subtitle">
+          A playful math learning app designed for children aged 4–10. Fun
+          exercises, colourful puzzles, and interactive games that make numbers
+          exciting — not scary.
+        </p>
+
+        <div class="store-buttons">
+          <div class="store-btn" title="Not yet available">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+              />
+            </svg>
+            App Store
+          </div>
+          <div class="store-btn" title="Not yet available">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+              />
+            </svg>
+            Google Play
+          </div>
+        </div>
+
+        <div class="notify-box">
+          <p>
+            Get notified when Math Kids launches on the App Store and Google
+            Play.
+          </p>
+          <form class="notify-form" onsubmit="handleNotify(event)">
+            <input
+              class="notify-input"
+              type="email"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            />
+            <button type="submit" class="btn btn-primary">Notify me</button>
+          </form>
+          <p
+            id="notify-msg"
+            style="
+              margin-top: 12px;
+              font-size: 13px;
+              color: var(--primary);
+              display: none;
+            "
+          >
+            ✓ You're on the list! We'll reach out when it's live.
+          </p>
+        </div>
+
+        <p style="margin-top: 32px; font-size: 13px; color: var(--text-dim)">
+          A
+          <a href="index.html" style="color: var(--text-muted)">BieMTech</a> app
+          · By
+          <a href="index.html#about" style="color: var(--text-muted)"
+            >Bahram &amp; Mehman Ismayilov</a
+          >
+          · Support:
+          <a
+            href="mailto:mathkids.support@gmail.com"
+            style="color: var(--text-muted)"
+            >mathkids.support@gmail.com</a
+          >
         </p>
       </div>
+    </main>
 
-      <p style="margin-top: 32px; font-size:13px; color:var(--text-dim);">
-        A <a href="index.html" style="color:var(--text-muted);">BieMTech</a> app ·
-        By <a href="index.html#about" style="color:var(--text-muted);">Bahram &amp; Mehman Ismayilov</a> ·
-        Support: <a href="mailto:mathkids.support@gmail.com" style="color:var(--text-muted);">mathkids.support@gmail.com</a>
-      </p>
-    </div>
-  </main>
-
-  <script>
-    function handleNotify(e) {
-      e.preventDefault();
-      document.getElementById('notify-msg').style.display = 'block';
-      e.target.reset();
-    }
-  </script>
-
-</body>
+    <script>
+      function handleNotify(e) {
+        e.preventDefault();
+        document.getElementById("notify-msg").style.display = "block";
+        e.target.reset();
+      }
+    </script>
+  </body>
 </html>
