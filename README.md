@@ -16,13 +16,13 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 A fun math learning app for children aged 4–10. Not yet published on the App Store or Google Play.
 
-- Support: mathkids.support@gmail.com
+- Support: mathkids@biemtech.com
 - Privacy Policy: https://biemtech.github.io/biemtech-privacy/
 
 ## Contact
 
-- **General / Company:** biemtech.co@gmail.com
-- **Math Kids Support:** mathkids.support@gmail.com
+- **General / Company:** info@biemtech.com
+- **Math Kids Support:** mathkids@biemtech.com
 
 ## Owners
 
