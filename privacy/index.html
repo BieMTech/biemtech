@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BieMTech – Privacy Policies</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: #f5f7fa;
+        color: #1a1a2e;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: #1a1a2e;
+        color: #fff;
+        padding: 48px 24px 36px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: clamp(1.6rem, 5vw, 2.4rem);
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+      header p {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #a0aec0;
+      }
+
+      main {
+        flex: 1;
+        max-width: 720px;
+        width: 100%;
+        margin: 48px auto;
+        padding: 0 20px;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #4a5568;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 16px;
+      }
+
+      .app-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .app-list a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 18px 20px;
+        text-decoration: none;
+        color: #1a1a2e;
+        font-weight: 600;
+        font-size: 1rem;
+        transition:
+          box-shadow 0.15s,
+          border-color 0.15s;
+      }
+      .app-list a:hover {
+        border-color: #667eea;
+        box-shadow: 0 4px 14px rgba(102, 126, 234, 0.15);
+      }
+      .app-list a span.arrow {
+        color: #667eea;
+        font-size: 1.2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 24px;
+        font-size: 0.82rem;
+        color: #a0aec0;
+      }
+      footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BieMTech Privacy Policies</h1>
+      <p>Select an application to view its privacy policy.</p>
+    </header>
+
+    <main>
+      <h2>Applications</h2>
+      <ul class="app-list">
+        <!-- Add one <li> per app. Copy the pattern below. -->
+        <!-- <li><a href="./app-name/">App Name <span class="arrow">&#8594;</span></a></li> -->
+        <li>
+          <a href="./math-kids/index.html"
+            >Math Kids <span class="arrow">&#8594;</span></a
+          >
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; <span id="yr"></span>
+      <a href="mailto:info@biemtech.com">BieMTech</a>. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("yr").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

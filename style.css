@@ -608,6 +608,29 @@ footer {
 
 .footer__founders strong { color: var(--text-muted); font-weight: 500; }
 
+/* ── Privacy Policy Page ───────────────────────────────── */
+.privacy-body h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 36px 0 10px;
+  color: var(--text);
+}
+
+.privacy-body p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+.privacy-body a {
+  color: var(--primary);
+}
+
+.privacy-body h2:first-child {
+  margin-top: 0;
+}
+
 /* ── Page Hero (inner pages) ───────────────────────────── */
 .page-hero {
   padding: 72px 0 64px;
