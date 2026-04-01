@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BieMTech – Privacy Policies</title>
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <title>Privacy Policies — BieMTech</title>
+    <meta
+      name="description"
+      content="Privacy policies for BieMTech mobile apps."
+    />
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
     <style>
       *,
       *::before,
@@ -25,45 +29,69 @@
         flex-direction: column;
       }
 
+      /* ── Header ── */
       header {
         background: #1a1a2e;
         color: #fff;
-        padding: 48px 24px 36px;
+        padding: 40px 24px 32px;
         text-align: center;
       }
+
+      .home-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.82rem;
+        color: #a0aec0;
+        text-decoration: none;
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+        transition: color 0.15s;
+      }
+      .home-link:hover {
+        color: #fff;
+      }
+      .home-link img {
+        height: 20px;
+        border-radius: 5px;
+        vertical-align: middle;
+      }
+
       header h1 {
         font-size: clamp(1.6rem, 5vw, 2.4rem);
         font-weight: 700;
         letter-spacing: -0.5px;
       }
       header p {
-        margin-top: 10px;
-        font-size: 1rem;
+        margin-top: 8px;
+        font-size: 0.95rem;
         color: #a0aec0;
       }
 
+      /* ── Main ── */
       main {
         flex: 1;
-        max-width: 720px;
+        max-width: 680px;
         width: 100%;
         margin: 48px auto;
         padding: 0 20px;
       }
 
-      h2 {
-        font-size: 1.1rem;
+      .section-label {
+        font-size: 0.78rem;
         font-weight: 600;
         color: #4a5568;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        margin-bottom: 16px;
+        letter-spacing: 0.09em;
+        margin-bottom: 14px;
       }
 
+      /* ── App list ── */
       .app-list {
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
       }
 
       .app-list a {
@@ -73,11 +101,11 @@
         background: #fff;
         border: 1px solid #e2e8f0;
         border-radius: 10px;
-        padding: 18px 20px;
+        padding: 16px 20px;
         text-decoration: none;
         color: #1a1a2e;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 0.97rem;
         transition:
           box-shadow 0.15s,
           border-color 0.15s;
@@ -86,11 +114,12 @@
         border-color: #667eea;
         box-shadow: 0 4px 14px rgba(102, 126, 234, 0.15);
       }
-      .app-list a span.arrow {
+      .app-list a .arrow {
         color: #667eea;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
+      /* ── Footer ── */
       footer {
         text-align: center;
         padding: 24px;
@@ -105,26 +134,30 @@
   </head>
   <body>
     <header>
-      <h1>BieMTech Privacy Policies</h1>
-      <p>Select an application to view its privacy policy.</p>
+      <a href="../index.html" class="home-link">
+        <img src="../img/logo-biemtech.png" alt="BieMTech" />
+        BieMTech
+      </a>
+      <h1>Privacy Policies</h1>
+      <p>Select an app to view its privacy policy.</p>
     </header>
 
     <main>
-      <h2>Applications</h2>
+      <p class="section-label">Apps</p>
       <ul class="app-list">
-        <!-- Add one <li> per app. Copy the pattern below. -->
-        <!-- <li><a href="./app-name/">App Name <span class="arrow">&#8594;</span></a></li> -->
+        <!-- Add one <li> per app -->
         <li>
-          <a href="./math-kids/index.html"
-            >Math Kids <span class="arrow">&#8594;</span></a
-          >
+          <a href="./math-kids/index.html">
+            Math Kids
+            <span class="arrow">&#8594;</span>
+          </a>
         </li>
       </ul>
     </main>
 
     <footer>
-      &copy; <span id="yr"></span>
-      <a href="mailto:info@biemtech.com">BieMTech</a>. All rights reserved.
+      &copy; <span id="yr"></span> <a href="../index.html">BieMTech</a>. All
+      rights reserved.
     </footer>
 
     <script>
