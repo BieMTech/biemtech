@@ -132,19 +132,11 @@ body::before {
 }
 
 .logo-mark {
-  width: 38px;
   height: 38px;
-  background: linear-gradient(135deg, #6c6fff 0%, #a78bfa 100%);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: -0.04em;
+  width: auto;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px rgba(108,111,255,0.4);
+  display: block;
+  border-radius: 10px;
 }
 
 .navbar__nav {
@@ -307,32 +299,16 @@ body::before {
 .bm-logo-large {
   width: 220px;
   height: 220px;
-  background: linear-gradient(135deg, #1a1a3e 0%, #2a1a4e 100%);
-  border: 1px solid rgba(108,111,255,0.2);
-  border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 80px;
-  font-weight: 900;
-  letter-spacing: -0.08em;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  position: relative;
-  box-shadow: 0 0 80px rgba(108,111,255,0.12), 0 20px 60px rgba(0,0,0,0.5);
 }
 
-.bm-logo-large::before {
-  content: 'BM';
-  position: absolute;
-  font-size: 80px;
-  font-weight: 900;
-  letter-spacing: -0.06em;
-  background: linear-gradient(135deg, #6c6fff 0%, #c084fc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.bm-logo-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 28px;
 }
 
 .about__founders {
@@ -407,6 +383,13 @@ body::before {
   justify-content: center;
   font-size: 32px;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.app-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .app-card__icon.math-kids {
@@ -726,13 +709,18 @@ footer {
   width: 100px;
   height: 100px;
   margin: 0 auto 32px;
-  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
   border-radius: 28px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
   box-shadow: 0 16px 48px rgba(245,158,11,0.3);
+}
+
+.coming-soon__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .coming-soon__title {
