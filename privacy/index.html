@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,19 @@
     />
     <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
     <style>
+      /* â”€â”€â”€ Variables â”€â”€â”€ */
+      :root {
+        --primary: #2e6f40;
+        --accent: #b56e47;
+        --bg: #ede6d4;
+        --bg-card: rgba(237, 226, 205, 0.92);
+        --text: #1a1a14;
+        --text-muted: #4a4236;
+        --text-dim: #7a7060;
+        --border: rgba(0, 0, 0, 0.09);
+      }
+
+      /* â”€â”€â”€ Reset â”€â”€â”€ */
       *,
       *::before,
       *::after {
@@ -18,75 +31,129 @@
         padding: 0;
       }
 
+      /* â”€â”€â”€ Scrollbar â”€â”€â”€ */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.04);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(46, 111, 64, 0.35);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(46, 111, 64, 0.6);
+      }
+
+      /* â”€â”€â”€ Keyframes â”€â”€â”€ */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* â”€â”€â”€ Body â”€â”€â”€ */
       body {
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
           Arial, sans-serif;
-        background: #f5f7fa;
-        color: #1a1a2e;
+        background: var(--bg);
+        color: var(--text);
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
       }
 
-      /* ── Header ── */
+      /* â”€â”€â”€ Header â”€â”€â”€ */
       header {
-        background: #1a1a2e;
-        color: #fff;
-        padding: 40px 24px 32px;
+        background: rgba(237, 230, 212, 0.88);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+        padding: 48px 24px 38px;
         text-align: center;
+        position: relative;
+        z-index: 1;
       }
 
       .home-link {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 8px;
         font-size: 0.82rem;
-        color: #a0aec0;
+        color: var(--text-muted);
         text-decoration: none;
-        margin-bottom: 20px;
-        letter-spacing: 0.02em;
-        transition: color 0.15s;
+        margin-bottom: 22px;
+        letter-spacing: 0.04em;
+        font-weight: 500;
+        padding: 7px 18px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.5);
+        transition: all 0.22s ease;
       }
       .home-link:hover {
-        color: #fff;
+        color: var(--text);
+        border-color: rgba(46, 111, 64, 0.4);
+        background: rgba(46, 111, 64, 0.06);
+        box-shadow: 0 0 16px rgba(46, 111, 64, 0.15);
       }
       .home-link img {
         height: 20px;
         border-radius: 5px;
-        vertical-align: middle;
       }
 
       header h1 {
-        font-size: clamp(1.6rem, 5vw, 2.4rem);
-        font-weight: 700;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        font-weight: 800;
         letter-spacing: -0.5px;
+        background: linear-gradient(
+          135deg,
+          #1f5230 0%,
+          #2e6f40 50%,
+          #b56e47 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
       header p {
-        margin-top: 8px;
-        font-size: 0.95rem;
-        color: #a0aec0;
+        margin-top: 10px;
+        font-size: 0.88rem;
+        color: var(--text-dim);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 500;
       }
 
-      /* ── Main ── */
+      /* â”€â”€â”€ Main â”€â”€â”€ */
       main {
         flex: 1;
         max-width: 680px;
         width: 100%;
         margin: 48px auto;
         padding: 0 20px;
+        position: relative;
+        z-index: 1;
       }
 
       .section-label {
-        font-size: 0.78rem;
-        font-weight: 600;
-        color: #4a5568;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--primary);
         text-transform: uppercase;
-        letter-spacing: 0.09em;
-        margin-bottom: 14px;
+        letter-spacing: 0.12em;
+        margin-bottom: 16px;
       }
 
-      /* ── App list ── */
+      /* â”€â”€â”€ App list â”€â”€â”€ */
       .app-list {
         list-style: none;
         display: flex;
@@ -98,37 +165,59 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #fff;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 16px 20px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px 22px;
         text-decoration: none;
-        color: #1a1a2e;
+        color: var(--text);
         font-weight: 600;
         font-size: 0.97rem;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow:
+          0 4px 20px rgba(0, 0, 0, 0.06),
+          inset 0 1px 0 rgba(255, 255, 255, 0.6);
         transition:
-          box-shadow 0.15s,
-          border-color 0.15s;
+          transform 0.22s ease,
+          border-color 0.22s ease,
+          box-shadow 0.22s ease;
+        animation: fadeUp 0.45s ease both;
       }
       .app-list a:hover {
-        border-color: #667eea;
-        box-shadow: 0 4px 14px rgba(102, 126, 234, 0.15);
+        border-color: rgba(46, 111, 64, 0.35);
+        background: rgba(46, 111, 64, 0.06);
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.6),
+          0 0 0 1px rgba(46, 111, 64, 0.2);
+        transform: translateY(-2px);
       }
       .app-list a .arrow {
-        color: #667eea;
+        color: var(--primary);
         font-size: 1.1rem;
+        transition: transform 0.22s ease;
+      }
+      .app-list a:hover .arrow {
+        transform: translateX(3px);
       }
 
-      /* ── Footer ── */
+      /* â”€â”€â”€ Footer â”€â”€â”€ */
       footer {
         text-align: center;
-        padding: 24px;
+        padding: 26px;
         font-size: 0.82rem;
-        color: #a0aec0;
+        color: var(--text-dim);
+        border-top: 1px solid var(--border);
+        position: relative;
+        z-index: 1;
       }
       footer a {
-        color: #667eea;
+        color: var(--primary);
         text-decoration: none;
+      }
+      footer a:hover {
+        color: var(--accent);
       }
     </style>
   </head>

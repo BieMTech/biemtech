@@ -12,6 +12,15 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
+    <!-- ── Announce Bar ─────────────────────────────────── -->
+    <div class="announce-bar">
+      <div class="container announce-bar__inner">
+        <span class="announce-dot">●</span>
+        <span>Math Kids is now live on Google Play</span>
+        <a href="math-kids.html" class="announce-link">Download now →</a>
+      </div>
+    </div>
+
     <!-- ── Navbar ─────────────────────────────────────────── -->
     <header class="navbar">
       <div class="container navbar__inner">
@@ -19,17 +28,23 @@
           <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
         </a>
         <nav class="navbar__nav">
-          <a href="#about" class="active">About</a>
+          <a href="#about">About</a>
           <a href="#apps">Apps</a>
           <a href="privacy/index.html">Privacy</a>
         </nav>
+        <a href="mailto:info@biemtech.com" class="btn btn-primary navbar__cta"
+          >Get in touch</a
+        >
       </div>
     </header>
 
     <!-- ── Hero ───────────────────────────────────────────── -->
-    <section class="hero">
+    <section class="hero hero--split">
       <div class="hero__glow"></div>
-      <div class="container">
+      <div class="hero__grid"></div>
+
+      <div class="container hero__split">
+        <!-- Left: Text content -->
         <div class="hero__content">
           <div class="hero__eyebrow">
             <span class="badge">✦ BieMTech</span>
@@ -43,8 +58,63 @@
             and families around the world.
           </p>
           <div class="hero__actions">
-            <a href="#apps" class="btn btn-primary">Explore Our Apps</a>
-            <a href="#about" class="btn btn-outline">About Us</a>
+            <a href="#apps" class="btn btn-primary">Explore Our Apps ↗</a>
+            <a href="mailto:info@biemtech.com" class="btn btn-outline"
+              >Get in touch</a
+            >
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-num">2</span>
+              <span class="hero__stat-label">Founders</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">1</span>
+              <span class="hero__stat-label">Live App</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">∞</span>
+              <span class="hero__stat-label">Passion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: BM Logo + app tabs panel -->
+        <div class="hero__visual">
+          <div class="hero__vis-logo-wrap">
+            <div class="hero__vis-logo">
+              <img src="img/logo-biemtech.png" alt="BieMTech" />
+            </div>
+
+            <!-- Racing glow dot on the orbit ring -->
+            <div class="orbit-glow-arm"><div class="orbit-glow-dot"></div></div>
+
+            <!-- About: 10 o'clock (300°) → delay -(300/360)*20s = -16.67s -->
+            <div class="orbit-arm" style="--od: -16.67s">
+              <a href="#about" class="hero__vis-orbit-btn">About</a>
+            </div>
+
+            <!-- Math Kids: 2 o'clock (60°) → delay -(60/360)*20s = -3.33s -->
+            <div class="orbit-arm" style="--od: -3.33s">
+              <a href="math-kids.html" class="hero__vis-orbit-app">
+                <img src="img/math_kids_icon.png" alt="Math Kids" />
+                <span class="hero__vis-orbit-app-label">Math Kids</span>
+              </a>
+            </div>
+
+            <!-- Apps: 5 o'clock (150°) → delay -(150/360)*20s = -8.33s -->
+            <div class="orbit-arm" style="--od: -8.33s">
+              <a href="#apps" class="hero__vis-orbit-btn">Apps</a>
+            </div>
+
+            <!-- Privacy: 8 o'clock (240°) → delay -(240/360)*20s = -13.33s -->
+            <div class="orbit-arm" style="--od: -13.33s">
+              <a href="privacy/index.html" class="hero__vis-orbit-btn"
+                >Privacy</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -60,6 +130,33 @@
           <strong>Mehman Ismayilov</strong>
           <span class="dot"></span>
           <span>Brothers building products they care about</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── App Quick Access ──────────────────────────────── -->
+    <div class="app-strip">
+      <div class="container app-strip__inner">
+        <div class="app-strip__app">
+          <img
+            src="img/math_kids_icon.png"
+            alt="Math Kids"
+            class="app-strip__icon"
+          />
+          <div>
+            <div class="app-strip__name">Math Kids</div>
+            <div class="app-strip__sub">Fun math learning for ages 3–10</div>
+          </div>
+        </div>
+        <div class="app-strip__links">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+            >↗ Google Play</a
+          >
+          <a href="math-kids.html" class="btn btn-outline">Learn more →</a>
         </div>
       </div>
     </div>
@@ -120,7 +217,11 @@
 
         <div class="apps__grid">
           <!-- Math Kids -->
-          <a href="math-kids.html" class="app-card">
+          <div
+            class="app-card"
+            onclick="window.location = 'math-kids.html'"
+            style="cursor: pointer"
+          >
             <div class="app-card__top">
               <div class="app-card__icon math-kids">
                 <img src="img/math_kids_icon.png" alt="Math Kids" />
@@ -135,9 +236,29 @@
             </p>
             <div class="app-card__footer">
               <span class="chip chip-orange">Education</span>
-              <span class="chip chip-soon">Coming Soon</span>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
+                class="app-card__playbtn"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation()"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="flex-shrink: 0"
+                >
+                  <path
+                    d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+                  />
+                </svg>
+                Google Play
+              </a>
+              <span class="chip chip-live">● Live</span>
             </div>
-          </a>
+          </div>
 
           <!-- Placeholder / More apps coming -->
           <div
@@ -147,7 +268,7 @@
             <div class="app-card__top">
               <div
                 class="app-card__icon"
-                style="background: rgba(255, 255, 255, 0.05); font-size: 28px"
+                style="background: rgba(0, 0, 0, 0.06); font-size: 28px"
               >
                 ＋
               </div>
@@ -268,5 +389,29 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // ── Active nav ─────────────────────────────────────
+      const sections = document.querySelectorAll("section[id], div[id]");
+      const navLinks = document.querySelectorAll('.navbar__nav a[href^="#"]');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => {
+                link.classList.toggle(
+                  "active",
+                  link.getAttribute("href") === "#" + entry.target.id,
+                );
+              });
+            }
+          });
+        },
+        { rootMargin: "-40% 0px -55% 0px" },
+      );
+
+      sections.forEach((s) => observer.observe(s));
+    </script>
   </body>
 </html>

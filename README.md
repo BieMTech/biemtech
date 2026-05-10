@@ -14,7 +14,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 ### Math Kids
 
-A fun math learning app for children aged 4–10. Not yet published on the App Store or Google Play.
+A fun math learning app for children aged 3–10. Not yet published on the App Store or Google Play.
 
 - Support: mathkids@biemtech.com
 - Privacy Policy: https://biemtech.com/privacy/math-kids.html
