@@ -1,0 +1,434 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Screen — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="The main hub of Math Kids — your profile, daily progress, XP rank, and all 6 game modes in one place."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_home_title"
+            >Home Screen</span
+          >
+        </div>
+        <span class="guide-hero__icon">🏠</span>
+        <h1 class="guide-hero__title" data-i18n="guide_home_title">
+          Home Screen
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_home_sub">
+          Your personal dashboard — see your rank, track daily progress, and
+          launch any of the 6 game modes from one central screen.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="home_s1_h">
+                <span class="section-emoji">👤</span> Profile Header Card
+              </h2>
+              <p data-i18n="home_s1_p">
+                The colourful gradient card at the top is your player identity.
+                It shows:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🏅</span>
+                  <p class="feature-card__title" data-i18n="home_rank_title">
+                    Rank &amp; Level
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_rank_desc">
+                    Your current rank title (e.g. "Math Rookie") and numeric
+                    level displayed as a badge.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">⚡</span>
+                  <p class="feature-card__title" data-i18n="home_xp_title">
+                    XP Progress Bar
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_xp_desc">
+                    Shows how much XP you've earned toward the next level, plus
+                    a percentage fill bar.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🧒</span>
+                  <p class="feature-card__title" data-i18n="home_player_title">
+                    Player Name &amp; Age
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_player_desc">
+                    Your display name and the current age group you are playing
+                    in.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🖼️</span>
+                  <p class="feature-card__title" data-i18n="home_avatar_title">
+                    Avatar
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_avatar_desc">
+                    Tap the avatar to go to your Profile page. Unlock new
+                    avatars in the Shop.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="home_s2_h">
+                <span class="section-emoji">📊</span> Stats Row
+              </h2>
+              <p data-i18n="home_s2_p">
+                Four animated stat cards sit below the header. Each card spins
+                its icon every few seconds to catch your eye:
+              </p>
+              <div
+                class="feature-grid feature-grid--3"
+                style="grid-template-columns: 1fr 1fr"
+              >
+                <div class="feature-card">
+                  <span class="feature-card__icon">⭐</span>
+                  <p class="feature-card__title" data-i18n="home_score_title">
+                    Total Score
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_score_desc">
+                    Cumulative points earned across all sessions ever played.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔥</span>
+                  <p class="feature-card__title" data-i18n="home_streak_title">
+                    Daily Streak
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_streak_desc">
+                    How many consecutive days you've played. Miss a day and it
+                    resets!
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🏆</span>
+                  <p class="feature-card__title" data-i18n="home_best_title">
+                    Best Score
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_best_desc">
+                    Your highest single-session score — your personal record to
+                    beat.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">💎</span>
+                  <p class="feature-card__title" data-i18n="home_coins_title">
+                    Diamonds
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_coins_desc">
+                    Currency earned by playing. Spend in the Shop on avatars and
+                    backgrounds.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="home_s3_h">
+                <span class="section-emoji">📅</span> Daily Progress Bar
+              </h2>
+              <p data-i18n="home_s3_p">
+                The horizontal progress bar shows how many questions you've
+                solved today out of your daily free allowance. When the bar is
+                full, you've completed your daily set.
+              </p>
+              <ul>
+                <li data-i18n="home_s3_li1">
+                  The bar turns green with a ✅ icon when today's free questions
+                  are finished.
+                </li>
+                <li data-i18n="home_s3_li2">
+                  Bonus questions beyond the free limit are tracked separately
+                  and shown as an extra badge.
+                </li>
+                <li data-i18n="home_s3_li3">
+                  The limit resets every day at midnight.
+                </li>
+              </ul>
+              <div class="info-box">
+                <span class="info-box__icon">💡</span>
+                <span class="info-box__text" data-i18n="home_s3_info"
+                  >Parents can adjust the daily question limit from the
+                  <strong>Parent Dashboard</strong>.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="home_s4_h">
+                <span class="section-emoji">🎮</span> The 6 Game Modes
+              </h2>
+              <p data-i18n="home_s4_p">
+                Below the progress bar, six colourful buttons launch each game
+                mode. Tap any to start immediately:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🌟</span>
+                  <p class="feature-card__title" data-i18n="home_daily_title">
+                    Daily Challenge
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_daily_desc">
+                    A fresh set of questions every day. Shows ✅ when already
+                    completed for today.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🧩</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="home_practice_title"
+                  >
+                    Practice Mode
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_practice_desc">
+                    Choose your operation and drill at your own pace with no
+                    timer.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🚀</span>
+                  <p class="feature-card__title" data-i18n="home_speed_title">
+                    Speed Mode
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_speed_desc">
+                    Race the clock. Answer as many as you can before time runs
+                    out.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🎲</span>
+                  <p class="feature-card__title" data-i18n="home_mixed_title">
+                    Mixed Challenge
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_mixed_desc">
+                    Random mix of all unlocked operations. No setup required.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">⚔️</span>
+                  <p class="feature-card__title" data-i18n="home_battle_title">
+                    Battle Mode
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_battle_desc">
+                    Two players compete on the same device. Who solves more?
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">❌</span>
+                  <p class="feature-card__title" data-i18n="home_mp_title">
+                    Mistakes Practice
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_mp_desc">
+                    Retry every question you previously got wrong. Badge shows
+                    count.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="home_s5_h">
+                <span class="section-emoji">🔗</span> Top-Right Navigation Icons
+              </h2>
+              <p data-i18n="home_s5_p">
+                Four icon buttons in the top-right corner give quick access to
+                key sections:
+              </p>
+              <ul>
+                <li data-i18n="home_s5_li1">
+                  <strong>👤 Profile</strong> — view rank, level, XP, and
+                  lifetime stats
+                </li>
+                <li data-i18n="home_s5_li2">
+                  <strong>🛒 Shop</strong> — buy avatars and backgrounds with
+                  your coins
+                </li>
+                <li data-i18n="home_s5_li3">
+                  <strong>📊 Statistics</strong> — detailed accuracy, streaks,
+                  and activity calendar
+                </li>
+                <li data-i18n="home_s5_li4">
+                  <strong>⚙️ Settings</strong> — sound, language, theme, speed
+                  timer, and more
+                </li>
+              </ul>
+              <p style="margin-top: 12px" data-i18n="home_s5_p2">
+                At the bottom of the Home screen you'll also find:
+              </p>
+              <ul>
+                <li data-i18n="home_s5_li5">
+                  <strong>📈 Statistics shortcut</strong> button
+                </li>
+                <li data-i18n="home_s5_li6">
+                  <strong>Change Age Group</strong> — switch your age at any
+                  time
+                </li>
+                <li data-i18n="home_s5_li7">
+                  <strong>👨‍👩‍👧 Parent Mode</strong> — PIN-protected parental
+                  controls
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="home_s6_h">
+                <span class="section-emoji">🎁</span> Welcome &amp; Daily Login
+                Bonuses
+              </h2>
+              <p data-i18n="home_s6_p">
+                Two special modals can appear when you open the app:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🎉</span>
+                  <p class="feature-card__title" data-i18n="home_welcome_title">
+                    Welcome Bonus
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_welcome_desc">
+                    Shown only the very first time you launch the app. You
+                    receive starter coins to spend in the Shop.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">📅</span>
+                  <p class="feature-card__title" data-i18n="home_login_title">
+                    Daily Login Bonus
+                  </p>
+                  <p class="feature-card__desc" data-i18n="home_login_desc">
+                    Every day you open the app, a modal shows your login streak
+                    and the coins you earned for that day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone mockup -->
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-home.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-home.png"
+                  alt="Home Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="age.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_age_title"
+                >Age Selection</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="daily.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_daily_title"
+                >Daily Challenge</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

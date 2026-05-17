@@ -1,0 +1,308 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Control sound, vibration, language, Speed Mode timer duration, visual theme, and more in Math Kids Settings."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_settings_title"
+            >Settings</span
+          >
+        </div>
+        <span class="guide-hero__icon">⚙️</span>
+        <h1 class="guide-hero__title" data-i18n="guide_settings_title">
+          Settings
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_settings_sub">
+          Tweak every aspect of the app — sounds, language, Speed Mode timer,
+          visual theme, and more. All changes take effect immediately.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="settings_s1_h">
+                <span class="section-emoji">🔊</span> Audio &amp; Haptics
+              </h2>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔊</span>
+                  <p class="feature-card__title" data-i18n="settings_sfx_title">
+                    Sound Effects
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_sfx_desc">
+                    Toggle all in-game sound effects on or off — correct answer
+                    chimes, wrong answer buzzes, and UI clicks.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">📳</span>
+                  <p class="feature-card__title" data-i18n="settings_vib_title">
+                    Vibration
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_vib_desc">
+                    Toggle haptic feedback on or off. When enabled, a short
+                    vibration plays on answer feedback events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="settings_s2_h">
+                <span class="section-emoji">🌍</span> Language
+              </h2>
+              <p data-i18n="settings_s2_p">
+                The app supports <strong>14 languages</strong>. Tap the language
+                row to open a picker and select your preferred language. The
+                entire app UI — menus, labels, and mode names — switches
+                instantly:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🇬🇧</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="settings_lang1_title"
+                  >
+                    English, Spanish, French
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_lang1_desc">
+                    EN · ES · FR
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🌍</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="settings_lang5_title"
+                  >
+                    Turkish, Azerbaijani
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_lang5_desc">
+                    TR · AZ
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🌏</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="settings_lang2_title"
+                  >
+                    Russian, Chinese, Japanese, Korean
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_lang2_desc">
+                    RU · ZH · JA · KO
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🌍</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="settings_lang3_title"
+                  >
+                    German, Portuguese, Italian
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_lang3_desc">
+                    DE · PT · IT
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🌎</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="settings_lang4_title"
+                  >
+                    Arabic
+                  </p>
+                  <p class="feature-card__desc" data-i18n="settings_lang4_desc">
+                    AR
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="settings_s3_h">
+                <span class="section-emoji">⚡</span> Speed Mode Duration
+              </h2>
+              <p data-i18n="settings_s3_p">
+                Set the default countdown timer for
+                <a href="speed.html" style="color: var(--primary)">Speed Mode</a
+                >. This setting persists — every future Speed Mode run uses this
+                duration until you change it again:
+              </p>
+              <div class="mode-pill-list">
+                <span class="mode-pill">20 s</span>
+                <span class="mode-pill mode-pill--active">30 s</span>
+                <span class="mode-pill">40 s</span>
+                <span class="mode-pill">60 s</span>
+              </div>
+              <div class="info-box">
+                <span class="info-box__icon">💡</span>
+                <span class="info-box__text" data-i18n="settings_s3_info"
+                  >30 seconds is the default. Younger children may prefer 60 s
+                  for a more relaxed experience; older children can challenge
+                  themselves with 20 s.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="settings_s4_h">
+                <span class="section-emoji">🎨</span> Theme &amp; Appearance
+              </h2>
+              <p data-i18n="settings_s4_p">
+                Tap <strong>Change Theme</strong> to return to the
+                <a href="theme.html" style="color: var(--primary)"
+                  >Theme Selection</a
+                >
+                screen. Your current theme is shown next to the button so you
+                always know which one is active.
+              </p>
+              <p data-i18n="settings_s4_p2">
+                Available themes: 🌿 Forest · ✏️ Colorful · 🍬 Kawaii · 🚀
+                Cosmic
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="settings_s5_h">
+                <span class="section-emoji">📊</span> Daily Limit Info
+              </h2>
+              <p data-i18n="settings_s5_p">
+                The current daily question limit is displayed here as a
+                read-only reference. To <em>change</em> the limit, parents must
+                use the
+                <a href="parent.html" style="color: var(--primary)"
+                  >Parent Dashboard</a
+                >
+                (PIN protected).
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-settings.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-settings.png"
+                  alt="Settings Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="shop.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_shop_title"
+                >Shop</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="parent.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_parent_title"
+                >Parent Dashboard</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

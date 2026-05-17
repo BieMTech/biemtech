@@ -11,13 +11,18 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
+
   <body>
     <!-- ── Announce Bar ─────────────────────────────────── -->
     <div class="announce-bar">
       <div class="container announce-bar__inner">
         <span class="announce-dot">●</span>
-        <span>Math Kids is now live on Google Play</span>
-        <a href="math-kids.html" class="announce-link">Download now →</a>
+        <span data-i18n="announce_text"
+          >Math Kids is now live on Google Play</span
+        >
+        <a href="math-kids.html" class="announce-link" data-i18n="announce_cta"
+          >Download now →</a
+        >
       </div>
     </div>
 
@@ -28,13 +33,61 @@
           <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
         </a>
         <nav class="navbar__nav">
-          <a href="#about">About</a>
-          <a href="#apps">Apps</a>
-          <a href="privacy/index.html">Privacy</a>
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#apps" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/index.html" data-i18n="nav_privacy">Privacy</a>
         </nav>
-        <a href="mailto:info@biemtech.com" class="btn btn-primary navbar__cta"
-          >Get in touch</a
-        >
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">🇬🇧 EN</option>
+              <option value="az">🇦🇿 AZ</option>
+              <option value="ru">🇷🇺 RU</option>
+              <option value="tr">🇹🇷 TR</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇵🇹 PT</option>
+              <option value="it">🇮🇹 IT</option>
+              <option value="ar">🇸🇦 AR</option>
+              <option value="zh">🇨🇳 ZH</option>
+              <option value="ja">🇯🇵 JA</option>
+            </select>
+          </div>
+          <a href="math-kids.html" class="btn btn-primary navbar__cta"
+            ><img
+              src="img/math_kids_icon.png"
+              alt="Math Kids"
+              class="navbar__cta--app-icon"
+            />
+            <span>Math Kids</span></a
+          >
+
+          <a
+            href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
+            class="btn btn-outline navbar__cta navbar__cta--gplay"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style="flex-shrink: 0"
+            >
+              <path
+                d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+              />
+            </svg>
+            <span data-i18n="orbit_gplay">Math Kids Download</span>
+          </a>
+        </div>
       </div>
     </header>
 
@@ -49,34 +102,45 @@
           <div class="hero__eyebrow">
             <span class="badge">✦ BieMTech</span>
           </div>
-          <h1 class="hero__title">
+          <h1 class="hero__title" data-i18n="hero_title">
             Building Apps<br />
             <span>That Matter</span>
           </h1>
-          <p class="hero__subtitle">
+          <p class="hero__subtitle" data-i18n="hero_sub">
             We craft thoughtful, high-quality mobile experiences for learners
             and families around the world.
           </p>
           <div class="hero__actions">
-            <a href="#apps" class="btn btn-primary">Explore Our Apps ↗</a>
-            <a href="mailto:info@biemtech.com" class="btn btn-outline"
+            <a href="#apps" class="btn btn-primary" data-i18n="hero_cta1"
+              >Explore Our Apps ↗</a
+            >
+            <a
+              href="mailto:info@biemtech.com"
+              class="btn btn-outline"
+              data-i18n="hero_cta2"
               >Get in touch</a
             >
           </div>
           <div class="hero__stats">
             <div class="hero__stat">
               <span class="hero__stat-num">2</span>
-              <span class="hero__stat-label">Founders</span>
+              <span class="hero__stat-label" data-i18n="stat_founders"
+                >Founders</span
+              >
             </div>
             <div class="hero__stat-divider"></div>
             <div class="hero__stat">
               <span class="hero__stat-num">1</span>
-              <span class="hero__stat-label">Live App</span>
+              <span class="hero__stat-label" data-i18n="stat_app"
+                >Live App</span
+              >
             </div>
             <div class="hero__stat-divider"></div>
             <div class="hero__stat">
               <span class="hero__stat-num">∞</span>
-              <span class="hero__stat-label">Passion</span>
+              <span class="hero__stat-label" data-i18n="stat_passion"
+                >Passion</span
+              >
             </div>
           </div>
         </div>
@@ -89,31 +153,71 @@
             </div>
 
             <!-- Racing glow dot on the orbit ring -->
-            <div class="orbit-glow-arm"><div class="orbit-glow-dot"></div></div>
+            <div class="orbit-glow-arm">
+              <div class="orbit-glow-dot"></div>
+            </div>
 
             <!-- About: 10 o'clock (300°) → delay -(300/360)*20s = -16.67s -->
             <div class="orbit-arm" style="--od: -16.67s">
-              <a href="#about" class="hero__vis-orbit-btn">About</a>
-            </div>
-
-            <!-- Math Kids: 2 o'clock (60°) → delay -(60/360)*20s = -3.33s -->
-            <div class="orbit-arm" style="--od: -3.33s">
-              <a href="math-kids.html" class="hero__vis-orbit-app">
-                <img src="img/math_kids_icon.png" alt="Math Kids" />
-                <span class="hero__vis-orbit-app-label">Math Kids</span>
-              </a>
+              <a href="#about" class="hero__vis-orbit-btn" data-i18n="nav_about"
+                >About</a
+              >
             </div>
 
             <!-- Apps: 5 o'clock (150°) → delay -(150/360)*20s = -8.33s -->
             <div class="orbit-arm" style="--od: -8.33s">
-              <a href="#apps" class="hero__vis-orbit-btn">Apps</a>
+              <a href="#apps" class="hero__vis-orbit-btn" data-i18n="nav_apps"
+                >Apps</a
+              >
             </div>
 
             <!-- Privacy: 8 o'clock (240°) → delay -(240/360)*20s = -13.33s -->
             <div class="orbit-arm" style="--od: -13.33s">
-              <a href="privacy/index.html" class="hero__vis-orbit-btn"
+              <a
+                href="privacy/index.html"
+                class="hero__vis-orbit-btn"
+                data-i18n="nav_privacy"
                 >Privacy</a
               >
+            </div>
+
+            <!-- Google Play: 12 o'clock (0°) → delay 0s -->
+            <div class="orbit-arm" style="--od: 0s">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
+                class="hero__vis-orbit-btn hero__vis-orbit-btn--gplay"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="flex-shrink: 0"
+                >
+                  <path
+                    d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+                  />
+                </svg>
+                <span data-i18n="orbit_gplay">Math Kids Download</span>
+              </a>
+            </div>
+            <!-- Math Kids: 2 o'clock (60°) → delay -(60/360)*20s = -3.33s -->
+            <div class="orbit-arm" style="--od: -3.33s">
+              <a href="math-kids.html" class="hero__vis-orbit-btn">
+                <img
+                  src="img/math_kids_icon.png"
+                  alt=""
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 6px;
+                    flex-shrink: 0;
+                  "
+                />
+                Math Kids
+              </a>
             </div>
           </div>
         </div>
@@ -124,12 +228,14 @@
     <div class="founders-strip">
       <div class="container">
         <div class="founders-strip__inner">
-          <span>Founded by</span>
+          <span data-i18n="strip_founded">Founded by</span>
           <strong>Bahram Ismayilov</strong>
           <span class="dot"></span>
           <strong>Mehman Ismayilov</strong>
           <span class="dot"></span>
-          <span>Brothers building products they care about</span>
+          <span data-i18n="strip_brothers"
+            >Brothers building products they care about</span
+          >
         </div>
       </div>
     </div>
@@ -145,7 +251,9 @@
           />
           <div>
             <div class="app-strip__name">Math Kids</div>
-            <div class="app-strip__sub">Fun math learning for ages 3–10</div>
+            <div class="app-strip__sub" data-i18n="strip_sub">
+              Fun math learning for ages 3–10
+            </div>
           </div>
         </div>
         <div class="app-strip__links">
@@ -154,9 +262,15 @@
             class="btn btn-primary"
             target="_blank"
             rel="noopener"
+            data-i18n="strip_gplay"
             >↗ Google Play</a
           >
-          <a href="math-kids.html" class="btn btn-outline">Learn more →</a>
+          <a
+            href="math-kids.html"
+            class="btn btn-outline"
+            data-i18n="strip_learn"
+            >Learn more →</a
+          >
         </div>
       </div>
     </div>
@@ -172,9 +286,11 @@
           </div>
 
           <div>
-            <p class="section-label">Who We Are</p>
-            <h2 class="section-title">Two brothers,<br />one mission</h2>
-            <p class="section-subtitle">
+            <p class="section-label" data-i18n="about_label">Who We Are</p>
+            <h2 class="section-title" data-i18n="about_title">
+              Two brothers,<br />one mission
+            </h2>
+            <p class="section-subtitle" data-i18n="about_sub">
               BieMTech is an independent software company built by Bahram and
               Mehman Ismayilov. The name <strong>BM</strong> carries their
               initials — a reminder that every product they ship is personal.
@@ -187,14 +303,18 @@
                 <div class="founder-avatar">BI</div>
                 <div class="founder-info">
                   <div class="founder-name">Bahram Ismayilov</div>
-                  <div class="founder-role">Co-Founder &amp; Developer</div>
+                  <div class="founder-role" data-i18n="cof_role">
+                    Co-Founder &amp; Developer
+                  </div>
                 </div>
               </div>
               <div class="founder-card">
                 <div class="founder-avatar">MI</div>
                 <div class="founder-info">
                   <div class="founder-name">Mehman Ismayilov</div>
-                  <div class="founder-role">Co-Founder &amp; Developer</div>
+                  <div class="founder-role" data-i18n="cof_role">
+                    Co-Founder &amp; Developer
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,9 +327,11 @@
     <section class="section" id="apps">
       <div class="container">
         <div class="text-center">
-          <p class="section-label">Our Apps</p>
-          <h2 class="section-title">Products we're building</h2>
-          <p class="section-subtitle">
+          <p class="section-label" data-i18n="apps_label">Our Apps</p>
+          <h2 class="section-title" data-i18n="apps_title">
+            Products we're building
+          </h2>
+          <p class="section-subtitle" data-i18n="apps_sub">
             Each app starts from a genuine need. We take our time to get it
             right before it ships.
           </p>
@@ -229,13 +351,15 @@
               <div class="app-card__arrow">→</div>
             </div>
             <div class="app-card__name">Math Kids</div>
-            <p class="app-card__desc">
+            <p class="app-card__desc" data-i18n="mk_desc">
               A fun and engaging math learning app for children. Interactive
               exercises, puzzles, and games designed to make numbers exciting
               for young minds.
             </p>
             <div class="app-card__footer">
-              <span class="chip chip-orange">Education</span>
+              <span class="chip chip-orange" data-i18n="chip_education"
+                >Education</span
+              >
               <a
                 href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
                 class="app-card__playbtn"
@@ -256,7 +380,7 @@
                 </svg>
                 Google Play
               </a>
-              <span class="chip chip-live">● Live</span>
+              <span class="chip chip-live" data-i18n="chip_live">● Live</span>
             </div>
           </div>
 
@@ -273,10 +397,14 @@
                 ＋
               </div>
             </div>
-            <div class="app-card__name" style="color: var(--text-dim)">
+            <div
+              class="app-card__name"
+              style="color: var(--text-dim)"
+              data-i18n="more_apps"
+            >
               More apps
             </div>
-            <p class="app-card__desc">
+            <p class="app-card__desc" data-i18n="more_apps_desc">
               New products are in the works. Stay tuned.
             </p>
             <div class="app-card__footer">
@@ -291,30 +419,34 @@
     <section class="section values">
       <div class="container">
         <div class="text-center">
-          <p class="section-label">How We Work</p>
-          <h2 class="section-title">Built on principles</h2>
+          <p class="section-label" data-i18n="val_label">How We Work</p>
+          <h2 class="section-title" data-i18n="val_title">
+            Built on principles
+          </h2>
         </div>
         <div class="values__grid">
           <div class="value-card">
             <div class="value-icon">🎯</div>
-            <div class="value-title">Purpose-Driven</div>
-            <p class="value-desc">
+            <div class="value-title" data-i18n="val1_title">Purpose-Driven</div>
+            <p class="value-desc" data-i18n="val1_desc">
               We only build what we believe in. Every app solves a real problem
               and serves a real user.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">🔒</div>
-            <div class="value-title">Privacy First</div>
-            <p class="value-desc">
+            <div class="value-title" data-i18n="val2_title">Privacy First</div>
+            <p class="value-desc" data-i18n="val2_desc">
               Especially when building for children, privacy is non-negotiable.
               We collect only what's necessary.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">✦</div>
-            <div class="value-title">Quality Over Speed</div>
-            <p class="value-desc">
+            <div class="value-title" data-i18n="val3_title">
+              Quality Over Speed
+            </div>
+            <p class="value-desc" data-i18n="val3_desc">
               We'd rather ship one great app than five mediocre ones. Everything
               gets our full attention.
             </p>
@@ -327,9 +459,11 @@
     <section class="cta">
       <div class="container">
         <div class="cta__box">
-          <p class="section-label">Contact</p>
-          <h2 class="section-title">Want to get in touch?</h2>
-          <p class="section-subtitle">
+          <p class="section-label" data-i18n="cta_label">Contact</p>
+          <h2 class="section-title" data-i18n="cta_title">
+            Want to get in touch?
+          </h2>
+          <p class="section-subtitle" data-i18n="cta_sub">
             Questions, feedback, or press inquiries — we'd love to hear from
             you.
           </p>
@@ -352,28 +486,28 @@
                 class="logo-mark"
               />
             </div>
-            <p class="footer__tagline">
+            <p class="footer__tagline" data-i18n="footer_tagline">
               Independent app studio crafting meaningful digital experiences.
             </p>
           </div>
 
           <div class="footer__links">
-            <h4>Company</h4>
+            <h4 data-i18n="footer_company">Company</h4>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#apps">Apps</a></li>
+              <li><a href="#about" data-i18n="nav_about">About</a></li>
+              <li><a href="#apps" data-i18n="nav_apps">Apps</a></li>
             </ul>
           </div>
 
           <div class="footer__links">
-            <h4>Legal</h4>
+            <h4 data-i18n="footer_legal">Legal</h4>
             <ul>
               <li><a href="privacy/math-kids.html">Privacy Policy</a></li>
             </ul>
           </div>
 
           <div class="footer__links">
-            <h4>Apps</h4>
+            <h4 data-i18n="footer_apps">Apps</h4>
             <ul>
               <li><a href="math-kids.html">Math Kids</a></li>
             </ul>
@@ -381,9 +515,12 @@
         </div>
 
         <div class="footer__bottom">
-          <p class="footer__copy">© 2026 BieMTech. All rights reserved.</p>
+          <p class="footer__copy" data-i18n="footer_copy">
+            © 2026 BieMTech. All rights reserved.
+          </p>
           <p class="footer__founders">
-            Owned &amp; operated by <strong>Bahram Ismayilov</strong> &amp;
+            <span data-i18n="footer_owners">Owned &amp; operated by</span>
+            <strong>Bahram Ismayilov</strong> &amp;
             <strong>Mehman Ismayilov</strong>
           </p>
         </div>
@@ -413,5 +550,6 @@
 
       sections.forEach((s) => observer.observe(s));
     </script>
+    <script src="i18n.js"></script>
   </body>
 </html>

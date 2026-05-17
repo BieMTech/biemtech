@@ -1,0 +1,366 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Selection — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Choose from 4 stunning visual themes in Math Kids: Forest, Colorful, Kawaii, and Cosmic."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_theme_title"
+            >Theme Selection</span
+          >
+        </div>
+        <span class="guide-hero__icon">🎨</span>
+        <h1 class="guide-hero__title" data-i18n="guide_theme_title">
+          Theme Selection
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_theme_sub">
+          The very first screen you see. Pick a visual style that matches your
+          personality — every colour, button, and background adapts to your
+          choice.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <!-- Content -->
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="theme_s1_h">
+                <span class="section-emoji">✨</span> What is this screen?
+              </h2>
+              <p data-i18n="theme_s1_p1">
+                Theme Selection appears the very first time you open Math Kids.
+                It lets you dress the entire app in one of four distinct visual
+                identities. The background, colours, card styles, and glow
+                effects all change based on the theme you choose.
+              </p>
+              <p data-i18n="theme_s1_p2">
+                You can change your theme at any time later via
+                <strong>Settings → Change Theme</strong>, so there is no
+                pressure to pick the "perfect" one right away.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="theme_s2_h">
+                <span class="section-emoji">🎨</span> The 4 Themes
+              </h2>
+              <div class="theme-grid">
+                <div class="theme-card theme-card--forest">
+                  <span class="theme-card__emoji">🌿</span>
+                  <p class="theme-card__name" data-i18n="theme_forest_name">
+                    Forest Explorers
+                  </p>
+                  <p class="theme-card__desc" data-i18n="theme_forest_desc">
+                    Deep greens and earthy tones. Calm, nature-inspired
+                    atmosphere.
+                  </p>
+                  <div class="theme-card__dots">
+                    <span
+                      class="theme-card__dot"
+                      style="background: #1a3a22"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #2d5a3d"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #4caf50"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #a5d6a7"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #e8f5e9"
+                    ></span>
+                  </div>
+                </div>
+                <div class="theme-card theme-card--colorful">
+                  <span class="theme-card__emoji">✏️</span>
+                  <p class="theme-card__name" data-i18n="theme_colorful_name">
+                    Pencil &amp; Paper
+                  </p>
+                  <p class="theme-card__desc" data-i18n="theme_colorful_desc">
+                    Bright pencil-and-paper style. Friendly, classroom look.
+                  </p>
+                  <div class="theme-card__dots">
+                    <span
+                      class="theme-card__dot"
+                      style="background: #ffa726"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #66bb6a"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #42a5f5"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #ef5350"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #fff8e1"
+                    ></span>
+                  </div>
+                </div>
+                <div class="theme-card theme-card--kawaii">
+                  <span class="theme-card__emoji">🍬</span>
+                  <p class="theme-card__name" data-i18n="theme_kawaii_name">
+                    Kawaii Sweets
+                  </p>
+                  <p class="theme-card__desc" data-i18n="theme_kawaii_desc">
+                    Soft pinks and candy pastels. Cute, sweet, and playful.
+                  </p>
+                  <div class="theme-card__dots">
+                    <span
+                      class="theme-card__dot"
+                      style="background: #e91e63"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #f48fb1"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #ce93d8"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #f8bbd0"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #fce4ec"
+                    ></span>
+                  </div>
+                </div>
+                <div class="theme-card theme-card--cosmic">
+                  <span class="theme-card__emoji">🚀</span>
+                  <p class="theme-card__name" data-i18n="theme_cosmic_name">
+                    Cosmic Adventure
+                  </p>
+                  <p class="theme-card__desc" data-i18n="theme_cosmic_desc">
+                    Dark space background with neon glows. Epic and immersive.
+                  </p>
+                  <div class="theme-card__dots">
+                    <span
+                      class="theme-card__dot"
+                      style="background: #7b1fa2"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #00e5ff"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #e040fb"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #1a0a2e"
+                    ></span>
+                    <span
+                      class="theme-card__dot"
+                      style="background: #e8e0ff"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="theme_s3_h">
+                <span class="section-emoji">🖱️</span> How to use this screen
+              </h2>
+              <div class="step-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-body">
+                    <h3 data-i18n="theme_step1_h">Tap a theme card</h3>
+                    <p data-i18n="theme_step1_p">
+                      The whole background preview changes instantly — try all
+                      four before deciding.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-body">
+                    <h3 data-i18n="theme_step2_h">Check the selected badge</h3>
+                    <p data-i18n="theme_step2_p">
+                      A ✓ checkmark appears in the top-right corner of the
+                      active theme card.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-body">
+                    <h3 data-i18n="theme_step3_h">Tap Confirm</h3>
+                    <p data-i18n="theme_step3_p">
+                      Press the Confirm button at the bottom to lock in your
+                      theme and move to Age Selection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="theme_s4_h">
+                <span class="section-emoji">⚙️</span> Changing your theme later
+              </h2>
+              <p data-i18n="theme_s4_p">
+                You can switch themes at any time after setup:
+              </p>
+              <ul>
+                <li data-i18n="theme_s4_li1">
+                  Open the Home screen and tap the
+                  <strong>gear icon ⚙️</strong> in the top-right corner.
+                </li>
+                <li data-i18n="theme_s4_li2">
+                  Scroll to the <strong>Theme / Appearance</strong> section.
+                </li>
+                <li data-i18n="theme_s4_li3">
+                  Tap <strong>Change Theme</strong> to open this screen again.
+                </li>
+              </ul>
+              <div class="info-box">
+                <span class="info-box__icon">💡</span>
+                <span class="info-box__text" data-i18n="theme_s4_info"
+                  >Changing theme is purely visual — it does not affect your
+                  progress, scores, or any game data.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone mockup -->
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-theme.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-theme.png"
+                  alt="Theme Selection Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="index.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="nav_back_to"
+                >Back to</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_index_title"
+                >Guide Index</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="age.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_age_title"
+                >Age Selection</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

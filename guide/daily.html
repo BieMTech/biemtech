@@ -1,0 +1,295 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Challenge — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="A brand-new set of math questions every day. Complete the daily challenge to maintain your streak and earn bonus coins."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_daily_title"
+            >Daily Challenge</span
+          >
+        </div>
+        <span class="guide-hero__icon">🌟</span>
+        <h1 class="guide-hero__title" data-i18n="guide_daily_title">
+          Daily Challenge
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_daily_sub">
+          A fresh batch of questions every single day. Complete it to keep your
+          streak alive and earn daily coins.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="daily_s1_h">
+                <span class="section-emoji">📋</span> How it works
+              </h2>
+              <p data-i18n="daily_s1_p">
+                The Daily Challenge is a set of math questions generated fresh
+                each day based on your age group. There is no timer — you answer
+                at your own pace. Once you complete it, the 🌟 button on the
+                Home screen shows a ✅ checkmark until midnight when the next
+                day's challenge unlocks.
+              </p>
+              <div class="info-box">
+                <span class="info-box__icon">🔄</span>
+                <span class="info-box__text" data-i18n="daily_s1_info"
+                  >The Daily Challenge resets at midnight every day. You can
+                  only complete it once per day.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="daily_s2_h">
+                <span class="section-emoji">🎮</span> During the session
+              </h2>
+              <p data-i18n="daily_s2_p">
+                The quiz screen shows the following while you play:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">📍</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="daily_progress_title"
+                  >
+                    Progress Indicator
+                  </p>
+                  <p class="feature-card__desc" data-i18n="daily_progress_desc">
+                    A counter at the top shows your position (e.g. "Question 7 /
+                    20") and an animated progress bar fills as you advance.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">⭐</span>
+                  <p class="feature-card__title" data-i18n="daily_score_title">
+                    Live Score
+                  </p>
+                  <p class="feature-card__desc" data-i18n="daily_score_desc">
+                    Your score updates in real time in the top-right corner
+                    every time you answer correctly.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔥</span>
+                  <p class="feature-card__title" data-i18n="daily_streak_title">
+                    Streak Badge
+                  </p>
+                  <p class="feature-card__desc" data-i18n="daily_streak_desc">
+                    A fire badge lights up when you answer several questions in
+                    a row correctly. Streaks earn bonus coins.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">💎</span>
+                  <p class="feature-card__title" data-i18n="daily_coins_title">
+                    Bonus Coins Badge
+                  </p>
+                  <p class="feature-card__desc" data-i18n="daily_coins_desc">
+                    A coin badge animates when you earn bonus coins from a
+                    streak milestone.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="daily_s3_h">
+                <span class="section-emoji">📝</span> Question &amp; Answer
+                types
+              </h2>
+              <p data-i18n="daily_s3_p">
+                The question format matches your age group:
+              </p>
+              <ul>
+                <li data-i18n="daily_s3_li1">
+                  <strong>Ages 3–4:</strong> Picture / icon matching — tap the
+                  image that answers the equation.
+                </li>
+                <li data-i18n="daily_s3_li2">
+                  <strong>Age 5:</strong> Visual arithmetic — small emoji icons
+                  grouped to illustrate addition.
+                </li>
+                <li data-i18n="daily_s3_li3">
+                  <strong>Ages 6–8:</strong> Multiple choice — four labelled
+                  buttons (A B C D) with numeric options.
+                </li>
+                <li data-i18n="daily_s3_li4">
+                  <strong>Ages 9–10:</strong> Typed input — a keyboard appears
+                  and you type your numeric answer directly.
+                </li>
+              </ul>
+              <div class="info-box">
+                <span class="info-box__icon">💡</span>
+                <span class="info-box__text" data-i18n="daily_s3_info"
+                  >For typed input, if your answer is wrong, a hint briefly
+                  shows the correct value before the next question loads.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="daily_s4_h">
+                <span class="section-emoji">🔥</span> Daily Streak
+              </h2>
+              <p data-i18n="daily_s4_p">
+                Every day you play the Daily Challenge (or any mode), your
+                streak counter increases by 1. Miss a day and it resets to zero.
+                Your streak is displayed on the Home screen stats row and in the
+                Statistics section.
+              </p>
+              <ul>
+                <li data-i18n="daily_s4_li1">
+                  Streak counter is shown on the Home screen as 🔥 with a
+                  number.
+                </li>
+                <li data-i18n="daily_s4_li2">
+                  Streak milestones can be viewed in the
+                  <a href="statistics.html" style="color: var(--primary)"
+                    >Statistics screen</a
+                  >.
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="daily_s5_h">
+                <span class="section-emoji">🏁</span> After you finish
+              </h2>
+              <p data-i18n="daily_s5_p">
+                When the last question is answered, the app navigates
+                automatically to the
+                <a href="result.html" style="color: var(--primary)"
+                  >Results Screen</a
+                >
+                where you'll see your star rating, score, accuracy, and coins
+                earned.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-daily.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-daily.png"
+                  alt="Daily Challenge Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="home.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_home_title"
+                >Home Screen</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="practice.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_practice_title"
+                >Practice Mode</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

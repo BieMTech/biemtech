@@ -1,0 +1,221 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Dashboard — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Parent Dashboard — monitor your child's daily stats per operation and review their last 20 mistakes."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_parent_title"
+            >Parent Dashboard</span
+          >
+        </div>
+        <span class="guide-hero__icon">👨‍👩‍👧</span>
+        <h1 class="guide-hero__title" data-i18n="guide_parent_title">
+          Parent Dashboard
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_parent_sub">
+          A dedicated area for parents — monitor your child's daily stats per
+          operation and review their last 20 mistakes.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="parent_s2_h">
+                <span class="section-emoji">📊</span> What you can see
+              </h2>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">✖️</span>
+                  <p class="feature-card__title" data-i18n="parent_mult_title">
+                    Multiplication (×)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_mult_desc">
+                    Daily question count and accuracy for multiplication.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">➗</span>
+                  <p class="feature-card__title" data-i18n="parent_div_title">
+                    Division (÷)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_div_desc">
+                    Daily question count and accuracy for division.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">➖</span>
+                  <p class="feature-card__title" data-i18n="parent_sub_title">
+                    Subtraction (−)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_sub_desc">
+                    Daily question count and accuracy for subtraction.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">➕</span>
+                  <p class="feature-card__title" data-i18n="parent_add_title">
+                    Addition (+)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_add_desc">
+                    Daily question count and accuracy for addition.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🎲</span>
+                  <p class="feature-card__title" data-i18n="parent_mix_title">
+                    Mixed
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_mix_desc">
+                    Daily question count and accuracy for mixed operations.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">📊</span>
+                  <p class="feature-card__title" data-i18n="parent_all_title">
+                    All Together
+                  </p>
+                  <p class="feature-card__desc" data-i18n="parent_all_desc">
+                    Combined daily stats across all operation types.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2>
+                <span class="section-emoji">❌</span>
+                <span data-i18n="parent_mistakes_title">Last 20 Mistakes</span>
+              </h2>
+              <p data-i18n="parent_mistakes_desc">
+                Review the last 20 incorrect answers to spot weak areas.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-parent.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-parent.png"
+                  alt="Parent Dashboard Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="settings.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_settings_title"
+                >Settings</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="index.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="nav_finished"
+                >Finished!</span
+              >
+              <span class="guide-nav__name" data-i18n="nav_back_to_index"
+                >Back to Guide Index</span
+              >
+            </span>
+            <span class="guide-nav__arrow">↑</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

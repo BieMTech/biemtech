@@ -1,0 +1,318 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Selection — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Learn how Math Kids adapts to every child aged 3–10 — operations, input style, and difficulty all change automatically."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_age_title"
+            >Age Selection</span
+          >
+        </div>
+        <span class="guide-hero__icon">🎂</span>
+        <h1 class="guide-hero__title" data-i18n="guide_age_title">
+          Age Selection
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_age_sub">
+          Choose age 3–10 and the entire app adjusts — harder operations unlock,
+          input method changes, and difficulty scales automatically.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="age_s1_h">
+                <span class="section-emoji">🎯</span> Why age matters
+              </h2>
+              <p data-i18n="age_s1_p">
+                Math Kids uses your selected age to determine which math
+                operations appear, how questions are presented (pictures vs.
+                numbers vs. typed answers), and how difficult the problems are.
+                A 3-year-old sees picture matching; a 10-year-old types compound
+                answers.
+              </p>
+              <p data-i18n="age_s1_p2">
+                The age selection screen shows a 3×3 grid of age buttons. Each
+                button glows with its own colour when selected, and a
+                description panel appears below showing the group name and what
+                skills are covered.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="age_s2_h">
+                <span class="section-emoji">📋</span> Age groups at a glance
+              </h2>
+              <div class="ops-table-wrap">
+                <table class="ops-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="age_th_age">Age</th>
+                      <th data-i18n="age_th_group">Group</th>
+                      <th data-i18n="age_th_ops">Operations</th>
+                      <th data-i18n="age_th_input">Input Style</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="age-badge">3</span></td>
+                      <td data-i18n="age_group_tiny">🐣 Tiny Tots</td>
+                      <td data-i18n="age_ops_add_small">
+                        Addition only (small numbers)
+                      </td>
+                      <td data-i18n="age_input_picture">
+                        Picture / icon matching
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">4</span></td>
+                      <td data-i18n="age_group_tiny">🐣 Tiny Tots</td>
+                      <td data-i18n="age_ops_add_large">
+                        Addition only (slightly larger)
+                      </td>
+                      <td data-i18n="age_input_picture">
+                        Picture / icon matching
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">5</span></td>
+                      <td data-i18n="age_group_explorers">🐥 Explorers</td>
+                      <td data-i18n="age_ops_add_visual">
+                        Addition + visual arithmetic
+                      </td>
+                      <td data-i18n="age_input_visual">
+                        Visual icons + multiple choice
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">6</span></td>
+                      <td data-i18n="age_group_stars">🌟 Stars</td>
+                      <td data-i18n="age_ops_add_sub">
+                        Addition &amp; Subtraction
+                      </td>
+                      <td data-i18n="age_input_mc">
+                        Multiple choice (4 options)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">7</span></td>
+                      <td data-i18n="age_group_adventurers">🦊 Adventurers</td>
+                      <td data-i18n="age_ops_triple">+ − × and Triple ops</td>
+                      <td data-i18n="age_input_mc">
+                        Multiple choice (4 options)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">8</span></td>
+                      <td data-i18n="age_group_challengers">🐯 Challengers</td>
+                      <td>+ − × ÷</td>
+                      <td data-i18n="age_input_mc">
+                        Multiple choice (4 options)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">9</span></td>
+                      <td data-i18n="age_group_champions">🦁 Champions</td>
+                      <td data-i18n="age_ops_compound">+ − × ÷ Compound ops</td>
+                      <td data-i18n="age_input_typed">Typed numeric answer</td>
+                    </tr>
+                    <tr>
+                      <td><span class="age-badge">10</span></td>
+                      <td data-i18n="age_group_masters">🚀 Math Masters</td>
+                      <td data-i18n="age_ops_full">
+                        Full set including advanced compound
+                      </td>
+                      <td data-i18n="age_input_typed">Typed numeric answer</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="age_s3_h">
+                <span class="section-emoji">🔢</span> What are Triple &amp;
+                Compound ops?
+              </h2>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔢</span>
+                  <p class="feature-card__title" data-i18n="age_triple_title">
+                    Triple Operations
+                  </p>
+                  <p class="feature-card__desc" data-i18n="age_triple_desc">
+                    Three-part equations such as
+                    <strong>2 + 3 + 4 = ?</strong> Unlocks at age 7.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔣</span>
+                  <p class="feature-card__title" data-i18n="age_compound_title">
+                    Compound Operations
+                  </p>
+                  <p class="feature-card__desc" data-i18n="age_compound_desc">
+                    Mixed-operator chains like
+                    <strong>4 × 3 − 5 = ?</strong> Unlocks at age 10.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="age_s4_h">
+                <span class="section-emoji">🔄</span> Changing age later
+              </h2>
+              <p data-i18n="age_s4_p">
+                Your age is not locked. You can change it at any time from the
+                Home screen:
+              </p>
+              <ul>
+                <li data-i18n="age_s4_li1">
+                  Scroll to the bottom of the Home screen and tap
+                  <strong>Change Age Group</strong>.
+                </li>
+                <li data-i18n="age_s4_li2">
+                  The Age Selection screen reopens with a Close (✕) button in
+                  the corner.
+                </li>
+                <li data-i18n="age_s4_li3">
+                  Select a new age, tap <strong>Confirm</strong>, and the app
+                  immediately adjusts.
+                </li>
+              </ul>
+              <div class="info-box">
+                <span class="info-box__icon">⚠️</span>
+                <span class="info-box__text" data-i18n="age_s4_info"
+                  ><strong>Note:</strong> Switching to a lower age does not
+                  erase your existing statistics or progress. It only changes
+                  which questions are generated going forward.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone mockup -->
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <!-- <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-age.png</span
+                  >
+                </div> -->
+                <img
+                  src="img/screen-age.png"
+                  alt="Age Selection Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="theme.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_theme_title"
+                >Theme Selection</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="home.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_home_title"
+                >Home Screen</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

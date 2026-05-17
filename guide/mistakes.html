@@ -1,0 +1,263 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mistakes Practice — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Every question you got wrong is saved automatically. Mistakes Practice lets you replay them until you truly master them."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_mistakes_title"
+            >Mistakes Practice</span
+          >
+        </div>
+        <span class="guide-hero__icon">❌</span>
+        <h1 class="guide-hero__title" data-i18n="guide_mistakes_title">
+          Mistakes Practice
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_mistakes_sub">
+          Every wrong answer you give is automatically saved. Come back and
+          drill those exact questions until you get them right every time.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="mistakes_s1_h">
+                <span class="section-emoji">🔍</span> How mistakes are captured
+              </h2>
+              <p data-i18n="mistakes_s1_p">
+                During any game mode (Daily, Practice, Speed, Mixed), every
+                question you answer incorrectly is silently saved to your
+                personal mistakes queue. You don't need to do anything — it
+                happens automatically in the background.
+              </p>
+              <p data-i18n="mistakes_s1_p2">
+                The <strong>❌ Mistakes Practice</strong> button on the Home
+                screen shows a red badge with the number of saved mistakes
+                waiting for you.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mistakes_s2_h">
+                <span class="section-emoji">🔁</span> The retry queue system
+              </h2>
+              <p data-i18n="mistakes_s2_p">
+                Mistakes Practice uses a smart queue:
+              </p>
+              <div class="step-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-body">
+                    <h3 data-i18n="mistakes_step1_h">Question appears</h3>
+                    <p data-i18n="mistakes_step1_p">
+                      A saved mistake is shown — the same equation that tripped
+                      you up before.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-body">
+                    <h3 data-i18n="mistakes_step2_h">
+                      Answer correctly → removed
+                    </h3>
+                    <p data-i18n="mistakes_step2_p">
+                      If you get it right, the question is permanently removed
+                      from the queue. You've mastered it!
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-body">
+                    <h3 data-i18n="mistakes_step3_h">
+                      Answer wrongly → reshuffled
+                    </h3>
+                    <p data-i18n="mistakes_step3_p">
+                      If you get it wrong again, the question is shuffled back
+                      into the queue. It will reappear later in the same
+                      session.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">4</div>
+                  <div class="step-body">
+                    <h3 data-i18n="mistakes_step4_h">All done!</h3>
+                    <p data-i18n="mistakes_step4_p">
+                      When every question in the queue has been answered
+                      correctly at least once, an "All Done" screen appears and
+                      the queue is empty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mistakes_s3_h">
+                <span class="section-emoji">💡</span> Hints for typed answers
+              </h2>
+              <p data-i18n="mistakes_s3_p">
+                For ages 9–10 (who type their answers), if you type the wrong
+                answer a hint briefly reveals the correct value before the next
+                question loads. This reinforces the correct answer immediately
+                after the mistake.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mistakes_s4_h">
+                <span class="section-emoji">🗑️</span> Clearing all mistakes
+              </h2>
+              <p data-i18n="mistakes_s4_p">
+                If you want to start fresh, a
+                <strong>Clear All Mistakes</strong> button is available at the
+                bottom of the Mistakes Practice screen. This permanently deletes
+                the entire queue.
+              </p>
+              <div class="info-box">
+                <span class="info-box__icon">⚠️</span>
+                <span class="info-box__text" data-i18n="mistakes_s4_info"
+                  >Clearing mistakes is permanent. The queue cannot be recovered
+                  after it is cleared.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mistakes_s5_h">
+                <span class="section-emoji">🎉</span> Celebration effects
+              </h2>
+              <p data-i18n="mistakes_s5_p">
+                Each correct answer in Mistakes Practice triggers a small
+                confetti or emoji burst animation — extra positive reinforcement
+                for working through difficult questions.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-mistakes.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-mistakes.png"
+                  alt="Mistakes Practice Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="mixed.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_mixed_title"
+                >Mixed Challenge</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="battle.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_battle_title"
+                >Battle Mode</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

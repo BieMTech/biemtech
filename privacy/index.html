@@ -219,20 +219,68 @@
       footer a:hover {
         color: var(--accent);
       }
+
+      /* ── Language switcher ── */
+      .page-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 16px;
+      }
+      .lang-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background: rgba(46, 111, 64, 0.08);
+        border: 1px solid rgba(46, 111, 64, 0.28);
+        border-radius: 8px;
+        color: var(--text);
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 6px 10px;
+        transition: all 0.2s ease;
+        outline: none;
+        font-family: inherit;
+      }
+      .lang-select:hover {
+        background: rgba(46, 111, 64, 0.14);
+        border-color: rgba(46, 111, 64, 0.5);
+      }
     </style>
   </head>
   <body>
     <header>
+      <div class="page-header-top">
+        <select
+          id="lang-select"
+          class="lang-select"
+          onchange="setLang(this.value)"
+          aria-label="Language"
+        >
+          <option value="en">🇬🇧 EN</option>
+          <option value="az">🇦🇿 AZ</option>
+          <option value="ru">🇷🇺 RU</option>
+          <option value="tr">🇹🇷 TR</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="pt">🇵🇹 PT</option>
+          <option value="it">🇮🇹 IT</option>
+          <option value="ar">🇸🇦 AR</option>
+          <option value="zh">🇨🇳 ZH</option>
+          <option value="ja">🇯🇵 JA</option>
+        </select>
+      </div>
       <a href="../index.html" class="home-link">
         <img src="../img/logo-biemtech.png" alt="BieMTech" />
         BieMTech
       </a>
-      <h1>Privacy Policies</h1>
-      <p>Select an app to view its privacy policy.</p>
+      <h1 data-i18n="priv_title">Privacy Policies</h1>
+      <p data-i18n="priv_sub">Select an app to view its privacy policy.</p>
     </header>
 
     <main>
-      <p class="section-label">Apps</p>
+      <p class="section-label" data-i18n="priv_label">Apps</p>
       <ul class="app-list">
         <!-- Add one <li> per app -->
         <li>
@@ -252,5 +300,6 @@
     <script>
       document.getElementById("yr").textContent = new Date().getFullYear();
     </script>
+    <script src="../i18n.js"></script>
   </body>
 </html>

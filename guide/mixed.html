@@ -1,0 +1,258 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixed Challenge — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="All operations shuffled together in one session. The ultimate all-round math test for any age."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_mixed_title"
+            >Mixed Challenge</span
+          >
+        </div>
+        <span class="guide-hero__icon">🎲</span>
+        <h1 class="guide-hero__title" data-i18n="guide_mixed_title">
+          Mixed Challenge
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_mixed_sub">
+          Every operation you've unlocked, shuffled together at random. No setup
+          required — just tap and go.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="mixed_s1_h">
+                <span class="section-emoji">🎲</span> What makes it "Mixed"?
+              </h2>
+              <p data-i18n="mixed_s1_p">
+                The Mixed Challenge automatically combines all the math
+                operations your current age group has unlocked and serves them
+                in a random order. You might get addition, then multiplication,
+                then subtraction — you can never predict what's next.
+              </p>
+              <p data-i18n="mixed_s1_p2">
+                There is no setup screen. Tap the
+                <strong>🎲 Mixed Challenge</strong> button on the Home screen
+                and the quiz starts instantly.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mixed_s2_h">
+                <span class="section-emoji">✅</span> Why play Mixed?
+              </h2>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🧠</span>
+                  <p class="feature-card__title" data-i18n="mixed_sharp_title">
+                    Keeps you sharp
+                  </p>
+                  <p class="feature-card__desc" data-i18n="mixed_sharp_desc">
+                    Switching between operation types forces your brain to stay
+                    flexible rather than settling into one pattern.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">⚡</span>
+                  <p class="feature-card__title" data-i18n="mixed_warmup_title">
+                    Great for daily warm-up
+                  </p>
+                  <p class="feature-card__desc" data-i18n="mixed_warmup_desc">
+                    When you've already completed the Daily Challenge, Mixed is
+                    the perfect way to keep earning XP and coins.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🏆</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="mixed_mastery_title"
+                  >
+                    Tests true mastery
+                  </p>
+                  <p class="feature-card__desc" data-i18n="mixed_mastery_desc">
+                    Being strong at mixed problems means you truly understand
+                    all your operations, not just a favourite one.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🎯</span>
+                  <p class="feature-card__title" data-i18n="mixed_spots_title">
+                    Surfaces weak spots
+                  </p>
+                  <p class="feature-card__desc" data-i18n="mixed_spots_desc">
+                    Mistakes from Mixed sessions are saved to your Mistakes
+                    Practice queue so you can revisit them.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mixed_s3_h">
+                <span class="section-emoji">🎮</span> During the session
+              </h2>
+              <p data-i18n="mixed_s3_p">
+                The quiz screen shows your progress bar, live score, streak
+                badge, and bonus-coins counter — identical to the other modes.
+                Answer each question and the app automatically advances to the
+                next random one.
+              </p>
+              <ul>
+                <li data-i18n="mixed_s3_li1">
+                  Operations used depend entirely on your age group — see the
+                  <a href="age.html" style="color: var(--primary)"
+                    >Age Selection guide</a
+                  >
+                  for the full table.
+                </li>
+                <li data-i18n="mixed_s3_li2">
+                  Earning a streak in Mixed is especially rewarding because
+                  you're switching operations every question.
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="mixed_s4_h">
+                <span class="section-emoji">🏁</span> After the session
+              </h2>
+              <p data-i18n="mixed_s4_p">
+                The
+                <a href="result.html" style="color: var(--primary)"
+                  >Results Screen</a
+                >
+                shows your star rating, score, accuracy percentage, and coins
+                earned. Any wrong answers are added to your
+                <a href="mistakes.html" style="color: var(--primary)"
+                  >Mistakes Practice</a
+                >
+                queue.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-mixed.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-mixed.png"
+                  alt="Mixed Challenge Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="speed.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_speed_title"
+                >Speed Mode</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="mistakes.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_mistakes_title"
+                >Mistakes Practice</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

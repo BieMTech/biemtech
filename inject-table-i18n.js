@@ -1,0 +1,558 @@
+// Adds data-i18n to th and td elements in age.html and practice.html tables,
+// and appends the new keys to guide-i18n.js for all 12 languages.
+const fs = require("fs");
+const path = require("path");
+const root = "c:/Users/bismayilov/Documents/projects/biemtech";
+
+// ─── 1. Patch age.html ────────────────────────────────────────────────────────
+let ageHtml = fs.readFileSync(path.join(root, "guide/age.html"), "utf8");
+
+const ageReplacements = [
+  // Headers
+  ["<th>Age</th>", '<th data-i18n="age_th_age">Age</th>'],
+  ["<th>Group</th>", '<th data-i18n="age_th_group">Group</th>'],
+  ["<th>Operations</th>", '<th data-i18n="age_th_ops">Operations</th>'],
+  ["<th>Input Style</th>", '<th data-i18n="age_th_input">Input Style</th>'],
+  // Row 3 (age 3)
+  [
+    "<td>🐣 Tiny Tots</td>\n                      <td>Addition only (small numbers)</td>\n                      <td>Picture / icon matching</td>",
+    '<td data-i18n="age_group_tiny">🐣 Tiny Tots</td>\n                      <td data-i18n="age_ops_add_small">Addition only (small numbers)</td>\n                      <td data-i18n="age_input_picture">Picture / icon matching</td>',
+  ],
+  // Row 4 (age 4)
+  [
+    "<td>🐣 Tiny Tots</td>\n                      <td>Addition only (slightly larger)</td>\n                      <td>Picture / icon matching</td>",
+    '<td data-i18n="age_group_tiny">🐣 Tiny Tots</td>\n                      <td data-i18n="age_ops_add_large">Addition only (slightly larger)</td>\n                      <td data-i18n="age_input_picture">Picture / icon matching</td>',
+  ],
+  // Row 5 (age 5)
+  [
+    "<td>🐥 Explorers</td>\n                      <td>Addition + visual arithmetic</td>\n                      <td>Visual icons + multiple choice</td>",
+    '<td data-i18n="age_group_explorers">🐥 Explorers</td>\n                      <td data-i18n="age_ops_add_visual">Addition + visual arithmetic</td>\n                      <td data-i18n="age_input_visual">Visual icons + multiple choice</td>',
+  ],
+  // Row 6 (age 6)
+  [
+    "<td>🌟 Stars</td>\n                      <td>Addition &amp; Subtraction</td>\n                      <td>Multiple choice (4 options)</td>",
+    '<td data-i18n="age_group_stars">🌟 Stars</td>\n                      <td data-i18n="age_ops_add_sub">Addition &amp; Subtraction</td>\n                      <td data-i18n="age_input_mc">Multiple choice (4 options)</td>',
+  ],
+  // Row 7 (age 7)
+  [
+    "<td>🦊 Adventurers</td>\n                      <td>+ − × and Triple ops</td>\n                      <td>Multiple choice (4 options)</td>",
+    '<td data-i18n="age_group_adventurers">🦊 Adventurers</td>\n                      <td data-i18n="age_ops_triple">+ − × and Triple ops</td>\n                      <td data-i18n="age_input_mc">Multiple choice (4 options)</td>',
+  ],
+  // Row 8 (age 8) — ops is short symbol string, skip translating ops column; still tag group & input
+  [
+    "<td>🐯 Challengers</td>\n                      <td>+ − × ÷</td>\n                      <td>Multiple choice (4 options)</td>",
+    '<td data-i18n="age_group_challengers">🐯 Challengers</td>\n                      <td>+ − × ÷</td>\n                      <td data-i18n="age_input_mc">Multiple choice (4 options)</td>',
+  ],
+  // Row 9 (age 9)
+  [
+    "<td>🦁 Champions</td>\n                      <td>+ − × ÷ Compound ops</td>\n                      <td>Typed numeric answer</td>",
+    '<td data-i18n="age_group_champions">🦁 Champions</td>\n                      <td data-i18n="age_ops_compound">+ − × ÷ Compound ops</td>\n                      <td data-i18n="age_input_typed">Typed numeric answer</td>',
+  ],
+  // Row 10 (age 10)
+  [
+    "<td>🚀 Math Masters</td>\n                      <td>Full set including advanced compound</td>\n                      <td>Typed numeric answer</td>",
+    '<td data-i18n="age_group_masters">🚀 Math Masters</td>\n                      <td data-i18n="age_ops_full">Full set including advanced compound</td>\n                      <td data-i18n="age_input_typed">Typed numeric answer</td>',
+  ],
+];
+
+for (const [from, to] of ageReplacements) {
+  if (!ageHtml.includes(from)) {
+    console.error("NOT FOUND in age.html: " + from.substring(0, 50));
+    continue;
+  }
+  ageHtml = ageHtml.replace(from, to);
+}
+fs.writeFileSync(path.join(root, "guide/age.html"), ageHtml, "utf8");
+console.log("age.html patched");
+
+// ─── 2. Patch practice.html ───────────────────────────────────────────────────
+let practiceHtml = fs.readFileSync(
+  path.join(root, "guide/practice.html"),
+  "utf8",
+);
+
+const practiceReplacements = [
+  ["<th>Operation</th>", '<th data-i18n="practice_th_op">Operation</th>'],
+  [
+    "<th>Unlocks at age</th>",
+    '<th data-i18n="practice_th_age">Unlocks at age</th>',
+  ],
+  ["<th>Example</th>", '<th data-i18n="practice_th_example">Example</th>'],
+  ["<td>➕ Addition</td>", '<td data-i18n="practice_op_add">➕ Addition</td>'],
+  [
+    "<td>➖ Subtraction</td>",
+    '<td data-i18n="practice_op_sub">➖ Subtraction</td>',
+  ],
+  [
+    "<td>✖️ Multiplication</td>",
+    '<td data-i18n="practice_op_mul">✖️ Multiplication</td>',
+  ],
+  ["<td>➗ Division</td>", '<td data-i18n="practice_op_div">➗ Division</td>'],
+  [
+    "<td>🔢 Triple ops</td>",
+    '<td data-i18n="practice_op_triple">🔢 Triple ops</td>',
+  ],
+  [
+    "<td>🔣 Compound ops</td>",
+    '<td data-i18n="practice_op_compound">🔣 Compound ops</td>',
+  ],
+];
+
+for (const [from, to] of practiceReplacements) {
+  if (!practiceHtml.includes(from)) {
+    console.error("NOT FOUND in practice.html: " + from.substring(0, 50));
+    continue;
+  }
+  practiceHtml = practiceHtml.replace(from, to);
+}
+fs.writeFileSync(path.join(root, "guide/practice.html"), practiceHtml, "utf8");
+console.log("practice.html patched");
+
+// ─── 3. Append new keys to guide-i18n.js ────────────────────────────────────
+const newKeys = {
+  en: {
+    age_th_age: "Age",
+    age_th_group: "Group",
+    age_th_ops: "Operations",
+    age_th_input: "Input Style",
+    age_group_tiny: "🐣 Tiny Tots",
+    age_group_explorers: "🐥 Explorers",
+    age_group_stars: "🌟 Stars",
+    age_group_adventurers: "🦊 Adventurers",
+    age_group_challengers: "🐯 Challengers",
+    age_group_champions: "🦁 Champions",
+    age_group_masters: "🚀 Math Masters",
+    age_ops_add_small: "Addition only (small numbers)",
+    age_ops_add_large: "Addition only (slightly larger)",
+    age_ops_add_visual: "Addition + visual arithmetic",
+    age_ops_add_sub: "Addition &amp; Subtraction",
+    age_ops_triple: "+ − × and Triple ops",
+    age_ops_compound: "+ − × ÷ Compound ops",
+    age_ops_full: "Full set including advanced compound",
+    age_input_picture: "Picture / icon matching",
+    age_input_visual: "Visual icons + multiple choice",
+    age_input_mc: "Multiple choice (4 options)",
+    age_input_typed: "Typed numeric answer",
+    practice_th_op: "Operation",
+    practice_th_age: "Unlocks at age",
+    practice_th_example: "Example",
+    practice_op_add: "➕ Addition",
+    practice_op_sub: "➖ Subtraction",
+    practice_op_mul: "✖️ Multiplication",
+    practice_op_div: "➗ Division",
+    practice_op_triple: "🔢 Triple ops",
+    practice_op_compound: "🔣 Compound ops",
+  },
+  az: {
+    age_th_age: "Yaş",
+    age_th_group: "Qrup",
+    age_th_ops: "Əməliyyatlar",
+    age_th_input: "Giriş Üslubu",
+    age_group_tiny: "🐣 Körpəciklər",
+    age_group_explorers: "🐥 Kəşfiyyatçılar",
+    age_group_stars: "🌟 Ulduzlar",
+    age_group_adventurers: "🦊 Macəraçılar",
+    age_group_challengers: "🐯 Rəqibçilər",
+    age_group_champions: "🦁 Çempionlar",
+    age_group_masters: "🚀 Riyaziyyat Ustaları",
+    age_ops_add_small: "Yalnız toplama (kiçik rəqəmlər)",
+    age_ops_add_large: "Yalnız toplama (bir az böyük)",
+    age_ops_add_visual: "Toplama + vizual arifmetik",
+    age_ops_add_sub: "Toplama &amp; Çıxma",
+    age_ops_triple: "+ − × və Üçlü əməliyyatlar",
+    age_ops_compound: "+ − × ÷ Mürəkkəb əməliyyatlar",
+    age_ops_full: "Qabaqcıl mürəkkəb daxil olmaqla tam dəst",
+    age_input_picture: "Şəkil / ikon uyğunlaşdırma",
+    age_input_visual: "Vizual ikonlar + çoxsaylı seçim",
+    age_input_mc: "Çoxsaylı seçim (4 variant)",
+    age_input_typed: "Rəqəmsal cavab",
+    practice_th_op: "Əməliyyat",
+    practice_th_age: "Açılma yaşı",
+    practice_th_example: "Nümunə",
+    practice_op_add: "➕ Toplama",
+    practice_op_sub: "➖ Çıxma",
+    practice_op_mul: "✖️ Vurma",
+    practice_op_div: "➗ Bölmə",
+    practice_op_triple: "🔢 Üçlü əməliyyatlar",
+    practice_op_compound: "🔣 Mürəkkəb əməliyyatlar",
+  },
+  ru: {
+    age_th_age: "Возраст",
+    age_th_group: "Группа",
+    age_th_ops: "Операции",
+    age_th_input: "Стиль ввода",
+    age_group_tiny: "🐣 Малыши",
+    age_group_explorers: "🐥 Исследователи",
+    age_group_stars: "🌟 Звёзды",
+    age_group_adventurers: "🦊 Авантюристы",
+    age_group_challengers: "🐯 Претенденты",
+    age_group_champions: "🦁 Чемпионы",
+    age_group_masters: "🚀 Мастера математики",
+    age_ops_add_small: "Только сложение (маленькие числа)",
+    age_ops_add_large: "Только сложение (чуть больше)",
+    age_ops_add_visual: "Сложение + визуальная арифметика",
+    age_ops_add_sub: "Сложение &amp; Вычитание",
+    age_ops_triple: "+ − × и тройные операции",
+    age_ops_compound: "+ − × ÷ Составные операции",
+    age_ops_full: "Полный набор включая сложные составные",
+    age_input_picture: "Сопоставление картинок / иконок",
+    age_input_visual: "Визуальные иконки + множественный выбор",
+    age_input_mc: "Множественный выбор (4 варианта)",
+    age_input_typed: "Числовой ответ",
+    practice_th_op: "Операция",
+    practice_th_age: "Открывается с возраста",
+    practice_th_example: "Пример",
+    practice_op_add: "➕ Сложение",
+    practice_op_sub: "➖ Вычитание",
+    practice_op_mul: "✖️ Умножение",
+    practice_op_div: "➗ Деление",
+    practice_op_triple: "🔢 Тройные операции",
+    practice_op_compound: "🔣 Составные операции",
+  },
+  tr: {
+    age_th_age: "Yaş",
+    age_th_group: "Grup",
+    age_th_ops: "İşlemler",
+    age_th_input: "Giriş Stili",
+    age_group_tiny: "🐣 Minicikler",
+    age_group_explorers: "🐥 Kaşifler",
+    age_group_stars: "🌟 Yıldızlar",
+    age_group_adventurers: "🦊 Maceracılar",
+    age_group_challengers: "🐯 Rakipler",
+    age_group_champions: "🦁 Şampiyonlar",
+    age_group_masters: "🚀 Matematik Ustaları",
+    age_ops_add_small: "Yalnızca toplama (küçük sayılar)",
+    age_ops_add_large: "Yalnızca toplama (biraz daha büyük)",
+    age_ops_add_visual: "Toplama + görsel aritmetik",
+    age_ops_add_sub: "Toplama &amp; Çıkarma",
+    age_ops_triple: "+ − × ve Üçlü işlemler",
+    age_ops_compound: "+ − × ÷ Bileşik işlemler",
+    age_ops_full: "Gelişmiş bileşik dahil tam set",
+    age_input_picture: "Resim / ikon eşleştirme",
+    age_input_visual: "Görsel ikonlar + çoktan seçmeli",
+    age_input_mc: "Çoktan seçmeli (4 seçenek)",
+    age_input_typed: "Sayısal cevap",
+    practice_th_op: "İşlem",
+    practice_th_age: "Açılma yaşı",
+    practice_th_example: "Örnek",
+    practice_op_add: "➕ Toplama",
+    practice_op_sub: "➖ Çıkarma",
+    practice_op_mul: "✖️ Çarpma",
+    practice_op_div: "➗ Bölme",
+    practice_op_triple: "🔢 Üçlü işlemler",
+    practice_op_compound: "🔣 Bileşik işlemler",
+  },
+  de: {
+    age_th_age: "Alter",
+    age_th_group: "Gruppe",
+    age_th_ops: "Operationen",
+    age_th_input: "Eingabestil",
+    age_group_tiny: "🐣 Winzlinge",
+    age_group_explorers: "🐥 Entdecker",
+    age_group_stars: "🌟 Sterne",
+    age_group_adventurers: "🦊 Abenteurer",
+    age_group_challengers: "🐯 Herausforderer",
+    age_group_champions: "🦁 Champions",
+    age_group_masters: "🚀 Mathe-Meister",
+    age_ops_add_small: "Nur Addition (kleine Zahlen)",
+    age_ops_add_large: "Nur Addition (etwas größer)",
+    age_ops_add_visual: "Addition + visuelle Arithmetik",
+    age_ops_add_sub: "Addition &amp; Subtraktion",
+    age_ops_triple: "+ − × und Dreifach-Operationen",
+    age_ops_compound: "+ − × ÷ Zusammengesetzte Operationen",
+    age_ops_full: "Vollständiger Satz inkl. erweiterter Verbundoperationen",
+    age_input_picture: "Bilder / Icons zuordnen",
+    age_input_visual: "Visuelle Icons + Multiple Choice",
+    age_input_mc: "Multiple Choice (4 Optionen)",
+    age_input_typed: "Numerische Eingabe",
+    practice_th_op: "Operation",
+    practice_th_age: "Freischaltung ab Alter",
+    practice_th_example: "Beispiel",
+    practice_op_add: "➕ Addition",
+    practice_op_sub: "➖ Subtraktion",
+    practice_op_mul: "✖️ Multiplikation",
+    practice_op_div: "➗ Division",
+    practice_op_triple: "🔢 Dreifach-Operationen",
+    practice_op_compound: "🔣 Verbundoperationen",
+  },
+  fr: {
+    age_th_age: "Âge",
+    age_th_group: "Groupe",
+    age_th_ops: "Opérations",
+    age_th_input: "Style de saisie",
+    age_group_tiny: "🐣 Tout-petits",
+    age_group_explorers: "🐥 Explorateurs",
+    age_group_stars: "🌟 Étoiles",
+    age_group_adventurers: "🦊 Aventuriers",
+    age_group_challengers: "🐯 Compétiteurs",
+    age_group_champions: "🦁 Champions",
+    age_group_masters: "🚀 Maîtres des maths",
+    age_ops_add_small: "Addition seule (petits nombres)",
+    age_ops_add_large: "Addition seule (un peu plus grands)",
+    age_ops_add_visual: "Addition + arithmétique visuelle",
+    age_ops_add_sub: "Addition &amp; Soustraction",
+    age_ops_triple: "+ − × et opérations triples",
+    age_ops_compound: "+ − × ÷ Opérations composées",
+    age_ops_full: "Ensemble complet incluant composés avancés",
+    age_input_picture: "Correspondance image / icône",
+    age_input_visual: "Icônes visuelles + choix multiple",
+    age_input_mc: "Choix multiple (4 options)",
+    age_input_typed: "Réponse numérique",
+    practice_th_op: "Opération",
+    practice_th_age: "Disponible à partir de",
+    practice_th_example: "Exemple",
+    practice_op_add: "➕ Addition",
+    practice_op_sub: "➖ Soustraction",
+    practice_op_mul: "✖️ Multiplication",
+    practice_op_div: "➗ Division",
+    practice_op_triple: "🔢 Opérations triples",
+    practice_op_compound: "🔣 Opérations composées",
+  },
+  es: {
+    age_th_age: "Edad",
+    age_th_group: "Grupo",
+    age_th_ops: "Operaciones",
+    age_th_input: "Estilo de entrada",
+    age_group_tiny: "🐣 Pequeñitos",
+    age_group_explorers: "🐥 Exploradores",
+    age_group_stars: "🌟 Estrellas",
+    age_group_adventurers: "🦊 Aventureros",
+    age_group_challengers: "🐯 Competidores",
+    age_group_champions: "🦁 Campeones",
+    age_group_masters: "🚀 Maestros de las Mates",
+    age_ops_add_small: "Solo suma (números pequeños)",
+    age_ops_add_large: "Solo suma (un poco más grandes)",
+    age_ops_add_visual: "Suma + aritmética visual",
+    age_ops_add_sub: "Suma &amp; Resta",
+    age_ops_triple: "+ − × y operaciones triples",
+    age_ops_compound: "+ − × ÷ Operaciones compuestas",
+    age_ops_full: "Conjunto completo incluyendo compuestas avanzadas",
+    age_input_picture: "Coincidencia de imágenes / iconos",
+    age_input_visual: "Iconos visuales + opción múltiple",
+    age_input_mc: "Opción múltiple (4 opciones)",
+    age_input_typed: "Respuesta numérica",
+    practice_th_op: "Operación",
+    practice_th_age: "Se desbloquea a partir de",
+    practice_th_example: "Ejemplo",
+    practice_op_add: "➕ Suma",
+    practice_op_sub: "➖ Resta",
+    practice_op_mul: "✖️ Multiplicación",
+    practice_op_div: "➗ División",
+    practice_op_triple: "🔢 Operaciones triples",
+    practice_op_compound: "🔣 Operaciones compuestas",
+  },
+  pt: {
+    age_th_age: "Idade",
+    age_th_group: "Grupo",
+    age_th_ops: "Operações",
+    age_th_input: "Estilo de entrada",
+    age_group_tiny: "🐣 Pequeninhos",
+    age_group_explorers: "🐥 Exploradores",
+    age_group_stars: "🌟 Estrelas",
+    age_group_adventurers: "🦊 Aventureiros",
+    age_group_challengers: "🐯 Competidores",
+    age_group_champions: "🦁 Campeões",
+    age_group_masters: "🚀 Mestres da Matemática",
+    age_ops_add_small: "Só adição (números pequenos)",
+    age_ops_add_large: "Só adição (um pouco maiores)",
+    age_ops_add_visual: "Adição + aritmética visual",
+    age_ops_add_sub: "Adição &amp; Subtração",
+    age_ops_triple: "+ − × e operações triplas",
+    age_ops_compound: "+ − × ÷ Operações compostas",
+    age_ops_full: "Conjunto completo incluindo compostas avançadas",
+    age_input_picture: "Correspondência de imagens / ícones",
+    age_input_visual: "Ícones visuais + múltipla escolha",
+    age_input_mc: "Múltipla escolha (4 opções)",
+    age_input_typed: "Resposta numérica",
+    practice_th_op: "Operação",
+    practice_th_age: "Disponível a partir de",
+    practice_th_example: "Exemplo",
+    practice_op_add: "➕ Adição",
+    practice_op_sub: "➖ Subtração",
+    practice_op_mul: "✖️ Multiplicação",
+    practice_op_div: "➗ Divisão",
+    practice_op_triple: "🔢 Operações triplas",
+    practice_op_compound: "🔣 Operações compostas",
+  },
+  it: {
+    age_th_age: "Età",
+    age_th_group: "Gruppo",
+    age_th_ops: "Operazioni",
+    age_th_input: "Stile di input",
+    age_group_tiny: "🐣 Piccolissimi",
+    age_group_explorers: "🐥 Esploratori",
+    age_group_stars: "🌟 Stelle",
+    age_group_adventurers: "🦊 Avventurieri",
+    age_group_challengers: "🐯 Sfidanti",
+    age_group_champions: "🦁 Campioni",
+    age_group_masters: "🚀 Maestri della Matematica",
+    age_ops_add_small: "Solo addizione (numeri piccoli)",
+    age_ops_add_large: "Solo addizione (un po' più grandi)",
+    age_ops_add_visual: "Addizione + aritmetica visiva",
+    age_ops_add_sub: "Addizione &amp; Sottrazione",
+    age_ops_triple: "+ − × e operazioni triple",
+    age_ops_compound: "+ − × ÷ Operazioni composte",
+    age_ops_full: "Set completo incluse composte avanzate",
+    age_input_picture: "Abbinamento immagini / icone",
+    age_input_visual: "Icone visive + scelta multipla",
+    age_input_mc: "Scelta multipla (4 opzioni)",
+    age_input_typed: "Risposta numerica",
+    practice_th_op: "Operazione",
+    practice_th_age: "Disponibile dall'età di",
+    practice_th_example: "Esempio",
+    practice_op_add: "➕ Addizione",
+    practice_op_sub: "➖ Sottrazione",
+    practice_op_mul: "✖️ Moltiplicazione",
+    practice_op_div: "➗ Divisione",
+    practice_op_triple: "🔢 Operazioni triple",
+    practice_op_compound: "🔣 Operazioni composte",
+  },
+  ar: {
+    age_th_age: "العمر",
+    age_th_group: "المجموعة",
+    age_th_ops: "العمليات",
+    age_th_input: "أسلوب الإدخال",
+    age_group_tiny: "🐣 الصغار جداً",
+    age_group_explorers: "🐥 المستكشفون",
+    age_group_stars: "🌟 النجوم",
+    age_group_adventurers: "🦊 المغامرون",
+    age_group_challengers: "🐯 المتحدون",
+    age_group_champions: "🦁 الأبطال",
+    age_group_masters: "🚀 أساتذة الرياضيات",
+    age_ops_add_small: "الجمع فقط (أرقام صغيرة)",
+    age_ops_add_large: "الجمع فقط (أرقام أكبر قليلاً)",
+    age_ops_add_visual: "الجمع + الحساب البصري",
+    age_ops_add_sub: "الجمع &amp; الطرح",
+    age_ops_triple: "+ − × وعمليات ثلاثية",
+    age_ops_compound: "+ − × ÷ عمليات مركبة",
+    age_ops_full: "المجموعة الكاملة بما فيها المركبة المتقدمة",
+    age_input_picture: "مطابقة الصور / الأيقونات",
+    age_input_visual: "أيقونات بصرية + اختيار متعدد",
+    age_input_mc: "اختيار متعدد (4 خيارات)",
+    age_input_typed: "إجابة رقمية",
+    practice_th_op: "العملية",
+    practice_th_age: "يُفتح من عمر",
+    practice_th_example: "مثال",
+    practice_op_add: "➕ الجمع",
+    practice_op_sub: "➖ الطرح",
+    practice_op_mul: "✖️ الضرب",
+    practice_op_div: "➗ القسمة",
+    practice_op_triple: "🔢 عمليات ثلاثية",
+    practice_op_compound: "🔣 عمليات مركبة",
+  },
+  zh: {
+    age_th_age: "年龄",
+    age_th_group: "组别",
+    age_th_ops: "运算",
+    age_th_input: "输入方式",
+    age_group_tiny: "🐣 小小班",
+    age_group_explorers: "🐥 探索者",
+    age_group_stars: "🌟 星星",
+    age_group_adventurers: "🦊 冒险家",
+    age_group_challengers: "🐯 挑战者",
+    age_group_champions: "🦁 冠军",
+    age_group_masters: "🚀 数学大师",
+    age_ops_add_small: "仅加法（小数字）",
+    age_ops_add_large: "仅加法（稍大数字）",
+    age_ops_add_visual: "加法＋视觉算术",
+    age_ops_add_sub: "加法 &amp; 减法",
+    age_ops_triple: "+ − × 及三重运算",
+    age_ops_compound: "+ − × ÷ 复合运算",
+    age_ops_full: "包含高级复合的完整题目集",
+    age_input_picture: "图片/图标匹配",
+    age_input_visual: "视觉图标＋多项选择",
+    age_input_mc: "多项选择（4个选项）",
+    age_input_typed: "输入数字答案",
+    practice_th_op: "运算",
+    practice_th_age: "解锁年龄",
+    practice_th_example: "示例",
+    practice_op_add: "➕ 加法",
+    practice_op_sub: "➖ 减法",
+    practice_op_mul: "✖️ 乘法",
+    practice_op_div: "➗ 除法",
+    practice_op_triple: "🔢 三重运算",
+    practice_op_compound: "🔣 复合运算",
+  },
+  ja: {
+    age_th_age: "年齢",
+    age_th_group: "グループ",
+    age_th_ops: "演算",
+    age_th_input: "入力スタイル",
+    age_group_tiny: "🐣 ちびっ子",
+    age_group_explorers: "🐥 探検家",
+    age_group_stars: "🌟 スター",
+    age_group_adventurers: "🦊 冒険家",
+    age_group_challengers: "🐯 チャレンジャー",
+    age_group_champions: "🦁 チャンピオン",
+    age_group_masters: "🚀 数学マスター",
+    age_ops_add_small: "足し算のみ（小さい数）",
+    age_ops_add_large: "足し算のみ（少し大きい数）",
+    age_ops_add_visual: "足し算＋視覚的算術",
+    age_ops_add_sub: "足し算 &amp; 引き算",
+    age_ops_triple: "+ − × と三重演算",
+    age_ops_compound: "+ − × ÷ 複合演算",
+    age_ops_full: "高度な複合を含む完全セット",
+    age_input_picture: "絵/アイコンマッチング",
+    age_input_visual: "ビジュアルアイコン＋多肢選択",
+    age_input_mc: "多肢選択（4択）",
+    age_input_typed: "数値入力",
+    practice_th_op: "演算",
+    practice_th_age: "解放年齢",
+    practice_th_example: "例",
+    practice_op_add: "➕ 足し算",
+    practice_op_sub: "➖ 引き算",
+    practice_op_mul: "✖️ 掛け算",
+    practice_op_div: "➗ 割り算",
+    practice_op_triple: "🔢 三重演算",
+    practice_op_compound: "🔣 複合演算",
+  },
+};
+
+// Read current guide-i18n.js and find the injection point for each language
+let gi18n = fs.readFileSync(path.join(root, "guide-i18n.js"), "utf8");
+
+// For each language, inject keys right before the closing `}` of its block
+// We'll use the pattern: find `  XXX:{...}` and insert before the last `}`
+const langOrder = [
+  "en",
+  "az",
+  "ru",
+  "tr",
+  "de",
+  "fr",
+  "es",
+  "pt",
+  "it",
+  "ar",
+  "zh",
+  "ja",
+];
+
+// The approach: append to the last key in each lang block
+// Find the anchor: for 'en', it's `guide_parent_title` or the last key of that lang
+// Actually easier: use Object.assign injection via a new IIFE block at the end of the file
+
+const lines = [];
+lines.push(
+  "\n// ─── Table cell translations (Phase 5) ──────────────────────────────────────",
+);
+lines.push("(function(){");
+lines.push("  var T = {");
+for (const lang of langOrder) {
+  const keys = newKeys[lang];
+  const pairs = Object.entries(keys)
+    .map(([k, v]) => `    ${k}:${JSON.stringify(v)}`)
+    .join(",\n");
+  lines.push(`  ${lang}:{\n${pairs}\n  },`);
+}
+lines.push("  };");
+lines.push("  Object.keys(T).forEach(function(lang){");
+lines.push(
+  "    if(window.I18N && window.I18N[lang]) Object.assign(window.I18N[lang], T[lang]);",
+);
+lines.push("  });");
+lines.push("})();");
+
+gi18n += lines.join("\n");
+fs.writeFileSync(path.join(root, "guide-i18n.js"), gi18n, "utf8");
+console.log("guide-i18n.js updated with table keys");

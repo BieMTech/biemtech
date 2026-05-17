@@ -1,0 +1,307 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Spend your earned coins on avatars and backgrounds to personalise your Math Kids experience."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_shop_title"
+            >Shop</span
+          >
+        </div>
+        <span class="guide-hero__icon">🛒</span>
+        <h1 class="guide-hero__title" data-i18n="guide_shop_title">Shop</h1>
+        <p class="guide-hero__sub" data-i18n="guide_shop_sub">
+          Use the coins you earn from playing to unlock custom avatars and
+          backgrounds. Personalise your profile and make it your own.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="shop_s1_h">
+                <span class="section-emoji">💎</span> Your Coin Balance
+              </h2>
+              <p data-i18n="shop_s1_p">
+                Your current coin total is shown as a 💎 pill in the top-right
+                corner of the Shop screen. Coins are earned automatically while
+                you play — every correct answer, streak bonus, daily login, and
+                rewarded ad contributes to your balance.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="shop_s2_h">
+                <span class="section-emoji">▶️</span> Watch an Ad → Earn Coins
+              </h2>
+              <p data-i18n="shop_s2_p">
+                A banner at the top of the shop offers a rewarded video ad. Tap
+                it to watch a short video and instantly receive bonus coins:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">▶️</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="shop_ad_avail_title"
+                  >
+                    Ad Available
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_ad_avail_desc">
+                    The banner shows "+ X coins" and a play icon. Tap to watch
+                    and earn.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🚫</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="shop_ad_limit_title"
+                  >
+                    Ad Limit Reached
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_ad_limit_desc">
+                    The banner is greyed out. Ad rewards are capped per day —
+                    come back tomorrow.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="shop_s3_h">
+                <span class="section-emoji">🗂️</span> Item Grid
+              </h2>
+              <p data-i18n="shop_s3_p">
+                All available items are displayed in a 2-column grid. Each card
+                shows the item emoji/image, its name, a short description, and a
+                status button. The button changes based on the item's current
+                state:
+              </p>
+              <div class="feature-grid">
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(76, 175, 80, 0.4)"
+                >
+                  <span class="feature-card__icon">🎁</span>
+                  <p class="feature-card__title" data-i18n="shop_free_title">
+                    Free
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_free_desc">
+                    Price = 0. A green "Free" button with a gift icon. Tap to
+                    claim and equip immediately.
+                  </p>
+                </div>
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(103, 58, 183, 0.4)"
+                >
+                  <span class="feature-card__icon">💎</span>
+                  <p class="feature-card__title" data-i18n="shop_buy_title">
+                    Buy (coins available)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_buy_desc">
+                    You have enough coins. A purple "Buy" button shows the
+                    price. Tap → confirmation dialog → purchase.
+                  </p>
+                </div>
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(150, 150, 150, 0.3)"
+                >
+                  <span class="feature-card__icon">🔒</span>
+                  <p class="feature-card__title" data-i18n="shop_locked_title">
+                    Buy (not enough coins)
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_locked_desc">
+                    Insufficient funds. The button is greyed out. Earn more
+                    coins by playing sessions or watching ads.
+                  </p>
+                </div>
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(76, 175, 80, 0.4)"
+                >
+                  <span class="feature-card__icon">👕</span>
+                  <p class="feature-card__title" data-i18n="shop_equip_title">
+                    Equip
+                  </p>
+                  <p class="feature-card__desc" data-i18n="shop_equip_desc">
+                    You own this item but it's not active. Green "Equip" button
+                    — tap to set it as your current avatar or background.
+                  </p>
+                </div>
+              </div>
+              <div class="info-box">
+                <span class="info-box__icon">✅</span>
+                <span class="info-box__text" data-i18n="shop_equipped_info"
+                  >Currently equipped items show a green "Equipped" button with
+                  a checkmark. This button is disabled — you can't re-equip
+                  what's already active.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="shop_s4_h">
+                <span class="section-emoji">🛍️</span> Purchasing an item
+              </h2>
+              <div class="step-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-body">
+                    <h3 data-i18n="shop_step1_h">Tap "Buy"</h3>
+                    <p data-i18n="shop_step1_p">
+                      A confirmation dialog appears: "Are you sure you want to
+                      buy [Item] for X coins? You currently have Y coins."
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-body">
+                    <h3 data-i18n="shop_step2_h">Confirm</h3>
+                    <p data-i18n="shop_step2_p">
+                      Tap Confirm. Coins are deducted and the item is added to
+                      your owned items collection.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-body">
+                    <h3 data-i18n="shop_step3_h">Equip</h3>
+                    <p data-i18n="shop_step3_p">
+                      The item button changes to "Equip". Tap it to activate the
+                      new avatar or background.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-shop.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-shop.png"
+                  alt="Shop Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="profile.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_profile_title"
+                >Profile</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="settings.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_settings_title"
+                >Settings</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Mode — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Two players compete head-to-head on one device. Set up, play your turn, pass the phone, see who wins."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_battle_title"
+            >Battle Mode</span
+          >
+        </div>
+        <span class="guide-hero__icon">⚔️</span>
+        <h1 class="guide-hero__title" data-i18n="guide_battle_title">
+          Battle Mode
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_battle_sub">
+          Challenge a friend to a math duel on a single device. Set up, take
+          turns, and settle who the real Math Kid is.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <!-- Phase 1: Setup -->
+            <div class="guide-section">
+              <h2 data-i18n="battle_s1_h">
+                <span class="section-emoji">⚙️</span> Phase 1 — Battle Setup
+              </h2>
+              <p data-i18n="battle_s1_p">
+                Before the duel begins, the setup screen lets you configure
+                everything:
+              </p>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">1</span>
+                  <span data-i18n="battle_phase1_label">Player Names</span>
+                </div>
+                <h3 data-i18n="battle_phase1_h">
+                  Enter names for both players
+                </h3>
+                <p data-i18n="battle_phase1_p">
+                  Player 1 is shown in blue, Player 2 in orange. Each name can
+                  be up to 16 characters. The names must be different — the
+                  Start button stays disabled if they match.
+                </p>
+              </div>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">2</span>
+                  <span data-i18n="battle_phase2_label">Difficulty</span>
+                </div>
+                <h3 data-i18n="battle_phase2_h">Easy / Medium / Hard</h3>
+                <p data-i18n="battle_phase2_p">
+                  The available difficulty levels depend on the current age
+                  group:
+                </p>
+                <ul>
+                  <li data-i18n="battle_phase2_li1">Age ≤ 4 — Easy only</li>
+                  <li data-i18n="battle_phase2_li2">
+                    Age 5–6 — Easy or Medium
+                  </li>
+                  <li data-i18n="battle_phase2_li3">
+                    Age 7+ — Easy, Medium, or Hard
+                  </li>
+                </ul>
+              </div>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">3</span>
+                  <span data-i18n="battle_phase3_label">Duration</span>
+                </div>
+                <h3 data-i18n="battle_phase3_h">
+                  30 seconds / 60 seconds / 2 minutes
+                </h3>
+                <p data-i18n="battle_phase3_p">
+                  This is the time each player gets for their turn. A shorter
+                  time creates a more intense, pressure-filled duel.
+                </p>
+              </div>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">4</span>
+                  <span data-i18n="battle_phase4_label">Rules reminder</span>
+                </div>
+                <h3 data-i18n="battle_phase4_h">3 rules shown on-screen</h3>
+                <ul>
+                  <li data-i18n="battle_phase4_li1">
+                    A countdown timer runs for each player's turn.
+                  </li>
+                  <li data-i18n="battle_phase4_li2">
+                    Each correct answer scores points plus a speed bonus.
+                  </li>
+                  <li data-i18n="battle_phase4_li3">
+                    The player with the highest score at the end wins the
+                    trophy.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Phase 2: Gameplay -->
+            <div class="guide-section">
+              <h2 data-i18n="battle_s2_h">
+                <span class="section-emoji">🎮</span> Phase 2 — Gameplay
+              </h2>
+              <p data-i18n="battle_s2_p">
+                Once setup is confirmed, the duel begins in two turns played
+                back-to-back on the same device:
+              </p>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">1</span>
+                  <span data-i18n="battle_p1_label">Player 1's turn</span>
+                </div>
+                <h3 data-i18n="battle_p1_h">
+                  3-2-1-GO countdown → Player 1 plays
+                </h3>
+                <p data-i18n="battle_p1_p">
+                  A 3-second countdown appears, then Player 1's timer starts.
+                  Questions appear one by one. Answer as many as possible before
+                  time runs out.
+                </p>
+                <ul>
+                  <li data-i18n="battle_p1_li1">
+                    Each correct answer earns base points + a speed bonus
+                    (faster = higher bonus).
+                  </li>
+                  <li data-i18n="battle_p1_li2">
+                    A per-question speed bar shows how much time is left for
+                    that specific question.
+                  </li>
+                  <li data-i18n="battle_p1_li3">
+                    When P1's time is up, a handoff screen appears showing P1's
+                    score.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">2</span>
+                  <span data-i18n="battle_handoff_label">Device handoff</span>
+                </div>
+                <h3 data-i18n="battle_handoff_h">Pass the phone to Player 2</h3>
+                <p data-i18n="battle_handoff_p">
+                  The handoff screen shows Player 1's results and a
+                  <strong>"P2 Ready"</strong> button. Player 2 taps that button
+                  to start their own 3-2-1-GO countdown.
+                </p>
+              </div>
+
+              <div class="phase-block">
+                <div class="phase-label">
+                  <span class="phase-label__num">3</span>
+                  <span data-i18n="battle_p2_label">Player 2's turn</span>
+                </div>
+                <h3 data-i18n="battle_p2_h">
+                  Player 2 plays the same set of questions
+                </h3>
+                <p data-i18n="battle_p2_p">
+                  Player 2 answers the same (or similar difficulty) questions
+                  under the same time pressure. When P2's time expires, the
+                  battle ends automatically and the results screen appears.
+                </p>
+              </div>
+
+              <div class="info-box">
+                <span class="info-box__icon">⚠️</span>
+                <span class="info-box__text" data-i18n="battle_s2_info"
+                  >There is no pause or exit during active play — the timer
+                  keeps running once a turn has started.</span
+                >
+              </div>
+            </div>
+
+            <!-- Phase 3: Result -->
+            <div class="guide-section">
+              <h2 data-i18n="battle_s3_h">
+                <span class="section-emoji">🏆</span> Phase 3 — Battle Results
+              </h2>
+              <p data-i18n="battle_s3_p">
+                After both players have played, the Battle Results screen
+                reveals:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">🥇</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="battle_winner_title"
+                  >
+                    Winner Announcement
+                  </p>
+                  <p class="feature-card__desc" data-i18n="battle_winner_desc">
+                    The winning player's name is displayed prominently with
+                    their colour highlight. Equal scores are declared a draw.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">📊</span>
+                  <p class="feature-card__title" data-i18n="battle_cards_title">
+                    Player Cards
+                  </p>
+                  <p class="feature-card__desc" data-i18n="battle_cards_desc">
+                    Each player gets an animated card showing: Score, Accuracy
+                    bar, Correct, Wrong, Speed Bonus earned, and Time used.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔍</span>
+                  <p
+                    class="feature-card__title"
+                    data-i18n="battle_review_title"
+                  >
+                    Question-by-Question Review
+                  </p>
+                  <p class="feature-card__desc" data-i18n="battle_review_desc">
+                    Every question is listed with the correct answer and each
+                    player's response marked with ✅ or ✗.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🔁</span>
+                  <p class="feature-card__title" data-i18n="battle_again_title">
+                    Play Again or Home
+                  </p>
+                  <p class="feature-card__desc" data-i18n="battle_again_desc">
+                    "Play Again" returns to Battle Setup with the same names
+                    pre-filled. "Home" returns to the main screen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-battle-setup.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-battle-setup.png"
+                  alt="Battle Setup Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+            <p
+              style="
+                font-size: 11.5px;
+                color: var(--text-dim);
+                text-align: center;
+                margin-top: 12px;
+                line-height: 1.5;
+              "
+            >
+              Also add gameplay &amp; result screenshots:<br />
+              <code style="font-size: 10px">screen-battle-play.png</code><br />
+              <code style="font-size: 10px">screen-battle-result.png</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="mistakes.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_mistakes_title"
+                >Mistakes Practice</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="result.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_result_title"
+                >Results Screen</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

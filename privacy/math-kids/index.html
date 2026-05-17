@@ -1566,7 +1566,7 @@
       function switchLang(lang) {
         render(lang);
         try {
-          localStorage.setItem("pp_lang", lang);
+          localStorage.setItem("site_lang", lang);
         } catch (e) {}
       }
 
@@ -1574,7 +1574,7 @@
       (function () {
         let saved = null;
         try {
-          saved = localStorage.getItem("pp_lang");
+          saved = localStorage.getItem("site_lang");
         } catch (e) {}
         const browserLang = (navigator.language || "en")
           .slice(0, 2)

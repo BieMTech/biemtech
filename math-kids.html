@@ -9,6 +9,7 @@
       content="Math Kids — a fun math learning app for children. Available now on the App Store and Google Play."
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="guide/guide-style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
@@ -19,74 +20,504 @@
           <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
         </a>
         <nav class="navbar__nav">
-          <a href="index.html#about">About</a>
-          <a href="index.html#apps" class="active">Apps</a>
-          <a href="privacy/math-kids/index.html">Privacy</a>
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
         </nav>
-      </div>
-    </header>
-
-    <!-- ── Live App Page ──────────────────────────────────── -->
-    <main class="coming-soon">
-      <div class="coming-soon__box">
-        <div class="coming-soon__icon">
-          <img src="img/math_kids_icon.png" alt="Math Kids" />
-        </div>
-
-        <div class="badge badge--live" style="margin: 0 auto 20px; display: inline-flex">
-          ● Live Now
-        </div>
-
-        <h1 class="coming-soon__title">Math Kids</h1>
-
-        <p class="coming-soon__subtitle">
-          A playful math learning app designed for children aged 3–10. Fun
-          exercises, colourful puzzles, and interactive games that make numbers
-          exciting — not scary.
-        </p>
-
-        <div class="store-buttons">
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">🇬🇧 EN</option>
+              <option value="az">🇦🇿 AZ</option>
+              <option value="ru">🇷🇺 RU</option>
+              <option value="tr">🇹🇷 TR</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇵🇹 PT</option>
+              <option value="it">🇮🇹 IT</option>
+              <option value="ar">🇸🇦 AR</option>
+              <option value="zh">🇨🇳 ZH</option>
+              <option value="ja">🇯🇵 JA</option>
+            </select>
+          </div>
           <a
             href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
-            class="store-btn store-btn--live"
+            class="btn btn-outline navbar__cta navbar__cta--gplay"
             target="_blank"
             rel="noopener"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"/>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style="flex-shrink: 0"
+            >
+              <path
+                d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+              />
             </svg>
-            Google Play
+            <span data-i18n="orbit_gplay">Math Kids Download</span>
           </a>
         </div>
+      </div>
+    </header>
 
-        <!-- QR Code section -->
-        <div class="qr-section">
-          <p class="qr-label">Scan to download</p>
-          <div class="qr-codes">
-            <div class="qr-card">
-              <img src="img/qr-googleplay.png" alt="Google Play QR Code" class="qr-img" />
-              <span>Google Play</span>
-            </div>
+    <!-- ── Hero Header ───────────────────────────────────── -->
+    <main style="background: var(--bg); padding: 24px 24px 52px">
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <!-- Left: App Icon -->
+        <div
+          style="
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <img
+            src="img/math_kids_icon.png"
+            alt="Math Kids"
+            style="
+              width: 170px;
+              height: 170px;
+              border-radius: 22px;
+              box-shadow: 0 8px 28px rgba(46, 111, 64, 0.22);
+            "
+          />
+          <div
+            class="badge badge--live"
+            style="display: inline-flex"
+            data-i18n="mk_live"
+          >
+            ● Live Now
           </div>
         </div>
 
-        <p style="margin-top: 32px; font-size: 13px; color: var(--text-dim)">
-          <a href="index.html" style="color: var(--text-muted)">BieMTech</a> app
-          · By
-          <a href="index.html#about" style="color: var(--text-muted)"
-            >Bahram &amp; Mehman Ismayilov</a
+        <!-- Center: Text -->
+        <div
+          style="
+            flex: 1;
+            min-width: 240px;
+            max-width: 480px;
+            text-align: center;
+          "
+        >
+          <h1
+            style="
+              font-size: clamp(28px, 5vw, 48px);
+              font-weight: 900;
+              color: var(--text);
+              margin: 0 0 10px;
+              line-height: 1.1;
+            "
           >
-          · Support:
-          <a
-            href="mailto:mathkids@biemtech.com"
-            style="color: var(--text-muted)"
-            >mathkids@biemtech.com</a
+            Math Kids
+          </h1>
+          <p
+            style="
+              font-size: 15px;
+              color: var(--text-muted);
+              line-height: 1.7;
+              margin: 0 0 16px;
+            "
+            data-i18n="mk_hero_desc"
           >
-        </p>
+            A playful math learning app designed for children aged 3–10. Fun
+            exercises, colourful puzzles, and interactive games that make
+            numbers exciting — not scary.
+          </p>
+          <div
+            style="
+              width: 40px;
+              height: 3px;
+              background: var(--primary);
+              border-radius: 2px;
+              margin: 0 auto 16px;
+            "
+          ></div>
+          <p
+            style="
+              font-size: 13px;
+              color: var(--text-dim);
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            <span
+              style="font-size: 18px; vertical-align: middle; margin-right: 6px"
+              >📖</span
+            >
+            <strong style="color: var(--text-muted)" data-i18n="mk_guide_label"
+              >App Guide</strong
+            >
+            —
+            <span data-i18n="mk_guide_desc"
+              >A complete walkthrough of every screen, mode, and feature inside
+              Math Kids.</span
+            >
+          </p>
+        </div>
+
+        <!-- Right: QR Code -->
+        <div
+          style="
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <div
+            style="
+              background: #fff;
+              border-radius: 14px;
+              padding: 10px;
+              box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <img
+              src="img/qr-googleplay.png"
+              alt="Google Play QR Code"
+              style="
+                width: 170px;
+                height: 170px;
+                display: block;
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <span
+            style="
+              font-size: 11px;
+              color: var(--text-dim);
+              font-weight: 600;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+            "
+            data-i18n="mk_scan"
+            >Scan to Download</span
+          >
+        </div>
       </div>
     </main>
 
+    <!-- ── App Guide ─────────────────────────────────────── -->
+    <section class="guide-body" style="padding-top: 0">
+      <div class="container">
+        <!-- Quick Start -->
+        <p class="section-label" data-i18n="mk_qs_label">Getting Started</p>
+        <h3
+          class="section-title"
+          style="font-size: clamp(20px, 3vw, 28px); margin-bottom: 8px"
+          data-i18n="mk_qs_title"
+        >
+          Up and running in 4 steps
+        </h3>
+        <div class="quickstart">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.biemtech.mathkids"
+            class="qs-step qs-step--download"
+            target="_blank"
+            rel="noopener"
+            style="text-decoration: none"
+          >
+            <span class="qs-step__num">1</span>
+            <span class="qs-step__emoji">📥</span>
+            <p class="qs-step__title" data-i18n="mk_qs1_title">Download</p>
+            <p class="qs-step__desc" data-i18n="mk_qs1_desc">
+              Get Math Kids from Google Play — it's free.
+            </p>
+            <span
+              class="qs-download-gplay"
+              style="margin-top: 10px; pointer-events: none"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+                />
+              </svg>
+              Google Play
+            </span>
+          </a>
+          <div class="qs-step">
+            <span class="qs-step__num">2</span>
+            <span class="qs-step__emoji">🎨</span>
+            <p class="qs-step__title" data-i18n="mk_qs2_title">
+              Choose a Theme
+            </p>
+            <p class="qs-step__desc" data-i18n="mk_qs2_desc">
+              Pick Forest, Colorful, Kawaii, or Cosmic on first launch.
+            </p>
+          </div>
+          <div class="qs-step">
+            <span class="qs-step__num">3</span>
+            <span class="qs-step__emoji">🎂</span>
+            <p class="qs-step__title" data-i18n="mk_qs3_title">
+              Select Your Age
+            </p>
+            <p class="qs-step__desc" data-i18n="mk_qs3_desc">
+              Choose age 3–10. The app adjusts difficulty automatically.
+            </p>
+          </div>
+          <div class="qs-step">
+            <span class="qs-step__num">4</span>
+            <span class="qs-step__emoji">🚀</span>
+            <p class="qs-step__title" data-i18n="mk_qs4_title">Start Playing</p>
+            <p class="qs-step__desc" data-i18n="mk_qs4_desc">
+              Tap any game mode on the Home screen and solve math problems!
+            </p>
+          </div>
+        </div>
 
+        <!-- TOC -->
+        <p
+          class="section-label"
+          style="margin-top: 48px"
+          data-i18n="mk_toc_label"
+        >
+          All Screens
+        </p>
+        <h3
+          class="section-title"
+          style="font-size: clamp(20px, 3vw, 28px); margin-bottom: 4px"
+          data-i18n="mk_toc_title"
+        >
+          Every feature explained
+        </h3>
+        <p
+          style="color: var(--text-muted); font-size: 15px; margin-bottom: 0"
+          data-i18n="mk_toc_sub"
+        >
+          Tap any card to read the full guide for that screen.
+        </p>
+
+        <div class="toc-grid">
+          <a href="guide/theme.html" class="toc-card">
+            <span class="toc-card__emoji">🎨</span>
+            <p class="toc-card__name" data-i18n="toc_theme_name">
+              Theme Selection
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_theme_desc">
+              4 visual themes — Forest, Colorful, Kawaii, Cosmic
+            </p>
+          </a>
+          <a href="guide/age.html" class="toc-card">
+            <span class="toc-card__emoji">🎂</span>
+            <p class="toc-card__name" data-i18n="toc_age_name">Age Selection</p>
+            <p class="toc-card__desc" data-i18n="toc_age_desc">
+              7 age groups (3–10) with auto-adjusted difficulty
+            </p>
+          </a>
+          <a href="guide/home.html" class="toc-card">
+            <span class="toc-card__emoji">🏠</span>
+            <p class="toc-card__name" data-i18n="toc_home_name">Home Screen</p>
+            <p class="toc-card__desc" data-i18n="toc_home_desc">
+              Player profile, XP, daily progress, and all 6 modes
+            </p>
+          </a>
+          <a href="guide/daily.html" class="toc-card">
+            <span class="toc-card__emoji">🌟</span>
+            <p class="toc-card__name" data-i18n="toc_daily_name">
+              Daily Challenge
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_daily_desc">
+              A new set of questions every day — track your streak
+            </p>
+          </a>
+          <a href="guide/practice.html" class="toc-card">
+            <span class="toc-card__emoji">🧩</span>
+            <p class="toc-card__name" data-i18n="toc_practice_name">
+              Practice Mode
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_practice_desc">
+              Choose your operation and practice at your own pace
+            </p>
+          </a>
+          <a href="guide/speed.html" class="toc-card">
+            <span class="toc-card__emoji">🚀</span>
+            <p class="toc-card__name" data-i18n="toc_speed_name">Speed Mode</p>
+            <p class="toc-card__desc" data-i18n="toc_speed_desc">
+              Race against a timer — answer as fast as you can
+            </p>
+          </a>
+          <a href="guide/mixed.html" class="toc-card">
+            <span class="toc-card__emoji">🎲</span>
+            <p class="toc-card__name" data-i18n="toc_mixed_name">
+              Mixed Challenge
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_mixed_desc">
+              All operations mixed randomly — the ultimate test
+            </p>
+          </a>
+          <a href="guide/mistakes.html" class="toc-card">
+            <span class="toc-card__emoji">❌</span>
+            <p class="toc-card__name" data-i18n="toc_mistakes_name">
+              Mistakes Practice
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_mistakes_desc">
+              Replay every question you got wrong until you master it
+            </p>
+          </a>
+          <a href="guide/battle.html" class="toc-card">
+            <span class="toc-card__emoji">⚔️</span>
+            <p class="toc-card__name" data-i18n="toc_battle_name">
+              Battle Mode
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_battle_desc">
+              2-player head-to-head math duel on one device
+            </p>
+          </a>
+          <a href="guide/result.html" class="toc-card">
+            <span class="toc-card__emoji">🏆</span>
+            <p class="toc-card__name" data-i18n="toc_result_name">
+              Results Screen
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_result_desc">
+              Stars, score, accuracy, and coins earned after each session
+            </p>
+          </a>
+          <a href="guide/statistics.html" class="toc-card">
+            <span class="toc-card__emoji">📊</span>
+            <p class="toc-card__name" data-i18n="toc_stats_name">Statistics</p>
+            <p class="toc-card__desc" data-i18n="toc_stats_desc">
+              Accuracy ring, weekly chart, heatmap calendar, all stats
+            </p>
+          </a>
+          <a href="guide/profile.html" class="toc-card">
+            <span class="toc-card__emoji">👤</span>
+            <p class="toc-card__name" data-i18n="toc_profile_name">Profile</p>
+            <p class="toc-card__desc" data-i18n="toc_profile_desc">
+              Your rank, level, XP progress, and lifetime records
+            </p>
+          </a>
+          <a href="guide/shop.html" class="toc-card">
+            <span class="toc-card__emoji">🛒</span>
+            <p class="toc-card__name" data-i18n="toc_shop_name">Shop</p>
+            <p class="toc-card__desc" data-i18n="toc_shop_desc">
+              Spend coins on avatars and backgrounds to personalise
+            </p>
+          </a>
+          <a href="guide/settings.html" class="toc-card">
+            <span class="toc-card__emoji">⚙️</span>
+            <p class="toc-card__name" data-i18n="toc_settings_name">Settings</p>
+            <p class="toc-card__desc" data-i18n="toc_settings_desc">
+              Sound, language, speed timer, theme, daily limit
+            </p>
+          </a>
+          <a href="guide/parent.html" class="toc-card">
+            <span class="toc-card__emoji">👨‍👩‍👧</span>
+            <p class="toc-card__name" data-i18n="toc_parent_name">
+              Parent Dashboard
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_parent_desc">
+              PIN-protected parental controls and child stats overview
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer
+      style="
+        border-top: 1px solid var(--border);
+        margin-top: 64px;
+        padding: 32px 24px;
+        text-align: center;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <a
+          href="index.html"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+          "
+        >
+          <img
+            src="img/logo-biemtech.png"
+            alt="BieMTech"
+            style="height: 22px; opacity: 0.7"
+          />
+        </a>
+        <p
+          style="
+            font-size: 13px;
+            color: var(--text-dim);
+            margin: 0;
+            line-height: 1.7;
+          "
+        >
+          <a
+            href="index.html"
+            style="
+              color: var(--text-muted);
+              text-decoration: none;
+              font-weight: 600;
+            "
+            >BieMTech</a
+          >
+          &nbsp;·&nbsp;
+          <a
+            href="index.html#about"
+            style="color: var(--text-muted); text-decoration: none"
+            >Bahram &amp; Mehman Ismayilov</a
+          >
+        </p>
+        <p style="font-size: 12px; color: var(--text-dim); margin: 0">
+          Support:
+          <a
+            href="mailto:mathkids@biemtech.com"
+            style="color: var(--primary); text-decoration: none"
+            >mathkids@biemtech.com</a
+          >
+        </p>
+        <p
+          style="
+            font-size: 11px;
+            color: var(--text-dim);
+            margin: 4px 0 0;
+            opacity: 0.6;
+          "
+          data-i18n="footer_copy"
+        >
+          © 2026 BieMTech. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
-  </body>
+  <script src="i18n.js"></script>
+  <script src="guide-i18n.js"></script>
 </html>

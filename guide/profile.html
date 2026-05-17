@@ -1,0 +1,342 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="View your rank, level, XP progress, editable player name, avatar, and all-time personal records."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_profile_title"
+            >Profile</span
+          >
+        </div>
+        <span class="guide-hero__icon">👤</span>
+        <h1 class="guide-hero__title" data-i18n="guide_profile_title">
+          Profile
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_profile_sub">
+          Your personal identity card — see your rank, level, XP progress,
+          lifetime records, and customise your name and avatar.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="profile_s1_h">
+                <span class="section-emoji">🖼️</span> Avatar &amp; Rank Card
+              </h2>
+              <p data-i18n="profile_s1_p">
+                At the top of the screen, a large circular avatar is displayed
+                inside a gradient border coloured by your current rank. Below
+                the avatar you'll see:
+              </p>
+              <ul>
+                <li data-i18n="profile_s1_li1">
+                  <strong>Rank badge</strong> — ✦ Rank Name (e.g. "Math Rookie",
+                  "Number Ninja")
+                </li>
+                <li data-i18n="profile_s1_li2">
+                  <strong>Level</strong> — your current numeric level (Level 1,
+                  Level 2, …)
+                </li>
+              </ul>
+              <p data-i18n="profile_s1_p2">
+                The avatar displays the emoji or graphic you have equipped from
+                the <a href="shop.html" style="color: var(--primary)">Shop</a>.
+                Tap the avatar or the Shop shortcut button to open the Shop and
+                change it.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="profile_s2_h">
+                <span class="section-emoji">✏️</span> Player Name
+              </h2>
+              <p data-i18n="profile_s2_p">
+                Your display name is fully editable:
+              </p>
+              <div class="step-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-body">
+                    <h3 data-i18n="profile_step1_h">
+                      Tap the name input field
+                    </h3>
+                    <p data-i18n="profile_step1_p">
+                      The keyboard appears. The current name is pre-filled and
+                      ready to edit.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-body">
+                    <h3 data-i18n="profile_step2_h">Type your new name</h3>
+                    <p data-i18n="profile_step2_p">
+                      Maximum 20 characters. Any combination of letters,
+                      numbers, and symbols is allowed.
+                    </p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-body">
+                    <h3 data-i18n="profile_step3_h">Tap "Save Name"</h3>
+                    <p data-i18n="profile_step3_p">
+                      The button shows a brief saving state, then confirms the
+                      change. Your new name immediately appears on the Home
+                      screen header card.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="profile_s3_h">
+                <span class="section-emoji">⚡</span> XP &amp; Level Progress
+              </h2>
+              <p data-i18n="profile_s3_p">
+                The Experience card shows a detailed breakdown of your
+                progression:
+              </p>
+              <ul>
+                <li data-i18n="profile_s3_li1">
+                  <strong>Total XP</strong> — all experience points earned
+                  across every session ever played.
+                </li>
+                <li data-i18n="profile_s3_li2">
+                  <strong>Progress bar</strong> — animated fill showing how far
+                  you are toward the next level.
+                </li>
+                <li data-i18n="profile_s3_li3">
+                  <strong>"X / Y XP · Z%"</strong> — exact numbers so you always
+                  know how close the next level is.
+                </li>
+              </ul>
+              <div class="info-box">
+                <span class="info-box__icon">⚡</span>
+                <span class="info-box__text" data-i18n="profile_s3_info"
+                  >You earn XP for every correct answer in every mode.
+                  Higher-difficulty questions award more XP per correct
+                  answer.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="profile_s4_h">
+                <span class="section-emoji">📋</span> Lifetime Stats Grid
+              </h2>
+              <p data-i18n="profile_s4_p">
+                Six stat tiles show your all-time personal records:
+              </p>
+              <div class="stat-grid">
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">⭐</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="profile_total_label">
+                      Total Score
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_total_desc">
+                      Sum of all points from every session played.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">🏆</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="profile_best_label">
+                      Best Score
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_best_desc">
+                      Highest score achieved in a single session.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">⚡</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="profile_speed_label">
+                      Best Speed Score
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_speed_desc">
+                      Your personal record from Speed Mode sessions.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">🔥</span>
+                  <div>
+                    <p
+                      class="stat-tile__label"
+                      data-i18n="profile_streak_label"
+                    >
+                      Daily Streak
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_streak_desc">
+                      How many consecutive days you've played.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">💎</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="profile_coins_label">
+                      Coins
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_coins_desc">
+                      Current coin balance available to spend in the Shop.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">🎂</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="profile_age_label">
+                      Age Group
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="profile_age_desc">
+                      Your currently selected age group.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="profile_s5_h">
+                <span class="section-emoji">🛍️</span> Customise in Shop
+              </h2>
+              <p data-i18n="profile_s5_p">
+                A "Customize in Shop" button at the bottom of the Profile screen
+                is a direct shortcut to the
+                <a href="shop.html" style="color: var(--primary)">Shop</a> where
+                you can unlock new avatars and backgrounds using your coins.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-profile.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-profile.png"
+                  alt="Profile Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="statistics.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_stats_title"
+                >Statistics</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="shop.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_shop_title"
+                >Shop</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

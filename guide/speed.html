@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Mode — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Race against the clock — answer as many questions as possible before time runs out and earn speed bonuses."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_speed_title"
+            >Speed Mode</span
+          >
+        </div>
+        <span class="guide-hero__icon">🚀</span>
+        <h1 class="guide-hero__title" data-i18n="guide_speed_title">
+          Speed Mode
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_speed_sub">
+          The clock is ticking! Answer as many questions as you can before time
+          runs out — and the faster you answer, the bigger your bonus.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="speed_s1_h">
+                <span class="section-emoji">⏱️</span> How Speed Mode works
+              </h2>
+              <p data-i18n="speed_s1_p">
+                Speed Mode starts a countdown timer the moment the first
+                question appears. Every correct answer earns points plus a speed
+                bonus based on how quickly you answered. The session ends
+                automatically when the timer reaches zero, then the app shows
+                your results.
+              </p>
+              <p data-i18n="speed_s1_p2">
+                There is no fixed question count — you answer as many as you
+                physically can before the time expires.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="speed_s2_h">
+                <span class="section-emoji">⚙️</span> Timer duration
+              </h2>
+              <p data-i18n="speed_s2_p">
+                The default duration is 30 seconds, but you can change it in
+                <a href="settings.html" style="color: var(--primary)"
+                  >Settings → Speed Mode Duration</a
+                >:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">⚡</span>
+                  <p class="feature-card__title" data-i18n="speed_20s_title">
+                    20 seconds
+                  </p>
+                  <p class="feature-card__desc" data-i18n="speed_20s_desc">
+                    Extremely fast. Only for confident, quick thinkers. Every
+                    second counts.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🚀</span>
+                  <p class="feature-card__title" data-i18n="speed_30s_title">
+                    30 seconds
+                  </p>
+                  <p class="feature-card__desc" data-i18n="speed_30s_desc">
+                    The default. A balanced challenge for most ages and skill
+                    levels.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">⏳</span>
+                  <p class="feature-card__title" data-i18n="speed_40s_title">
+                    40 seconds
+                  </p>
+                  <p class="feature-card__desc" data-i18n="speed_40s_desc">
+                    A little more breathing room. Good for practising speed
+                    without panic.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon">🕐</span>
+                  <p class="feature-card__title" data-i18n="speed_60s_title">
+                    60 seconds
+                  </p>
+                  <p class="feature-card__desc" data-i18n="speed_60s_desc">
+                    Extended run. Aim for a high question count and build up
+                    your Best Speed Score.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="speed_s3_h">
+                <span class="section-emoji">💨</span> Speed Bonus
+              </h2>
+              <p data-i18n="speed_s3_p">
+                Each correct answer earns base points <em>plus</em> a speed
+                bonus. The faster you tap the correct answer after the question
+                appears, the higher the bonus. An answer in under 2 seconds
+                earns the maximum bonus; slow answers still earn base points but
+                no bonus.
+              </p>
+              <div class="info-box">
+                <span class="info-box__icon">🏆</span>
+                <span class="info-box__text" data-i18n="speed_s3_info"
+                  >Your <strong>Best Speed Score</strong> is tracked separately
+                  in Statistics — try to beat your personal record every
+                  time!</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="speed_s4_h">
+                <span class="section-emoji">🎮</span> On-screen HUD
+              </h2>
+              <ul>
+                <li data-i18n="speed_s4_li1">
+                  The <strong>progress bar doubles as a timer bar</strong> — it
+                  depletes left-to-right as seconds pass.
+                </li>
+                <li data-i18n="speed_s4_li2">
+                  A <strong>seconds counter</strong> in the top-centre counts
+                  down visually.
+                </li>
+                <li data-i18n="speed_s4_li3">
+                  Score updates live in the top-right with each correct answer.
+                </li>
+                <li data-i18n="speed_s4_li4">
+                  Streak and bonus-diamonds badges appear when you hit
+                  milestones mid-run.
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="speed_s5_h">
+                <span class="section-emoji">🏁</span> After time expires
+              </h2>
+              <p data-i18n="speed_s5_p">
+                When the countdown hits zero, the session ends and the
+                <a href="result.html" style="color: var(--primary)"
+                  >Results Screen</a
+                >
+                shows your total score, accuracy, how many questions you
+                answered, and the total time of the run. Your best speed score
+                is automatically updated if this run beats it.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-speed.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-speed.png"
+                  alt="Speed Mode Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="practice.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_practice_title"
+                >Practice Mode</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="mixed.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_mixed_title"
+                >Mixed Challenge</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

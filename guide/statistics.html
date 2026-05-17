@@ -1,0 +1,449 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Detailed accuracy ring, 8 stat tiles, weekly bar chart, and monthly activity heatmap — all your progress in one place."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_stats_title"
+            >Statistics</span
+          >
+        </div>
+        <span class="guide-hero__icon">📊</span>
+        <h1 class="guide-hero__title" data-i18n="guide_stats_title">
+          Statistics
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_stats_sub">
+          Your complete math progress at a glance — accuracy ring, 8 key stats,
+          weekly chart, and a month-by-month activity heatmap.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="stats_s1_h">
+                <span class="section-emoji">🔘</span> Age Filter Pills
+              </h2>
+              <p data-i18n="stats_s1_p">
+                A row of horizontally-scrollable pills sits at the top of the
+                screen. Tap a pill to filter all statistics to a specific age
+                group, or tap <strong>All</strong> to see your combined lifetime
+                data across every age you've played.
+              </p>
+              <div class="mode-pill-list">
+                <span class="mode-pill mode-pill--active"
+                  ><span class="pill-emoji">📊</span> All</span
+                >
+                <span class="mode-pill">3</span>
+                <span class="mode-pill">4</span>
+                <span class="mode-pill">5</span>
+                <span class="mode-pill">6</span>
+                <span class="mode-pill">7</span>
+                <span class="mode-pill">8</span>
+                <span class="mode-pill">9</span>
+                <span class="mode-pill">10</span>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="stats_s2_h">
+                <span class="section-emoji">🎯</span> Accuracy Ring
+              </h2>
+              <p data-i18n="stats_s2_p">
+                A large circular ring in the centre of the screen shows your
+                overall accuracy percentage. The ring colour signals performance
+                level:
+              </p>
+              <div
+                class="feature-grid feature-grid--3"
+                style="grid-template-columns: 1fr 1fr 1fr"
+              >
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(76, 175, 80, 0.5)"
+                >
+                  <span class="feature-card__icon" style="color: #4caf50"
+                    >●</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_green_title">
+                    Green — ≥ 80%
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_green_desc">
+                    Strong performer. You're getting most questions right.
+                  </p>
+                </div>
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(255, 152, 0, 0.5)"
+                >
+                  <span class="feature-card__icon" style="color: #ff9800"
+                    >●</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_orange_title">
+                    Orange — 50–79%
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_orange_desc">
+                    Room to improve. Try Mistakes Practice for the weak spots.
+                  </p>
+                </div>
+                <div
+                  class="feature-card"
+                  style="border-color: rgba(244, 67, 54, 0.5)"
+                >
+                  <span class="feature-card__icon" style="color: #f44336"
+                    >●</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_red_title">
+                    Red — &lt; 50%
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_red_desc">
+                    Keep practising. Focus on one operation at a time.
+                  </p>
+                </div>
+              </div>
+              <p style="margin-top: 12px" data-i18n="stats_s2_p2">
+                Below the ring, three smaller values show:
+                <strong>Correct</strong> (green), <strong>Wrong</strong> (red),
+                and <strong>Total</strong> (blue) question counts.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="stats_s3_h">
+                <span class="section-emoji">🗂️</span> The 8 Stat Tiles
+              </h2>
+              <div class="stat-grid">
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">🔥</span>
+                  <div>
+                    <p
+                      class="stat-tile__label"
+                      data-i18n="stats_daily_streak_label"
+                    >
+                      Daily Streak
+                    </p>
+                    <p
+                      class="stat-tile__desc"
+                      data-i18n="stats_daily_streak_desc"
+                    >
+                      Consecutive days you have played at least one session.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">🏆</span>
+                  <div>
+                    <p
+                      class="stat-tile__label"
+                      data-i18n="stats_best_score_label"
+                    >
+                      Best Score
+                    </p>
+                    <p
+                      class="stat-tile__desc"
+                      data-i18n="stats_best_score_desc"
+                    >
+                      Your highest score across all single sessions ever played.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">📅</span>
+                  <div>
+                    <p
+                      class="stat-tile__label"
+                      data-i18n="stats_login_streak_label"
+                    >
+                      Login Streak
+                    </p>
+                    <p
+                      class="stat-tile__desc"
+                      data-i18n="stats_login_streak_desc"
+                    >
+                      Consecutive days you have opened the app, regardless of
+                      playing.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">📆</span>
+                  <div>
+                    <p
+                      class="stat-tile__label"
+                      data-i18n="stats_login_days_label"
+                    >
+                      Total Login Days
+                    </p>
+                    <p
+                      class="stat-tile__desc"
+                      data-i18n="stats_login_days_desc"
+                    >
+                      Lifetime count of unique days you have opened Math Kids.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">💎</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="stats_coins_label">
+                      Coins
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="stats_coins_desc">
+                      Your current coin balance available to spend in the Shop.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">✨</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="stats_level_label">
+                      Level
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="stats_level_desc">
+                      Your current player level based on total XP accumulated.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">⚡</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="stats_xp_label">
+                      Total XP
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="stats_xp_desc">
+                      Total experience points earned across all modes and
+                      sessions.
+                    </p>
+                  </div>
+                </div>
+                <div class="stat-tile">
+                  <span class="stat-tile__icon">⚡</span>
+                  <div>
+                    <p class="stat-tile__label" data-i18n="stats_speed_label">
+                      Best Speed Score
+                    </p>
+                    <p class="stat-tile__desc" data-i18n="stats_speed_desc">
+                      Your personal record from Speed Mode runs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="stats_s4_h">
+                <span class="section-emoji">📈</span> Level Progress Section
+              </h2>
+              <p data-i18n="stats_s4_p">
+                Below the stat tiles, a dedicated progress card shows:
+              </p>
+              <ul>
+                <li data-i18n="stats_s4_li1">
+                  Your rank emoji and rank name (e.g. 🧮 "Math Rookie")
+                </li>
+                <li data-i18n="stats_s4_li2">Level number and current XP</li>
+                <li data-i18n="stats_s4_li3">
+                  An animated progress bar filling toward the next level
+                </li>
+                <li data-i18n="stats_s4_li4">
+                  Text: "X / Y XP · Z%" showing exact progress numbers
+                </li>
+              </ul>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="stats_s5_h">
+                <span class="section-emoji">📅</span> Weekly Bar Chart
+              </h2>
+              <p data-i18n="stats_s5_p">
+                Seven coloured bars show how many questions you solved on each
+                of the past 7 days (Mon–Sun). Each bar is colour-coded and
+                labelled with the day abbreviation below it. Hover or tap a bar
+                to see the exact count for that day.
+              </p>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="stats_s6_h">
+                <span class="section-emoji">🗓️</span> Activity Heatmap Calendar
+              </h2>
+              <p data-i18n="stats_s6_p">
+                A full-month calendar grid shows your activity intensity using
+                five shades:
+              </p>
+              <div class="feature-grid">
+                <div class="feature-card">
+                  <span class="feature-card__icon">⬜</span>
+                  <p class="feature-card__title" data-i18n="stats_heat0_title">
+                    0 questions
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_heat0_desc">
+                    Empty day — no activity recorded.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon" style="color: #c6efce"
+                    >🟩</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_heat1_title">
+                    1 – 4 questions
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_heat1_desc">
+                    Light green — a little activity.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon" style="color: #70c174"
+                    >🟩</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_heat2_title">
+                    5 – 9 questions
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_heat2_desc">
+                    Medium green — a solid session.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <span class="feature-card__icon" style="color: #339933"
+                    >🟩</span
+                  >
+                  <p class="feature-card__title" data-i18n="stats_heat3_title">
+                    10 – 19 questions
+                  </p>
+                  <p class="feature-card__desc" data-i18n="stats_heat3_desc">
+                    Dark green — very active day.
+                  </p>
+                </div>
+              </div>
+              <p style="margin-top: 12px" data-i18n="stats_s6_p2">
+                Use the <strong>← →</strong> arrows to navigate between months.
+                Today's date is outlined in white for easy reference. A legend
+                at the bottom maps the colour scale (0 → 20+).
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-stats.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-stats.png"
+                  alt="Statistics Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="result.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_result_title"
+                >Results Screen</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="profile.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_profile_title"
+                >Profile</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

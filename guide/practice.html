@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Mode — Math Kids Guide — BieMTech</title>
+    <meta
+      name="description"
+      content="Pick your math operation and practice at your own pace with no time pressure."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_practice_title"
+            >Practice Mode</span
+          >
+        </div>
+        <span class="guide-hero__icon">🧩</span>
+        <h1 class="guide-hero__title" data-i18n="guide_practice_title">
+          Practice Mode
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_practice_sub">
+          Choose exactly which operation you want to practise. No timer, no
+          pressure — just focused, purposeful math training.
+        </p>
+      </div>
+    </section>
+
+    <section class="guide-body">
+      <div class="container">
+        <div class="guide-layout">
+          <div class="guide-content">
+            <div class="guide-section">
+              <h2 data-i18n="practice_s1_h">
+                <span class="section-emoji">🎯</span> Setup screen
+              </h2>
+              <p data-i18n="practice_s1_p">
+                Before the quiz starts (for ages 6 and above), a setup screen
+                appears with a row of operation pills. Tap one or more to select
+                the type of math you want, then press <strong>Start</strong>.
+              </p>
+              <p data-i18n="practice_s1_p2">
+                Children under age 6 skip this screen — the app starts the quiz
+                automatically using operations appropriate for their age.
+              </p>
+              <div class="mode-pill-list">
+                <span class="mode-pill mode-pill--active"
+                  ><span class="pill-emoji">🔢</span> All</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">➕</span> Add</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">➖</span> Subtract</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">✖️</span> Multiply</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">➗</span> Divide</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">🔢</span> Triple</span
+                >
+                <span class="mode-pill"
+                  ><span class="pill-emoji">🔣</span> Compound</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="practice_s2_h">
+                <span class="section-emoji">🔓</span> Which operations unlock at
+                which age?
+              </h2>
+              <div class="ops-table-wrap">
+                <table class="ops-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="practice_th_op">Operation</th>
+                      <th data-i18n="practice_th_age">Unlocks at age</th>
+                      <th data-i18n="practice_th_example">Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-i18n="practice_op_add">➕ Addition</td>
+                      <td>3+</td>
+                      <td>4 + 3 = ?</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="practice_op_sub">➖ Subtraction</td>
+                      <td>6+</td>
+                      <td>9 − 4 = ?</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="practice_op_mul">✖️ Multiplication</td>
+                      <td>7+</td>
+                      <td>6 × 3 = ?</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="practice_op_div">➗ Division</td>
+                      <td>8+</td>
+                      <td>12 ÷ 4 = ?</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="practice_op_triple">🔢 Triple ops</td>
+                      <td>7–9</td>
+                      <td>2 + 3 + 4 = ?</td>
+                    </tr>
+                    <tr>
+                      <td data-i18n="practice_op_compound">🔣 Compound ops</td>
+                      <td>10+</td>
+                      <td>4 × 3 − 5 = ?</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="info-box">
+                <span class="info-box__icon">🔒</span>
+                <span class="info-box__text" data-i18n="practice_locked_info"
+                  >Operation pills for unlocked operations are greyed out and
+                  unselectable. Change your age group to unlock them.</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-section">
+              <h2 data-i18n="practice_s3_h">
+                <span class="section-emoji">🏁</span> During &amp; after the
+                session
+              </h2>
+              <p data-i18n="practice_s3_p">
+                The quiz runs like any other mode — progress bar at the top,
+                live score, streak badge. When all questions are answered the
+                <a href="result.html" style="color: var(--primary)"
+                  >Results Screen</a
+                >
+                appears automatically.
+              </p>
+              <ul>
+                <li data-i18n="practice_s3_li1">
+                  Selecting <strong>All</strong> includes every operation
+                  available for your age.
+                </li>
+                <li data-i18n="practice_s3_li2">
+                  Only one operation can be selected at a time.
+                </li>
+                <li data-i18n="practice_s3_li3">
+                  Your coin and XP earnings from Practice sessions count toward
+                  your totals.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="guide-phone-wrap">
+            <div class="guide-phone">
+              <div class="guide-phone__screen">
+                <div class="phone-placeholder">
+                  <span class="phone-placeholder__icon">📸</span>
+                  <p class="phone-placeholder__text">
+                    Add your screenshot here
+                  </p>
+                  <span class="phone-placeholder__file"
+                    >guide/img/screen-practice.png</span
+                  >
+                </div>
+                <img
+                  src="img/screen-practice.png"
+                  alt="Practice Mode Screen"
+                  class="phone-img"
+                  onerror="this.style.display = 'none'"
+                  onload="this.previousElementSibling.style.display = 'none'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <a href="daily.html" class="guide-nav__btn">
+            <span class="guide-nav__arrow">←</span>
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_prev"
+                >Previous</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_daily_title"
+                >Daily Challenge</span
+              >
+            </span>
+          </a>
+          <a href="index.html" class="guide-nav__home"
+            >↑ <span data-i18n="guide_index">Guide Index</span></a
+          >
+          <a href="speed.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="guide_next">Next</span>
+              <span class="guide-nav__name" data-i18n="guide_speed_title"
+                >Speed Mode</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>

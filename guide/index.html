@@ -1,0 +1,308 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Guide — Math Kids — BieMTech</title>
+    <meta
+      name="description"
+      content="Complete guide to Math Kids app. Learn every screen, mode, and feature."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="guide-style.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="../index.html" class="navbar__logo">
+          <img
+            src="../img/logo-biemtech.png"
+            alt="BieMTech"
+            class="logo-mark"
+          />
+        </a>
+        <nav class="navbar__nav">
+          <a href="../index.html#about" data-i18n="nav_about">About</a>
+          <a href="../index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="../privacy/math-kids/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">&#127468;&#127463; EN</option>
+              <option value="az">&#127462;&#127487; AZ</option>
+              <option value="ru">&#127479;&#127482; RU</option>
+              <option value="tr">&#127481;&#127479; TR</option>
+              <option value="de">&#127465;&#127466; DE</option>
+              <option value="fr">&#127467;&#127479; FR</option>
+              <option value="es">&#127466;&#127480; ES</option>
+              <option value="pt">&#127477;&#127481; PT</option>
+              <option value="it">&#127470;&#127481; IT</option>
+              <option value="ar">&#127480;&#127462; AR</option>
+              <option value="zh">&#127464;&#127475; ZH</option>
+              <option value="ja">&#127471;&#127477; JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="guide-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html" data-i18n="guide_breadcrumb_home">BieMTech</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../math-kids.html" data-i18n="guide_breadcrumb_mk"
+            >Math Kids</a
+          >
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current" data-i18n="guide_index_title"
+            >App Guide</span
+          >
+        </div>
+        <span class="guide-hero__icon">📖</span>
+        <h1 class="guide-hero__title" data-i18n="guide_index_title">
+          Math Kids — App Guide
+        </h1>
+        <p class="guide-hero__sub" data-i18n="guide_index_sub">
+          A complete walkthrough of every screen, mode, and feature inside the
+          Math Kids app. Pick a section to get started.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Start -->
+    <section class="guide-body" style="padding-bottom: 0">
+      <div class="container">
+        <p class="section-label" data-i18n="qs_label">Getting Started</p>
+        <h2
+          class="section-title"
+          style="font-size: clamp(22px, 3vw, 30px); margin-bottom: 8px"
+          data-i18n="qs_title"
+        >
+          Up and running in 4 steps
+        </h2>
+        <div class="quickstart">
+          <div class="qs-step">
+            <span class="qs-step__num">1</span>
+            <span class="qs-step__emoji">📥</span>
+            <p class="qs-step__title" data-i18n="mk_qs1_title">Download</p>
+            <p class="qs-step__desc" data-i18n="mk_qs1_desc">
+              Get Math Kids from Google Play — it's free.
+            </p>
+          </div>
+          <div class="qs-step">
+            <span class="qs-step__num">2</span>
+            <span class="qs-step__emoji">🎨</span>
+            <p class="qs-step__title" data-i18n="mk_qs2_title">
+              Choose a Theme
+            </p>
+            <p class="qs-step__desc" data-i18n="mk_qs2_desc">
+              Pick Forest, Colorful, Kawaii, or Cosmic on first launch.
+            </p>
+          </div>
+          <div class="qs-step">
+            <span class="qs-step__num">3</span>
+            <span class="qs-step__emoji">🎂</span>
+            <p class="qs-step__title" data-i18n="mk_qs3_title">
+              Select Your Age
+            </p>
+            <p class="qs-step__desc" data-i18n="mk_qs3_desc">
+              Choose age 3–10. The app adjusts difficulty automatically.
+            </p>
+          </div>
+          <div class="qs-step">
+            <span class="qs-step__num">4</span>
+            <span class="qs-step__emoji">🚀</span>
+            <p class="qs-step__title" data-i18n="mk_qs4_title">Start Playing</p>
+            <p class="qs-step__desc" data-i18n="mk_qs4_desc">
+              Tap any game mode on the Home screen and solve math problems!
+            </p>
+          </div>
+        </div>
+
+        <!-- TOC -->
+        <p class="section-label" data-i18n="qs_all_screens_label">
+          All Screens
+        </p>
+        <h2
+          class="section-title"
+          style="font-size: clamp(22px, 3vw, 30px); margin-bottom: 4px"
+          data-i18n="qs_all_screens_title"
+        >
+          Every feature explained
+        </h2>
+        <p
+          style="color: var(--text-muted); font-size: 15px; margin-bottom: 0"
+          data-i18n="qs_all_screens_sub"
+        >
+          Tap any card to read the full guide for that screen.
+        </p>
+
+        <div class="toc-grid">
+          <a href="theme.html" class="toc-card">
+            <span class="toc-card__emoji">🎨</span>
+            <p class="toc-card__name" data-i18n="toc_theme_name">
+              Theme Selection
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_theme_desc">
+              4 visual themes — Forest, Colorful, Kawaii, Cosmic
+            </p>
+          </a>
+          <a href="age.html" class="toc-card">
+            <span class="toc-card__emoji">🎂</span>
+            <p class="toc-card__name" data-i18n="toc_age_name">Age Selection</p>
+            <p class="toc-card__desc" data-i18n="toc_age_desc">
+              7 age groups (3–10) with auto-adjusted difficulty
+            </p>
+          </a>
+          <a href="home.html" class="toc-card">
+            <span class="toc-card__emoji">🏠</span>
+            <p class="toc-card__name" data-i18n="toc_home_name">Home Screen</p>
+            <p class="toc-card__desc" data-i18n="toc_home_desc">
+              Player profile, XP, daily progress, and all 6 modes
+            </p>
+          </a>
+          <a href="daily.html" class="toc-card">
+            <span class="toc-card__emoji">🌟</span>
+            <p class="toc-card__name" data-i18n="toc_daily_name">
+              Daily Challenge
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_daily_desc">
+              A new set of questions every day — track your streak
+            </p>
+          </a>
+          <a href="practice.html" class="toc-card">
+            <span class="toc-card__emoji">🧩</span>
+            <p class="toc-card__name" data-i18n="toc_practice_name">
+              Practice Mode
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_practice_desc">
+              Choose your operation and practice at your own pace
+            </p>
+          </a>
+          <a href="speed.html" class="toc-card">
+            <span class="toc-card__emoji">🚀</span>
+            <p class="toc-card__name" data-i18n="toc_speed_name">Speed Mode</p>
+            <p class="toc-card__desc" data-i18n="toc_speed_desc">
+              Race against a timer — answer as fast as you can
+            </p>
+          </a>
+          <a href="mixed.html" class="toc-card">
+            <span class="toc-card__emoji">🎲</span>
+            <p class="toc-card__name" data-i18n="toc_mixed_name">
+              Mixed Challenge
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_mixed_desc">
+              All operations mixed randomly — the ultimate test
+            </p>
+          </a>
+          <a href="mistakes.html" class="toc-card">
+            <span class="toc-card__emoji">❌</span>
+            <p class="toc-card__name" data-i18n="toc_mistakes_name">
+              Mistakes Practice
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_mistakes_desc">
+              Replay every question you got wrong until you master it
+            </p>
+          </a>
+          <a href="battle.html" class="toc-card">
+            <span class="toc-card__emoji">⚔️</span>
+            <p class="toc-card__name" data-i18n="toc_battle_name">
+              Battle Mode
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_battle_desc">
+              2-player head-to-head math duel on one device
+            </p>
+          </a>
+          <a href="result.html" class="toc-card">
+            <span class="toc-card__emoji">🏆</span>
+            <p class="toc-card__name" data-i18n="toc_result_name">
+              Results Screen
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_result_desc">
+              Stars, score, accuracy, and coins earned after each session
+            </p>
+          </a>
+          <a href="statistics.html" class="toc-card">
+            <span class="toc-card__emoji">📊</span>
+            <p class="toc-card__name" data-i18n="toc_stats_name">Statistics</p>
+            <p class="toc-card__desc" data-i18n="toc_stats_desc">
+              Accuracy ring, weekly chart, heatmap calendar, all stats
+            </p>
+          </a>
+          <a href="profile.html" class="toc-card">
+            <span class="toc-card__emoji">👤</span>
+            <p class="toc-card__name" data-i18n="toc_profile_name">Profile</p>
+            <p class="toc-card__desc" data-i18n="toc_profile_desc">
+              Your rank, level, XP progress, and lifetime records
+            </p>
+          </a>
+          <a href="shop.html" class="toc-card">
+            <span class="toc-card__emoji">🛒</span>
+            <p class="toc-card__name" data-i18n="toc_shop_name">Shop</p>
+            <p class="toc-card__desc" data-i18n="toc_shop_desc">
+              Spend coins on avatars and backgrounds to personalise
+            </p>
+          </a>
+          <a href="settings.html" class="toc-card">
+            <span class="toc-card__emoji">⚙️</span>
+            <p class="toc-card__name" data-i18n="toc_settings_name">Settings</p>
+            <p class="toc-card__desc" data-i18n="toc_settings_desc">
+              Sound, language, speed timer, theme, daily limit
+            </p>
+          </a>
+          <a href="parent.html" class="toc-card">
+            <span class="toc-card__emoji">👨‍👩‍👧</span>
+            <p class="toc-card__name" data-i18n="toc_parent_name">
+              Parent Dashboard
+            </p>
+            <p class="toc-card__desc" data-i18n="toc_parent_desc">
+              PIN-protected parental controls and child stats overview
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom nav -->
+    <nav class="guide-nav">
+      <div class="container">
+        <div class="guide-nav__inner">
+          <span class="guide-nav__btn guide-nav__btn--empty">‹</span>
+          <a
+            href="../math-kids.html"
+            class="guide-nav__home"
+            data-i18n="nav_back_to_mk"
+            >← Back to Math Kids</a
+          >
+          <a href="theme.html" class="guide-nav__btn">
+            <span>
+              <span class="guide-nav__label" data-i18n="nav_first_up"
+                >First up</span
+              >
+              <span class="guide-nav__name" data-i18n="guide_theme_title"
+                >Theme Selection</span
+              >
+            </span>
+            <span class="guide-nav__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script src="../i18n.js"></script>
+    <script src="../guide-i18n.js"></script>
+  </body>
+</html>
