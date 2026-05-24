@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Times Table Master — BieMTech</title>
+    <meta
+      name="description"
+      content="Times Table Master — learn and practise multiplication tables. Coming soon to Android by BieMTech."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <style>
+      /* ── TTM Theme Override ───────────────────────── */
+      :root {
+        --primary: #7a421f;
+        --primary-dim: rgba(122, 66, 31, 0.1);
+        --primary-glow: rgba(122, 66, 31, 0.25);
+        --bg: #fff3cf;
+        --bg-card: rgba(255, 243, 207, 0.92);
+        --bg-card2: rgba(255, 248, 220, 0.97);
+        --border: rgba(122, 66, 31, 0.12);
+        --text: #2a1005;
+        --text-muted: #5a341b;
+        --text-dim: #8a6040;
+      }
+      body {
+        background-color: #fff3cf;
+        background-image:
+          radial-gradient(
+            ellipse 80% 70% at 5% 10%,
+            rgba(122, 66, 31, 0.1) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse 70% 65% at 92% 85%,
+            rgba(201, 130, 55, 0.09) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse 60% 55% at 75% 15%,
+            rgba(201, 130, 55, 0.07) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse 50% 45% at 15% 80%,
+            rgba(122, 66, 31, 0.07) 0%,
+            transparent 55%
+          );
+      }
+      /* Navbar CTA override */
+      .btn-primary {
+        background: linear-gradient(135deg, #7a421f 0%, #c98237 100%);
+      }
+
+      /* ── Feature Grid ─────────────────────────────── */
+      .ttm-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 40px;
+      }
+      .ttm-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 28px 24px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow:
+          0 2px 20px rgba(122, 66, 31, 0.06),
+          inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        transition:
+          transform 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+      .ttm-card:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 10px 32px rgba(122, 66, 31, 0.13),
+          inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      }
+      .ttm-card__emoji {
+        font-size: 2.2rem;
+        line-height: 1;
+        margin-bottom: 14px;
+        display: block;
+      }
+      .ttm-card__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .ttm-card__desc {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ── Coming Soon chip ─────────────────────────── */
+      .badge--soon {
+        background: rgba(201, 130, 55, 0.14);
+        color: #7a421f;
+        border: 1px solid rgba(201, 130, 55, 0.32);
+        animation: pulse-badge 2.8s ease-in-out infinite;
+      }
+      @keyframes pulse-badge {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(201, 130, 55, 0);
+        }
+        50% {
+          box-shadow: 0 0 0 8px rgba(201, 130, 55, 0);
+        }
+      }
+
+      /* ── Hero accent line ─────────────────────────── */
+      .ttm-divider {
+        width: 44px;
+        height: 3px;
+        background: linear-gradient(90deg, #7a421f, #c98237);
+        border-radius: 2px;
+        margin: 14px auto 18px;
+      }
+
+      /* ── Countdown-style table decoration ─────────── */
+      .ttm-table-hint {
+        display: inline-flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0 0;
+      }
+      .ttm-table-hint span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: rgba(122, 66, 31, 0.08);
+        border: 1px solid rgba(122, 66, 31, 0.15);
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: #7a421f;
+        transition: background 0.22s;
+      }
+      .ttm-table-hint span:hover {
+        background: rgba(122, 66, 31, 0.15);
+      }
+
+      /* ── Notify CTA ───────────────────────────────── */
+      .ttm-notify {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 26px;
+        border-radius: 24px;
+        background: linear-gradient(
+          135deg,
+          #7a421f 0%,
+          #9a5230 50%,
+          #c98237 100%
+        );
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.92rem;
+        text-decoration: none;
+        box-shadow: 0 4px 18px rgba(122, 66, 31, 0.3);
+        transition: all 0.22s ease;
+        letter-spacing: 0.01em;
+      }
+      .ttm-notify:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(122, 66, 31, 0.4);
+        color: #fff;
+      }
+
+      /* ── Privacy footer strip ─────────────────────── */
+      .ttm-footer-strip {
+        text-align: center;
+        padding: 24px 20px;
+        font-size: 0.84rem;
+        color: var(--text-dim);
+        border-top: 1px solid var(--border);
+      }
+      .ttm-footer-strip a {
+        color: var(--primary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .ttm-footer-strip a:hover {
+        color: #c98237;
+      }
+
+      /* ── Floating pencil decoration ───────────────── */
+      .ttm-pencil-row {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        opacity: 0.45;
+        margin-top: 32px;
+        user-select: none;
+        pointer-events: none;
+      }
+      .ttm-pencil-row span {
+        font-size: 1.6rem;
+      }
+
+      /* ── Equation strip ───────────────────────────── */
+      .eq-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 22px 20px;
+        background: rgba(122, 66, 31, 0.04);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        margin: 0;
+      }
+      .eq-strip span {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--text-muted);
+        opacity: 0.6;
+        white-space: nowrap;
+        font-family: "SFMono-Regular", Consolas, monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ── Navbar ─────────────────────────────────────── -->
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
+        </a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a>
+          <a
+            href="privacy/times-table-master/index.html"
+            data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">🇬🇧 EN</option>
+              <option value="az">🇦🇿 AZ</option>
+              <option value="ru">🇷🇺 RU</option>
+              <option value="tr">🇹🇷 TR</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇵🇹 PT</option>
+              <option value="it">🇮🇹 IT</option>
+              <option value="ar">🇸🇦 AR</option>
+              <option value="zh">🇨🇳 ZH</option>
+              <option value="ja">🇯🇵 JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Hero ───────────────────────────────────────── -->
+    <main style="background: var(--bg); padding: 40px 24px 56px">
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0;
+        "
+      >
+        <!-- Icon -->
+        <div
+          style="position: relative; display: inline-block; margin-bottom: 24px"
+        >
+          <img
+            src="img/times_table_icon.png"
+            alt="Times Table Master"
+            style="
+              width: 150px;
+              height: 150px;
+              border-radius: 30px;
+              box-shadow: 0 10px 36px rgba(122, 66, 31, 0.28);
+              display: block;
+            "
+          />
+          <!-- small ✏️ badge -->
+          <span
+            style="
+              position: absolute;
+              bottom: -8px;
+              right: -8px;
+              font-size: 1.6rem;
+              filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.18));
+            "
+            >✏️</span
+          >
+        </div>
+
+        <!-- Status chip -->
+        <div
+          class="badge badge--soon"
+          style="display: inline-flex; margin-bottom: 16px"
+        >
+          ⏳ <span data-i18n="chip_dev">In Development</span>
+        </div>
+
+        <!-- Title -->
+        <h1
+          style="
+            font-size: clamp(30px, 6vw, 54px);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            line-height: 1.08;
+            color: var(--text);
+            margin: 0 0 6px;
+          "
+        >
+          Times Table Master
+        </h1>
+
+        <!-- Tagline -->
+        <p
+          data-i18n="ttm_page_tagline"
+          style="
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 600;
+            color: #7a421f;
+            margin: 0;
+            letter-spacing: -0.01em;
+          "
+        >
+          Learn the Times Tables
+        </p>
+
+        <div class="ttm-divider"></div>
+
+        <!-- Description -->
+        <p
+          data-i18n="ttm_page_desc"
+          style="
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 460px;
+            line-height: 1.75;
+            margin: 0 0 24px;
+          "
+        >
+          Learn and practise times tables through engaging games, speed
+          challenges, and progress tracking. Coming to Android soon.
+        </p>
+
+        <!-- CTA -->
+        <a
+          href="mailto:info@biemtech.com"
+          class="ttm-notify"
+          data-i18n="ttm_notify_btn"
+        >
+          Contact us to stay updated →
+        </a>
+
+        <!-- Times table pills -->
+        <div class="ttm-table-hint" aria-hidden="true">
+          <span>×2</span><span>×3</span><span>×4</span><span>×5</span>
+          <span>×6</span><span>×7</span><span>×8</span><span>×9</span>
+          <span>×10</span><span>×11</span><span>×12</span>
+        </div>
+
+        <!-- Pencil row decoration -->
+        <div class="ttm-pencil-row" aria-hidden="true">
+          <span>✏️</span><span>📐</span><span>📒</span><span>🖊️</span
+          ><span>📏</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- ── Equation strip ─────────────────────────────── -->
+    <div class="eq-strip" aria-hidden="true">
+      <span>3×4=12</span><span>7×8=56</span><span>6×9=54</span>
+      <span>4×4=16</span><span>9×9=81</span><span>12×7=84</span>
+      <span>5×6=30</span><span>8×8=64</span><span>11×4=44</span>
+      <span>7×7=49</span><span>3×9=27</span><span>6×6=36</span>
+    </div>
+
+    <!-- ── Features ───────────────────────────────────── -->
+    <section style="padding: 56px 0 64px">
+      <div class="container">
+        <p
+          class="section-label"
+          style="
+            text-align: center;
+            color: #7a421f;
+            border-color: rgba(122, 66, 31, 0.3);
+          "
+        >
+          Features
+        </p>
+        <h2
+          style="
+            text-align: center;
+            font-size: clamp(22px, 3.5vw, 34px);
+            font-weight: 800;
+            color: var(--text);
+            letter-spacing: -0.02em;
+            margin-top: 8px;
+          "
+        >
+          What's coming
+        </h2>
+
+        <div class="ttm-grid">
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">📖</span>
+            <div class="ttm-card__title">Learn Mode</div>
+            <div class="ttm-card__desc">
+              Step through each times table one by one with guided practice and
+              instant feedback.
+            </div>
+          </div>
+
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">🧠</span>
+            <div class="ttm-card__title">Practice &amp; Quiz</div>
+            <div class="ttm-card__desc">
+              Test yourself with timed and untimed quizzes across the tables you
+              choose.
+            </div>
+          </div>
+
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">⚡</span>
+            <div class="ttm-card__title">Speed Mode</div>
+            <div class="ttm-card__desc">
+              Beat the clock with rapid-fire questions. Great for sharpening
+              recall under pressure.
+            </div>
+          </div>
+
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">🎯</span>
+            <div class="ttm-card__title">Mixed Mode</div>
+            <div class="ttm-card__desc">
+              Random questions from all selected tables — the true test of
+              mastery.
+            </div>
+          </div>
+
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">🏆</span>
+            <div class="ttm-card__title">XP &amp; Progress</div>
+            <div class="ttm-card__desc">
+              Earn XP, coins, and level up as you practise. Track your streak
+              and keep the momentum.
+            </div>
+          </div>
+
+          <div class="ttm-card">
+            <span class="ttm-card__emoji">📊</span>
+            <div class="ttm-card__title">Accuracy Stats</div>
+            <div class="ttm-card__desc">
+              See your accuracy per table so you always know which ones need
+              more work.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Bottom info strip ──────────────────────────── -->
+    <div
+      style="
+        background: rgba(122, 66, 31, 0.05);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 28px 24px;
+        text-align: center;
+      "
+    >
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 32px;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div>
+          <p
+            style="
+              font-size: 0.78rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-dim);
+              margin-bottom: 4px;
+            "
+          >
+            Developer
+          </p>
+          <p style="font-size: 1rem; font-weight: 700; color: var(--text)">
+            <a href="index.html" style="color: var(--text)">BieMTech</a>
+          </p>
+        </div>
+        <div>
+          <p
+            style="
+              font-size: 0.78rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-dim);
+              margin-bottom: 4px;
+            "
+          >
+            Platform
+          </p>
+          <p style="font-size: 1rem; font-weight: 700; color: var(--text)">
+            Android
+          </p>
+        </div>
+        <div>
+          <p
+            style="
+              font-size: 0.78rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-dim);
+              margin-bottom: 4px;
+            "
+          >
+            Status
+          </p>
+          <p
+            style="font-size: 1rem; font-weight: 700; color: #7a421f"
+            data-i18n="chip_dev"
+          >
+            In Development
+          </p>
+        </div>
+        <div>
+          <p
+            style="
+              font-size: 0.78rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-dim);
+              margin-bottom: 4px;
+            "
+          >
+            Category
+          </p>
+          <p
+            style="font-size: 1rem; font-weight: 700; color: var(--text)"
+            data-i18n="chip_education"
+          >
+            Education
+          </p>
+        </div>
+        <div>
+          <p
+            style="
+              font-size: 0.78rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-dim);
+              margin-bottom: 4px;
+            "
+          >
+            Contact
+          </p>
+          <p style="font-size: 1rem; font-weight: 700; color: var(--text)">
+            <a href="mailto:info@biemtech.com" style="color: #7a421f"
+              >info@biemtech.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Footer ─────────────────────────────────────── -->
+    <div class="ttm-footer-strip">
+      &copy; 2026 BieMTech &nbsp;·&nbsp;
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="privacy/times-table-master/index.html" data-i18n="nav_privacy"
+        >Privacy Policy</a
+      >
+    </div>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

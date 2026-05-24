@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Times Table Master — Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Times Table Master by BieMTech."
+    />
+    <style>
+      /* ─── Reset & base ─── */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(122, 66, 31, 0.35) transparent;
+      }
+      html::-webkit-scrollbar {
+        width: 6px;
+      }
+      html::-webkit-scrollbar-thumb {
+        background: rgba(122, 66, 31, 0.35);
+        border-radius: 8px;
+      }
+      html::-webkit-scrollbar-thumb:hover {
+        background: rgba(122, 66, 31, 0.6);
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        background: #fff3cf;
+        color: #2a1005;
+        line-height: 1.65;
+        min-height: 100dvh;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* ─── Decorative orbs ─── */
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        filter: blur(80px);
+      }
+      body::before {
+        width: 400px;
+        height: 400px;
+        top: -80px;
+        left: -80px;
+        background: rgba(122, 66, 31, 0.18);
+      }
+      body::after {
+        width: 340px;
+        height: 340px;
+        bottom: -60px;
+        right: -60px;
+        background: rgba(201, 130, 55, 0.15);
+      }
+
+      /* ─── Animations ─── */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ─── Lang bar ─── */
+      .lang-bar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+        background: rgba(255, 243, 207, 0.88);
+        border-bottom: 1px solid rgba(122, 66, 31, 0.14);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .lang-bar__right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .lang-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(122, 66, 31, 0.18);
+        border-radius: 20px;
+        padding: 5px 12px;
+      }
+      .lang-pill select {
+        border: none;
+        background: transparent;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #2a1005;
+        cursor: pointer;
+        outline: none;
+        font-family: inherit;
+        min-width: 130px;
+      }
+
+      /* ─── Header ─── */
+      header {
+        text-align: center;
+        padding: 48px 20px 36px;
+        position: relative;
+        z-index: 1;
+        animation: fadeUp 0.5s ease both;
+      }
+      header h1 {
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        background: linear-gradient(
+          135deg,
+          #4a1f0a 0%,
+          #7a421f 55%,
+          #c98237 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .subtitle {
+        font-size: 1rem;
+        color: #5a341b;
+        margin-top: 6px;
+        font-weight: 500;
+      }
+
+      /* ─── Container ─── */
+      .container {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 20px 60px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ─── Cards ─── */
+      section.card {
+        background: rgba(255, 243, 207, 0.92);
+        border: 1px solid rgba(122, 66, 31, 0.14);
+        border-radius: 20px;
+        padding: 28px 30px;
+        margin-bottom: 16px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow:
+          0 2px 20px rgba(122, 66, 31, 0.06),
+          inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        animation: fadeUp 0.4s ease both;
+      }
+      section.card-contact {
+        background: rgba(122, 66, 31, 0.06);
+        border-color: rgba(122, 66, 31, 0.18);
+        text-align: center;
+      }
+
+      /* ─── Typography ─── */
+      h2 {
+        font-size: 1.08rem;
+        font-weight: 700;
+        color: #2a1005;
+        margin-bottom: 14px;
+        padding-left: 14px;
+        border-left: 3px solid #7a421f;
+        letter-spacing: -0.01em;
+      }
+      p {
+        font-size: 0.94rem;
+        color: #5a341b;
+        margin-bottom: 12px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      ul {
+        margin: 10px 0 12px 20px;
+        padding: 0;
+      }
+      li {
+        font-size: 0.94rem;
+        color: #5a341b;
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+      li::marker {
+        color: #7a421f;
+      }
+      strong {
+        color: #2a1005;
+        font-weight: 700;
+      }
+      a {
+        color: #7a421f;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        color: #c98237;
+      }
+
+      /* ─── Meta bar ─── */
+      .meta {
+        font-size: 0.86rem;
+        color: #5a341b;
+        margin-bottom: 18px;
+        padding: 12px 18px;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        display: block;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        animation: fadeUp 0.4s ease both;
+      }
+      .meta code {
+        background: rgba(201, 130, 55, 0.12);
+        color: #7a421f;
+        padding: 2px 7px;
+        border-radius: 6px;
+        font-size: 0.82rem;
+        font-family: "SFMono-Regular", Consolas, monospace;
+      }
+
+      /* ─── Highlight ─── */
+      .highlight {
+        background: rgba(201, 130, 55, 0.09);
+        border: 1px solid rgba(201, 130, 55, 0.22);
+        border-left: 3px solid #c98237;
+        padding: 15px 20px;
+        border-radius: 14px;
+        margin-bottom: 18px;
+        font-size: 0.95rem;
+        color: #5a341b;
+        animation: fadeUp 0.4s 0.02s ease both;
+      }
+
+      /* ─── Email button in contact card ─── */
+      .card-contact a[href^="mailto"] {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 9px 22px;
+        border-radius: 22px;
+        background: linear-gradient(
+          135deg,
+          #7a421f 0%,
+          #9a5230 50%,
+          #c98237 100%
+        );
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.22s ease;
+        text-decoration: none;
+        box-shadow: 0 2px 12px rgba(122, 66, 31, 0.28);
+      }
+      .card-contact a[href^="mailto"]:hover {
+        opacity: 0.9;
+        box-shadow: 0 4px 20px rgba(122, 66, 31, 0.42);
+        text-decoration: none;
+        transform: translateY(-1px);
+      }
+
+      /* ─── Footer ─── */
+      footer {
+        text-align: center;
+        padding: 26px;
+        font-size: 0.82rem;
+        color: #8a6a52;
+        border-top: 1px solid rgba(122, 66, 31, 0.12);
+        position: relative;
+        z-index: 1;
+      }
+      footer a {
+        color: #7a421f;
+      }
+
+      /* ─── RTL support for Arabic ─── */
+      [dir="rtl"] h2 {
+        border-left: none;
+        border-right: 3px solid #7a421f;
+        padding-left: 0;
+        padding-right: 14px;
+      }
+      [dir="rtl"] ul {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+
+      /* ─── Nav Tabs ─── */
+      .nav-tabs {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        padding: 3px;
+        gap: 2px;
+      }
+      .nav-tab {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.79rem;
+        font-weight: 600;
+        color: #4a3020;
+        text-decoration: none;
+        padding: 5px 14px;
+        border-radius: 20px;
+        transition: all 0.22s ease;
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+      }
+      .nav-tab:hover {
+        color: #7a421f;
+        background: rgba(122, 66, 31, 0.09);
+        text-decoration: none;
+      }
+      .nav-tab.active {
+        background: linear-gradient(
+          135deg,
+          #7a421f 0%,
+          #9a5230 60%,
+          #c98237 100%
+        );
+        color: #fff;
+        box-shadow: 0 2px 10px rgba(122, 66, 31, 0.3);
+      }
+      .nav-tab.active:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ─── Language Switcher ─── -->
+    <div class="lang-bar">
+      <nav class="nav-tabs">
+        <a href="../../index.html" class="nav-tab">BieMTech</a>
+        <a href="../../times-table-master.html" class="nav-tab"
+          >Times Table Master</a
+        >
+        <a href="../index.html" class="nav-tab active">Privacy Policies</a>
+      </nav>
+      <div class="lang-bar__right">
+        <div class="lang-pill">
+          <span style="font-size: 0.85rem; line-height: 1">🌐</span>
+          <select id="lang-select" onchange="switchLang(this.value)">
+            <option value="en">🇬🇧 English</option>
+            <option value="az">🇦🇿 Azərbaycan dili</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="tr">🇹🇷 Türkçe</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="ar">🇸🇦 العربية</option>
+            <option value="zh">🇨🇳 中文</option>
+            <option value="ja">🇯🇵 日本語</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Header ─── -->
+    <header>
+      <h1>Times Table Master</h1>
+      <p class="subtitle" data-i18n="subtitle">Privacy Policy</p>
+    </header>
+
+    <!-- ─── Content ─── -->
+    <main class="container" id="main-content">
+      <!-- Rendered by JS -->
+    </main>
+
+    <!-- ─── Footer ─── -->
+    <footer>
+      &copy; 2026 Times Table Master &mdash;
+      <a href="../../index.html">BieMTech</a>.
+      <span data-i18n="rights">All rights reserved.</span><br />
+      <span data-i18n="effective"
+        >This privacy policy is effective as of 24.05.2026.</span
+      >
+    </footer>
+
+    <script>
+      /* ================================================================
+         TRANSLATIONS
+         ================================================================ */
+      const T = {
+        en: {
+          dir: "ltr",
+          subtitle: "Privacy Policy",
+          rights: "All rights reserved.",
+          effective: "This privacy policy is effective as of 24.05.2026.",
+          meta_app: "Application",
+          meta_pkg: "Package",
+          meta_date: "Last updated",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Short version:</strong> Times Table Master does <strong>not collect, share, or transmit</strong> any personal information. All data stays on your device only.",
+          s1_title: "1. About This App",
+          s1: "Times Table Master is a free educational app for learning and practising multiplication tables. It offers multiple practice modes — Learn, Practice, Mixed, Speed, and more — to help users build times-table skills in an effective and engaging way.",
+          s2_title: "2. Information We Collect",
+          s2_p1:
+            "Times Table Master does <strong>not</strong> collect any personally identifiable information. The only data stored is game progress saved <strong>locally on your device</strong>:",
+          s2_li: [
+            "Optional display name (entered by the user, never transmitted)",
+            "XP, coins, and level progress",
+            "Quiz statistics and accuracy per table",
+            "App settings (theme, answer mode, sound, language)",
+            "Selected tables and practice preferences",
+          ],
+          s2_p2:
+            "This data is stored using Android's local storage (AsyncStorage) and <strong>never leaves your device</strong>.",
+          s3_title: "3. Children's Privacy (COPPA &amp; GDPR-K)",
+          s3_p1:
+            "Times Table Master is designed for multiplication-table practice and is primarily used by school-age learners. We apply child-directed treatment to our advertising configuration, ensuring that only non-personalised, age-appropriate ads are shown to all users.",
+          s3_li: [
+            "We do <strong>not</strong> collect any personal information from users.",
+            "We do <strong>not</strong> require account registration or login.",
+            "We do <strong>not</strong> use third-party analytics or tracking SDKs.",
+            "We do <strong>not</strong> display behavioural or targeted advertising.",
+            "Child-directed treatment is enabled in our ad network (<code>tagForChildDirectedTreatment = true</code>), ensuring non-personalised ads for all users.",
+            "We comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and <strong>GDPR-K</strong> requirements.",
+            "We comply with <strong>Google Play's Families Policy</strong>.",
+          ],
+          s4_title: "4. Advertising",
+          s4: "<p>Times Table Master uses advertisements from a certified third-party ad network (IronSource / LevelPlay). All advertising uses child-directed treatment, meaning only non-personalised, context-appropriate ads are shown.</p><p><strong>Ad formats used:</strong></p><ul><li><strong>Banner ads</strong> — small static ads shown at the bottom of selected screens during gameplay.</li><li><strong>Interstitial ads</strong> — full-screen ads shown between practice sessions.</li><li><strong>Rewarded video ads</strong> — optional ads that the user chooses to watch in exchange for in-game rewards (such as hints or bonus coins).</li></ul><ul><li>We do <strong>not</strong> use behavioural or targeted advertising.</li><li>All ads are <strong>appropriate for children</strong> and comply with child-directed advertising requirements.</li><li>We only use <strong>certified advertising networks</strong> approved for child-directed apps.</li><li>Ad content is filtered to exclude age-restricted categories (no alcohol, gambling, adult content, or violence).</li></ul>",
+          s5_title: "5. Internet &amp; Permissions",
+          s5_p1: "The app requests the following Android permissions:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Required by included libraries. The app itself does not transmit personal data.",
+            "<strong>VIBRATE</strong> — Used for haptic feedback on correct/wrong answers.",
+          ],
+          s6_title: "6. Third-Party Services",
+          s6_p1:
+            "Times Table Master integrates the following third-party services:",
+          s6_li: [
+            "IronSource / LevelPlay ad service — <strong>ACTIVE</strong>, used for banner ads, interstitial ads, and optional rewarded video ads. All ads use child-directed treatment (non-personalised).",
+            "Google Firebase — currently <strong>disabled</strong> (stub only, not collecting data).",
+          ],
+          s6_p2:
+            "If additional services are enabled in a future update, this policy will be updated accordingly before release.",
+          s7_title: "7. Data Retention &amp; Deletion",
+          s7_p1:
+            "All data is stored only on your device. You can delete all app data at any time by:",
+          s7_li: [
+            "Going to <strong>Android Settings → Apps → Times Table Master → Clear Data</strong>",
+            "Or by uninstalling the application",
+          ],
+          s7_p2:
+            "No data is retained on any server because no data is ever sent to a server.",
+          s8_title: "8. Changes to This Policy",
+          s8: 'We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this policy periodically.',
+          s9_title: "9. Contact Us",
+          s9_p1:
+            "If you have any questions about this Privacy Policy or the app's data practices, please contact us:",
+          s9_email: "Email",
+          s9_p2:
+            "We will respond to all privacy-related inquiries within 5 business days.",
+        },
+
+        az: {
+          dir: "ltr",
+          subtitle: "Məxfilik Siyasəti",
+          rights: "Bütün hüquqlar qorunur.",
+          effective:
+            "Bu məxfilik siyasəti 24.05.2026 tarixindən qüvvəyə minib.",
+          meta_app: "Tətbiq",
+          meta_pkg: "Paket",
+          meta_date: "Son yenilənmə",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Qısa versiya:</strong> Times Table Master heç bir şəxsi məlumat <strong>toplamır, paylaşmır və ya ötürmür</strong>. Bütün məlumatlar yalnız cihazınızda saxlanılır.",
+          s1_title: "1. Tətbiq haqqında",
+          s1: "Times Table Master vurma cədvəllərini öyrənmək və məşq etmək üçün pulsuz təhsil tətbiqidir. O, istifadəçilərə vurma cədvəli bacarıqlarını effektiv və cəlbedici şəkildə gücləndirmək üçün bir neçə məşq rejimi — Öyrən, Məşq et, Qarışıq, Sürət və s. — təqdim edir.",
+          s2_title: "2. Topladığımız Məlumatlar",
+          s2_p1:
+            "Times Table Master heç bir şəxsiyyəti müəyyənləşdirən məlumat <strong>toplamır</strong>. Yalnız oyun irəliləyiş məlumatları <strong>cihazınızda yerli olaraq</strong> saxlanılır:",
+          s2_li: [
+            "İstifadəçi daxil etdiyi istəyə bağlı ad (heç vaxt ötürülmür)",
+            "XP, sikkələr və səviyyə irəliləyişi",
+            "Test statistikası və hər cədvəl üzrə düzgünlük",
+            "Proqram parametrləri (mövzu, cavab rejimi, səs, dil)",
+            "Seçilmiş cədvəllər və məşq üstünlükləri",
+          ],
+          s2_p2:
+            "Bu məlumatlar Android-in yerli yaddaşından (AsyncStorage) istifadə etməklə saxlanılır və <strong>heç vaxt cihazınızı tərk etmir</strong>.",
+          s3_title: "3. Uşaqların Məxfiliyi (COPPA və GDPR-K)",
+          s3_p1:
+            "Times Table Master vurma cədvəllərini məşq etmək üçün hazırlanıb və əsasən məktəb yaşlı öyrənənlər tərəfindən istifadə olunur. Biz reklam konfiqurasiyamızda uşaq yönlülü müalicəni tətbiq edirik, bu da bütün istifadəçilərə yalnız qeyri-fərdiləşdirilmiş, yaşa uyğun reklamların göstərilməsini təmin edir.",
+          s3_li: [
+            "İstifadəçilərdən heç bir şəxsi məlumat <strong>toplamırıq</strong>.",
+            "Hesab qeydiyyatı və ya girişi <strong>tələb etmirik</strong>.",
+            "Üçüncü tərəf analitika və ya izləmə SDK-larından <strong>istifadə etmirik</strong>.",
+            "Davranış əsaslı və ya hədəflənmiş reklam <strong>göstərmirik</strong>.",
+            "Reklam şəbəkəmizdə uşaq yönlülü müalicə aktiv edilib (<code>tagForChildDirectedTreatment = true</code>), bütün istifadəçilər üçün qeyri-fərdiləşdirilmiş reklamları təmin edir.",
+            "<strong>Uşaqların Onlayn Məxfiliyinin Qorunması Qanunu (COPPA)</strong> və <strong>GDPR-K</strong> tələblərinə uyğun hərəkət edirik.",
+            "<strong>Google Play Ailə Siyasəti</strong>nə uyğun hərəkət edirik.",
+          ],
+          s4_title: "4. Reklam",
+          s4: "<p>Times Table Master sertifikatlaşdırılmış üçüncü tərəf reklam şəbəkəsindən (IronSource / LevelPlay) reklamlardan istifadə edir. Bütün reklamlar uşaq yönlülü müalicəni tətbiq edir, yəni yalnız qeyri-fərdiləşdirilmiş, kontekstə uyğun reklamlar göstərilir.</p><p><strong>İstifadə edilən reklam formatları:</strong></p><ul><li><strong>Banner reklamlar</strong> — oyun zamanı seçilmiş ekranların altında göstərilən kiçik statik reklamlar.</li><li><strong>Aralıq reklamlar (Interstitial)</strong> — məşq sessiyaları arasında göstərilən tam ekran reklamlar.</li><li><strong>Mükafatlı video reklamlar</strong> — istifadəçinin oyundaxili mükafatlar (ipuçları və ya bonus sikkələr kimi) müqabilində izləməyi seçdiyi könüllü reklamlar.</li></ul><ul><li>Davranış əsaslı və ya hədəflənmiş reklamdan <strong>istifadə etmirik</strong>.</li><li>Bütün reklamlar <strong>uşaqlar üçün uyğundur</strong> və uşaq yönlülü reklam tələblərinə uyğundur.</li><li>Yalnız uşaq yönlülü tətbiqlər üçün təsdiqlənmiş <strong>sertifikatlaşdırılmış reklam şəbəkələri</strong>ndən istifadə edirik.</li><li>Reklam məzmunu yaş məhdudiyyətli kateqoriyaları istisna etmək üçün filtrlənilib (alkoqol, qumar, yetkinlər üçün məzmun və ya zorakılıq yoxdur).</li></ul>",
+          s5_title: "5. İnternet və İcazələr",
+          s5_p1: "Tətbiq aşağıdakı Android icazələrini tələb edir:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Daxil edilmiş kitabxanalar tərəfindən tələb olunur. Tətbiqin özü şəxsi məlumat ötürmür.",
+            "<strong>VIBRATE</strong> — Düzgün/səhv cavablar üçün haptik əlaqədə istifadə olunur.",
+          ],
+          s6_title: "6. Üçüncü Tərəf Xidmətlər",
+          s6_p1:
+            "Times Table Master aşağıdakı üçüncü tərəf xidmətlərini inteqrasiya edir:",
+          s6_li: [
+            "IronSource / LevelPlay reklam xidməti — <strong>AKTİVDİR</strong>, banner reklamlar, aralıq reklamlar və könüllü mükafatlı video reklamlar üçün istifadə olunur. Bütün reklamlar uşaq yönlülü müalicəni tətbiq edir (qeyri-fərdiləşdirilmiş).",
+            "Google Firebase — hazırda <strong>deaktiv edilib</strong> (yalnız stub, məlumat toplamır).",
+          ],
+          s6_p2:
+            "Gələcək yeniləmədə əlavə xidmətlər aktivləşdirilibsə, buraxılışdan əvvəl bu siyasət müvafiq şəkildə yenilənəcək.",
+          s7_title: "7. Məlumatların Saxlanması və Silinməsi",
+          s7_p1:
+            "Bütün məlumatlar yalnız cihazınızda saxlanılır. Tətbiq məlumatlarını istənilən vaxt silə bilərsiniz:",
+          s7_li: [
+            "<strong>Android Parametrləri → Tətbiqlər → Times Table Master → Məlumatları Sil</strong> bölməsinə keçin",
+            "Və ya tətbiqin quraşdırılmasını ləğv edin",
+          ],
+          s7_p2:
+            "Heç bir server üzərindən məlumat göndərilmədiyindən heç bir məlumat saxlanılmır.",
+          s8_title: "8. Siyasətdə Dəyişikliklər",
+          s8: 'Bu Məxfilik Siyasətini zaman-zaman yeniləyə bilərik. Hər hansı dəyişikliklər yenilənmiş "Son yenilənmə" tarixi ilə bu səhifədə əks olunacaq. Siyasəti mütəmadi olaraq nəzərdən keçirməyinizi tövsiyə edirik.',
+          s9_title: "9. Bizimlə Əlaqə",
+          s9_p1:
+            "Bu Məxfilik Siyasəti və ya tətbiqin məlumat təcrübələri ilə bağlı suallarınız varsa, bizimlə əlaqə saxlayın:",
+          s9_email: "E-poçt",
+          s9_p2:
+            "Məxfiliklə bağlı bütün sorğulara 5 iş günü ərzində cavab verəcəyik.",
+        },
+
+        ru: {
+          dir: "ltr",
+          subtitle: "Политика конфиденциальности",
+          rights: "Все права защищены.",
+          effective:
+            "Настоящая политика конфиденциальности вступает в силу с 24.05.2026.",
+          meta_app: "Приложение",
+          meta_pkg: "Пакет",
+          meta_date: "Последнее обновление",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Кратко:</strong> Times Table Master <strong>не собирает, не передаёт и не распространяет</strong> никакие персональные данные. Все данные хранятся только на вашем устройстве.",
+          s1_title: "1. О приложении",
+          s1: "Times Table Master — бесплатное образовательное приложение для изучения и практики таблицы умножения. Оно предлагает несколько режимов практики — Учить, Тренироваться, Смешанный, Скорость и другие — чтобы помочь пользователям эффективно и увлекательно закреплять навыки умножения.",
+          s2_title: "2. Собираемые данные",
+          s2_p1:
+            "Times Table Master <strong>не</strong> собирает никаких персональных данных. Единственные данные — это прогресс игры, сохраняемый <strong>локально на вашем устройстве</strong>:",
+          s2_li: [
+            "Необязательное отображаемое имя (вводится пользователем, никогда не передаётся)",
+            "XP, монеты и прогресс уровня",
+            "Статистика заданий и точность по каждой таблице",
+            "Настройки приложения (тема, режим ответа, звук, язык)",
+            "Выбранные таблицы и предпочтения тренировок",
+          ],
+          s2_p2:
+            "Данные хранятся с использованием локального хранилища Android (AsyncStorage) и <strong>никогда не покидают ваше устройство</strong>.",
+          s3_title: "3. Конфиденциальность детей (COPPA и GDPR-K)",
+          s3_p1:
+            "Times Table Master создан для практики таблицы умножения и в основном используется школьниками. Мы применяем детскую направленность в настройках рекламы, что гарантирует показ только неперсонализированной, возрастной рекламы всем пользователям.",
+          s3_li: [
+            "Мы <strong>не</strong> собираем личные данные пользователей.",
+            "Мы <strong>не</strong> требуем регистрации или входа в аккаунт.",
+            "Мы <strong>не</strong> используем сторонние SDK аналитики или отслеживания.",
+            "Мы <strong>не</strong> показываем поведенческую или таргетированную рекламу.",
+            "В нашей рекламной сети включена детская направленность (<code>tagForChildDirectedTreatment = true</code>), гарантирующая неперсонализированную рекламу для всех пользователей.",
+            "Мы соблюдаем требования <strong>COPPA</strong> и <strong>GDPR-K</strong>.",
+            "Мы соблюдаем <strong>Политику для семей Google Play</strong>.",
+          ],
+          s4_title: "4. Реклама",
+          s4: "<p>Times Table Master использует рекламу сертифицированной сторонней рекламной сети (IronSource / LevelPlay). Вся реклама применяет детскую направленность, то есть показываются только неперсонализированные, контекстно подходящие объявления.</p><p><strong>Используемые рекламные форматы:</strong></p><ul><li><strong>Баннерная реклама</strong> — небольшие статичные объявления, отображаемые в нижней части выбранных экранов во время игры.</li><li><strong>Межстраничная реклама (Interstitial)</strong> — полноэкранные объявления, показываемые между тренировочными сессиями.</li><li><strong>Видеореклама с вознаграждением</strong> — необязательные объявления, которые пользователь выбирает для просмотра в обмен на внутриигровые награды (например, подсказки или бонусные монеты).</li></ul><ul><li>Мы <strong>не</strong> используем поведенческую или таргетированную рекламу.</li><li>Вся реклама <strong>подходит для детей</strong> и соответствует требованиям детской рекламы.</li><li>Мы используем только <strong>сертифицированные рекламные сети</strong>, одобренные для детских приложений.</li><li>Содержимое рекламы фильтруется для исключения возрастных категорий (без алкоголя, азартных игр, материалов для взрослых или насилия).</li></ul>",
+          s5_title: "5. Интернет и разрешения",
+          s5_p1: "Приложение запрашивает следующие разрешения Android:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Требуется подключёнными библиотеками. Само приложение не передаёт персональные данные.",
+            "<strong>VIBRATE</strong> — Используется для тактильной обратной связи при правильных/неправильных ответах.",
+          ],
+          s6_title: "6. Сторонние сервисы",
+          s6_p1: "Times Table Master интегрирует следующие сторонние сервисы:",
+          s6_li: [
+            "Рекламный сервис IronSource / LevelPlay — <strong>АКТИВЕН</strong>, используется для баннерной рекламы, межстраничной рекламы и необязательной видеорекламы с вознаграждением. Вся реклама применяет детскую направленность (неперсонализированная).",
+            "Google Firebase — в настоящее время <strong>отключён</strong> (только заглушка, данные не собираются).",
+          ],
+          s6_p2:
+            "Если дополнительные сервисы будут включены в будущем обновлении, эта политика будет обновлена до выпуска.",
+          s7_title: "7. Хранение и удаление данных",
+          s7_p1:
+            "Все данные хранятся только на вашем устройстве. Вы можете удалить все данные в любое время:",
+          s7_li: [
+            "Перейдите в <strong>Настройки Android → Приложения → Times Table Master → Очистить данные</strong>",
+            "Или удалите приложение",
+          ],
+          s7_p2:
+            "Данные не хранятся ни на каком сервере, так как никогда не отправляются на сервер.",
+          s8_title: "8. Изменения в политике",
+          s8: "Мы можем периодически обновлять данную Политику конфиденциальности. Все изменения будут отражены на этой странице с обновлённой датой. Рекомендуем периодически просматривать эту политику.",
+          s9_title: "9. Свяжитесь с нами",
+          s9_p1:
+            "Если у вас есть вопросы о данной Политике конфиденциальности, свяжитесь с нами:",
+          s9_email: "Эл. почта",
+          s9_p2:
+            "Мы ответим на все запросы, связанные с конфиденциальностью, в течение 5 рабочих дней.",
+        },
+
+        tr: {
+          dir: "ltr",
+          subtitle: "Gizlilik Politikası",
+          rights: "Tüm hakları saklıdır.",
+          effective:
+            "Bu gizlilik politikası 24.05.2026 tarihinden itibaren geçerlidir.",
+          meta_app: "Uygulama",
+          meta_pkg: "Paket",
+          meta_date: "Son güncelleme",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Kısa versiyon:</strong> Times Table Master hiçbir kişisel bilgiyi <strong>toplamaz, paylaşmaz veya iletmez</strong>. Tüm veriler yalnızca cihazınızda kalır.",
+          s1_title: "1. Bu Uygulama Hakkında",
+          s1: "Times Table Master, çarpım tablolarını öğrenmek ve pratik yapmak için ücretsiz bir eğitim uygulamasıdır. Kullanıcıların çarpım tablosu becerilerini etkili ve ilgi çekici bir şekilde geliştirmesine yardımcı olmak için Öğren, Pratik Yap, Karışık, Hız ve daha fazlası gibi birden fazla pratik modu sunar.",
+          s2_title: "2. Topladığımız Bilgiler",
+          s2_p1:
+            "Times Table Master hiçbir kişisel olarak tanımlanabilir bilgi <strong>toplamaz</strong>. Saklanan tek veri, <strong>cihazınızda yerel olarak</strong> kaydedilen oyun ilerlemesidir:",
+          s2_li: [
+            "İsteğe bağlı görünen ad (kullanıcı tarafından girilir, hiçbir zaman iletilmez)",
+            "XP, madeni paralar ve seviye ilerleme",
+            "Test istatistikleri ve tablo başına doğruluk",
+            "Uygulama ayarları (tema, cevap modu, ses, dil)",
+            "Seçilen tablolar ve pratik tercihleri",
+          ],
+          s2_p2:
+            "Bu veriler Android'in yerel depolaması (AsyncStorage) kullanılarak saklanır ve <strong>hiçbir zaman cihazınızı terk etmez</strong>.",
+          s3_title: "3. Çocukların Gizliliği (COPPA ve GDPR-K)",
+          s3_p1:
+            "Times Table Master çarpım tablosu pratiği için tasarlanmıştır ve öncelikle okul çağındaki öğrenciler tarafından kullanılmaktadır. Reklam yapılandırmamızda çocuklara yönelik muamele uyguluyoruz; bu, tüm kullanıcılara yalnızca kişiselleştirilmemiş, yaşa uygun reklamların gösterilmesini sağlar.",
+          s3_li: [
+            "Kullanıcılardan hiçbir kişisel bilgi <strong>toplamıyoruz</strong>.",
+            "Hesap kaydı veya girişi <strong>gerektirmiyoruz</strong>.",
+            "Üçüncü taraf analitik veya izleme SDK'ları <strong>kullanmıyoruz</strong>.",
+            "Davranışsal veya hedeflenmiş reklam <strong>göstermiyoruz</strong>.",
+            "Reklam ağımızda çocuklara yönelik muamele etkinleştirilmiştir (<code>tagForChildDirectedTreatment = true</code>), tüm kullanıcılar için kişiselleştirilmemiş reklamlar sağlar.",
+            "<strong>COPPA</strong> ve <strong>GDPR-K</strong> gereksinimlerine uymaktayız.",
+            "<strong>Google Play Aile Politikası</strong>'na uymaktayız.",
+          ],
+          s4_title: "4. Reklamcılık",
+          s4: "<p>Times Table Master, sertifikalı bir üçüncü taraf reklam ağından (IronSource / LevelPlay) reklamlar kullanmaktadır. Tüm reklamlar çocuklara yönelik muamele uygular, yani yalnızca kişiselleştirilmemiş, bağlama uygun reklamlar gösterilir.</p><p><strong>Kullanılan reklam formatları:</strong></p><ul><li><strong>Banner reklamlar</strong> — oyun sırasında seçili ekranların alt kısmında görüntülenen küçük statik reklamlar.</li><li><strong>Geçiş reklamları (Interstitial)</strong> — pratik seansları arasında gösterilen tam ekran reklamlar.</li><li><strong>Ödüllü video reklamlar</strong> — kullanıcının oyun içi ödüller (ipuçları veya bonus madeni paralar gibi) karşılığında izlemeyi seçtiği isteğe bağlı reklamlar.</li></ul><ul><li>Davranışsal veya hedeflenmiş reklam <strong>kullanmıyoruz</strong>.</li><li>Tüm reklamlar çocuklar için <strong>uygun içerik</strong> sunar ve çocuklara yönelik reklam gereksinimlerine uygundur.</li><li>Yalnızca çocuklara yönelik uygulamalar için onaylanmış <strong>sertifikalı reklam ağları</strong>nı kullanıyoruz.</li><li>Reklam içeriği yaş kısıtlamalı kategorileri hariç tutmak için filtrelenmiştir (alkol, kumar, yetişkin içeriği veya şiddet yok).</li></ul>",
+          s5_title: "5. İnternet ve İzinler",
+          s5_p1: "Uygulama aşağıdaki Android izinlerini talep eder:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Dahil edilen kütüphaneler tarafından gereklidir. Uygulamanın kendisi kişisel veri iletmez.",
+            "<strong>VIBRATE</strong> — Doğru/yanlış cevaplarda dokunsal geri bildirim için kullanılır.",
+          ],
+          s6_title: "6. Üçüncü Taraf Hizmetler",
+          s6_p1:
+            "Times Table Master aşağıdaki üçüncü taraf hizmetleri entegre etmektedir:",
+          s6_li: [
+            "IronSource / LevelPlay reklam hizmeti — <strong>AKTİF</strong>, banner reklamlar, geçiş reklamları ve isteğe bağlı ödüllü video reklamlar için kullanılmaktadır. Tüm reklamlar çocuklara yönelik muamele uygular (kişiselleştirilmemiş).",
+            "Google Firebase — şu anda <strong>devre dışı</strong> (yalnızca stub, veri toplamıyor).",
+          ],
+          s6_p2:
+            "Gelecekteki bir güncellemede ek hizmetler etkinleştirilirse, bu politika yayınlanmadan önce buna göre güncellenecektir.",
+          s7_title: "7. Veri Saklama ve Silme",
+          s7_p1:
+            "Tüm veriler yalnızca cihazınızda saklanır. Uygulama verilerini istediğiniz zaman silebilirsiniz:",
+          s7_li: [
+            "<strong>Android Ayarları → Uygulamalar → Times Table Master → Verileri Temizle</strong> bölümüne gidin",
+            "Veya uygulamayı kaldırın",
+          ],
+          s7_p2:
+            "Hiçbir sunucuya veri gönderilmediği için hiçbir sunucuda veri saklanmaz.",
+          s8_title: "8. Bu Politikada Değişiklikler",
+          s8: 'Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik, güncellenmiş "Son güncelleme" tarihiyle bu sayfaya yansıtılacaktır. Politikayı periyodik olarak incelemenizi öneririz.',
+          s9_title: "9. Bize Ulaşın",
+          s9_p1:
+            "Bu Gizlilik Politikası hakkında sorularınız varsa lütfen bizimle iletişime geçin:",
+          s9_email: "E-posta",
+          s9_p2:
+            "Gizlilikle ilgili tüm sorulara 5 iş günü içinde yanıt vereceğiz.",
+        },
+
+        de: {
+          dir: "ltr",
+          subtitle: "Datenschutzrichtlinie",
+          rights: "Alle Rechte vorbehalten.",
+          effective: "Diese Datenschutzrichtlinie gilt ab dem 24.05.2026.",
+          meta_app: "Anwendung",
+          meta_pkg: "Paket",
+          meta_date: "Zuletzt aktualisiert",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Kurzfassung:</strong> Times Table Master <strong>erfasst, teilt oder überträgt</strong> keine personenbezogenen Daten. Alle Daten verbleiben ausschließlich auf Ihrem Gerät.",
+          s1_title: "1. Über diese App",
+          s1: "Times Table Master ist eine kostenlose Lern-App zum Erlernen und Üben des Einmaleins. Sie bietet mehrere Übungsmodi — Lernen, Üben, Gemischt, Geschwindigkeit und mehr — damit Nutzer ihre Einmaleins-Kenntnisse effektiv und unterhaltsam festigen können.",
+          s2_title: "2. Erhobene Daten",
+          s2_p1:
+            "Times Table Master erfasst <strong>keine</strong> personenbezogenen Daten. Die einzigen gespeicherten Daten sind Spielfortschrittsdaten, die <strong>lokal auf Ihrem Gerät</strong> gespeichert werden:",
+          s2_li: [
+            "Optionaler Anzeigename (vom Nutzer eingegeben, wird nie übertragen)",
+            "XP, Münzen und Levelfortschritt",
+            "Aufgabenstatistik und Genauigkeit je Tabelle",
+            "App-Einstellungen (Theme, Antwortmodus, Ton, Sprache)",
+            "Ausgewählte Tabellen und Übungseinstellungen",
+          ],
+          s2_p2:
+            "Diese Daten werden im lokalen Speicher von Android (AsyncStorage) gespeichert und <strong>verlassen Ihr Gerät niemals</strong>.",
+          s3_title: "3. Datenschutz für Kinder (COPPA &amp; GDPR-K)",
+          s3_p1:
+            "Times Table Master wurde zum Üben des Einmaleins entwickelt und wird hauptsächlich von Schulkindern verwendet. Wir wenden kindgerechte Behandlung in unserer Werbekonfiguration an, um sicherzustellen, dass allen Nutzern nur nicht-personalisierte, altersgerechte Anzeigen angezeigt werden.",
+          s3_li: [
+            "Wir erfassen <strong>keine</strong> persönlichen Daten von Nutzern.",
+            "Wir verlangen <strong>keine</strong> Kontoregistrierung oder Anmeldung.",
+            "Wir verwenden <strong>keine</strong> Analyse- oder Tracking-SDKs von Drittanbietern.",
+            "Wir zeigen <strong>keine</strong> verhaltensbasierte oder zielgerichtete Werbung an.",
+            "In unserem Werbenetzwerk ist kindgerechte Behandlung aktiviert (<code>tagForChildDirectedTreatment = true</code>), was nicht-personalisierte Werbung für alle Nutzer gewährleistet.",
+            "Wir erfüllen die Anforderungen des <strong>COPPA</strong> und der <strong>DSGVO-K</strong>.",
+            "Wir halten die <strong>Google Play Familienrichtlinie</strong> ein.",
+          ],
+          s4_title: "4. Werbung",
+          s4: "<p>Times Table Master verwendet Werbung eines zertifizierten Drittanbieter-Werbenetzwerks (IronSource / LevelPlay). Alle Werbung verwendet kindgerechte Behandlung, was bedeutet, dass nur nicht-personalisierte, kontextgerechte Anzeigen geschaltet werden.</p><p><strong>Verwendete Werbeformate:</strong></p><ul><li><strong>Bannerwerbung</strong> — kleine statische Anzeigen, die während des Spiels am unteren Rand ausgewählter Bildschirme angezeigt werden.</li><li><strong>Interstitial-Werbung</strong> — Vollbildanzeigen, die zwischen Übungseinheiten angezeigt werden.</li><li><strong>Belohnungsvideoanzeigen</strong> — optionale Anzeigen, die der Nutzer gegen In-Game-Belohnungen (z. B. Hinweise oder Bonusmünzen) ansehen kann.</li></ul><ul><li>Wir verwenden <strong>keine</strong> verhaltensbasierte oder zielgerichtete Werbung.</li><li>Alle Anzeigen sind <strong>für Kinder geeignet</strong> und erfüllen die Anforderungen an kindgerichtete Werbung.</li><li>Wir verwenden ausschließlich <strong>zertifizierte Werbenetzwerke</strong>, die für kindgerichtete Apps zugelassen sind.</li><li>Werbeinhalte werden gefiltert, um altersbedingte Kategorien auszuschließen (kein Alkohol, Glücksspiel, Erwachseneninhalte oder Gewalt).</li></ul>",
+          s5_title: "5. Internet &amp; Berechtigungen",
+          s5_p1: "Die App fordert folgende Android-Berechtigungen an:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Wird von enthaltenen Bibliotheken benötigt. Die App selbst überträgt keine personenbezogenen Daten.",
+            "<strong>VIBRATE</strong> — Wird für haptisches Feedback bei richtigen/falschen Antworten verwendet.",
+          ],
+          s6_title: "6. Drittanbieter-Dienste",
+          s6_p1:
+            "Times Table Master integriert folgende Drittanbieter-Dienste:",
+          s6_li: [
+            "IronSource / LevelPlay Werbedienst — <strong>AKTIV</strong>, für Bannerwerbung, Interstitial-Anzeigen und optionale Belohnungsvideoanzeigen. Alle Anzeigen verwenden kindgerechte Behandlung (nicht-personalisiert).",
+            "Google Firebase — derzeit <strong>deaktiviert</strong> (nur Stub, keine Datenerfassung).",
+          ],
+          s6_p2:
+            "Wenn zusätzliche Dienste in einem zukünftigen Update aktiviert werden, wird diese Richtlinie vor der Veröffentlichung entsprechend aktualisiert.",
+          s7_title: "7. Datenspeicherung &amp; Löschung",
+          s7_p1:
+            "Alle Daten werden nur auf Ihrem Gerät gespeichert. Sie können alle App-Daten jederzeit löschen:",
+          s7_li: [
+            "Gehen Sie zu <strong>Android-Einstellungen → Apps → Times Table Master → Daten löschen</strong>",
+            "Oder durch Deinstallation der App",
+          ],
+          s7_p2:
+            "Es werden keine Daten auf einem Server gespeichert, da keine Daten an einen Server gesendet werden.",
+          s8_title: "8. Änderungen dieser Richtlinie",
+          s8: "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum vermerkt. Wir empfehlen, diese Richtlinie regelmäßig zu überprüfen.",
+          s9_title: "9. Kontakt",
+          s9_p1:
+            "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns:",
+          s9_email: "E-Mail",
+          s9_p2:
+            "Wir beantworten alle datenschutzbezogenen Anfragen innerhalb von 5 Werktagen.",
+        },
+
+        fr: {
+          dir: "ltr",
+          subtitle: "Politique de confidentialité",
+          rights: "Tous droits réservés.",
+          effective:
+            "Cette politique de confidentialité est en vigueur depuis le 24.05.2026.",
+          meta_app: "Application",
+          meta_pkg: "Paquet",
+          meta_date: "Dernière mise à jour",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Version courte :</strong> Times Table Master ne <strong>collecte, partage ni ne transmet</strong> aucune information personnelle. Toutes les données restent uniquement sur votre appareil.",
+          s1_title: "1. À propos de cette application",
+          s1: "Times Table Master est une application éducative gratuite pour apprendre et pratiquer les tables de multiplication. Elle propose plusieurs modes de pratique — Apprendre, Pratiquer, Mixte, Vitesse et plus — pour aider les utilisateurs à progresser de manière efficace et engageante.",
+          s2_title: "2. Informations collectées",
+          s2_p1:
+            "Times Table Master ne collecte <strong>aucune</strong> information personnellement identifiable. Les seules données stockées sont la progression du jeu sauvegardée <strong>localement sur votre appareil</strong> :",
+          s2_li: [
+            "Nom d'affichage optionnel (saisi par l'utilisateur, jamais transmis)",
+            "XP, pièces et progression de niveau",
+            "Statistiques de quiz et précision par table",
+            "Paramètres de l'application (thème, mode de réponse, son, langue)",
+            "Tables sélectionnées et préférences de pratique",
+          ],
+          s2_p2:
+            "Ces données sont stockées à l'aide du stockage local d'Android (AsyncStorage) et <strong>ne quittent jamais votre appareil</strong>.",
+          s3_title: "3. Vie privée des enfants (COPPA &amp; RGPD-K)",
+          s3_p1:
+            "Times Table Master est conçu pour la pratique des tables de multiplication et est principalement utilisé par les élèves d'âge scolaire. Nous appliquons un traitement destiné aux enfants dans notre configuration publicitaire, garantissant que seules des publicités non personnalisées et adaptées à l'âge sont affichées à tous les utilisateurs.",
+          s3_li: [
+            "Nous ne collectons <strong>pas</strong> d'informations personnelles des utilisateurs.",
+            "Nous n'exigeons <strong>pas</strong> d'inscription ou de connexion.",
+            "Nous n'utilisons <strong>pas</strong> de SDK d'analyse ou de suivi tiers.",
+            "Nous n'affichons <strong>pas</strong> de publicité comportementale ou ciblée.",
+            "Le traitement destiné aux enfants est activé dans notre réseau publicitaire (<code>tagForChildDirectedTreatment = true</code>), garantissant des publicités non personnalisées pour tous les utilisateurs.",
+            "Nous respectons les exigences du <strong>COPPA</strong> et du <strong>RGPD-K</strong>.",
+            "Nous respectons la <strong>politique Familles de Google Play</strong>.",
+          ],
+          s4_title: "4. Publicité",
+          s4: "<p>Times Table Master utilise des publicités d&#8217;un réseau publicitaire tiers certifié (IronSource / LevelPlay). Toutes les publicités appliquent un traitement destiné aux enfants, ce qui signifie que seules des annonces non personnalisées et contextuellement appropriées sont diffusées.</p><p><strong>Formats publicitaires utilisés :</strong></p><ul><li><strong>Bannières publicitaires</strong> — petites annonces statiques affichées en bas de certains écrans pendant le jeu.</li><li><strong>Annonces interstitielles</strong> — annonces plein écran affichées entre les sessions de pratique.</li><li><strong>Annonces vidéo récompensées</strong> — annonces optionnelles que l&#8217;utilisateur choisit de regarder en échange de récompenses en jeu (indices ou pièces bonus).</li></ul><ul><li>Nous n&#8217;utilisons <strong>pas</strong> de publicité comportementale ou ciblée.</li><li>Toutes les publicités sont <strong>appropriées pour les enfants</strong> et respectent les exigences de la publicité destinée aux enfants.</li><li>Nous utilisons uniquement des <strong>réseaux publicitaires certifiés</strong> approuvés pour les applications destinées aux enfants.</li><li>Le contenu publicitaire est filtré pour exclure les catégories réservées aux adultes (sans alcool, jeux de hasard, contenu adulte ou violence).</li></ul>",
+          s5_title: "5. Internet &amp; Permissions",
+          s5_p1: "L'application demande les permissions Android suivantes :",
+          s5_li: [
+            "<strong>INTERNET</strong> — Requis par les bibliothèques incluses. L'application elle-même ne transmet pas de données personnelles.",
+            "<strong>VIBRATE</strong> — Utilisé pour le retour haptique sur les réponses correctes/incorrectes.",
+          ],
+          s6_title: "6. Services tiers",
+          s6_p1: "Times Table Master intègre les services tiers suivants :",
+          s6_li: [
+            "Service publicitaire IronSource / LevelPlay — <strong>ACTIF</strong>, utilisé pour les bannières, les annonces interstitielles et les annonces vidéo récompensées optionnelles. Toutes les annonces appliquent un traitement destiné aux enfants (non personnalisées).",
+            "Google Firebase — actuellement <strong>désactivé</strong> (stub uniquement, aucune collecte de données).",
+          ],
+          s6_p2:
+            "Si des services supplémentaires sont activés dans une mise à jour future, cette politique sera mise à jour en conséquence avant la sortie.",
+          s7_title: "7. Conservation et suppression des données",
+          s7_p1:
+            "Toutes les données sont stockées uniquement sur votre appareil. Vous pouvez supprimer toutes les données à tout moment :",
+          s7_li: [
+            "Accédez à <strong>Paramètres Android → Applications → Times Table Master → Effacer les données</strong>",
+            "Ou en désinstallant l'application",
+          ],
+          s7_p2:
+            "Aucune donnée n'est conservée sur un serveur car aucune donnée n'est jamais envoyée à un serveur.",
+          s8_title: "8. Modifications de cette politique",
+          s8: "Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Toute modification sera reflétée sur cette page avec une date mise à jour. Nous vous encourageons à consulter régulièrement cette politique.",
+          s9_title: "9. Nous contacter",
+          s9_p1:
+            "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter :",
+          s9_email: "E-mail",
+          s9_p2:
+            "Nous répondrons à toutes les demandes liées à la confidentialité dans les 5 jours ouvrables.",
+        },
+
+        es: {
+          dir: "ltr",
+          subtitle: "Política de privacidad",
+          rights: "Todos los derechos reservados.",
+          effective:
+            "Esta política de privacidad es efectiva a partir del 24.05.2026.",
+          meta_app: "Aplicación",
+          meta_pkg: "Paquete",
+          meta_date: "Última actualización",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Versión corta:</strong> Times Table Master <strong>no recopila, comparte ni transmite</strong> ninguna información personal. Todos los datos permanecen únicamente en su dispositivo.",
+          s1_title: "1. Acerca de esta aplicación",
+          s1: "Times Table Master es una aplicación educativa gratuita para aprender y practicar las tablas de multiplicar. Ofrece varios modos de práctica — Aprender, Practicar, Mixto, Velocidad y más — para ayudar a los usuarios a mejorar sus habilidades de forma efectiva y atractiva.",
+          s2_title: "2. Información que recopilamos",
+          s2_p1:
+            "Times Table Master <strong>no</strong> recopila ninguna información de identificación personal. Los únicos datos almacenados son el progreso del juego guardado <strong>localmente en su dispositivo</strong>:",
+          s2_li: [
+            "Nombre de visualización opcional (ingresado por el usuario, nunca transmitido)",
+            "XP, monedas y progreso de nivel",
+            "Estadísticas de cuestionarios y precisión por tabla",
+            "Configuración de la app (tema, modo de respuesta, sonido, idioma)",
+            "Tablas seleccionadas y preferencias de práctica",
+          ],
+          s2_p2:
+            "Estos datos se almacenan usando el almacenamiento local de Android (AsyncStorage) y <strong>nunca abandonan su dispositivo</strong>.",
+          s3_title: "3. Privacidad de los niños (COPPA y GDPR-K)",
+          s3_p1:
+            "Times Table Master está diseñada para practicar las tablas de multiplicar y es utilizada principalmente por estudiantes en edad escolar. Aplicamos tratamiento orientado a niños en nuestra configuración publicitaria, lo que garantiza que solo se muestren anuncios no personalizados y apropiados para la edad a todos los usuarios.",
+          s3_li: [
+            "<strong>No</strong> recopilamos información personal de los usuarios.",
+            "<strong>No</strong> requerimos registro de cuenta ni inicio de sesión.",
+            "<strong>No</strong> usamos SDK de análisis o seguimiento de terceros.",
+            "<strong>No</strong> mostramos publicidad conductual o dirigida.",
+            "El tratamiento orientado a niños está habilitado en nuestra red publicitaria (<code>tagForChildDirectedTreatment = true</code>), garantizando anuncios no personalizados para todos los usuarios.",
+            "Cumplimos con los requisitos de la <strong>COPPA</strong> y el <strong>GDPR-K</strong>.",
+            "Cumplimos con la <strong>Política de Familias de Google Play</strong>.",
+          ],
+          s4_title: "4. Publicidad",
+          s4: "<p>Times Table Master utiliza publicidad de una red publicitaria certificada de terceros (IronSource / LevelPlay). Toda la publicidad aplica tratamiento orientado a niños, lo que significa que solo se muestran anuncios no personalizados y contextualmente apropiados.</p><p><strong>Formatos de anuncios utilizados:</strong></p><ul><li><strong>Anuncios de banner</strong> — pequeños anuncios estáticos que aparecen en la parte inferior de ciertas pantallas durante el juego.</li><li><strong>Anuncios intersticiales</strong> — anuncios de pantalla completa que se muestran entre sesiones de práctica.</li><li><strong>Anuncios de video con recompensa</strong> — anuncios opcionales que el usuario elige ver a cambio de recompensas en el juego (pistas o monedas de bonificación).</li></ul><ul><li><strong>No</strong> utilizamos publicidad conductual ni dirigida.</li><li>Todos los anuncios son <strong>apropiados para niños</strong> y cumplen con los requisitos de publicidad dirigida a niños.</li><li>Solo utilizamos <strong>redes publicitarias certificadas</strong> aprobadas para apps dirigidas a niños.</li><li>El contenido de los anuncios está filtrado para excluir categorías con restricción de edad (sin alcohol, juegos de azar, contenido adulto ni violencia).</li></ul>",
+          s5_title: "5. Internet y permisos",
+          s5_p1: "La aplicación solicita los siguientes permisos de Android:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Requerido por las bibliotecas incluidas. La aplicación en sí no transmite datos personales.",
+            "<strong>VIBRATE</strong> — Usado para retroalimentación háptica en respuestas correctas/incorrectas.",
+          ],
+          s6_title: "6. Servicios de terceros",
+          s6_p1:
+            "Times Table Master integra los siguientes servicios de terceros:",
+          s6_li: [
+            "Servicio publicitario IronSource / LevelPlay — <strong>ACTIVO</strong>, usado para anuncios de banner, intersticiales y anuncios de video con recompensa opcionales. Todos los anuncios aplican tratamiento orientado a niños (no personalizados).",
+            "Google Firebase — actualmente <strong>desactivado</strong> (solo stub, sin recopilación de datos).",
+          ],
+          s6_p2:
+            "Si se habilitan servicios adicionales en una actualización futura, esta política se actualizará antes del lanzamiento.",
+          s7_title: "7. Retención y eliminación de datos",
+          s7_p1:
+            "Todos los datos se almacenan únicamente en su dispositivo. Puede eliminar todos los datos en cualquier momento:",
+          s7_li: [
+            "Vaya a <strong>Configuración de Android → Aplicaciones → Times Table Master → Borrar datos</strong>",
+            "O desinstalando la aplicación",
+          ],
+          s7_p2:
+            "No se retienen datos en ningún servidor porque nunca se envían datos a un servidor.",
+          s8_title: "8. Cambios en esta política",
+          s8: "Podemos actualizar esta Política de privacidad de vez en cuando. Cualquier cambio se reflejará en esta página con una fecha actualizada. Le recomendamos que revise esta política periódicamente.",
+          s9_title: "9. Contáctenos",
+          s9_p1:
+            "Si tiene alguna pregunta sobre esta Política de privacidad, contáctenos:",
+          s9_email: "Correo electrónico",
+          s9_p2:
+            "Responderemos a todas las consultas relacionadas con la privacidad en un plazo de 5 días hábiles.",
+        },
+
+        pt: {
+          dir: "ltr",
+          subtitle: "Política de Privacidade",
+          rights: "Todos os direitos reservados.",
+          effective:
+            "Esta política de privacidade é efetiva a partir de 24.05.2026.",
+          meta_app: "Aplicativo",
+          meta_pkg: "Pacote",
+          meta_date: "Última atualização",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Versão resumida:</strong> Times Table Master <strong>não coleta, compartilha ou transmite</strong> nenhuma informação pessoal. Todos os dados ficam somente no seu dispositivo.",
+          s1_title: "1. Sobre este aplicativo",
+          s1: "Times Table Master é um aplicativo educacional gratuito para aprender e praticar a tabuada. Oferece vários modos de prática — Aprender, Praticar, Misto, Velocidade e mais — para ajudar usuários a desenvolver habilidades de forma eficaz e envolvente.",
+          s2_title: "2. Informações que coletamos",
+          s2_p1:
+            "Times Table Master <strong>não</strong> coleta nenhuma informação de identificação pessoal. Os únicos dados armazenados são o progresso do jogo salvo <strong>localmente no seu dispositivo</strong>:",
+          s2_li: [
+            "Nome de exibição opcional (inserido pelo usuário, nunca transmitido)",
+            "XP, moedas e progresso de nível",
+            "Estatísticas de quiz e precisão por tabela",
+            "Configurações do app (tema, modo de resposta, som, idioma)",
+            "Tabelas selecionadas e preferências de prática",
+          ],
+          s2_p2:
+            "Esses dados são armazenados usando o armazenamento local do Android (AsyncStorage) e <strong>nunca saem do seu dispositivo</strong>.",
+          s3_title: "3. Privacidade das crianças (COPPA e GDPR-K)",
+          s3_p1:
+            "Times Table Master foi criado para praticar a tabuada e é principalmente usado por alunos em idade escolar. Aplicamos tratamento direcionado a crianças em nossa configuração de publicidade, garantindo que apenas anúncios não personalizados e adequados à idade sejam exibidos a todos os usuários.",
+          s3_li: [
+            "<strong>Não</strong> coletamos informações pessoais dos usuários.",
+            "<strong>Não</strong> exigimos registro de conta ou login.",
+            "<strong>Não</strong> usamos SDKs de análise ou rastreamento de terceiros.",
+            "<strong>Não</strong> exibimos publicidade comportamental ou direcionada.",
+            "O tratamento direcionado a crianças está habilitado em nossa rede de anúncios (<code>tagForChildDirectedTreatment = true</code>), garantindo anúncios não personalizados para todos os usuários.",
+            "Cumprimos os requisitos da <strong>COPPA</strong> e do <strong>GDPR-K</strong>.",
+            "Cumprimos a <strong>Política de Famílias do Google Play</strong>.",
+          ],
+          s4_title: "4. Publicidade",
+          s4: "<p>Times Table Master usa publicidade de uma rede publicitária certificada de terceiros (IronSource / LevelPlay). Toda publicidade aplica tratamento direcionado a crianças, o que significa que apenas anúncios não personalizados e contextualmente apropriados são exibidos.</p><p><strong>Formatos de anúncios usados:</strong></p><ul><li><strong>Anúncios em banner</strong> — pequenos anúncios estáticos mostrados na parte inferior de certas telas durante o jogo.</li><li><strong>Anúncios intersticiais</strong> — anúncios em tela cheia mostrados entre sessões de prática.</li><li><strong>Anúncios de vídeo com recompensa</strong> — anúncios opcionais que o usuário escolhe assistir em troca de recompensas no jogo (dicas ou moedas bônus).</li></ul><ul><li><strong>Não</strong> usamos publicidade comportamental ou direcionada.</li><li>Todos os anúncios são <strong>apropriados para crianças</strong> e cumprem os requisitos de publicidade direcionada a crianças.</li><li>Usamos apenas <strong>redes publicitárias certificadas</strong> aprovadas para apps destinados a crianças.</li><li>O conteúdo dos anúncios é filtrado para excluir categorias com restrição de idade (sem álcool, jogos de azar, conteúdo adulto ou violência).</li></ul>",
+          s5_title: "5. Internet e Permissões",
+          s5_p1: "O app solicita as seguintes permissões do Android:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Necessário pelas bibliotecas incluídas. O próprio app não transmite dados pessoais.",
+            "<strong>VIBRATE</strong> — Usado para feedback háptico em respostas corretas/incorretas.",
+          ],
+          s6_title: "6. Serviços de terceiros",
+          s6_p1:
+            "Times Table Master integra os seguintes serviços de terceiros:",
+          s6_li: [
+            "Serviço publicitário IronSource / LevelPlay — <strong>ATIVO</strong>, usado para anúncios em banner, intersticiais e anúncios de vídeo com recompensa opcionais. Todos os anúncios aplicam tratamento direcionado a crianças (não personalizados).",
+            "Google Firebase — atualmente <strong>desativado</strong> (apenas stub, sem coleta de dados).",
+          ],
+          s6_p2:
+            "Se serviços adicionais forem habilitados em uma atualização futura, esta política será atualizada antes do lançamento.",
+          s7_title: "7. Retenção e exclusão de dados",
+          s7_p1:
+            "Todos os dados são armazenados somente no seu dispositivo. Você pode excluir todos os dados a qualquer momento:",
+          s7_li: [
+            "Vá para <strong>Configurações do Android → Apps → Times Table Master → Limpar dados</strong>",
+            "Ou desinstalando o aplicativo",
+          ],
+          s7_p2:
+            "Nenhum dado é retido em qualquer servidor porque nenhum dado é enviado a um servidor.",
+          s8_title: "8. Alterações nesta política",
+          s8: "Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão refletidas nesta página com uma data atualizada. Recomendamos que você revise esta política periodicamente.",
+          s9_title: "9. Entre em contato",
+          s9_p1:
+            "Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:",
+          s9_email: "E-mail",
+          s9_p2:
+            "Responderemos a todas as consultas relacionadas à privacidade em até 5 dias úteis.",
+        },
+
+        it: {
+          dir: "ltr",
+          subtitle: "Informativa sulla privacy",
+          rights: "Tutti i diritti riservati.",
+          effective:
+            "Questa informativa sulla privacy è in vigore dal 24.05.2026.",
+          meta_app: "Applicazione",
+          meta_pkg: "Pacchetto",
+          meta_date: "Ultimo aggiornamento",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>Versione breve:</strong> Times Table Master <strong>non raccoglie, condivide o trasmette</strong> alcuna informazione personale. Tutti i dati rimangono esclusivamente sul tuo dispositivo.",
+          s1_title: "1. Informazioni sull'app",
+          s1: "Times Table Master è un'app educativa gratuita per imparare e praticare le tabelline. Offre diverse modalità di pratica — Impara, Pratica, Misto, Velocità e altro — per aiutare gli utenti a migliorare le proprie abilità in modo efficace e coinvolgente.",
+          s2_title: "2. Informazioni raccolte",
+          s2_p1:
+            "Times Table Master <strong>non</strong> raccoglie alcuna informazione personalmente identificabile. Gli unici dati memorizzati sono i progressi di gioco salvati <strong>localmente sul dispositivo</strong>:",
+          s2_li: [
+            "Nome visualizzato opzionale (inserito dall'utente, mai trasmesso)",
+            "XP, monete e progressi di livello",
+            "Statistiche quiz e precisione per tabella",
+            "Impostazioni dell'app (tema, modalità di risposta, audio, lingua)",
+            "Tabelle selezionate e preferenze di pratica",
+          ],
+          s2_p2:
+            "Questi dati sono memorizzati utilizzando l'archiviazione locale di Android (AsyncStorage) e <strong>non lasciano mai il dispositivo</strong>.",
+          s3_title: "3. Privacy dei minori (COPPA e GDPR-K)",
+          s3_p1:
+            "Times Table Master è progettata per esercitarsi con le tabelline ed è utilizzata principalmente da studenti in età scolare. Applichiamo un trattamento destinato ai bambini nella nostra configurazione pubblicitaria, garantendo che solo annunci non personalizzati e adeguati all'età vengano mostrati a tutti gli utenti.",
+          s3_li: [
+            "<strong>Non</strong> raccogliamo informazioni personali dagli utenti.",
+            "<strong>Non</strong> richiediamo la registrazione o il login.",
+            "<strong>Non</strong> utilizziamo SDK di analisi o tracciamento di terze parti.",
+            "<strong>Non</strong> mostriamo pubblicità comportamentale o mirata.",
+            "Il trattamento destinato ai bambini è abilitato nella nostra rete pubblicitaria (<code>tagForChildDirectedTreatment = true</code>), garantendo annunci non personalizzati per tutti gli utenti.",
+            "Rispettiamo i requisiti della <strong>COPPA</strong> e del <strong>GDPR-K</strong>.",
+            "Rispettiamo la <strong>Politica per le famiglie di Google Play</strong>.",
+          ],
+          s4_title: "4. Pubblicità",
+          s4: "<p>Times Table Master utilizza pubblicità di una rete pubblicitaria di terze parti certificata (IronSource / LevelPlay). Tutta la pubblicità applica un trattamento destinato ai bambini, il che significa che vengono mostrati solo annunci non personalizzati e contestualmente appropriati.</p><p><strong>Formati pubblicitari utilizzati:</strong></p><ul><li><strong>Banner pubblicitari</strong> — piccoli annunci statici mostrati nella parte inferiore di schermate selezionate durante il gioco.</li><li><strong>Annunci interstitial</strong> — annunci a schermo intero mostrati tra le sessioni di pratica.</li><li><strong>Annunci video con premi</strong> — annunci opzionali che l&#8217;utente sceglie di guardare in cambio di ricompense in-game (suggerimenti o monete bonus).</li></ul><ul><li><strong>Non</strong> utilizziamo pubblicità comportamentale o mirata.</li><li>Tutti gli annunci sono <strong>appropriati per bambini</strong> e rispettano i requisiti della pubblicità destinata ai bambini.</li><li>Utilizziamo solo <strong>reti pubblicitarie certificate</strong> approvate per app destinate ai bambini.</li><li>Il contenuto pubblicitario è filtrato per escludere categorie con restrizione di età (senza alcool, giochi d&#8217;azzardo, contenuto adulto o violenza).</li></ul>",
+          s5_title: "5. Internet e Autorizzazioni",
+          s5_p1: "L'app richiede le seguenti autorizzazioni Android:",
+          s5_li: [
+            "<strong>INTERNET</strong> — Richiesto dalle librerie incluse. L'app stessa non trasmette dati personali.",
+            "<strong>VIBRATE</strong> — Utilizzato per il feedback aptico su risposte corrette/errate.",
+          ],
+          s6_title: "6. Servizi di terze parti",
+          s6_p1:
+            "Times Table Master integra i seguenti servizi di terze parti:",
+          s6_li: [
+            "Servizio pubblicitario IronSource / LevelPlay — <strong>ATTIVO</strong>, utilizzato per banner pubblicitari, annunci interstitial e annunci video con premi opzionali. Tutti gli annunci applicano il trattamento destinato ai bambini (non personalizzato).",
+            "Google Firebase — attualmente <strong>disabilitato</strong> (solo stub, nessuna raccolta di dati).",
+          ],
+          s6_p2:
+            "Se ulteriori servizi vengono abilitati in un aggiornamento futuro, questa informativa sarà aggiornata prima del rilascio.",
+          s7_title: "7. Conservazione e cancellazione dei dati",
+          s7_p1:
+            "Tutti i dati sono memorizzati solo sul dispositivo. È possibile eliminare tutti i dati in qualsiasi momento:",
+          s7_li: [
+            "Andare su <strong>Impostazioni Android → App → Times Table Master → Cancella dati</strong>",
+            "O disinstallando l'applicazione",
+          ],
+          s7_p2:
+            "Nessun dato viene conservato su alcun server perché nessun dato viene mai inviato a un server.",
+          s8_title: "8. Modifiche all'informativa",
+          s8: "Potremmo aggiornare periodicamente questa informativa sulla privacy. Eventuali modifiche saranno riportate su questa pagina con una data aggiornata. Ti incoraggiamo a consultare periodicamente questa informativa.",
+          s9_title: "9. Contattaci",
+          s9_p1:
+            "Se hai domande su questa informativa sulla privacy, contattaci:",
+          s9_email: "Email",
+          s9_p2:
+            "Risponderemo a tutte le richieste relative alla privacy entro 5 giorni lavorativi.",
+        },
+
+        ar: {
+          dir: "rtl",
+          subtitle: "سياسة الخصوصية",
+          rights: "جميع الحقوق محفوظة.",
+          effective: "تسري هذه السياسة اعتباراً من 24.05.2026.",
+          meta_app: "التطبيق",
+          meta_pkg: "الحزمة",
+          meta_date: "آخر تحديث",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>الملخص:</strong> لا يقوم تطبيق Times Table Master <strong>بجمع أو مشاركة أو نقل</strong> أي معلومات شخصية. تبقى جميع البيانات على جهازك فقط.",
+          s1_title: "1. حول هذا التطبيق",
+          s1: "Times Table Master تطبيق تعليمي مجاني لتعلم جداول الضرب والتدرب عليها. يقدم أوضاع تدريب متعددة — تعلم، تمرن، مختلط، سرعة والمزيد — لمساعدة المستخدمين على تطوير مهارات جداول الضرب بطريقة فعّالة وجذابة.",
+          s2_title: "2. المعلومات التي نجمعها",
+          s2_p1:
+            "لا يجمع تطبيق Times Table Master <strong>أي</strong> معلومات تعريفية شخصية. البيانات الوحيدة المخزّنة هي تقدّم اللعبة المحفوظ <strong>محلياً على جهازك</strong>:",
+          s2_li: [
+            "اسم العرض الاختياري (يُدخله المستخدم، ولا يُرسَل أبداً)",
+            "XP والعملات وتقدم المستوى",
+            "إحصائيات الاختبارات والدقة لكل جدول",
+            "إعدادات التطبيق (السمة، وضع الإجابة، الصوت، اللغة)",
+            "الجداول المحددة وتفضيلات التدريب",
+          ],
+          s2_p2:
+            "تُخزَّن هذه البيانات باستخدام التخزين المحلي لنظام Android (AsyncStorage) و<strong>لا تغادر جهازك أبداً</strong>.",
+          s3_title: "3. خصوصية الأطفال (COPPA وGDPR-K)",
+          s3_p1:
+            "صُمم تطبيق Times Table Master للتدرب على جداول الضرب ويُستخدم أساساً من قِبل طلاب في سن الدراسة. نُطبّق المعالجة الموجّهة للأطفال في إعداداتنا الإعلانية، مما يضمن عرض إعلانات غير مخصصة ومناسبة للأعمار لجميع المستخدمين.",
+          s3_li: [
+            "<strong>لا</strong> نجمع أي معلومات شخصية من المستخدمين.",
+            "<strong>لا</strong> نشترط تسجيل حساب أو تسجيل الدخول.",
+            "<strong>لا</strong> نستخدم أدوات تحليل أو تتبع من جهات خارجية.",
+            "<strong>لا</strong> نعرض إعلانات سلوكية أو مستهدفة.",
+            "تم تفعيل المعالجة الموجّهة للأطفال في شبكتنا الإعلانية (<code>tagForChildDirectedTreatment = true</code>)، مما يضمن إعلانات غير مخصصة لجميع المستخدمين.",
+            "نلتزم بمتطلبات <strong>قانون COPPA</strong> و<strong>GDPR-K</strong>.",
+            "نلتزم بـ<strong>سياسة العائلات في Google Play</strong>.",
+          ],
+          s4_title: "4. الإعلانات",
+          s4: "<p>يستخدم تطبيق Times Table Master إعلانات من شبكة إعلانية خارجية معتمدة (IronSource / LevelPlay). تُطبّق جميع الإعلانات المعالجة الموجّهة للأطفال، مما يعني عرض إعلانات غير مخصصة ومناسبة للسياق فقط.</p><p><strong>تنسيقات الإعلانات المستخدمة:</strong></p><ul><li><strong>إعلانات البنر</strong> — إعلانات ثابتة صغيرة تظهر أسفل شاشات مختارة خلال اللعب.</li><li><strong>الإعلانات الخلالية (Interstitial)</strong> — إعلانات بملء الشاشة تظهر بين جلسات التدريب.</li><li><strong>إعلانات الفيديو المكافئة</strong> — إعلانات اختيارية يختار المستخدم مشاهدتها مقابل مكافآت داخل اللعبة (كالتلميحات أو العملات الإضافية).</li></ul><ul><li><strong>لا</strong> نستخدم الإعلانات السلوكية أو المستهدفة.</li><li>جميع الإعلانات <strong>مناسبة للأطفال</strong> وتلتزم بمتطلبات الإعلانات الموجهة للأطفال.</li><li>نستخدم فقط <strong>شبكات إعلانية معتمدة</strong> ومعتمدة للتطبيقات الموجهة للأطفال.</li><li>يتم تصفية محتوى الإعلانات لاستبعاد الفئات ذات القيود العمرية (لا كحول، قمار، محتوى للبالغين، أو عنف).</li></ul>",
+          s5_title: "5. الإنترنت والأذونات",
+          s5_p1: "يطلب التطبيق أذونات Android التالية:",
+          s5_li: [
+            "<strong>INTERNET</strong> — مطلوب من المكتبات المضمّنة. التطبيق نفسه لا ينقل بيانات شخصية.",
+            "<strong>VIBRATE</strong> — يُستخدم للاهتزاز عند الإجابات الصحيحة/الخاطئة.",
+          ],
+          s6_title: "6. خدمات الطرف الثالث",
+          s6_p1:
+            "يدمج تطبيق Times Table Master الخدمات التالية من أطراف ثالثة:",
+          s6_li: [
+            "خدمة الإعلانات IronSource / LevelPlay — <strong>نشط</strong>، تُستخدم لإعلانات البنر والإعلانات الخلالية وإعلانات الفيديو المكافئة الاختيارية. تُطبّق جميع الإعلانات المعالجة الموجّهة للأطفال (غير مخصصة).",
+            "Google Firebase — معطّل حالياً (<strong>stub</strong> فقط، لا يجمع بيانات).",
+          ],
+          s6_p2:
+            "إذا تم تفعيل خدمات إضافية في تحديث مستقبلي، سيتم تحديث هذه السياسة وفقاً لذلك قبل الإصدار.",
+          s7_title: "7. الاحتفاظ بالبيانات وحذفها",
+          s7_p1:
+            "تُخزَّن جميع البيانات على جهازك فقط. يمكنك حذف جميع بيانات التطبيق في أي وقت عبر:",
+          s7_li: [
+            "الانتقال إلى <strong>إعدادات Android ← التطبيقات ← Times Table Master ← مسح البيانات</strong>",
+            "أو عبر إلغاء تثبيت التطبيق",
+          ],
+          s7_p2:
+            "لا تُحتفظ بأي بيانات على أي خادم لأنه لا يتم إرسال أي بيانات إلى خادم.",
+          s8_title: "8. التغييرات على هذه السياسة",
+          s8: "قد نقوم بتحديث سياسة الخصوصية هذه بين الحين والآخر. ستنعكس أي تغييرات على هذه الصفحة بتاريخ محدّث. نشجعك على مراجعة هذه السياسة بشكل دوري.",
+          s9_title: "9. تواصل معنا",
+          s9_p1:
+            "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا:",
+          s9_email: "البريد الإلكتروني",
+          s9_p2:
+            "سنرد على جميع الاستفسارات المتعلقة بالخصوصية خلال 5 أيام عمل.",
+        },
+
+        zh: {
+          dir: "ltr",
+          subtitle: "隐私政策",
+          rights: "保留所有权利。",
+          effective: "本隐私政策自24.05.2026起生效。",
+          meta_app: "应用程序",
+          meta_pkg: "包名",
+          meta_date: "最后更新",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>简短说明：</strong>Times Table Master <strong>不收集、不共享、不传输</strong>任何个人信息。所有数据仅保存在您的设备上。",
+          s1_title: "1. 关于本应用",
+          s1: "Times Table Master是一款免费教育应用，用于学习和练习乘法表。它提供多种练习模式——学习、练习、混合、速度等——帮助用户以有效且有趣的方式提升乘法表能力。",
+          s2_title: "2. 我们收集的信息",
+          s2_p1:
+            "Times Table Master <strong>不</strong>收集任何个人身份信息。唯一存储的数据是<strong>保存在您设备本地</strong>的游戏进度：",
+          s2_li: [
+            "可选显示名称（由用户输入，从不传输）",
+            "经验值、金币和等级进度",
+            "测验统计数据和每个表格的准确性",
+            "应用设置（主题、答题模式、声音、语言）",
+            "所选表格和练习偏好",
+          ],
+          s2_p2:
+            "这些数据使用Android本地存储（AsyncStorage）进行存储，<strong>永远不会离开您的设备</strong>。",
+          s3_title: "3. 儿童隐私（COPPA和GDPR-K）",
+          s3_p1:
+            "Times Table Master专为乘法表练习设计，主要由学龄学习者使用。我们在广告配置中应用儿童定向处理，确保向所有用户仅显示非个性化的、适龄的广告。",
+          s3_li: [
+            "我们<strong>不</strong>收集用户的任何个人信息。",
+            "我们<strong>不</strong>要求账户注册或登录。",
+            "我们<strong>不</strong>使用第三方分析或追踪SDK。",
+            "我们<strong>不</strong>展示行为广告或定向广告。",
+            "我们的广告网络中已启用儿童定向处理（<code>tagForChildDirectedTreatment = true</code>），确保为所有用户显示非个性化广告。",
+            "我们遵守<strong>《儿童在线隐私保护法》(COPPA)</strong>和<strong>GDPR-K</strong>的要求。",
+            "我们遵守<strong>Google Play家庭政策</strong>。",
+          ],
+          s4_title: "4. 广告",
+          s4: "<p>Times Table Master使用经认证的第三方广告网络（IronSource / LevelPlay）的广告。所有广告都使用儿童定向处理，即仅显示非个性化的、适合上下文的广告。</p><p><strong>使用的广告格式：</strong></p><ul><li><strong>横幅广告</strong> — 在游戏期间显示在部分屏幕底部的小型静态广告。</li><li><strong>插屏广告</strong> — 在练习会话之间显示的全屏广告。</li><li><strong>激励视频广告</strong> — 用户选择观看以换取游戏内奖励（如提示或奖励金币）的可选广告。</li></ul><ul><li>我们<strong>不</strong>使用行为广告或定向广告。</li><li>所有广告均<strong>适合儿童</strong>，符合儿童定向广告要求。</li><li>我们仅使用经认证、适用于儿童应用的<strong>认证广告网络</strong>。</li><li>广告内容经过过滤，排除年龄限制类别（无酒精、赌博、成人内容或暴力内容）。</li></ul>",
+          s5_title: "5. 网络和权限",
+          s5_p1: "该应用请求以下Android权限：",
+          s5_li: [
+            "<strong>INTERNET</strong> — 所含库所需。应用本身不传输个人数据。",
+            "<strong>VIBRATE</strong> — 用于在正确/错误答案时提供触觉反馈。",
+          ],
+          s6_title: "6. 第三方服务",
+          s6_p1: "Times Table Master集成了以下第三方服务：",
+          s6_li: [
+            "IronSource / LevelPlay广告服务 — <strong>已启用</strong>，用于横幅广告、插屏广告和可选激励视频广告。所有广告均使用儿童定向处理（非个性化）。",
+            "Google Firebase — 目前<strong>已禁用</strong>（仅存根，不收集数据）。",
+          ],
+          s6_p2: "如果未来更新中启用其他服务，本政策将在发布前相应更新。",
+          s7_title: "7. 数据保留和删除",
+          s7_p1:
+            "所有数据仅存储在您的设备上。您可以随时通过以下方式删除所有数据：",
+          s7_li: [
+            "前往<strong>Android设置 → 应用 → Times Table Master → 清除数据</strong>",
+            "或通过卸载应用程序",
+          ],
+          s7_p2: "由于从不向服务器发送数据，因此服务器上不保留任何数据。",
+          s8_title: "8. 政策变更",
+          s8: "我们可能会不时更新本隐私政策。任何变更都将在本页面上以更新的日期反映。我们建议您定期查阅本政策。",
+          s9_title: "9. 联系我们",
+          s9_p1: "如果您对本隐私政策有任何疑问，请联系我们：",
+          s9_email: "电子邮件",
+          s9_p2: "我们将在5个工作日内回复所有与隐私相关的询问。",
+        },
+
+        ja: {
+          dir: "ltr",
+          subtitle: "プライバシーポリシー",
+          rights: "全著作権所有。",
+          effective: "このプライバシーポリシーは24.05.2026から有効です。",
+          meta_app: "アプリ",
+          meta_pkg: "パッケージ",
+          meta_date: "最終更新",
+          meta_date_val: "24.05.2026",
+          highlight:
+            "<strong>要約：</strong>Times Table Masterは個人情報を<strong>収集・共有・送信しません</strong>。すべてのデータはデバイス上にのみ保存されます。",
+          s1_title: "1. このアプリについて",
+          s1: "Times Table Masterは、九九を学習・練習するための無料の教育アプリです。学習、練習、ミックス、スピードなど複数の練習モードを提供し、ユーザーが効果的かつ楽しく九九の力を伸ばせるよう支援します。",
+          s2_title: "2. 収集する情報",
+          s2_p1:
+            "Times Table Masterは個人を特定できる情報を<strong>一切</strong>収集しません。保存されるのは<strong>デバイスにローカル保存</strong>されるゲームの進捗データのみです：",
+          s2_li: [
+            "任意の表示名（ユーザーが入力、送信されることはありません）",
+            "XP、コイン、レベル進捗",
+            "クイズ統計と各テーブルの正確性",
+            "アプリ設定（テーマ、回答モード、サウンド、言語）",
+            "選択したテーブルと練習設定",
+          ],
+          s2_p2:
+            "これらのデータはAndroidのローカルストレージ（AsyncStorage）を使用して保存され、<strong>デバイスの外に出ることはありません</strong>。",
+          s3_title: "3. 子どものプライバシー（COPPAおよびGDPR-K）",
+          s3_p1:
+            "Times Table Masterは九九の練習向けに設計されており、主に学齢期の学習者が使用しています。広告設定に子ども向け処理を適用し、すべてのユーザーに非個人化された適切な広告のみが表示されるようにしています。",
+          s3_li: [
+            "ユーザーから個人情報を<strong>収集しません</strong>。",
+            "アカウント登録やログインを<strong>要求しません</strong>。",
+            "サードパーティの分析やトラッキングSDKを<strong>使用しません</strong>。",
+            "行動広告やターゲット広告を<strong>表示しません</strong>。",
+            "広告ネットワークで子ども向け処理が有効です（<code>tagForChildDirectedTreatment = true</code>）。すべてのユーザーに非個人化広告を保証します。",
+            "<strong>COPPA</strong>および<strong>GDPR-K</strong>の要件を遵守しています。",
+            "<strong>Google Playファミリーポリシー</strong>を遵守しています。",
+          ],
+          s4_title: "4. 広告",
+          s4: "<p>Times Table Masterは認定されたサードパーティの広告ネットワーク（IronSource / LevelPlay）の広告を使用しています。すべての広告は子ども向け処理を使用しており、非個人化されたコンテキストに適した広告のみが表示されます。</p><p><strong>使用広告フォーマット：</strong></p><ul><li><strong>バナー広告</strong> — ゲームプレイ中に選択した画面の下部に表示される小さな静止広告。</li><li><strong>インタースティシャル広告</strong> — 練習セッション間に表示される全画面広告。</li><li><strong>リワード動画広告</strong> — ゲーム内報酬（ヒントやボーナスコインなど）と引き換えにユーザーが選択して視聴するオプションの広告。</li></ul><ul><li>行動広告やターゲット広告は<strong>使用しません</strong>。</li><li>すべての広告は<strong>子どもに適した</strong>コンテンツであり、子ども向け広告の要件を満たしています。</li><li>子ども向けアプリに承認された<strong>認定広告ネットワーク</strong>のみを使用しています。</li><li>広告コンテンツは年齢制限カテゴリを除外するようにフィルタリングされています（アルコール、ギャンブル、成人向けコンテンツ、暴力なし）。</li></ul>",
+          s5_title: "5. インターネットと権限",
+          s5_p1: "アプリは以下のAndroid権限を要求します：",
+          s5_li: [
+            "<strong>INTERNET</strong> — 含まれるライブラリに必要です。アプリ自体は個人データを送信しません。",
+            "<strong>VIBRATE</strong> — 正解/不正解時の触覚フィードバックに使用します。",
+          ],
+          s6_title: "6. サードパーティサービス",
+          s6_p1:
+            "Times Table Masterは以下のサードパーティサービスを統合しています：",
+          s6_li: [
+            "IronSource / LevelPlay広告サービス — <strong>有効</strong>、バナー広告、インタースティシャル広告、オプションのリワード動画広告に使用。すべての広告は子ども向け処理を適用します（非個人化）。",
+            "Google Firebase — 現在<strong>無効</strong>（スタブのみ、データ収集なし）。",
+          ],
+          s6_p2:
+            "追加のサービスが将来のアップデートで有効化される場合、リリース前にこのポリシーが更新されます。",
+          s7_title: "7. データの保持と削除",
+          s7_p1:
+            "すべてのデータはデバイスにのみ保存されます。いつでもすべてのデータを削除できます：",
+          s7_li: [
+            "<strong>Androidの設定 → アプリ → Times Table Master → データを消去</strong>に移動",
+            "またはアプリをアンインストール",
+          ],
+          s7_p2:
+            "サーバーにデータが送信されないため、サーバーにデータは保持されません。",
+          s8_title: "8. ポリシーの変更",
+          s8: "このプライバシーポリシーは随時更新される場合があります。変更は更新日とともにこのページに反映されます。定期的にポリシーをご確認いただくことをお勧めします。",
+          s9_title: "9. お問い合わせ",
+          s9_p1:
+            "このプライバシーポリシーについてご質問がある場合は、お問い合わせください：",
+          s9_email: "メール",
+          s9_p2:
+            "プライバシーに関するすべてのお問い合わせに5営業日以内にご返答いたします。",
+        },
+      };
+
+      /* ================================================================
+         RENDER
+         ================================================================ */
+      function li(items) {
+        return items.map((i) => `<li>${i}</li>`).join("");
+      }
+
+      function render(lang) {
+        const t = T[lang];
+        const doc = document.documentElement;
+        doc.lang = lang;
+        doc.dir = t.dir;
+
+        document.querySelector('[data-i18n="subtitle"]').textContent =
+          t.subtitle;
+        document.querySelector('[data-i18n="rights"]').textContent = t.rights;
+        document.querySelector('[data-i18n="effective"]').textContent =
+          t.effective;
+
+        document.getElementById("main-content").innerHTML = `
+    <p class="meta">
+      ${t.meta_app}: <strong>Times Table Master</strong> &nbsp;|&nbsp;
+      ${t.meta_pkg}: <code>com.biemtech.timestable</code> &nbsp;|&nbsp;
+      ${t.meta_date}: <strong>${t.meta_date_val}</strong>
+    </p>
+
+    <div class="highlight">&#x2705; ${t.highlight}</div>
+
+    <section class="card">
+      <h2>${t.s1_title}</h2>
+      <p>${t.s1}</p>
+    </section>
+
+    <section class="card">
+      <h2>${t.s2_title}</h2>
+      <p>${t.s2_p1}</p>
+      <ul>${li(t.s2_li)}</ul>
+      <p>${t.s2_p2}</p>
+    </section>
+
+    <section class="card">
+      <h2>${t.s3_title}</h2>
+      <p>${t.s3_p1}</p>
+      <ul>${li(t.s3_li)}</ul>
+    </section>
+
+    <section class="card">
+      <h2>${t.s4_title}</h2>
+      ${t.s4}
+    </section>
+
+    <section class="card">
+      <h2>${t.s5_title}</h2>
+      <p>${t.s5_p1}</p>
+      <ul>${li(t.s5_li)}</ul>
+    </section>
+
+    <section class="card">
+      <h2>${t.s6_title}</h2>
+      <p>${t.s6_p1}</p>
+      <ul>${li(t.s6_li)}</ul>
+      <p>${t.s6_p2}</p>
+    </section>
+
+    <section class="card">
+      <h2>${t.s7_title}</h2>
+      <p>${t.s7_p1}</p>
+      <ul>${li(t.s7_li)}</ul>
+      <p>${t.s7_p2}</p>
+    </section>
+
+    <section class="card">
+      <h2>${t.s8_title}</h2>
+      <p>${t.s8}</p>
+    </section>
+
+    <section class="card card-contact">
+      <h2>${t.s9_title}</h2>
+      <p>${t.s9_p1}</p>
+      <p>&#128231; <strong>${t.s9_email}:</strong> <a href="mailto:info@biemtech.com">info@biemtech.com</a></p>
+      <p>${t.s9_p2}</p>
+    </section>
+  `;
+      }
+
+      function switchLang(lang) {
+        render(lang);
+        try {
+          localStorage.setItem("site_lang", lang);
+        } catch (e) {}
+      }
+
+      // Init: use saved language or browser default
+      (function () {
+        let saved = null;
+        try {
+          saved = localStorage.getItem("site_lang");
+        } catch (e) {}
+        const browserLang = (navigator.language || "en")
+          .slice(0, 2)
+          .toLowerCase();
+        const lang =
+          saved && T[saved] ? saved : T[browserLang] ? browserLang : "en";
+        document.getElementById("lang-select").value = lang;
+        render(lang);
+      })();
+    </script>
+  </body>
+</html>

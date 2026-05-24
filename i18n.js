@@ -106,6 +106,13 @@ const I18N = {
     nav_back_to_mk: "← Back to Math Kids",
     chip_education: "Education",
     chip_live: "● Live",
+    chip_dev: "In Development",
+    ttm_desc:
+      "A fun app for learning and practising multiplication tables. Build times-table skills through engaging practice, games, and progress tracking.",
+    ttm_page_tagline: "Learn the Times Tables",
+    ttm_page_desc:
+      "Learn and practise times tables through engaging games, speed challenges, and progress tracking. Coming to Android soon.",
+    ttm_notify_btn: "Contact us to stay updated →",
     home_also_find: "At the bottom of the Home screen you'll also find:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -201,6 +208,13 @@ const I18N = {
     nav_back_to_mk: "← Math Kids-ə Qayıt",
     chip_education: "Təhsil",
     chip_live: "● Canlı",
+    chip_dev: "Hazırlanır",
+    ttm_desc:
+      "Vurma cədvəlini öyrənmək və məşq etmək üçün əyləncəli tətbiq. Cəlbedici məşqlər, oyunlar və irəliləyişin izlənməsi ilə vurma cədvəli bacarıqlarınızı gücləndirin.",
+    ttm_page_tagline: "Vurma Cədvəllərini Öyrənin",
+    ttm_page_desc:
+      "Cəlbedici oyunlar, sürət tapşırıqları və irəliləyişin izlənməsi ilə vurma cədvəllərini öyrənin və məşq edin. Tezliklə Android-də.",
+    ttm_notify_btn: "Yeniliklər üçün əlaqə saxlayın →",
     home_also_find: "Ana ekranın altında bunları da tapa bilərsiniz:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -294,6 +308,13 @@ const I18N = {
     nav_back_to_mk: "← К Math Kids",
     chip_education: "Образование",
     chip_live: "● В эфире",
+    chip_dev: "В разработке",
+    ttm_desc:
+      "Увлекательное приложение для изучения и практики таблицы умножения. Закрепляйте навыки умножения с помощью упражнений, игр и отслеживания прогресса.",
+    ttm_page_tagline: "Учите таблицу умножения",
+    ttm_page_desc:
+      "Изучайте и практикуйте таблицу умножения через игры, скоростные задания и отслеживание прогресса. Скоро для Android.",
+    ttm_notify_btn: "Свяжитесь с нами для обновлений →",
     home_also_find: "Внизу главного экрана вы также найдёте:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -388,6 +409,13 @@ const I18N = {
     nav_back_to_mk: "← Math Kids'e Dön",
     chip_education: "Eğitim",
     chip_live: "● Canlı",
+    chip_dev: "Geliştiriliyor",
+    ttm_desc:
+      "Çarpım tablolarını öğrenmek ve alıştırma yapmak için eğlenceli bir uygulama. Alıştırmalar, oyunlar ve ilerleme takibi ile çarpım tablosu becerilerinizi geliştirin.",
+    ttm_page_tagline: "Çarpım Tablolarını Öğrenin",
+    ttm_page_desc:
+      "Çarpım tablolarını eğlenceli oyunlar, hız mücadeleleri ve ilerleme takibi ile öğrenin. Yakında Android'de.",
+    ttm_notify_btn: "Güncellemeler için iletişime geçin →",
     home_also_find: "Ana ekranın altında şunları da bulacaksınız:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -483,6 +511,13 @@ const I18N = {
     nav_back_to_mk: "← Zurück zu Math Kids",
     chip_education: "Bildung",
     chip_live: "● Live",
+    chip_dev: "In Entwicklung",
+    ttm_desc:
+      "Eine unterhaltsame App zum Lernen und Üben des Einmaleins. Festigen Sie Ihre Einmaleins-Kenntnisse mit Übungen, Spielen und Fortschrittsverfolgung.",
+    ttm_page_tagline: "Das Einmaleins lernen",
+    ttm_page_desc:
+      "Lerne das Einmaleins mit Spielen, Speed-Challenges und Fortschrittsverfolgung. Bald für Android.",
+    ttm_notify_btn: "Kontaktiere uns für Updates →",
     home_also_find: "Am unteren Rand des Startbildschirms findest du außerdem:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -581,7 +616,14 @@ const I18N = {
     nav_back_to_mk: "← Retour à Math Kids",
     chip_education: "Éducation",
     chip_live: "● En ligne",
-    home_also_find: "En bas de l'écran d'accueil, vous trouverez également :",
+    chip_dev: "En développement",
+    ttm_desc:
+      "Une application amusante pour apprendre et pratiquer les tables de multiplication. Progressez avec des exercices, des jeux et un suivi de la progression.",
+    ttm_page_tagline: "Apprenez les tables de multiplication",
+    ttm_page_desc:
+      "Apprenez et pratiquez les tables avec des jeux, des défis de vitesse et un suivi de progression. Bientôt sur Android.",
+    ttm_notify_btn: "Contactez-nous pour rester informé →",
+    home_also_find: "En bas de l’écran d’accueil, vous trouverez également :",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
   },
@@ -678,6 +720,13 @@ const I18N = {
     nav_back_to_mk: "← Volver a Math Kids",
     chip_education: "Educación",
     chip_live: "● En vivo",
+    chip_dev: "En desarrollo",
+    ttm_desc:
+      "Una divertida aplicación para aprender y practicar las tablas de multiplicar. Mejora tus habilidades con ejercicios, juegos y seguimiento del progreso.",
+    ttm_page_tagline: "Aprende las tablas de multiplicar",
+    ttm_page_desc:
+      "Aprende y practica las tablas con juegos, desafíos de velocidad y seguimiento del progreso. Próximamente en Android.",
+    ttm_notify_btn: "Contáctenos para actualizaciones →",
     home_also_find:
       "En la parte inferior de la pantalla de inicio también encontrarás:",
     guide_breadcrumb_home: "BieMTech",
@@ -775,6 +824,13 @@ const I18N = {
     nav_back_to_mk: "← Voltar ao Math Kids",
     chip_education: "Educação",
     chip_live: "● Ao vivo",
+    chip_dev: "Em desenvolvimento",
+    ttm_desc:
+      "Um aplicativo divertido para aprender e praticar a tabuada. Desenvolva suas habilidades com exercícios, jogos e acompanhamento do progresso.",
+    ttm_page_tagline: "Aprenda a tabuada",
+    ttm_page_desc:
+      "Aprenda e pratique a tabuada com jogos, desafios de velocidade e acompanhamento do progresso. Em breve no Android.",
+    ttm_notify_btn: "Contate-nos para atualizações →",
     home_also_find: "Na parte inferior da tela inicial você também encontrará:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -870,6 +926,13 @@ const I18N = {
     nav_back_to_mk: "← Torna a Math Kids",
     chip_education: "Istruzione",
     chip_live: "● Disponibile",
+    chip_dev: "In sviluppo",
+    ttm_desc:
+      "Un'app divertente per imparare e praticare le tabelline. Migliora le tue abilità con esercizi, giochi e monitoraggio dei progressi.",
+    ttm_page_tagline: "Impara le tabelline",
+    ttm_page_desc:
+      "Impara e pratica le tabelline con giochi, sfide di velocità e monitoraggio dei progressi. Presto su Android.",
+    ttm_notify_btn: "Contattaci per aggiornamenti →",
     home_also_find:
       "Nella parte inferiore della schermata Home troverai anche:",
     guide_breadcrumb_home: "BieMTech",
@@ -959,6 +1022,13 @@ const I18N = {
     nav_back_to_mk: "← العودة إلى Math Kids",
     chip_education: "تعليم",
     chip_live: "● مباشر",
+    chip_dev: "قيد التطوير",
+    ttm_desc:
+      "تطبيق ممتع لتعلم جداول الضرب والتدرب عليها. طوّر مهاراتك في جداول الضرب من خلال التمارين الممتعة والألعاب وتتبع التقدم.",
+    ttm_page_tagline: "تعلّم جداول الضرب",
+    ttm_page_desc:
+      "تعلّم جداول الضرب وتدرّب عليها من خلال ألعاب ممتعة وتحديات السرعة وتتبع التقدم. قريباً على Android.",
+    ttm_notify_btn: "تواصل معنا للتحديثات ←",
     home_also_find: "في أسفل الشاشة الرئيسية ستجد أيضاً:",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -1045,6 +1115,13 @@ const I18N = {
     nav_back_to_mk: "← 返回 Math Kids",
     chip_education: "教育",
     chip_live: "● 上线",
+    chip_dev: "开发中",
+    ttm_desc:
+      "一款有趣的乘法表学习与练习应用。通过互动练习、游戏和进度追踪提升乘法表能力。",
+    ttm_page_tagline: "学习乘法表",
+    ttm_page_desc:
+      "通过游戏、速度挑战和进度追踪学习和练习乘法表。即将登陆Android。",
+    ttm_notify_btn: "联系我们获取更新 →",
     home_also_find: "在主屏幕底部你还会找到：",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
@@ -1137,6 +1214,13 @@ const I18N = {
     nav_back_to_mk: "← Math Kids に戻る",
     chip_education: "教育",
     chip_live: "● 公開中",
+    chip_dev: "開発中",
+    ttm_desc:
+      "九九を楽しく学んで練習できるアプリ。練習、ゲーム、進捗追跡で九九の力を伸ばそう。",
+    ttm_page_tagline: "九九を学ぼう",
+    ttm_page_desc:
+      "ゲーム、スピードチャレンジ、進捗追跡で九九を学んで練習しよう。Android版もうすぐ登場。",
+    ttm_notify_btn: "最新情報はお問い合わせを →",
     home_also_find: "ホーム画面の下部でも以下が見つかります：",
     guide_breadcrumb_home: "BieMTech",
     guide_breadcrumb_mk: "Math Kids",
