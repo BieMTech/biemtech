@@ -10,6 +10,107 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
+    <style>
+      /* ── OrangeLine Embedded Widget ─────────────────────────── */
+      .ol-widget {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 12px;
+      }
+      .ol-widget__btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #ff6600;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(255, 102, 0, 0.45);
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        flex-shrink: 0;
+      }
+      .ol-widget__btn:hover {
+        background: #e55a00;
+        transform: scale(1.07);
+      }
+      .ol-widget__btn svg {
+        pointer-events: none;
+      }
+      .ol-widget__panel {
+        display: none;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+        background: #fff;
+        transition:
+          width 0.25s ease,
+          height 0.25s ease;
+        max-height: calc(100vh - 80px);
+      }
+      .ol-widget__panel.ol-open {
+        display: flex;
+      }
+      .ol-widget__bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 14px;
+        background: #ff6600;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        flex-shrink: 0;
+        font-family: inherit;
+      }
+      .ol-widget__close {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 17px;
+        cursor: pointer;
+        line-height: 1;
+        padding: 2px 4px;
+        opacity: 0.85;
+        border-radius: 4px;
+      }
+      .ol-widget__close:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .ol-widget__iframe {
+        display: block;
+        border: none;
+        flex-shrink: 0;
+      }
+      /* Fullscreen / maximized state */
+      .ol-widget.ol-max {
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        gap: 0;
+      }
+      .ol-widget.ol-max .ol-widget__panel {
+        width: 100vw !important;
+        height: 100vh !important;
+        border-radius: 0;
+      }
+      .ol-widget.ol-max .ol-widget__iframe {
+        width: 100vw !important;
+        height: calc(100vh - 40px) !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -578,5 +679,147 @@
       sections.forEach((s) => observer.observe(s));
     </script>
     <script src="i18n.js"></script>
+
+    <!-- ── OrangeLine Embedded Widget ──────────────────────── -->
+    <div class="ol-widget" id="ol-widget">
+      <div class="ol-widget__panel" id="ol-panel">
+        <div class="ol-widget__bar">
+          <span>OrangeLine</span>
+          <div style="display: flex; gap: 4px; align-items: center">
+            <button
+              class="ol-widget__close"
+              id="ol-max-btn"
+              onclick="olMaximize()"
+              aria-label="Maximize"
+              title="Maximize"
+            >
+              ⤡
+            </button>
+            <button
+              class="ol-widget__close"
+              onclick="olToggle()"
+              aria-label="Close"
+              title="Close"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+        <iframe
+          id="ol-iframe"
+          class="ol-widget__iframe"
+          allow="microphone; camera"
+          title="OrangeLine Phone"
+        ></iframe>
+      </div>
+      <button
+        class="ol-widget__btn"
+        onclick="olToggle()"
+        aria-label="Open phone"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.35 1.06-.19 1.1.46 2.28.69 3.54.69.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.56 21 3 13.44 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.68-.19.97L6.6 10.8z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script>
+      // ── OrangeLine Embedded Widget ──────────────────────────
+      (function () {
+        var OL_URL = "https://dev.orangeline.az/embedded";
+        var olIframeLoaded = false;
+
+        var OL_INIT_W = 560;
+        var OL_INIT_H = 800; // 40 = bar hündürlüyü
+        var OL_BAR_H = 40; // .ol-widget__bar height
+        var olOpen = false;
+        // Last known dims from iframe postMessage (may arrive before widget opens)
+        var lastW = OL_INIT_W;
+        var lastH = OL_INIT_H;
+
+        function olSetSize(w, h) {
+          var panel = document.getElementById("ol-panel");
+          var iframe = document.getElementById("ol-iframe");
+          panel.style.width = w + "px";
+          panel.style.height = h + OL_BAR_H + "px";
+          iframe.style.width = w + "px";
+          iframe.style.height = h + "px";
+        }
+
+        window.olToggle = function () {
+          olOpen = !olOpen;
+          var panel = document.getElementById("ol-panel");
+          var widget = document.getElementById("ol-widget");
+          var btn = document.getElementById("ol-max-btn");
+          var iframe = document.getElementById("ol-iframe");
+          // Lazy load: set src only on first open
+          if (olOpen && !olIframeLoaded) {
+            iframe.src = OL_URL;
+            olIframeLoaded = true;
+          }
+          if (olOpen) {
+            panel.classList.add("ol-open");
+            olSetSize(lastW, lastH);
+          } else {
+            panel.classList.remove("ol-open");
+            // Fullscreen-dən çıx
+            if (olMaximized) {
+              olMaximized = false;
+              widget.classList.remove("ol-max");
+              btn.textContent = "⤡";
+              btn.title = "Maximize";
+              iframe.contentWindow.postMessage(
+                { type: "ol_embedded_mode", fullscreen: false },
+                "*",
+              );
+            }
+          }
+        };
+
+        window.addEventListener("message", function (e) {
+          if (!e.data) return;
+          if (e.data.type === "ol_embedded_fullscreen") {
+            if (e.data.request && !olMaximized) olMaximize();
+            else if (!e.data.request && olMaximized) olMaximize();
+            return;
+          }
+          if (e.data.type === "ol_embedded_resize") {
+            lastW = e.data.width;
+            // Login form (wide panel) needs at least 540px height to show all
+            // elements. The deployed app sends 480 but content is taller.
+            lastH =
+              e.data.width >= 350
+                ? Math.max(e.data.height, 540)
+                : e.data.height;
+            if (olOpen && !olMaximized) olSetSize(lastW, lastH);
+            return;
+          }
+        });
+
+        var olMaximized = false;
+
+        window.olMaximize = function () {
+          olMaximized = !olMaximized;
+          var widget = document.getElementById("ol-widget");
+          var btn = document.getElementById("ol-max-btn");
+          var iframe = document.getElementById("ol-iframe");
+          if (olMaximized) {
+            widget.classList.add("ol-max");
+            btn.textContent = "-";
+            btn.title = "Minimize";
+          } else {
+            widget.classList.remove("ol-max");
+            btn.textContent = "⤡";
+            btn.title = "Maximize";
+          }
+          iframe.contentWindow.postMessage(
+            { type: "ol_embedded_mode", fullscreen: olMaximized },
+            "*",
+          );
+        };
+      })();
+    </script>
   </body>
 </html>
