@@ -1217,6 +1217,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(122,66,31,0.3);
 }
 
+.app-card__icon.arrows-escape {
+  background: #071827;
+  box-shadow: 0 8px 24px rgba(24, 209, 222, 0.24);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;
@@ -1241,6 +1246,7 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding-top: 8px;
   border-top: 1px solid rgba(0,0,0,0.07);

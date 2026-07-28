@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrows Escape — BieMTech</title>
+    <meta
+      name="description"
+      content="Arrows Escape — a strategic arrow puzzle game for ages 6 and up. Coming soon to Android by BieMTech."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <style>
+      :root {
+        --primary: #19bfc9;
+        --primary-dim: rgba(25, 191, 201, 0.12);
+        --primary-glow: rgba(25, 191, 201, 0.26);
+        --bg: #071522;
+        --bg-card: rgba(13, 38, 55, 0.9);
+        --bg-card2: rgba(18, 48, 68, 0.96);
+        --border: rgba(120, 243, 255, 0.16);
+        --text: #effcff;
+        --text-muted: #aec5d1;
+        --text-dim: #7894a3;
+      }
+
+      body {
+        background-color: var(--bg);
+        background-image:
+          radial-gradient(
+            ellipse 70% 65% at 8% 12%,
+            rgba(25, 191, 201, 0.14) 0%,
+            transparent 58%
+          ),
+          radial-gradient(
+            ellipse 58% 54% at 92% 82%,
+            rgba(255, 209, 102, 0.1) 0%,
+            transparent 55%
+          );
+        color: var(--text);
+      }
+
+      .navbar {
+        background: rgba(7, 21, 34, 0.86);
+        border-color: var(--border);
+      }
+
+      .navbar__nav a,
+      .navbar__actions {
+        color: var(--text-muted);
+      }
+
+      .navbar__nav a:hover,
+      .navbar__nav a.active {
+        color: var(--text);
+      }
+
+      .lang-select {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--border);
+        color: var(--text);
+        color-scheme: dark;
+      }
+
+      .lang-select option {
+        background-color: #071522;
+        color: #effcff;
+      }
+
+      .arrows-hero {
+        padding: 54px 24px 62px;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .arrows-hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .arrows-icon-wrap {
+        position: relative;
+        margin-bottom: 24px;
+      }
+
+      .arrows-icon {
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+        display: block;
+        box-shadow:
+          0 16px 48px rgba(0, 0, 0, 0.35),
+          0 0 42px rgba(25, 191, 201, 0.16);
+      }
+
+      .arrows-icon-badge {
+        position: absolute;
+        right: -10px;
+        bottom: -8px;
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #19bfc9, #ffd166);
+        color: #071522;
+        font-size: 1.45rem;
+        font-weight: 900;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+      }
+
+      .badge--soon {
+        display: inline-flex;
+        margin-bottom: 16px;
+        background: rgba(25, 191, 201, 0.13);
+        color: #78f3ff;
+        border: 1px solid rgba(120, 243, 255, 0.28);
+      }
+
+      .arrows-title {
+        margin: 0 0 6px;
+        font-size: clamp(32px, 6vw, 56px);
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        line-height: 1.06;
+      }
+
+      .arrows-tagline {
+        margin: 0;
+        color: #78f3ff;
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+        font-weight: 700;
+      }
+
+      .arrows-divider {
+        width: 48px;
+        height: 3px;
+        margin: 15px auto 18px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, #19bfc9, #ffd166);
+      }
+
+      .arrows-desc {
+        max-width: 570px;
+        margin: 0 0 24px;
+        color: var(--text-muted);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+      .arrows-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .arrows-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 750;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .arrows-btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .arrows-btn--primary {
+        background: linear-gradient(135deg, #129ba9, #1a6f8c);
+        color: #fff;
+        box-shadow: 0 7px 22px rgba(18, 155, 169, 0.3);
+      }
+
+      .arrows-btn--secondary {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text);
+      }
+
+      .arrow-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.025);
+        color: #78f3ff;
+        font-size: 1.35rem;
+        letter-spacing: 0.18em;
+      }
+
+      .arrows-section {
+        padding: 58px 0 66px;
+      }
+
+      .arrows-section .section-label {
+        text-align: center;
+        color: #78f3ff;
+        border-color: rgba(120, 243, 255, 0.3);
+      }
+
+      .arrows-section-title {
+        margin-top: 8px;
+        text-align: center;
+        color: var(--text);
+        font-size: clamp(24px, 3.5vw, 36px);
+        font-weight: 850;
+        letter-spacing: -0.025em;
+      }
+
+      .arrows-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      .arrows-card {
+        padding: 28px 24px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--bg-card);
+        box-shadow:
+          0 12px 32px rgba(0, 0, 0, 0.16),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        transition:
+          transform 0.22s ease,
+          border-color 0.22s ease;
+      }
+
+      .arrows-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(120, 243, 255, 0.34);
+      }
+
+      .arrows-card__icon {
+        display: block;
+        margin-bottom: 14px;
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      .arrows-card__title {
+        margin-bottom: 8px;
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 750;
+      }
+
+      .arrows-card__desc {
+        color: var(--text-muted);
+        font-size: 0.875rem;
+        line-height: 1.65;
+      }
+
+      .arrows-info {
+        padding: 30px 24px;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        background: rgba(25, 191, 201, 0.045);
+      }
+
+      .arrows-info__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 34px;
+        text-align: center;
+      }
+
+      .arrows-info__label {
+        margin: 0 0 4px;
+        color: var(--text-dim);
+        font-size: 0.76rem;
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .arrows-info__value {
+        margin: 0;
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 750;
+      }
+
+      .arrows-info__value a {
+        color: #78f3ff;
+      }
+
+      .arrows-footer {
+        padding: 26px 20px;
+        text-align: center;
+        color: var(--text-dim);
+        font-size: 0.84rem;
+      }
+
+      .arrows-footer a {
+        color: #78f3ff;
+        text-underline-offset: 3px;
+      }
+
+      @media (max-width: 720px) {
+        .navbar__nav {
+          display: none;
+        }
+
+        .arrows-info__inner {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
+        </a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps"
+            >Apps</a
+          >
+          <a href="privacy/arrows-escape/index.html" data-i18n="nav_privacy"
+            >Privacy</a
+          >
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select
+              id="lang-select"
+              class="lang-select"
+              onchange="setLang(this.value)"
+              aria-label="Language"
+            >
+              <option value="en">🇬🇧 EN</option>
+              <option value="az">🇦🇿 AZ</option>
+              <option value="ru">🇷🇺 RU</option>
+              <option value="tr">🇹🇷 TR</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇵🇹 PT</option>
+              <option value="it">🇮🇹 IT</option>
+              <option value="ar">🇸🇦 AR</option>
+              <option value="zh">🇨🇳 ZH</option>
+              <option value="ja">🇯🇵 JA</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="arrows-hero">
+      <div class="container arrows-hero__inner">
+        <div class="arrows-icon-wrap">
+          <img
+            class="arrows-icon"
+            src="img/arrows_escape_icon.png"
+            alt="Arrows Escape"
+          />
+          <span class="arrows-icon-badge" aria-hidden="true">↗</span>
+        </div>
+
+        <div class="badge badge--soon">
+          ⏳ <span data-i18n="chip_dev">In Development</span>
+        </div>
+
+        <h1 class="arrows-title">Arrows Escape</h1>
+        <p class="arrows-tagline" data-i18n="arrows_page_tagline">
+          Find the Clear Path
+        </p>
+        <div class="arrows-divider"></div>
+        <p class="arrows-desc" data-i18n="arrows_page_desc">
+          Solve strategic arrow puzzles with endless procedural levels, daily
+          challenges, achievements, and 12 languages. Made for players aged 6+
+          and adults. Coming soon to Android.
+        </p>
+
+        <div class="arrows-actions">
+          <a
+            href="mailto:info@biemtech.com"
+            class="arrows-btn arrows-btn--primary"
+            data-i18n="arrows_notify_btn"
+            >Contact us to stay updated →</a
+          >
+          <a
+            href="privacy/arrows-escape/index.html"
+            class="arrows-btn arrows-btn--secondary"
+            data-i18n="arrows_privacy_btn"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <div class="arrow-strip" aria-hidden="true">
+      <span>↑</span><span>↗</span><span>→</span><span>↘</span><span>↓</span
+      ><span>↙</span><span>←</span><span>↖</span>
+    </div>
+
+    <section class="arrows-section">
+      <div class="container">
+        <p class="section-label" data-i18n="arrows_features_label">
+          Features
+        </p>
+        <h2 class="arrows-section-title" data-i18n="arrows_features_title">
+          What's coming
+        </h2>
+
+        <div class="arrows-grid">
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">∞</span>
+            <div class="arrows-card__title" data-i18n="arrows_f1_title">
+              Endless Solvable Puzzles
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f1_desc">
+              Procedurally generated boards create a fresh challenge while
+              keeping every level fully solvable.
+            </div>
+          </article>
+
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">☀️</span>
+            <div class="arrows-card__title" data-i18n="arrows_f2_title">
+              Daily Challenge
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f2_desc">
+              Return each day for a new seeded puzzle and build your daily
+              streak.
+            </div>
+          </article>
+
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">↶</span>
+            <div class="arrows-card__title" data-i18n="arrows_f3_title">
+              Hints &amp; Undo
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f3_desc">
+              Use a hint when the path is unclear or undo a blocked move and
+              recover your heart.
+            </div>
+          </article>
+
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">🏆</span>
+            <div class="arrows-card__title" data-i18n="arrows_f4_title">
+              Achievements &amp; Ranks
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f4_desc">
+              Unlock 22 achievements, earn XP and coins, and climb through
+              eight player ranks.
+            </div>
+          </article>
+
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">📊</span>
+            <div class="arrows-card__title" data-i18n="arrows_f5_title">
+              Stats &amp; Streaks
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f5_desc">
+              Track stars, perfect levels, best times, hints, wins, and your
+              longest streak.
+            </div>
+          </article>
+
+          <article class="arrows-card">
+            <span class="arrows-card__icon" aria-hidden="true">🌍</span>
+            <div class="arrows-card__title" data-i18n="arrows_f6_title">
+              12 Languages
+            </div>
+            <div class="arrows-card__desc" data-i18n="arrows_f6_desc">
+              Play in 12 languages with automatic device-language detection and
+              in-game switching.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="arrows-info">
+      <div class="container arrows-info__inner">
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_developer">
+            Developer
+          </p>
+          <p class="arrows-info__value"><a href="index.html">BieMTech</a></p>
+        </div>
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_platform">Platform</p>
+          <p class="arrows-info__value">Android</p>
+        </div>
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_status">Status</p>
+          <p class="arrows-info__value" data-i18n="chip_dev">
+            In Development
+          </p>
+        </div>
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_category">Category</p>
+          <p class="arrows-info__value" data-i18n="chip_puzzle">
+            Puzzle Game
+          </p>
+        </div>
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_age">Audience</p>
+          <p class="arrows-info__value" data-i18n="arrows_age">Ages 6+</p>
+        </div>
+        <div>
+          <p class="arrows-info__label" data-i18n="meta_contact">Contact</p>
+          <p class="arrows-info__value">
+            <a href="mailto:info@biemtech.com">info@biemtech.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="arrows-footer">
+      &copy; 2026 BieMTech &nbsp;·&nbsp;
+      <a href="index.html" data-i18n="footer_home">Home</a>
+      &nbsp;·&nbsp;
+      <a href="privacy/arrows-escape/index.html" data-i18n="nav_privacy"
+        >Privacy Policy</a
+      >
+    </footer>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

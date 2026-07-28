@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrows Escape Privacy Policy — BieMTech</title>
+    <meta
+      name="description"
+      content="Privacy policy for Arrows Escape, the 6+ arrow puzzle game by BieMTech."
+    />
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+    <style>
+      :root {
+        --bg: #071522;
+        --surface: rgba(15, 37, 55, 0.88);
+        --surface-strong: #102b40;
+        --text: #edfaff;
+        --muted: #a7c0ce;
+        --cyan: #78f3ff;
+        --gold: #ffd166;
+        --border: rgba(120, 243, 255, 0.18);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 15% 5%, rgba(41, 213, 222, 0.13), transparent 28rem),
+          radial-gradient(circle at 90% 20%, rgba(255, 209, 102, 0.09), transparent 24rem),
+          var(--bg);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--cyan);
+      }
+
+      .topbar {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: 650;
+        font-size: 0.9rem;
+      }
+
+      .back-link:hover {
+        color: var(--text);
+      }
+
+      .lang-select {
+        appearance: none;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text);
+        padding: 8px 14px;
+        font: inherit;
+        font-size: 0.85rem;
+        font-weight: 700;
+        cursor: pointer;
+        color-scheme: dark;
+      }
+
+      .lang-select option {
+        background-color: #071522;
+        color: #effcff;
+      }
+
+      header {
+        width: min(860px, calc(100% - 32px));
+        margin: 34px auto 40px;
+        text-align: center;
+      }
+
+      .app-icon {
+        width: 104px;
+        height: 104px;
+        border-radius: 24px;
+        box-shadow:
+          0 20px 55px rgba(0, 0, 0, 0.35),
+          0 0 38px rgba(120, 243, 255, 0.16);
+      }
+
+      h1 {
+        margin: 22px 0 4px;
+        font-size: clamp(2.15rem, 7vw, 4rem);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--cyan);
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+      }
+
+      .audience {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 18px;
+        padding: 7px 14px;
+        border: 1px solid rgba(255, 209, 102, 0.3);
+        border-radius: 999px;
+        color: var(--gold);
+        background: rgba(255, 209, 102, 0.07);
+        font-size: 0.85rem;
+        font-weight: 750;
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto 72px;
+      }
+
+      .meta,
+      .summary,
+      .card {
+        border: 1px solid var(--border);
+        background: var(--surface);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+      }
+
+      .meta {
+        margin: 0 0 14px;
+        padding: 14px 18px;
+        border-radius: 14px;
+        color: var(--muted);
+        font-size: 0.84rem;
+        text-align: center;
+      }
+
+      code {
+        color: var(--cyan);
+      }
+
+      .summary {
+        margin-bottom: 20px;
+        padding: 18px 20px;
+        border-radius: 16px;
+        border-color: rgba(120, 243, 255, 0.3);
+        color: #dffcff;
+      }
+
+      .card {
+        margin-bottom: 14px;
+        padding: clamp(20px, 5vw, 30px);
+        border-radius: 18px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.15rem;
+        line-height: 1.35;
+        color: var(--cyan);
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin: 10px 0 14px;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 7px;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        margin-top: 6px;
+        padding: 9px 18px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #1aa8b6, #1c6f8c);
+        color: #fff;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      footer {
+        padding: 28px 16px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.84rem;
+      }
+
+      [dir="rtl"] ul {
+        padding-left: 0;
+        padding-right: 22px;
+      }
+
+      @media (max-width: 560px) {
+        .topbar {
+          align-items: flex-start;
+        }
+
+        .back-link {
+          max-width: 190px;
+        }
+
+        header {
+          margin-top: 18px;
+        }
+
+        .meta {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a class="back-link" href="../index.html" data-i18n="back"
+        >← BieMTech Privacy Policies</a
+      >
+      <select
+        id="lang-select"
+        class="lang-select"
+        onchange="switchLang(this.value)"
+        aria-label="Language"
+      >
+        <option value="en">🇬🇧 English</option>
+        <option value="az">🇦🇿 Azərbaycan dili</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="tr">🇹🇷 Türkçe</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="pt">🇵🇹 Português</option>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="ar">🇸🇦 العربية</option>
+        <option value="zh">🇨🇳 中文</option>
+        <option value="ja">🇯🇵 日本語</option>
+      </select>
+    </div>
+
+    <header>
+      <img
+        class="app-icon"
+        src="../../img/arrows_escape_icon.png"
+        alt="Arrows Escape"
+      />
+      <h1>Arrows Escape</h1>
+      <p class="subtitle" data-i18n="subtitle">Privacy Policy</p>
+      <div class="audience" data-i18n="audience">
+        Recommended for ages 6+ · No upper age limit
+      </div>
+    </header>
+
+    <main id="policy-content"></main>
+
+    <footer>
+      &copy; 2026 Arrows Escape — <a href="../../index.html">BieMTech</a>.
+      <span data-i18n="rights">All rights reserved.</span>
+    </footer>
+
+    <script>
+      const T = {
+        en: {
+          dir: "ltr",
+          back: "← BieMTech Privacy Policies",
+          subtitle: "Privacy Policy",
+          audience: "Recommended for ages 6+ · No upper age limit",
+          rights: "All rights reserved.",
+          app: "Application",
+          pkg: "Package",
+          updated: "Last updated",
+          date: "28.07.2026",
+          summary:
+            "<strong>Short version:</strong> Arrows Escape does <strong>not collect, share, sell, or transmit</strong> personal information. The game works offline, contains no advertising or analytics, and keeps progress only on your device.",
+          sections: [
+            {
+              title: "1. About This App",
+              body:
+                "<p>Arrows Escape is a free strategic arrow puzzle game. Players clear arrows from a board, solve procedurally generated levels, earn stars, build streaks, unlock achievements, and track progress.</p><p>It is a general-audience game recommended for players aged <strong>6 and older</strong>, including adults. It is not an educational application and is not designed exclusively for children.</p>",
+            },
+            {
+              title: "2. Information We Collect",
+              body:
+                "<p>Arrows Escape does <strong>not</strong> collect personally identifiable information. It does not ask for a name, email address, phone number, account, or login.</p><p>The following gameplay data is stored <strong>locally on your device</strong>:</p><ul><li>Level progress, completed levels, and earned stars</li><li>Coins, XP, rank, achievements, and daily streaks</li><li>Gameplay statistics such as best time, levels played, and hints used</li><li>Settings including language, sound, music, vibration, reduced motion, and tutorial status</li></ul><p>This information is not transmitted to BieMTech or any third party.</p>",
+            },
+            {
+              title: "3. General Audience and Children's Privacy",
+              body:
+                "<p>Arrows Escape is suitable for a broad audience aged 6+, including children, teenagers, and adults. It has no upper age limit.</p><ul><li>No personal information is knowingly collected from children or adults.</li><li>No account registration or login is available.</li><li>No chat, social profile, or user-generated content is included.</li><li>No analytics, tracking, targeted advertising, or behavioural profiling is used.</li></ul><p>Parents or guardians can remove all locally saved progress at any time using the deletion methods described below.</p>",
+            },
+            {
+              title: "4. Advertising",
+              body:
+                "<p>Arrows Escape contains <strong>no banner, interstitial, rewarded, or personalised advertising</strong>. No advertising SDK is included in the current version.</p>",
+            },
+            {
+              title: "5. Internet and Device Permissions",
+              body:
+                "<p>The current Android version does <strong>not request Internet access</strong> and works offline. The export configuration also does not request access to location, camera, microphone, contacts, photos, media, external storage, notifications, or other sensitive device data.</p>",
+            },
+            {
+              title: "6. Third-Party Services",
+              body:
+                "<p>Arrows Escape does not integrate third-party advertising, analytics, crash-reporting, account, cloud-save, or tracking services. If a future version adds any service that changes data handling, this policy will be updated before that version is released.</p>",
+            },
+            {
+              title: "7. Data Retention and Deletion",
+              body:
+                "<p>Game progress remains on your device until you remove it. You can delete it at any time by:</p><ul><li>Using <strong>Reset Progress</strong> in the app's Settings screen</li><li>Going to <strong>Android Settings → Apps → Arrows Escape → Clear Data</strong></li><li>Uninstalling the application</li></ul><p>No server-side deletion request is necessary because the app does not send or store your data on a server.</p>",
+            },
+            {
+              title: "8. Changes to This Policy",
+              body:
+                "<p>We may update this Privacy Policy when the application changes. Any revision will appear on this page with a new last-updated date.</p>",
+            },
+            {
+              title: "9. Contact Us",
+              body:
+                '<p>For questions about this Privacy Policy or Arrows Escape data practices, contact BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        az: {
+          dir: "ltr",
+          back: "← BieMTech Məxfilik Siyasətləri",
+          subtitle: "Məxfilik Siyasəti",
+          audience: "6 yaş və yuxarı üçün tövsiyə olunur · Yuxarı yaş həddi yoxdur",
+          rights: "Bütün hüquqlar qorunur.",
+          app: "Tətbiq",
+          pkg: "Paket",
+          updated: "Son yenilənmə",
+          date: "28.07.2026",
+          summary:
+            "<strong>Qısa versiya:</strong> Arrows Escape heç bir şəxsi məlumatı <strong>toplamır, paylaşmır, satmır və ya ötürmür</strong>. Oyun oflayn işləyir, reklam və analitika ehtiva etmir, irəliləyişi yalnız cihazınızda saxlayır.",
+          sections: [
+            {
+              title: "1. Tətbiq Haqqında",
+              body:
+                "<p>Arrows Escape pulsuz strateji ox tapmacası oyunudur. Oyunçular lövhədəki oxları çıxarır, prosedural yaradılan səviyyələri həll edir, ulduzlar qazanır, seriyalar qurur, nailiyyətləri açır və irəliləyişini izləyir.</p><p>Oyun böyüklər də daxil olmaqla <strong>6 yaş və yuxarı</strong> ümumi auditoriya üçün tövsiyə olunur. Bu, təhsil tətbiqi deyil və yalnız uşaqlar üçün hazırlanmayıb.</p>",
+            },
+            {
+              title: "2. Topladığımız Məlumatlar",
+              body:
+                "<p>Arrows Escape şəxsiyyəti müəyyənləşdirən heç bir məlumat <strong>toplamır</strong>. Oyun ad, e-poçt ünvanı, telefon nömrəsi, hesab və ya giriş tələb etmir.</p><p>Aşağıdakı oyun məlumatları <strong>yalnız cihazınızda</strong> saxlanılır:</p><ul><li>Səviyyə irəliləyişi, tamamlanmış səviyyələr və qazanılmış ulduzlar</li><li>Sikkələr, XP, rütbə, nailiyyətlər və gündəlik seriyalar</li><li>Ən yaxşı vaxt, oynanılmış səviyyələr və istifadə edilmiş ipucları kimi statistika</li><li>Dil, səs, musiqi, vibrasiya, azaldılmış animasiya və təlim statusu kimi ayarlar</li></ul><p>Bu məlumatlar BieMTech-ə və ya hər hansı üçüncü tərəfə ötürülmür.</p>",
+            },
+            {
+              title: "3. Ümumi Auditoriya və Uşaqların Məxfiliyi",
+              body:
+                "<p>Arrows Escape uşaqlar, yeniyetmələr və böyüklər daxil olmaqla 6+ yaş üçün geniş auditoriyaya uyğundur. Yuxarı yaş həddi yoxdur.</p><ul><li>Uşaqlardan və ya böyüklərdən bilərəkdən heç bir şəxsi məlumat toplanmır.</li><li>Hesab qeydiyyatı və ya giriş yoxdur.</li><li>Çat, sosial profil və istifadəçi tərəfindən yaradılan məzmun yoxdur.</li><li>Analitika, izləmə, hədəflənmiş reklam və davranış profilləşdirilməsi istifadə edilmir.</li></ul><p>Valideynlər və qəyyumlar aşağıda göstərilən üsullarla cihazda saxlanılan bütün irəliləyişi istənilən vaxt silə bilər.</p>",
+            },
+            {
+              title: "4. Reklam",
+              body:
+                "<p>Arrows Escape <strong>banner, keçid, mükafatlı və ya fərdiləşdirilmiş reklam ehtiva etmir</strong>. Cari versiyada heç bir reklam SDK-sı yoxdur.</p>",
+            },
+            {
+              title: "5. İnternet və Cihaz İcazələri",
+              body:
+                "<p>Cari Android versiyası <strong>internet icazəsi tələb etmir</strong> və oflayn işləyir. Export konfiqurasiyası həmçinin məkan, kamera, mikrofon, kontaktlar, şəkillər, media, xarici yaddaş, bildirişlər və digər həssas cihaz məlumatlarına giriş istəmir.</p>",
+            },
+            {
+              title: "6. Üçüncü Tərəf Xidmətləri",
+              body:
+                "<p>Arrows Escape üçüncü tərəf reklam, analitika, xəta hesabatı, hesab, bulud yaddaşı və ya izləmə xidmətlərini inteqrasiya etmir. Gələcək versiyada məlumatların işlənməsini dəyişən xidmət əlavə edilərsə, həmin versiya yayımlanmadan əvvəl bu siyasət yenilənəcək.</p>",
+            },
+            {
+              title: "7. Məlumatların Saxlanması və Silinməsi",
+              body:
+                "<p>Oyun irəliləyişi siz silənədək cihazınızda qalır. Onu istənilən vaxt bu üsullarla silə bilərsiniz:</p><ul><li>Tətbiqin Ayarlar ekranındakı <strong>İrəliləyişi sıfırla</strong> seçimi</li><li><strong>Android Ayarları → Tətbiqlər → Arrows Escape → Məlumatları sil</strong></li><li>Tətbiqi cihazdan silmək</li></ul><p>Tətbiq məlumatları serverə göndərmədiyi və orada saxlamadığı üçün server tərəfli silinmə sorğusu lazım deyil.</p>",
+            },
+            {
+              title: "8. Bu Siyasətə Dəyişikliklər",
+              body:
+                "<p>Tətbiq dəyişdikdə bu Məxfilik Siyasətini yeniləyə bilərik. Hər dəyişiklik bu səhifədə yeni son-yenilənmə tarixi ilə göstəriləcək.</p>",
+            },
+            {
+              title: "9. Bizimlə Əlaqə",
+              body:
+                '<p>Bu Məxfilik Siyasəti və ya Arrows Escape-in məlumat təcrübələri ilə bağlı suallar üçün BieMTech ilə əlaqə saxlayın:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        ru: {
+          dir: "ltr",
+          back: "← Политики конфиденциальности BieMTech",
+          subtitle: "Политика конфиденциальности",
+          audience: "Рекомендуется с 6 лет · Верхнего возрастного ограничения нет",
+          rights: "Все права защищены.",
+          app: "Приложение",
+          pkg: "Пакет",
+          updated: "Последнее обновление",
+          date: "28.07.2026",
+          summary:
+            "<strong>Кратко:</strong> Arrows Escape <strong>не собирает, не передаёт, не продаёт и не распространяет</strong> личные данные. Игра работает офлайн, не содержит рекламы и аналитики, а прогресс хранится только на устройстве.",
+          sections: [
+            {
+              title: "1. О приложении",
+              body:
+                "<p>Arrows Escape — бесплатная стратегическая головоломка со стрелками. Игроки очищают поле, решают процедурно созданные уровни, получают звёзды, строят серии, открывают достижения и следят за прогрессом.</p><p>Игра предназначена для широкой аудитории <strong>от 6 лет</strong>, включая взрослых. Это не образовательное приложение и оно не создано исключительно для детей.</p>",
+            },
+            {
+              title: "2. Какие данные мы собираем",
+              body:
+                "<p>Arrows Escape <strong>не собирает</strong> персональные данные и не запрашивает имя, электронную почту, телефон, учётную запись или вход.</p><p>Только на устройстве хранятся:</p><ul><li>Прогресс уровней, завершённые уровни и звёзды</li><li>Монеты, XP, ранг, достижения и ежедневные серии</li><li>Лучшее время, сыгранные уровни, подсказки и другая статистика</li><li>Язык, звук, музыка, вибрация, уменьшение анимации и статус обучения</li></ul><p>Эти данные не передаются BieMTech или третьим лицам.</p>",
+            },
+            {
+              title: "3. Общая аудитория и конфиденциальность детей",
+              body:
+                "<p>Arrows Escape подходит детям, подросткам и взрослым от 6 лет; верхнего возрастного ограничения нет.</p><ul><li>Личные данные детей и взрослых не собираются.</li><li>Регистрация и вход отсутствуют.</li><li>Нет чата, социальных профилей и пользовательского контента.</li><li>Нет аналитики, отслеживания, таргетированной рекламы и профилирования.</li></ul><p>Родители и опекуны могут удалить весь локальный прогресс способами, указанными ниже.</p>",
+            },
+            {
+              title: "4. Реклама",
+              body:
+                "<p>Arrows Escape <strong>не содержит баннерной, межстраничной, вознаграждаемой или персонализированной рекламы</strong>. В текущей версии нет рекламных SDK.</p>",
+            },
+            {
+              title: "5. Интернет и разрешения устройства",
+              body:
+                "<p>Текущая версия для Android <strong>не запрашивает доступ к Интернету</strong> и работает офлайн. Она также не запрашивает доступ к геолокации, камере, микрофону, контактам, фото, медиа, внешнему хранилищу, уведомлениям или другим чувствительным данным.</p>",
+            },
+            {
+              title: "6. Сторонние сервисы",
+              body:
+                "<p>Arrows Escape не использует стороннюю рекламу, аналитику, отчёты о сбоях, аккаунты, облачные сохранения или отслеживание. Если будущая версия изменит обработку данных, политика будет обновлена до её выпуска.</p>",
+            },
+            {
+              title: "7. Хранение и удаление данных",
+              body:
+                "<p>Прогресс остаётся на устройстве, пока вы его не удалите. Это можно сделать:</p><ul><li>Через <strong>Сбросить прогресс</strong> в настройках игры</li><li>Через <strong>Настройки Android → Приложения → Arrows Escape → Очистить данные</strong></li><li>Удалив приложение</li></ul><p>Запрос на удаление с сервера не нужен, поскольку данные не отправляются на сервер.</p>",
+            },
+            {
+              title: "8. Изменения политики",
+              body:
+                "<p>Мы можем обновить эту Политику конфиденциальности при изменении приложения. Новая версия и дата обновления появятся на этой странице.</p>",
+            },
+            {
+              title: "9. Связаться с нами",
+              body:
+                '<p>По вопросам этой политики или обработки данных Arrows Escape свяжитесь с BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        tr: {
+          dir: "ltr",
+          back: "← BieMTech Gizlilik Politikaları",
+          subtitle: "Gizlilik Politikası",
+          audience: "6 yaş ve üzeri için önerilir · Üst yaş sınırı yoktur",
+          rights: "Tüm hakları saklıdır.",
+          app: "Uygulama",
+          pkg: "Paket",
+          updated: "Son güncelleme",
+          date: "28.07.2026",
+          summary:
+            "<strong>Kısa sürüm:</strong> Arrows Escape kişisel bilgileri <strong>toplamaz, paylaşmaz, satmaz veya iletmez</strong>. Oyun çevrimdışı çalışır, reklam ya da analiz içermez ve ilerlemeyi yalnızca cihazınızda tutar.",
+          sections: [
+            {
+              title: "1. Bu uygulama hakkında",
+              body:
+                "<p>Arrows Escape ücretsiz bir stratejik ok bulmaca oyunudur. Oyuncular tahtadaki okları temizler, prosedürel seviyeleri çözer, yıldız kazanır, seriler oluşturur, başarımları açar ve ilerlemeyi izler.</p><p>Yetişkinler dahil <strong>6 yaş ve üzeri</strong> genel kitle için önerilir. Eğitim uygulaması değildir ve yalnızca çocuklar için tasarlanmamıştır.</p>",
+            },
+            {
+              title: "2. Topladığımız bilgiler",
+              body:
+                "<p>Arrows Escape kişisel olarak tanımlanabilir bilgi <strong>toplamaz</strong>; ad, e-posta, telefon, hesap veya giriş istemez.</p><p>Yalnızca cihazınızda saklananlar:</p><ul><li>Seviye ilerlemesi, tamamlanan seviyeler ve yıldızlar</li><li>Paralar, XP, rütbe, başarımlar ve günlük seriler</li><li>En iyi süre, oynanan seviyeler, ipuçları ve diğer istatistikler</li><li>Dil, ses, müzik, titreşim, azaltılmış hareket ve eğitim durumu</li></ul><p>Bu bilgiler BieMTech'e veya üçüncü taraflara iletilmez.</p>",
+            },
+            {
+              title: "3. Genel kitle ve çocukların gizliliği",
+              body:
+                "<p>Arrows Escape çocuklar, gençler ve yetişkinler dahil 6+ yaş için uygundur; üst yaş sınırı yoktur.</p><ul><li>Çocuklardan veya yetişkinlerden kişisel veri toplanmaz.</li><li>Hesap kaydı ve giriş yoktur.</li><li>Sohbet, sosyal profil veya kullanıcı içeriği yoktur.</li><li>Analiz, takip, hedefli reklam veya davranış profili yoktur.</li></ul><p>Ebeveynler ve vasiler yerel ilerlemeyi aşağıdaki yöntemlerle silebilir.</p>",
+            },
+            {
+              title: "4. Reklam",
+              body:
+                "<p>Arrows Escape <strong>banner, geçiş, ödüllü veya kişiselleştirilmiş reklam içermez</strong>. Mevcut sürümde reklam SDK'sı yoktur.</p>",
+            },
+            {
+              title: "5. İnternet ve cihaz izinleri",
+              body:
+                "<p>Mevcut Android sürümü <strong>İnternet erişimi istemez</strong> ve çevrimdışı çalışır. Konum, kamera, mikrofon, kişiler, fotoğraflar, medya, harici depolama, bildirimler veya diğer hassas verilere de erişim istemez.</p>",
+            },
+            {
+              title: "6. Üçüncü taraf hizmetleri",
+              body:
+                "<p>Arrows Escape üçüncü taraf reklam, analiz, çökme raporu, hesap, bulut kaydı veya takip hizmeti kullanmaz. Gelecekte veri işleme değişirse bu politika sürüm yayınlanmadan önce güncellenir.</p>",
+            },
+            {
+              title: "7. Veri saklama ve silme",
+              body:
+                "<p>İlerleme siz silene kadar cihazınızda kalır. Şu yollarla silebilirsiniz:</p><ul><li>Oyun ayarlarındaki <strong>İlerlemeyi Sıfırla</strong> seçeneği</li><li><strong>Android Ayarları → Uygulamalar → Arrows Escape → Verileri Temizle</strong></li><li>Uygulamayı kaldırmak</li></ul><p>Veriler sunucuya gönderilmediği için sunucu tarafı silme isteği gerekmez.</p>",
+            },
+            {
+              title: "8. Bu politikadaki değişiklikler",
+              body:
+                "<p>Uygulama değiştiğinde bu Gizlilik Politikasını güncelleyebiliriz. Her değişiklik yeni güncelleme tarihiyle bu sayfada görünür.</p>",
+            },
+            {
+              title: "9. Bize ulaşın",
+              body:
+                '<p>Bu politika veya Arrows Escape veri uygulamaları hakkında BieMTech ile iletişime geçin:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        de: {
+          dir: "ltr",
+          back: "← BieMTech Datenschutzerklärungen",
+          subtitle: "Datenschutzerklärung",
+          audience: "Empfohlen ab 6 Jahren · Keine obere Altersgrenze",
+          rights: "Alle Rechte vorbehalten.",
+          app: "Anwendung",
+          pkg: "Paket",
+          updated: "Zuletzt aktualisiert",
+          date: "28.07.2026",
+          summary:
+            "<strong>Kurzfassung:</strong> Arrows Escape <strong>erfasst, teilt, verkauft oder überträgt keine</strong> personenbezogenen Daten. Das Spiel funktioniert offline, enthält keine Werbung oder Analyse und speichert Fortschritt nur auf deinem Gerät.",
+          sections: [
+            {
+              title: "1. Über diese App",
+              body:
+                "<p>Arrows Escape ist ein kostenloses strategisches Pfeil-Puzzlespiel. Spieler räumen Pfeile ab, lösen prozedural erzeugte Levels, sammeln Sterne, bilden Serien, schalten Erfolge frei und verfolgen ihren Fortschritt.</p><p>Es wird für eine allgemeine Zielgruppe <strong>ab 6 Jahren</strong> einschließlich Erwachsener empfohlen. Es ist keine Lern-App und nicht ausschließlich für Kinder entwickelt.</p>",
+            },
+            {
+              title: "2. Welche Daten wir erfassen",
+              body:
+                "<p>Arrows Escape <strong>erfasst keine</strong> personenbezogenen Daten und fragt nicht nach Name, E-Mail, Telefon, Konto oder Anmeldung.</p><p>Nur lokal gespeichert werden:</p><ul><li>Levelfortschritt, abgeschlossene Levels und Sterne</li><li>Münzen, XP, Rang, Erfolge und tägliche Serien</li><li>Bestzeiten, gespielte Levels, Hinweise und weitere Statistiken</li><li>Sprache, Ton, Musik, Vibration, reduzierte Bewegung und Tutorialstatus</li></ul><p>Diese Informationen werden weder an BieMTech noch an Dritte übertragen.</p>",
+            },
+            {
+              title: "3. Allgemeine Zielgruppe und Datenschutz für Kinder",
+              body:
+                "<p>Arrows Escape ist für Kinder, Jugendliche und Erwachsene ab 6 Jahren geeignet; es gibt keine obere Altersgrenze.</p><ul><li>Es werden keine persönlichen Daten von Kindern oder Erwachsenen erfasst.</li><li>Es gibt keine Registrierung oder Anmeldung.</li><li>Es gibt keinen Chat, kein Sozialprofil und keine Nutzerinhalte.</li><li>Es gibt keine Analyse, Verfolgung, gezielte Werbung oder Profilbildung.</li></ul><p>Eltern können alle lokalen Fortschritte wie unten beschrieben löschen.</p>",
+            },
+            {
+              title: "4. Werbung",
+              body:
+                "<p>Arrows Escape enthält <strong>keine Banner-, Interstitial-, belohnte oder personalisierte Werbung</strong>. In der aktuellen Version ist kein Werbe-SDK enthalten.</p>",
+            },
+            {
+              title: "5. Internet und Geräteberechtigungen",
+              body:
+                "<p>Die aktuelle Android-Version <strong>fordert keinen Internetzugriff an</strong> und funktioniert offline. Sie fordert auch keinen Zugriff auf Standort, Kamera, Mikrofon, Kontakte, Fotos, Medien, externen Speicher, Benachrichtigungen oder andere sensible Daten an.</p>",
+            },
+            {
+              title: "6. Dienste Dritter",
+              body:
+                "<p>Arrows Escape nutzt keine Drittanbieter für Werbung, Analyse, Absturzberichte, Konten, Cloud-Speicherung oder Tracking. Ändert eine künftige Version die Datenverarbeitung, wird diese Richtlinie vor der Veröffentlichung aktualisiert.</p>",
+            },
+            {
+              title: "7. Aufbewahrung und Löschung",
+              body:
+                "<p>Der Fortschritt bleibt auf deinem Gerät, bis du ihn löschst. Das ist möglich über:</p><ul><li><strong>Fortschritt zurücksetzen</strong> in den Spieleinstellungen</li><li><strong>Android-Einstellungen → Apps → Arrows Escape → Daten löschen</strong></li><li>Deinstallation der App</li></ul><p>Eine serverseitige Löschanfrage ist nicht nötig, da keine Daten an einen Server gesendet werden.</p>",
+            },
+            {
+              title: "8. Änderungen dieser Richtlinie",
+              body:
+                "<p>Wir können diese Datenschutzerklärung bei Änderungen an der App aktualisieren. Jede Änderung erscheint mit einem neuen Aktualisierungsdatum auf dieser Seite.</p>",
+            },
+            {
+              title: "9. Kontakt",
+              body:
+                '<p>Bei Fragen zu dieser Richtlinie oder zur Datenverarbeitung von Arrows Escape kontaktiere BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        fr: {
+          dir: "ltr",
+          back: "← Politiques de confidentialité BieMTech",
+          subtitle: "Politique de confidentialité",
+          audience: "Recommandé dès 6 ans · Aucune limite d'âge supérieure",
+          rights: "Tous droits réservés.",
+          app: "Application",
+          pkg: "Package",
+          updated: "Dernière mise à jour",
+          date: "28.07.2026",
+          summary:
+            "<strong>En bref :</strong> Arrows Escape <strong>ne collecte, ne partage, ne vend et ne transmet</strong> aucune information personnelle. Le jeu fonctionne hors ligne, sans publicité ni analyse, et conserve la progression uniquement sur votre appareil.",
+          sections: [
+            {
+              title: "1. À propos de l'application",
+              body:
+                "<p>Arrows Escape est un jeu gratuit de réflexion stratégique avec des flèches. Les joueurs vident le plateau, résolvent des niveaux procéduraux, gagnent des étoiles, créent des séries, débloquent des succès et suivent leur progression.</p><p>Il est recommandé au grand public <strong>à partir de 6 ans</strong>, adultes compris. Ce n'est pas une application éducative et elle n'est pas destinée exclusivement aux enfants.</p>",
+            },
+            {
+              title: "2. Informations collectées",
+              body:
+                "<p>Arrows Escape <strong>ne collecte aucune</strong> donnée personnelle et ne demande ni nom, ni e-mail, ni téléphone, ni compte, ni connexion.</p><p>Seules les données suivantes restent sur l'appareil :</p><ul><li>Progression, niveaux terminés et étoiles</li><li>Pièces, XP, rang, succès et séries quotidiennes</li><li>Meilleurs temps, niveaux joués, indices et autres statistiques</li><li>Langue, son, musique, vibration, mouvements réduits et tutoriel</li></ul><p>Ces informations ne sont transmises ni à BieMTech ni à des tiers.</p>",
+            },
+            {
+              title: "3. Grand public et confidentialité des enfants",
+              body:
+                "<p>Arrows Escape convient aux enfants, adolescents et adultes dès 6 ans, sans limite d'âge supérieure.</p><ul><li>Aucune donnée personnelle n'est collectée.</li><li>Il n'existe aucune inscription ni connexion.</li><li>Il n'y a ni chat, ni profil social, ni contenu utilisateur.</li><li>Aucune analyse, aucun suivi, aucune publicité ciblée ni profilage n'est utilisé.</li></ul><p>Les parents peuvent supprimer toute progression locale grâce aux méthodes ci-dessous.</p>",
+            },
+            {
+              title: "4. Publicité",
+              body:
+                "<p>Arrows Escape ne contient <strong>aucune bannière, publicité interstitielle, récompensée ou personnalisée</strong>. Aucun SDK publicitaire n'est inclus dans la version actuelle.</p>",
+            },
+            {
+              title: "5. Internet et autorisations",
+              body:
+                "<p>La version Android actuelle <strong>ne demande pas l'accès à Internet</strong> et fonctionne hors ligne. Elle ne demande pas non plus l'accès à la localisation, caméra, microphone, contacts, photos, médias, stockage externe, notifications ou autres données sensibles.</p>",
+            },
+            {
+              title: "6. Services tiers",
+              body:
+                "<p>Arrows Escape n'intègre aucun service tiers de publicité, analyse, rapport de plantage, compte, sauvegarde cloud ou suivi. Si une future version modifie le traitement des données, cette politique sera mise à jour avant sa sortie.</p>",
+            },
+            {
+              title: "7. Conservation et suppression",
+              body:
+                "<p>La progression reste sur votre appareil jusqu'à sa suppression. Vous pouvez la supprimer :</p><ul><li>Avec <strong>Réinitialiser la progression</strong> dans les paramètres</li><li>Via <strong>Paramètres Android → Applications → Arrows Escape → Effacer les données</strong></li><li>En désinstallant l'application</li></ul><p>Aucune demande serveur n'est nécessaire, car aucune donnée n'est envoyée à un serveur.</p>",
+            },
+            {
+              title: "8. Modifications de cette politique",
+              body:
+                "<p>Nous pouvons mettre à jour cette politique lorsque l'application change. Toute révision apparaîtra sur cette page avec une nouvelle date.</p>",
+            },
+            {
+              title: "9. Nous contacter",
+              body:
+                '<p>Pour toute question sur cette politique ou les pratiques de données d’Arrows Escape, contactez BieMTech :</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        es: {
+          dir: "ltr",
+          back: "← Políticas de privacidad de BieMTech",
+          subtitle: "Política de privacidad",
+          audience: "Recomendado para mayores de 6 años · Sin límite máximo de edad",
+          rights: "Todos los derechos reservados.",
+          app: "Aplicación",
+          pkg: "Paquete",
+          updated: "Última actualización",
+          date: "28.07.2026",
+          summary:
+            "<strong>En resumen:</strong> Arrows Escape <strong>no recopila, comparte, vende ni transmite</strong> información personal. El juego funciona sin conexión, no contiene publicidad ni analítica y guarda el progreso únicamente en tu dispositivo.",
+          sections: [
+            {
+              title: "1. Acerca de la aplicación",
+              body:
+                "<p>Arrows Escape es un juego gratuito de puzles estratégicos con flechas. Los jugadores despejan el tablero, resuelven niveles procedurales, ganan estrellas, crean rachas, desbloquean logros y siguen su progreso.</p><p>Está recomendado para el público general <strong>a partir de 6 años</strong>, incluidos adultos. No es una aplicación educativa ni está diseñada exclusivamente para niños.</p>",
+            },
+            {
+              title: "2. Información que recopilamos",
+              body:
+                "<p>Arrows Escape <strong>no recopila</strong> datos personales ni solicita nombre, correo electrónico, teléfono, cuenta o inicio de sesión.</p><p>Solo se guarda en el dispositivo:</p><ul><li>Progreso, niveles completados y estrellas</li><li>Monedas, XP, rango, logros y rachas diarias</li><li>Mejores tiempos, niveles jugados, pistas y otras estadísticas</li><li>Idioma, sonido, música, vibración, movimiento reducido y tutorial</li></ul><p>Esta información no se transmite a BieMTech ni a terceros.</p>",
+            },
+            {
+              title: "3. Público general y privacidad infantil",
+              body:
+                "<p>Arrows Escape es apto para niños, adolescentes y adultos desde 6 años y no tiene límite máximo de edad.</p><ul><li>No se recopilan datos personales.</li><li>No hay registro ni inicio de sesión.</li><li>No hay chat, perfiles sociales ni contenido de usuarios.</li><li>No se usan analítica, seguimiento, publicidad dirigida ni perfiles de comportamiento.</li></ul><p>Los padres pueden eliminar todo el progreso local mediante los métodos siguientes.</p>",
+            },
+            {
+              title: "4. Publicidad",
+              body:
+                "<p>Arrows Escape <strong>no contiene anuncios de banner, intersticiales, recompensados ni personalizados</strong>. La versión actual no incluye ningún SDK publicitario.</p>",
+            },
+            {
+              title: "5. Internet y permisos del dispositivo",
+              body:
+                "<p>La versión actual de Android <strong>no solicita acceso a Internet</strong> y funciona sin conexión. Tampoco solicita ubicación, cámara, micrófono, contactos, fotos, medios, almacenamiento externo, notificaciones ni otros datos sensibles.</p>",
+            },
+            {
+              title: "6. Servicios de terceros",
+              body:
+                "<p>Arrows Escape no integra publicidad, analítica, informes de fallos, cuentas, guardado en la nube ni seguimiento de terceros. Si una versión futura cambia el tratamiento de datos, esta política se actualizará antes de publicarla.</p>",
+            },
+            {
+              title: "7. Conservación y eliminación",
+              body:
+                "<p>El progreso permanece en tu dispositivo hasta que lo elimines. Puedes borrarlo:</p><ul><li>Con <strong>Restablecer progreso</strong> en los ajustes</li><li>En <strong>Ajustes de Android → Aplicaciones → Arrows Escape → Borrar datos</strong></li><li>Desinstalando la aplicación</li></ul><p>No hace falta solicitar eliminación en un servidor porque los datos nunca se envían a uno.</p>",
+            },
+            {
+              title: "8. Cambios en esta política",
+              body:
+                "<p>Podemos actualizar esta Política de privacidad cuando cambie la aplicación. Cada revisión aparecerá aquí con una nueva fecha.</p>",
+            },
+            {
+              title: "9. Contacto",
+              body:
+                '<p>Para preguntas sobre esta política o las prácticas de datos de Arrows Escape, contacta con BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        pt: {
+          dir: "ltr",
+          back: "← Políticas de Privacidade da BieMTech",
+          subtitle: "Política de Privacidade",
+          audience: "Recomendado para maiores de 6 anos · Sem limite máximo de idade",
+          rights: "Todos os direitos reservados.",
+          app: "Aplicativo",
+          pkg: "Pacote",
+          updated: "Última atualização",
+          date: "28.07.2026",
+          summary:
+            "<strong>Resumo:</strong> Arrows Escape <strong>não coleta, compartilha, vende ou transmite</strong> informações pessoais. O jogo funciona offline, não contém publicidade nem análise e mantém o progresso apenas no seu dispositivo.",
+          sections: [
+            {
+              title: "1. Sobre o aplicativo",
+              body:
+                "<p>Arrows Escape é um jogo gratuito de quebra-cabeça estratégico com setas. Os jogadores limpam o tabuleiro, resolvem níveis procedurais, ganham estrelas, criam sequências, desbloqueiam conquistas e acompanham o progresso.</p><p>É recomendado ao público geral <strong>a partir de 6 anos</strong>, incluindo adultos. Não é um aplicativo educacional nem foi criado exclusivamente para crianças.</p>",
+            },
+            {
+              title: "2. Informações que coletamos",
+              body:
+                "<p>Arrows Escape <strong>não coleta</strong> dados pessoais e não solicita nome, e-mail, telefone, conta ou login.</p><p>Apenas no dispositivo ficam:</p><ul><li>Progresso, níveis concluídos e estrelas</li><li>Moedas, XP, patente, conquistas e sequências diárias</li><li>Melhores tempos, níveis jogados, dicas e outras estatísticas</li><li>Idioma, som, música, vibração, movimento reduzido e tutorial</li></ul><p>Essas informações não são enviadas à BieMTech nem a terceiros.</p>",
+            },
+            {
+              title: "3. Público geral e privacidade infantil",
+              body:
+                "<p>Arrows Escape é adequado para crianças, adolescentes e adultos a partir de 6 anos, sem limite máximo de idade.</p><ul><li>Nenhum dado pessoal é coletado.</li><li>Não há cadastro ou login.</li><li>Não há chat, perfil social ou conteúdo de usuário.</li><li>Não há análise, rastreamento, publicidade direcionada ou perfil comportamental.</li></ul><p>Pais e responsáveis podem apagar todo o progresso local pelos métodos abaixo.</p>",
+            },
+            {
+              title: "4. Publicidade",
+              body:
+                "<p>Arrows Escape <strong>não contém anúncios em banner, intersticiais, recompensados ou personalizados</strong>. A versão atual não inclui SDK de publicidade.</p>",
+            },
+            {
+              title: "5. Internet e permissões do dispositivo",
+              body:
+                "<p>A versão atual para Android <strong>não solicita acesso à Internet</strong> e funciona offline. Também não solicita localização, câmera, microfone, contatos, fotos, mídia, armazenamento externo, notificações ou outros dados sensíveis.</p>",
+            },
+            {
+              title: "6. Serviços de terceiros",
+              body:
+                "<p>Arrows Escape não integra publicidade, análise, relatórios de falha, contas, salvamento na nuvem ou rastreamento de terceiros. Se uma versão futura mudar o tratamento de dados, esta política será atualizada antes do lançamento.</p>",
+            },
+            {
+              title: "7. Retenção e exclusão",
+              body:
+                "<p>O progresso permanece no dispositivo até ser apagado. Você pode excluí-lo:</p><ul><li>Com <strong>Redefinir progresso</strong> nas configurações</li><li>Em <strong>Configurações do Android → Apps → Arrows Escape → Limpar dados</strong></li><li>Desinstalando o aplicativo</li></ul><p>Não é necessário pedir exclusão em servidor, pois os dados nunca são enviados a um.</p>",
+            },
+            {
+              title: "8. Alterações nesta política",
+              body:
+                "<p>Podemos atualizar esta Política de Privacidade quando o aplicativo mudar. Cada revisão aparecerá nesta página com uma nova data.</p>",
+            },
+            {
+              title: "9. Contato",
+              body:
+                '<p>Para dúvidas sobre esta política ou as práticas de dados do Arrows Escape, entre em contato com a BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        it: {
+          dir: "ltr",
+          back: "← Informative sulla privacy BieMTech",
+          subtitle: "Informativa sulla privacy",
+          audience: "Consigliato dai 6 anni in su · Nessun limite massimo di età",
+          rights: "Tutti i diritti riservati.",
+          app: "Applicazione",
+          pkg: "Pacchetto",
+          updated: "Ultimo aggiornamento",
+          date: "28.07.2026",
+          summary:
+            "<strong>In breve:</strong> Arrows Escape <strong>non raccoglie, condivide, vende o trasmette</strong> informazioni personali. Il gioco funziona offline, non contiene pubblicità o analisi e conserva i progressi solo sul dispositivo.",
+          sections: [
+            {
+              title: "1. Informazioni sull'app",
+              body:
+                "<p>Arrows Escape è un gioco gratuito di strategia e rompicapi con frecce. I giocatori liberano il tabellone, risolvono livelli procedurali, guadagnano stelle, creano serie, sbloccano obiettivi e seguono i progressi.</p><p>È consigliato al pubblico generale <strong>dai 6 anni in su</strong>, adulti compresi. Non è un'app educativa e non è progettata esclusivamente per bambini.</p>",
+            },
+            {
+              title: "2. Informazioni raccolte",
+              body:
+                "<p>Arrows Escape <strong>non raccoglie</strong> dati personali e non richiede nome, e-mail, telefono, account o accesso.</p><p>Restano solo sul dispositivo:</p><ul><li>Progressi, livelli completati e stelle</li><li>Monete, XP, grado, obiettivi e serie giornaliere</li><li>Tempi migliori, livelli giocati, suggerimenti e altre statistiche</li><li>Lingua, suono, musica, vibrazione, movimento ridotto e tutorial</li></ul><p>Queste informazioni non vengono trasmesse a BieMTech o a terzi.</p>",
+            },
+            {
+              title: "3. Pubblico generale e privacy dei minori",
+              body:
+                "<p>Arrows Escape è adatto a bambini, ragazzi e adulti dai 6 anni in su, senza limite massimo di età.</p><ul><li>Non vengono raccolti dati personali.</li><li>Non esistono registrazione o accesso.</li><li>Non ci sono chat, profili social o contenuti utente.</li><li>Non vengono usati analisi, tracciamento, pubblicità mirata o profilazione.</li></ul><p>Genitori e tutori possono cancellare tutti i progressi locali con i metodi indicati sotto.</p>",
+            },
+            {
+              title: "4. Pubblicità",
+              body:
+                "<p>Arrows Escape <strong>non contiene banner, annunci interstitial, premiati o personalizzati</strong>. La versione attuale non include SDK pubblicitari.</p>",
+            },
+            {
+              title: "5. Internet e autorizzazioni",
+              body:
+                "<p>La versione Android attuale <strong>non richiede accesso a Internet</strong> e funziona offline. Non richiede inoltre posizione, fotocamera, microfono, contatti, foto, media, memoria esterna, notifiche o altri dati sensibili.</p>",
+            },
+            {
+              title: "6. Servizi di terze parti",
+              body:
+                "<p>Arrows Escape non integra pubblicità, analisi, segnalazione crash, account, salvataggi cloud o tracciamento di terze parti. Se una versione futura cambia il trattamento dei dati, questa informativa sarà aggiornata prima del rilascio.</p>",
+            },
+            {
+              title: "7. Conservazione e cancellazione",
+              body:
+                "<p>I progressi restano sul dispositivo finché non vengono eliminati. Puoi cancellarli:</p><ul><li>Con <strong>Azzera progressi</strong> nelle impostazioni</li><li>Da <strong>Impostazioni Android → App → Arrows Escape → Cancella dati</strong></li><li>Disinstallando l'app</li></ul><p>Non serve una richiesta al server perché i dati non vengono mai inviati a un server.</p>",
+            },
+            {
+              title: "8. Modifiche a questa informativa",
+              body:
+                "<p>Potremmo aggiornare questa Informativa sulla privacy quando l'app cambia. Ogni revisione apparirà qui con una nuova data.</p>",
+            },
+            {
+              title: "9. Contatti",
+              body:
+                '<p>Per domande su questa informativa o sulle pratiche dati di Arrows Escape, contatta BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        ar: {
+          dir: "rtl",
+          back: "سياسات خصوصية BieMTech →",
+          subtitle: "سياسة الخصوصية",
+          audience: "موصى به من عمر 6 سنوات فما فوق · لا يوجد حد أقصى للعمر",
+          rights: "جميع الحقوق محفوظة.",
+          app: "التطبيق",
+          pkg: "الحزمة",
+          updated: "آخر تحديث",
+          date: "28.07.2026",
+          summary:
+            "<strong>باختصار:</strong> لا تقوم Arrows Escape <strong>بجمع أو مشاركة أو بيع أو إرسال</strong> أي معلومات شخصية. تعمل اللعبة دون اتصال، ولا تحتوي على إعلانات أو تحليلات، وتحفظ التقدم على جهازك فقط.",
+          sections: [
+            {
+              title: "1. حول التطبيق",
+              body:
+                "<p>Arrows Escape لعبة ألغاز استراتيجية مجانية بالأسهم. يزيل اللاعبون الأسهم من اللوحة، ويحلون مستويات مولدة إجرائياً، ويكسبون النجوم، ويبنون السلاسل، ويفتحون الإنجازات، ويتابعون التقدم.</p><p>موصى بها للجمهور العام <strong>من عمر 6 سنوات فما فوق</strong>، بما في ذلك البالغون. ليست تطبيقاً تعليمياً وليست مصممة للأطفال فقط.</p>",
+            },
+            {
+              title: "2. المعلومات التي نجمعها",
+              body:
+                "<p>لا تجمع Arrows Escape بيانات شخصية ولا تطلب الاسم أو البريد الإلكتروني أو الهاتف أو الحساب أو تسجيل الدخول.</p><p>يُحفظ على الجهاز فقط:</p><ul><li>تقدم المستويات والمستويات المكتملة والنجوم</li><li>العملات ونقاط XP والرتبة والإنجازات والسلاسل اليومية</li><li>أفضل الأوقات والمستويات الملعوبة والتلميحات والإحصاءات الأخرى</li><li>اللغة والصوت والموسيقى والاهتزاز وتقليل الحركة وحالة البرنامج التعليمي</li></ul><p>لا تُرسل هذه المعلومات إلى BieMTech أو أي طرف ثالث.</p>",
+            },
+            {
+              title: "3. الجمهور العام وخصوصية الأطفال",
+              body:
+                "<p>تناسب Arrows Escape الأطفال والمراهقين والبالغين من عمر 6 سنوات فما فوق، دون حد أقصى للعمر.</p><ul><li>لا يتم جمع بيانات شخصية من الأطفال أو البالغين.</li><li>لا يوجد تسجيل حساب أو دخول.</li><li>لا توجد دردشة أو ملفات اجتماعية أو محتوى مستخدم.</li><li>لا توجد تحليلات أو تتبع أو إعلانات موجهة أو ملفات سلوكية.</li></ul><p>يمكن للوالدين حذف كل التقدم المحلي بالطرق الموضحة أدناه.</p>",
+            },
+            {
+              title: "4. الإعلانات",
+              body:
+                "<p>لا تحتوي Arrows Escape على <strong>إعلانات بانر أو إعلانات بينية أو بمكافأة أو مخصصة</strong>. لا تتضمن النسخة الحالية أي حزمة SDK إعلانية.</p>",
+            },
+            {
+              title: "5. الإنترنت وأذونات الجهاز",
+              body:
+                "<p>لا تطلب نسخة Android الحالية <strong>الوصول إلى الإنترنت</strong> وتعمل دون اتصال. كما لا تطلب الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو الصور أو الوسائط أو التخزين الخارجي أو الإشعارات أو غيرها من البيانات الحساسة.</p>",
+            },
+            {
+              title: "6. خدمات الطرف الثالث",
+              body:
+                "<p>لا تدمج Arrows Escape إعلانات أو تحليلات أو تقارير أعطال أو حسابات أو حفظاً سحابياً أو تتبعاً من جهات خارجية. إذا تغيرت معالجة البيانات مستقبلاً، فسيتم تحديث هذه السياسة قبل الإصدار.</p>",
+            },
+            {
+              title: "7. الاحتفاظ بالبيانات وحذفها",
+              body:
+                "<p>يبقى التقدم على جهازك حتى تحذفه. يمكنك حذفه عبر:</p><ul><li><strong>إعادة ضبط التقدم</strong> من إعدادات اللعبة</li><li><strong>إعدادات Android ← التطبيقات ← Arrows Escape ← مسح البيانات</strong></li><li>إلغاء تثبيت التطبيق</li></ul><p>لا يلزم طلب حذف من الخادم لأن البيانات لا تُرسل إلى أي خادم.</p>",
+            },
+            {
+              title: "8. التغييرات على هذه السياسة",
+              body:
+                "<p>قد نحدّث سياسة الخصوصية عند تغيير التطبيق. سيظهر أي تعديل على هذه الصفحة مع تاريخ جديد.</p>",
+            },
+            {
+              title: "9. تواصل معنا",
+              body:
+                '<p>للاستفسار عن هذه السياسة أو ممارسات بيانات Arrows Escape، تواصل مع BieMTech:</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        zh: {
+          dir: "ltr",
+          back: "← BieMTech 隐私政策",
+          subtitle: "隐私政策",
+          audience: "建议6岁及以上 · 无最高年龄限制",
+          rights: "保留所有权利。",
+          app: "应用",
+          pkg: "软件包",
+          updated: "最后更新",
+          date: "28.07.2026",
+          summary:
+            "<strong>简要说明：</strong>Arrows Escape <strong>不会收集、共享、出售或传输</strong>任何个人信息。游戏可离线运行，不含广告或分析功能，进度仅保存在您的设备上。",
+          sections: [
+            {
+              title: "1. 关于本应用",
+              body:
+                "<p>Arrows Escape 是一款免费的策略箭头解谜游戏。玩家需要清除棋盘上的箭头、完成程序生成的关卡、获得星星、建立连胜、解锁成就并查看进度。</p><p>本游戏面向<strong>6岁及以上</strong>的广泛用户，包括成人。它不是教育应用，也并非专门为儿童设计。</p>",
+            },
+            {
+              title: "2. 我们收集的信息",
+              body:
+                "<p>Arrows Escape <strong>不会收集</strong>个人身份信息，也不会要求姓名、电子邮件、电话号码、账户或登录。</p><p>以下信息仅保存在设备上：</p><ul><li>关卡进度、已完成关卡和星星</li><li>金币、XP、等级、成就和每日连胜</li><li>最佳时间、已玩关卡、提示和其他统计</li><li>语言、音效、音乐、振动、减少动态效果和教程状态</li></ul><p>这些信息不会传输给BieMTech或任何第三方。</p>",
+            },
+            {
+              title: "3. 普通用户与儿童隐私",
+              body:
+                "<p>Arrows Escape 适合6岁及以上的儿童、青少年和成人，没有最高年龄限制。</p><ul><li>不收集儿童或成人的个人信息。</li><li>没有账户注册或登录。</li><li>没有聊天、社交资料或用户生成内容。</li><li>不使用分析、跟踪、定向广告或行为画像。</li></ul><p>家长或监护人可以通过下述方式删除所有本地进度。</p>",
+            },
+            {
+              title: "4. 广告",
+              body:
+                "<p>Arrows Escape <strong>不包含横幅广告、插页广告、奖励广告或个性化广告</strong>。当前版本未集成任何广告SDK。</p>",
+            },
+            {
+              title: "5. 网络与设备权限",
+              body:
+                "<p>当前Android版本<strong>不请求网络访问权限</strong>并可离线运行。它也不请求位置、相机、麦克风、联系人、照片、媒体、外部存储、通知或其他敏感数据权限。</p>",
+            },
+            {
+              title: "6. 第三方服务",
+              body:
+                "<p>Arrows Escape 未集成第三方广告、分析、崩溃报告、账户、云存档或跟踪服务。如果未来版本改变数据处理方式，本政策将在发布前更新。</p>",
+            },
+            {
+              title: "7. 数据保留与删除",
+              body:
+                "<p>游戏进度会保留在设备上，直到您删除它。删除方式包括：</p><ul><li>在游戏设置中使用<strong>重置进度</strong></li><li>进入<strong>Android设置 → 应用 → Arrows Escape → 清除数据</strong></li><li>卸载应用</li></ul><p>由于数据从未发送到服务器，因此无需提交服务器删除请求。</p>",
+            },
+            {
+              title: "8. 政策变更",
+              body:
+                "<p>应用发生变化时，我们可能更新本隐私政策。任何修订都会显示在本页面，并标注新的更新时间。</p>",
+            },
+            {
+              title: "9. 联系我们",
+              body:
+                '<p>如对本政策或Arrows Escape的数据处理方式有疑问，请联系BieMTech：</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+        ja: {
+          dir: "ltr",
+          back: "← BieMTech プライバシーポリシー",
+          subtitle: "プライバシーポリシー",
+          audience: "6歳以上推奨 · 年齢上限なし",
+          rights: "無断転載を禁じます。",
+          app: "アプリ",
+          pkg: "パッケージ",
+          updated: "最終更新日",
+          date: "28.07.2026",
+          summary:
+            "<strong>要約：</strong>Arrows Escapeは個人情報を<strong>収集、共有、販売、送信しません</strong>。ゲームはオフラインで動作し、広告や分析機能を含まず、進行状況は端末内だけに保存されます。",
+          sections: [
+            {
+              title: "1. このアプリについて",
+              body:
+                "<p>Arrows Escapeは無料の戦略アローパズルゲームです。矢印を盤面から消し、自動生成レベルを解き、スターを獲得し、連続記録を作り、実績を解除して進行状況を確認できます。</p><p>大人を含む<strong>6歳以上</strong>の一般ユーザーにおすすめです。教育アプリではなく、子ども専用に設計されたものでもありません。</p>",
+            },
+            {
+              title: "2. 収集する情報",
+              body:
+                "<p>Arrows Escapeは個人を特定できる情報を<strong>収集せず</strong>、氏名、メール、電話番号、アカウント、ログインも求めません。</p><p>次の情報だけが端末内に保存されます：</p><ul><li>レベル進行、完了レベル、スター</li><li>コイン、XP、ランク、実績、デイリー連続記録</li><li>ベストタイム、プレイ数、ヒントなどの統計</li><li>言語、効果音、音楽、振動、動きの軽減、チュートリアル状態</li></ul><p>これらはBieMTechや第三者に送信されません。</p>",
+            },
+            {
+              title: "3. 一般ユーザーと子どものプライバシー",
+              body:
+                "<p>Arrows Escapeは6歳以上の子ども、青少年、大人に適しており、年齢上限はありません。</p><ul><li>子どもや大人の個人情報を収集しません。</li><li>アカウント登録やログインはありません。</li><li>チャット、ソーシャルプロフィール、ユーザー投稿はありません。</li><li>分析、追跡、ターゲット広告、行動プロファイルを使用しません。</li></ul><p>保護者は以下の方法で端末内の進行状況をすべて削除できます。</p>",
+            },
+            {
+              title: "4. 広告",
+              body:
+                "<p>Arrows Escapeには<strong>バナー、全画面、報酬付き、パーソナライズ広告はありません</strong>。現在のバージョンには広告SDKも含まれていません。</p>",
+            },
+            {
+              title: "5. インターネットと端末権限",
+              body:
+                "<p>現在のAndroid版は<strong>インターネット権限を要求せず</strong>、オフラインで動作します。位置情報、カメラ、マイク、連絡先、写真、メディア、外部ストレージ、通知などの機密情報へのアクセスも求めません。</p>",
+            },
+            {
+              title: "6. 第三者サービス",
+              body:
+                "<p>Arrows Escapeは第三者の広告、分析、クラッシュ報告、アカウント、クラウド保存、追跡サービスを組み込みません。将来データ処理が変わる場合は、リリース前に本ポリシーを更新します。</p>",
+            },
+            {
+              title: "7. データの保持と削除",
+              body:
+                "<p>ゲーム進行は削除するまで端末に残ります。削除方法：</p><ul><li>ゲーム設定の<strong>進行状況をリセット</strong></li><li><strong>Android設定 → アプリ → Arrows Escape → データを消去</strong></li><li>アプリをアンインストール</li></ul><p>データはサーバーへ送信されないため、サーバー側の削除依頼は不要です。</p>",
+            },
+            {
+              title: "8. ポリシーの変更",
+              body:
+                "<p>アプリの変更に応じて本プライバシーポリシーを更新する場合があります。改訂内容は新しい更新日とともにこのページへ掲載します。</p>",
+            },
+            {
+              title: "9. お問い合わせ",
+              body:
+                '<p>本ポリシーまたはArrows Escapeのデータ取り扱いについては、BieMTechまでお問い合わせください：</p><a class="contact-link" href="mailto:info@biemtech.com">info@biemtech.com</a>',
+            },
+          ],
+        },
+      };
+
+      function render(lang) {
+        const t = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = t.dir;
+        document.querySelector('[data-i18n="back"]').textContent = t.back;
+        document.querySelector('[data-i18n="subtitle"]').textContent =
+          t.subtitle;
+        document.querySelector('[data-i18n="audience"]').textContent =
+          t.audience;
+        document.querySelector('[data-i18n="rights"]').textContent = t.rights;
+
+        document.getElementById("policy-content").innerHTML = `
+          <p class="meta">
+            ${t.app}: <strong>Arrows Escape</strong> &nbsp;|&nbsp;
+            ${t.pkg}: <code>com.biemtech.arrowsescape</code> &nbsp;|&nbsp;
+            ${t.updated}: <strong>${t.date}</strong>
+          </p>
+          <div class="summary">✓ ${t.summary}</div>
+          ${t.sections
+            .map(
+              (section) => `
+                <section class="card">
+                  <h2>${section.title}</h2>
+                  ${section.body}
+                </section>
+              `,
+            )
+            .join("")}
+        `;
+      }
+
+      function switchLang(lang) {
+        render(lang);
+        try {
+          localStorage.setItem("site_lang", lang);
+        } catch (error) {}
+      }
+
+      (function initLanguage() {
+        let saved = "";
+        try {
+          saved = localStorage.getItem("site_lang") || "";
+        } catch (error) {}
+        const browserLang = (navigator.language || "en").slice(0, 2);
+        const lang = T[saved] ? saved : T[browserLang] ? browserLang : "en";
+        document.getElementById("lang-select").value = lang;
+        render(lang);
+      })();
+    </script>
+  </body>
+</html>

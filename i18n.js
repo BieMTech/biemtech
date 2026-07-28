@@ -109,6 +109,43 @@ const I18N = {
     chip_dev: "In Development",
     ttm_desc:
       "A fun app for learning and practising multiplication tables. Build times-table skills through engaging practice, games, and progress tracking.",
+    arrows_desc:
+      "A strategic arrow puzzle for players aged 6 and up, including adults. Clear every arrow, build streaks, and master endlessly generated challenges.",
+    chip_puzzle: "Puzzle Game",
+    chip_next: "Coming Next",
+    arrows_page_tagline: "Find the Clear Path",
+    arrows_page_desc:
+      "Solve strategic arrow puzzles with endless procedural levels, daily challenges, achievements, and 12 languages. Made for players aged 6+ and adults. Coming soon to Android.",
+    arrows_notify_btn: "Contact us to stay updated →",
+    arrows_privacy_btn: "Privacy Policy",
+    arrows_features_label: "Features",
+    arrows_features_title: "What's coming",
+    arrows_f1_title: "Endless Solvable Puzzles",
+    arrows_f1_desc:
+      "Procedurally generated boards create a fresh challenge while keeping every level fully solvable.",
+    arrows_f2_title: "Daily Challenge",
+    arrows_f2_desc:
+      "Return each day for a new seeded puzzle and build your daily streak.",
+    arrows_f3_title: "Hints &amp; Undo",
+    arrows_f3_desc:
+      "Use a hint when the path is unclear or undo a blocked move and recover your heart.",
+    arrows_f4_title: "Achievements &amp; Ranks",
+    arrows_f4_desc:
+      "Unlock 22 achievements, earn XP and coins, and climb through eight player ranks.",
+    arrows_f5_title: "Stats &amp; Streaks",
+    arrows_f5_desc:
+      "Track stars, perfect levels, best times, hints, wins, and your longest streak.",
+    arrows_f6_title: "12 Languages",
+    arrows_f6_desc:
+      "Play in 12 languages with automatic device-language detection and in-game switching.",
+    meta_developer: "Developer",
+    meta_platform: "Platform",
+    meta_status: "Status",
+    meta_category: "Category",
+    meta_age: "Audience",
+    meta_contact: "Contact",
+    arrows_age: "Ages 6+",
+    footer_home: "Home",
     ttm_page_tagline: "Learn the Times Tables",
     ttm_page_desc:
       "Learn and practise times tables through engaging games, speed challenges, and progress tracking. Coming to Android soon.",
@@ -211,6 +248,43 @@ const I18N = {
     chip_dev: "Hazırlanır",
     ttm_desc:
       "Vurma cədvəlini öyrənmək və məşq etmək üçün əyləncəli tətbiq. Cəlbedici məşqlər, oyunlar və irəliləyişin izlənməsi ilə vurma cədvəli bacarıqlarınızı gücləndirin.",
+    arrows_desc:
+      "6 yaş və yuxarı oyunçular, o cümlədən böyüklər üçün strateji ox tapmacası. Bütün oxları lövhədən çıxarın, seriyalar qurun və sonsuz yaradılan tapşırıqları həll edin.",
+    chip_puzzle: "Tapmaca Oyunu",
+    chip_next: "Növbəti Tətbiq",
+    arrows_page_tagline: "Açıq Yolu Tap",
+    arrows_page_desc:
+      "Sonsuz prosedural səviyyələr, gündəlik tapşırıqlar, nailiyyətlər və 12 dil ilə strateji ox tapmacalarını həll edin. 6+ yaşlı oyunçular və böyüklər üçün hazırlanıb. Tezliklə Android-də.",
+    arrows_notify_btn: "Yeniliklər üçün bizimlə əlaqə saxlayın →",
+    arrows_privacy_btn: "Məxfilik Siyasəti",
+    arrows_features_label: "Xüsusiyyətlər",
+    arrows_features_title: "Nələr gəlir",
+    arrows_f1_title: "Sonsuz və Həll Olunan Tapmacalar",
+    arrows_f1_desc:
+      "Prosedural yaradılan lövhələr hər səviyyəni tam həll olunan saxlayaraq yeni tapşırıq təqdim edir.",
+    arrows_f2_title: "Gündəlik Tapşırıq",
+    arrows_f2_desc:
+      "Hər gün yeni tapmaca üçün qayıdın və gündəlik seriyanızı böyüdün.",
+    arrows_f3_title: "İpucu və Geri Al",
+    arrows_f3_desc:
+      "Yol aydın olmayanda ipucundan istifadə edin və ya bloklanmış gedişi geri alaraq ürəyinizi bərpa edin.",
+    arrows_f4_title: "Nailiyyətlər və Rütbələr",
+    arrows_f4_desc:
+      "22 nailiyyət açın, XP və sikkə qazanın, səkkiz oyunçu rütbəsində yüksəlin.",
+    arrows_f5_title: "Statistika və Seriyalar",
+    arrows_f5_desc:
+      "Ulduzları, mükəmməl səviyyələri, ən yaxşı vaxtları, ipuclarını, qələbələri və ən uzun seriyanızı izləyin.",
+    arrows_f6_title: "12 Dil",
+    arrows_f6_desc:
+      "Cihaz dilinin avtomatik aşkarlanması və oyun daxilində keçid ilə 12 dildə oynayın.",
+    meta_developer: "Tərtibatçı",
+    meta_platform: "Platforma",
+    meta_status: "Status",
+    meta_category: "Kateqoriya",
+    meta_age: "Auditoriya",
+    meta_contact: "Əlaqə",
+    arrows_age: "6 yaş və yuxarı",
+    footer_home: "Ana səhifə",
     ttm_page_tagline: "Vurma Cədvəllərini Öyrənin",
     ttm_page_desc:
       "Cəlbedici oyunlar, sürət tapşırıqları və irəliləyişin izlənməsi ilə vurma cədvəllərini öyrənin və məşq edin. Tezliklə Android-də.",
@@ -311,6 +385,43 @@ const I18N = {
     chip_dev: "В разработке",
     ttm_desc:
       "Увлекательное приложение для изучения и практики таблицы умножения. Закрепляйте навыки умножения с помощью упражнений, игр и отслеживания прогресса.",
+    arrows_desc:
+      "Стратегическая головоломка со стрелками для игроков от 6 лет, включая взрослых. Убирайте все стрелки, создавайте серии и проходите бесконечно генерируемые испытания.",
+    chip_puzzle: "Головоломка",
+    chip_next: "Следующее приложение",
+    arrows_page_tagline: "Найдите свободный путь",
+    arrows_page_desc:
+      "Решайте стратегические головоломки со стрелками: бесконечные процедурные уровни, ежедневные испытания, достижения и 12 языков. Для игроков от 6 лет и взрослых. Скоро на Android.",
+    arrows_notify_btn: "Свяжитесь с нами, чтобы следить за новостями →",
+    arrows_privacy_btn: "Политика конфиденциальности",
+    arrows_features_label: "Возможности",
+    arrows_features_title: "Что вас ждёт",
+    arrows_f1_title: "Бесконечные решаемые головоломки",
+    arrows_f1_desc:
+      "Процедурно созданные поля предлагают новое испытание, при этом каждый уровень остаётся полностью решаемым.",
+    arrows_f2_title: "Ежедневное испытание",
+    arrows_f2_desc:
+      "Возвращайтесь каждый день за новой головоломкой и увеличивайте ежедневную серию.",
+    arrows_f3_title: "Подсказки и отмена",
+    arrows_f3_desc:
+      "Используйте подсказку, если путь неясен, или отмените заблокированный ход и верните сердце.",
+    arrows_f4_title: "Достижения и ранги",
+    arrows_f4_desc:
+      "Откройте 22 достижения, зарабатывайте XP и монеты и поднимайтесь по восьми рангам.",
+    arrows_f5_title: "Статистика и серии",
+    arrows_f5_desc:
+      "Следите за звёздами, идеальными уровнями, лучшим временем, подсказками, победами и самой длинной серией.",
+    arrows_f6_title: "12 языков",
+    arrows_f6_desc:
+      "Играйте на 12 языках с автоопределением языка устройства и переключением в игре.",
+    meta_developer: "Разработчик",
+    meta_platform: "Платформа",
+    meta_status: "Статус",
+    meta_category: "Категория",
+    meta_age: "Аудитория",
+    meta_contact: "Контакт",
+    arrows_age: "От 6 лет",
+    footer_home: "Главная",
     ttm_page_tagline: "Учите таблицу умножения",
     ttm_page_desc:
       "Изучайте и практикуйте таблицу умножения через игры, скоростные задания и отслеживание прогресса. Скоро для Android.",
@@ -412,6 +523,43 @@ const I18N = {
     chip_dev: "Geliştiriliyor",
     ttm_desc:
       "Çarpım tablolarını öğrenmek ve alıştırma yapmak için eğlenceli bir uygulama. Alıştırmalar, oyunlar ve ilerleme takibi ile çarpım tablosu becerilerinizi geliştirin.",
+    arrows_desc:
+      "Yetişkinler dahil 6 yaş ve üzeri oyuncular için stratejik bir ok bulmacası. Tüm okları temizleyin, seriler oluşturun ve sonsuz üretilen mücadelelerde ustalaşın.",
+    chip_puzzle: "Bulmaca Oyunu",
+    chip_next: "Sıradaki Uygulama",
+    arrows_page_tagline: "Açık Yolu Bul",
+    arrows_page_desc:
+      "Sonsuz prosedürel seviyeler, günlük mücadeleler, başarımlar ve 12 dil ile stratejik ok bulmacalarını çözün. 6 yaş ve üzeri oyuncular ile yetişkinler için. Yakında Android'de.",
+    arrows_notify_btn: "Güncellemeler için bize ulaşın →",
+    arrows_privacy_btn: "Gizlilik Politikası",
+    arrows_features_label: "Özellikler",
+    arrows_features_title: "Neler geliyor",
+    arrows_f1_title: "Sonsuz ve Çözülebilir Bulmacalar",
+    arrows_f1_desc:
+      "Prosedürel üretilen tahtalar, her seviyeyi tamamen çözülebilir tutarken yeni bir mücadele sunar.",
+    arrows_f2_title: "Günlük Mücadele",
+    arrows_f2_desc:
+      "Her gün yeni bir bulmaca için geri dönün ve günlük serinizi büyütün.",
+    arrows_f3_title: "İpuçları ve Geri Alma",
+    arrows_f3_desc:
+      "Yol belirsiz olduğunda ipucu kullanın veya engellenen hamleyi geri alıp kalbinizi kurtarın.",
+    arrows_f4_title: "Başarımlar ve Rütbeler",
+    arrows_f4_desc:
+      "22 başarım açın, XP ve para kazanın, sekiz oyuncu rütbesinde yükselin.",
+    arrows_f5_title: "İstatistikler ve Seriler",
+    arrows_f5_desc:
+      "Yıldızları, kusursuz seviyeleri, en iyi süreleri, ipuçlarını, galibiyetleri ve en uzun serinizi izleyin.",
+    arrows_f6_title: "12 Dil",
+    arrows_f6_desc:
+      "Otomatik cihaz dili algılama ve oyun içi değiştirme ile 12 dilde oynayın.",
+    meta_developer: "Geliştirici",
+    meta_platform: "Platform",
+    meta_status: "Durum",
+    meta_category: "Kategori",
+    meta_age: "Kitle",
+    meta_contact: "İletişim",
+    arrows_age: "6 yaş ve üzeri",
+    footer_home: "Ana Sayfa",
     ttm_page_tagline: "Çarpım Tablolarını Öğrenin",
     ttm_page_desc:
       "Çarpım tablolarını eğlenceli oyunlar, hız mücadeleleri ve ilerleme takibi ile öğrenin. Yakında Android'de.",
@@ -514,6 +662,43 @@ const I18N = {
     chip_dev: "In Entwicklung",
     ttm_desc:
       "Eine unterhaltsame App zum Lernen und Üben des Einmaleins. Festigen Sie Ihre Einmaleins-Kenntnisse mit Übungen, Spielen und Fortschrittsverfolgung.",
+    arrows_desc:
+      "Ein strategisches Pfeil-Puzzlespiel für Spieler ab 6 Jahren, einschließlich Erwachsene. Räume alle Pfeile ab, bilde Serien und meistere endlos generierte Herausforderungen.",
+    chip_puzzle: "Puzzlespiel",
+    chip_next: "Als Nächstes",
+    arrows_page_tagline: "Finde den freien Weg",
+    arrows_page_desc:
+      "Löse strategische Pfeilrätsel mit endlosen prozeduralen Levels, täglichen Herausforderungen, Erfolgen und 12 Sprachen. Für Spieler ab 6 Jahren und Erwachsene. Bald für Android.",
+    arrows_notify_btn: "Kontaktiere uns für Neuigkeiten →",
+    arrows_privacy_btn: "Datenschutzerklärung",
+    arrows_features_label: "Funktionen",
+    arrows_features_title: "Das erwartet dich",
+    arrows_f1_title: "Endlose lösbare Rätsel",
+    arrows_f1_desc:
+      "Prozedural erzeugte Spielfelder bieten immer neue Herausforderungen und bleiben vollständig lösbar.",
+    arrows_f2_title: "Tägliche Herausforderung",
+    arrows_f2_desc:
+      "Kehre jeden Tag für ein neues Rätsel zurück und baue deine tägliche Serie aus.",
+    arrows_f3_title: "Hinweise &amp; Rückgängig",
+    arrows_f3_desc:
+      "Nutze einen Hinweis, wenn der Weg unklar ist, oder mache einen blockierten Zug rückgängig und hole dein Herz zurück.",
+    arrows_f4_title: "Erfolge &amp; Ränge",
+    arrows_f4_desc:
+      "Schalte 22 Erfolge frei, sammle XP und Münzen und steige durch acht Spielerränge auf.",
+    arrows_f5_title: "Statistiken &amp; Serien",
+    arrows_f5_desc:
+      "Verfolge Sterne, perfekte Levels, Bestzeiten, Hinweise, Siege und deine längste Serie.",
+    arrows_f6_title: "12 Sprachen",
+    arrows_f6_desc:
+      "Spiele in 12 Sprachen mit automatischer Geräteerkennung und Wechsel im Spiel.",
+    meta_developer: "Entwickler",
+    meta_platform: "Plattform",
+    meta_status: "Status",
+    meta_category: "Kategorie",
+    meta_age: "Zielgruppe",
+    meta_contact: "Kontakt",
+    arrows_age: "Ab 6 Jahren",
+    footer_home: "Startseite",
     ttm_page_tagline: "Das Einmaleins lernen",
     ttm_page_desc:
       "Lerne das Einmaleins mit Spielen, Speed-Challenges und Fortschrittsverfolgung. Bald für Android.",
@@ -619,6 +804,43 @@ const I18N = {
     chip_dev: "En développement",
     ttm_desc:
       "Une application amusante pour apprendre et pratiquer les tables de multiplication. Progressez avec des exercices, des jeux et un suivi de la progression.",
+    arrows_desc:
+      "Un jeu de réflexion stratégique avec des flèches pour les joueurs de 6 ans et plus, adultes compris. Éliminez toutes les flèches, enchaînez les séries et relevez des défis générés à l’infini.",
+    chip_puzzle: "Jeu de réflexion",
+    chip_next: "Prochaine sortie",
+    arrows_page_tagline: "Trouvez le chemin libre",
+    arrows_page_desc:
+      "Résolvez des puzzles stratégiques de flèches avec des niveaux procéduraux infinis, des défis quotidiens, des succès et 12 langues. Pour les joueurs de 6 ans et plus, adultes compris. Bientôt sur Android.",
+    arrows_notify_btn: "Contactez-nous pour suivre les nouveautés →",
+    arrows_privacy_btn: "Politique de confidentialité",
+    arrows_features_label: "Fonctionnalités",
+    arrows_features_title: "Ce qui vous attend",
+    arrows_f1_title: "Puzzles infinis et résolubles",
+    arrows_f1_desc:
+      "Les plateaux générés de façon procédurale offrent un nouveau défi tout en restant entièrement résolubles.",
+    arrows_f2_title: "Défi quotidien",
+    arrows_f2_desc:
+      "Revenez chaque jour pour un nouveau puzzle et développez votre série quotidienne.",
+    arrows_f3_title: "Indices et annulation",
+    arrows_f3_desc:
+      "Utilisez un indice si le chemin est incertain ou annulez un coup bloqué pour récupérer votre cœur.",
+    arrows_f4_title: "Succès et rangs",
+    arrows_f4_desc:
+      "Débloquez 22 succès, gagnez de l'XP et des pièces, puis progressez dans huit rangs.",
+    arrows_f5_title: "Statistiques et séries",
+    arrows_f5_desc:
+      "Suivez vos étoiles, niveaux parfaits, meilleurs temps, indices, victoires et votre plus longue série.",
+    arrows_f6_title: "12 langues",
+    arrows_f6_desc:
+      "Jouez en 12 langues avec détection automatique de la langue de l'appareil et changement dans le jeu.",
+    meta_developer: "Développeur",
+    meta_platform: "Plateforme",
+    meta_status: "Statut",
+    meta_category: "Catégorie",
+    meta_age: "Public",
+    meta_contact: "Contact",
+    arrows_age: "6 ans et plus",
+    footer_home: "Accueil",
     ttm_page_tagline: "Apprenez les tables de multiplication",
     ttm_page_desc:
       "Apprenez et pratiquez les tables avec des jeux, des défis de vitesse et un suivi de progression. Bientôt sur Android.",
@@ -723,6 +945,43 @@ const I18N = {
     chip_dev: "En desarrollo",
     ttm_desc:
       "Una divertida aplicación para aprender y practicar las tablas de multiplicar. Mejora tus habilidades con ejercicios, juegos y seguimiento del progreso.",
+    arrows_desc:
+      "Un puzle estratégico de flechas para jugadores de 6 años en adelante, incluidos adultos. Elimina todas las flechas, crea rachas y supera desafíos generados sin fin.",
+    chip_puzzle: "Juego de puzles",
+    chip_next: "Próxima app",
+    arrows_page_tagline: "Encuentra el camino libre",
+    arrows_page_desc:
+      "Resuelve puzles estratégicos de flechas con niveles procedurales infinitos, desafíos diarios, logros y 12 idiomas. Para jugadores de 6 años en adelante, incluidos adultos. Próximamente en Android.",
+    arrows_notify_btn: "Contáctanos para recibir novedades →",
+    arrows_privacy_btn: "Política de privacidad",
+    arrows_features_label: "Funciones",
+    arrows_features_title: "Lo que está por llegar",
+    arrows_f1_title: "Puzles infinitos y resolubles",
+    arrows_f1_desc:
+      "Los tableros generados de forma procedural ofrecen un reto nuevo y mantienen cada nivel totalmente resoluble.",
+    arrows_f2_title: "Desafío diario",
+    arrows_f2_desc:
+      "Vuelve cada día para jugar un nuevo puzle y aumentar tu racha diaria.",
+    arrows_f3_title: "Pistas y deshacer",
+    arrows_f3_desc:
+      "Usa una pista cuando el camino no esté claro o deshaz un movimiento bloqueado para recuperar tu corazón.",
+    arrows_f4_title: "Logros y rangos",
+    arrows_f4_desc:
+      "Desbloquea 22 logros, gana XP y monedas y asciende por ocho rangos de jugador.",
+    arrows_f5_title: "Estadísticas y rachas",
+    arrows_f5_desc:
+      "Sigue tus estrellas, niveles perfectos, mejores tiempos, pistas, victorias y tu racha más larga.",
+    arrows_f6_title: "12 idiomas",
+    arrows_f6_desc:
+      "Juega en 12 idiomas con detección automática del idioma del dispositivo y cambio dentro del juego.",
+    meta_developer: "Desarrollador",
+    meta_platform: "Plataforma",
+    meta_status: "Estado",
+    meta_category: "Categoría",
+    meta_age: "Público",
+    meta_contact: "Contacto",
+    arrows_age: "A partir de 6 años",
+    footer_home: "Inicio",
     ttm_page_tagline: "Aprende las tablas de multiplicar",
     ttm_page_desc:
       "Aprende y practica las tablas con juegos, desafíos de velocidad y seguimiento del progreso. Próximamente en Android.",
@@ -827,6 +1086,43 @@ const I18N = {
     chip_dev: "Em desenvolvimento",
     ttm_desc:
       "Um aplicativo divertido para aprender e praticar a tabuada. Desenvolva suas habilidades com exercícios, jogos e acompanhamento do progresso.",
+    arrows_desc:
+      "Um quebra-cabeça estratégico de setas para jogadores a partir de 6 anos, incluindo adultos. Remova todas as setas, crie sequências e supere desafios gerados sem fim.",
+    chip_puzzle: "Jogo de quebra-cabeça",
+    chip_next: "Próximo lançamento",
+    arrows_page_tagline: "Encontre o caminho livre",
+    arrows_page_desc:
+      "Resolva quebra-cabeças estratégicos de setas com níveis procedurais infinitos, desafios diários, conquistas e 12 idiomas. Para jogadores a partir de 6 anos, incluindo adultos. Em breve no Android.",
+    arrows_notify_btn: "Entre em contato para receber novidades →",
+    arrows_privacy_btn: "Política de Privacidade",
+    arrows_features_label: "Recursos",
+    arrows_features_title: "O que vem por aí",
+    arrows_f1_title: "Puzzles infinitos e solucionáveis",
+    arrows_f1_desc:
+      "Tabuleiros gerados proceduralmente criam novos desafios e mantêm todos os níveis totalmente solucionáveis.",
+    arrows_f2_title: "Desafio diário",
+    arrows_f2_desc:
+      "Volte todos os dias para um novo puzzle e aumente sua sequência diária.",
+    arrows_f3_title: "Dicas e desfazer",
+    arrows_f3_desc:
+      "Use uma dica quando o caminho não estiver claro ou desfaça um movimento bloqueado para recuperar seu coração.",
+    arrows_f4_title: "Conquistas e patentes",
+    arrows_f4_desc:
+      "Desbloqueie 22 conquistas, ganhe XP e moedas e avance por oito patentes.",
+    arrows_f5_title: "Estatísticas e sequências",
+    arrows_f5_desc:
+      "Acompanhe estrelas, níveis perfeitos, melhores tempos, dicas, vitórias e sua maior sequência.",
+    arrows_f6_title: "12 idiomas",
+    arrows_f6_desc:
+      "Jogue em 12 idiomas com detecção automática do idioma do dispositivo e troca dentro do jogo.",
+    meta_developer: "Desenvolvedor",
+    meta_platform: "Plataforma",
+    meta_status: "Status",
+    meta_category: "Categoria",
+    meta_age: "Público",
+    meta_contact: "Contato",
+    arrows_age: "A partir de 6 anos",
+    footer_home: "Início",
     ttm_page_tagline: "Aprenda a tabuada",
     ttm_page_desc:
       "Aprenda e pratique a tabuada com jogos, desafios de velocidade e acompanhamento do progresso. Em breve no Android.",
@@ -929,6 +1225,43 @@ const I18N = {
     chip_dev: "In sviluppo",
     ttm_desc:
       "Un'app divertente per imparare e praticare le tabelline. Migliora le tue abilità con esercizi, giochi e monitoraggio dei progressi.",
+    arrows_desc:
+      "Un rompicapo strategico con frecce per giocatori dai 6 anni in su, adulti compresi. Libera tutte le frecce, crea serie e supera sfide generate all’infinito.",
+    chip_puzzle: "Gioco rompicapo",
+    chip_next: "Prossima uscita",
+    arrows_page_tagline: "Trova il percorso libero",
+    arrows_page_desc:
+      "Risolvi rompicapi strategici con frecce, livelli procedurali infiniti, sfide giornaliere, obiettivi e 12 lingue. Per giocatori dai 6 anni in su, adulti compresi. Presto su Android.",
+    arrows_notify_btn: "Contattaci per ricevere aggiornamenti →",
+    arrows_privacy_btn: "Informativa sulla privacy",
+    arrows_features_label: "Funzionalità",
+    arrows_features_title: "Cosa sta arrivando",
+    arrows_f1_title: "Puzzle infiniti e risolvibili",
+    arrows_f1_desc:
+      "Le tavole generate proceduralmente offrono sempre nuove sfide e mantengono ogni livello completamente risolvibile.",
+    arrows_f2_title: "Sfida giornaliera",
+    arrows_f2_desc:
+      "Torna ogni giorno per un nuovo puzzle e aumenta la tua serie quotidiana.",
+    arrows_f3_title: "Suggerimenti e annulla",
+    arrows_f3_desc:
+      "Usa un suggerimento quando il percorso non è chiaro o annulla una mossa bloccata per recuperare il cuore.",
+    arrows_f4_title: "Obiettivi e gradi",
+    arrows_f4_desc:
+      "Sblocca 22 obiettivi, guadagna XP e monete e avanza attraverso otto gradi.",
+    arrows_f5_title: "Statistiche e serie",
+    arrows_f5_desc:
+      "Tieni traccia di stelle, livelli perfetti, tempi migliori, suggerimenti, vittorie e serie più lunga.",
+    arrows_f6_title: "12 lingue",
+    arrows_f6_desc:
+      "Gioca in 12 lingue con rilevamento automatico della lingua del dispositivo e cambio in gioco.",
+    meta_developer: "Sviluppatore",
+    meta_platform: "Piattaforma",
+    meta_status: "Stato",
+    meta_category: "Categoria",
+    meta_age: "Pubblico",
+    meta_contact: "Contatti",
+    arrows_age: "Dai 6 anni in su",
+    footer_home: "Home",
     ttm_page_tagline: "Impara le tabelline",
     ttm_page_desc:
       "Impara e pratica le tabelline con giochi, sfide di velocità e monitoraggio dei progressi. Presto su Android.",
@@ -1025,6 +1358,43 @@ const I18N = {
     chip_dev: "قيد التطوير",
     ttm_desc:
       "تطبيق ممتع لتعلم جداول الضرب والتدرب عليها. طوّر مهاراتك في جداول الضرب من خلال التمارين الممتعة والألعاب وتتبع التقدم.",
+    arrows_desc:
+      "لعبة ألغاز استراتيجية بالأسهم للاعبين من عمر 6 سنوات فما فوق، بما في ذلك البالغون. أخرج جميع الأسهم، وابنِ سلاسل متتالية، وتغلّب على تحديات لا نهائية.",
+    chip_puzzle: "لعبة ألغاز",
+    chip_next: "الإصدار القادم",
+    arrows_page_tagline: "اعثر على المسار المفتوح",
+    arrows_page_desc:
+      "حل ألغاز الأسهم الاستراتيجية مع مستويات إجرائية لا نهائية وتحديات يومية وإنجازات و12 لغة. للاعبين من عمر 6 سنوات فما فوق، بمن فيهم البالغون. قريباً على Android.",
+    arrows_notify_btn: "تواصل معنا لمتابعة التحديثات ←",
+    arrows_privacy_btn: "سياسة الخصوصية",
+    arrows_features_label: "الميزات",
+    arrows_features_title: "ما الذي سيأتي",
+    arrows_f1_title: "ألغاز لا نهائية قابلة للحل",
+    arrows_f1_desc:
+      "توفر اللوحات المُنشأة إجرائياً تحدياً جديداً مع ضمان إمكانية حل كل مستوى بالكامل.",
+    arrows_f2_title: "التحدي اليومي",
+    arrows_f2_desc:
+      "عُد كل يوم لحل لغز جديد وبناء سلسلتك اليومية.",
+    arrows_f3_title: "تلميحات وتراجع",
+    arrows_f3_desc:
+      "استخدم تلميحاً عندما لا يكون المسار واضحاً أو تراجع عن حركة محظورة لاستعادة القلب.",
+    arrows_f4_title: "الإنجازات والرتب",
+    arrows_f4_desc:
+      "افتح 22 إنجازاً واكسب نقاط الخبرة والعملات وتقدم عبر ثماني رتب.",
+    arrows_f5_title: "الإحصاءات والسلاسل",
+    arrows_f5_desc:
+      "تابع النجوم والمستويات المثالية وأفضل الأوقات والتلميحات والانتصارات وأطول سلسلة.",
+    arrows_f6_title: "12 لغة",
+    arrows_f6_desc:
+      "العب بـ12 لغة مع اكتشاف لغة الجهاز تلقائياً والتبديل من داخل اللعبة.",
+    meta_developer: "المطور",
+    meta_platform: "المنصة",
+    meta_status: "الحالة",
+    meta_category: "الفئة",
+    meta_age: "الجمهور",
+    meta_contact: "التواصل",
+    arrows_age: "من 6 سنوات فما فوق",
+    footer_home: "الرئيسية",
     ttm_page_tagline: "تعلّم جداول الضرب",
     ttm_page_desc:
       "تعلّم جداول الضرب وتدرّب عليها من خلال ألعاب ممتعة وتحديات السرعة وتتبع التقدم. قريباً على Android.",
@@ -1118,6 +1488,43 @@ const I18N = {
     chip_dev: "开发中",
     ttm_desc:
       "一款有趣的乘法表学习与练习应用。通过互动练习、游戏和进度追踪提升乘法表能力。",
+    arrows_desc:
+      "一款面向6岁及以上玩家（包括成人）的策略箭头解谜游戏。清除所有箭头、连续闯关，并挑战无限生成的谜题。",
+    chip_puzzle: "解谜游戏",
+    chip_next: "即将推出",
+    arrows_page_tagline: "找到畅通路径",
+    arrows_page_desc:
+      "挑战策略箭头谜题，体验无限程序生成关卡、每日挑战、成就和12种语言。适合6岁及以上玩家，包括成人。即将登陆Android。",
+    arrows_notify_btn: "联系我们获取最新消息 →",
+    arrows_privacy_btn: "隐私政策",
+    arrows_features_label: "功能",
+    arrows_features_title: "即将推出的内容",
+    arrows_f1_title: "无限且可解的谜题",
+    arrows_f1_desc:
+      "程序生成的棋盘不断带来新挑战，同时确保每个关卡都完全可解。",
+    arrows_f2_title: "每日挑战",
+    arrows_f2_desc:
+      "每天回来体验新的固定谜题，并延续你的每日连胜。",
+    arrows_f3_title: "提示与撤销",
+    arrows_f3_desc:
+      "路线不清楚时使用提示，或撤销被阻挡的操作并恢复爱心。",
+    arrows_f4_title: "成就与等级",
+    arrows_f4_desc:
+      "解锁22项成就，赚取XP和金币，并晋升八个玩家等级。",
+    arrows_f5_title: "统计与连胜",
+    arrows_f5_desc:
+      "追踪星星、完美关卡、最佳时间、提示、胜利和最长连胜。",
+    arrows_f6_title: "12种语言",
+    arrows_f6_desc:
+      "支持12种语言，可自动检测设备语言并在游戏内切换。",
+    meta_developer: "开发者",
+    meta_platform: "平台",
+    meta_status: "状态",
+    meta_category: "类别",
+    meta_age: "适用人群",
+    meta_contact: "联系",
+    arrows_age: "6岁及以上",
+    footer_home: "首页",
     ttm_page_tagline: "学习乘法表",
     ttm_page_desc:
       "通过游戏、速度挑战和进度追踪学习和练习乘法表。即将登陆Android。",
@@ -1217,6 +1624,43 @@ const I18N = {
     chip_dev: "開発中",
     ttm_desc:
       "九九を楽しく学んで練習できるアプリ。練習、ゲーム、進捗追跡で九九の力を伸ばそう。",
+    arrows_desc:
+      "大人を含む6歳以上のプレイヤー向け戦略アローパズル。すべての矢印を消し、連続クリアを重ね、無限に生成されるチャレンジを攻略しよう。",
+    chip_puzzle: "パズルゲーム",
+    chip_next: "次回リリース",
+    arrows_page_tagline: "開いた道を見つけよう",
+    arrows_page_desc:
+      "無限に生成されるレベル、デイリーチャレンジ、実績、12言語に対応した戦略アローパズル。大人を含む6歳以上のプレイヤー向け。Android版近日登場。",
+    arrows_notify_btn: "最新情報はお問い合わせください →",
+    arrows_privacy_btn: "プライバシーポリシー",
+    arrows_features_label: "機能",
+    arrows_features_title: "近日登場する内容",
+    arrows_f1_title: "無限に遊べる解決可能なパズル",
+    arrows_f1_desc:
+      "自動生成ボードが毎回新しい挑戦を生み、すべてのレベルが完全に解けるよう設計されています。",
+    arrows_f2_title: "デイリーチャレンジ",
+    arrows_f2_desc:
+      "毎日新しいパズルに挑戦し、デイリー連続記録を伸ばしましょう。",
+    arrows_f3_title: "ヒントと取り消し",
+    arrows_f3_desc:
+      "道が分からないときはヒントを使い、失敗した手を取り消してハートを取り戻せます。",
+    arrows_f4_title: "実績とランク",
+    arrows_f4_desc:
+      "22個の実績を解除し、XPとコインを獲得して8段階のランクを上げましょう。",
+    arrows_f5_title: "統計と連続記録",
+    arrows_f5_desc:
+      "スター、完全クリア、ベストタイム、ヒント、勝利数、最長連続記録を確認できます。",
+    arrows_f6_title: "12言語",
+    arrows_f6_desc:
+      "端末言語の自動検出とゲーム内切り替えにより、12言語でプレイできます。",
+    meta_developer: "開発者",
+    meta_platform: "プラットフォーム",
+    meta_status: "ステータス",
+    meta_category: "カテゴリー",
+    meta_age: "対象",
+    meta_contact: "連絡先",
+    arrows_age: "6歳以上",
+    footer_home: "ホーム",
     ttm_page_tagline: "九九を学ぼう",
     ttm_page_desc:
       "ゲーム、スピードチャレンジ、進捗追跡で九九を学んで練習しよう。Android版もうすぐ登場。",

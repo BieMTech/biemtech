@@ -411,31 +411,32 @@
             </div>
           </div>
 
-          <!-- Placeholder / More apps coming -->
+          <!-- Arrows Escape -->
           <div
             class="app-card"
-            style="opacity: 0.4; pointer-events: none; cursor: default"
+            onclick="window.location = 'arrows-escape.html'"
+            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'arrows-escape.html'; }"
+            role="link"
+            tabindex="0"
+            style="cursor: pointer"
           >
             <div class="app-card__top">
-              <div
-                class="app-card__icon"
-                style="background: rgba(0, 0, 0, 0.06); font-size: 28px"
-              >
-                ＋
+              <div class="app-card__icon arrows-escape">
+                <img src="img/arrows_escape_icon.png" alt="Arrows Escape" />
               </div>
+              <div class="app-card__arrow">→</div>
             </div>
-            <div
-              class="app-card__name"
-              style="color: var(--text-dim)"
-              data-i18n="more_apps"
-            >
-              More apps
-            </div>
-            <p class="app-card__desc" data-i18n="more_apps_desc">
-              New products are in the works. Stay tuned.
+            <div class="app-card__name">Arrows Escape</div>
+            <p class="app-card__desc" data-i18n="arrows_desc">
+              A strategic arrow puzzle for players aged 6 and up, including
+              adults. Clear every arrow, build streaks, and master endlessly
+              generated challenges.
             </p>
             <div class="app-card__footer">
-              <span class="chip chip-soon">TBA</span>
+              <span class="chip" data-i18n="chip_puzzle">Puzzle Game</span>
+              <span class="chip chip-soon" data-i18n="chip_dev"
+                >In Development</span
+              >
             </div>
           </div>
         </div>
