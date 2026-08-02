@@ -112,6 +112,9 @@ const I18N = {
     arrows_desc:
       "A strategic arrow puzzle for players aged 6 and up, including adults. Clear every arrow, build streaks, and master endlessly generated challenges.",
     chip_puzzle: "Puzzle Game",
+    snake_desc:
+      "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
+    chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
     arrows_page_desc:
@@ -251,6 +254,9 @@ const I18N = {
     arrows_desc:
       "6 yaş və yuxarı oyunçular, o cümlədən böyüklər üçün strateji ox tapmacası. Bütün oxları lövhədən çıxarın, seriyalar qurun və sonsuz yaradılan tapşırıqları həll edin.",
     chip_puzzle: "Tapmaca Oyunu",
+    snake_desc:
+      "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
+    chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
     arrows_page_desc:
@@ -388,6 +394,9 @@ const I18N = {
     arrows_desc:
       "Стратегическая головоломка со стрелками для игроков от 6 лет, включая взрослых. Убирайте все стрелки, создавайте серии и проходите бесконечно генерируемые испытания.",
     chip_puzzle: "Головоломка",
+    snake_desc:
+      "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
+    chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
     arrows_page_desc:
@@ -526,6 +535,9 @@ const I18N = {
     arrows_desc:
       "Yetişkinler dahil 6 yaş ve üzeri oyuncular için stratejik bir ok bulmacası. Tüm okları temizleyin, seriler oluşturun ve sonsuz üretilen mücadelelerde ustalaşın.",
     chip_puzzle: "Bulmaca Oyunu",
+    snake_desc:
+      "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
+    chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
     arrows_page_desc:
@@ -665,6 +677,9 @@ const I18N = {
     arrows_desc:
       "Ein strategisches Pfeil-Puzzlespiel für Spieler ab 6 Jahren, einschließlich Erwachsene. Räume alle Pfeile ab, bilde Serien und meistere endlos generierte Herausforderungen.",
     chip_puzzle: "Puzzlespiel",
+    snake_desc:
+      "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
+    chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
     arrows_page_desc:
@@ -807,6 +822,9 @@ const I18N = {
     arrows_desc:
       "Un jeu de réflexion stratégique avec des flèches pour les joueurs de 6 ans et plus, adultes compris. Éliminez toutes les flèches, enchaînez les séries et relevez des défis générés à l’infini.",
     chip_puzzle: "Jeu de réflexion",
+    snake_desc:
+      "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
+    chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
     arrows_page_desc:
@@ -948,6 +966,9 @@ const I18N = {
     arrows_desc:
       "Un puzle estratégico de flechas para jugadores de 6 años en adelante, incluidos adultos. Elimina todas las flechas, crea rachas y supera desafíos generados sin fin.",
     chip_puzzle: "Juego de puzles",
+    snake_desc:
+      "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
+    chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
     arrows_page_desc:
@@ -1089,6 +1110,9 @@ const I18N = {
     arrows_desc:
       "Um quebra-cabeça estratégico de setas para jogadores a partir de 6 anos, incluindo adultos. Remova todas as setas, crie sequências e supere desafios gerados sem fim.",
     chip_puzzle: "Jogo de quebra-cabeça",
+    snake_desc:
+      "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
+    chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
     arrows_page_desc:
@@ -1228,6 +1252,9 @@ const I18N = {
     arrows_desc:
       "Un rompicapo strategico con frecce per giocatori dai 6 anni in su, adulti compresi. Libera tutte le frecce, crea serie e supera sfide generate all’infinito.",
     chip_puzzle: "Gioco rompicapo",
+    snake_desc:
+      "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
+    chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
     arrows_page_desc:
@@ -1361,6 +1388,9 @@ const I18N = {
     arrows_desc:
       "لعبة ألغاز استراتيجية بالأسهم للاعبين من عمر 6 سنوات فما فوق، بما في ذلك البالغون. أخرج جميع الأسهم، وابنِ سلاسل متتالية، وتغلّب على تحديات لا نهائية.",
     chip_puzzle: "لعبة ألغاز",
+    snake_desc:
+      "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
+    chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
     arrows_page_desc:
@@ -1491,6 +1521,9 @@ const I18N = {
     arrows_desc:
       "一款面向6岁及以上玩家（包括成人）的策略箭头解谜游戏。清除所有箭头、连续闯关，并挑战无限生成的谜题。",
     chip_puzzle: "解谜游戏",
+    snake_desc:
+      "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
+    chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
     arrows_page_desc:
@@ -1627,6 +1660,9 @@ const I18N = {
     arrows_desc:
       "大人を含む6歳以上のプレイヤー向け戦略アローパズル。すべての矢印を消し、連続クリアを重ね、無限に生成されるチャレンジを攻略しよう。",
     chip_puzzle: "パズルゲーム",
+    snake_desc:
+      "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
+    chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",
     arrows_page_desc:

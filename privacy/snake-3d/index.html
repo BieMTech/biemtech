@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake 3D Privacy Policy — BieMTech</title>
+    <meta
+      name="description"
+      content="Privacy policy for Snake 3D, the offline 3D arcade game for ages 6 and up by BieMTech."
+    />
+    <link rel="icon" type="image/png" href="../../img/snake-3d-icon-1024.png" />
+    <style>
+      :root {
+        --bg: #061927;
+        --surface: rgba(11, 39, 57, 0.9);
+        --text: #f2fbff;
+        --muted: #aec7d3;
+        --cyan: #7beaff;
+        --lime: #c9f646;
+        --border: rgba(103, 215, 255, 0.2);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        background:
+          radial-gradient(circle at 14% 6%, rgba(40, 201, 232, 0.16), transparent 29rem),
+          radial-gradient(circle at 88% 24%, rgba(185, 239, 32, 0.08), transparent 25rem),
+          var(--bg);
+      }
+
+      a {
+        color: var(--cyan);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        color: var(--text);
+      }
+
+      .lang-select {
+        padding: 8px 14px;
+        color: var(--text);
+        font: inherit;
+        font-size: 0.85rem;
+        font-weight: 700;
+        cursor: pointer;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        color-scheme: dark;
+      }
+
+      .lang-select option {
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      header {
+        width: min(860px, calc(100% - 32px));
+        margin: 34px auto 40px;
+        text-align: center;
+      }
+
+      .app-icon {
+        width: 108px;
+        height: 108px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 25px;
+        box-shadow:
+          0 20px 55px rgba(0, 0, 0, 0.36),
+          0 0 40px rgba(40, 201, 232, 0.2);
+      }
+
+      h1 {
+        margin: 22px 0 4px;
+        font-size: clamp(2.15rem, 7vw, 4rem);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--cyan);
+        font-size: 0.82rem;
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .audience {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 18px;
+        padding: 7px 14px;
+        color: var(--lime);
+        font-size: 0.85rem;
+        font-weight: 750;
+        border: 1px solid rgba(201, 246, 70, 0.3);
+        border-radius: 999px;
+        background: rgba(201, 246, 70, 0.07);
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto 72px;
+      }
+
+      .meta,
+      .summary,
+      .card {
+        border: 1px solid var(--border);
+        background: var(--surface);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+      }
+
+      .meta {
+        margin: 0 0 14px;
+        padding: 14px 18px;
+        color: var(--muted);
+        font-size: 0.84rem;
+        text-align: center;
+        border-radius: 14px;
+      }
+
+      code {
+        color: var(--cyan);
+      }
+
+      .summary {
+        margin-bottom: 20px;
+        padding: 18px 20px;
+        color: #e7fcff;
+        border-color: rgba(123, 234, 255, 0.32);
+        border-radius: 16px;
+      }
+
+      .card {
+        margin-bottom: 14px;
+        padding: clamp(20px, 5vw, 30px);
+        border-radius: 18px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        color: var(--cyan);
+        font-size: 1.15rem;
+        line-height: 1.35;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin: 10px 0 14px;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 7px;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        margin-top: 6px;
+        padding: 9px 18px;
+        color: #fff;
+        font-weight: 750;
+        text-decoration: none;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #078ff2, #0873bd);
+      }
+
+      footer {
+        padding: 28px 16px;
+        color: var(--muted);
+        font-size: 0.84rem;
+        text-align: center;
+        border-top: 1px solid var(--border);
+      }
+
+      [dir="rtl"] ul {
+        padding-right: 22px;
+        padding-left: 0;
+      }
+
+      @media (max-width: 560px) {
+        .topbar {
+          align-items: flex-start;
+        }
+
+        .back-link {
+          max-width: 185px;
+        }
+
+        header {
+          margin-top: 18px;
+        }
+
+        .meta {
+          text-align: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a class="back-link" href="../index.html" data-i18n="back">← BieMTech Privacy Policies</a>
+      <select id="lang-select" class="lang-select" onchange="switchLang(this.value)" aria-label="Language">
+        <option value="en">🇬🇧 English</option>
+        <option value="zh">🇨🇳 中文</option>
+        <option value="hi">🇮🇳 हिन्दी</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="ar">🇸🇦 العربية</option>
+        <option value="pt">🇵🇹 Português</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="ja">🇯🇵 日本語</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="tr">🇹🇷 Türkçe</option>
+        <option value="az">🇦🇿 Azərbaycan dili</option>
+      </select>
+    </div>
+
+    <header>
+      <img class="app-icon" src="../../img/snake-3d-icon-1024.png" alt="Snake 3D" />
+      <h1>Snake 3D</h1>
+      <p class="subtitle" data-i18n="subtitle">Privacy Policy</p>
+      <div class="audience" data-i18n="audience">Recommended for ages 6+ · Suitable for all ages</div>
+    </header>
+
+    <main id="policy-content"></main>
+
+    <footer>
+      &copy; 2026 Snake 3D — <a href="../../index.html">BieMTech</a>.
+      <span data-i18n="rights">All rights reserved.</span>
+    </footer>
+
+    <script>
+      const T = {
+        en: {
+          dir: "ltr", back: "← BieMTech Privacy Policies", subtitle: "Privacy Policy", audience: "Recommended for ages 6+ · Suitable for all ages", rights: "All rights reserved.", app: "Application", pkg: "Package", updated: "Last updated", date: "August 2, 2026",
+          summary: "<strong>Short version:</strong> Snake 3D does <strong>not collect, share, sell, or transmit</strong> personal information. The game works offline, contains no advertising or analytics, and keeps game progress only on your device.",
+          sections: [
+            ["1. About This App", "<p>Snake 3D is a 3D arcade game with adventure and classic modes. Players guide a snake, collect food and rewards, build combos, complete levels, and track their results.</p><p>It is a general-audience game recommended for players aged <strong>6 and older</strong>, including teenagers and adults. It is not designed exclusively for children.</p>"],
+            ["2. Information We Collect", "<p>Snake 3D does <strong>not</strong> collect personal information and does not ask for a name, email address, phone number, account, or login. It does not transmit gameplay or device data to BieMTech or any third party.</p><p>The game stores only these items locally on your device:</p><ul><li>Options: sound, music, vibration, graphics quality, and language</li><li>Progress: high score, current level, and selected snake style</li><li>Statistics: games played, items eaten, longest snake, best combo, and total play time</li><li>A small local marker used to disable music after an audio-related crash</li></ul>"],
+            ["3. Children and General Audience", "<p>Snake 3D is suitable for a broad audience aged 6+, with no upper age limit. It has no registration, chat, social profile, user-generated content, behavioural profiling, or targeted advertising. We do not knowingly collect personal information from children or adults.</p>"],
+            ["4. Offline Use and Permissions", "<p>The current Android version works offline and <strong>does not request Internet access</strong>. It requests only vibration access for optional haptic feedback. It does not request location, camera, microphone, contacts, photos, media, external storage, notifications, or other sensitive permissions.</p>"],
+            ["5. Advertising and Third-Party Services", "<p>Snake 3D contains no advertising and integrates no third-party analytics, tracking, crash-reporting, account, cloud-save, or social SDKs. The app store or platform used to obtain the game may process its own data under its own privacy policy; that processing is separate from Snake 3D.</p>"],
+            ["6. Data Retention and Deletion", "<p>Local settings, progress, and statistics remain on your device until you delete them. You can remove all locally stored game data by clearing Snake 3D's storage in Android Settings or uninstalling the app. No server-side deletion request is necessary because Snake 3D does not send your data to a server.</p>"],
+            ["7. Changes to This Policy", "<p>We may update this Privacy Policy if the application or its data practices change. Any revision will appear on this page with a new last-updated date before the relevant version is released.</p>"],
+            ["8. Contact Us", "<p>For questions about this Privacy Policy or Snake 3D data practices, contact BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        zh: {
+          dir: "ltr", back: "← BieMTech 隐私政策", subtitle: "隐私政策", audience: "建议6岁以上 · 适合所有年龄", rights: "保留所有权利。", app: "应用", pkg: "软件包", updated: "最后更新", date: "2026年8月2日",
+          summary: "<strong>简要说明：</strong>Snake 3D<strong>不会收集、共享、出售或传输</strong>个人信息。游戏可离线运行，不含广告或分析，仅在您的设备上保存游戏进度。",
+          sections: [
+            ["1. 关于本应用", "<p>Snake 3D是一款包含冒险和经典模式的3D街机游戏。玩家操控小蛇、收集食物和奖励、建立连击、完成关卡并查看成绩。</p><p>本游戏面向普通大众，建议<strong>6岁及以上</strong>的儿童、青少年和成人使用，并非专为儿童设计。</p>"],
+            ["2. 我们收集的信息", "<p>Snake 3D<strong>不收集</strong>个人信息，也不要求姓名、电子邮件、电话号码、账号或登录。游戏数据和设备数据不会传输给BieMTech或任何第三方。</p><p>游戏仅在设备本地保存：</p><ul><li>设置：声音、音乐、振动、画质和语言</li><li>进度：最高分、当前关卡和所选小蛇外观</li><li>统计：游戏次数、吃到的物品、最长蛇身、最佳连击和总游戏时间</li><li>用于在音频崩溃后停用音乐的小型本地标记</li></ul>"],
+            ["3. 儿童与普通受众", "<p>Snake 3D适合6岁以上的广泛受众，没有最高年龄限制。游戏没有注册、聊天、社交资料、用户生成内容、行为画像或定向广告。我们不会有意收集儿童或成人的个人信息。</p>"],
+            ["4. 离线使用与权限", "<p>当前Android版本可离线运行，且<strong>不请求互联网访问</strong>。仅为可选触觉反馈请求振动权限，不请求位置、相机、麦克风、联系人、照片、媒体、外部存储、通知或其他敏感权限。</p>"],
+            ["5. 广告与第三方服务", "<p>Snake 3D不含广告，也未集成第三方分析、跟踪、崩溃报告、账号、云存档或社交SDK。您获取游戏所使用的应用商店或平台可能依据其自身政策处理数据；该处理与Snake 3D分开。</p>"],
+            ["6. 数据保留与删除", "<p>本地设置、进度和统计会保留在设备上，直到您删除它们。您可以在Android设置中清除Snake 3D的存储空间或卸载应用，从而删除全部本地数据。由于游戏不向服务器发送数据，因此无需提交服务器端删除请求。</p>"],
+            ["7. 政策变更", "<p>如果应用或数据处理方式发生变化，我们可能更新本政策。相关版本发布前，本页会显示修订内容和新的更新日期。</p>"],
+            ["8. 联系我们", "<p>如对本政策或Snake 3D的数据处理方式有疑问，请联系BieMTech：</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        hi: {
+          dir: "ltr", back: "← BieMTech गोपनीयता नीतियाँ", subtitle: "गोपनीयता नीति", audience: "6+ वर्ष के लिए अनुशंसित · सभी आयु के लिए उपयुक्त", rights: "सर्वाधिकार सुरक्षित।", app: "एप्लिकेशन", pkg: "पैकेज", updated: "अंतिम अपडेट", date: "2 अगस्त 2026",
+          summary: "<strong>संक्षेप में:</strong> Snake 3D व्यक्तिगत जानकारी को <strong>एकत्र, साझा, बेचता या भेजता नहीं है</strong>। गेम ऑफलाइन चलता है, इसमें विज्ञापन या एनालिटिक्स नहीं हैं और प्रगति केवल आपके डिवाइस पर रहती है।",
+          sections: [
+            ["1. इस ऐप के बारे में", "<p>Snake 3D एडवेंचर और क्लासिक मोड वाला 3D आर्केड गेम है। खिलाड़ी साँप को चलाते हैं, भोजन और इनाम लेते हैं, कॉम्बो बनाते हैं, स्तर पूरे करते हैं और नतीजे देखते हैं।</p><p>यह सामान्य दर्शकों के लिए है और बच्चों, किशोरों तथा वयस्कों सहित <strong>6 वर्ष और अधिक</strong> के खिलाड़ियों के लिए अनुशंसित है। यह केवल बच्चों के लिए नहीं बनाया गया है।</p>"],
+            ["2. हम कौन-सी जानकारी लेते हैं", "<p>Snake 3D व्यक्तिगत जानकारी <strong>एकत्र नहीं करता</strong> और नाम, ईमेल, फोन नंबर, खाता या लॉगिन नहीं माँगता। गेम या डिवाइस डेटा BieMTech अथवा किसी तीसरे पक्ष को नहीं भेजा जाता।</p><p>केवल ये चीजें डिवाइस पर स्थानीय रूप से रहती हैं:</p><ul><li>विकल्प: ध्वनि, संगीत, कंपन, ग्राफिक्स गुणवत्ता और भाषा</li><li>प्रगति: सर्वोच्च स्कोर, वर्तमान स्तर और चुनी हुई साँप शैली</li><li>आँकड़े: खेले गए गेम, खाई गई वस्तुएँ, सबसे लंबा साँप, श्रेष्ठ कॉम्बो और कुल खेल समय</li><li>ऑडियो क्रैश के बाद संगीत बंद करने वाला छोटा स्थानीय संकेत</li></ul>"],
+            ["3. बच्चे और सामान्य दर्शक", "<p>Snake 3D बिना ऊपरी आयु सीमा के 6+ वर्ष के व्यापक दर्शकों के लिए उपयुक्त है। इसमें पंजीकरण, चैट, सामाजिक प्रोफ़ाइल, उपयोगकर्ता सामग्री, व्यवहार प्रोफाइलिंग या लक्षित विज्ञापन नहीं हैं। हम बच्चों या वयस्कों की व्यक्तिगत जानकारी जानबूझकर नहीं लेते।</p>"],
+            ["4. ऑफलाइन उपयोग और अनुमतियाँ", "<p>मौजूदा Android संस्करण ऑफलाइन चलता है और <strong>इंटरनेट पहुँच नहीं माँगता</strong>। वैकल्पिक हैप्टिक फीडबैक के लिए केवल कंपन अनुमति लेता है। स्थान, कैमरा, माइक्रोफोन, संपर्क, फोटो, मीडिया, बाहरी स्टोरेज, सूचनाएँ या अन्य संवेदनशील अनुमति नहीं माँगी जाती।</p>"],
+            ["5. विज्ञापन और तृतीय-पक्ष सेवाएँ", "<p>Snake 3D में विज्ञापन नहीं हैं और कोई तृतीय-पक्ष एनालिटिक्स, ट्रैकिंग, क्रैश रिपोर्टिंग, खाता, क्लाउड सेव या सोशल SDK नहीं जुड़ा है। जिस ऐप स्टोर या प्लेटफ़ॉर्म से गेम मिलता है वह अपनी नीति के तहत अपना डेटा संसाधित कर सकता है; यह Snake 3D से अलग है।</p>"],
+            ["6. डेटा रखना और मिटाना", "<p>स्थानीय सेटिंग, प्रगति और आँकड़े आपके डिवाइस पर तब तक रहते हैं जब तक आप उन्हें मिटाते नहीं। Android सेटिंग में Snake 3D का स्टोरेज साफ करके या ऐप हटाकर सारा स्थानीय डेटा मिटाया जा सकता है। सर्वर पर डेटा भेजा नहीं जाता, इसलिए सर्वर से मिटाने का अनुरोध आवश्यक नहीं है।</p>"],
+            ["7. नीति में बदलाव", "<p>ऐप या उसकी डेटा प्रक्रिया बदलने पर हम यह नीति अपडेट कर सकते हैं। संबंधित संस्करण जारी होने से पहले बदलाव और नई तारीख इस पृष्ठ पर दिखाई जाएगी।</p>"],
+            ["8. संपर्क करें", "<p>इस नीति या Snake 3D की डेटा प्रक्रिया से जुड़े प्रश्नों के लिए BieMTech से संपर्क करें:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        es: {
+          dir: "ltr", back: "← Políticas de privacidad de BieMTech", subtitle: "Política de privacidad", audience: "Recomendado a partir de 6 años · Apto para todas las edades", rights: "Todos los derechos reservados.", app: "Aplicación", pkg: "Paquete", updated: "Última actualización", date: "2 de agosto de 2026",
+          summary: "<strong>En resumen:</strong> Snake 3D <strong>no recopila, comparte, vende ni transmite</strong> información personal. Funciona sin conexión, no contiene publicidad ni analíticas y guarda el progreso solo en tu dispositivo.",
+          sections: [
+            ["1. Sobre esta aplicación", "<p>Snake 3D es un juego arcade 3D con modos aventura y clásico. El jugador guía una serpiente, recoge comida y recompensas, crea combos, completa niveles y consulta sus resultados.</p><p>Es un juego para el público general recomendado para personas de <strong>6 años en adelante</strong>, incluidos adolescentes y adultos. No está diseñado exclusivamente para niños.</p>"],
+            ["2. Información que recopilamos", "<p>Snake 3D <strong>no recopila</strong> información personal y no solicita nombre, correo, teléfono, cuenta ni inicio de sesión. No transmite datos del juego o del dispositivo a BieMTech ni a terceros.</p><p>Solo guarda localmente:</p><ul><li>Opciones: sonido, música, vibración, calidad gráfica e idioma</li><li>Progreso: récord, nivel actual y aspecto elegido</li><li>Estadísticas: partidas, objetos comidos, mayor longitud, mejor combo y tiempo total</li><li>Un pequeño indicador local que desactiva la música tras un fallo de audio</li></ul>"],
+            ["3. Menores y público general", "<p>Snake 3D es apto para un público amplio a partir de 6 años, sin límite máximo. No incluye registro, chat, perfil social, contenido de usuarios, perfiles de comportamiento ni publicidad dirigida. No recopilamos deliberadamente información personal de niños ni adultos.</p>"],
+            ["4. Uso sin conexión y permisos", "<p>La versión actual de Android funciona sin conexión y <strong>no solicita acceso a Internet</strong>. Solo pide permiso de vibración para la respuesta háptica opcional. No solicita ubicación, cámara, micrófono, contactos, fotos, medios, almacenamiento externo, notificaciones ni otros permisos sensibles.</p>"],
+            ["5. Publicidad y servicios de terceros", "<p>Snake 3D no contiene publicidad ni integra SDK de terceros para analíticas, seguimiento, informes de fallos, cuentas, guardado en la nube o funciones sociales. La tienda o plataforma desde la que obtengas el juego puede tratar sus propios datos bajo su política; ese tratamiento es independiente.</p>"],
+            ["6. Conservación y eliminación", "<p>Los ajustes, el progreso y las estadísticas locales permanecen en el dispositivo hasta que los elimines. Puedes borrar todos los datos locales limpiando el almacenamiento de Snake 3D en los ajustes de Android o desinstalando la app. No hace falta solicitar un borrado del servidor porque el juego no envía datos a ninguno.</p>"],
+            ["7. Cambios en esta política", "<p>Podemos actualizar esta política si cambian la aplicación o sus prácticas de datos. La revisión y una nueva fecha aparecerán aquí antes de publicar la versión correspondiente.</p>"],
+            ["8. Contacto", "<p>Para preguntas sobre esta política o las prácticas de datos de Snake 3D, contacta con BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ar: {
+          dir: "rtl", back: "سياسات خصوصية BieMTech ←", subtitle: "سياسة الخصوصية", audience: "موصى بها لعمر 6 سنوات فأكثر · مناسبة لجميع الأعمار", rights: "جميع الحقوق محفوظة.", app: "التطبيق", pkg: "الحزمة", updated: "آخر تحديث", date: "2 أغسطس 2026",
+          summary: "<strong>باختصار:</strong> لا تقوم Snake 3D <strong>بجمع المعلومات الشخصية أو مشاركتها أو بيعها أو إرسالها</strong>. تعمل اللعبة دون اتصال، ولا تحتوي إعلانات أو تحليلات، وتحفظ التقدم على جهازك فقط.",
+          sections: [
+            ["1. عن هذا التطبيق", "<p>Snake 3D لعبة أركيد ثلاثية الأبعاد بوضعَي المغامرة والكلاسيكي. يوجّه اللاعب الأفعى ويجمع الطعام والمكافآت ويبني السلاسل ويكمل المراحل ويتابع نتائجه.</p><p>هي لعبة للجمهور العام موصى بها لمن يبلغون <strong>6 سنوات فأكثر</strong>، بما في ذلك المراهقون والبالغون، وليست مصممة للأطفال حصراً.</p>"],
+            ["2. المعلومات التي نجمعها", "<p>لا تجمع Snake 3D معلومات شخصية ولا تطلب اسماً أو بريداً إلكترونياً أو رقم هاتف أو حساباً أو تسجيل دخول. ولا ترسل بيانات اللعب أو الجهاز إلى BieMTech أو أي طرف ثالث.</p><p>يُحفظ محلياً على الجهاز فقط:</p><ul><li>الخيارات: الصوت والموسيقى والاهتزاز وجودة الرسوم واللغة</li><li>التقدم: أعلى نتيجة والمستوى الحالي وشكل الأفعى المختار</li><li>الإحصاءات: مرات اللعب والعناصر المأكولة وأطول أفعى وأفضل سلسلة وإجمالي الوقت</li><li>علامة محلية صغيرة لتعطيل الموسيقى بعد تعطل متعلق بالصوت</li></ul>"],
+            ["3. الأطفال والجمهور العام", "<p>تلائم Snake 3D جمهوراً واسعاً من عمر 6 سنوات فأكثر دون حد أعلى للعمر. لا يوجد تسجيل أو دردشة أو ملف اجتماعي أو محتوى مستخدم أو تنميط سلوكي أو إعلانات موجهة. لا نجمع عمداً معلومات شخصية من الأطفال أو البالغين.</p>"],
+            ["4. الاستخدام دون اتصال والأذونات", "<p>تعمل نسخة Android الحالية دون اتصال و<strong>لا تطلب الوصول إلى الإنترنت</strong>. تطلب إذن الاهتزاز فقط للاستجابة اللمسية الاختيارية. ولا تطلب الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو الصور أو الوسائط أو التخزين الخارجي أو الإشعارات أو أذونات حساسة أخرى.</p>"],
+            ["5. الإعلانات وخدمات الأطراف الثالثة", "<p>لا تحتوي Snake 3D إعلانات ولا تدمج حِزماً خارجية للتحليلات أو التتبع أو تقارير الأعطال أو الحسابات أو الحفظ السحابي أو الوظائف الاجتماعية. قد تعالج المتاجر أو المنصات التي توفر اللعبة بياناتها وفق سياساتها، وذلك منفصل عن Snake 3D.</p>"],
+            ["6. الاحتفاظ بالبيانات وحذفها", "<p>تبقى الإعدادات والتقدم والإحصاءات المحلية على جهازك حتى تحذفها. يمكنك إزالة جميع البيانات المحلية بمسح مساحة تخزين Snake 3D من إعدادات Android أو بإلغاء تثبيت التطبيق. لا حاجة لطلب حذف من خادم لأن اللعبة لا ترسل بياناتك إلى خادم.</p>"],
+            ["7. تغييرات هذه السياسة", "<p>قد نحدّث هذه السياسة إذا تغير التطبيق أو أسلوب تعامله مع البيانات. سيظهر التعديل وتاريخ جديد هنا قبل إصدار النسخة المعنية.</p>"],
+            ["8. تواصل معنا", "<p>للاستفسار عن هذه السياسة أو ممارسات بيانات Snake 3D، تواصل مع BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        pt: {
+          dir: "ltr", back: "← Políticas de Privacidade BieMTech", subtitle: "Política de Privacidade", audience: "Recomendado a partir de 6 anos · Adequado para todas as idades", rights: "Todos os direitos reservados.", app: "Aplicativo", pkg: "Pacote", updated: "Última atualização", date: "2 de agosto de 2026",
+          summary: "<strong>Em resumo:</strong> Snake 3D <strong>não coleta, compartilha, vende nem transmite</strong> informações pessoais. O jogo funciona offline, não contém anúncios ou análises e guarda o progresso somente no seu dispositivo.",
+          sections: [
+            ["1. Sobre este aplicativo", "<p>Snake 3D é um jogo arcade 3D com modos aventura e clássico. O jogador guia uma cobra, coleta comida e recompensas, faz combos, conclui fases e acompanha resultados.</p><p>É um jogo para o público geral, recomendado para pessoas de <strong>6 anos ou mais</strong>, incluindo adolescentes e adultos. Não foi criado exclusivamente para crianças.</p>"],
+            ["2. Informações que coletamos", "<p>Snake 3D <strong>não coleta</strong> informações pessoais e não pede nome, e-mail, telefone, conta ou login. Não transmite dados do jogo ou do dispositivo para a BieMTech nem terceiros.</p><p>Apenas estes itens ficam no dispositivo:</p><ul><li>Opções: som, música, vibração, qualidade gráfica e idioma</li><li>Progresso: recorde, fase atual e visual escolhido</li><li>Estatísticas: partidas, itens comidos, maior cobra, melhor combo e tempo total</li><li>Um pequeno marcador local que desativa a música após uma falha de áudio</li></ul>"],
+            ["3. Crianças e público geral", "<p>Snake 3D é adequado para um público amplo a partir de 6 anos, sem limite máximo. Não há cadastro, chat, perfil social, conteúdo de usuário, perfil comportamental ou publicidade direcionada. Não coletamos intencionalmente informações pessoais de crianças ou adultos.</p>"],
+            ["4. Uso offline e permissões", "<p>A versão atual para Android funciona offline e <strong>não solicita acesso à Internet</strong>. Pede apenas a permissão de vibração para resposta tátil opcional. Não solicita localização, câmera, microfone, contatos, fotos, mídia, armazenamento externo, notificações ou outras permissões sensíveis.</p>"],
+            ["5. Publicidade e serviços de terceiros", "<p>Snake 3D não contém publicidade nem integra SDKs de terceiros para análises, rastreamento, falhas, contas, salvamento em nuvem ou recursos sociais. A loja ou plataforma usada para obter o jogo pode processar dados próprios sob sua política; esse processamento é separado.</p>"],
+            ["6. Retenção e exclusão", "<p>Configurações, progresso e estatísticas locais permanecem no dispositivo até você apagá-los. É possível remover todos os dados locais limpando o armazenamento de Snake 3D nas configurações do Android ou desinstalando o app. Não é preciso pedir exclusão em servidor, pois o jogo não envia dados a nenhum.</p>"],
+            ["7. Alterações desta política", "<p>Podemos atualizar esta política se o aplicativo ou suas práticas de dados mudarem. A revisão e uma nova data aparecerão aqui antes do lançamento da versão relevante.</p>"],
+            ["8. Contato", "<p>Para dúvidas sobre esta política ou as práticas de dados de Snake 3D, fale com a BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ru: {
+          dir: "ltr", back: "← Политики конфиденциальности BieMTech", subtitle: "Политика конфиденциальности", audience: "Рекомендуется от 6 лет · Подходит для всех возрастов", rights: "Все права защищены.", app: "Приложение", pkg: "Пакет", updated: "Последнее обновление", date: "2 августа 2026 г.",
+          summary: "<strong>Кратко:</strong> Snake 3D <strong>не собирает, не передаёт, не продаёт и не отправляет</strong> личную информацию. Игра работает офлайн, не содержит рекламы и аналитики и хранит прогресс только на вашем устройстве.",
+          sections: [
+            ["1. О приложении", "<p>Snake 3D — трёхмерная аркада с приключенческим и классическим режимами. Игрок управляет змейкой, собирает еду и награды, создаёт комбо, проходит уровни и следит за результатами.</p><p>Это игра для широкой аудитории, рекомендованная игрокам <strong>от 6 лет</strong>, включая подростков и взрослых. Она не предназначена исключительно для детей.</p>"],
+            ["2. Какие данные мы собираем", "<p>Snake 3D <strong>не собирает</strong> личную информацию и не запрашивает имя, электронную почту, телефон, аккаунт или вход. Данные игры и устройства не отправляются BieMTech или третьим лицам.</p><p>Только на устройстве хранятся:</p><ul><li>Настройки звука, музыки, вибрации, графики и языка</li><li>Рекорд, текущий уровень и выбранный облик змейки</li><li>Число игр, съеденные предметы, длина, лучшее комбо и общее время</li><li>Небольшая локальная отметка для отключения музыки после аудиосбоя</li></ul>"],
+            ["3. Дети и широкая аудитория", "<p>Snake 3D подходит широкой аудитории от 6 лет без верхнего возрастного ограничения. В игре нет регистрации, чата, соцпрофилей, пользовательского контента, поведенческого профилирования или целевой рекламы. Мы сознательно не собираем личную информацию детей или взрослых.</p>"],
+            ["4. Офлайн-режим и разрешения", "<p>Текущая версия Android работает офлайн и <strong>не запрашивает доступ к Интернету</strong>. Требуется только разрешение на вибрацию для необязательной тактильной отдачи. Доступ к местоположению, камере, микрофону, контактам, фото, медиа, внешнему хранилищу, уведомлениям и другим чувствительным функциям не запрашивается.</p>"],
+            ["5. Реклама и сторонние сервисы", "<p>Snake 3D не содержит рекламы и сторонних SDK для аналитики, отслеживания, отчётов о сбоях, аккаунтов, облачных сохранений или социальных функций. Магазин или платформа, где получена игра, может обрабатывать собственные данные по своей политике; это отдельно от Snake 3D.</p>"],
+            ["6. Хранение и удаление", "<p>Локальные настройки, прогресс и статистика остаются на устройстве, пока вы их не удалите. Все данные можно убрать, очистив хранилище Snake 3D в настройках Android или удалив приложение. Запрос на удаление с сервера не нужен, потому что игра не отправляет данные на сервер.</p>"],
+            ["7. Изменения политики", "<p>Мы можем обновить эту политику при изменении приложения или его работы с данными. Новая редакция и дата появятся здесь до выхода соответствующей версии.</p>"],
+            ["8. Контакты", "<p>По вопросам этой политики или обработки данных Snake 3D свяжитесь с BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ja: {
+          dir: "ltr", back: "← BieMTech プライバシーポリシー", subtitle: "プライバシーポリシー", audience: "6歳以上推奨 · 全年齢に適しています", rights: "無断転載を禁じます。", app: "アプリ", pkg: "パッケージ", updated: "最終更新日", date: "2026年8月2日",
+          summary: "<strong>要約：</strong>Snake 3Dは個人情報を<strong>収集、共有、販売、送信しません</strong>。ゲームはオフラインで動作し、広告や分析機能を含まず、進行状況は端末内だけに保存されます。",
+          sections: [
+            ["1. このアプリについて", "<p>Snake 3Dはアドベンチャーとクラシックモードを備えた3Dアーケードゲームです。ヘビを操作し、食べ物や報酬を集め、コンボをつなぎ、レベルをクリアして結果を確認します。</p><p>子ども、青少年、大人を含む<strong>6歳以上</strong>の一般向けゲームで、子どもだけを対象にしたものではありません。</p>"],
+            ["2. 収集する情報", "<p>Snake 3Dは個人情報を<strong>収集せず</strong>、氏名、メール、電話番号、アカウント、ログインを求めません。ゲームや端末のデータはBieMTechまたは第三者に送信されません。</p><p>端末内だけに保存されるもの：</p><ul><li>音、音楽、振動、画質、言語の設定</li><li>最高得点、現在のレベル、選択したヘビの外観</li><li>プレイ回数、食べた数、最長記録、最大コンボ、総プレイ時間</li><li>音声関連のクラッシュ後に音楽を無効にする小さなローカル印</li></ul>"],
+            ["3. 子どもと一般の利用者", "<p>Snake 3Dは上限年齢なく6歳以上の幅広い利用者に適しています。登録、チャット、ソーシャルプロフィール、ユーザー生成コンテンツ、行動プロファイリング、ターゲティング広告はありません。子どもまたは大人の個人情報を意図的に収集しません。</p>"],
+            ["4. オフライン利用と権限", "<p>現在のAndroid版はオフラインで動作し、<strong>インターネット接続を要求しません</strong>。任意の触覚フィードバック用に振動権限だけを使用します。位置情報、カメラ、マイク、連絡先、写真、メディア、外部ストレージ、通知などの機密権限は要求しません。</p>"],
+            ["5. 広告と第三者サービス", "<p>Snake 3Dには広告がなく、分析、追跡、クラッシュ報告、アカウント、クラウド保存、ソーシャル機能用の第三者SDKもありません。ゲームを取得したストアやプラットフォームは独自の方針でデータを扱う場合がありますが、Snake 3Dとは別の処理です。</p>"],
+            ["6. 保持と削除", "<p>ローカルの設定、進行、統計は削除するまで端末に残ります。Android設定でSnake 3Dのストレージを消去するか、アプリをアンインストールすると全ローカルデータを削除できます。サーバーに送信しないため、サーバー側の削除依頼は不要です。</p>"],
+            ["7. ポリシーの変更", "<p>アプリまたはデータの扱いが変わる場合、本ポリシーを更新することがあります。該当バージョンの公開前に改訂内容と新しい日付をこのページに掲載します。</p>"],
+            ["8. お問い合わせ", "<p>本ポリシーまたはSnake 3Dのデータ取り扱いについては、BieMTechまでお問い合わせください：</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        de: {
+          dir: "ltr", back: "← BieMTech Datenschutzerklärungen", subtitle: "Datenschutzerklärung", audience: "Empfohlen ab 6 Jahren · Für jedes Alter geeignet", rights: "Alle Rechte vorbehalten.", app: "Anwendung", pkg: "Paket", updated: "Zuletzt aktualisiert", date: "2. August 2026",
+          summary: "<strong>Kurz gesagt:</strong> Snake 3D <strong>erfasst, teilt, verkauft oder überträgt keine</strong> personenbezogenen Daten. Das Spiel funktioniert offline, enthält keine Werbung oder Analyse und speichert Fortschritt nur auf deinem Gerät.",
+          sections: [
+            ["1. Über diese App", "<p>Snake 3D ist ein 3D-Arcade-Spiel mit Abenteuer- und klassischem Modus. Spieler lenken eine Schlange, sammeln Futter und Belohnungen, bilden Kombos, schließen Level ab und verfolgen Ergebnisse.</p><p>Es ist ein Spiel für die Allgemeinheit und wird für Kinder, Jugendliche und Erwachsene <strong>ab 6 Jahren</strong> empfohlen. Es ist nicht ausschließlich für Kinder bestimmt.</p>"],
+            ["2. Welche Daten wir erfassen", "<p>Snake 3D <strong>erfasst keine</strong> personenbezogenen Daten und fragt nicht nach Name, E-Mail, Telefonnummer, Konto oder Anmeldung. Spiel- oder Gerätedaten werden nicht an BieMTech oder Dritte übertragen.</p><p>Nur lokal gespeichert werden:</p><ul><li>Ton, Musik, Vibration, Grafikqualität und Sprache</li><li>Bestwert, aktuelles Level und gewählter Schlangenstil</li><li>Spiele, gesammelte Objekte, längste Schlange, beste Kombo und gesamte Spielzeit</li><li>Eine kleine lokale Markierung, die Musik nach einem Audioabsturz deaktiviert</li></ul>"],
+            ["3. Kinder und allgemeine Zielgruppe", "<p>Snake 3D eignet sich ohne obere Altersgrenze für ein breites Publikum ab 6 Jahren. Es gibt keine Registrierung, Chats, sozialen Profile, Nutzerinhalte, Verhaltensprofile oder gezielte Werbung. Wir erfassen wissentlich keine persönlichen Daten von Kindern oder Erwachsenen.</p>"],
+            ["4. Offline-Nutzung und Berechtigungen", "<p>Die aktuelle Android-Version funktioniert offline und <strong>fordert keinen Internetzugriff an</strong>. Sie nutzt nur die Vibrationsberechtigung für optionales haptisches Feedback. Standort, Kamera, Mikrofon, Kontakte, Fotos, Medien, externer Speicher, Benachrichtigungen oder andere sensible Berechtigungen werden nicht angefordert.</p>"],
+            ["5. Werbung und Drittanbieter", "<p>Snake 3D enthält keine Werbung und keine Drittanbieter-SDKs für Analyse, Tracking, Absturzberichte, Konten, Cloud-Speicher oder soziale Funktionen. Der Store oder die Plattform, über die du das Spiel beziehst, kann eigene Daten nach eigener Richtlinie verarbeiten; dies geschieht getrennt von Snake 3D.</p>"],
+            ["6. Aufbewahrung und Löschung", "<p>Lokale Einstellungen, Fortschritt und Statistiken bleiben auf dem Gerät, bis du sie löschst. Alle lokalen Daten lassen sich durch Löschen des Snake-3D-Speichers in den Android-Einstellungen oder durch Deinstallation entfernen. Eine serverseitige Löschanfrage ist nicht nötig, da das Spiel keine Daten an einen Server sendet.</p>"],
+            ["7. Änderungen", "<p>Wir können diese Richtlinie aktualisieren, wenn sich die App oder ihre Datenverarbeitung ändert. Die Überarbeitung und ein neues Datum erscheinen hier vor Veröffentlichung der betreffenden Version.</p>"],
+            ["8. Kontakt", "<p>Bei Fragen zu dieser Richtlinie oder zur Datenverarbeitung von Snake 3D kontaktiere BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        fr: {
+          dir: "ltr", back: "← Politiques de confidentialité BieMTech", subtitle: "Politique de confidentialité", audience: "Recommandé dès 6 ans · Adapté à tous les âges", rights: "Tous droits réservés.", app: "Application", pkg: "Package", updated: "Dernière mise à jour", date: "2 août 2026",
+          summary: "<strong>En bref :</strong> Snake 3D <strong>ne collecte, ne partage, ne vend et ne transmet</strong> aucune information personnelle. Le jeu fonctionne hors ligne, sans publicité ni analyse, et conserve la progression uniquement sur votre appareil.",
+          sections: [
+            ["1. À propos de l'application", "<p>Snake 3D est un jeu d'arcade 3D avec des modes aventure et classique. Le joueur guide un serpent, collecte nourriture et récompenses, crée des combos, termine des niveaux et suit ses résultats.</p><p>C'est un jeu grand public recommandé aux personnes de <strong>6 ans et plus</strong>, adolescents et adultes compris. Il n'est pas conçu exclusivement pour les enfants.</p>"],
+            ["2. Informations collectées", "<p>Snake 3D <strong>ne collecte aucune</strong> information personnelle et ne demande ni nom, ni e-mail, ni téléphone, ni compte, ni connexion. Les données de jeu ou de l'appareil ne sont transmises ni à BieMTech ni à des tiers.</p><p>Seuls ces éléments restent sur l'appareil :</p><ul><li>Son, musique, vibration, qualité graphique et langue</li><li>Record, niveau actuel et apparence du serpent</li><li>Parties, objets mangés, longueur maximale, meilleur combo et temps total</li><li>Un petit indicateur local désactivant la musique après un plantage audio</li></ul>"],
+            ["3. Enfants et grand public", "<p>Snake 3D convient à un large public dès 6 ans, sans limite supérieure. Il n'y a ni inscription, ni chat, ni profil social, ni contenu utilisateur, ni profilage comportemental, ni publicité ciblée. Nous ne collectons sciemment aucune donnée personnelle d'enfants ou d'adultes.</p>"],
+            ["4. Utilisation hors ligne et autorisations", "<p>La version Android actuelle fonctionne hors ligne et <strong>ne demande pas l'accès à Internet</strong>. Elle utilise uniquement l'autorisation de vibration pour le retour haptique facultatif. Elle ne demande pas la localisation, la caméra, le microphone, les contacts, les photos, les médias, le stockage externe, les notifications ou d'autres autorisations sensibles.</p>"],
+            ["5. Publicité et services tiers", "<p>Snake 3D ne contient aucune publicité et aucun SDK tiers d'analyse, suivi, rapport de plantage, compte, sauvegarde cloud ou fonction sociale. Le magasin ou la plateforme ayant fourni le jeu peut traiter ses propres données selon sa politique ; ce traitement est distinct de Snake 3D.</p>"],
+            ["6. Conservation et suppression", "<p>Les réglages, la progression et les statistiques locales restent sur l'appareil jusqu'à leur suppression. Vous pouvez tout effacer en vidant le stockage de Snake 3D dans les réglages Android ou en désinstallant l'application. Aucune demande côté serveur n'est nécessaire puisque le jeu n'envoie pas vos données à un serveur.</p>"],
+            ["7. Modifications", "<p>Nous pouvons mettre à jour cette politique si l'application ou ses pratiques de données changent. La révision et une nouvelle date apparaîtront ici avant la sortie de la version concernée.</p>"],
+            ["8. Nous contacter", "<p>Pour toute question sur cette politique ou les pratiques de données de Snake 3D, contactez BieMTech :</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        tr: {
+          dir: "ltr", back: "← BieMTech Gizlilik Politikaları", subtitle: "Gizlilik Politikası", audience: "6 yaş ve üzeri için önerilir · Her yaşa uygundur", rights: "Tüm hakları saklıdır.", app: "Uygulama", pkg: "Paket", updated: "Son güncelleme", date: "2 Ağustos 2026",
+          summary: "<strong>Kısaca:</strong> Snake 3D kişisel bilgileri <strong>toplamaz, paylaşmaz, satmaz veya iletmez</strong>. Oyun çevrimdışı çalışır, reklam ya da analiz içermez ve ilerlemeyi yalnızca cihazınızda tutar.",
+          sections: [
+            ["1. Uygulama Hakkında", "<p>Snake 3D, macera ve klasik modları bulunan bir 3D arcade oyunudur. Oyuncu yılanı yönlendirir, yiyecek ve ödüller toplar, kombolar yapar, seviyeleri tamamlar ve sonuçlarını izler.</p><p>Çocuklar, gençler ve yetişkinler dahil <strong>6 yaş ve üzeri</strong> genel kitleye önerilir. Yalnızca çocuklar için tasarlanmamıştır.</p>"],
+            ["2. Topladığımız Bilgiler", "<p>Snake 3D kişisel bilgi <strong>toplamaz</strong>; ad, e-posta, telefon, hesap veya giriş istemez. Oyun ya da cihaz verilerini BieMTech'e veya üçüncü taraflara iletmez.</p><p>Yalnızca cihazda saklananlar:</p><ul><li>Ses, müzik, titreşim, grafik kalitesi ve dil</li><li>Rekor, mevcut seviye ve seçilen yılan görünümü</li><li>Oyun sayısı, yenen öğeler, en uzun yılan, en iyi kombo ve toplam süre</li><li>Sesle ilgili çökme sonrası müziği kapatan küçük yerel işaret</li></ul>"],
+            ["3. Çocuklar ve Genel Kitle", "<p>Snake 3D üst yaş sınırı olmadan 6 yaş ve üzeri geniş bir kitleye uygundur. Kayıt, sohbet, sosyal profil, kullanıcı içeriği, davranış profillemesi veya hedefli reklam yoktur. Çocuklardan ya da yetişkinlerden bilerek kişisel bilgi toplamıyoruz.</p>"],
+            ["4. Çevrimdışı Kullanım ve İzinler", "<p>Mevcut Android sürümü çevrimdışı çalışır ve <strong>İnternet erişimi istemez</strong>. İsteğe bağlı dokunsal geri bildirim için yalnızca titreşim izni kullanır. Konum, kamera, mikrofon, kişiler, fotoğraflar, medya, harici depolama, bildirim veya başka hassas izinler istemez.</p>"],
+            ["5. Reklam ve Üçüncü Taraflar", "<p>Snake 3D reklam içermez; analiz, takip, çökme raporu, hesap, bulut kayıt veya sosyal özellik için üçüncü taraf SDK kullanmaz. Oyunun edinildiği mağaza ya da platform kendi politikasına göre kendi verilerini işleyebilir; bu işlem Snake 3D'den ayrıdır.</p>"],
+            ["6. Saklama ve Silme", "<p>Yerel ayarlar, ilerleme ve istatistikler siz silene kadar cihazda kalır. Android Ayarları'nda Snake 3D depolamasını temizleyerek veya uygulamayı kaldırarak tüm yerel verileri silebilirsiniz. Oyun sunucuya veri göndermediği için sunucu tarafında silme talebi gerekmez.</p>"],
+            ["7. Politika Değişiklikleri", "<p>Uygulama veya veri uygulamaları değişirse bu politikayı güncelleyebiliriz. İlgili sürüm çıkmadan önce revizyon ve yeni tarih burada görünür.</p>"],
+            ["8. Bize Ulaşın", "<p>Bu politika veya Snake 3D veri uygulamaları hakkında BieMTech ile iletişime geçin:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        az: {
+          dir: "ltr", back: "← BieMTech Məxfilik Siyasətləri", subtitle: "Məxfilik Siyasəti", audience: "6 yaşdan yuxarı tövsiyə olunur · Bütün yaşlara uyğundur", rights: "Bütün hüquqlar qorunur.", app: "Tətbiq", pkg: "Paket", updated: "Son yenilənmə", date: "2 avqust 2026",
+          summary: "<strong>Qısa məzmun:</strong> Snake 3D şəxsi məlumatları <strong>toplamır, paylaşmır, satmır və ötürmür</strong>. Oyun oflayn işləyir, reklam və analitika ehtiva etmir, irəliləyişi yalnız cihazınızda saxlayır.",
+          sections: [
+            ["1. Tətbiq Haqqında", "<p>Snake 3D macəra və klassik rejimləri olan 3D arkada oyunudur. Oyunçu ilanı yönləndirir, qida və mükafatlar toplayır, kombolar qurur, səviyyələri tamamlayır və nəticələrini izləyir.</p><p>Uşaqlar, yeniyetmələr və böyüklər daxil olmaqla <strong>6 yaş və yuxarı</strong> geniş auditoriya üçün tövsiyə olunur. Yalnız uşaqlar üçün hazırlanmayıb.</p>"],
+            ["2. Topladığımız Məlumatlar", "<p>Snake 3D şəxsi məlumat <strong>toplamır</strong>; ad, e-poçt, telefon nömrəsi, hesab və ya giriş istəmir. Oyun və cihaz məlumatlarını BieMTech-ə və ya üçüncü tərəfə ötürmür.</p><p>Yalnız cihazda saxlanılanlar:</p><ul><li>Səs, musiqi, vibrasiya, qrafika keyfiyyəti və dil seçimləri</li><li>Rekord, cari səviyyə və seçilmiş ilan görünüşü</li><li>Oyun sayı, yeyilmiş əşyalar, ən uzun ilan, ən yaxşı kombo və ümumi oyun vaxtı</li><li>Səslə bağlı çökmədən sonra musiqini söndürən kiçik lokal işarə</li></ul>"],
+            ["3. Uşaqlar və Ümumi Auditoriya", "<p>Snake 3D yuxarı yaş məhdudiyyəti olmadan 6 yaş və yuxarı geniş auditoriyaya uyğundur. Qeydiyyat, söhbət, sosial profil, istifadəçi məzmunu, davranış profilləməsi və hədəflənmiş reklam yoxdur. Uşaqlardan və ya böyüklərdən bilərəkdən şəxsi məlumat toplamırıq.</p>"],
+            ["4. Oflayn İstifadə və İcazələr", "<p>Cari Android versiyası oflayn işləyir və <strong>internetə çıxış istəmir</strong>. İstəyə bağlı toxunma reaksiyası üçün yalnız vibrasiya icazəsindən istifadə edir. Məkan, kamera, mikrofon, kontaktlar, şəkillər, media, xarici yaddaş, bildirişlər və digər həssas icazələr istənilmir.</p>"],
+            ["5. Reklam və Üçüncü Tərəf Xidmətləri", "<p>Snake 3D reklam ehtiva etmir; analitika, izləmə, xəta hesabatı, hesab, bulud yaddaşı və sosial funksiya üçün üçüncü tərəf SDK-ları inteqrasiya olunmayıb. Oyunu əldə etdiyiniz mağaza və ya platforma öz məlumatlarını öz siyasəti əsasında emal edə bilər; bu, Snake 3D-dən ayrıdır.</p>"],
+            ["6. Məlumatların Saxlanması və Silinməsi", "<p>Lokal parametrlər, irəliləyiş və statistika siz silənədək cihazda qalır. Android Tənzimləmələrində Snake 3D yaddaşını təmizləməklə və ya tətbiqi silməklə bütün lokal məlumatları silə bilərsiniz. Oyun serverə məlumat göndərmədiyi üçün server tərəfli silmə sorğusuna ehtiyac yoxdur.</p>"],
+            ["7. Bu Siyasətə Dəyişikliklər", "<p>Tətbiq və ya onun məlumat təcrübələri dəyişərsə, bu siyasəti yeniləyə bilərik. Müvafiq versiya yayımlanmadan əvvəl düzəliş və yeni tarix bu səhifədə görünəcək.</p>"],
+            ["8. Bizimlə Əlaqə", "<p>Bu Məxfilik Siyasəti və ya Snake 3D-ün məlumat təcrübələri ilə bağlı suallar üçün BieMTech ilə əlaqə saxlayın:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        }
+      };
+
+      function render(lang) {
+        const t = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = t.dir;
+        document.querySelector('[data-i18n="back"]').textContent = t.back;
+        document.querySelector('[data-i18n="subtitle"]').textContent = t.subtitle;
+        document.querySelector('[data-i18n="audience"]').textContent = t.audience;
+        document.querySelector('[data-i18n="rights"]').textContent = t.rights;
+        document.getElementById("policy-content").innerHTML = `
+          <p class="meta">
+            ${t.app}: <strong>Snake 3D</strong> &nbsp;|&nbsp;
+            ${t.pkg}: <code>com.biemtech.snake3d</code> &nbsp;|&nbsp;
+            ${t.updated}: <strong>${t.date}</strong>
+          </p>
+          <div class="summary">✓ ${t.summary}</div>
+          ${t.sections.map(([title, body]) => `<section class="card"><h2>${title}</h2>${body}</section>`).join("")}
+        `;
+      }
+
+      function switchLang(lang) {
+        render(lang);
+        try { localStorage.setItem("site_lang", lang); } catch (_) {}
+      }
+
+      (function initLanguage() {
+        let saved = "";
+        try { saved = localStorage.getItem("site_lang") || ""; } catch (_) {}
+        const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
+        const lang = T[saved] ? saved : T[browserLang] ? browserLang : "en";
+        document.getElementById("lang-select").value = lang;
+        render(lang);
+      })();
+    </script>
+  </body>
+</html>
