@@ -6,7 +6,7 @@
     <title>Times Table Master — BieMTech</title>
     <meta
       name="description"
-      content="Times Table Master — learn and practise multiplication tables. Coming soon to Android by BieMTech."
+      content="Times Table Master — learn and practise multiplication tables. Available now on Google Play."
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -99,21 +99,12 @@
         line-height: 1.6;
       }
 
-      /* ── Coming Soon chip ─────────────────────────── */
-      .badge--soon {
-        background: rgba(201, 130, 55, 0.14);
-        color: #7a421f;
-        border: 1px solid rgba(201, 130, 55, 0.32);
-        animation: pulse-badge 2.8s ease-in-out infinite;
-      }
-      @keyframes pulse-badge {
-        0%,
-        100% {
-          box-shadow: 0 0 0 0 rgba(201, 130, 55, 0);
-        }
-        50% {
-          box-shadow: 0 0 0 8px rgba(201, 130, 55, 0);
-        }
+      /* ── Live chip ────────────────────────────────── */
+      .badge--live {
+        color: #176534;
+        border: 1px solid rgba(22, 163, 74, 0.3);
+        background: rgba(22, 163, 74, 0.1);
+        box-shadow: 0 0 18px rgba(22, 163, 74, 0.1);
       }
 
       /* ── Hero accent line ─────────────────────────── */
@@ -151,8 +142,8 @@
         background: rgba(122, 66, 31, 0.15);
       }
 
-      /* ── Notify CTA ───────────────────────────────── */
-      .ttm-notify {
+      /* ── Download CTA ─────────────────────────────── */
+      .ttm-download {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -172,7 +163,7 @@
         transition: all 0.22s ease;
         letter-spacing: 0.01em;
       }
-      .ttm-notify:hover {
+      .ttm-download:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 28px rgba(122, 66, 31, 0.4);
         color: #fff;
@@ -316,10 +307,10 @@
 
         <!-- Status chip -->
         <div
-          class="badge badge--soon"
+          class="badge badge--live"
           style="display: inline-flex; margin-bottom: 16px"
         >
-          ⏳ <span data-i18n="chip_dev">In Development</span>
+          <span data-i18n="chip_live">● Live</span>
         </div>
 
         <!-- Title -->
@@ -364,16 +355,28 @@
           "
         >
           Learn and practise times tables through engaging games, speed
-          challenges, and progress tracking. Coming to Android soon.
+          challenges, and progress tracking. Available now on Google Play.
         </p>
 
         <!-- CTA -->
         <a
-          href="mailto:info@biemtech.com"
-          class="ttm-notify"
-          data-i18n="ttm_notify_btn"
+          href="https://play.google.com/store/apps/details?id=com.biemtech.timestable"
+          class="ttm-download"
+          target="_blank"
+          rel="noopener"
         >
-          Contact us to stay updated →
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z"
+            />
+          </svg>
+          <span data-i18n="ttm_download_btn">Download on Google Play →</span>
         </a>
 
         <!-- Times table pills -->
@@ -422,7 +425,7 @@
             margin-top: 8px;
           "
         >
-          What's coming
+          What's inside
         </h2>
 
         <div class="ttm-grid">
@@ -552,9 +555,9 @@
           </p>
           <p
             style="font-size: 1rem; font-weight: 700; color: #7a421f"
-            data-i18n="chip_dev"
+            data-i18n="chip_live"
           >
-            In Development
+            ● Live
           </p>
         </div>
         <div>

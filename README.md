@@ -4,20 +4,31 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 ## Pages
 
-| File             | Description                                      |
-| ---------------- | ------------------------------------------------ |
-| `index.html`     | Main landing page — about, apps, values, contact |
-| `math-kids.html` | Math Kids app — coming soon page                 |
-| `style.css`      | Shared stylesheet for all pages                  |
+| File                      | Description                                      |
+| ------------------------- | ------------------------------------------------ |
+| `index.html`              | Main landing page — about, apps, values, contact |
+| `math-kids.html`          | Math Kids app page                               |
+| `times-table-master.html` | Times Table Master app page                      |
+| `arrows-escape.html`      | Arrows Escape app page                           |
+| `snake-3d.html`           | Snake 3D app page                                |
+| `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
 
 ### Math Kids
 
-A fun math learning app for children aged 3–10. Not yet published on the App Store or Google Play.
+A fun math learning app for children aged 3–10, available on Google Play.
 
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.mathkids
 - Support: mathkids@biemtech.com
-- Privacy Policy: https://biemtech.com/privacy/math-kids.html
+- Privacy Policy: https://biemtech.com/privacy/math-kids/
+
+### Times Table Master
+
+A multiplication learning and practice app for all ages, available on Google Play.
+
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.timestable
+- Privacy Policy: https://biemtech.com/privacy/times-table-master/
 
 ## Contact
 
