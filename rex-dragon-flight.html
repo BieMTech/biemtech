@@ -110,15 +110,32 @@
         align-items: center;
       }
 
-      .rex-icon-wrap { position: relative; margin-bottom: 25px; }
+      .rex-key-art {
+        position: relative;
+        width: min(100%, 680px);
+        margin: 0 0 27px;
+      }
 
-      .rex-icon {
+      .rex-key-art__image {
         display: block;
-        width: 160px;
-        height: 160px;
+        width: 100%;
+        height: auto;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 34px;
-        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.42), 0 0 52px rgba(242, 121, 61, 0.25);
+        border-radius: 24px;
+        box-shadow: 0 26px 70px rgba(0, 0, 0, 0.46), 0 0 58px rgba(242, 121, 61, 0.2);
+      }
+
+      .visually-hidden {
+        position: absolute;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        white-space: nowrap;
+        border: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
       }
 
       .age-bubble {
@@ -139,37 +156,21 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.34);
       }
 
+      .rex-key-art .age-bubble {
+        top: 14px;
+        right: 14px;
+        bottom: auto;
+        border-color: rgba(26, 11, 8, 0.86);
+      }
+
       .rex-status {
         display: inline-flex;
         gap: 7px;
         align-items: center;
-        margin-bottom: 17px;
+        margin-bottom: 22px;
         color: #ffba7d;
         border: 1px solid rgba(255, 186, 125, 0.28);
         background: rgba(242, 121, 61, 0.11);
-      }
-
-      .rex-title {
-        margin: 0 0 7px;
-        font-size: clamp(36px, 7vw, 62px);
-        font-weight: 900;
-        line-height: 1;
-        letter-spacing: -0.05em;
-      }
-
-      .rex-tagline {
-        margin: 0;
-        color: #ffba7d;
-        font-size: clamp(1.05rem, 2.6vw, 1.4rem);
-        font-weight: 750;
-      }
-
-      .rex-divider {
-        width: 62px;
-        height: 4px;
-        margin: 16px auto 19px;
-        border-radius: 5px;
-        background: linear-gradient(90deg, var(--rex-green), var(--rex-gold), var(--rex-flame));
       }
 
       .rex-desc {
@@ -287,6 +288,10 @@
 
       @media (max-width: 720px) {
         .navbar__nav { display: none; }
+        .rex-hero { padding: 38px 14px 50px; }
+        .rex-key-art { margin-bottom: 23px; }
+        .rex-key-art__image { border-radius: 18px; }
+        .rex-key-art .age-bubble { top: 9px; right: 9px; width: 44px; height: 44px; font-size: 0.84rem; }
         .rex-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); }
       }
     </style>
@@ -325,14 +330,19 @@
 
     <main class="rex-hero">
       <div class="container rex-hero__inner">
-        <div class="rex-icon-wrap">
-          <img class="rex-icon" src="img/rex-dragon-flight-icon.svg" alt="REX: Dragon Flight" />
-          <span class="age-bubble" aria-label="Ages 6 and up">6+</span>
-        </div>
         <div class="badge rex-status">● <span data-i18n="status">In Development</span></div>
-        <h1 class="rex-title">REX: Dragon Flight</h1>
-        <p class="rex-tagline" data-i18n="tagline">Fly. Burn. Adapt.</p>
-        <div class="rex-divider"></div>
+        <figure class="rex-key-art">
+          <img
+            class="rex-key-art__image"
+            src="img/rex-dragon-flight-banner.png"
+            width="631"
+            height="343"
+            alt="REX: Dragon Flight — Rex breathes fire through changing fantasy worlds"
+            fetchpriority="high"
+          />
+          <span class="age-bubble" aria-label="Ages 6 and up">6+</span>
+        </figure>
+        <h1 class="visually-hidden">REX: Dragon Flight</h1>
         <p class="rex-desc" data-i18n="description">
           Guide Rex through ten changing worlds with a tap to fly and a hold to breathe fire. Melt ice, burn wood, trigger explosive chains, collect power-ups, and adapt when fire meets metal.
         </p>

@@ -54,8 +54,7 @@
       .zuzu-hero {
         position: relative;
         overflow: hidden;
-        padding: 58px 24px 68px;
-        text-align: center;
+        padding: 64px 24px 72px;
         border-bottom: 1px solid var(--zuzu-border);
       }
       .zuzu-hero::before, .zuzu-hero::after {
@@ -68,20 +67,24 @@
       }
       .zuzu-hero::before { top: -20rem; left: 50%; background: rgba(255, 224, 138, .24); transform: translateX(-50%); }
       .zuzu-hero::after { right: -20rem; bottom: -22rem; background: rgba(255, 143, 163, .13); }
-      .zuzu-hero__inner { display: flex; flex-direction: column; align-items: center; }
-      .zuzu-icon-wrap { position: relative; margin-bottom: 25px; }
-      .zuzu-icon { display: block; width: 160px; height: 160px; border: 1px solid rgba(255,255,255,.25); border-radius: 34px; box-shadow: 0 22px 60px rgba(0,0,0,.38), 0 0 52px rgba(255,201,60,.24); }
-      .age-bubble { position: absolute; right: -12px; bottom: -8px; display: grid; direction: ltr; width: 50px; height: 50px; place-items: center; color: #3f2d05; font-size: .95rem; font-weight: 900; border: 3px solid #0d241a; border-radius: 50%; background: linear-gradient(135deg, #fff3ae, var(--zuzu-honey)); box-shadow: 0 8px 20px rgba(0,0,0,.34); }
+      .zuzu-hero__inner { display: grid; grid-template-columns: minmax(280px, .86fr) minmax(420px, 1.14fr); align-items: center; gap: clamp(34px, 5vw, 72px); }
+      .zuzu-hero__content { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+      .zuzu-icon-wrap { position: relative; margin-bottom: 22px; }
+      .zuzu-icon { display: block; width: 104px; height: 104px; border: 1px solid rgba(255,255,255,.25); border-radius: 24px; box-shadow: 0 18px 44px rgba(0,0,0,.35), 0 0 38px rgba(255,201,60,.2); }
+      .age-bubble { position: absolute; right: -12px; bottom: -9px; display: grid; direction: ltr; width: 44px; height: 44px; place-items: center; color: #3f2d05; font-size: .85rem; font-weight: 900; border: 3px solid #0d241a; border-radius: 50%; background: linear-gradient(135deg, #fff3ae, var(--zuzu-honey)); box-shadow: 0 8px 20px rgba(0,0,0,.34); }
       .zuzu-status { display: inline-flex; gap: 7px; align-items: center; margin-bottom: 17px; color: var(--zuzu-sun); border: 1px solid rgba(255,224,138,.3); background: rgba(255,201,60,.1); }
       .zuzu-title { margin: 0 0 7px; font-size: clamp(36px, 7vw, 62px); font-weight: 900; line-height: 1; letter-spacing: -.05em; }
       .zuzu-tagline { margin: 0; color: var(--zuzu-sun); font-size: clamp(1.05rem, 2.6vw, 1.4rem); font-weight: 750; }
-      .zuzu-divider { width: 74px; height: 4px; margin: 16px auto 19px; border-radius: 5px; background: linear-gradient(90deg, var(--zuzu-lavender), var(--zuzu-honey), var(--zuzu-rose)); }
+      .zuzu-divider { width: 74px; height: 4px; margin: 16px 0 19px; border-radius: 5px; background: linear-gradient(90deg, var(--zuzu-lavender), var(--zuzu-honey), var(--zuzu-rose)); }
       .zuzu-desc { max-width: 680px; margin: 0 0 25px; color: var(--zuzu-muted); font-size: 15px; line-height: 1.75; }
-      .zuzu-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+      .zuzu-actions { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 12px; }
       .zuzu-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 999px; font-size: .92rem; font-weight: 750; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
       .zuzu-btn:hover { transform: translateY(-2px); }
       .zuzu-btn--primary { color: #322303; background: linear-gradient(135deg, var(--zuzu-sun), var(--zuzu-honey)); box-shadow: 0 8px 24px rgba(255,201,60,.25); }
       .zuzu-btn--secondary { color: var(--zuzu-text); border: 1px solid var(--zuzu-border); background: rgba(255,255,255,.06); }
+      .zuzu-artwork { position: relative; margin: 0; }
+      .zuzu-artwork::before { position: absolute; z-index: -1; inset: 9% 5% -6%; content: ""; border-radius: 34px; background: rgba(255,201,60,.22); filter: blur(34px); }
+      .zuzu-artwork img { display: block; width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; border: 1px solid rgba(255,255,255,.22); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.12); }
 
       .zuzu-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 30px; padding: 20px; color: var(--zuzu-muted); font-size: .88rem; font-weight: 700; border-bottom: 1px solid var(--zuzu-border); background: rgba(255,255,255,.025); }
       .zuzu-strip span::before { display: inline-block; width: 7px; height: 7px; margin-right: 9px; content: ""; border-radius: 50%; background: var(--zuzu-honey); box-shadow: 0 0 10px rgba(255,201,60,.65); }
@@ -101,7 +104,18 @@
       .zuzu-info__value a, .zuzu-footer a { color: var(--zuzu-sun); }
       .zuzu-footer { padding: 27px 20px; color: var(--zuzu-dim); font-size: .84rem; text-align: center; }
       [dir="rtl"] .zuzu-strip span::before { margin-right: 0; margin-left: 9px; }
-      @media (max-width: 720px) { .navbar__nav { display: none; } .zuzu-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); } }
+      [dir="rtl"] .zuzu-hero__content { align-items: flex-end; text-align: right; }
+      [dir="rtl"] .zuzu-actions { justify-content: flex-end; }
+      [dir="rtl"] .zuzu-divider { margin-right: 0; margin-left: 0; }
+      @media (max-width: 900px) {
+        .zuzu-hero { padding-top: 38px; }
+        .zuzu-hero__inner { grid-template-columns: 1fr; gap: 38px; }
+        .zuzu-artwork { grid-row: 1; width: min(720px, 100%); margin: 0 auto; }
+        .zuzu-hero__content, [dir="rtl"] .zuzu-hero__content { grid-row: 2; align-items: center; text-align: center; }
+        .zuzu-divider { margin-right: auto; margin-left: auto; }
+        .zuzu-actions, [dir="rtl"] .zuzu-actions { justify-content: center; }
+      }
+      @media (max-width: 720px) { .navbar__nav { display: none; } .zuzu-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); } .zuzu-artwork img { border-radius: 20px; } }
     </style>
   </head>
   <body>
@@ -126,19 +140,24 @@
 
     <main class="zuzu-hero">
       <div class="container zuzu-hero__inner">
-        <div class="zuzu-icon-wrap">
-          <img class="zuzu-icon" src="img/zuzu-bloomflight-icon.svg" alt="Zuzu: Bloomflight" />
-          <span class="age-bubble" aria-label="Recommended for ages 6 and up">6+</span>
+        <div class="zuzu-hero__content">
+          <div class="zuzu-icon-wrap">
+            <img class="zuzu-icon" src="img/zuzu-bloomflight-icon.svg" alt="Zuzu: Bloomflight app icon" />
+            <span class="age-bubble" aria-label="Recommended for ages 6 and up">6+</span>
+          </div>
+          <div class="badge zuzu-status">● <span data-i18n="status">In Development</span></div>
+          <h1 class="zuzu-title">Zuzu: Bloomflight</h1>
+          <p class="zuzu-tagline" data-i18n="tagline">Float. Bloom. Explore.</p>
+          <div class="zuzu-divider"></div>
+          <p class="zuzu-desc" data-i18n="description">Guide Zuzu through six changing gardens. Tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase a new high score.</p>
+          <div class="zuzu-actions">
+            <a href="mailto:info@biemtech.com" class="zuzu-btn zuzu-btn--primary" data-i18n="contact_btn">Contact us for updates →</a>
+            <a href="privacy/zuzu-bloomflight/index.html" class="zuzu-btn zuzu-btn--secondary" data-i18n="privacy_btn">Privacy Policy</a>
+          </div>
         </div>
-        <div class="badge zuzu-status">● <span data-i18n="status">In Development</span></div>
-        <h1 class="zuzu-title">Zuzu: Bloomflight</h1>
-        <p class="zuzu-tagline" data-i18n="tagline">Float. Bloom. Explore.</p>
-        <div class="zuzu-divider"></div>
-        <p class="zuzu-desc" data-i18n="description">Guide Zuzu through six changing gardens. Tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase a new high score.</p>
-        <div class="zuzu-actions">
-          <a href="mailto:info@biemtech.com" class="zuzu-btn zuzu-btn--primary" data-i18n="contact_btn">Contact us for updates →</a>
-          <a href="privacy/zuzu-bloomflight/index.html" class="zuzu-btn zuzu-btn--secondary" data-i18n="privacy_btn">Privacy Policy</a>
-        </div>
+        <figure class="zuzu-artwork">
+          <img src="img/zuzu-bloomflight-og.png" alt="Zuzu flying through a bright flower garden beneath the Zuzu: Bloomflight title" />
+        </figure>
       </div>
     </main>
 
