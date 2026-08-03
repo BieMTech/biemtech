@@ -11,6 +11,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `times-table-master.html` | Times Table Master app page                      |
 | `arrows-escape.html`      | Arrows Escape app page                           |
 | `snake-3d.html`           | Snake 3D app page                                |
+| `rex-dragon-flight.html`  | REX: Dragon Flight app page                      |
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
@@ -29,6 +30,13 @@ A multiplication learning and practice app for all ages, available on Google Pla
 
 - Google Play: https://play.google.com/store/apps/details?id=com.biemtech.timestable
 - Privacy Policy: https://biemtech.com/privacy/times-table-master/
+
+### REX: Dragon Flight
+
+A fully offline one-touch dragon arcade game for ages 6 and up, currently in development.
+
+- Package: `com.biemtech.rex`
+- Privacy Policy: https://biemtech.com/privacy/rex-dragon-flight/
 
 ## Contact
 

@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — REX: Dragon Flight | BieMTech</title>
+    <meta
+      name="description"
+      content="Privacy Policy for REX: Dragon Flight by BieMTech. The game works offline and does not collect or share personal data."
+    />
+    <link rel="icon" type="image/svg+xml" href="../../img/rex-dragon-flight-icon.svg" />
+    <style>
+      * { box-sizing: border-box; }
+      :root {
+        --orange: #f2793d;
+        --flame: #ff5c2e;
+        --gold: #ffd43b;
+        --bg: #170906;
+        --surface: rgba(58, 23, 15, 0.92);
+        --surface-2: rgba(81, 33, 20, 0.72);
+        --text: #fff8ed;
+        --muted: #d9bcab;
+        --dim: #a57965;
+        --border: rgba(255, 174, 111, 0.2);
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 12% 5%, rgba(255, 92, 46, 0.18), transparent 30rem),
+          radial-gradient(circle at 88% 70%, rgba(255, 212, 59, 0.06), transparent 26rem),
+          var(--bg);
+      }
+
+      a { color: #ffba7d; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--border);
+        background: rgba(23, 9, 6, 0.9);
+        backdrop-filter: blur(14px);
+      }
+
+      .topbar__inner {
+        display: flex;
+        width: min(960px, calc(100% - 32px));
+        min-height: 68px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .back-link {
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .back-link:hover { color: var(--text); }
+
+      .lang-select {
+        padding: 9px 12px;
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.06);
+        color-scheme: dark;
+      }
+
+      .lang-select option {
+        color: #2b130c;
+        background: #fff8ed;
+      }
+
+      .hero {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 60px 0 30px;
+        text-align: center;
+      }
+
+      .app-icon {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35), 0 0 34px rgba(242, 121, 61, 0.2);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: #ffba7d;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 6vw, 3.65rem);
+        line-height: 1.06;
+        letter-spacing: -0.045em;
+      }
+
+      .audience {
+        margin: 13px 0 0;
+        color: var(--muted);
+        font-weight: 650;
+      }
+
+      main {
+        width: min(840px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 12px 0 64px;
+      }
+
+      .meta {
+        margin: 0 0 18px;
+        padding: 16px 18px;
+        color: var(--muted);
+        font-size: 0.84rem;
+        line-height: 1.7;
+        text-align: center;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      code { color: #ffd99e; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+
+      .summary {
+        margin-bottom: 18px;
+        padding: 22px 24px;
+        color: #ffe6cf;
+        font-size: 1rem;
+        line-height: 1.7;
+        border: 1px solid rgba(255, 186, 125, 0.3);
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(242, 121, 61, 0.16), rgba(255, 212, 59, 0.06));
+      }
+
+      .card {
+        margin-top: 14px;
+        padding: 25px 26px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: var(--surface);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+      }
+
+      .card h2 {
+        margin: 0 0 11px;
+        color: #ffba7d;
+        font-size: 1.06rem;
+      }
+
+      .card p,
+      .card li {
+        color: var(--muted);
+        font-size: 0.93rem;
+        line-height: 1.72;
+      }
+
+      .card p { margin: 0 0 10px; }
+      .card p:last-child { margin-bottom: 0; }
+      .card ul { margin: 9px 0 0; padding-inline-start: 22px; }
+      .contact-link { display: inline-block; margin-top: 4px; font-weight: 800; }
+
+      footer {
+        padding: 25px 20px;
+        color: var(--dim);
+        font-size: 0.84rem;
+        text-align: center;
+        border-top: 1px solid var(--border);
+      }
+
+      [dir="rtl"] .card,
+      [dir="rtl"] .summary { text-align: right; }
+
+      @media (max-width: 620px) {
+        .topbar__inner { min-height: 62px; }
+        .back-link { max-width: 58%; font-size: 0.8rem; }
+        .hero { padding-top: 42px; }
+        .card { padding: 21px 19px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="back-link" href="../index.html" data-i18n="back">← BieMTech Privacy Policies</a>
+        <select id="lang-select" class="lang-select" onchange="switchLang(this.value)" aria-label="Language">
+          <option value="en">🇬🇧 EN</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="pt">🇵🇹 PT</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="ru">🇷🇺 RU</option>
+          <option value="tr">🇹🇷 TR</option>
+          <option value="az">🇦🇿 AZ</option>
+          <option value="ar">🇸🇦 AR</option>
+          <option value="hi">🇮🇳 HI</option>
+          <option value="id">🇮🇩 ID</option>
+          <option value="zh">🇨🇳 ZH</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img class="app-icon" src="../../img/rex-dragon-flight-icon.svg" alt="REX: Dragon Flight" />
+      <p class="eyebrow" data-i18n="subtitle">Privacy Policy</p>
+      <h1>REX: Dragon Flight</h1>
+      <p class="audience" data-i18n="audience">Recommended for ages 6+ · Suitable for all ages</p>
+    </section>
+
+    <main id="policy-content"></main>
+
+    <footer>
+      &copy; 2026 <a href="../../index.html">BieMTech</a>. <span data-i18n="rights">All rights reserved.</span>
+    </footer>
+
+    <script>
+      const T = {
+        en: {
+          dir: "ltr", back: "← BieMTech Privacy Policies", subtitle: "Privacy Policy", audience: "Recommended for ages 6+ · Suitable for all ages", rights: "All rights reserved.", app: "Application", pkg: "Package", updated: "Last updated", date: "August 3, 2026",
+          summary: "<strong>In short:</strong> REX: Dragon Flight <strong>does not collect, share, sell, or transmit</strong> personal data. The current version works offline, contains no advertising or analytics, and keeps game progress and preferences only on your device.",
+          sections: [
+            ["1. About This App", "<p>REX: Dragon Flight is a one-touch arcade game in which players guide a cartoon dragon through changing fantasy worlds, breathe fire at obstacles, collect power-ups, build combos, and chase a high score.</p><p>It is a general-audience game recommended for players <strong>aged 6 and up</strong>. It is not designed exclusively for children.</p>"],
+            ["2. Personal Data", "<p>REX: Dragon Flight <strong>does not access, collect, transmit, share, or sell personal or sensitive data</strong>. It does not ask for a name, email address, phone number, account, login, precise or approximate location, contacts, photos, media, or payment information.</p>"],
+            ["3. Information Stored Only on Your Device", "<p>The game stores a small configuration file on the device so its features work:</p><ul><li>best score, number of games played, obstacles burned, and furthest world reached;</li><li>language, sound, music, optional vibration, and bright-mode preferences.</li></ul><p>On first launch, the device language may be read locally to choose a supported interface language. None of this information leaves the device or is available to BieMTech.</p>"],
+            ["4. Offline Use and Permissions", "<p>The current Android version works offline and <strong>does not request Internet access</strong>. It requests only the Android vibration permission for optional haptic feedback. It does not request location, camera, microphone, contacts, external storage, notifications, or other sensitive permissions.</p>"],
+            ["5. Children and Age Guidance", "<p>The game has no registration, chat, social profile, user-generated content, targeted advertising, gambling, or purchases. Its fantasy action includes a cartoon dragon breathing fire at inanimate obstacles, non-graphic explosions, and a brief game-over collision, with no blood or gore.</p><p>Based on the current content, BieMTech recommends the game for <strong>ages 6 and up</strong> while considering it suitable for a broad, all-ages audience. Store ratings are assigned separately by regional rating authorities from the official questionnaire.</p>"],
+            ["6. Advertising, Analytics, and Third Parties", "<p>The current version contains no ads and no third-party SDKs for analytics, tracking, crash reporting, accounts, cloud saves, social features, or in-app purchases. The store or platform from which you obtain the game may process its own data under its own policy; that processing is separate from REX: Dragon Flight.</p>"],
+            ["7. Retention, Security, and Deletion", "<p>Local settings and game statistics remain on the device until you delete them. You can remove all local data by clearing the app's storage in Android Settings or uninstalling the app. Because no data is sent to a BieMTech server, no server-side deletion request is necessary.</p><p>Keeping these records on-device and not transmitting them reduces exposure to remote access or disclosure.</p>"],
+            ["8. Changes and Contact", "<p>We may update this policy if the app or its data practices change. A revised date and policy will be posted here before the affected version is released.</p><p>For questions about this policy or the data practices of REX: Dragon Flight, contact BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        es: {
+          dir: "ltr", back: "← Políticas de privacidad de BieMTech", subtitle: "Política de privacidad", audience: "Recomendado para mayores de 6 años · Apto para todas las edades", rights: "Todos los derechos reservados.", app: "Aplicación", pkg: "Paquete", updated: "Última actualización", date: "3 de agosto de 2026",
+          summary: "<strong>En resumen:</strong> REX: Dragon Flight <strong>no recopila, comparte, vende ni transmite</strong> datos personales. La versión actual funciona sin conexión, no incluye publicidad ni analíticas y guarda el progreso y las preferencias solo en tu dispositivo.",
+          sections: [
+            ["1. Acerca de la aplicación", "<p>REX: Dragon Flight es un juego arcade de un toque en el que se guía a un dragón de dibujos animados por mundos fantásticos, se lanza fuego a obstáculos, se recogen potenciadores y se busca un récord.</p><p>Es un juego para público general recomendado para <strong>mayores de 6 años</strong> y no está diseñado exclusivamente para niños.</p>"],
+            ["2. Datos personales", "<p>REX: Dragon Flight <strong>no accede, recopila, transmite, comparte ni vende datos personales o sensibles</strong>. No solicita nombre, correo, teléfono, cuenta, inicio de sesión, ubicación, contactos, fotos, archivos multimedia ni datos de pago.</p>"],
+            ["3. Información guardada solo en el dispositivo", "<p>El juego guarda localmente:</p><ul><li>récord, partidas jugadas, obstáculos quemados y mundo más lejano;</li><li>idioma, sonido, música, vibración opcional y modo brillante.</li></ul><p>En el primer inicio puede leer localmente el idioma del dispositivo para elegir la interfaz. Nada sale del dispositivo ni está disponible para BieMTech.</p>"],
+            ["4. Uso sin conexión y permisos", "<p>La versión Android actual funciona sin conexión y <strong>no solicita Internet</strong>. Solo usa el permiso de vibración para la respuesta háptica opcional. No solicita ubicación, cámara, micrófono, contactos, almacenamiento externo, notificaciones ni otros permisos sensibles.</p>"],
+            ["5. Menores y orientación de edad", "<p>No hay registro, chat, perfiles sociales, contenido de usuarios, publicidad dirigida, apuestas ni compras. La acción fantástica muestra a un dragón animado lanzando fuego a obstáculos inanimados, explosiones no gráficas y una breve colisión al terminar, sin sangre.</p><p>BieMTech recomienda <strong>6 años o más</strong> y lo considera apto para un público amplio de todas las edades. Las clasificaciones de tienda las asignan por separado las autoridades regionales.</p>"],
+            ["6. Publicidad, analíticas y terceros", "<p>La versión actual no contiene anuncios ni SDK de terceros para analíticas, seguimiento, informes de fallos, cuentas, nube, funciones sociales o compras. La tienda puede tratar sus propios datos según su política, de forma separada al juego.</p>"],
+            ["7. Conservación, seguridad y eliminación", "<p>Los ajustes y estadísticas locales permanecen hasta que los elimines. Puedes borrar todo limpiando el almacenamiento de la app en Android o desinstalándola. No se requiere una solicitud al servidor porque no se envían datos a BieMTech.</p>"],
+            ["8. Cambios y contacto", "<p>Podemos actualizar esta política si cambia la app o su tratamiento de datos. Publicaremos la revisión antes de lanzar la versión afectada.</p><p>Para consultas, contacta con BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        pt: {
+          dir: "ltr", back: "← Políticas de Privacidade da BieMTech", subtitle: "Política de Privacidade", audience: "Recomendado para maiores de 6 anos · Adequado para todas as idades", rights: "Todos os direitos reservados.", app: "Aplicativo", pkg: "Pacote", updated: "Última atualização", date: "3 de agosto de 2026",
+          summary: "<strong>Em resumo:</strong> REX: Dragon Flight <strong>não coleta, compartilha, vende nem transmite</strong> dados pessoais. A versão atual funciona offline, sem publicidade ou análises, e mantém o progresso e as preferências apenas no dispositivo.",
+          sections: [
+            ["1. Sobre o aplicativo", "<p>REX: Dragon Flight é um jogo arcade de um toque no qual o jogador guia um dragão animado por mundos de fantasia, cospe fogo em obstáculos, coleta poderes e busca recordes.</p><p>É um jogo para o público geral, recomendado para <strong>maiores de 6 anos</strong>, e não foi criado exclusivamente para crianças.</p>"],
+            ["2. Dados pessoais", "<p>REX: Dragon Flight <strong>não acessa, coleta, transmite, compartilha nem vende dados pessoais ou sensíveis</strong>. Não solicita nome, e-mail, telefone, conta, login, localização, contatos, fotos, mídia ou dados de pagamento.</p>"],
+            ["3. Informações armazenadas apenas no dispositivo", "<p>O jogo guarda localmente:</p><ul><li>recorde, partidas jogadas, obstáculos queimados e mundo mais distante;</li><li>idioma, som, música, vibração opcional e modo brilhante.</li></ul><p>Na primeira abertura, o idioma do dispositivo pode ser lido localmente para selecionar a interface. Nada sai do dispositivo ou fica disponível para a BieMTech.</p>"],
+            ["4. Uso offline e permissões", "<p>A versão Android atual funciona offline e <strong>não solicita acesso à Internet</strong>. Usa apenas a permissão de vibração para resposta tátil opcional. Não solicita localização, câmera, microfone, contatos, armazenamento externo, notificações ou outras permissões sensíveis.</p>"],
+            ["5. Crianças e orientação etária", "<p>Não há cadastro, chat, perfil social, conteúdo do usuário, publicidade direcionada, jogos de azar ou compras. A ação de fantasia mostra um dragão animado usando fogo contra obstáculos inanimados, explosões sem detalhes gráficos e uma breve colisão, sem sangue.</p><p>A BieMTech recomenda <strong>6 anos ou mais</strong> e considera o jogo adequado a um público amplo. As classificações da loja são atribuídas separadamente pelas autoridades regionais.</p>"],
+            ["6. Publicidade, análises e terceiros", "<p>A versão atual não contém anúncios nem SDKs de terceiros para análise, rastreamento, falhas, contas, nuvem, recursos sociais ou compras. A loja pode processar os próprios dados sob sua política, separadamente do jogo.</p>"],
+            ["7. Retenção, segurança e exclusão", "<p>Configurações e estatísticas locais permanecem até serem apagadas. Para remover tudo, limpe o armazenamento do app no Android ou desinstale-o. Não é preciso pedir exclusão em servidor, pois nenhum dado é enviado à BieMTech.</p>"],
+            ["8. Alterações e contato", "<p>Podemos atualizar esta política se o aplicativo ou suas práticas mudarem. A revisão será publicada antes da versão afetada.</p><p>Para dúvidas, contate a BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        fr: {
+          dir: "ltr", back: "← Politiques de confidentialité BieMTech", subtitle: "Politique de confidentialité", audience: "Recommandé dès 6 ans · Adapté à tous les âges", rights: "Tous droits réservés.", app: "Application", pkg: "Package", updated: "Dernière mise à jour", date: "3 août 2026",
+          summary: "<strong>En bref :</strong> REX: Dragon Flight <strong>ne collecte, ne partage, ne vend et ne transmet</strong> aucune donnée personnelle. La version actuelle fonctionne hors ligne, sans publicité ni analyse, et conserve la progression et les préférences uniquement sur l'appareil.",
+          sections: [
+            ["1. À propos de l'application", "<p>REX: Dragon Flight est un jeu d'arcade à une touche où le joueur guide un dragon de dessin animé à travers des mondes fantastiques, crache du feu sur des obstacles, collecte des bonus et vise un record.</p><p>Ce jeu grand public est recommandé aux personnes de <strong>6 ans et plus</strong> et n'est pas conçu exclusivement pour les enfants.</p>"],
+            ["2. Données personnelles", "<p>REX: Dragon Flight <strong>n'accède à aucune donnée personnelle ou sensible, ne la collecte, ne la transmet, ne la partage et ne la vend</strong>. Aucun nom, e-mail, téléphone, compte, connexion, localisation, contact, photo, média ou paiement n'est demandé.</p>"],
+            ["3. Informations conservées uniquement sur l'appareil", "<p>Le jeu garde localement :</p><ul><li>record, nombre de parties, obstacles brûlés et monde le plus éloigné ;</li><li>langue, son, musique, vibration facultative et mode lumineux.</li></ul><p>Au premier lancement, la langue de l'appareil peut être lue localement pour choisir l'interface. Rien ne quitte l'appareil et BieMTech n'y a pas accès.</p>"],
+            ["4. Utilisation hors ligne et autorisations", "<p>La version Android actuelle fonctionne hors ligne et <strong>ne demande pas Internet</strong>. Elle utilise seulement l'autorisation de vibration pour le retour haptique facultatif. Elle ne demande ni localisation, caméra, microphone, contacts, stockage externe, notifications ni autre autorisation sensible.</p>"],
+            ["5. Enfants et âge conseillé", "<p>Il n'y a ni inscription, chat, profil social, contenu utilisateur, publicité ciblée, jeu d'argent ou achat. L'action fantastique montre un dragon animé crachant du feu sur des obstacles inanimés, des explosions non graphiques et une brève collision, sans sang.</p><p>BieMTech recommande <strong>6 ans et plus</strong> et considère le jeu adapté à un large public. Les classifications des boutiques sont attribuées séparément par les autorités régionales.</p>"],
+            ["6. Publicité, analyse et tiers", "<p>La version actuelle ne contient aucune publicité ni SDK tiers d'analyse, suivi, rapport de plantage, compte, cloud, fonction sociale ou achat. La boutique peut traiter ses propres données selon sa politique, séparément du jeu.</p>"],
+            ["7. Conservation, sécurité et suppression", "<p>Les réglages et statistiques restent sur l'appareil jusqu'à leur suppression. Effacez le stockage de l'application dans Android ou désinstallez-la pour tout retirer. Aucune demande serveur n'est nécessaire car aucune donnée n'est envoyée à BieMTech.</p>"],
+            ["8. Modifications et contact", "<p>Nous pouvons actualiser cette politique si l'application ou ses pratiques changent. La révision sera publiée avant la version concernée.</p><p>Pour toute question, contactez BieMTech :</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        de: {
+          dir: "ltr", back: "← BieMTech Datenschutzerklärungen", subtitle: "Datenschutzerklärung", audience: "Empfohlen ab 6 Jahren · Für jedes Alter geeignet", rights: "Alle Rechte vorbehalten.", app: "Anwendung", pkg: "Paket", updated: "Zuletzt aktualisiert", date: "3. August 2026",
+          summary: "<strong>Kurz gesagt:</strong> REX: Dragon Flight <strong>erfasst, teilt, verkauft oder überträgt keine</strong> personenbezogenen Daten. Die aktuelle Version funktioniert offline, enthält keine Werbung oder Analyse und speichert Fortschritt und Einstellungen nur auf dem Gerät.",
+          sections: [
+            ["1. Über diese App", "<p>REX: Dragon Flight ist ein Ein-Tipp-Arcade-Spiel, in dem ein Cartoon-Drache durch Fantasywelten fliegt, Feuer auf Hindernisse speit, Power-ups sammelt und Rekorde jagt.</p><p>Das Spiel richtet sich an ein allgemeines Publikum und wird für <strong>Spieler ab 6 Jahren</strong> empfohlen. Es ist nicht ausschließlich für Kinder bestimmt.</p>"],
+            ["2. Personenbezogene Daten", "<p>REX: Dragon Flight <strong>greift nicht auf persönliche oder sensible Daten zu und erfasst, überträgt, teilt oder verkauft sie nicht</strong>. Name, E-Mail, Telefon, Konto, Anmeldung, Standort, Kontakte, Fotos, Medien oder Zahlungsdaten werden nicht verlangt.</p>"],
+            ["3. Nur auf dem Gerät gespeicherte Informationen", "<p>Lokal gespeichert werden:</p><ul><li>Bestwert, Anzahl der Spiele, verbrannte Hindernisse und weiteste Welt;</li><li>Sprache, Ton, Musik, optionale Vibration und heller Modus.</li></ul><p>Beim ersten Start kann die Gerätesprache lokal gelesen werden. Nichts verlässt das Gerät oder ist für BieMTech zugänglich.</p>"],
+            ["4. Offline-Nutzung und Berechtigungen", "<p>Die aktuelle Android-Version funktioniert offline und <strong>fordert keinen Internetzugriff an</strong>. Nur die Vibrationsberechtigung wird für optionales haptisches Feedback verwendet. Standort, Kamera, Mikrofon, Kontakte, externer Speicher, Benachrichtigungen oder andere sensible Berechtigungen werden nicht angefordert.</p>"],
+            ["5. Kinder und Altersempfehlung", "<p>Es gibt keine Registrierung, Chats, sozialen Profile, Nutzerinhalte, gezielte Werbung, Glücksspiele oder Käufe. Die Fantasy-Action zeigt einen Cartoon-Drachen, Feuer gegen unbelebte Hindernisse, nicht-grafische Explosionen und eine kurze Kollision ohne Blut.</p><p>BieMTech empfiehlt <strong>ab 6 Jahren</strong> und hält das Spiel für ein breites Publikum geeignet. Store-Einstufungen vergeben regionale Behörden separat.</p>"],
+            ["6. Werbung, Analyse und Dritte", "<p>Die aktuelle Version enthält keine Werbung und keine Drittanbieter-SDKs für Analyse, Tracking, Absturzberichte, Konten, Cloud, soziale Funktionen oder Käufe. Der Store kann eigene Daten nach seiner Richtlinie getrennt vom Spiel verarbeiten.</p>"],
+            ["7. Aufbewahrung, Sicherheit und Löschung", "<p>Lokale Einstellungen und Statistiken bleiben bis zur Löschung auf dem Gerät. Löschen Sie den App-Speicher in Android oder deinstallieren Sie die App. Da keine Daten an BieMTech gesendet werden, ist keine serverseitige Anfrage nötig.</p>"],
+            ["8. Änderungen und Kontakt", "<p>Wir können diese Richtlinie bei Änderungen an App oder Datenpraxis aktualisieren. Die neue Fassung erscheint vor der betroffenen Version.</p><p>Bei Fragen kontaktieren Sie BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ru: {
+          dir: "ltr", back: "← Политики конфиденциальности BieMTech", subtitle: "Политика конфиденциальности", audience: "Рекомендуется с 6 лет · Подходит для всех возрастов", rights: "Все права защищены.", app: "Приложение", pkg: "Пакет", updated: "Последнее обновление", date: "3 августа 2026 г.",
+          summary: "<strong>Кратко:</strong> REX: Dragon Flight <strong>не собирает, не передаёт, не продаёт и не отправляет</strong> персональные данные. Текущая версия работает офлайн, без рекламы и аналитики, а прогресс и настройки хранятся только на устройстве.",
+          sections: [
+            ["1. О приложении", "<p>REX: Dragon Flight — аркадная игра с управлением одним касанием: игрок ведёт мультяшного дракона через фантастические миры, дышит огнём на препятствия, собирает усиления и ставит рекорды.</p><p>Игра предназначена для широкой аудитории и рекомендуется <strong>с 6 лет</strong>. Она не создана исключительно для детей.</p>"],
+            ["2. Персональные данные", "<p>REX: Dragon Flight <strong>не получает доступ, не собирает, не отправляет, не передаёт и не продаёт персональные или конфиденциальные данные</strong>. Игра не запрашивает имя, почту, телефон, аккаунт, вход, геолокацию, контакты, фото, медиа или платежные данные.</p>"],
+            ["3. Данные только на устройстве", "<p>Локально сохраняются:</p><ul><li>рекорд, число игр, сожжённые препятствия и самая дальняя открытая локация;</li><li>язык, звук, музыка, необязательная вибрация и яркий режим.</li></ul><p>При первом запуске язык устройства может быть прочитан локально для выбора интерфейса. Эти данные не покидают устройство и недоступны BieMTech.</p>"],
+            ["4. Офлайн-работа и разрешения", "<p>Текущая Android-версия работает офлайн и <strong>не запрашивает доступ в Интернет</strong>. Используется только разрешение вибрации для необязательной тактильной отдачи. Геолокация, камера, микрофон, контакты, внешнее хранилище, уведомления и другие чувствительные разрешения не запрашиваются.</p>"],
+            ["5. Дети и возраст", "<p>Нет регистрации, чата, социальных профилей, пользовательского контента, целевой рекламы, азартных игр или покупок. Фэнтезийная сцена показывает мультяшного дракона, огонь по неживым препятствиям, неграфичные взрывы и короткое столкновение без крови.</p><p>BieMTech рекомендует игру <strong>с 6 лет</strong> и считает её подходящей широкой аудитории. Магазины получают региональные рейтинги отдельно.</p>"],
+            ["6. Реклама, аналитика и третьи стороны", "<p>В текущей версии нет рекламы и сторонних SDK для аналитики, отслеживания, отчётов об ошибках, аккаунтов, облака, социальных функций или покупок. Магазин может отдельно обрабатывать свои данные по собственной политике.</p>"],
+            ["7. Хранение, безопасность и удаление", "<p>Локальные настройки и статистика остаются до удаления. Очистите хранилище приложения в Android или удалите приложение. Запрос на сервер не нужен, поскольку данные не отправляются BieMTech.</p>"],
+            ["8. Изменения и связь", "<p>Мы можем обновить политику при изменении приложения или практик. Новая версия будет опубликована до выпуска соответствующего обновления.</p><p>Вопросы можно направить BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        tr: {
+          dir: "ltr", back: "← BieMTech Gizlilik Politikaları", subtitle: "Gizlilik Politikası", audience: "6 yaş ve üzeri için önerilir · Her yaşa uygundur", rights: "Tüm hakları saklıdır.", app: "Uygulama", pkg: "Paket", updated: "Son güncelleme", date: "3 Ağustos 2026",
+          summary: "<strong>Kısaca:</strong> REX: Dragon Flight kişisel verileri <strong>toplamaz, paylaşmaz, satmaz veya iletmez</strong>. Mevcut sürüm çevrimdışı çalışır, reklam ya da analiz içermez; ilerleme ve tercihleri yalnızca cihazda tutar.",
+          sections: [
+            ["1. Uygulama hakkında", "<p>REX: Dragon Flight, oyuncunun çizgi film tarzı bir ejderhayı fantastik dünyalarda yönlendirdiği, engellere ateş püskürttüğü, güçlendirmeler topladığı ve rekor kovaladığı tek dokunuşlu bir arcade oyunudur.</p><p>Genel kitleye yöneliktir, <strong>6 yaş ve üzeri</strong> için önerilir ve yalnızca çocuklar için tasarlanmamıştır.</p>"],
+            ["2. Kişisel veriler", "<p>REX: Dragon Flight kişisel veya hassas verilere <strong>erişmez; bunları toplamaz, iletmez, paylaşmaz veya satmaz</strong>. Ad, e-posta, telefon, hesap, giriş, konum, kişiler, fotoğraf, medya veya ödeme bilgisi istemez.</p>"],
+            ["3. Yalnızca cihazda saklanan bilgiler", "<p>Yerel olarak şunlar saklanır:</p><ul><li>rekor, oyun sayısı, yakılan engeller ve ulaşılan en uzak dünya;</li><li>dil, ses, müzik, isteğe bağlı titreşim ve parlak mod.</li></ul><p>İlk açılışta arayüzü seçmek için cihaz dili yerel olarak okunabilir. Hiçbir bilgi cihazdan çıkmaz veya BieMTech'in erişimine açılmaz.</p>"],
+            ["4. Çevrimdışı kullanım ve izinler", "<p>Mevcut Android sürümü çevrimdışı çalışır ve <strong>İnternet erişimi istemez</strong>. Yalnızca isteğe bağlı dokunsal geri bildirim için titreşim iznini kullanır. Konum, kamera, mikrofon, kişiler, harici depolama, bildirim veya başka hassas izin istemez.</p>"],
+            ["5. Çocuklar ve yaş rehberi", "<p>Kayıt, sohbet, sosyal profil, kullanıcı içeriği, hedefli reklam, kumar veya satın alma yoktur. Fantastik aksiyon; çizgi film ejderhası, cansız engellere ateş, grafik olmayan patlamalar ve kansız kısa bir çarpışma içerir.</p><p>BieMTech oyunu <strong>6 yaş ve üzeri</strong> için önerir ve geniş kitleye uygun görür. Mağaza dereceleri bölgesel kuruluşlarca ayrıca atanır.</p>"],
+            ["6. Reklam, analiz ve üçüncü taraflar", "<p>Mevcut sürümde reklam veya analiz, takip, çökme raporu, hesap, bulut, sosyal özellik ya da satın alma için üçüncü taraf SDK yoktur. Mağaza kendi verilerini kendi politikasına göre oyundan ayrı işleyebilir.</p>"],
+            ["7. Saklama, güvenlik ve silme", "<p>Yerel ayar ve istatistikler silinene kadar cihazda kalır. Android'de uygulama depolamasını temizleyin veya uygulamayı kaldırın. BieMTech'e veri gönderilmediği için sunucu silme talebi gerekmez.</p>"],
+            ["8. Değişiklikler ve iletişim", "<p>Uygulama veya veri uygulamaları değişirse politika güncellenebilir. Yeni metin ilgili sürümden önce yayınlanır.</p><p>Sorular için BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        az: {
+          dir: "ltr", back: "← BieMTech Məxfilik Siyasətləri", subtitle: "Məxfilik Siyasəti", audience: "6 yaş və yuxarı tövsiyə olunur · Bütün yaşlara uyğundur", rights: "Bütün hüquqlar qorunur.", app: "Tətbiq", pkg: "Paket", updated: "Son yenilənmə", date: "3 avqust 2026",
+          summary: "<strong>Qısa məzmun:</strong> REX: Dragon Flight şəxsi məlumatları <strong>toplamır, paylaşmır, satmır və ötürmür</strong>. Cari versiya oflayn işləyir, reklam və analitika ehtiva etmir, oyun irəliləyişini və seçimləri yalnız cihazda saxlayır.",
+          sections: [
+            ["1. Tətbiq haqqında", "<p>REX: Dragon Flight oyunçunun cizgi üslublu əjdahanı dəyişən fantaziya dünyalarından keçirdiyi, maneələrə od püskürtdüyü, gücləndiricilər topladığı, kombolar qurduğu və rekord qazandığı bir toxunuşlu arkada oyunudur.</p><p>Oyun ümumi auditoriya üçündür və <strong>6 yaş və yuxarı</strong> oyunçulara tövsiyə olunur. Yalnız uşaqlar üçün hazırlanmayıb.</p>"],
+            ["2. Şəxsi məlumatlar", "<p>REX: Dragon Flight şəxsi və ya həssas məlumatlara <strong>çıxış etmir, onları toplamır, ötürmür, paylaşmır və satmır</strong>. Ad, e-poçt, telefon nömrəsi, hesab, giriş, dəqiq və ya təxmini məkan, kontaktlar, şəkillər, media və ödəniş məlumatı istəmir.</p>"],
+            ["3. Yalnız cihazda saxlanılan məlumatlar", "<p>Oyunun işləməsi üçün kiçik lokal konfiqurasiya faylında bunlar saxlanılır:</p><ul><li>ən yüksək xal, oynanılmış oyun sayı, yandırılmış maneələr və çatılmış ən uzaq dünya;</li><li>dil, səs, musiqi, istəyə bağlı vibrasiya və parlaq rejim seçimləri.</li></ul><p>İlk açılışda dəstəklənən interfeys dilini seçmək üçün cihazın dili lokal olaraq oxuna bilər. Bu məlumatların heç biri cihazdan kənara çıxmır və BieMTech üçün əlçatan deyil.</p>"],
+            ["4. Oflayn istifadə və icazələr", "<p>Cari Android versiyası oflayn işləyir və <strong>internetə çıxış istəmir</strong>. İstəyə bağlı toxunma reaksiyası üçün yalnız Android vibrasiya icazəsindən istifadə edir. Məkan, kamera, mikrofon, kontaktlar, xarici yaddaş, bildirişlər və digər həssas icazələr istənilmir.</p>"],
+            ["5. Uşaqlar və yaş tövsiyəsi", "<p>Oyunda qeydiyyat, söhbət, sosial profil, istifadəçi məzmunu, hədəflənmiş reklam, qumar və satınalma yoxdur. Fantaziya hərəkətlərində cizgi əjdahası cansız maneələrə od püskürür, qrafik olmayan partlayışlar və qısa oyun-sonu toqquşması görünür; qan və zorakı detallar yoxdur.</p><p>Cari məzmuna əsasən BieMTech oyunu <strong>6 yaş və yuxarı</strong> üçün tövsiyə edir və geniş, bütün yaş auditoriyasına uyğun hesab edir. Mağaza reytinqləri rəsmi sorğu əsasında regional reytinq qurumları tərəfindən ayrıca təyin olunur.</p>"],
+            ["6. Reklam, analitika və üçüncü tərəflər", "<p>Cari versiyada reklam yoxdur; analitika, izləmə, xəta hesabatı, hesab, bulud yaddaşı, sosial funksiya və ya tətbiqdaxili satınalma üçün üçüncü tərəf SDK inteqrasiya edilməyib. Oyunu əldə etdiyiniz mağaza və ya platforma öz məlumatlarını öz siyasətinə əsasən emal edə bilər; bu emal REX: Dragon Flight-dan ayrıdır.</p>"],
+            ["7. Saxlanma, təhlükəsizlik və silinmə", "<p>Lokal parametrlər və oyun statistikası siz silənədək cihazda qalır. Android Tənzimləmələrində tətbiqin yaddaşını təmizləməklə və ya tətbiqi silməklə bütün lokal məlumatları silə bilərsiniz. BieMTech serverinə məlumat göndərilmədiyi üçün server tərəfli silmə sorğusuna ehtiyac yoxdur.</p><p>Məlumatların yalnız cihazda saxlanması və ötürülməməsi uzaqdan giriş və açıqlanma riskini azaldır.</p>"],
+            ["8. Dəyişikliklər və əlaqə", "<p>Tətbiq və ya onun məlumat təcrübələri dəyişərsə, bu siyasəti yeniləyə bilərik. Təsirlənən versiya yayımlanmadan əvvəl yeni tarix və düzəliş edilmiş siyasət burada yerləşdiriləcək.</p><p>Bu siyasət və ya REX: Dragon Flight-ın məlumat təcrübələri ilə bağlı suallar üçün BieMTech ilə əlaqə saxlayın:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ar: {
+          dir: "rtl", back: "سياسات خصوصية BieMTech ←", subtitle: "سياسة الخصوصية", audience: "موصى به من 6 سنوات · مناسب لجميع الأعمار", rights: "جميع الحقوق محفوظة.", app: "التطبيق", pkg: "الحزمة", updated: "آخر تحديث", date: "3 أغسطس 2026",
+          summary: "<strong>باختصار:</strong> لا تقوم REX: Dragon Flight <strong>بجمع البيانات الشخصية أو مشاركتها أو بيعها أو نقلها</strong>. تعمل النسخة الحالية دون اتصال، ولا تحتوي على إعلانات أو تحليلات، وتحفظ التقدم والتفضيلات على الجهاز فقط.",
+          sections: [
+            ["1. حول التطبيق", "<p>REX: Dragon Flight لعبة أركيد بلمسة واحدة يقود فيها اللاعب تنيناً كرتونياً عبر عوالم خيالية، وينفث النار على العوائق، ويجمع التعزيزات، ويسعى إلى رقم قياسي.</p><p>اللعبة لجمهور عام، ويوصى بها لمن هم في <strong>سن 6 سنوات فما فوق</strong>، وليست مخصصة للأطفال وحدهم.</p>"],
+            ["2. البيانات الشخصية", "<p>لا تصل REX: Dragon Flight إلى البيانات الشخصية أو الحساسة، ولا <strong>تجمعها أو تنقلها أو تشاركها أو تبيعها</strong>. ولا تطلب الاسم أو البريد أو الهاتف أو الحساب أو تسجيل الدخول أو الموقع أو جهات الاتصال أو الصور أو الوسائط أو بيانات الدفع.</p>"],
+            ["3. معلومات محفوظة على الجهاز فقط", "<p>يُحفظ محلياً:</p><ul><li>أفضل نتيجة وعدد الجولات والعوائق المحروقة وأبعد عالم تم الوصول إليه؛</li><li>اللغة والصوت والموسيقى والاهتزاز الاختياري والوضع الساطع.</li></ul><p>قد تُقرأ لغة الجهاز محلياً عند أول تشغيل لاختيار الواجهة. لا تغادر المعلومات الجهاز ولا تكون متاحة لـBieMTech.</p>"],
+            ["4. الاستخدام دون اتصال والأذونات", "<p>تعمل نسخة Android الحالية دون اتصال و<strong>لا تطلب الإنترنت</strong>. تستخدم إذن الاهتزاز فقط للاستجابة اللمسية الاختيارية. ولا تطلب الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو التخزين الخارجي أو الإشعارات أو أذونات حساسة أخرى.</p>"],
+            ["5. الأطفال والإرشاد العمري", "<p>لا يوجد تسجيل أو دردشة أو ملف اجتماعي أو محتوى مستخدم أو إعلان موجه أو قمار أو شراء. تعرض الحركة الخيالية تنيناً كرتونياً وناراً ضد عوائق جامدة وانفجارات غير دموية واصطداماً قصيراً بلا دماء.</p><p>توصي BieMTech باللعبة من <strong>سن 6 سنوات فما فوق</strong> وتعتبرها مناسبة لجمهور واسع. تحدد هيئات التصنيف الإقليمية تقييمات المتاجر بشكل منفصل.</p>"],
+            ["6. الإعلانات والتحليلات والأطراف الثالثة", "<p>لا تحتوي النسخة الحالية على إعلانات أو حزم خارجية للتحليلات أو التتبع أو تقارير الأعطال أو الحسابات أو السحابة أو الميزات الاجتماعية أو الشراء. قد يعالج المتجر بياناته وفق سياسته بشكل منفصل عن اللعبة.</p>"],
+            ["7. الاحتفاظ والأمان والحذف", "<p>تبقى الإعدادات والإحصاءات محلياً حتى حذفها. امسح مساحة تخزين التطبيق في Android أو أزل التطبيق لحذفها. لا يلزم طلب حذف من خادم لأن البيانات لا تُرسل إلى BieMTech.</p>"],
+            ["8. التغييرات والتواصل", "<p>قد نحدّث السياسة إذا تغير التطبيق أو ممارساته، وسننشر النسخة الجديدة قبل إصدار التحديث المتأثر.</p><p>للأسئلة تواصل مع BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        hi: {
+          dir: "ltr", back: "← BieMTech गोपनीयता नीतियाँ", subtitle: "गोपनीयता नीति", audience: "6+ वर्ष के लिए अनुशंसित · सभी आयु के लिए उपयुक्त", rights: "सर्वाधिकार सुरक्षित।", app: "ऐप", pkg: "पैकेज", updated: "अंतिम अपडेट", date: "3 अगस्त 2026",
+          summary: "<strong>संक्षेप में:</strong> REX: Dragon Flight व्यक्तिगत डेटा <strong>एकत्र, साझा, बेचता या प्रसारित नहीं करता</strong>। वर्तमान संस्करण ऑफलाइन चलता है, इसमें विज्ञापन या एनालिटिक्स नहीं हैं और प्रगति व पसंद केवल डिवाइस पर रहती हैं।",
+          sections: [
+            ["1. ऐप के बारे में", "<p>REX: Dragon Flight एक-टैप आर्केड गेम है जिसमें खिलाड़ी कार्टून ड्रैगन को काल्पनिक दुनियाओं से ले जाता है, बाधाओं पर आग उगलता है, पावर-अप लेता है और उच्च स्कोर बनाता है।</p><p>यह सामान्य दर्शकों के लिए है, <strong>6 वर्ष और उससे अधिक</strong> के लिए अनुशंसित है और केवल बच्चों के लिए नहीं बनाया गया।</p>"],
+            ["2. व्यक्तिगत डेटा", "<p>REX: Dragon Flight व्यक्तिगत या संवेदनशील डेटा तक <strong>पहुँच, संग्रह, प्रसारण, साझाकरण या बिक्री नहीं करता</strong>। नाम, ईमेल, फोन, खाता, लॉगिन, स्थान, संपर्क, फोटो, मीडिया या भुगतान जानकारी नहीं माँगी जाती।</p>"],
+            ["3. केवल डिवाइस पर सहेजी जानकारी", "<p>स्थानीय रूप से सहेजा जाता है:</p><ul><li>सर्वश्रेष्ठ स्कोर, खेलों की संख्या, जली बाधाएँ और सबसे दूर पहुँची दुनिया;</li><li>भाषा, ध्वनि, संगीत, वैकल्पिक कंपन और ब्राइट मोड।</li></ul><p>पहली बार इंटरफेस चुनने के लिए डिवाइस भाषा स्थानीय रूप से पढ़ी जा सकती है। यह जानकारी डिवाइस से बाहर नहीं जाती और BieMTech को उपलब्ध नहीं होती।</p>"],
+            ["4. ऑफलाइन उपयोग और अनुमतियाँ", "<p>वर्तमान Android संस्करण ऑफलाइन चलता है और <strong>इंटरनेट अनुमति नहीं माँगता</strong>। वैकल्पिक हैप्टिक प्रतिक्रिया के लिए केवल कंपन अनुमति उपयोग होती है। स्थान, कैमरा, माइक्रोफोन, संपर्क, बाहरी स्टोरेज, सूचनाएँ या अन्य संवेदनशील अनुमति नहीं माँगी जाती।</p>"],
+            ["5. बच्चे और आयु मार्गदर्शन", "<p>पंजीकरण, चैट, सामाजिक प्रोफ़ाइल, उपयोगकर्ता सामग्री, लक्षित विज्ञापन, जुआ या खरीद नहीं है। काल्पनिक दृश्य में कार्टून ड्रैगन, निर्जीव बाधाओं पर आग, गैर-ग्राफिक विस्फोट और बिना रक्त की छोटी टक्कर है।</p><p>BieMTech <strong>6+ वर्ष</strong> की अनुशंसा करता है और गेम को व्यापक दर्शकों के लिए उपयुक्त मानता है। स्टोर रेटिंग क्षेत्रीय निकाय अलग से देते हैं।</p>"],
+            ["6. विज्ञापन, एनालिटिक्स और तीसरे पक्ष", "<p>वर्तमान संस्करण में विज्ञापन या एनालिटिक्स, ट्रैकिंग, क्रैश रिपोर्ट, खाते, क्लाउड, सामाजिक सुविधा या खरीद के लिए तीसरे पक्ष का SDK नहीं है। स्टोर अपनी नीति के अनुसार अपना डेटा अलग से संभाल सकता है।</p>"],
+            ["7. प्रतिधारण, सुरक्षा और हटाना", "<p>स्थानीय सेटिंग और आँकड़े हटाने तक डिवाइस पर रहते हैं। Android में ऐप स्टोरेज साफ करें या ऐप हटाएँ। BieMTech को डेटा न भेजे जाने के कारण सर्वर अनुरोध आवश्यक नहीं है।</p>"],
+            ["8. बदलाव और संपर्क", "<p>ऐप या डेटा व्यवहार बदलने पर नीति अपडेट हो सकती है। प्रभावित संस्करण से पहले नई नीति प्रकाशित होगी।</p><p>प्रश्नों के लिए BieMTech से संपर्क करें:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        id: {
+          dir: "ltr", back: "← Kebijakan Privasi BieMTech", subtitle: "Kebijakan Privasi", audience: "Direkomendasikan untuk usia 6+ · Sesuai untuk semua umur", rights: "Hak cipta dilindungi.", app: "Aplikasi", pkg: "Paket", updated: "Terakhir diperbarui", date: "3 Agustus 2026",
+          summary: "<strong>Singkatnya:</strong> REX: Dragon Flight <strong>tidak mengumpulkan, membagikan, menjual, atau mengirim</strong> data pribadi. Versi saat ini bekerja offline, tanpa iklan atau analitik, dan menyimpan progres serta preferensi hanya di perangkat.",
+          sections: [
+            ["1. Tentang aplikasi", "<p>REX: Dragon Flight adalah game arkade satu sentuhan. Pemain memandu naga kartun melewati dunia fantasi, menyemburkan api ke rintangan, mengumpulkan power-up, dan mengejar skor tinggi.</p><p>Game ini untuk audiens umum, direkomendasikan bagi <strong>usia 6 tahun ke atas</strong>, dan tidak dibuat khusus untuk anak-anak.</p>"],
+            ["2. Data pribadi", "<p>REX: Dragon Flight <strong>tidak mengakses, mengumpulkan, mengirim, membagikan, atau menjual data pribadi maupun sensitif</strong>. Game tidak meminta nama, email, telepon, akun, login, lokasi, kontak, foto, media, atau data pembayaran.</p>"],
+            ["3. Informasi yang hanya tersimpan di perangkat", "<p>Yang disimpan secara lokal:</p><ul><li>skor terbaik, jumlah permainan, rintangan terbakar, dan dunia terjauh;</li><li>bahasa, suara, musik, getaran opsional, dan mode terang.</li></ul><p>Saat pertama dibuka, bahasa perangkat dapat dibaca secara lokal untuk memilih antarmuka. Informasi tidak keluar dari perangkat dan tidak tersedia bagi BieMTech.</p>"],
+            ["4. Penggunaan offline dan izin", "<p>Versi Android saat ini bekerja offline dan <strong>tidak meminta akses Internet</strong>. Hanya izin getaran yang digunakan untuk umpan balik haptik opsional. Lokasi, kamera, mikrofon, kontak, penyimpanan eksternal, notifikasi, dan izin sensitif lain tidak diminta.</p>"],
+            ["5. Anak-anak dan panduan usia", "<p>Tidak ada pendaftaran, obrolan, profil sosial, konten pengguna, iklan tertarget, perjudian, atau pembelian. Aksi fantasi menampilkan naga kartun, api pada benda mati, ledakan non-grafis, dan tabrakan singkat tanpa darah.</p><p>BieMTech merekomendasikan <strong>usia 6+</strong> dan menilai game sesuai untuk audiens luas. Rating toko ditentukan secara terpisah oleh badan regional.</p>"],
+            ["6. Iklan, analitik, dan pihak ketiga", "<p>Versi saat ini tidak memiliki iklan atau SDK pihak ketiga untuk analitik, pelacakan, laporan crash, akun, cloud, fitur sosial, atau pembelian. Toko dapat memproses datanya sendiri berdasarkan kebijakannya, terpisah dari game.</p>"],
+            ["7. Penyimpanan, keamanan, dan penghapusan", "<p>Pengaturan dan statistik lokal tetap ada sampai dihapus. Bersihkan penyimpanan aplikasi di Android atau hapus instalasi. Permintaan server tidak diperlukan karena data tidak dikirim ke BieMTech.</p>"],
+            ["8. Perubahan dan kontak", "<p>Kami dapat memperbarui kebijakan jika aplikasi atau praktiknya berubah. Revisi akan diterbitkan sebelum versi terkait.</p><p>Untuk pertanyaan, hubungi BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        zh: {
+          dir: "ltr", back: "← BieMTech 隐私政策", subtitle: "隐私政策", audience: "建议6岁以上 · 适合全年龄", rights: "保留所有权利。", app: "应用", pkg: "软件包", updated: "最后更新", date: "2026年8月3日",
+          summary: "<strong>简而言之：</strong>REX: Dragon Flight <strong>不会收集、共享、出售或传输</strong>个人数据。当前版本完全离线运行，不含广告或分析，游戏进度和偏好仅保存在设备上。",
+          sections: [
+            ["1. 关于本应用", "<p>REX: Dragon Flight 是一款单触街机游戏，玩家带领卡通龙穿越奇幻世界，对障碍喷火、收集强化道具并挑战高分。</p><p>本游戏面向普通大众，建议<strong>6岁及以上</strong>玩家使用，并非专为儿童设计。</p>"],
+            ["2. 个人数据", "<p>REX: Dragon Flight <strong>不会访问、收集、传输、共享或出售个人或敏感数据</strong>。游戏不要求姓名、电子邮件、电话、账号、登录、位置、联系人、照片、媒体或付款信息。</p>"],
+            ["3. 仅保存在设备上的信息", "<p>本地保存内容包括：</p><ul><li>最高分、游戏次数、烧毁障碍数量和到达的最远世界；</li><li>语言、音效、音乐、可选振动和明亮模式。</li></ul><p>首次启动时，游戏可能在本地读取设备语言以选择界面。信息不会离开设备，BieMTech 也无法访问。</p>"],
+            ["4. 离线使用与权限", "<p>当前 Android 版本完全离线运行，<strong>不申请互联网权限</strong>。只使用振动权限提供可选触觉反馈。不申请位置、相机、麦克风、联系人、外部存储、通知或其他敏感权限。</p>"],
+            ["5. 儿童与年龄建议", "<p>游戏没有注册、聊天、社交资料、用户内容、定向广告、赌博或购买。奇幻动作包括卡通龙向无生命障碍喷火、非写实爆炸和短暂碰撞，没有血腥内容。</p><p>BieMTech 建议<strong>6岁以上</strong>，并认为适合广泛年龄。商店评级由各地区评级机构另行确定。</p>"],
+            ["6. 广告、分析与第三方", "<p>当前版本不含广告，也没有用于分析、跟踪、崩溃报告、账号、云端、社交功能或购买的第三方 SDK。应用商店可能按其政策独立处理自己的数据。</p>"],
+            ["7. 保留、安全与删除", "<p>本地设置和统计会保留至用户删除。可在 Android 中清除应用存储或卸载应用来删除全部内容。由于数据不会发送给 BieMTech，无需提交服务器删除请求。</p>"],
+            ["8. 变更与联系", "<p>若应用或数据做法发生变化，我们可能更新本政策。修订版会在相关版本发布前公布。</p><p>如有疑问，请联系 BieMTech：</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        }
+      };
+
+      function render(lang) {
+        const t = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = t.dir;
+        document.querySelector('[data-i18n="back"]').textContent = t.back;
+        document.querySelector('[data-i18n="subtitle"]').textContent = t.subtitle;
+        document.querySelector('[data-i18n="audience"]').textContent = t.audience;
+        document.querySelector('[data-i18n="rights"]').textContent = t.rights;
+        document.getElementById("policy-content").innerHTML = `
+          <p class="meta">
+            ${t.app}: <strong>REX: Dragon Flight</strong> &nbsp;|&nbsp;
+            ${t.pkg}: <code>com.biemtech.rex</code> &nbsp;|&nbsp;
+            ${t.updated}: <strong>${t.date}</strong>
+          </p>
+          <div class="summary">✓ ${t.summary}</div>
+          ${t.sections.map(([title, body]) => `<section class="card"><h2>${title}</h2>${body}</section>`).join("")}
+        `;
+      }
+
+      function switchLang(lang) {
+        if (!T[lang]) lang = "en";
+        try { localStorage.setItem("site_lang", lang); } catch (_) {}
+        document.getElementById("lang-select").value = lang;
+        render(lang);
+      }
+
+      (function initLanguage() {
+        let saved = "";
+        try { saved = localStorage.getItem("site_lang") || ""; } catch (_) {}
+        const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
+        const lang = T[saved] ? saved : T[browserLang] ? browserLang : "en";
+        document.getElementById("lang-select").value = lang;
+        render(lang);
+      })();
+    </script>
+  </body>
+</html>

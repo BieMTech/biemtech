@@ -114,6 +114,8 @@ const I18N = {
     chip_puzzle: "Puzzle Game",
     snake_desc:
       "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
+    rex_desc:
+      "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. A fully offline arcade game for ages 6 and up.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -256,6 +258,8 @@ const I18N = {
     chip_puzzle: "Tapmaca Oyunu",
     snake_desc:
       "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
+    rex_desc:
+      "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. 6 yaş və yuxarı üçün tamamilə oflayn arkada oyunu.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -396,6 +400,8 @@ const I18N = {
     chip_puzzle: "Головоломка",
     snake_desc:
       "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
+    rex_desc:
+      "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Полностью офлайн-аркада для игроков от 6 лет.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -537,6 +543,8 @@ const I18N = {
     chip_puzzle: "Bulmaca Oyunu",
     snake_desc:
       "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
+    rex_desc:
+      "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. 6 yaş ve üzeri için tamamen çevrimdışı bir arcade oyunu.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -679,6 +687,8 @@ const I18N = {
     chip_puzzle: "Puzzlespiel",
     snake_desc:
       "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
+    rex_desc:
+      "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Ein vollständig offline spielbares Arcade-Spiel ab 6 Jahren.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -824,6 +834,8 @@ const I18N = {
     chip_puzzle: "Jeu de réflexion",
     snake_desc:
       "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
+    rex_desc:
+      "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Un jeu d'arcade entièrement hors ligne dès 6 ans.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -968,6 +980,8 @@ const I18N = {
     chip_puzzle: "Juego de puzles",
     snake_desc:
       "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
+    rex_desc:
+      "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. Un juego arcade totalmente sin conexión para mayores de 6 años.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1112,6 +1126,8 @@ const I18N = {
     chip_puzzle: "Jogo de quebra-cabeça",
     snake_desc:
       "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
+    rex_desc:
+      "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. Um jogo arcade totalmente offline para maiores de 6 anos.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1254,6 +1270,8 @@ const I18N = {
     chip_puzzle: "Gioco rompicapo",
     snake_desc:
       "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
+    rex_desc:
+      "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Un gioco arcade completamente offline dai 6 anni in su.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1390,6 +1408,8 @@ const I18N = {
     chip_puzzle: "لعبة ألغاز",
     snake_desc:
       "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
+    rex_desc:
+      "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. لعبة أركيد تعمل دون اتصال ومناسبة للأعمار من 6 سنوات فما فوق.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1523,6 +1543,8 @@ const I18N = {
     chip_puzzle: "解谜游戏",
     snake_desc:
       "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
+    rex_desc:
+      "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。适合6岁及以上玩家的完全离线街机游戏。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1662,6 +1684,8 @@ const I18N = {
     chip_puzzle: "パズルゲーム",
     snake_desc:
       "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
+    rex_desc:
+      "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。6歳以上向けの完全オフライン・アーケードゲームです。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REX: Dragon Flight — BieMTech</title>
+    <meta
+      name="description"
+      content="REX: Dragon Flight is a fully offline one-touch dragon arcade game for ages 6 and up, with fire strategy, ten changing worlds, power-ups, and 12 languages."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="REX: Dragon Flight — BieMTech" />
+    <meta
+      property="og:description"
+      content="Fly through ten changing worlds, breathe fire, collect power-ups, and adapt. A private, fully offline arcade game for ages 6+."
+    />
+    <meta property="og:url" content="https://biemtech.com/rex-dragon-flight.html" />
+    <meta
+      property="og:image"
+      content="https://biemtech.com/img/rex-dragon-flight-og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="REX: Dragon Flight — BieMTech" />
+    <meta
+      name="twitter:description"
+      content="Fly. Burn. Adapt. A fully offline dragon arcade game for ages 6+."
+    />
+    <meta
+      name="twitter:image"
+      content="https://biemtech.com/img/rex-dragon-flight-og.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="img/rex-dragon-flight-icon.svg" />
+    <style>
+      :root {
+        --rex-orange: #f2793d;
+        --rex-flame: #ff5c2e;
+        --rex-gold: #ffd43b;
+        --rex-green: #7ed957;
+        --rex-bg: #1a0b08;
+        --rex-surface: rgba(66, 28, 18, 0.9);
+        --rex-text: #fff8ed;
+        --rex-muted: #dbc2b3;
+        --rex-dim: #a77e6c;
+        --rex-border: rgba(255, 174, 111, 0.2);
+      }
+
+      body {
+        color: var(--rex-text);
+        background:
+          radial-gradient(circle at 12% 10%, rgba(255, 92, 46, 0.22), transparent 30rem),
+          radial-gradient(circle at 88% 48%, rgba(126, 217, 87, 0.08), transparent 26rem),
+          linear-gradient(180deg, #1f0c08, var(--rex-bg));
+      }
+
+      .navbar {
+        background: rgba(26, 11, 8, 0.9);
+        border-color: var(--rex-border);
+      }
+
+      .navbar__nav a,
+      .navbar__actions { color: var(--rex-muted); }
+      .navbar__nav a:hover,
+      .navbar__nav a.active { color: var(--rex-text); }
+
+      .lang-select {
+        color: var(--rex-text);
+        color-scheme: dark;
+        border-color: var(--rex-border);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .lang-select option { color: var(--rex-text); background: var(--rex-bg); }
+
+      .rex-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 58px 24px 68px;
+        text-align: center;
+        border-bottom: 1px solid var(--rex-border);
+      }
+
+      .rex-hero::before,
+      .rex-hero::after {
+        position: absolute;
+        z-index: -1;
+        width: 28rem;
+        height: 28rem;
+        content: "";
+        border-radius: 50%;
+        filter: blur(2px);
+      }
+
+      .rex-hero::before {
+        top: -20rem;
+        left: 50%;
+        background: rgba(255, 92, 46, 0.22);
+        transform: translateX(-50%);
+      }
+
+      .rex-hero::after {
+        right: -20rem;
+        bottom: -22rem;
+        background: rgba(255, 212, 59, 0.11);
+      }
+
+      .rex-hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .rex-icon-wrap { position: relative; margin-bottom: 25px; }
+
+      .rex-icon {
+        display: block;
+        width: 160px;
+        height: 160px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 34px;
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.42), 0 0 52px rgba(242, 121, 61, 0.25);
+      }
+
+      .age-bubble {
+        position: absolute;
+        right: -12px;
+        bottom: -8px;
+        display: grid;
+        direction: ltr;
+        width: 50px;
+        height: 50px;
+        place-items: center;
+        color: #42200c;
+        font-size: 0.95rem;
+        font-weight: 900;
+        border: 3px solid var(--rex-bg);
+        border-radius: 50%;
+        background: linear-gradient(135deg, #fff08b, var(--rex-gold));
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.34);
+      }
+
+      .rex-status {
+        display: inline-flex;
+        gap: 7px;
+        align-items: center;
+        margin-bottom: 17px;
+        color: #ffba7d;
+        border: 1px solid rgba(255, 186, 125, 0.28);
+        background: rgba(242, 121, 61, 0.11);
+      }
+
+      .rex-title {
+        margin: 0 0 7px;
+        font-size: clamp(36px, 7vw, 62px);
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      .rex-tagline {
+        margin: 0;
+        color: #ffba7d;
+        font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+        font-weight: 750;
+      }
+
+      .rex-divider {
+        width: 62px;
+        height: 4px;
+        margin: 16px auto 19px;
+        border-radius: 5px;
+        background: linear-gradient(90deg, var(--rex-green), var(--rex-gold), var(--rex-flame));
+      }
+
+      .rex-desc {
+        max-width: 640px;
+        margin: 0 0 25px;
+        color: var(--rex-muted);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+      .rex-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .rex-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 750;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .rex-btn:hover { transform: translateY(-2px); }
+
+      .rex-btn--primary {
+        color: #fff;
+        background: linear-gradient(135deg, var(--rex-flame), #c9341c);
+        box-shadow: 0 8px 24px rgba(255, 92, 46, 0.3);
+      }
+
+      .rex-btn--secondary {
+        color: var(--rex-text);
+        border: 1px solid var(--rex-border);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .rex-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 30px;
+        padding: 20px;
+        color: var(--rex-muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        border-bottom: 1px solid var(--rex-border);
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      .rex-strip span::before {
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        margin-right: 9px;
+        content: "";
+        border-radius: 50%;
+        background: var(--rex-gold);
+        box-shadow: 0 0 10px rgba(255, 212, 59, 0.6);
+      }
+
+      .rex-section { padding: 58px 0 66px; }
+      .rex-section .section-label { color: #ffba7d; border-color: rgba(255, 186, 125, 0.32); text-align: center; }
+
+      .rex-section-title {
+        margin-top: 8px;
+        color: var(--rex-text);
+        font-size: clamp(24px, 3.5vw, 36px);
+        font-weight: 850;
+        text-align: center;
+        letter-spacing: -0.025em;
+      }
+
+      .rex-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      .rex-card {
+        padding: 28px 24px;
+        border: 1px solid var(--rex-border);
+        border-radius: 20px;
+        background: var(--rex-surface);
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        transition: transform 0.22s ease, border-color 0.22s ease;
+      }
+
+      .rex-card:hover { transform: translateY(-4px); border-color: rgba(255, 186, 125, 0.38); }
+      .rex-card__icon { display: block; margin-bottom: 14px; font-size: 2rem; line-height: 1; }
+      .rex-card__title { margin-bottom: 8px; color: var(--rex-text); font-size: 1rem; font-weight: 780; }
+      .rex-card__desc { color: var(--rex-muted); font-size: 0.875rem; line-height: 1.65; }
+
+      .rex-info {
+        padding: 30px 24px;
+        border-top: 1px solid var(--rex-border);
+        border-bottom: 1px solid var(--rex-border);
+        background: rgba(242, 121, 61, 0.055);
+      }
+
+      .rex-info__inner { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px; text-align: center; }
+      .rex-info__label { margin: 0 0 4px; color: var(--rex-dim); font-size: 0.76rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+      .rex-info__value { margin: 0; color: var(--rex-text); font-size: 1rem; font-weight: 750; }
+      .rex-info__value a,
+      .rex-footer a { color: #ffba7d; }
+      .rex-footer { padding: 27px 20px; color: var(--rex-dim); font-size: 0.84rem; text-align: center; }
+      [dir="rtl"] .rex-strip span::before { margin-right: 0; margin-left: 9px; }
+
+      @media (max-width: 720px) {
+        .navbar__nav { display: none; }
+        .rex-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
+        </a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/rex-dragon-flight/index.html" data-i18n="nav_privacy">Privacy</a>
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch">
+            <select id="lang-select" class="lang-select" onchange="setLang(this.value)" aria-label="Language">
+              <option value="en">🇬🇧 EN</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇵🇹 PT</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="ru">🇷🇺 RU</option>
+              <option value="tr">🇹🇷 TR</option>
+              <option value="az">🇦🇿 AZ</option>
+              <option value="ar">🇸🇦 AR</option>
+              <option value="hi">🇮🇳 HI</option>
+              <option value="id">🇮🇩 ID</option>
+              <option value="zh">🇨🇳 ZH</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="rex-hero">
+      <div class="container rex-hero__inner">
+        <div class="rex-icon-wrap">
+          <img class="rex-icon" src="img/rex-dragon-flight-icon.svg" alt="REX: Dragon Flight" />
+          <span class="age-bubble" aria-label="Ages 6 and up">6+</span>
+        </div>
+        <div class="badge rex-status">● <span data-i18n="status">In Development</span></div>
+        <h1 class="rex-title">REX: Dragon Flight</h1>
+        <p class="rex-tagline" data-i18n="tagline">Fly. Burn. Adapt.</p>
+        <div class="rex-divider"></div>
+        <p class="rex-desc" data-i18n="description">
+          Guide Rex through ten changing worlds with a tap to fly and a hold to breathe fire. Melt ice, burn wood, trigger explosive chains, collect power-ups, and adapt when fire meets metal.
+        </p>
+        <div class="rex-actions">
+          <a href="mailto:info@biemtech.com" class="rex-btn rex-btn--primary" data-i18n="contact_btn">Contact us for updates →</a>
+          <a href="privacy/rex-dragon-flight/index.html" class="rex-btn rex-btn--secondary" data-i18n="privacy_btn">Privacy Policy</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="rex-strip">
+      <span data-i18n="strip_worlds">10 changing worlds</span>
+      <span data-i18n="strip_fire">Strategic fire</span>
+      <span data-i18n="strip_languages">12 languages</span>
+      <span data-i18n="strip_ages">Ages 6+ · All ages</span>
+    </div>
+
+    <section class="rex-section">
+      <div class="container">
+        <p class="section-label" data-i18n="features_label">Features</p>
+        <h2 class="rex-section-title" data-i18n="features_title">Every world changes how you fly</h2>
+        <div class="rex-grid">
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🐉</span>
+            <div class="rex-card__title" data-i18n="f1_title">One-Touch Flight</div>
+            <div class="rex-card__desc" data-i18n="f1_desc">Tap to flap and hold to breathe fire. Simple one-handed controls turn timing and fuel into a fast arcade challenge.</div>
+          </article>
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🔥</span>
+            <div class="rex-card__title" data-i18n="f2_title">Fire With Consequences</div>
+            <div class="rex-card__desc" data-i18n="f2_desc">Burn wood quickly, melt ice to widen gaps, ignite explosive chains, and save your fuel when metal blocks the flame.</div>
+          </article>
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🌋</span>
+            <div class="rex-card__title" data-i18n="f3_title">Ten Distinct Worlds</div>
+            <div class="rex-card__desc" data-i18n="f3_desc">Cross portals from volcanoes and crystal deserts to iron keeps, storm peaks, and the Void—each with its own look, music, and rules.</div>
+          </article>
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🛡️</span>
+            <div class="rex-card__title" data-i18n="f4_title">Three Power-Ups</div>
+            <div class="rex-card__desc" data-i18n="f4_desc">A shield absorbs one collision, mega flame grants five seconds of unlimited fire, and slow time gives you room to react.</div>
+          </article>
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🏆</span>
+            <div class="rex-card__title" data-i18n="f5_title">Perfect Runs and Stats</div>
+            <div class="rex-card__desc" data-i18n="f5_desc">Thread the center of each gap for perfect bonuses, build combos, chase your best score, and track games, burned obstacles, and discovered worlds.</div>
+          </article>
+          <article class="rex-card">
+            <span class="rex-card__icon" aria-hidden="true">🔒</span>
+            <div class="rex-card__title" data-i18n="f6_title">Private and Offline</div>
+            <div class="rex-card__desc" data-i18n="f6_desc">Play offline in 12 languages. No account, advertising, analytics, purchases, social features, or personal-data collection.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rex-info">
+      <div class="container rex-info__inner">
+        <div><p class="rex-info__label" data-i18n="meta_developer">Developer</p><p class="rex-info__value"><a href="index.html">BieMTech</a></p></div>
+        <div><p class="rex-info__label" data-i18n="meta_platform">Platform</p><p class="rex-info__value">Android</p></div>
+        <div><p class="rex-info__label" data-i18n="meta_status">Status</p><p class="rex-info__value" data-i18n="status">In Development</p></div>
+        <div><p class="rex-info__label" data-i18n="meta_category">Category</p><p class="rex-info__value" data-i18n="category">Arcade Game</p></div>
+        <div><p class="rex-info__label" data-i18n="meta_age">Audience</p><p class="rex-info__value" data-i18n="age">Ages 6+ · All ages</p></div>
+        <div><p class="rex-info__label" data-i18n="meta_contact">Contact</p><p class="rex-info__value"><a href="mailto:info@biemtech.com">info@biemtech.com</a></p></div>
+      </div>
+    </section>
+
+    <footer class="rex-footer">
+      &copy; 2026 BieMTech &nbsp;·&nbsp; <a href="index.html" data-i18n="footer_home">Home</a> &nbsp;·&nbsp;
+      <a href="privacy/rex-dragon-flight/index.html" data-i18n="privacy_btn">Privacy Policy</a>
+    </footer>
+
+    <script>
+      const I18N = {
+        en: { nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "In Development", tagline: "Fly. Burn. Adapt.", description: "Guide Rex through ten changing worlds with a tap to fly and a hold to breathe fire. Melt ice, burn wood, trigger explosive chains, collect power-ups, and adapt when fire meets metal.", contact_btn: "Contact us for updates →", privacy_btn: "Privacy Policy", strip_worlds: "10 changing worlds", strip_fire: "Strategic fire", strip_languages: "12 languages", strip_ages: "Ages 6+ · All ages", features_label: "Features", features_title: "Every world changes how you fly", f1_title: "One-Touch Flight", f1_desc: "Tap to flap and hold to breathe fire. Simple one-handed controls turn timing and fuel into a fast arcade challenge.", f2_title: "Fire With Consequences", f2_desc: "Burn wood quickly, melt ice to widen gaps, ignite explosive chains, and save your fuel when metal blocks the flame.", f3_title: "Ten Distinct Worlds", f3_desc: "Cross portals from volcanoes and crystal deserts to iron keeps, storm peaks, and the Void—each with its own look, music, and rules.", f4_title: "Three Power-Ups", f4_desc: "A shield absorbs one collision, mega flame grants five seconds of unlimited fire, and slow time gives you room to react.", f5_title: "Perfect Runs and Stats", f5_desc: "Thread the center of each gap for perfect bonuses, build combos, chase your best score, and track games, burned obstacles, and discovered worlds.", f6_title: "Private and Offline", f6_desc: "Play offline in 12 languages. No account, advertising, analytics, purchases, social features, or personal-data collection.", meta_developer: "Developer", meta_platform: "Platform", meta_status: "Status", meta_category: "Category", category: "Arcade Game", meta_age: "Audience", age: "Ages 6+ · All ages", meta_contact: "Contact", footer_home: "Home" },
+        es: { nav_about: "Nosotros", nav_apps: "Apps", nav_privacy: "Privacidad", status: "En desarrollo", tagline: "Vuela. Quema. Adáptate.", description: "Guía a Rex por diez mundos cambiantes: toca para volar y mantén pulsado para lanzar fuego. Derrite hielo, quema madera, provoca cadenas explosivas, recoge potenciadores y adáptate cuando el fuego choque con el metal.", contact_btn: "Contáctanos para recibir novedades →", privacy_btn: "Política de privacidad", strip_worlds: "10 mundos cambiantes", strip_fire: "Fuego estratégico", strip_languages: "12 idiomas", strip_ages: "A partir de 6 años · Todas las edades", features_label: "Características", features_title: "Cada mundo cambia tu forma de volar", f1_title: "Vuelo con un toque", f1_desc: "Toca para aletear y mantén pulsado para lanzar fuego. Los controles con una mano convierten el ritmo y el combustible en un reto arcade.", f2_title: "Fuego con consecuencias", f2_desc: "Quema madera, derrite hielo para ampliar huecos, enciende cadenas explosivas y ahorra combustible cuando el metal detenga la llama.", f3_title: "Diez mundos distintos", f3_desc: "Cruza portales desde volcanes y desiertos de cristal hasta fortalezas de hierro, picos de tormenta y el Vacío, cada uno con estética, música y reglas propias.", f4_title: "Tres potenciadores", f4_desc: "El escudo absorbe un choque, la megallama da cinco segundos de fuego ilimitado y el tiempo lento deja más margen para reaccionar.", f5_title: "Pasadas perfectas y estadísticas", f5_desc: "Pasa por el centro para ganar bonificaciones perfectas, crea combos, mejora tu récord y consulta partidas, obstáculos quemados y mundos descubiertos.", f6_title: "Privado y sin conexión", f6_desc: "Juega sin conexión en 12 idiomas. Sin cuenta, publicidad, analíticas, compras, funciones sociales ni recopilación de datos personales.", meta_developer: "Desarrollador", meta_platform: "Plataforma", meta_status: "Estado", meta_category: "Categoría", category: "Juego arcade", meta_age: "Público", age: "A partir de 6 años · Todas las edades", meta_contact: "Contacto", footer_home: "Inicio" },
+        pt: { nav_about: "Sobre", nav_apps: "Aplicativos", nav_privacy: "Privacidade", status: "Em desenvolvimento", tagline: "Voe. Queime. Adapte-se.", description: "Guie Rex por dez mundos em transformação: toque para voar e segure para cuspir fogo. Derreta gelo, queime madeira, provoque explosões em cadeia, colete poderes e adapte-se quando o fogo encontrar metal.", contact_btn: "Fale conosco para receber novidades →", privacy_btn: "Política de Privacidade", strip_worlds: "10 mundos em transformação", strip_fire: "Fogo estratégico", strip_languages: "12 idiomas", strip_ages: "A partir de 6 anos · Todas as idades", features_label: "Recursos", features_title: "Cada mundo muda a forma de voar", f1_title: "Voo com um toque", f1_desc: "Toque para bater as asas e segure para cuspir fogo. Controles com uma mão transformam ritmo e combustível em um desafio arcade veloz.", f2_title: "Fogo com consequências", f2_desc: "Queime madeira, derreta gelo para ampliar passagens, acenda explosões em cadeia e poupe combustível quando o metal bloquear a chama.", f3_title: "Dez mundos distintos", f3_desc: "Cruze portais de vulcões e desertos de cristal a fortalezas de ferro, picos de tempestade e o Vazio, cada um com visual, música e regras próprias.", f4_title: "Três poderes", f4_desc: "O escudo absorve uma colisão, a mega chama oferece cinco segundos de fogo ilimitado e o tempo lento dá espaço para reagir.", f5_title: "Passagens perfeitas e estatísticas", f5_desc: "Passe pelo centro para ganhar bônus perfeitos, faça combos, supere seu recorde e acompanhe partidas, obstáculos queimados e mundos descobertos.", f6_title: "Privado e offline", f6_desc: "Jogue offline em 12 idiomas. Sem conta, anúncios, análises, compras, recursos sociais ou coleta de dados pessoais.", meta_developer: "Desenvolvedor", meta_platform: "Plataforma", meta_status: "Status", meta_category: "Categoria", category: "Jogo arcade", meta_age: "Público", age: "A partir de 6 anos · Todas as idades", meta_contact: "Contato", footer_home: "Início" },
+        fr: { nav_about: "À propos", nav_apps: "Applications", nav_privacy: "Confidentialité", status: "En développement", tagline: "Vole. Brûle. Adapte-toi.", description: "Guidez Rex à travers dix mondes changeants : touchez pour voler et maintenez pour cracher du feu. Faites fondre la glace, brûlez le bois, déclenchez des explosions en chaîne, ramassez des bonus et adaptez-vous face au métal.", contact_btn: "Contactez-nous pour les nouveautés →", privacy_btn: "Politique de confidentialité", strip_worlds: "10 mondes changeants", strip_fire: "Feu stratégique", strip_languages: "12 langues", strip_ages: "Dès 6 ans · Tous âges", features_label: "Fonctionnalités", features_title: "Chaque monde change votre façon de voler", f1_title: "Vol à une touche", f1_desc: "Touchez pour battre des ailes et maintenez pour cracher du feu. Les commandes à une main transforment le rythme et le carburant en défi d'arcade.", f2_title: "Un feu qui compte", f2_desc: "Brûlez le bois, faites fondre la glace pour élargir les passages, déclenchez des chaînes explosives et économisez le carburant face au métal.", f3_title: "Dix mondes distincts", f3_desc: "Traversez des portails, des volcans et déserts de cristal aux forteresses de fer, pics orageux et au Vide, chacun avec son style, sa musique et ses règles.", f4_title: "Trois bonus", f4_desc: "Le bouclier absorbe une collision, la méga-flamme offre cinq secondes de feu illimité et le ralenti laisse le temps de réagir.", f5_title: "Passages parfaits et statistiques", f5_desc: "Visez le centre pour des bonus parfaits, créez des combos, battez votre record et suivez parties, obstacles brûlés et mondes découverts.", f6_title: "Privé et hors ligne", f6_desc: "Jouez hors ligne en 12 langues. Aucun compte, publicité, analyse, achat, fonction sociale ou collecte de données personnelles.", meta_developer: "Développeur", meta_platform: "Plateforme", meta_status: "Statut", meta_category: "Catégorie", category: "Jeu d'arcade", meta_age: "Public", age: "Dès 6 ans · Tous âges", meta_contact: "Contact", footer_home: "Accueil" },
+        de: { nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "In Entwicklung", tagline: "Flieg. Brenn. Pass dich an.", description: "Führe Rex durch zehn wechselnde Welten: Tippe zum Fliegen und halte gedrückt, um Feuer zu speien. Schmelze Eis, verbrenne Holz, löse Kettenexplosionen aus, sammle Power-ups und passe dich an Metall an.", contact_btn: "Für Neuigkeiten kontaktieren →", privacy_btn: "Datenschutzerklärung", strip_worlds: "10 wechselnde Welten", strip_fire: "Strategisches Feuer", strip_languages: "12 Sprachen", strip_ages: "Ab 6 Jahren · Für jedes Alter", features_label: "Funktionen", features_title: "Jede Welt verändert deinen Flug", f1_title: "Fliegen mit einer Berührung", f1_desc: "Tippe für einen Flügelschlag und halte für Feuer. Die Einhandsteuerung macht Timing und Treibstoff zu einer schnellen Arcade-Herausforderung.", f2_title: "Feuer mit Folgen", f2_desc: "Verbrenne Holz, schmelze Eis für größere Lücken, zünde Kettenexplosionen und spare Treibstoff, wenn Metall die Flamme stoppt.", f3_title: "Zehn eigene Welten", f3_desc: "Reise durch Portale von Vulkanen und Kristallwüsten zu Eisenfestungen, Sturmgipfeln und der Leere—jede mit eigener Optik, Musik und Regeln.", f4_title: "Drei Power-ups", f4_desc: "Der Schild fängt eine Kollision ab, die Megaflamme gibt fünf Sekunden unbegrenztes Feuer und Zeitlupe schafft Reaktionsraum.", f5_title: "Perfekte Flüge und Statistiken", f5_desc: "Fliege mittig durch Lücken für perfekte Boni, bilde Kombos, jage den Rekord und verfolge Spiele, verbrannte Hindernisse und entdeckte Welten.", f6_title: "Privat und offline", f6_desc: "Spiele offline in 12 Sprachen. Kein Konto, keine Werbung, Analyse, Käufe, sozialen Funktionen oder Sammlung persönlicher Daten.", meta_developer: "Entwickler", meta_platform: "Plattform", meta_status: "Status", meta_category: "Kategorie", category: "Arcade-Spiel", meta_age: "Zielgruppe", age: "Ab 6 Jahren · Für jedes Alter", meta_contact: "Kontakt", footer_home: "Startseite" },
+        ru: { nav_about: "О нас", nav_apps: "Приложения", nav_privacy: "Конфиденциальность", status: "В разработке", tagline: "Лети. Жги. Приспосабливайся.", description: "Проведите Рекса через десять меняющихся миров: касайтесь, чтобы лететь, и удерживайте, чтобы дышать огнём. Плавьте лёд, жгите дерево, запускайте цепные взрывы, собирайте усиления и меняйте тактику перед металлом.", contact_btn: "Связаться с нами для новостей →", privacy_btn: "Политика конфиденциальности", strip_worlds: "10 меняющихся миров", strip_fire: "Огонь как стратегия", strip_languages: "12 языков", strip_ages: "От 6 лет · Для всех возрастов", features_label: "Возможности", features_title: "Каждый мир меняет ваш полёт", f1_title: "Полёт одним касанием", f1_desc: "Коснитесь для взмаха и удерживайте для огня. Простое управление одной рукой превращает расчёт времени и топлива в динамичную аркаду.", f2_title: "Огонь имеет последствия", f2_desc: "Жгите дерево, плавьте лёд для широких проходов, запускайте цепные взрывы и берегите топливо, когда металл останавливает пламя.", f3_title: "Десять разных миров", f3_desc: "Проходите порталы от вулканов и хрустальных пустынь до железных крепостей, грозовых пиков и Пустоты—у каждого мира свои вид, музыка и правила.", f4_title: "Три усиления", f4_desc: "Щит поглощает одно столкновение, мегапламя даёт пять секунд бесконечного огня, а замедление времени помогает среагировать.", f5_title: "Идеальные пролёты и статистика", f5_desc: "Проходите через центр за идеальные бонусы, собирайте комбо, ставьте рекорд и следите за играми, сожжёнными препятствиями и открытыми мирами.", f6_title: "Приватно и офлайн", f6_desc: "Играйте офлайн на 12 языках. Без аккаунта, рекламы, аналитики, покупок, социальных функций и сбора личных данных.", meta_developer: "Разработчик", meta_platform: "Платформа", meta_status: "Статус", meta_category: "Категория", category: "Аркада", meta_age: "Аудитория", age: "От 6 лет · Для всех возрастов", meta_contact: "Контакт", footer_home: "Главная" },
+        tr: { nav_about: "Hakkımızda", nav_apps: "Uygulamalar", nav_privacy: "Gizlilik", status: "Geliştirme aşamasında", tagline: "Uç. Yak. Uyum sağla.", description: "Rex'i değişen on dünyada yönlendir: uçmak için dokun, ateş püskürtmek için basılı tut. Buzu erit, ahşabı yak, zincir patlamaları başlat, güçlendirmeleri topla ve metal karşısında taktiğini değiştir.", contact_btn: "Güncellemeler için bize ulaşın →", privacy_btn: "Gizlilik Politikası", strip_worlds: "Değişen 10 dünya", strip_fire: "Stratejik ateş", strip_languages: "12 dil", strip_ages: "6 yaş ve üzeri · Her yaş", features_label: "Özellikler", features_title: "Her dünya uçuşunu değiştirir", f1_title: "Tek dokunuşla uçuş", f1_desc: "Kanat çırpmak için dokun, ateş için basılı tut. Tek elle kontroller zamanlama ve yakıtı hızlı bir arcade mücadelesine dönüştürür.", f2_title: "Sonuçları olan ateş", f2_desc: "Ahşabı yak, geçitleri genişletmek için buzu erit, zincir patlamaları başlat ve metal alevi durdurduğunda yakıtını koru.", f3_title: "On farklı dünya", f3_desc: "Volkan ve kristal çöllerden demir kalelere, fırtına zirvelerine ve Boşluk'a uzanan portalları geç; her dünyanın görünümü, müziği ve kuralları farklıdır.", f4_title: "Üç güçlendirme", f4_desc: "Kalkan bir çarpışmayı emer, mega alev beş saniye sınırsız ateş verir, yavaş zaman ise tepki için alan açar.", f5_title: "Kusursuz geçişler ve istatistikler", f5_desc: "Kusursuz bonus için boşluğun ortasından geç, kombo yap, rekorunu kovala; oyunları, yakılan engelleri ve keşfedilen dünyaları izle.", f6_title: "Gizli ve çevrimdışı", f6_desc: "12 dilde çevrimdışı oyna. Hesap, reklam, analiz, satın alma, sosyal özellik veya kişisel veri toplama yok.", meta_developer: "Geliştirici", meta_platform: "Platform", meta_status: "Durum", meta_category: "Kategori", category: "Arcade Oyunu", meta_age: "Kitle", age: "6 yaş ve üzeri · Her yaş", meta_contact: "İletişim", footer_home: "Ana sayfa" },
+        az: { nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "Hazırlanır", tagline: "Uç. Yandır. Uyğunlaş.", description: "Rex-i dəyişən on dünyadan keçir: uçmaq üçün toxun, od püskürmək üçün basıb saxla. Buzu ərit, ağacı yandır, zəncirvari partlayışlar yarat, gücləndiricilər topla və metal qarşısında taktikanı dəyiş.", contact_btn: "Yeniliklər üçün bizimlə əlaqə saxlayın →", privacy_btn: "Məxfilik Siyasəti", strip_worlds: "Dəyişən 10 dünya", strip_fire: "Strateji od", strip_languages: "12 dil", strip_ages: "6 yaş və yuxarı · Bütün yaşlar", features_label: "Xüsusiyyətlər", features_title: "Hər dünya uçuş tərzini dəyişir", f1_title: "Bir toxunuşla uçuş", f1_desc: "Qanad çalmaq üçün toxun, od püskürmək üçün basıb saxla. Bir əllə idarəetmə zamanlama və yanacağı sürətli arkada sınağına çevirir.", f2_title: "Nəticəsi olan od", f2_desc: "Ağacı yandır, boşluğu böyütmək üçün buzu ərit, zəncirvari partlayışlar yarat və metal alovu saxlayanda yanacağı qoru.", f3_title: "On fərqli dünya", f3_desc: "Vulkan və kristal səhralardan dəmir qalalara, fırtına zirvələrinə və Boşluğa aparan portalları keç; hər dünyanın öz görünüşü, musiqisi və qaydası var.", f4_title: "Üç gücləndirici", f4_desc: "Qalxan bir toqquşmanı udur, meqa alov beş saniyə sonsuz od verir, yavaş zaman isə reaksiya üçün imkan yaradır.", f5_title: "Mükəmməl keçidlər və statistika", f5_desc: "Mükəmməl bonus üçün boşluğun mərkəzindən keç, kombolar qur, rekordunu yenilə; oyunları, yandırılmış maneələri və kəşf olunmuş dünyaları izlə.", f6_title: "Məxfi və oflayn", f6_desc: "12 dildə oflayn oyna. Hesab, reklam, analitika, satınalma, sosial funksiya və şəxsi məlumat toplanması yoxdur.", meta_developer: "Tərtibatçı", meta_platform: "Platforma", meta_status: "Status", meta_category: "Kateqoriya", category: "Arkada Oyunu", meta_age: "Auditoriya", age: "6 yaş və yuxarı · Bütün yaşlar", meta_contact: "Əlaqə", footer_home: "Ana səhifə" },
+        ar: { nav_about: "من نحن", nav_apps: "التطبيقات", nav_privacy: "الخصوصية", status: "قيد التطوير", tagline: "حلّق. أشعل. تكيّف.", description: "قد Rex عبر عشرة عوالم متغيرة: المس للطيران واضغط مطولاً لنفث النار. أذب الجليد، وأحرق الخشب، وأطلق انفجارات متسلسلة، واجمع التعزيزات، وغيّر خطتك أمام المعدن.", contact_btn: "تواصل معنا للحصول على التحديثات ←", privacy_btn: "سياسة الخصوصية", strip_worlds: "10 عوالم متغيرة", strip_fire: "نار استراتيجية", strip_languages: "12 لغة", strip_ages: "من 6 سنوات · جميع الأعمار", features_label: "الميزات", features_title: "كل عالم يغيّر طريقة طيرانك", f1_title: "طيران بلمسة واحدة", f1_desc: "المس لرفرفة الجناحين واضغط مطولاً لنفث النار. تحوّل أدوات التحكم بيد واحدة التوقيت والوقود إلى تحدٍ سريع.", f2_title: "نار لها عواقب", f2_desc: "أحرق الخشب، وأذب الجليد لتوسيع الممرات، وأشعل الانفجارات المتسلسلة، ووفر الوقود عندما يوقف المعدن اللهب.", f3_title: "عشرة عوالم مميزة", f3_desc: "اعبر البوابات من البراكين والصحارى البلورية إلى الحصون الحديدية وقمم العواصف والفراغ؛ ولكل عالم مظهره وموسيقاه وقواعده.", f4_title: "ثلاثة تعزيزات", f4_desc: "يمتص الدرع اصطداماً واحداً، وتمنح الشعلة الخارقة خمس ثوانٍ من النار غير المحدودة، ويمنحك إبطاء الوقت فرصة للرد.", f5_title: "مرور مثالي وإحصاءات", f5_desc: "اعبر مركز الفجوة للمكافآت المثالية، وابنِ السلاسل، وحطم رقمك القياسي، وتابع الجولات والعوائق المحروقة والعوالم المكتشفة.", f6_title: "خاص ودون اتصال", f6_desc: "العب دون اتصال بـ12 لغة. لا حسابات أو إعلانات أو تحليلات أو مشتريات أو ميزات اجتماعية أو جمع بيانات شخصية.", meta_developer: "المطور", meta_platform: "المنصة", meta_status: "الحالة", meta_category: "الفئة", category: "لعبة أركيد", meta_age: "الجمهور", age: "من 6 سنوات · جميع الأعمار", meta_contact: "التواصل", footer_home: "الرئيسية" },
+        hi: { nav_about: "हमारे बारे में", nav_apps: "ऐप्स", nav_privacy: "गोपनीयता", status: "विकासाधीन", tagline: "उड़ो। जलाओ। ढल जाओ।", description: "Rex को दस बदलती दुनियाओं में ले जाएँ: उड़ने के लिए टैप करें और आग उगलने के लिए दबाए रखें। बर्फ पिघलाएँ, लकड़ी जलाएँ, विस्फोटों की श्रृंखला बनाएँ, पावर-अप लें और धातु के सामने रणनीति बदलें।", contact_btn: "अपडेट के लिए संपर्क करें →", privacy_btn: "गोपनीयता नीति", strip_worlds: "10 बदलती दुनियाएँ", strip_fire: "रणनीतिक आग", strip_languages: "12 भाषाएँ", strip_ages: "6+ वर्ष · सभी आयु", features_label: "विशेषताएँ", features_title: "हर दुनिया उड़ने का ढंग बदलती है", f1_title: "एक टैप में उड़ान", f1_desc: "पंख फड़फड़ाने के लिए टैप करें और आग के लिए दबाए रखें। एक हाथ के नियंत्रण समय और ईंधन को तेज़ आर्केड चुनौती बनाते हैं।", f2_title: "असर डालने वाली आग", f2_desc: "लकड़ी जलाएँ, रास्ता चौड़ा करने के लिए बर्फ पिघलाएँ, विस्फोट श्रृंखला शुरू करें और धातु के सामने ईंधन बचाएँ।", f3_title: "दस अलग दुनियाएँ", f3_desc: "ज्वालामुखी और क्रिस्टल रेगिस्तान से लोहे के किले, तूफानी चोटियाँ और शून्य तक पोर्टल पार करें; हर दुनिया का रूप, संगीत और नियम अलग है।", f4_title: "तीन पावर-अप", f4_desc: "ढाल एक टक्कर रोकती है, मेगा फ्लेम पाँच सेकंड असीमित आग देती है और धीमा समय प्रतिक्रिया का मौका देता है।", f5_title: "परफेक्ट उड़ान और आँकड़े", f5_desc: "परफेक्ट बोनस के लिए रास्ते के बीच से निकलें, कॉम्बो बनाएँ, रिकॉर्ड तोड़ें और खेल, जली बाधाएँ तथा खोजी दुनियाएँ देखें।", f6_title: "निजी और ऑफलाइन", f6_desc: "12 भाषाओं में ऑफलाइन खेलें। कोई खाता, विज्ञापन, एनालिटिक्स, खरीद, सामाजिक सुविधा या व्यक्तिगत डेटा संग्रह नहीं।", meta_developer: "डेवलपर", meta_platform: "प्लेटफ़ॉर्म", meta_status: "स्थिति", meta_category: "श्रेणी", category: "आर्केड गेम", meta_age: "दर्शक", age: "6+ वर्ष · सभी आयु", meta_contact: "संपर्क", footer_home: "होम" },
+        id: { nav_about: "Tentang", nav_apps: "Aplikasi", nav_privacy: "Privasi", status: "Dalam pengembangan", tagline: "Terbang. Bakar. Beradaptasi.", description: "Pandu Rex melewati sepuluh dunia yang berubah: ketuk untuk terbang dan tahan untuk menyemburkan api. Lelehkan es, bakar kayu, picu ledakan berantai, kumpulkan power-up, dan ubah strategi saat menghadapi logam.", contact_btn: "Hubungi kami untuk pembaruan →", privacy_btn: "Kebijakan Privasi", strip_worlds: "10 dunia yang berubah", strip_fire: "Api strategis", strip_languages: "12 bahasa", strip_ages: "Usia 6+ · Semua umur", features_label: "Fitur", features_title: "Setiap dunia mengubah cara terbangmu", f1_title: "Terbang dengan satu sentuhan", f1_desc: "Ketuk untuk mengepak dan tahan untuk menyemburkan api. Kontrol satu tangan mengubah waktu dan bahan bakar menjadi tantangan arcade cepat.", f2_title: "Api yang berdampak", f2_desc: "Bakar kayu, lelehkan es untuk memperlebar celah, picu ledakan berantai, dan hemat bahan bakar saat logam menahan api.", f3_title: "Sepuluh dunia berbeda", f3_desc: "Lewati portal dari gunung berapi dan gurun kristal ke benteng besi, puncak badai, dan Void; masing-masing memiliki tampilan, musik, dan aturan sendiri.", f4_title: "Tiga power-up", f4_desc: "Perisai menahan satu tabrakan, mega flame memberi lima detik api tanpa batas, dan slow time memberimu waktu untuk bereaksi.", f5_title: "Lintasan sempurna dan statistik", f5_desc: "Lewati tengah celah untuk bonus sempurna, bangun kombo, kejar skor terbaik, dan lacak permainan, rintangan terbakar, serta dunia yang ditemukan.", f6_title: "Privat dan offline", f6_desc: "Main offline dalam 12 bahasa. Tanpa akun, iklan, analitik, pembelian, fitur sosial, atau pengumpulan data pribadi.", meta_developer: "Pengembang", meta_platform: "Platform", meta_status: "Status", meta_category: "Kategori", category: "Game Arkade", meta_age: "Audiens", age: "Usia 6+ · Semua umur", meta_contact: "Kontak", footer_home: "Beranda" },
+        zh: { nav_about: "关于我们", nav_apps: "应用", nav_privacy: "隐私", status: "开发中", tagline: "飞翔。燃烧。适应。", description: "带领 Rex 穿越十个不断变化的世界：轻触飞行，长按喷火。融化冰块、燃烧木头、触发连锁爆炸、收集强化道具，并在面对金属时调整策略。", contact_btn: "联系我们获取更新 →", privacy_btn: "隐私政策", strip_worlds: "10个变化世界", strip_fire: "策略性火焰", strip_languages: "12种语言", strip_ages: "6岁以上 · 全年龄", features_label: "特色", features_title: "每个世界都会改变飞行方式", f1_title: "单触飞行", f1_desc: "轻触扇动翅膀，长按喷火。单手操作让时机和燃料成为快节奏街机挑战。", f2_title: "影响路线的火焰", f2_desc: "燃烧木头、融冰扩大通道、点燃连锁爆炸，并在金属挡住火焰时节省燃料。", f3_title: "十个独特世界", f3_desc: "穿过传送门，从火山和水晶沙漠前往钢铁要塞、风暴之巅与虚空；每个世界都有自己的画面、音乐和规则。", f4_title: "三种强化道具", f4_desc: "护盾可抵挡一次碰撞，超级火焰提供五秒无限燃料，时间减速让你有更多反应空间。", f5_title: "完美穿越与统计", f5_desc: "从通道中心穿过获得完美奖励，建立连击、刷新纪录，并追踪场次、烧毁障碍与发现的世界。", f6_title: "私密且离线", f6_desc: "支持12种语言离线游玩。无账号、广告、分析、购买、社交功能或个人数据收集。", meta_developer: "开发者", meta_platform: "平台", meta_status: "状态", meta_category: "类别", category: "街机游戏", meta_age: "适合人群", age: "6岁以上 · 全年龄", meta_contact: "联系", footer_home: "首页" }
+      };
+
+      function applyLang(lang) {
+        const dict = I18N[lang] || I18N.en;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (dict[key] !== undefined) element.textContent = dict[key];
+        });
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.getElementById("lang-select").value = lang;
+        document.querySelector(".age-bubble").setAttribute("aria-label", dict.age);
+      }
+
+      function setLang(lang) {
+        if (!I18N[lang]) lang = "en";
+        try { localStorage.setItem("site_lang", lang); } catch (_) {}
+        applyLang(lang);
+      }
+
+      (function initLanguage() {
+        let saved = "";
+        try { saved = localStorage.getItem("site_lang") || ""; } catch (_) {}
+        const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
+        applyLang(I18N[saved] ? saved : I18N[browserLang] ? browserLang : "en");
+      })();
+    </script>
+  </body>
+</html>
