@@ -1232,6 +1232,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(242, 121, 61, 0.3);
 }
 
+.app-card__icon.zuzu-bloomflight {
+  background: linear-gradient(135deg, #8fd9a8 0%, #ffc93c 100%);
+  box-shadow: 0 8px 24px rgba(255, 201, 60, 0.28);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

@@ -116,6 +116,8 @@ const I18N = {
       "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
     rex_desc:
       "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. A fully offline arcade game for ages 6 and up.",
+    zuzu_desc:
+      "Guide Zuzu through six changing gardens: tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase high scores. A fully offline arcade game recommended for ages 6+.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -260,6 +262,8 @@ const I18N = {
       "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
     rex_desc:
       "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. 6 yaş və yuxarı üçün tamamilə oflayn arkada oyunu.",
+    zuzu_desc:
+      "Zuzunu dəyişən altı bağdan keçir: uçmaq üçün toxun, havada qalmaq üçün basıb saxla, çiçəkləri aç, nektarı idarə et, gücləndiricilər topla və rekord qazan. 6+ yaş üçün tövsiyə olunan tam oflayn arkada oyunu.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -402,6 +406,8 @@ const I18N = {
       "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
     rex_desc:
       "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Полностью офлайн-аркада для игроков от 6 лет.",
+    zuzu_desc:
+      "Проведите Зузу через шесть меняющихся садов: летайте, зависайте, раскрывайте цветы, следите за нектаром, собирайте усиления и ставьте рекорды. Полностью офлайн-аркада, рекомендованная с 6 лет.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -545,6 +551,8 @@ const I18N = {
       "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
     rex_desc:
       "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. 6 yaş ve üzeri için tamamen çevrimdışı bir arcade oyunu.",
+    zuzu_desc:
+      "Zuzu'yu değişen altı bahçede yönlendir: uç, havada kal, çiçekleri aç, nektarı yönet, güçlendirmeleri topla ve rekor kır. 6+ yaş için önerilen tamamen çevrimdışı bir arcade oyunu.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -689,6 +697,8 @@ const I18N = {
       "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
     rex_desc:
       "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Ein vollständig offline spielbares Arcade-Spiel ab 6 Jahren.",
+    zuzu_desc:
+      "Führe Zuzu durch sechs wechselnde Gärten: fliege, schwebe, öffne Blüten, verwalte Nektar, sammle Power-ups und jage Rekorde. Ein vollständig offline spielbares Arcade-Spiel, empfohlen ab 6 Jahren.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -836,6 +846,8 @@ const I18N = {
       "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
     rex_desc:
       "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Un jeu d'arcade entièrement hors ligne dès 6 ans.",
+    zuzu_desc:
+      "Guidez Zuzu dans six jardins changeants : volez, planez, faites éclore les fleurs, gérez le nectar, ramassez des bonus et visez des records. Un jeu d'arcade entièrement hors ligne recommandé dès 6 ans.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -982,6 +994,8 @@ const I18N = {
       "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
     rex_desc:
       "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. Un juego arcade totalmente sin conexión para mayores de 6 años.",
+    zuzu_desc:
+      "Guía a Zuzu por seis jardines cambiantes: vuela, flota, abre flores, gestiona el néctar, recoge potenciadores y busca récords. Un juego arcade totalmente sin conexión recomendado para mayores de 6 años.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1128,6 +1142,8 @@ const I18N = {
       "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
     rex_desc:
       "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. Um jogo arcade totalmente offline para maiores de 6 anos.",
+    zuzu_desc:
+      "Guie Zuzu por seis jardins em transformação: voe, paire, abra flores, gerencie o néctar, colete poderes e busque recordes. Um jogo arcade totalmente offline recomendado para maiores de 6 anos.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1272,6 +1288,8 @@ const I18N = {
       "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
     rex_desc:
       "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Un gioco arcade completamente offline dai 6 anni in su.",
+    zuzu_desc:
+      "Guida Zuzu attraverso sei giardini mutevoli: vola, resta sospeso, fai sbocciare i fiori, gestisci il nettare, raccogli potenziamenti e insegui nuovi record. Un gioco arcade offline consigliato dai 6 anni.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1410,6 +1428,8 @@ const I18N = {
       "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
     rex_desc:
       "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. لعبة أركيد تعمل دون اتصال ومناسبة للأعمار من 6 سنوات فما فوق.",
+    zuzu_desc:
+      "قد زوزو عبر ست حدائق متغيرة: حلّق، وابق في الهواء، وافتح الأزهار، وأدر الرحيق، واجمع التعزيزات، وحقق أرقاماً جديدة. لعبة أركيد دون اتصال موصى بها لعمر 6+.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1545,6 +1565,8 @@ const I18N = {
       "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
     rex_desc:
       "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。适合6岁及以上玩家的完全离线街机游戏。",
+    zuzu_desc:
+      "带领 Zuzu 穿越六座变化花园：飞行、悬停、让花朵绽放、管理花蜜、收集强化道具并挑战高分。一款建议6岁以上游玩的完全离线街机游戏。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1686,6 +1708,8 @@ const I18N = {
       "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
     rex_desc:
       "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。6歳以上向けの完全オフライン・アーケードゲームです。",
+    zuzu_desc:
+      "Zuzuと6つの変化する庭を進もう。タップで飛び、長押しでホバリングし、花を咲かせ、蜜を管理し、パワーアップを集めてハイスコアに挑戦。6歳以上推奨の完全オフライン・アーケードゲームです。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",
