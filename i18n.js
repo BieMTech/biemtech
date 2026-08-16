@@ -118,6 +118,8 @@ const I18N = {
       "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. A fully offline arcade game for ages 6 and up.",
     zuzu_desc:
       "Guide Zuzu through six changing gardens: tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase high scores. A fully offline arcade game recommended for ages 6+.",
+    word_wheel_desc:
+      "Connect letters, find words, and unlock 50 collectible worlds across more than 60,000 puzzles in 26 languages. A private, offline word game recommended for ages 12+.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -264,6 +266,8 @@ const I18N = {
       "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. 6 yaş və yuxarı üçün tamamilə oflayn arkada oyunu.",
     zuzu_desc:
       "Zuzunu dəyişən altı bağdan keçir: uçmaq üçün toxun, havada qalmaq üçün basıb saxla, çiçəkləri aç, nektarı idarə et, gücləndiricilər topla və rekord qazan. 6+ yaş üçün tövsiyə olunan tam oflayn arkada oyunu.",
+    word_wheel_desc:
+      "Hərfləri birləşdir, sözləri tap və 26 dildə 60 000-dən çox tapmacada 50 kolleksiya dünyasını aç. 12+ yaş üçün tövsiyə olunan məxfi, oflayn söz oyunu.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -408,6 +412,8 @@ const I18N = {
       "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Полностью офлайн-аркада для игроков от 6 лет.",
     zuzu_desc:
       "Проведите Зузу через шесть меняющихся садов: летайте, зависайте, раскрывайте цветы, следите за нектаром, собирайте усиления и ставьте рекорды. Полностью офлайн-аркада, рекомендованная с 6 лет.",
+    word_wheel_desc:
+      "Соединяйте буквы, находите слова и открывайте 50 коллекционных миров в более чем 60 000 головоломок на 26 языках. Приватная офлайн-игра, рекомендованная с 12 лет.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -553,6 +559,8 @@ const I18N = {
       "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. 6 yaş ve üzeri için tamamen çevrimdışı bir arcade oyunu.",
     zuzu_desc:
       "Zuzu'yu değişen altı bahçede yönlendir: uç, havada kal, çiçekleri aç, nektarı yönet, güçlendirmeleri topla ve rekor kır. 6+ yaş için önerilen tamamen çevrimdışı bir arcade oyunu.",
+    word_wheel_desc:
+      "Harfleri birleştir, kelimeleri bul ve 26 dilde 60.000'den fazla bulmacada 50 koleksiyonluk dünyayı aç. 12+ yaş için önerilen gizli, çevrimdışı kelime oyunu.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -699,6 +707,8 @@ const I18N = {
       "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Ein vollständig offline spielbares Arcade-Spiel ab 6 Jahren.",
     zuzu_desc:
       "Führe Zuzu durch sechs wechselnde Gärten: fliege, schwebe, öffne Blüten, verwalte Nektar, sammle Power-ups und jage Rekorde. Ein vollständig offline spielbares Arcade-Spiel, empfohlen ab 6 Jahren.",
+    word_wheel_desc:
+      "Verbinde Buchstaben, finde Wörter und schalte 50 sammelbare Welten in über 60.000 Rätseln und 26 Sprachen frei. Ein privates Offline-Wortspiel, empfohlen ab 12 Jahren.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -848,6 +858,8 @@ const I18N = {
       "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Un jeu d'arcade entièrement hors ligne dès 6 ans.",
     zuzu_desc:
       "Guidez Zuzu dans six jardins changeants : volez, planez, faites éclore les fleurs, gérez le nectar, ramassez des bonus et visez des records. Un jeu d'arcade entièrement hors ligne recommandé dès 6 ans.",
+    word_wheel_desc:
+      "Reliez les lettres, trouvez des mots et débloquez 50 mondes à collectionner dans plus de 60 000 énigmes en 26 langues. Un jeu de mots privé et hors ligne recommandé dès 12 ans.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -996,6 +1008,8 @@ const I18N = {
       "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. Un juego arcade totalmente sin conexión para mayores de 6 años.",
     zuzu_desc:
       "Guía a Zuzu por seis jardines cambiantes: vuela, flota, abre flores, gestiona el néctar, recoge potenciadores y busca récords. Un juego arcade totalmente sin conexión recomendado para mayores de 6 años.",
+    word_wheel_desc:
+      "Conecta letras, encuentra palabras y desbloquea 50 mundos coleccionables en más de 60.000 puzles y 26 idiomas. Un juego de palabras privado y sin conexión recomendado para mayores de 12 años.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1144,6 +1158,8 @@ const I18N = {
       "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. Um jogo arcade totalmente offline para maiores de 6 anos.",
     zuzu_desc:
       "Guie Zuzu por seis jardins em transformação: voe, paire, abra flores, gerencie o néctar, colete poderes e busque recordes. Um jogo arcade totalmente offline recomendado para maiores de 6 anos.",
+    word_wheel_desc:
+      "Ligue letras, encontre palavras e desbloqueie 50 mundos colecionáveis em mais de 60.000 desafios e 26 idiomas. Um jogo de palavras privado e offline recomendado para maiores de 12 anos.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1290,6 +1306,8 @@ const I18N = {
       "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Un gioco arcade completamente offline dai 6 anni in su.",
     zuzu_desc:
       "Guida Zuzu attraverso sei giardini mutevoli: vola, resta sospeso, fai sbocciare i fiori, gestisci il nettare, raccogli potenziamenti e insegui nuovi record. Un gioco arcade offline consigliato dai 6 anni.",
+    word_wheel_desc:
+      "Collega le lettere, trova le parole e sblocca 50 mondi da collezionare in oltre 60.000 rompicapi e 26 lingue. Un gioco di parole privato e offline consigliato dai 12 anni.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1430,6 +1448,8 @@ const I18N = {
       "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. لعبة أركيد تعمل دون اتصال ومناسبة للأعمار من 6 سنوات فما فوق.",
     zuzu_desc:
       "قد زوزو عبر ست حدائق متغيرة: حلّق، وابق في الهواء، وافتح الأزهار، وأدر الرحيق، واجمع التعزيزات، وحقق أرقاماً جديدة. لعبة أركيد دون اتصال موصى بها لعمر 6+.",
+    word_wheel_desc:
+      "صِل الحروف، واعثر على الكلمات، وافتح 50 عالماً قابلاً للجمع عبر أكثر من 60,000 لغز بـ26 لغة. لعبة كلمات خاصة دون اتصال موصى بها لعمر 12+.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1567,6 +1587,8 @@ const I18N = {
       "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。适合6岁及以上玩家的完全离线街机游戏。",
     zuzu_desc:
       "带领 Zuzu 穿越六座变化花园：飞行、悬停、让花朵绽放、管理花蜜、收集强化道具并挑战高分。一款建议6岁以上游玩的完全离线街机游戏。",
+    word_wheel_desc:
+      "连接字母、找出单词，并在26种语言的60,000多个谜题中解锁50个可收藏世界。一款建议12岁以上游玩的私密离线文字游戏。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1710,6 +1732,8 @@ const I18N = {
       "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。6歳以上向けの完全オフライン・アーケードゲームです。",
     zuzu_desc:
       "Zuzuと6つの変化する庭を進もう。タップで飛び、長押しでホバリングし、花を咲かせ、蜜を管理し、パワーアップを集めてハイスコアに挑戦。6歳以上推奨の完全オフライン・アーケードゲームです。",
+    word_wheel_desc:
+      "文字をつなぎ、言葉を見つけ、26言語・60,000以上のパズルで50のコレクション世界を開こう。12歳以上推奨のプライベートなオフラインワードゲームです。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",

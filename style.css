@@ -1237,6 +1237,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(255, 201, 60, 0.28);
 }
 
+.app-card__icon.word-wheel {
+  background: linear-gradient(135deg, #0b8c75 0%, #f7bd3b 100%);
+  box-shadow: 0 8px 24px rgba(11, 140, 117, 0.3);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

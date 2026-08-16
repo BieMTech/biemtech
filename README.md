@@ -12,6 +12,8 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `arrows-escape.html`      | Arrows Escape app page                           |
 | `snake-3d.html`           | Snake 3D app page                                |
 | `rex-dragon-flight.html`  | REX: Dragon Flight app page                      |
+| `zuzu-bloomflight.html`   | Zuzu: Bloomflight app page                       |
+| `word-wheel.html`         | Word Wheel app page                              |
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
@@ -37,6 +39,13 @@ A fully offline one-touch dragon arcade game for ages 6 and up, currently in dev
 
 - Package: `com.biemtech.rex`
 - Privacy Policy: https://biemtech.com/privacy/rex-dragon-flight/
+
+### Word Wheel
+
+A private, offline multilingual word puzzle with more than 60,000 levels and 50 collectible worlds, recommended for ages 12 and up. Currently in development.
+
+- Languages: 26 playable language packs
+- Privacy Policy: https://biemtech.com/privacy/word-wheel/
 
 ## Contact
 

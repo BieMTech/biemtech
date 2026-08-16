@@ -552,6 +552,35 @@
               >
             </div>
           </div>
+
+          <!-- Word Wheel -->
+          <div
+            class="app-card"
+            onclick="window.location = 'word-wheel.html'"
+            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'word-wheel.html'; }"
+            role="link"
+            tabindex="0"
+            style="cursor: pointer"
+          >
+            <div class="app-card__top">
+              <div class="app-card__icon word-wheel">
+                <img src="img/word-wheel-icon.png" alt="Word Wheel" />
+              </div>
+              <div class="app-card__arrow">→</div>
+            </div>
+            <div class="app-card__name">Word Wheel</div>
+            <p class="app-card__desc" data-i18n="word_wheel_desc">
+              Connect letters, find words, and unlock 50 collectible worlds
+              across more than 60,000 puzzles in 26 languages. A private,
+              offline word game recommended for ages 12+.
+            </p>
+            <div class="app-card__footer">
+              <span class="chip" data-i18n="chip_puzzle">Puzzle Game</span>
+              <span class="chip chip-soon" data-i18n="chip_dev"
+                >In Development</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>

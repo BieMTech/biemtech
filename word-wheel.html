@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Wheel — BieMTech</title>
+    <meta
+      name="description"
+      content="Word Wheel is a thoughtful multilingual word puzzle with 60,000+ levels, collectible worlds, and private offline play. Recommended for ages 12+."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Word Wheel — BieMTech" />
+    <meta
+      property="og:description"
+      content="Connect letters, uncover words, and unlock beautiful worlds. A private multilingual word puzzle recommended for ages 12+."
+    />
+    <meta property="og:url" content="https://biemtech.com/word-wheel.html" />
+    <meta property="og:image" content="https://biemtech.com/img/word-wheel-og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Word Wheel — BieMTech" />
+    <meta name="twitter:description" content="Spin letters. Find words. Unlock worlds. Recommended for ages 12+." />
+    <meta name="twitter:image" content="https://biemtech.com/img/word-wheel-og.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/word-wheel-icon.png" />
+    <style>
+      :root {
+        --wheel-emerald: #0b8c75;
+        --wheel-jade: #39c6a6;
+        --wheel-gold: #f7bd3b;
+        --wheel-cream: #fff1c7;
+        --wheel-coral: #ef815e;
+        --wheel-ink: #071c2d;
+        --wheel-deep: #04131f;
+        --wheel-text: #fff9e9;
+        --wheel-muted: #c8ded9;
+        --wheel-dim: #89aaa7;
+        --wheel-border: rgba(247, 189, 59, 0.2);
+      }
+
+      body {
+        color: var(--wheel-text);
+        background:
+          radial-gradient(circle at 10% 6%, rgba(11, 140, 117, 0.28), transparent 31rem),
+          radial-gradient(circle at 92% 42%, rgba(239, 129, 94, 0.15), transparent 27rem),
+          linear-gradient(180deg, #08263a, var(--wheel-ink) 58%, var(--wheel-deep));
+      }
+
+      .navbar { background: rgba(4, 19, 31, 0.9); border-color: var(--wheel-border); }
+      .navbar__nav a, .navbar__actions { color: var(--wheel-muted); }
+      .navbar__nav a:hover, .navbar__nav a.active { color: var(--wheel-text); }
+      .lang-select { color: var(--wheel-text); color-scheme: dark; border-color: var(--wheel-border); background: rgba(255,255,255,.07); }
+      .lang-select option { color: var(--wheel-text); background: #082033; }
+
+      .wheel-hero { position: relative; overflow: hidden; padding: 64px 24px 72px; border-bottom: 1px solid var(--wheel-border); }
+      .wheel-hero::before, .wheel-hero::after { position: absolute; z-index: -1; width: 30rem; height: 30rem; content: ""; border-radius: 50%; filter: blur(2px); }
+      .wheel-hero::before { top: -23rem; left: 48%; background: rgba(57,198,166,.2); transform: translateX(-50%); }
+      .wheel-hero::after { right: -22rem; bottom: -23rem; background: rgba(247,189,59,.13); }
+      .wheel-hero__inner { display: grid; grid-template-columns: minmax(280px, .86fr) minmax(420px, 1.14fr); align-items: center; gap: clamp(34px, 5vw, 72px); }
+      .wheel-hero__content { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+      .wheel-icon-wrap { position: relative; margin-bottom: 22px; }
+      .wheel-icon { display: block; width: 104px; height: 104px; border: 1px solid rgba(255,255,255,.24); border-radius: 24px; box-shadow: 0 18px 44px rgba(0,0,0,.38), 0 0 38px rgba(57,198,166,.19); }
+      .age-bubble { position: absolute; right: -12px; bottom: -9px; display: grid; direction: ltr; width: 46px; height: 46px; place-items: center; color: #352301; font-size: .82rem; font-weight: 900; border: 3px solid var(--wheel-ink); border-radius: 50%; background: linear-gradient(135deg, var(--wheel-cream), var(--wheel-gold)); box-shadow: 0 8px 20px rgba(0,0,0,.36); }
+      .wheel-status { display: inline-flex; gap: 7px; align-items: center; margin-bottom: 17px; color: var(--wheel-cream); border: 1px solid rgba(247,189,59,.3); background: rgba(247,189,59,.09); }
+      .wheel-title { margin: 0 0 7px; font-size: clamp(39px, 7vw, 66px); font-weight: 900; line-height: 1; letter-spacing: -.055em; }
+      .wheel-tagline { margin: 0; color: var(--wheel-gold); font-size: clamp(1.05rem, 2.6vw, 1.4rem); font-weight: 760; }
+      .wheel-divider { width: 76px; height: 4px; margin: 16px 0 19px; border-radius: 5px; background: linear-gradient(90deg, var(--wheel-jade), var(--wheel-gold), var(--wheel-coral)); }
+      .wheel-desc { max-width: 680px; margin: 0 0 25px; color: var(--wheel-muted); font-size: 15px; line-height: 1.75; }
+      .wheel-actions { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 12px; }
+      .wheel-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 999px; font-size: .92rem; font-weight: 750; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+      .wheel-btn:hover { transform: translateY(-2px); }
+      .wheel-btn--primary { color: #302101; background: linear-gradient(135deg, var(--wheel-cream), var(--wheel-gold)); box-shadow: 0 8px 24px rgba(247,189,59,.24); }
+      .wheel-btn--secondary { color: var(--wheel-text); border: 1px solid var(--wheel-border); background: rgba(255,255,255,.06); }
+      .wheel-artwork { position: relative; margin: 0; }
+      .wheel-artwork::before { position: absolute; z-index: -1; inset: 9% 5% -6%; content: ""; border-radius: 34px; background: rgba(57,198,166,.2); filter: blur(34px); }
+      .wheel-artwork img { display: block; width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; border: 1px solid rgba(255,255,255,.2); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.44), inset 0 1px 0 rgba(255,255,255,.12); }
+
+      .wheel-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 30px; padding: 20px; color: var(--wheel-muted); font-size: .88rem; font-weight: 700; border-bottom: 1px solid var(--wheel-border); background: rgba(255,255,255,.025); }
+      .wheel-strip span::before { display: inline-block; width: 7px; height: 7px; margin-right: 9px; content: ""; border-radius: 50%; background: var(--wheel-gold); box-shadow: 0 0 10px rgba(247,189,59,.65); }
+      .wheel-section { padding: 58px 0 66px; }
+      .wheel-section .section-label { color: var(--wheel-gold); border-color: rgba(247,189,59,.3); text-align: center; }
+      .wheel-section-title { margin-top: 8px; color: var(--wheel-text); font-size: clamp(24px, 3.5vw, 36px); font-weight: 850; text-align: center; letter-spacing: -.025em; }
+      .wheel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 16px; margin-top: 40px; }
+      .wheel-card { padding: 28px 24px; border: 1px solid var(--wheel-border); border-radius: 20px; background: rgba(8,38,58,.9); box-shadow: 0 12px 34px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.05); transition: transform .22s ease, border-color .22s ease; }
+      .wheel-card:hover { transform: translateY(-4px); border-color: rgba(247,189,59,.42); }
+      .wheel-card__icon { display: block; margin-bottom: 14px; font-size: 2rem; line-height: 1; }
+      .wheel-card__title { margin-bottom: 8px; color: var(--wheel-text); font-size: 1rem; font-weight: 780; }
+      .wheel-card__desc { color: var(--wheel-muted); font-size: .875rem; line-height: 1.65; }
+      .wheel-info { padding: 30px 24px; border-top: 1px solid var(--wheel-border); border-bottom: 1px solid var(--wheel-border); background: rgba(11,140,117,.08); }
+      .wheel-info__inner { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px; text-align: center; }
+      .wheel-info__label { margin: 0 0 4px; color: var(--wheel-dim); font-size: .76rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+      .wheel-info__value { margin: 0; color: var(--wheel-text); font-size: 1rem; font-weight: 750; }
+      .wheel-info__value a, .wheel-footer a { color: var(--wheel-gold); }
+      .wheel-footer { padding: 27px 20px; color: var(--wheel-dim); font-size: .84rem; text-align: center; }
+      [dir="rtl"] .wheel-strip span::before { margin-right: 0; margin-left: 9px; }
+      [dir="rtl"] .wheel-hero__content { align-items: flex-end; text-align: right; }
+      [dir="rtl"] .wheel-actions { justify-content: flex-end; }
+      @media (max-width: 900px) {
+        .wheel-hero { padding-top: 38px; }
+        .wheel-hero__inner { grid-template-columns: 1fr; gap: 38px; }
+        .wheel-artwork { grid-row: 1; width: min(720px, 100%); margin: 0 auto; }
+        .wheel-hero__content, [dir="rtl"] .wheel-hero__content { grid-row: 2; align-items: center; text-align: center; }
+        .wheel-divider { margin-right: auto; margin-left: auto; }
+        .wheel-actions, [dir="rtl"] .wheel-actions { justify-content: center; }
+      }
+      @media (max-width: 720px) { .navbar__nav { display: none; } .wheel-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); } .wheel-artwork img { border-radius: 20px; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/word-wheel/index.html" data-i18n="nav_privacy">Privacy</a>
+        </nav>
+        <div class="navbar__actions">
+          <select id="lang-select" class="lang-select" onchange="setLang(this.value)" aria-label="Language">
+            <option value="en">🇬🇧 EN</option><option value="az">🇦🇿 AZ</option><option value="ru">🇷🇺 RU</option>
+            <option value="tr">🇹🇷 TR</option><option value="de">🇩🇪 DE</option><option value="fr">🇫🇷 FR</option>
+            <option value="es">🇪🇸 ES</option><option value="pt">🇵🇹 PT</option><option value="it">🇮🇹 IT</option>
+            <option value="ar">🇸🇦 AR</option><option value="zh">🇨🇳 ZH</option><option value="ja">🇯🇵 JA</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="wheel-hero">
+      <div class="container wheel-hero__inner">
+        <div class="wheel-hero__content">
+          <div class="wheel-icon-wrap">
+            <img class="wheel-icon" src="img/word-wheel-icon.png" alt="Word Wheel app icon" />
+            <span class="age-bubble" aria-label="Recommended for ages 12 and up">12+</span>
+          </div>
+          <div class="badge wheel-status">● <span data-i18n="status">In Development</span></div>
+          <h1 class="wheel-title">Word Wheel</h1>
+          <p class="wheel-tagline" data-i18n="tagline">Spin letters. Find words. Unlock worlds.</p>
+          <div class="wheel-divider"></div>
+          <p class="wheel-desc" data-i18n="description">Connect letters around the wheel, reveal every word on the board, discover bonus words, and turn each solved puzzle into a journey through collectible worlds.</p>
+          <div class="wheel-actions">
+            <a href="mailto:info@biemtech.com" class="wheel-btn wheel-btn--primary" data-i18n="contact_btn">Contact us for updates →</a>
+            <a href="privacy/word-wheel/index.html" class="wheel-btn wheel-btn--secondary" data-i18n="privacy_btn">Privacy Policy</a>
+          </div>
+        </div>
+        <figure class="wheel-artwork">
+          <img src="img/word-wheel-og.png" alt="Emerald letter wheel, crossword board, crystals, and a sunset view of Baku" />
+        </figure>
+      </div>
+    </main>
+
+    <div class="wheel-strip">
+      <span data-i18n="strip_languages">26 playable languages</span>
+      <span data-i18n="strip_levels">60,000+ puzzles</span>
+      <span data-i18n="strip_worlds">50 collectible worlds</span>
+      <span data-i18n="strip_ages">Recommended 12+ · General audience</span>
+    </div>
+
+    <section class="wheel-section">
+      <div class="container">
+        <p class="section-label" data-i18n="features_label">Features</p>
+        <h2 class="wheel-section-title" data-i18n="features_title">Every word moves the journey forward</h2>
+        <div class="wheel-grid">
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">🔤</span><div class="wheel-card__title" data-i18n="f1_title">Swipe to Build Words</div><div class="wheel-card__desc" data-i18n="f1_desc">Trace a path through the letter wheel and watch correct answers settle into a compact crossword board.</div></article>
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">🌍</span><div class="wheel-card__title" data-i18n="f2_title">Play in 26 Languages</div><div class="wheel-card__desc" data-i18n="f2_desc">Switch independently between language packs built for each alphabet, including locale-aware casing and accent rules.</div></article>
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">🧩</span><div class="wheel-card__title" data-i18n="f3_title">A Growing Challenge</div><div class="wheel-card__desc" data-i18n="f3_desc">Warm-up puzzles introduce the rhythm before larger wheels and denser boards gradually ask for deeper word knowledge.</div></article>
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">💎</span><div class="wheel-card__title" data-i18n="f4_title">Geodes, Tools and Rewards</div><div class="wheel-card__desc" data-i18n="f4_desc">Complete levels to crack geodes, earn coins, collect hints and picks, and keep difficult boards moving.</div></article>
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">🗺️</span><div class="wheel-card__title" data-i18n="f5_title">Collect Beautiful Worlds</div><div class="wheel-card__desc" data-i18n="f5_desc">Unlock 50 painted location cards—from Baku and London to natural wonders and imagined destinations—and play against your favorites.</div></article>
+          <article class="wheel-card"><span class="wheel-card__icon" aria-hidden="true">🔒</span><div class="wheel-card__title" data-i18n="f6_title">Private and Offline</div><div class="wheel-card__desc" data-i18n="f6_desc">The current build needs no account and contains no ads, analytics, purchases, social features, or personal-data collection.</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wheel-info">
+      <div class="container wheel-info__inner">
+        <div><p class="wheel-info__label" data-i18n="meta_developer">Developer</p><p class="wheel-info__value"><a href="index.html">BieMTech</a></p></div>
+        <div><p class="wheel-info__label" data-i18n="meta_platform">Platform</p><p class="wheel-info__value">Android</p></div>
+        <div><p class="wheel-info__label" data-i18n="meta_status">Status</p><p class="wheel-info__value" data-i18n="status">In Development</p></div>
+        <div><p class="wheel-info__label" data-i18n="meta_category">Category</p><p class="wheel-info__value" data-i18n="category">Word Puzzle</p></div>
+        <div><p class="wheel-info__label" data-i18n="meta_age">Audience</p><p class="wheel-info__value" data-i18n="age">Recommended 12+ · General audience</p></div>
+        <div><p class="wheel-info__label" data-i18n="meta_contact">Contact</p><p class="wheel-info__value"><a href="mailto:info@biemtech.com">info@biemtech.com</a></p></div>
+      </div>
+    </section>
+
+    <footer class="wheel-footer">&copy; 2026 BieMTech &nbsp;·&nbsp; <a href="index.html" data-i18n="footer_home">Home</a> &nbsp;·&nbsp; <a href="privacy/word-wheel/index.html" data-i18n="privacy_btn">Privacy Policy</a></footer>
+    <script src="word-wheel-i18n.js"></script>
+    <script>
+      function applyLang(lang) {
+        const dict = WORD_WHEEL_I18N[lang] || WORD_WHEEL_I18N.en;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (dict[key] !== undefined) element.textContent = dict[key];
+        });
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.getElementById("lang-select").value = lang;
+        document.querySelector(".age-bubble").setAttribute("aria-label", dict.age);
+      }
+      function setLang(lang) { if (!WORD_WHEEL_I18N[lang]) lang = "en"; try { localStorage.setItem("site_lang", lang); } catch (_) {} applyLang(lang); }
+      (function initLanguage() { let saved = ""; try { saved = localStorage.getItem("site_lang") || ""; } catch (_) {} const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase(); applyLang(WORD_WHEEL_I18N[saved] ? saved : WORD_WHEEL_I18N[browserLang] ? browserLang : "en"); })();
+    </script>
+  </body>
+</html>
