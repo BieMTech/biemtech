@@ -388,7 +388,15 @@
           <div
             class="app-card"
             onclick="window.location = 'times-table-master.html'"
-            onkeydown="if (event.target === this && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); window.location = 'times-table-master.html'; }"
+            onkeydown="
+              if (
+                event.target === this &&
+                (event.key === 'Enter' || event.key === ' ')
+              ) {
+                event.preventDefault();
+                window.location = 'times-table-master.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
@@ -436,7 +444,12 @@
           <div
             class="app-card"
             onclick="window.location = 'arrows-escape.html'"
-            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'arrows-escape.html'; }"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'arrows-escape.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
@@ -479,39 +492,50 @@
             </div>
           </div>
 
-          <!-- Snake 3D -->
+          <!-- Word Wheel -->
           <div
             class="app-card"
-            onclick="window.location = 'snake-3d.html'"
-            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'snake-3d.html'; }"
+            onclick="window.location = 'word-wheel.html'"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'word-wheel.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
           >
             <div class="app-card__top">
-              <div class="app-card__icon snake-3d">
-                <img src="img/snake-3d-icon-1024.png" alt="Snake 3D" />
+              <div class="app-card__icon word-wheel">
+                <img src="img/word-wheel-icon.png" alt="Word Wheel" />
               </div>
               <div class="app-card__arrow">→</div>
             </div>
-            <div class="app-card__name">Snake 3D</div>
-            <p class="app-card__desc" data-i18n="snake_desc">
-              A cheerful 3D arcade game for everyone aged 6 and up. Explore
-              growing islands, chase high scores, build combos, and play fully
-              offline.
+            <div class="app-card__name">Word Wheel</div>
+            <p class="app-card__desc" data-i18n="word_wheel_desc">
+              Connect letters, find words, and unlock 50 collectible worlds
+              across more than 60,000 puzzles in 26 languages. A private,
+              offline word game recommended for ages 12+.
             </p>
             <div class="app-card__footer">
-              <span class="chip" data-i18n="chip_arcade">Arcade Game</span>
+              <span class="chip" data-i18n="chip_puzzle">Puzzle Game</span>
               <span class="chip chip-soon" data-i18n="chip_dev"
                 >In Development</span
               >
             </div>
           </div>
+
           <!-- REX: Dragon Flight -->
           <div
             class="app-card"
             onclick="window.location = 'rex-dragon-flight.html'"
-            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'rex-dragon-flight.html'; }"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'rex-dragon-flight.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
@@ -543,7 +567,12 @@
           <div
             class="app-card"
             onclick="window.location = 'zuzu-bloomflight.html'"
-            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'zuzu-bloomflight.html'; }"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'zuzu-bloomflight.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
@@ -571,29 +600,34 @@
             </div>
           </div>
 
-          <!-- Word Wheel -->
+          <!-- Snake 3D -->
           <div
             class="app-card"
-            onclick="window.location = 'word-wheel.html'"
-            onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location = 'word-wheel.html'; }"
+            onclick="window.location = 'snake-3d.html'"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'snake-3d.html';
+              }
+            "
             role="link"
             tabindex="0"
             style="cursor: pointer"
           >
             <div class="app-card__top">
-              <div class="app-card__icon word-wheel">
-                <img src="img/word-wheel-icon.png" alt="Word Wheel" />
+              <div class="app-card__icon snake-3d">
+                <img src="img/snake-3d-icon-1024.png" alt="Snake 3D" />
               </div>
               <div class="app-card__arrow">→</div>
             </div>
-            <div class="app-card__name">Word Wheel</div>
-            <p class="app-card__desc" data-i18n="word_wheel_desc">
-              Connect letters, find words, and unlock 50 collectible worlds
-              across more than 60,000 puzzles in 26 languages. A private,
-              offline word game recommended for ages 12+.
+            <div class="app-card__name">Snake 3D</div>
+            <p class="app-card__desc" data-i18n="snake_desc">
+              A cheerful 3D arcade game for everyone aged 6 and up. Explore
+              growing islands, chase high scores, build combos, and play fully
+              offline.
             </p>
             <div class="app-card__footer">
-              <span class="chip" data-i18n="chip_puzzle">Puzzle Game</span>
+              <span class="chip" data-i18n="chip_arcade">Arcade Game</span>
               <span class="chip chip-soon" data-i18n="chip_dev"
                 >In Development</span
               >
@@ -744,6 +778,5 @@
       sections.forEach((s) => observer.observe(s));
     </script>
     <script src="i18n.js"></script>
-
   </body>
 </html>
