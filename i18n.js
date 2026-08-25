@@ -124,11 +124,12 @@ const I18N = {
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
     arrows_page_desc:
-      "Solve strategic arrow puzzles with endless procedural levels, daily challenges, achievements, and 12 languages. Made for players aged 6+ and adults. Coming soon to Android.",
+      "Solve strategic arrow puzzles with endless procedural levels, daily challenges, achievements, and 12 languages. Made for players aged 6+ and adults. Available now on Google Play.",
     arrows_notify_btn: "Contact us to stay updated →",
+    arrows_download_btn: "Download on Google Play →",
     arrows_privacy_btn: "Privacy Policy",
     arrows_features_label: "Features",
-    arrows_features_title: "What's coming",
+    arrows_features_title: "What's inside",
     arrows_f1_title: "Endless Solvable Puzzles",
     arrows_f1_desc:
       "Procedurally generated boards create a fresh challenge while keeping every level fully solvable.",
@@ -272,11 +273,12 @@ const I18N = {
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
     arrows_page_desc:
-      "Sonsuz prosedural səviyyələr, gündəlik tapşırıqlar, nailiyyətlər və 12 dil ilə strateji ox tapmacalarını həll edin. 6+ yaşlı oyunçular və böyüklər üçün hazırlanıb. Tezliklə Android-də.",
+      "Sonsuz prosedural səviyyələr, gündəlik tapşırıqlar, nailiyyətlər və 12 dil ilə strateji ox tapmacalarını həll edin. 6+ yaşlı oyunçular və böyüklər üçün hazırlanıb. İndi Google Play-də mövcuddur.",
     arrows_notify_btn: "Yeniliklər üçün bizimlə əlaqə saxlayın →",
+    arrows_download_btn: "Google Play-dən yükləyin →",
     arrows_privacy_btn: "Məxfilik Siyasəti",
     arrows_features_label: "Xüsusiyyətlər",
-    arrows_features_title: "Nələr gəlir",
+    arrows_features_title: "Nələr var",
     arrows_f1_title: "Sonsuz və Həll Olunan Tapmacalar",
     arrows_f1_desc:
       "Prosedural yaradılan lövhələr hər səviyyəni tam həll olunan saxlayaraq yeni tapşırıq təqdim edir.",
@@ -418,11 +420,12 @@ const I18N = {
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
     arrows_page_desc:
-      "Решайте стратегические головоломки со стрелками: бесконечные процедурные уровни, ежедневные испытания, достижения и 12 языков. Для игроков от 6 лет и взрослых. Скоро на Android.",
+      "Решайте стратегические головоломки со стрелками: бесконечные процедурные уровни, ежедневные испытания, достижения и 12 языков. Для игроков от 6 лет и взрослых. Уже доступно в Google Play.",
     arrows_notify_btn: "Свяжитесь с нами, чтобы следить за новостями →",
+    arrows_download_btn: "Скачать в Google Play →",
     arrows_privacy_btn: "Политика конфиденциальности",
     arrows_features_label: "Возможности",
-    arrows_features_title: "Что вас ждёт",
+    arrows_features_title: "Что внутри",
     arrows_f1_title: "Бесконечные решаемые головоломки",
     arrows_f1_desc:
       "Процедурно созданные поля предлагают новое испытание, при этом каждый уровень остаётся полностью решаемым.",
@@ -565,11 +568,12 @@ const I18N = {
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
     arrows_page_desc:
-      "Sonsuz prosedürel seviyeler, günlük mücadeleler, başarımlar ve 12 dil ile stratejik ok bulmacalarını çözün. 6 yaş ve üzeri oyuncular ile yetişkinler için. Yakında Android'de.",
+      "Sonsuz prosedürel seviyeler, günlük mücadeleler, başarımlar ve 12 dil ile stratejik ok bulmacalarını çözün. 6 yaş ve üzeri oyuncular ile yetişkinler için. Google Play'de şimdi mevcut.",
     arrows_notify_btn: "Güncellemeler için bize ulaşın →",
+    arrows_download_btn: "Google Play'den indirin →",
     arrows_privacy_btn: "Gizlilik Politikası",
     arrows_features_label: "Özellikler",
-    arrows_features_title: "Neler geliyor",
+    arrows_features_title: "Neler var",
     arrows_f1_title: "Sonsuz ve Çözülebilir Bulmacalar",
     arrows_f1_desc:
       "Prosedürel üretilen tahtalar, her seviyeyi tamamen çözülebilir tutarken yeni bir mücadele sunar.",
@@ -713,11 +717,12 @@ const I18N = {
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
     arrows_page_desc:
-      "Löse strategische Pfeilrätsel mit endlosen prozeduralen Levels, täglichen Herausforderungen, Erfolgen und 12 Sprachen. Für Spieler ab 6 Jahren und Erwachsene. Bald für Android.",
+      "Löse strategische Pfeilrätsel mit endlosen prozeduralen Levels, täglichen Herausforderungen, Erfolgen und 12 Sprachen. Für Spieler ab 6 Jahren und Erwachsene. Jetzt bei Google Play verfügbar.",
     arrows_notify_btn: "Kontaktiere uns für Neuigkeiten →",
+    arrows_download_btn: "Bei Google Play herunterladen →",
     arrows_privacy_btn: "Datenschutzerklärung",
     arrows_features_label: "Funktionen",
-    arrows_features_title: "Das erwartet dich",
+    arrows_features_title: "Das steckt drin",
     arrows_f1_title: "Endlose lösbare Rätsel",
     arrows_f1_desc:
       "Prozedural erzeugte Spielfelder bieten immer neue Herausforderungen und bleiben vollständig lösbar.",
@@ -864,11 +869,12 @@ const I18N = {
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
     arrows_page_desc:
-      "Résolvez des puzzles stratégiques de flèches avec des niveaux procéduraux infinis, des défis quotidiens, des succès et 12 langues. Pour les joueurs de 6 ans et plus, adultes compris. Bientôt sur Android.",
+      "Résolvez des puzzles stratégiques de flèches avec des niveaux procéduraux infinis, des défis quotidiens, des succès et 12 langues. Pour les joueurs de 6 ans et plus, adultes compris. Disponible dès maintenant sur Google Play.",
     arrows_notify_btn: "Contactez-nous pour suivre les nouveautés →",
+    arrows_download_btn: "Télécharger sur Google Play →",
     arrows_privacy_btn: "Politique de confidentialité",
     arrows_features_label: "Fonctionnalités",
-    arrows_features_title: "Ce qui vous attend",
+    arrows_features_title: "Ce que vous trouverez",
     arrows_f1_title: "Puzzles infinis et résolubles",
     arrows_f1_desc:
       "Les plateaux générés de façon procédurale offrent un nouveau défi tout en restant entièrement résolubles.",
@@ -1014,11 +1020,12 @@ const I18N = {
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
     arrows_page_desc:
-      "Resuelve puzles estratégicos de flechas con niveles procedurales infinitos, desafíos diarios, logros y 12 idiomas. Para jugadores de 6 años en adelante, incluidos adultos. Próximamente en Android.",
+      "Resuelve puzles estratégicos de flechas con niveles procedurales infinitos, desafíos diarios, logros y 12 idiomas. Para jugadores de 6 años en adelante, incluidos adultos. Ya disponible en Google Play.",
     arrows_notify_btn: "Contáctanos para recibir novedades →",
+    arrows_download_btn: "Descargar en Google Play →",
     arrows_privacy_btn: "Política de privacidad",
     arrows_features_label: "Funciones",
-    arrows_features_title: "Lo que está por llegar",
+    arrows_features_title: "Lo que incluye",
     arrows_f1_title: "Puzles infinitos y resolubles",
     arrows_f1_desc:
       "Los tableros generados de forma procedural ofrecen un reto nuevo y mantienen cada nivel totalmente resoluble.",
@@ -1164,11 +1171,12 @@ const I18N = {
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
     arrows_page_desc:
-      "Resolva quebra-cabeças estratégicos de setas com níveis procedurais infinitos, desafios diários, conquistas e 12 idiomas. Para jogadores a partir de 6 anos, incluindo adultos. Em breve no Android.",
+      "Resolva quebra-cabeças estratégicos de setas com níveis procedurais infinitos, desafios diários, conquistas e 12 idiomas. Para jogadores a partir de 6 anos, incluindo adultos. Já disponível no Google Play.",
     arrows_notify_btn: "Entre em contato para receber novidades →",
+    arrows_download_btn: "Baixar no Google Play →",
     arrows_privacy_btn: "Política de Privacidade",
     arrows_features_label: "Recursos",
-    arrows_features_title: "O que vem por aí",
+    arrows_features_title: "O que inclui",
     arrows_f1_title: "Puzzles infinitos e solucionáveis",
     arrows_f1_desc:
       "Tabuleiros gerados proceduralmente criam novos desafios e mantêm todos os níveis totalmente solucionáveis.",
@@ -1312,11 +1320,12 @@ const I18N = {
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
     arrows_page_desc:
-      "Risolvi rompicapi strategici con frecce, livelli procedurali infiniti, sfide giornaliere, obiettivi e 12 lingue. Per giocatori dai 6 anni in su, adulti compresi. Presto su Android.",
+      "Risolvi rompicapi strategici con frecce, livelli procedurali infiniti, sfide giornaliere, obiettivi e 12 lingue. Per giocatori dai 6 anni in su, adulti compresi. Ora disponibile su Google Play.",
     arrows_notify_btn: "Contattaci per ricevere aggiornamenti →",
+    arrows_download_btn: "Scarica da Google Play →",
     arrows_privacy_btn: "Informativa sulla privacy",
     arrows_features_label: "Funzionalità",
-    arrows_features_title: "Cosa sta arrivando",
+    arrows_features_title: "Cosa contiene",
     arrows_f1_title: "Puzzle infiniti e risolvibili",
     arrows_f1_desc:
       "Le tavole generate proceduralmente offrono sempre nuove sfide e mantengono ogni livello completamente risolvibile.",
@@ -1454,11 +1463,12 @@ const I18N = {
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
     arrows_page_desc:
-      "حل ألغاز الأسهم الاستراتيجية مع مستويات إجرائية لا نهائية وتحديات يومية وإنجازات و12 لغة. للاعبين من عمر 6 سنوات فما فوق، بمن فيهم البالغون. قريباً على Android.",
+      "حل ألغاز الأسهم الاستراتيجية مع مستويات إجرائية لا نهائية وتحديات يومية وإنجازات و12 لغة. للاعبين من عمر 6 سنوات فما فوق، بمن فيهم البالغون. متوفّرة الآن على Google Play.",
     arrows_notify_btn: "تواصل معنا لمتابعة التحديثات ←",
+    arrows_download_btn: "حمّل من Google Play ←",
     arrows_privacy_btn: "سياسة الخصوصية",
     arrows_features_label: "الميزات",
-    arrows_features_title: "ما الذي سيأتي",
+    arrows_features_title: "ما يحتويه",
     arrows_f1_title: "ألغاز لا نهائية قابلة للحل",
     arrows_f1_desc:
       "توفر اللوحات المُنشأة إجرائياً تحدياً جديداً مع ضمان إمكانية حل كل مستوى بالكامل.",
@@ -1593,11 +1603,12 @@ const I18N = {
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
     arrows_page_desc:
-      "挑战策略箭头谜题，体验无限程序生成关卡、每日挑战、成就和12种语言。适合6岁及以上玩家，包括成人。即将登陆Android。",
+      "挑战策略箭头谜题，体验无限程序生成关卡、每日挑战、成就和12种语言。适合6岁及以上玩家，包括成人。现已在Google Play上线。",
     arrows_notify_btn: "联系我们获取最新消息 →",
+    arrows_download_btn: "在Google Play下载 →",
     arrows_privacy_btn: "隐私政策",
     arrows_features_label: "功能",
-    arrows_features_title: "即将推出的内容",
+    arrows_features_title: "游戏内容",
     arrows_f1_title: "无限且可解的谜题",
     arrows_f1_desc:
       "程序生成的棋盘不断带来新挑战，同时确保每个关卡都完全可解。",
@@ -1738,11 +1749,12 @@ const I18N = {
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",
     arrows_page_desc:
-      "無限に生成されるレベル、デイリーチャレンジ、実績、12言語に対応した戦略アローパズル。大人を含む6歳以上のプレイヤー向け。Android版近日登場。",
+      "無限に生成されるレベル、デイリーチャレンジ、実績、12言語に対応した戦略アローパズル。大人を含む6歳以上のプレイヤー向け。Google Playで配信中。",
     arrows_notify_btn: "最新情報はお問い合わせください →",
+    arrows_download_btn: "Google Playでダウンロード →",
     arrows_privacy_btn: "プライバシーポリシー",
     arrows_features_label: "機能",
-    arrows_features_title: "近日登場する内容",
+    arrows_features_title: "収録コンテンツ",
     arrows_f1_title: "無限に遊べる解決可能なパズル",
     arrows_f1_desc:
       "自動生成ボードが毎回新しい挑戦を生み、すべてのレベルが完全に解けるよう設計されています。",
