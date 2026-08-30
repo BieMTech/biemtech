@@ -35,10 +35,19 @@ A multiplication learning and practice app for all ages, available on Google Pla
 
 ### REX: Dragon Flight
 
-A fully offline one-touch dragon arcade game for ages 6 and up, currently in development.
+A one-touch dragon arcade game for ages 6 and up, available on Google Play with optional Play Games leaderboards.
 
 - Package: `com.biemtech.rex`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.rex
 - Privacy Policy: https://biemtech.com/privacy/rex-dragon-flight/
+
+### Zuzu: Bloomflight
+
+A garden arcade game for ages 6 and up, available on Google Play with optional Play Games leaderboards.
+
+- Package: `com.biemtech.zuzu`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.zuzu
+- Privacy Policy: https://biemtech.com/privacy/zuzu-bloomflight/
 
 ### Word Wheel
 

@@ -115,9 +115,9 @@ const I18N = {
     snake_desc:
       "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
     rex_desc:
-      "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. A fully offline arcade game for ages 6 and up.",
+      "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. Core play works offline; the Google Play Games leaderboard is optional.",
     zuzu_desc:
-      "Guide Zuzu through six changing gardens: tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase high scores. A fully offline arcade game recommended for ages 6+.",
+      "Guide Zuzu through six changing gardens: tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase high scores. Core play works offline; the Google Play Games leaderboard is optional.",
     word_wheel_desc:
       "Connect letters, find words, and unlock 50 collectible worlds across more than 60,000 puzzles in 26 languages. A private, offline word game recommended for ages 12+.",
     chip_arcade: "Arcade Game",
@@ -264,9 +264,9 @@ const I18N = {
     snake_desc:
       "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
     rex_desc:
-      "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. 6 yaş və yuxarı üçün tamamilə oflayn arkada oyunu.",
+      "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. Əsas oyun oflayn işləyir; Google Play Games lider cədvəli istəyə bağlıdır.",
     zuzu_desc:
-      "Zuzunu dəyişən altı bağdan keçir: uçmaq üçün toxun, havada qalmaq üçün basıb saxla, çiçəkləri aç, nektarı idarə et, gücləndiricilər topla və rekord qazan. 6+ yaş üçün tövsiyə olunan tam oflayn arkada oyunu.",
+      "Zuzunu dəyişən altı bağdan keçir: uçmaq üçün toxun, havada qalmaq üçün basıb saxla, çiçəkləri aç, nektarı idarə et, gücləndiricilər topla və rekord qazan. Əsas oyun oflayn işləyir; Google Play Games lider cədvəli istəyə bağlıdır.",
     word_wheel_desc:
       "Hərfləri birləşdir, sözləri tap və 26 dildə 60 000-dən çox tapmacada 50 kolleksiya dünyasını aç. 12+ yaş üçün tövsiyə olunan məxfi, oflayn söz oyunu.",
     chip_arcade: "Arkada Oyunu",
@@ -411,9 +411,9 @@ const I18N = {
     snake_desc:
       "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
     rex_desc:
-      "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Полностью офлайн-аркада для игроков от 6 лет.",
+      "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Основная игра работает офлайн; рейтинг Google Play Games необязателен.",
     zuzu_desc:
-      "Проведите Зузу через шесть меняющихся садов: летайте, зависайте, раскрывайте цветы, следите за нектаром, собирайте усиления и ставьте рекорды. Полностью офлайн-аркада, рекомендованная с 6 лет.",
+      "Проведите Зузу через шесть меняющихся садов: летайте, зависайте, раскрывайте цветы, следите за нектаром, собирайте усиления и ставьте рекорды. Основная игра работает офлайн; рейтинг Google Play Games необязателен.",
     word_wheel_desc:
       "Соединяйте буквы, находите слова и открывайте 50 коллекционных миров в более чем 60 000 головоломок на 26 языках. Приватная офлайн-игра, рекомендованная с 12 лет.",
     chip_arcade: "Аркада",
@@ -559,9 +559,9 @@ const I18N = {
     snake_desc:
       "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
     rex_desc:
-      "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. 6 yaş ve üzeri için tamamen çevrimdışı bir arcade oyunu.",
+      "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. Ana oyun çevrimdışı çalışır; Google Play Games liderlik tablosu isteğe bağlıdır.",
     zuzu_desc:
-      "Zuzu'yu değişen altı bahçede yönlendir: uç, havada kal, çiçekleri aç, nektarı yönet, güçlendirmeleri topla ve rekor kır. 6+ yaş için önerilen tamamen çevrimdışı bir arcade oyunu.",
+      "Zuzu'yu değişen altı bahçede yönlendir: uç, havada kal, çiçekleri aç, nektarı yönet, güçlendirmeleri topla ve rekor kır. Ana oyun çevrimdışı çalışır; Google Play Games liderlik tablosu isteğe bağlıdır.",
     word_wheel_desc:
       "Harfleri birleştir, kelimeleri bul ve 26 dilde 60.000'den fazla bulmacada 50 koleksiyonluk dünyayı aç. 12+ yaş için önerilen gizli, çevrimdışı kelime oyunu.",
     chip_arcade: "Arcade Oyunu",
@@ -708,9 +708,9 @@ const I18N = {
     snake_desc:
       "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
     rex_desc:
-      "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Ein vollständig offline spielbares Arcade-Spiel ab 6 Jahren.",
+      "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Das Hauptspiel funktioniert offline; die Google-Play-Games-Bestenliste ist optional.",
     zuzu_desc:
-      "Führe Zuzu durch sechs wechselnde Gärten: fliege, schwebe, öffne Blüten, verwalte Nektar, sammle Power-ups und jage Rekorde. Ein vollständig offline spielbares Arcade-Spiel, empfohlen ab 6 Jahren.",
+      "Führe Zuzu durch sechs wechselnde Gärten: fliege, schwebe, öffne Blüten, verwalte Nektar, sammle Power-ups und jage Rekorde. Das Hauptspiel funktioniert offline; die Google-Play-Games-Bestenliste ist optional.",
     word_wheel_desc:
       "Verbinde Buchstaben, finde Wörter und schalte 50 sammelbare Welten in über 60.000 Rätseln und 26 Sprachen frei. Ein privates Offline-Wortspiel, empfohlen ab 12 Jahren.",
     chip_arcade: "Arcade-Spiel",
@@ -860,9 +860,9 @@ const I18N = {
     snake_desc:
       "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
     rex_desc:
-      "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Un jeu d'arcade entièrement hors ligne dès 6 ans.",
+      "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Le jeu principal fonctionne hors ligne ; le classement Google Play Games est facultatif.",
     zuzu_desc:
-      "Guidez Zuzu dans six jardins changeants : volez, planez, faites éclore les fleurs, gérez le nectar, ramassez des bonus et visez des records. Un jeu d'arcade entièrement hors ligne recommandé dès 6 ans.",
+      "Guidez Zuzu dans six jardins changeants : volez, planez, faites éclore les fleurs, gérez le nectar, ramassez des bonus et visez des records. Le jeu principal fonctionne hors ligne ; le classement Google Play Games est facultatif.",
     word_wheel_desc:
       "Reliez les lettres, trouvez des mots et débloquez 50 mondes à collectionner dans plus de 60 000 énigmes en 26 langues. Un jeu de mots privé et hors ligne recommandé dès 12 ans.",
     chip_arcade: "Jeu d'arcade",
@@ -1011,9 +1011,9 @@ const I18N = {
     snake_desc:
       "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
     rex_desc:
-      "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. Un juego arcade totalmente sin conexión para mayores de 6 años.",
+      "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. El juego principal funciona sin conexión; la clasificación de Google Play Games es opcional.",
     zuzu_desc:
-      "Guía a Zuzu por seis jardines cambiantes: vuela, flota, abre flores, gestiona el néctar, recoge potenciadores y busca récords. Un juego arcade totalmente sin conexión recomendado para mayores de 6 años.",
+      "Guía a Zuzu por seis jardines cambiantes: vuela, flota, abre flores, gestiona el néctar, recoge potenciadores y busca récords. El juego principal funciona sin conexión; la clasificación de Google Play Games es opcional.",
     word_wheel_desc:
       "Conecta letras, encuentra palabras y desbloquea 50 mundos coleccionables en más de 60.000 puzles y 26 idiomas. Un juego de palabras privado y sin conexión recomendado para mayores de 12 años.",
     chip_arcade: "Juego arcade",
@@ -1162,9 +1162,9 @@ const I18N = {
     snake_desc:
       "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
     rex_desc:
-      "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. Um jogo arcade totalmente offline para maiores de 6 anos.",
+      "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. O jogo principal funciona offline; o placar do Google Play Games é opcional.",
     zuzu_desc:
-      "Guie Zuzu por seis jardins em transformação: voe, paire, abra flores, gerencie o néctar, colete poderes e busque recordes. Um jogo arcade totalmente offline recomendado para maiores de 6 anos.",
+      "Guie Zuzu por seis jardins em transformação: voe, paire, abra flores, gerencie o néctar, colete poderes e busque recordes. O jogo principal funciona offline; o placar do Google Play Games é opcional.",
     word_wheel_desc:
       "Ligue letras, encontre palavras e desbloqueie 50 mundos colecionáveis em mais de 60.000 desafios e 26 idiomas. Um jogo de palavras privado e offline recomendado para maiores de 12 anos.",
     chip_arcade: "Jogo arcade",
@@ -1311,9 +1311,9 @@ const I18N = {
     snake_desc:
       "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
     rex_desc:
-      "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Un gioco arcade completamente offline dai 6 anni in su.",
+      "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Il gioco principale funziona offline; la classifica di Google Play Games è facoltativa.",
     zuzu_desc:
-      "Guida Zuzu attraverso sei giardini mutevoli: vola, resta sospeso, fai sbocciare i fiori, gestisci il nettare, raccogli potenziamenti e insegui nuovi record. Un gioco arcade offline consigliato dai 6 anni.",
+      "Guida Zuzu attraverso sei giardini mutevoli: vola, resta sospeso, fai sbocciare i fiori, gestisci il nettare, raccogli potenziamenti e insegui nuovi record. Il gioco principale funziona offline; la classifica di Google Play Games è facoltativa.",
     word_wheel_desc:
       "Collega le lettere, trova le parole e sblocca 50 mondi da collezionare in oltre 60.000 rompicapi e 26 lingue. Un gioco di parole privato e offline consigliato dai 12 anni.",
     chip_arcade: "Gioco arcade",
@@ -1454,9 +1454,9 @@ const I18N = {
     snake_desc:
       "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
     rex_desc:
-      "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. لعبة أركيد تعمل دون اتصال ومناسبة للأعمار من 6 سنوات فما فوق.",
+      "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة Google Play Games اختيارية.",
     zuzu_desc:
-      "قد زوزو عبر ست حدائق متغيرة: حلّق، وابق في الهواء، وافتح الأزهار، وأدر الرحيق، واجمع التعزيزات، وحقق أرقاماً جديدة. لعبة أركيد دون اتصال موصى بها لعمر 6+.",
+      "قد زوزو عبر ست حدائق متغيرة: حلّق، وابق في الهواء، وافتح الأزهار، وأدر الرحيق، واجمع التعزيزات، وحقق أرقاماً جديدة. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة Google Play Games اختيارية.",
     word_wheel_desc:
       "صِل الحروف، واعثر على الكلمات، وافتح 50 عالماً قابلاً للجمع عبر أكثر من 60,000 لغز بـ26 لغة. لعبة كلمات خاصة دون اتصال موصى بها لعمر 12+.",
     chip_arcade: "لعبة أركيد",
@@ -1594,9 +1594,9 @@ const I18N = {
     snake_desc:
       "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
     rex_desc:
-      "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。适合6岁及以上玩家的完全离线街机游戏。",
+      "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。核心游戏可离线游玩；Google Play Games 排行榜为可选功能。",
     zuzu_desc:
-      "带领 Zuzu 穿越六座变化花园：飞行、悬停、让花朵绽放、管理花蜜、收集强化道具并挑战高分。一款建议6岁以上游玩的完全离线街机游戏。",
+      "带领 Zuzu 穿越六座变化花园：飞行、悬停、让花朵绽放、管理花蜜、收集强化道具并挑战高分。核心游戏可离线游玩；Google Play Games 排行榜为可选功能。",
     word_wheel_desc:
       "连接字母、找出单词，并在26种语言的60,000多个谜题中解锁50个可收藏世界。一款建议12岁以上游玩的私密离线文字游戏。",
     chip_arcade: "街机游戏",
@@ -1740,9 +1740,9 @@ const I18N = {
     snake_desc:
       "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
     rex_desc:
-      "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。6歳以上向けの完全オフライン・アーケードゲームです。",
+      "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。基本ゲームはオフラインで遊べ、Google Play Games のランキングは任意です。",
     zuzu_desc:
-      "Zuzuと6つの変化する庭を進もう。タップで飛び、長押しでホバリングし、花を咲かせ、蜜を管理し、パワーアップを集めてハイスコアに挑戦。6歳以上推奨の完全オフライン・アーケードゲームです。",
+      "Zuzuと6つの変化する庭を進もう。タップで飛び、長押しでホバリングし、花を咲かせ、蜜を管理し、パワーアップを集めてハイスコアに挑戦。基本ゲームはオフラインで遊べ、Google Play Games のランキングは任意です。",
     word_wheel_desc:
       "文字をつなぎ、言葉を見つけ、26言語・60,000以上のパズルで50のコレクション世界を開こう。12歳以上推奨のプライベートなオフラインワードゲームです。",
     chip_arcade: "アーケードゲーム",
