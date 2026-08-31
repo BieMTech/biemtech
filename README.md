@@ -33,6 +33,14 @@ A multiplication learning and practice app for all ages, available on Google Pla
 - Google Play: https://play.google.com/store/apps/details?id=com.biemtech.timestable
 - Privacy Policy: https://biemtech.com/privacy/times-table-master/
 
+### Snake 3D
+
+A cheerful, fully offline 3D arcade game for ages 6 and up, available on Google Play.
+
+- Package: `com.biemtech.snake3d`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.snake3d
+- Privacy Policy: https://biemtech.com/privacy/snake-3d/
+
 ### REX: Dragon Flight
 
 A one-touch dragon arcade game for ages 6 and up, available on Google Play with optional Play Games leaderboards.
