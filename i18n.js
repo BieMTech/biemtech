@@ -119,7 +119,9 @@ const I18N = {
     zuzu_desc:
       "Guide Zuzu through six changing gardens: tap to fly, hold to hover, bloom flowers, manage nectar, collect power-ups, and chase high scores. Core play works offline; the Google Play Games leaderboard is optional.",
     word_wheel_desc:
-      "Connect letters, find words, and unlock 50 collectible worlds across more than 60,000 puzzles in 26 languages. A private, offline word game recommended for ages 12+.",
+      "Connect letters, find words, and unlock 50 collectible worlds across more than 60,000 puzzles in 26 languages. Core play works offline; the Google Play Games XP leaderboard is optional.",
+    neon_blocks_desc:
+      "Place glowing blocks on an 8×8 board, clear lines, trigger gravity cascades, and race the clock across three distinct modes. A fully offline puzzle game in 14 languages.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -268,7 +270,9 @@ const I18N = {
     zuzu_desc:
       "Zuzunu dəyişən altı bağdan keçir: uçmaq üçün toxun, havada qalmaq üçün basıb saxla, çiçəkləri aç, nektarı idarə et, gücləndiricilər topla və rekord qazan. Əsas oyun oflayn işləyir; Google Play Games lider cədvəli istəyə bağlıdır.",
     word_wheel_desc:
-      "Hərfləri birləşdir, sözləri tap və 26 dildə 60 000-dən çox tapmacada 50 kolleksiya dünyasını aç. 12+ yaş üçün tövsiyə olunan məxfi, oflayn söz oyunu.",
+      "Hərfləri birləşdir, sözləri tap və 26 dildə 60 000-dən çox tapmacada 50 kolleksiya dünyasını aç. Əsas oyun oflayn işləyir; Google Play Games XP lider cədvəli istəyə bağlıdır.",
+    neon_blocks_desc:
+      "Parlaq blokları 8×8 lövhəyə yerləşdir, xətləri təmizlə, cazibə kaskadları yarat və üç fərqli rejimdə saata qarşı yarış. 14 dildə tam oflayn tapmaca oyunu.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -415,7 +419,9 @@ const I18N = {
     zuzu_desc:
       "Проведите Зузу через шесть меняющихся садов: летайте, зависайте, раскрывайте цветы, следите за нектаром, собирайте усиления и ставьте рекорды. Основная игра работает офлайн; рейтинг Google Play Games необязателен.",
     word_wheel_desc:
-      "Соединяйте буквы, находите слова и открывайте 50 коллекционных миров в более чем 60 000 головоломок на 26 языках. Приватная офлайн-игра, рекомендованная с 12 лет.",
+      "Соединяйте буквы, находите слова и открывайте 50 коллекционных миров в более чем 60 000 головоломок на 26 языках. Основная игра работает офлайн; рейтинг XP Google Play Games необязателен.",
+    neon_blocks_desc:
+      "Размещайте светящиеся блоки на поле 8×8, очищайте линии, создавайте каскады и соревнуйтесь со временем в трёх режимах. Полностью офлайн-головоломка на 14 языках.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -563,7 +569,9 @@ const I18N = {
     zuzu_desc:
       "Zuzu'yu değişen altı bahçede yönlendir: uç, havada kal, çiçekleri aç, nektarı yönet, güçlendirmeleri topla ve rekor kır. Ana oyun çevrimdışı çalışır; Google Play Games liderlik tablosu isteğe bağlıdır.",
     word_wheel_desc:
-      "Harfleri birleştir, kelimeleri bul ve 26 dilde 60.000'den fazla bulmacada 50 koleksiyonluk dünyayı aç. 12+ yaş için önerilen gizli, çevrimdışı kelime oyunu.",
+      "Harfleri birleştir, kelimeleri bul ve 26 dilde 60.000'den fazla bulmacada 50 koleksiyonluk dünyayı aç. Ana oyun çevrimdışı çalışır; Google Play Games XP liderlik tablosu isteğe bağlıdır.",
+    neon_blocks_desc:
+      "Parlayan blokları 8×8 tahtaya yerleştir, çizgileri temizle, yerçekimi kaskatları oluştur ve üç farklı modda zamana karşı yarış. 14 dilde tamamen çevrimdışı bulmaca oyunu.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -712,7 +720,9 @@ const I18N = {
     zuzu_desc:
       "Führe Zuzu durch sechs wechselnde Gärten: fliege, schwebe, öffne Blüten, verwalte Nektar, sammle Power-ups und jage Rekorde. Das Hauptspiel funktioniert offline; die Google-Play-Games-Bestenliste ist optional.",
     word_wheel_desc:
-      "Verbinde Buchstaben, finde Wörter und schalte 50 sammelbare Welten in über 60.000 Rätseln und 26 Sprachen frei. Ein privates Offline-Wortspiel, empfohlen ab 12 Jahren.",
+      "Verbinde Buchstaben, finde Wörter und schalte 50 sammelbare Welten in über 60.000 Rätseln und 26 Sprachen frei. Das Hauptspiel funktioniert offline; die Google-Play-Games-XP-Bestenliste ist optional.",
+    neon_blocks_desc:
+      "Setze leuchtende Blöcke auf ein 8×8-Feld, lösche Linien, erzeuge Kaskaden und spiele in drei Modi gegen die Zeit. Ein vollständig offline spielbares Puzzle in 14 Sprachen.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -864,7 +874,9 @@ const I18N = {
     zuzu_desc:
       "Guidez Zuzu dans six jardins changeants : volez, planez, faites éclore les fleurs, gérez le nectar, ramassez des bonus et visez des records. Le jeu principal fonctionne hors ligne ; le classement Google Play Games est facultatif.",
     word_wheel_desc:
-      "Reliez les lettres, trouvez des mots et débloquez 50 mondes à collectionner dans plus de 60 000 énigmes en 26 langues. Un jeu de mots privé et hors ligne recommandé dès 12 ans.",
+      "Reliez les lettres, trouvez des mots et débloquez 50 mondes dans plus de 60 000 énigmes en 26 langues. Le jeu principal fonctionne hors ligne ; le classement XP Google Play Games est facultatif.",
+    neon_blocks_desc:
+      "Placez des blocs lumineux sur une grille 8×8, effacez des lignes, déclenchez des cascades et affrontez le chrono dans trois modes. Un puzzle entièrement hors ligne en 14 langues.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -1015,7 +1027,9 @@ const I18N = {
     zuzu_desc:
       "Guía a Zuzu por seis jardines cambiantes: vuela, flota, abre flores, gestiona el néctar, recoge potenciadores y busca récords. El juego principal funciona sin conexión; la clasificación de Google Play Games es opcional.",
     word_wheel_desc:
-      "Conecta letras, encuentra palabras y desbloquea 50 mundos coleccionables en más de 60.000 puzles y 26 idiomas. Un juego de palabras privado y sin conexión recomendado para mayores de 12 años.",
+      "Conecta letras, encuentra palabras y desbloquea 50 mundos en más de 60.000 puzles y 26 idiomas. El juego principal funciona sin conexión; la clasificación de XP de Google Play Games es opcional.",
+    neon_blocks_desc:
+      "Coloca bloques brillantes en un tablero 8×8, limpia líneas, crea cascadas y compite contra el reloj en tres modos. Un puzle totalmente sin conexión en 14 idiomas.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1166,7 +1180,9 @@ const I18N = {
     zuzu_desc:
       "Guie Zuzu por seis jardins em transformação: voe, paire, abra flores, gerencie o néctar, colete poderes e busque recordes. O jogo principal funciona offline; o placar do Google Play Games é opcional.",
     word_wheel_desc:
-      "Ligue letras, encontre palavras e desbloqueie 50 mundos colecionáveis em mais de 60.000 desafios e 26 idiomas. Um jogo de palavras privado e offline recomendado para maiores de 12 anos.",
+      "Ligue letras, encontre palavras e desbloqueie 50 mundos em mais de 60.000 desafios e 26 idiomas. O jogo principal funciona offline; o placar de XP do Google Play Games é opcional.",
+    neon_blocks_desc:
+      "Coloque blocos brilhantes num tabuleiro 8×8, limpe linhas, crie cascatas e corra contra o relógio em três modos. Um quebra-cabeça totalmente offline em 14 idiomas.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1315,7 +1331,9 @@ const I18N = {
     zuzu_desc:
       "Guida Zuzu attraverso sei giardini mutevoli: vola, resta sospeso, fai sbocciare i fiori, gestisci il nettare, raccogli potenziamenti e insegui nuovi record. Il gioco principale funziona offline; la classifica di Google Play Games è facoltativa.",
     word_wheel_desc:
-      "Collega le lettere, trova le parole e sblocca 50 mondi da collezionare in oltre 60.000 rompicapi e 26 lingue. Un gioco di parole privato e offline consigliato dai 12 anni.",
+      "Collega le lettere, trova parole e sblocca 50 mondi in oltre 60.000 rompicapi e 26 lingue. Il gioco principale funziona offline; la classifica XP di Google Play Games è facoltativa.",
+    neon_blocks_desc:
+      "Posiziona blocchi luminosi su una griglia 8×8, cancella linee, crea cascate e sfida il tempo in tre modalità. Un puzzle completamente offline in 14 lingue.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1458,7 +1476,9 @@ const I18N = {
     zuzu_desc:
       "قد زوزو عبر ست حدائق متغيرة: حلّق، وابق في الهواء، وافتح الأزهار، وأدر الرحيق، واجمع التعزيزات، وحقق أرقاماً جديدة. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة Google Play Games اختيارية.",
     word_wheel_desc:
-      "صِل الحروف، واعثر على الكلمات، وافتح 50 عالماً قابلاً للجمع عبر أكثر من 60,000 لغز بـ26 لغة. لعبة كلمات خاصة دون اتصال موصى بها لعمر 12+.",
+      "صل الحروف واعثر على الكلمات وافتح 50 عالماً عبر أكثر من 60,000 لغز بـ26 لغة. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة XP في Google Play Games اختيارية.",
+    neon_blocks_desc:
+      "ضع كتل النيون على لوحة 8×8، وامسح الخطوط، واصنع الشلالات، وتسابق مع الوقت في ثلاثة أوضاع. لعبة ألغاز تعمل بالكامل دون اتصال بـ14 لغة.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1598,7 +1618,9 @@ const I18N = {
     zuzu_desc:
       "带领 Zuzu 穿越六座变化花园：飞行、悬停、让花朵绽放、管理花蜜、收集强化道具并挑战高分。核心游戏可离线游玩；Google Play Games 排行榜为可选功能。",
     word_wheel_desc:
-      "连接字母、找出单词，并在26种语言的60,000多个谜题中解锁50个可收藏世界。一款建议12岁以上游玩的私密离线文字游戏。",
+      "连接字母、寻找单词，并在26种语言的60,000多个谜题中解锁50个收藏世界。核心游戏可离线游玩；Google Play Games XP 排行榜为可选功能。",
+    neon_blocks_desc:
+      "在8×8棋盘上放置霓虹方块、消除线条、触发重力连锁，并在三种模式中挑战时间。支持14种语言的完全离线益智游戏。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1744,7 +1766,9 @@ const I18N = {
     zuzu_desc:
       "Zuzuと6つの変化する庭を進もう。タップで飛び、長押しでホバリングし、花を咲かせ、蜜を管理し、パワーアップを集めてハイスコアに挑戦。基本ゲームはオフラインで遊べ、Google Play Games のランキングは任意です。",
     word_wheel_desc:
-      "文字をつなぎ、言葉を見つけ、26言語・60,000以上のパズルで50のコレクション世界を開こう。12歳以上推奨のプライベートなオフラインワードゲームです。",
+      "文字をつなげて単語を見つけ、26言語・60,000問以上のパズルで50の世界を解放しよう。基本ゲームはオフラインで遊べ、Google Play Games のXPランキングは任意です。",
+    neon_blocks_desc:
+      "8×8の盤面に光るブロックを置き、ラインを消し、重力連鎖を起こし、3つのモードで時間に挑戦。14言語対応の完全オフラインパズルです。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",

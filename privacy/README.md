@@ -17,6 +17,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | REX: Dragon Flight | EN, ES, PT, FR, DE, RU, TR, AZ, AR, HI, ID, ZH | [View](https://biemtech.com/privacy/rex-dragon-flight/)            |
 | Zuzu: Bloomflight  | EN, ES, PT, FR, DE, RU, TR, AZ, AR, HI, ID, ZH | [View](https://biemtech.com/privacy/zuzu-bloomflight/)             |
 | Word Wheel         | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/word-wheel/)                    |
+| Neon Blocks        | EN, AZ, RU, TR, DE, FR, ES, PT, HI, AR, ZH, JA | [View](https://biemtech.com/privacy/neon-blocks/)                   |
 
 ---
 

@@ -1242,6 +1242,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(11, 140, 117, 0.3);
 }
 
+.app-card__icon.neon-blocks {
+  background: #080d1d;
+  box-shadow: 0 8px 24px rgba(40, 201, 255, 0.3);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

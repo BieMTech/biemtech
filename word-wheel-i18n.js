@@ -1,6 +1,6 @@
 const WORD_WHEEL_I18N = {
   en: {
-    nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "In Development",
+    nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "Live on Google Play",
     tagline: "Spin letters. Find words. Unlock worlds.",
     description: "Connect letters around the wheel, reveal every word on the board, discover bonus words, and turn each solved puzzle into a journey through collectible worlds.",
     contact_btn: "Contact us for updates →", privacy_btn: "Privacy Policy",
@@ -11,11 +11,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "A Growing Challenge", f3_desc: "Warm-up puzzles introduce the rhythm before larger wheels and denser boards gradually ask for deeper word knowledge.",
     f4_title: "Geodes, Tools and Rewards", f4_desc: "Complete levels to crack geodes, earn coins, collect hints and picks, and keep difficult boards moving.",
     f5_title: "Collect Beautiful Worlds", f5_desc: "Unlock 50 painted location cards—from Baku and London to natural wonders and imagined destinations—and play against your favorites.",
-    f6_title: "Private and Offline", f6_desc: "The current build needs no account and contains no ads, analytics, purchases, social features, or personal-data collection.",
+    f6_title: "Offline Core, Optional Leaderboard", f6_desc: "Core play works offline. Google Play Games sign-in is optional and used only for the XP leaderboard; there are no ads, analytics, or purchases.",
     meta_developer: "Developer", meta_platform: "Platform", meta_status: "Status", meta_category: "Category", meta_age: "Audience", meta_contact: "Contact", category: "Word Puzzle", age: "Recommended 12+ · General audience", footer_home: "Home"
   },
   az: {
-    nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "Hazırlanır",
+    nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "Google Play-də yayımdadır",
     tagline: "Hərfləri döndər. Sözləri tap. Dünyaları aç.",
     description: "Çarxdakı hərfləri birləşdir, lövhədəki bütün sözləri aç, bonus sözlər kəşf et və hər həll olunmuş tapmacanı kolleksiya edilən dünyalara səyahətə çevir.",
     contact_btn: "Yeniliklər üçün əlaqə saxla →", privacy_btn: "Məxfilik Siyasəti",
@@ -26,11 +26,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Tədricən artan çətinlik", f3_desc: "İsinmə tapmacaları ritmi öyrədir, sonra daha böyük çarxlar və sıx lövhələr daha dərin söz ehtiyatı tələb edir.",
     f4_title: "Geodlar, alətlər və mükafatlar", f4_desc: "Səviyyələri bitir, geodları sındır, sikkə, ipucu və seçim alətləri qazanaraq çətin lövhələrdə irəlilə.",
     f5_title: "Gözəl dünyaları topla", f5_desc: "Bakı və Londondan təbiət möcüzələri və xəyali məkanlara qədər 50 rəsmli məkan kartını aç və sevdiyin fonda oyna.",
-    f6_title: "Məxfi və oflayn", f6_desc: "Cari versiya hesab tələb etmir; reklam, analitika, alış, sosial funksiya və şəxsi məlumat toplanması yoxdur.",
+    f6_title: "Oflayn oyun, istəyə bağlı lider cədvəli", f6_desc: "Əsas oyun oflayn işləyir. Google Play Games girişi istəyə bağlıdır və yalnız XP lider cədvəli üçün istifadə olunur; reklam, analitika və alış yoxdur.",
     meta_developer: "Tərtibatçı", meta_platform: "Platforma", meta_status: "Status", meta_category: "Kateqoriya", meta_age: "Auditoriya", meta_contact: "Əlaqə", category: "Söz Tapmacası", age: "12+ tövsiyə olunur · Ümumi auditoriya", footer_home: "Ana səhifə"
   },
   ru: {
-    nav_about: "О нас", nav_apps: "Приложения", nav_privacy: "Конфиденциальность", status: "В разработке",
+    nav_about: "О нас", nav_apps: "Приложения", nav_privacy: "Конфиденциальность", status: "Доступно в Google Play",
     tagline: "Вращайте буквы. Находите слова. Открывайте миры.",
     description: "Соединяйте буквы на колесе, открывайте все слова на поле, находите бонусные слова и превращайте каждую решённую головоломку в путешествие по коллекционным мирам.",
     contact_btn: "Узнавать об обновлениях →", privacy_btn: "Политика конфиденциальности",
@@ -41,11 +41,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Постепенное усложнение", f3_desc: "Разминка знакомит с ритмом, а затем большие колёса и плотные поля требуют всё более глубокого словарного запаса.",
     f4_title: "Жеоды, инструменты и награды", f4_desc: "Проходите уровни, раскалывайте жеоды, получайте монеты, подсказки и открытия слов.",
     f5_title: "Коллекция красивых миров", f5_desc: "Откройте 50 рисованных локаций — от Баку и Лондона до чудес природы и воображаемых мест — и играйте на любимом фоне.",
-    f6_title: "Приватно и офлайн", f6_desc: "Текущая версия не требует аккаунта и не содержит рекламы, аналитики, покупок, социальных функций или сбора личных данных.",
+    f6_title: "Офлайн-игра и дополнительный рейтинг", f6_desc: "Основная игра работает офлайн. Вход в Google Play Games необязателен и нужен только для рейтинга XP; рекламы, аналитики и покупок нет.",
     meta_developer: "Разработчик", meta_platform: "Платформа", meta_status: "Статус", meta_category: "Категория", meta_age: "Аудитория", meta_contact: "Контакт", category: "Словесная головоломка", age: "Рекомендуется с 12 лет · Для широкой аудитории", footer_home: "Главная"
   },
   tr: {
-    nav_about: "Hakkımızda", nav_apps: "Uygulamalar", nav_privacy: "Gizlilik", status: "Geliştiriliyor",
+    nav_about: "Hakkımızda", nav_apps: "Uygulamalar", nav_privacy: "Gizlilik", status: "Google Play'de yayında",
     tagline: "Harfleri çevir. Kelimeleri bul. Dünyaları aç.",
     description: "Çarktaki harfleri birleştir, tahtadaki tüm kelimeleri aç, bonus kelimeler keşfet ve çözülen her bulmacayı koleksiyonluk dünyalara bir yolculuğa dönüştür.",
     contact_btn: "Güncellemeler için iletişime geç →", privacy_btn: "Gizlilik Politikası",
@@ -56,11 +56,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Giderek büyüyen meydan okuma", f3_desc: "Isınma bulmacaları ritmi öğretir; sonra daha büyük çarklar ve yoğun tahtalar daha derin kelime bilgisi ister.",
     f4_title: "Jeotlar, araçlar ve ödüller", f4_desc: "Seviyeleri bitir, jeotları kır, para, ipucu ve kelime açma araçları kazan.",
     f5_title: "Güzel dünyaları biriktir", f5_desc: "Bakü ve Londra'dan doğa harikaları ile hayali yerlere uzanan 50 resimli konum kartını aç ve favori arka planında oyna.",
-    f6_title: "Gizli ve çevrimdışı", f6_desc: "Mevcut sürüm hesap gerektirmez; reklam, analiz, satın alma, sosyal özellik veya kişisel veri toplama içermez.",
+    f6_title: "Çevrimdışı oyun, isteğe bağlı liderlik tablosu", f6_desc: "Ana oyun çevrimdışı çalışır. Google Play Games girişi isteğe bağlıdır ve yalnızca XP liderlik tablosu için kullanılır; reklam, analiz veya satın alma yoktur.",
     meta_developer: "Geliştirici", meta_platform: "Platform", meta_status: "Durum", meta_category: "Kategori", meta_age: "Kitle", meta_contact: "İletişim", category: "Kelime Bulmacası", age: "12+ önerilir · Genel kitle", footer_home: "Ana sayfa"
   },
   de: {
-    nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "In Entwicklung",
+    nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "Bei Google Play verfügbar",
     tagline: "Buchstaben drehen. Wörter finden. Welten freischalten.",
     description: "Verbinde Buchstaben auf dem Rad, decke alle Wörter auf dem Brett auf, entdecke Bonuswörter und verwandle jedes gelöste Rätsel in eine Reise durch sammelbare Welten.",
     contact_btn: "Updates erhalten →", privacy_btn: "Datenschutzrichtlinie",
@@ -71,11 +71,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Wachsende Herausforderung", f3_desc: "Einstiegsrätsel führen in den Rhythmus ein, bevor größere Räder und dichtere Bretter einen tieferen Wortschatz verlangen.",
     f4_title: "Geoden, Werkzeuge und Belohnungen", f4_desc: "Schließe Level ab, öffne Geoden und verdiene Münzen, Hinweise sowie Hilfswerkzeuge.",
     f5_title: "Schöne Welten sammeln", f5_desc: "Schalte 50 gemalte Ortskarten frei — von Baku und London bis zu Naturwundern und Fantasiezielen — und spiele vor deinen Favoriten.",
-    f6_title: "Privat und offline", f6_desc: "Die aktuelle Version benötigt kein Konto und enthält keine Werbung, Analysen, Käufe, sozialen Funktionen oder Erfassung personenbezogener Daten.",
+    f6_title: "Offline-Spiel und optionale Bestenliste", f6_desc: "Das Hauptspiel funktioniert offline. Die Anmeldung bei Google Play Games ist optional und wird nur für die XP-Bestenliste genutzt; Werbung, Analysen und Käufe gibt es nicht.",
     meta_developer: "Entwickler", meta_platform: "Plattform", meta_status: "Status", meta_category: "Kategorie", meta_age: "Zielgruppe", meta_contact: "Kontakt", category: "Worträtsel", age: "Empfohlen ab 12 · Allgemeines Publikum", footer_home: "Startseite"
   },
   fr: {
-    nav_about: "À propos", nav_apps: "Applications", nav_privacy: "Confidentialité", status: "En développement",
+    nav_about: "À propos", nav_apps: "Applications", nav_privacy: "Confidentialité", status: "Disponible sur Google Play",
     tagline: "Faites tourner les lettres. Trouvez les mots. Débloquez des mondes.",
     description: "Reliez les lettres autour de la roue, révélez tous les mots de la grille, découvrez des mots bonus et transformez chaque énigme résolue en voyage à travers des mondes à collectionner.",
     contact_btn: "Nous contacter pour les nouveautés →", privacy_btn: "Politique de confidentialité",
@@ -86,11 +86,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Un défi progressif", f3_desc: "Les premières énigmes enseignent le rythme avant que des roues plus grandes et des grilles plus denses sollicitent davantage le vocabulaire.",
     f4_title: "Géodes, outils et récompenses", f4_desc: "Terminez des niveaux, ouvrez des géodes et gagnez des pièces, des indices et des outils pour avancer.",
     f5_title: "Collectionnez de beaux mondes", f5_desc: "Débloquez 50 cartes illustrées — de Bakou et Londres aux merveilles naturelles et destinations imaginaires — et jouez sur vos décors préférés.",
-    f6_title: "Privé et hors ligne", f6_desc: "La version actuelle ne requiert aucun compte et ne contient ni publicité, ni analyse, ni achat, ni fonction sociale, ni collecte de données personnelles.",
+    f6_title: "Jeu hors ligne et classement facultatif", f6_desc: "Le jeu principal fonctionne hors ligne. La connexion à Google Play Games est facultative et sert uniquement au classement XP ; il n'y a ni publicité, ni analyse, ni achat.",
     meta_developer: "Développeur", meta_platform: "Plateforme", meta_status: "Statut", meta_category: "Catégorie", meta_age: "Public", meta_contact: "Contact", category: "Jeu de mots", age: "Recommandé dès 12 ans · Tout public", footer_home: "Accueil"
   },
   es: {
-    nav_about: "Nosotros", nav_apps: "Aplicaciones", nav_privacy: "Privacidad", status: "En desarrollo",
+    nav_about: "Nosotros", nav_apps: "Aplicaciones", nav_privacy: "Privacidad", status: "Disponible en Google Play",
     tagline: "Gira las letras. Encuentra palabras. Desbloquea mundos.",
     description: "Conecta las letras de la rueda, revela todas las palabras del tablero, descubre palabras extra y convierte cada puzle resuelto en un viaje por mundos coleccionables.",
     contact_btn: "Contáctanos para recibir novedades →", privacy_btn: "Política de privacidad",
@@ -101,11 +101,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Un reto creciente", f3_desc: "Los puzles iniciales enseñan el ritmo antes de que ruedas mayores y tableros más densos exijan más vocabulario.",
     f4_title: "Geodas, herramientas y premios", f4_desc: "Completa niveles, abre geodas y consigue monedas, pistas y herramientas para seguir avanzando.",
     f5_title: "Colecciona mundos hermosos", f5_desc: "Desbloquea 50 tarjetas ilustradas —de Bakú y Londres a maravillas naturales y destinos imaginarios— y juega con tus fondos favoritos.",
-    f6_title: "Privado y sin conexión", f6_desc: "La versión actual no requiere cuenta y no contiene anuncios, analíticas, compras, funciones sociales ni recopilación de datos personales.",
+    f6_title: "Juego offline y clasificación opcional", f6_desc: "El juego principal funciona sin conexión. El inicio de sesión de Google Play Games es opcional y se usa solo para la clasificación de XP; no hay anuncios, analíticas ni compras.",
     meta_developer: "Desarrollador", meta_platform: "Plataforma", meta_status: "Estado", meta_category: "Categoría", meta_age: "Público", meta_contact: "Contacto", category: "Puzle de palabras", age: "Recomendado para mayores de 12 · Público general", footer_home: "Inicio"
   },
   pt: {
-    nav_about: "Sobre", nav_apps: "Aplicativos", nav_privacy: "Privacidade", status: "Em desenvolvimento",
+    nav_about: "Sobre", nav_apps: "Aplicativos", nav_privacy: "Privacidade", status: "Disponível no Google Play",
     tagline: "Gire as letras. Encontre palavras. Desbloqueie mundos.",
     description: "Ligue as letras ao redor da roda, revele todas as palavras do tabuleiro, descubra palavras bônus e transforme cada quebra-cabeça resolvido em uma viagem por mundos colecionáveis.",
     contact_btn: "Fale conosco para receber novidades →", privacy_btn: "Política de Privacidade",
@@ -116,11 +116,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Um desafio crescente", f3_desc: "Os primeiros desafios ensinam o ritmo antes de rodas maiores e tabuleiros mais densos exigirem um vocabulário mais amplo.",
     f4_title: "Geodos, ferramentas e prêmios", f4_desc: "Conclua níveis, abra geodos e ganhe moedas, dicas e ferramentas para continuar avançando.",
     f5_title: "Colecione belos mundos", f5_desc: "Desbloqueie 50 cartões ilustrados — de Baku e Londres a maravilhas naturais e destinos imaginários — e jogue com seus fundos favoritos.",
-    f6_title: "Privado e offline", f6_desc: "A versão atual não exige conta e não contém anúncios, análises, compras, recursos sociais ou coleta de dados pessoais.",
+    f6_title: "Jogo offline e placar opcional", f6_desc: "O jogo principal funciona offline. O login no Google Play Games é opcional e usado apenas no placar de XP; não há anúncios, análises ou compras.",
     meta_developer: "Desenvolvedor", meta_platform: "Plataforma", meta_status: "Status", meta_category: "Categoria", meta_age: "Público", meta_contact: "Contato", category: "Jogo de palavras", age: "Recomendado para maiores de 12 · Público geral", footer_home: "Início"
   },
   it: {
-    nav_about: "Chi siamo", nav_apps: "App", nav_privacy: "Privacy", status: "In sviluppo",
+    nav_about: "Chi siamo", nav_apps: "App", nav_privacy: "Privacy", status: "Disponibile su Google Play",
     tagline: "Gira le lettere. Trova le parole. Sblocca mondi.",
     description: "Collega le lettere sulla ruota, rivela tutte le parole sul tabellone, scopri parole bonus e trasforma ogni rompicapo risolto in un viaggio tra mondi da collezionare.",
     contact_btn: "Contattaci per gli aggiornamenti →", privacy_btn: "Informativa sulla privacy",
@@ -131,11 +131,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "Una sfida crescente", f3_desc: "I primi rompicapi insegnano il ritmo, poi ruote più grandi e schemi più fitti richiedono un vocabolario più profondo.",
     f4_title: "Geodi, strumenti e premi", f4_desc: "Completa i livelli, apri i geodi e ottieni monete, suggerimenti e strumenti per continuare.",
     f5_title: "Colleziona splendidi mondi", f5_desc: "Sblocca 50 carte illustrate — da Baku e Londra alle meraviglie naturali e ai luoghi immaginari — e gioca sui tuoi sfondi preferiti.",
-    f6_title: "Privato e offline", f6_desc: "La versione attuale non richiede account e non include annunci, analisi, acquisti, funzioni social o raccolta di dati personali.",
+    f6_title: "Gioco offline e classifica facoltativa", f6_desc: "Il gioco principale funziona offline. L'accesso a Google Play Games è facoltativo e serve solo per la classifica XP; non ci sono annunci, analisi o acquisti.",
     meta_developer: "Sviluppatore", meta_platform: "Piattaforma", meta_status: "Stato", meta_category: "Categoria", meta_age: "Pubblico", meta_contact: "Contatto", category: "Rompicapo di parole", age: "Consigliato dai 12 anni · Pubblico generale", footer_home: "Home"
   },
   ar: {
-    nav_about: "من نحن", nav_apps: "التطبيقات", nav_privacy: "الخصوصية", status: "قيد التطوير",
+    nav_about: "من نحن", nav_apps: "التطبيقات", nav_privacy: "الخصوصية", status: "متاحة على Google Play",
     tagline: "أدر الحروف. اعثر على الكلمات. افتح العوالم.",
     description: "صِل الحروف حول العجلة، واكشف كل الكلمات على اللوحة، واكتشف كلمات إضافية، وحوّل كل لغز محلول إلى رحلة عبر عوالم قابلة للجمع.",
     contact_btn: "تواصل معنا لمعرفة التحديثات ←", privacy_btn: "سياسة الخصوصية",
@@ -146,11 +146,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "تحدٍ يتطور تدريجياً", f3_desc: "تعرّفك الألغاز الأولى على الإيقاع قبل أن تتطلب العجلات الأكبر واللوحات الأكثر كثافة حصيلة لغوية أعمق.",
     f4_title: "جيود وأدوات ومكافآت", f4_desc: "أكمل المراحل وافتح الجيود واكسب العملات والتلميحات وأدوات فتح الكلمات.",
     f5_title: "اجمع عوالم جميلة", f5_desc: "افتح 50 بطاقة مواقع مرسومة — من باكو ولندن إلى عجائب الطبيعة والوجهات الخيالية — والعب بخلفياتك المفضلة.",
-    f6_title: "خاص وبدون اتصال", f6_desc: "لا يتطلب الإصدار الحالي حساباً ولا يحتوي على إعلانات أو تحليلات أو مشتريات أو ميزات اجتماعية أو جمع بيانات شخصية.",
+    f6_title: "لعب دون اتصال ولوحة اختيارية", f6_desc: "تعمل اللعبة الأساسية دون اتصال. تسجيل الدخول إلى Google Play Games اختياري ويُستخدم فقط للوحة صدارة XP؛ ولا توجد إعلانات أو تحليلات أو مشتريات.",
     meta_developer: "المطور", meta_platform: "المنصة", meta_status: "الحالة", meta_category: "الفئة", meta_age: "الجمهور", meta_contact: "التواصل", category: "لغز كلمات", age: "موصى به لعمر 12+ · جمهور عام", footer_home: "الرئيسية"
   },
   zh: {
-    nav_about: "关于我们", nav_apps: "应用", nav_privacy: "隐私", status: "开发中",
+    nav_about: "关于我们", nav_apps: "应用", nav_privacy: "隐私", status: "已在 Google Play 上线",
     tagline: "转动字母。找出单词。解锁世界。",
     description: "连接字母轮上的字母，找出棋盘上的全部单词，发现奖励词，并让每个解开的谜题成为探索收藏世界的一段旅程。",
     contact_btn: "联系我们获取更新 →", privacy_btn: "隐私政策",
@@ -161,11 +161,11 @@ const WORD_WHEEL_I18N = {
     f3_title: "逐步提升的挑战", f3_desc: "热身谜题先帮助你掌握节奏，随后更大的字母轮和更密集的棋盘将考验更深的词汇量。",
     f4_title: "晶洞、工具与奖励", f4_desc: "完成关卡、打开晶洞，并获得金币、提示和开词工具。",
     f5_title: "收藏美丽世界", f5_desc: "解锁50张地点插画卡，从巴库、伦敦到自然奇观与幻想目的地，并在喜爱的背景中游玩。",
-    f6_title: "私密且可离线", f6_desc: "当前版本无需账户，也没有广告、分析、购买、社交功能或个人数据收集。",
+    f6_title: "离线核心，可选排行榜", f6_desc: "核心游戏可离线游玩。Google Play Games 登录为可选功能，仅用于 XP 排行榜；没有广告、分析或购买。",
     meta_developer: "开发者", meta_platform: "平台", meta_status: "状态", meta_category: "类别", meta_age: "受众", meta_contact: "联系", category: "文字谜题", age: "建议12岁以上 · 面向普通用户", footer_home: "首页"
   },
   ja: {
-    nav_about: "会社紹介", nav_apps: "アプリ", nav_privacy: "プライバシー", status: "開発中",
+    nav_about: "会社紹介", nav_apps: "アプリ", nav_privacy: "プライバシー", status: "Google Play で配信中",
     tagline: "文字を回す。言葉を見つける。世界を開く。",
     description: "ホイールの文字をつなぎ、ボード上の言葉をすべて見つけ、ボーナスワードを発見し、解いたパズルをコレクション世界への旅に変えましょう。",
     contact_btn: "最新情報について問い合わせる →", privacy_btn: "プライバシーポリシー",
@@ -176,7 +176,7 @@ const WORD_WHEEL_I18N = {
     f3_title: "少しずつ深まる挑戦", f3_desc: "最初のパズルでリズムを学び、やがて大きなホイールと密なボードがより深い語彙力を試します。",
     f4_title: "ジオード、道具、報酬", f4_desc: "レベルをクリアしてジオードを開き、コイン、ヒント、単語を開く道具を手に入れましょう。",
     f5_title: "美しい世界を集める", f5_desc: "バクーやロンドンから自然の驚異、空想の目的地まで、50枚のロケーションカードを開き、お気に入りの背景で遊べます。",
-    f6_title: "プライベートでオフライン", f6_desc: "現在のバージョンはアカウント不要で、広告、解析、購入、ソーシャル機能、個人データ収集はありません。",
+    f6_title: "オフライン本編と任意のランキング", f6_desc: "基本ゲームはオフラインで遊べます。Google Play Games へのログインは任意で、XPランキングにのみ使用されます。広告、解析、購入はありません。",
     meta_developer: "開発者", meta_platform: "プラットフォーム", meta_status: "状態", meta_category: "カテゴリー", meta_age: "対象", meta_contact: "連絡先", category: "ワードパズル", age: "12歳以上推奨 · 一般向け", footer_home: "ホーム"
   }
 };

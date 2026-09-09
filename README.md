@@ -14,6 +14,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `rex-dragon-flight.html`  | REX: Dragon Flight app page                      |
 | `zuzu-bloomflight.html`   | Zuzu: Bloomflight app page                       |
 | `word-wheel.html`         | Word Wheel app page                              |
+| `neon-blocks.html`        | Neon Blocks app page                             |
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
@@ -59,10 +60,19 @@ A garden arcade game for ages 6 and up, available on Google Play with optional P
 
 ### Word Wheel
 
-A private, offline multilingual word puzzle with more than 60,000 levels and 50 collectible worlds, recommended for ages 12 and up. Currently in development.
+A multilingual word puzzle with more than 60,000 levels and 50 collectible worlds, recommended for ages 12 and up. Available on Google Play with an optional Play Games leaderboard.
 
+- Package: `com.biemtech.wordwheel`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.wordwheel
 - Languages: 26 playable language packs
 - Privacy Policy: https://biemtech.com/privacy/word-wheel/
+
+### Neon Blocks
+
+A fully offline 8×8 block puzzle with Classic, Gravity, and Rush modes in 14 languages. Currently in development.
+
+- Package: `com.biemtech.neonblocks`
+- Privacy Policy: https://biemtech.com/privacy/neon-blocks/
 
 ## Contact
 
