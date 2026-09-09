@@ -737,7 +737,6 @@ body::after {
   width: 480px;
   height: 480px;
 }
-
 /* Inner decorative spinning ring */
 .hero__vis-logo-wrap::before {
   content: '';
@@ -760,15 +759,41 @@ body::after {
   border: 1.5px solid rgba(46,111,64,0.22);
   pointer-events: none;
   z-index: 0;
+  animation: ringBreathe 6s ease-in-out infinite;
+}
+@keyframes ringBreathe {
+  0%, 100% { opacity: 0.75; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.012); }
 }
 @keyframes spinRing {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
 
+/* Rotating conic sheen that sweeps the orbit plane */
+.orbit-sheen {
+  position: absolute;
+  width: 388px;
+  height: 388px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: conic-gradient(
+    from 0deg,
+    rgba(46,111,64,0.00) 0deg,
+    rgba(46,111,64,0.00) 250deg,
+    rgba(46,111,64,0.16) 320deg,
+    rgba(181,110,71,0.20) 350deg,
+    rgba(46,111,64,0.00) 360deg
+  );
+  -webkit-mask: radial-gradient(circle, transparent 61%, #000 63%, #000 68%, transparent 70%);
+  mask: radial-gradient(circle, transparent 61%, #000 63%, #000 68%, transparent 70%);
+  animation: spinRing 7s linear infinite;
+}
+
 /* ── Orbit arm system ─────────────────────────────────── */
-/* Each arm is 400×400, rotates around its center (200,200) */
-/* Item is pinned at top (12 o'clock, radius 160) and        */
+/* Each arm is 480×480, rotates around its center (240,240) */
+/* Item is pinned at top (12 o'clock, radius 194) and        */
 /* counter-rotates to stay visually upright.                 */
 /* animation-delay sets the starting clock position.         */
 
@@ -785,20 +810,72 @@ body::after {
   z-index: 5;
 }
 
+/* Faint spoke connecting the hub to each orbiting app */
+.orbit-arm::before {
+  content: '';
+  position: absolute;
+  left: 240px;
+  top: 62px;
+  width: 1px;
+  height: 116px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    rgba(46,111,64,0.30),
+    rgba(46,111,64,0.04)
+  );
+  pointer-events: none;
+}
+
 .orbit-arm > a {
   position: absolute;
   top: 46px;
   left: 240px;
   transform: translateX(-50%) translateY(-50%);
-  animation: counterSpin 20s linear infinite;
-  animation-delay: var(--od, 0s);
+  animation:
+    counterSpin 20s linear infinite,
+    orbitDepth 20s ease-in-out infinite;
+  animation-delay: var(--od, 0s), var(--od, 0s);
   pointer-events: auto;
-  will-change: transform;
+  will-change: transform, opacity;
 }
 
+/* Counter-rotate to stay upright + scale for near/far depth */
 @keyframes counterSpin {
-  from { transform: translateX(-50%) translateY(-50%) rotate(0deg);    }
-  to   { transform: translateX(-50%) translateY(-50%) rotate(-360deg); }
+  0%   { transform: translate(-50%, -50%) rotate(0deg)    scale(0.86); }
+  25%  { transform: translate(-50%, -50%) rotate(-90deg)  scale(0.97); }
+  50%  { transform: translate(-50%, -50%) rotate(-180deg) scale(1.09); }
+  75%  { transform: translate(-50%, -50%) rotate(-270deg) scale(0.97); }
+  100% { transform: translate(-50%, -50%) rotate(-360deg) scale(0.86); }
+}
+
+/* Far side reads dimmer/flatter, near side brighter */
+@keyframes orbitDepth {
+  0%   { opacity: 0.72; filter: saturate(0.8); }
+  25%  { opacity: 0.9;  filter: saturate(0.95); }
+  50%  { opacity: 1;    filter: saturate(1.08); }
+  75%  { opacity: 0.9;  filter: saturate(0.95); }
+  100% { opacity: 0.72; filter: saturate(0.8); }
+}
+
+
+/* Hovered app floats above its neighbours, its spoke lights up */
+.orbit-arm:has(> a:hover) {
+  z-index: 12;
+}
+.orbit-arm:has(> a:hover)::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(46,111,64,0.70),
+    rgba(181,110,71,0.10)
+  );
+}
+/* Hover anywhere on the orbit freezes it so links are easy to hit */
+.hero__vis-logo-wrap:hover .orbit-arm,
+.hero__vis-logo-wrap:hover .orbit-arm > a,
+.hero__vis-logo-wrap:hover .orbit-glow-arm,
+.hero__vis-logo-wrap:hover .orbit-sheen {
+  animation-play-state: paused;
 }
 
 /* Fast glowing dot that races around the ring */
@@ -813,6 +890,11 @@ body::after {
   pointer-events: none;
   z-index: 4;
 }
+/* Second dot runs the other way on the inner dashed ring */
+.orbit-glow-arm--rev {
+  animation: spinRing 5.5s linear infinite reverse;
+  z-index: 3;
+}
 .orbit-glow-dot {
   position: absolute;
   top: 46px;
@@ -823,6 +905,50 @@ body::after {
   background: var(--primary);
   box-shadow: 0 0 14px 6px rgba(46,111,64,0.50);
   transform: translateX(-50%) translateY(-50%);
+}
+.orbit-glow-arm--rev .orbit-glow-dot {
+  top: 135px;
+  width: 6px;
+  height: 6px;
+  background: #B56E47;
+  box-shadow: 0 0 12px 5px rgba(181,110,71,0.45);
+}
+
+/* Comet trail behind the fast dot */
+.orbit-glow-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 3px;
+  transform: translate(-100%, -50%);
+  border-radius: 999px;
+  background: linear-gradient(
+    to left,
+    rgba(46,111,64,0.45),
+    rgba(46,111,64,0)
+  );
+}
+.orbit-glow-arm--rev .orbit-glow-dot::after {
+  width: 28px;
+  background: linear-gradient(
+    to left,
+    rgba(181,110,71,0.40),
+    rgba(181,110,71,0)
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-arm,
+  .orbit-arm > a,
+  .orbit-glow-arm,
+  .orbit-sheen,
+  .hero__vis-logo-wrap::before,
+  .hero__vis-logo-wrap::after {
+    animation: none;
+  }
+  .orbit-arm > a { opacity: 1; filter: none; }
 }
 
 .hero__vis-orbit-btn img {
@@ -876,7 +1002,7 @@ body::after {
     0 8px 32px rgba(46,111,64,0.50),
     inset 0 1px 0 rgba(255,255,255,0.28);
   color: #fff;
-  transform: translate(-50%, -50%) scale(1.06);
+  border-color: rgba(255,255,255,0.55);
 }
 
 /* App chip (Math Kids) */
@@ -946,7 +1072,7 @@ body::after {
     0 8px 32px rgba(46,111,64,0.50),
     inset 0 1px 0 rgba(255,255,255,0.28);
   color: #fff;
-  transform: translate(-50%, -50%) scale(1.06);
+  border-color: rgba(255,255,255,0.55);
 }
 
 .hero__vis-logo {
