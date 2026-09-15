@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Vanguard — BieMTech</title>
+    <meta
+      name="description"
+      content="Temple Vanguard is a fully offline 3D squad runner with arithmetic gates, temple hazards, arena battles, and endless generated levels, currently in development at BieMTech."
+    />
+    <meta name="theme-color" content="#081423" />
+    <meta property="og:title" content="Temple Vanguard — BieMTech" />
+    <meta
+      property="og:description"
+      content="Grow your guardian squad, survive the temple, and face the arena."
+    />
+    <meta property="og:image" content="https://biemtech.com/img/temple-vanguard-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/temple-vanguard-icon.png" />
+    <style>
+      :root {
+        --tv-bg: #07111f;
+        --tv-panel: rgba(14, 29, 46, 0.92);
+        --tv-text: #f7f4ec;
+        --tv-muted: #bbc7d4;
+        --tv-dim: #8292a2;
+        --tv-cyan: #51dff5;
+        --tv-gold: #e3ad5e;
+        --tv-orange: #d66d38;
+        --tv-border: rgba(81, 223, 245, 0.2);
+      }
+
+      body {
+        color: var(--tv-text);
+        background:
+          radial-gradient(circle at 12% 4%, rgba(214, 109, 56, 0.18), transparent 32rem),
+          radial-gradient(circle at 88% 30%, rgba(81, 223, 245, 0.14), transparent 28rem),
+          linear-gradient(180deg, #0d1d31, var(--tv-bg));
+      }
+
+      .navbar { border-color: var(--tv-border); background: rgba(7, 17, 31, 0.9); }
+      .navbar__nav a, .navbar__actions { color: var(--tv-muted); }
+      .navbar__nav a:hover, .navbar__nav a.active { color: var(--tv-text); }
+      .lang-select { color: var(--tv-text); color-scheme: dark; border-color: var(--tv-border); background: rgba(255,255,255,.07); }
+      .lang-select option { color: var(--tv-text); background: #0d1d31; }
+
+      .tv-hero { position: relative; overflow: hidden; padding: 58px 24px 70px; border-bottom: 1px solid var(--tv-border); }
+      .tv-hero::before { position: absolute; inset: 0; content: ""; pointer-events: none; opacity: .16; background-image: linear-gradient(30deg, transparent 48%, rgba(227,173,94,.18) 49%, rgba(227,173,94,.18) 51%, transparent 52%); background-size: 68px 118px; }
+      .tv-hero__inner { position: relative; display: grid; grid-template-columns: minmax(290px, .78fr) minmax(520px, 1.22fr); align-items: center; gap: clamp(40px, 6vw, 82px); }
+      .tv-hero__content { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+      .tv-icon-wrap { position: relative; margin-bottom: 22px; }
+      .tv-icon { display: block; width: 108px; height: 108px; object-fit: cover; border: 1px solid rgba(255,255,255,.22); border-radius: 25px; box-shadow: 0 20px 54px rgba(0,0,0,.48), 0 0 38px rgba(81,223,245,.2); }
+      .offline-bubble { position: absolute; right: -16px; bottom: -9px; display: grid; width: 51px; height: 51px; place-items: center; color: #07111f; font-size: .66rem; font-weight: 950; letter-spacing: .04em; border: 3px solid var(--tv-bg); border-radius: 50%; background: linear-gradient(135deg, #c9f6ff, var(--tv-cyan)); box-shadow: 0 8px 20px rgba(0,0,0,.42); }
+      .tv-status { display: inline-flex; gap: 7px; align-items: center; margin-bottom: 17px; color: #ffc187; border: 1px solid rgba(227,173,94,.36); background: rgba(227,173,94,.1); }
+      .tv-title { margin: 0 0 8px; font-size: clamp(40px, 7vw, 68px); font-weight: 900; line-height: .98; letter-spacing: -.055em; }
+      .tv-tagline { margin: 0; color: var(--tv-cyan); font-size: clamp(1.05rem, 2.6vw, 1.38rem); font-weight: 780; }
+      .tv-divider { width: 92px; height: 4px; margin: 17px 0 20px; border-radius: 5px; background: linear-gradient(90deg, var(--tv-orange), var(--tv-gold), var(--tv-cyan)); }
+      .tv-desc { max-width: 660px; margin: 0 0 25px; color: var(--tv-muted); font-size: 1rem; line-height: 1.75; }
+      .tv-actions { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 12px; }
+      .tv-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 999px; font-size: .92rem; font-weight: 760; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+      .tv-btn:hover { transform: translateY(-2px); }
+      .tv-btn--primary { color: #07111f; background: linear-gradient(135deg, #fff0c8, var(--tv-gold)); box-shadow: 0 8px 24px rgba(227,173,94,.25); }
+      .tv-btn--secondary { color: var(--tv-text); border: 1px solid var(--tv-border); background: rgba(255,255,255,.06); }
+
+      .tv-showcase { position: relative; margin: 0; padding: 18px 0; }
+      .tv-showcase::before { position: absolute; z-index: -1; inset: 13% 3% 7%; content: ""; border-radius: 50%; background: linear-gradient(90deg, rgba(214,109,56,.27), rgba(81,223,245,.24)); filter: blur(45px); }
+      .tv-shot { position: relative; display: block; width: 100%; height: auto; border: 1px solid rgba(255,255,255,.2); border-radius: 28px; box-shadow: 0 26px 65px rgba(0,0,0,.52); }
+
+      .tv-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 30px; padding: 20px; color: var(--tv-muted); font-size: .88rem; font-weight: 700; border-bottom: 1px solid var(--tv-border); background: rgba(255,255,255,.025); }
+      .tv-strip span::before { display: inline-block; width: 7px; height: 7px; margin-right: 9px; content: ""; border-radius: 50%; background: var(--tv-cyan); box-shadow: 0 0 12px rgba(81,223,245,.8); }
+      .tv-section { padding: 58px 0 66px; }
+      .tv-section .section-label { color: var(--tv-gold); border-color: rgba(227,173,94,.32); text-align: center; }
+      .tv-section-title { margin-top: 8px; color: var(--tv-text); font-size: clamp(24px, 3.5vw, 36px); font-weight: 850; text-align: center; letter-spacing: -.025em; }
+      .tv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 16px; margin-top: 40px; }
+      .tv-card { padding: 28px 24px; border: 1px solid var(--tv-border); border-radius: 20px; background: var(--tv-panel); box-shadow: 0 12px 34px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.05); transition: transform .22s ease, border-color .22s ease; }
+      .tv-card:hover { transform: translateY(-4px); border-color: rgba(227,173,94,.48); }
+      .tv-card__icon { display: block; margin-bottom: 14px; color: var(--tv-cyan); font-size: 1.85rem; line-height: 1; }
+      .tv-card__title { margin-bottom: 8px; color: var(--tv-text); font-size: 1rem; font-weight: 790; }
+      .tv-card__desc { color: var(--tv-muted); font-size: .875rem; line-height: 1.65; }
+      .tv-info { padding: 30px 24px; border-top: 1px solid var(--tv-border); border-bottom: 1px solid var(--tv-border); background: rgba(81,223,245,.045); }
+      .tv-info__inner { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px; text-align: center; }
+      .tv-info__label { margin: 0 0 4px; color: var(--tv-dim); font-size: .76rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+      .tv-info__value { margin: 0; color: var(--tv-text); font-size: 1rem; font-weight: 750; }
+      .tv-info__value a, .tv-footer a { color: var(--tv-cyan); }
+      .tv-footer { padding: 27px 20px; color: var(--tv-dim); font-size: .84rem; text-align: center; }
+      [dir="rtl"] .tv-strip span::before { margin-right: 0; margin-left: 9px; }
+      [dir="rtl"] .tv-hero__content { align-items: flex-end; text-align: right; }
+      [dir="rtl"] .tv-actions { justify-content: flex-end; }
+      @media (max-width: 980px) {
+        .tv-hero { padding-top: 38px; }
+        .tv-hero__inner { grid-template-columns: 1fr; gap: 38px; }
+        .tv-showcase { grid-row: 1; width: min(720px, 100%); margin: 0 auto; }
+        .tv-hero__content, [dir="rtl"] .tv-hero__content { grid-row: 2; align-items: center; text-align: center; }
+        .tv-divider { margin-right: auto; margin-left: auto; }
+        .tv-actions, [dir="rtl"] .tv-actions { justify-content: center; }
+      }
+      @media (max-width: 720px) { .navbar__nav { display: none; } .tv-info__inner { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); } .tv-showcase { padding: 8px 0; } .tv-shot { border-radius: 16px; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" />
+        </a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/temple-vanguard/index.html" data-i18n="nav_privacy">Privacy</a>
+        </nav>
+        <div class="navbar__actions">
+          <select class="lang-select" id="lang-select" aria-label="Language">
+            <option value="en">EN</option><option value="az">AZ</option><option value="ru">RU</option><option value="tr">TR</option>
+            <option value="de">DE</option><option value="fr">FR</option><option value="es">ES</option><option value="pt">PT</option>
+            <option value="it">IT</option><option value="ar">AR</option><option value="zh">ZH</option><option value="ja">JA</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="tv-hero">
+      <div class="container tv-hero__inner">
+        <div class="tv-hero__content">
+          <div class="tv-icon-wrap">
+            <img class="tv-icon" src="img/temple-vanguard-icon.png" alt="Temple Vanguard app icon" />
+            <span class="offline-bubble">3D</span>
+          </div>
+          <div class="badge tv-status">● <span data-i18n="status">In Development</span></div>
+          <h1 class="tv-title">Temple Vanguard</h1>
+          <p class="tv-tagline" data-i18n="tagline">Grow the squad. Face the guardian.</p>
+          <div class="tv-divider"></div>
+          <p class="tv-desc" data-i18n="description">Steer a stone commander through arithmetic gates, grow your formation, survive ancient temple hazards, and take every remaining guardian into a decisive arena battle.</p>
+          <div class="tv-actions">
+            <a href="mailto:info@biemtech.com" class="tv-btn tv-btn--primary" data-i18n="contact_btn">Contact us for updates →</a>
+            <a href="privacy/temple-vanguard/index.html" class="tv-btn tv-btn--secondary" data-i18n="privacy_btn">Privacy Policy</a>
+          </div>
+        </div>
+        <figure class="tv-showcase" aria-label="Temple Vanguard game artwork">
+          <img class="tv-shot" src="img/temple-vanguard-feature.png" alt="Temple Vanguard guardians charging toward a stone boss in a torch-lit arena" />
+        </figure>
+      </div>
+    </main>
+
+    <div class="tv-strip">
+      <span data-i18n="strip_runner">Portrait 3D squad runner</span>
+      <span data-i18n="strip_endless">Endless generated levels</span>
+      <span data-i18n="strip_languages">19 languages</span>
+      <span data-i18n="strip_offline">Fully offline</span>
+    </div>
+
+    <section class="tv-section">
+      <div class="container">
+        <p class="section-label" data-i18n="features_label">Features</p>
+        <h2 class="tv-section-title" data-i18n="features_title">Every choice builds the final battle</h2>
+        <div class="tv-grid">
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">＋×</span><div class="tv-card__title" data-i18n="f1_title">Arithmetic Gates</div><div class="tv-card__desc" data-i18n="f1_desc">Choose addition, subtraction, multiplication, or division at speed. Every answer changes the squad you carry forward.</div></article>
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">◇</span><div class="tv-card__title" data-i18n="f2_title">Skillful Steering</div><div class="tv-card__desc" data-i18n="f2_desc">Drag left and right to avoid spikes, rifts, walls, and gate pillars while collecting guardian runes.</div></article>
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">⚔</span><div class="tv-card__title" data-i18n="f3_title">Arena Battles</div><div class="tv-card__desc" data-i18n="f3_desc">The survivors charge an enemy garrison and its stone boss in an automatic battle shaped by your run.</div></article>
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">∞</span><div class="tv-card__title" data-i18n="f4_title">Endless Campaign</div><div class="tv-card__desc" data-i18n="f4_desc">Six handcrafted courses lead into deterministic generated levels that grow faster, longer, and more demanding.</div></article>
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">文</span><div class="tv-card__title" data-i18n="f5_title">19 Languages</div><div class="tv-card__desc" data-i18n="f5_desc">Play in Azerbaijani plus 18 translations, with automatic device-language detection and in-game switching.</div></article>
+          <article class="tv-card"><span class="tv-card__icon" aria-hidden="true">⌁</span><div class="tv-card__title" data-i18n="f6_title">Private and Offline</div><div class="tv-card__desc" data-i18n="f6_desc">No account, ads, analytics, purchases, or personal-data collection. Progress and settings stay on your device.</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tv-info">
+      <div class="container tv-info__inner">
+        <div><p class="tv-info__label" data-i18n="meta_developer">Developer</p><p class="tv-info__value"><a href="index.html">BieMTech</a></p></div>
+        <div><p class="tv-info__label" data-i18n="meta_platform">Platform</p><p class="tv-info__value">Android</p></div>
+        <div><p class="tv-info__label" data-i18n="meta_status">Status</p><p class="tv-info__value" data-i18n="status">In Development</p></div>
+        <div><p class="tv-info__label" data-i18n="meta_category">Category</p><p class="tv-info__value" data-i18n="category">Action Runner</p></div>
+        <div><p class="tv-info__label" data-i18n="meta_connectivity">Connectivity</p><p class="tv-info__value" data-i18n="connectivity">Offline</p></div>
+        <div><p class="tv-info__label" data-i18n="meta_contact">Contact</p><p class="tv-info__value"><a href="mailto:info@biemtech.com">info@biemtech.com</a></p></div>
+      </div>
+    </section>
+
+    <footer class="tv-footer">&copy; 2026 BieMTech &nbsp;·&nbsp; <a href="index.html" data-i18n="footer_home">Home</a> &nbsp;·&nbsp; <a href="privacy/temple-vanguard/index.html" data-i18n="privacy_btn">Privacy Policy</a></footer>
+    <script src="temple-vanguard-i18n.js"></script>
+    <script>
+      function applyLang(lang) {
+        const dict = TEMPLE_VANGUARD_I18N[lang] || TEMPLE_VANGUARD_I18N.en;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (dict[key] !== undefined) element.textContent = dict[key];
+        });
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.getElementById("lang-select").value = lang;
+      }
+      let savedLang = "en";
+      try { savedLang = localStorage.getItem("biemtech-lang") || "en"; } catch (_) {}
+      applyLang(TEMPLE_VANGUARD_I18N[savedLang] ? savedLang : "en");
+      document.getElementById("lang-select").addEventListener("change", (event) => {
+        try { localStorage.setItem("biemtech-lang", event.target.value); } catch (_) {}
+        applyLang(event.target.value);
+      });
+    </script>
+  </body>
+</html>

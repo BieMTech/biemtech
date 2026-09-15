@@ -15,6 +15,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `zuzu-bloomflight.html`   | Zuzu: Bloomflight app page                       |
 | `word-wheel.html`         | Word Wheel app page                              |
 | `neon-blocks.html`        | Neon Blocks app page                             |
+| `temple-vanguard.html`    | Temple Vanguard app page                         |
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
@@ -73,6 +74,14 @@ A fully offline 8×8 block puzzle with Classic, Gravity, and Rush modes in 14 la
 
 - Package: `com.biemtech.neonblocks`
 - Privacy Policy: https://biemtech.com/privacy/neon-blocks/
+
+### Temple Vanguard
+
+A fully offline portrait 3D squad runner with arithmetic gates, temple hazards, arena battles, and endless generated levels. Currently in development.
+
+- Package: `com.biemtech.templevanguard`
+- Languages: 19
+- Privacy Policy: https://biemtech.com/privacy/temple-vanguard/
 
 ## Contact
 

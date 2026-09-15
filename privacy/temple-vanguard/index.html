@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Vanguard Privacy Policy — BieMTech</title>
+    <meta
+      name="description"
+      content="Privacy policy for Temple Vanguard, the fully offline 3D squad runner by BieMTech."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <link rel="icon" type="image/png" href="../../img/temple-vanguard-icon.png" />
+    <style>
+      :root {
+        --bg: #07111f;
+        --surface: rgba(14, 29, 46, 0.92);
+        --text: #f7f4ec;
+        --muted: #bbc7d4;
+        --cyan: #51dff5;
+        --gold: #e3ad5e;
+        --border: rgba(81, 223, 245, 0.2);
+      }
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        background:
+          radial-gradient(circle at 12% 5%, rgba(214, 109, 56, 0.18), transparent 30rem),
+          radial-gradient(circle at 88% 24%, rgba(81, 223, 245, 0.12), transparent 26rem),
+          var(--bg);
+      }
+      a { color: var(--cyan); }
+      .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 20px 0; }
+      .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: .9rem; font-weight: 650; text-decoration: none; }
+      .back-link:hover { color: var(--text); }
+      .lang-select { padding: 8px 14px; color: var(--text); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,.06); color-scheme: dark; }
+      .lang-select option { color: var(--text); background: var(--bg); }
+      header { width: min(860px, calc(100% - 32px)); margin: 34px auto 40px; text-align: center; }
+      .app-icon { width: 108px; height: 108px; object-fit: cover; border: 1px solid rgba(255,255,255,.2); border-radius: 25px; box-shadow: 0 20px 55px rgba(0,0,0,.4), 0 0 40px rgba(81,223,245,.18); }
+      h1 { margin: 22px 0 4px; font-size: clamp(2.15rem, 7vw, 4rem); line-height: 1.05; letter-spacing: -.045em; }
+      .subtitle { margin: 0; color: var(--gold); font-size: .82rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+      .audience { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 7px 14px; color: var(--cyan); font-size: .85rem; font-weight: 750; border: 1px solid rgba(81,223,245,.3); border-radius: 999px; background: rgba(81,223,245,.07); }
+      main { width: min(860px, calc(100% - 32px)); margin: 0 auto 72px; }
+      .meta, .summary, .card { border: 1px solid var(--border); background: var(--surface); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); box-shadow: 0 18px 48px rgba(0,0,0,.2); }
+      .meta { margin: 0 0 14px; padding: 14px 18px; color: var(--muted); font-size: .84rem; text-align: center; border-radius: 14px; }
+      code { color: var(--cyan); }
+      .summary { margin-bottom: 20px; padding: 18px 20px; color: #eefcff; border-color: rgba(227,173,94,.34); border-radius: 16px; }
+      .card { margin-bottom: 14px; padding: clamp(20px, 5vw, 30px); border-radius: 18px; }
+      h2 { margin: 0 0 12px; color: var(--gold); font-size: 1.15rem; line-height: 1.35; }
+      p { margin: 0 0 12px; }
+      p:last-child { margin-bottom: 0; }
+      .contact-link { display: inline-flex; margin-top: 6px; padding: 9px 18px; color: #07111f; font-weight: 800; text-decoration: none; border-radius: 999px; background: linear-gradient(135deg, #c9f6ff, var(--cyan)); }
+      footer { padding: 28px 16px; color: var(--muted); font-size: .84rem; text-align: center; border-top: 1px solid var(--border); }
+      @media (max-width: 560px) { .topbar { align-items: flex-start; } .back-link { max-width: 190px; } header { margin-top: 18px; } .meta { text-align: start; } }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a class="back-link" href="../index.html" data-i18n="back">← BieMTech Privacy Policies</a>
+      <select id="lang-select" class="lang-select" onchange="switchLang(this.value)" aria-label="Language">
+        <option value="en">🇬🇧 English</option><option value="az">🇦🇿 Azərbaycan dili</option>
+        <option value="ru">🇷🇺 Русский</option><option value="tr">🇹🇷 Türkçe</option>
+        <option value="de">🇩🇪 Deutsch</option><option value="fr">🇫🇷 Français</option>
+        <option value="es">🇪🇸 Español</option><option value="pt">🇵🇹 Português</option>
+        <option value="it">🇮🇹 Italiano</option><option value="ar">🇸🇦 العربية</option>
+        <option value="zh">🇨🇳 中文</option><option value="ja">🇯🇵 日本語</option>
+      </select>
+    </div>
+
+    <header>
+      <img class="app-icon" src="../../img/temple-vanguard-icon.png" alt="Temple Vanguard" />
+      <h1>Temple Vanguard</h1>
+      <p class="subtitle" data-i18n="subtitle">Privacy Policy</p>
+      <span class="audience" data-i18n="audience">Current pre-release Android build · General audience</span>
+    </header>
+
+    <main id="policy-content"></main>
+    <footer>&copy; <span id="year"></span> BieMTech. <span data-i18n="rights">All rights reserved.</span></footer>
+
+    <script>
+      const T = {
+        en: {
+          dir: "ltr", back: "← BieMTech Privacy Policies", subtitle: "Privacy Policy", audience: "Current pre-release Android build · General audience", rights: "All rights reserved.", app: "App", pkg: "Package", updated: "Last updated", date: "September 15, 2026",
+          summary: "<strong>In short:</strong> Temple Vanguard <strong>does not collect, share, sell, or transmit personal data</strong>. The current build works fully offline, contains no ads or analytics, and keeps progress and settings only on your device.",
+          sections: [
+            ["1. About the App", "<p>Temple Vanguard is a portrait 3D squad runner by BieMTech. Players steer a stone commander through arithmetic gates and temple hazards, then face a stylized automatic arena battle. The app is currently in development.</p>"],
+            ["2. Information We Collect", "<p>Temple Vanguard does <strong>not collect personal information</strong>. It does not request a name, email address, phone number, account, sign-in, precise location, contacts, photos, media, microphone, or camera access. Game or device data is not sent to BieMTech or third parties.</p><p>The app has no server-side profile and no remote account.</p>"],
+            ["3. Data Stored on Your Device", "<p>The app stores only local gameplay and preference data: the highest unlocked level, best squad counts, star ratings, sound setting, vibration setting, and selected language. This data is stored in the app's private device storage and is used only to resume your experience.</p>"],
+            ["4. Offline Use and Permissions", "<p>The current Android build works fully offline and declares no Internet or custom permissions. Optional haptic feedback may use the device's vibration function when enabled. Temple Vanguard does not request sensitive permissions.</p>"],
+            ["5. Ads and Third Parties", "<p>Temple Vanguard contains no ads, analytics, tracking, in-app purchases, cloud saves, social features, or third-party SDKs for these purposes. The store or platform from which you obtain the app may process its own data under its own privacy policy; that processing is separate from Temple Vanguard.</p>"],
+            ["6. Children and General Audience", "<p>The app has no registration, chat, social profile, user-generated content, behavioral profiling, or targeted advertising. The same privacy protections apply to every player. We do not knowingly collect personal information from children or adults.</p>"],
+            ["7. Retention, Deletion, and Changes", "<p>Local progress and settings remain on your device until you delete them. You can remove all local app data by clearing Temple Vanguard's storage in Android Settings or uninstalling the app. Because the app sends no data to a server, no server-side deletion request is necessary.</p><p>If the app or its data practices change before or after release, we will update this policy and its date before the relevant version is distributed.</p>"],
+            ["8. Contact Us", "<p>For questions about this policy or Temple Vanguard's data practices, contact BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        az: {
+          dir: "ltr", back: "← BieMTech Məxfilik Siyasətləri", subtitle: "Məxfilik Siyasəti", audience: "Cari buraxılışöncəsi Android versiyası · Ümumi auditoriya", rights: "Bütün hüquqlar qorunur.", app: "Tətbiq", pkg: "Paket", updated: "Son yenilənmə", date: "15 sentyabr 2026",
+          summary: "<strong>Qısa məzmun:</strong> Temple Vanguard şəxsi məlumatları <strong>toplamır, paylaşmır, satmır və ötürmür</strong>. Cari versiya tam oflayn işləyir, reklam və analitika ehtiva etmir, irəliləyişlə ayarları yalnız cihazınızda saxlayır.",
+          sections: [
+            ["1. Tətbiq Haqqında", "<p>Temple Vanguard BieMTech tərəfindən hazırlanmış portret rejimli 3D dəstə qaçış oyunudur. Oyunçu daş komandiri riyazi qapılar və məbəd təhlükələri arasından idarə edir, sonra stilizə edilmiş avtomatik arena döyüşünə girir. Tətbiq hazırda hazırlanır.</p>"],
+            ["2. Topladığımız Məlumatlar", "<p>Temple Vanguard şəxsi məlumat <strong>toplamır</strong>. Ad, e-poçt, telefon nömrəsi, hesab, giriş, dəqiq məkan, kontaktlar, şəkillər, media, mikrofon və ya kamera icazəsi istəmir. Oyun və cihaz məlumatları BieMTech-ə və ya üçüncü tərəflərə göndərilmir.</p><p>Tətbiqin server tərəfli profili və uzaq hesabı yoxdur.</p>"],
+            ["3. Cihazınızda Saxlanılan Məlumatlar", "<p>Tətbiq yalnız lokal oyun və seçim məlumatlarını saxlayır: açılmış ən yüksək səviyyə, ən yaxşı dəstə sayları, ulduz reytinqləri, səs ayarı, vibrasiya ayarı və seçilmiş dil. Bu məlumatlar tətbiqin cihazdakı özəl yaddaşında saxlanılır və yalnız oyun təcrübəsini davam etdirmək üçün istifadə olunur.</p>"],
+            ["4. Oflayn İstifadə və İcazələr", "<p>Cari Android versiyası tam oflayn işləyir və internet və ya xüsusi icazələr bəyan etmir. İstəyə bağlı toxunma reaksiyası aktiv olduqda cihazın vibrasiya funksiyasından istifadə edə bilər. Temple Vanguard həssas icazələr istəmir.</p>"],
+            ["5. Reklam və Üçüncü Tərəflər", "<p>Temple Vanguard reklam, analitika, izləmə, tətbiqdaxili alış, bulud yaddaşı, sosial funksiya və bu məqsədlər üçün üçüncü tərəf SDK-ları ehtiva etmir. Tətbiqi əldə etdiyiniz mağaza və ya platforma öz siyasətinə əsasən öz məlumatlarını emal edə bilər; bu emal Temple Vanguard-dan ayrıdır.</p>"],
+            ["6. Uşaqlar və Ümumi Auditoriya", "<p>Tətbiqdə qeydiyyat, söhbət, sosial profil, istifadəçi məzmunu, davranış profilləşdirməsi və ya hədəflənmiş reklam yoxdur. Eyni məxfilik qoruması hər bir oyunçuya tətbiq olunur. Uşaqlardan və ya böyüklərdən bilərəkdən şəxsi məlumat toplamırıq.</p>"],
+            ["7. Saxlama, Silinmə və Dəyişikliklər", "<p>Lokal irəliləyiş və ayarlar siz silənədək cihazınızda qalır. Android Ayarlarında Temple Vanguard yaddaşını təmizləməklə və ya tətbiqi silməklə bütün lokal məlumatları silə bilərsiniz. Tətbiq serverə məlumat göndərmədiyi üçün server tərəfli silinmə sorğusuna ehtiyac yoxdur.</p><p>Tətbiq və ya məlumat təcrübələri buraxılışdan əvvəl və ya sonra dəyişərsə, müvafiq versiya yayımlanmadan əvvəl bu siyasəti və tarixini yeniləyəcəyik.</p>"],
+            ["8. Bizimlə Əlaqə", "<p>Bu siyasət və ya Temple Vanguard-ın məlumat təcrübələri ilə bağlı suallar üçün BieMTech ilə əlaqə saxlayın:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ru: {
+          dir: "ltr", back: "← Политики конфиденциальности BieMTech", subtitle: "Политика конфиденциальности", audience: "Текущая предварительная версия для Android · Общая аудитория", rights: "Все права защищены.", app: "Приложение", pkg: "Пакет", updated: "Последнее обновление", date: "15 сентября 2026 г.",
+          summary: "<strong>Кратко:</strong> Temple Vanguard <strong>не собирает, не передаёт, не продаёт и не отправляет персональные данные</strong>. Текущая версия полностью работает офлайн, не содержит рекламы и аналитики, а прогресс и настройки хранит только на устройстве.",
+          sections: [
+            ["1. О приложении", "<p>Temple Vanguard — вертикальный 3D-раннер с отрядом от BieMTech. Игрок проводит каменного командира через арифметические ворота и опасности храма, а затем вступает в стилизованную автоматическую битву на арене. Приложение находится в разработке.</p>"],
+            ["2. Какие данные мы собираем", "<p>Temple Vanguard <strong>не собирает персональные данные</strong>. Приложение не запрашивает имя, электронную почту, телефон, учётную запись, вход, точное местоположение, контакты, фото, медиа, микрофон или камеру. Данные игры и устройства не отправляются BieMTech или третьим лицам.</p><p>Серверного профиля и удалённой учётной записи нет.</p>"],
+            ["3. Данные на устройстве", "<p>Локально сохраняются только прогресс и настройки: максимальный открытый уровень, лучшие размеры отряда, звёздные оценки, звук, вибрация и выбранный язык. Эти данные находятся в закрытом хранилище приложения и нужны только для продолжения игры.</p>"],
+            ["4. Офлайн-работа и разрешения", "<p>Текущая Android-версия полностью работает офлайн и не объявляет доступ к Интернету или особые разрешения. При включении тактильной отдачи может использоваться вибрация устройства. Чувствительные разрешения не запрашиваются.</p>"],
+            ["5. Реклама и третьи лица", "<p>В Temple Vanguard нет рекламы, аналитики, отслеживания, встроенных покупок, облачных сохранений, социальных функций и сторонних SDK для этих целей. Магазин или платформа распространения может обрабатывать собственные данные по своей политике; это отдельно от Temple Vanguard.</p>"],
+            ["6. Дети и общая аудитория", "<p>В приложении нет регистрации, чата, социального профиля, пользовательского контента, поведенческого профилирования и целевой рекламы. Одинаковая защита действует для всех игроков. Мы сознательно не собираем персональные данные детей или взрослых.</p>"],
+            ["7. Хранение, удаление и изменения", "<p>Локальный прогресс и настройки остаются на устройстве, пока вы их не удалите. Все данные можно удалить, очистив хранилище Temple Vanguard в настройках Android или удалив приложение. Так как данные не отправляются на сервер, серверный запрос на удаление не требуется.</p><p>Если приложение или его работа с данными изменятся, мы обновим политику и дату до распространения соответствующей версии.</p>"],
+            ["8. Связаться с нами", "<p>По вопросам этой политики или работы Temple Vanguard с данными напишите BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        tr: {
+          dir: "ltr", back: "← BieMTech Gizlilik Politikaları", subtitle: "Gizlilik Politikası", audience: "Mevcut yayın öncesi Android sürümü · Genel kitle", rights: "Tüm hakları saklıdır.", app: "Uygulama", pkg: "Paket", updated: "Son güncelleme", date: "15 Eylül 2026",
+          summary: "<strong>Kısaca:</strong> Temple Vanguard kişisel verileri <strong>toplamaz, paylaşmaz, satmaz veya iletmez</strong>. Mevcut sürüm tamamen çevrimdışı çalışır, reklam ve analiz içermez, ilerleme ile ayarları yalnızca cihazınızda tutar.",
+          sections: [
+            ["1. Uygulama Hakkında", "<p>Temple Vanguard, BieMTech'in dikey 3D birlik koşu oyunudur. Oyuncu taş komutanı matematik kapıları ve tapınak tehlikeleri arasından yönlendirir, ardından stilize otomatik arena savaşına girer. Uygulama geliştirilmektedir.</p>"],
+            ["2. Topladığımız Bilgiler", "<p>Temple Vanguard kişisel bilgi <strong>toplamaz</strong>. Ad, e-posta, telefon, hesap, oturum açma, kesin konum, kişiler, fotoğraflar, medya, mikrofon veya kamera erişimi istemez. Oyun ya da cihaz verileri BieMTech'e veya üçüncü taraflara gönderilmez.</p><p>Sunucu taraflı profil veya uzak hesap yoktur.</p>"],
+            ["3. Cihazınızda Saklanan Veriler", "<p>Yalnızca yerel ilerleme ve tercihler saklanır: açılan en yüksek seviye, en iyi birlik sayıları, yıldız dereceleri, ses, titreşim ve seçilen dil. Veriler uygulamanın özel cihaz alanında tutulur ve sadece oyuna devam etmek için kullanılır.</p>"],
+            ["4. Çevrimdışı Kullanım ve İzinler", "<p>Mevcut Android sürümü tamamen çevrimdışı çalışır ve İnternet ya da özel izin bildirmez. İsteğe bağlı dokunsal geri bildirim açıkken cihaz titreşimini kullanabilir. Hassas izin istemez.</p>"],
+            ["5. Reklamlar ve Üçüncü Taraflar", "<p>Temple Vanguard reklam, analiz, izleme, uygulama içi satın alma, bulut kayıt, sosyal özellik veya bu amaçlara yönelik üçüncü taraf SDK içermez. Uygulamanın edinildiği mağaza ya da platform kendi politikasına göre kendi verilerini işleyebilir; bu işlem Temple Vanguard'dan ayrıdır.</p>"],
+            ["6. Çocuklar ve Genel Kitle", "<p>Uygulamada kayıt, sohbet, sosyal profil, kullanıcı içeriği, davranış profillemesi veya hedefli reklam yoktur. Aynı gizlilik koruması her oyuncuya uygulanır. Çocuklardan veya yetişkinlerden bilerek kişisel bilgi toplamıyoruz.</p>"],
+            ["7. Saklama, Silme ve Değişiklikler", "<p>Yerel ilerleme ve ayarlar siz silene kadar cihazda kalır. Android Ayarları'nda Temple Vanguard depolamasını temizleyerek veya uygulamayı kaldırarak tüm yerel verileri silebilirsiniz. Sunucuya veri gönderilmediğinden sunucu taraflı silme talebi gerekmez.</p><p>Uygulama veya veri uygulamaları değişirse ilgili sürüm dağıtılmadan önce bu politikayı ve tarihini güncelleriz.</p>"],
+            ["8. Bize Ulaşın", "<p>Bu politika veya Temple Vanguard veri uygulamaları hakkında BieMTech ile iletişime geçin:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        de: {
+          dir: "ltr", back: "← BieMTech-Datenschutzerklärungen", subtitle: "Datenschutzerklärung", audience: "Aktuelle Android-Vorabversion · Allgemeines Publikum", rights: "Alle Rechte vorbehalten.", app: "App", pkg: "Paket", updated: "Zuletzt aktualisiert", date: "15. September 2026",
+          summary: "<strong>Kurz gesagt:</strong> Temple Vanguard <strong>erfasst, teilt, verkauft und überträgt keine personenbezogenen Daten</strong>. Die aktuelle Version funktioniert vollständig offline, enthält keine Werbung oder Analyse und speichert Fortschritt und Einstellungen nur auf Ihrem Gerät.",
+          sections: [
+            ["1. Über die App", "<p>Temple Vanguard ist ein vertikaler 3D-Trupp-Runner von BieMTech. Spieler lenken einen steinernen Kommandanten durch Rechentore und Tempelgefahren und bestreiten danach einen stilisierten automatischen Arenakampf. Die App befindet sich in Entwicklung.</p>"],
+            ["2. Von uns erfasste Informationen", "<p>Temple Vanguard <strong>erfasst keine personenbezogenen Daten</strong>. Die App fragt weder Name, E-Mail, Telefon, Konto, Anmeldung, genauen Standort, Kontakte, Fotos, Medien, Mikrofon noch Kamera ab. Spiel- oder Gerätedaten werden nicht an BieMTech oder Dritte gesendet.</p><p>Es gibt kein Serverprofil und kein Onlinekonto.</p>"],
+            ["3. Daten auf Ihrem Gerät", "<p>Nur lokaler Fortschritt und Einstellungen werden gespeichert: höchste freigeschaltete Stufe, beste Truppgrößen, Sternebewertungen, Ton, Vibration und gewählte Sprache. Diese Daten liegen im privaten App-Speicher und dienen nur dem Fortsetzen des Spiels.</p>"],
+            ["4. Offline-Nutzung und Berechtigungen", "<p>Die aktuelle Android-Version funktioniert vollständig offline und deklariert weder Internetzugriff noch benutzerdefinierte Berechtigungen. Optionales haptisches Feedback kann bei Aktivierung die Geräte-Vibration nutzen. Sensible Berechtigungen werden nicht angefordert.</p>"],
+            ["5. Werbung und Dritte", "<p>Temple Vanguard enthält keine Werbung, Analyse, Verfolgung, In-App-Käufe, Cloud-Speicherung, soziale Funktionen oder entsprechende Drittanbieter-SDKs. Store oder Plattform können eigene Daten nach ihrer Richtlinie verarbeiten; dies ist von Temple Vanguard getrennt.</p>"],
+            ["6. Kinder und allgemeines Publikum", "<p>Die App bietet keine Registrierung, Chats, sozialen Profile, Nutzerinhalte, Verhaltensprofile oder zielgerichtete Werbung. Derselbe Datenschutz gilt für alle Spieler. Wir erfassen wissentlich keine personenbezogenen Daten von Kindern oder Erwachsenen.</p>"],
+            ["7. Aufbewahrung, Löschung und Änderungen", "<p>Lokaler Fortschritt und Einstellungen bleiben bis zur Löschung auf dem Gerät. Alle lokalen Daten lassen sich durch Löschen des Temple-Vanguard-Speichers in Android oder durch Deinstallation entfernen. Da keine Daten an Server gesendet werden, ist kein serverseitiger Löschantrag nötig.</p><p>Ändern sich App oder Datenpraxis, aktualisieren wir diese Erklärung und ihr Datum vor der Verteilung der betreffenden Version.</p>"],
+            ["8. Kontakt", "<p>Bei Fragen zu dieser Erklärung oder der Datenpraxis von Temple Vanguard kontaktieren Sie BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        fr: {
+          dir: "ltr", back: "← Politiques de confidentialité BieMTech", subtitle: "Politique de confidentialité", audience: "Version Android actuelle en prépublication · Grand public", rights: "Tous droits réservés.", app: "Application", pkg: "Package", updated: "Dernière mise à jour", date: "15 septembre 2026",
+          summary: "<strong>En bref :</strong> Temple Vanguard <strong>ne collecte, ne partage, ne vend et ne transmet aucune donnée personnelle</strong>. La version actuelle fonctionne entièrement hors ligne, sans publicité ni analyse, et conserve progression et réglages uniquement sur votre appareil.",
+          sections: [
+            ["1. À propos de l'application", "<p>Temple Vanguard est un runner 3D vertical en escouade créé par BieMTech. Le joueur guide un commandant de pierre à travers des portes arithmétiques et les dangers du temple avant un combat d'arène automatique stylisé. L'application est en développement.</p>"],
+            ["2. Informations collectées", "<p>Temple Vanguard <strong>ne collecte aucune donnée personnelle</strong>. Aucun nom, e-mail, téléphone, compte, connexion, position précise, contact, photo, média, microphone ou caméra n'est demandé. Aucune donnée de jeu ou d'appareil n'est envoyée à BieMTech ou à des tiers.</p><p>Il n'existe ni profil serveur ni compte distant.</p>"],
+            ["3. Données sur votre appareil", "<p>Seuls la progression et les préférences locales sont enregistrées : plus haut niveau débloqué, meilleurs effectifs, étoiles, son, vibration et langue choisie. Ces données restent dans l'espace privé de l'application et servent uniquement à reprendre le jeu.</p>"],
+            ["4. Utilisation hors ligne et autorisations", "<p>La version Android actuelle fonctionne entièrement hors ligne et ne déclare ni accès Internet ni autorisation personnalisée. Le retour haptique facultatif peut utiliser la vibration lorsqu'il est activé. Aucune autorisation sensible n'est demandée.</p>"],
+            ["5. Publicité et tiers", "<p>Temple Vanguard ne contient ni publicité, analyse, suivi, achat intégré, sauvegarde cloud, fonction sociale, ni SDK tiers à ces fins. La boutique ou plateforme peut traiter ses propres données selon sa politique ; ce traitement est distinct de Temple Vanguard.</p>"],
+            ["6. Enfants et grand public", "<p>L'application ne propose ni inscription, chat, profil social, contenu utilisateur, profilage comportemental ou publicité ciblée. Les mêmes protections s'appliquent à tous. Nous ne collectons sciemment aucune donnée personnelle d'enfant ou d'adulte.</p>"],
+            ["7. Conservation, suppression et changements", "<p>Progression et réglages restent sur l'appareil jusqu'à leur suppression. Effacez toutes les données locales via le stockage de Temple Vanguard dans Android ou en désinstallant l'application. Aucune demande au serveur n'est nécessaire puisqu'aucune donnée ne lui est envoyée.</p><p>Si l'application ou ses pratiques changent, nous mettrons à jour cette politique et sa date avant la diffusion de la version concernée.</p>"],
+            ["8. Nous contacter", "<p>Pour toute question sur cette politique ou les pratiques de Temple Vanguard, contactez BieMTech :</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        es: {
+          dir: "ltr", back: "← Políticas de privacidad de BieMTech", subtitle: "Política de privacidad", audience: "Versión preliminar actual para Android · Público general", rights: "Todos los derechos reservados.", app: "Aplicación", pkg: "Paquete", updated: "Última actualización", date: "15 de septiembre de 2026",
+          summary: "<strong>En resumen:</strong> Temple Vanguard <strong>no recopila, comparte, vende ni transmite datos personales</strong>. La versión actual funciona totalmente sin conexión, no incluye anuncios ni análisis y guarda el progreso y los ajustes solo en tu dispositivo.",
+          sections: [
+            ["1. Sobre la aplicación", "<p>Temple Vanguard es un runner 3D vertical de escuadrones creado por BieMTech. El jugador guía a un comandante de piedra por puertas aritméticas y peligros del templo antes de una batalla automática estilizada en la arena. La aplicación está en desarrollo.</p>"],
+            ["2. Información que recopilamos", "<p>Temple Vanguard <strong>no recopila información personal</strong>. No solicita nombre, correo, teléfono, cuenta, inicio de sesión, ubicación precisa, contactos, fotos, contenido multimedia, micrófono ni cámara. Los datos del juego o del dispositivo no se envían a BieMTech ni a terceros.</p><p>No hay perfil de servidor ni cuenta remota.</p>"],
+            ["3. Datos guardados en tu dispositivo", "<p>Solo se guardan el progreso y las preferencias locales: nivel máximo desbloqueado, mejores tamaños del escuadrón, estrellas, sonido, vibración e idioma. Estos datos permanecen en el almacenamiento privado de la aplicación y solo sirven para continuar la experiencia.</p>"],
+            ["4. Uso sin conexión y permisos", "<p>La versión actual de Android funciona totalmente sin conexión y no declara acceso a Internet ni permisos personalizados. La respuesta háptica opcional puede usar la vibración del dispositivo cuando está activada. No se solicitan permisos sensibles.</p>"],
+            ["5. Anuncios y terceros", "<p>Temple Vanguard no contiene anuncios, análisis, seguimiento, compras integradas, guardado en la nube, funciones sociales ni SDK de terceros para esos fines. La tienda o plataforma puede tratar sus propios datos según su política; ese tratamiento es independiente de Temple Vanguard.</p>"],
+            ["6. Niños y público general", "<p>La aplicación no tiene registro, chat, perfil social, contenido de usuario, perfilado de conducta ni publicidad dirigida. La misma protección se aplica a todos. No recopilamos conscientemente información personal de niños ni adultos.</p>"],
+            ["7. Conservación, eliminación y cambios", "<p>El progreso y los ajustes locales permanecen hasta que los elimines. Puedes borrar todos los datos limpiando el almacenamiento de Temple Vanguard en Android o desinstalando la aplicación. Como no se envían datos a servidores, no hace falta una solicitud de eliminación.</p><p>Si cambian la aplicación o sus prácticas, actualizaremos esta política y su fecha antes de distribuir la versión correspondiente.</p>"],
+            ["8. Contacto", "<p>Para preguntas sobre esta política o las prácticas de Temple Vanguard, contacta con BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        pt: {
+          dir: "ltr", back: "← Políticas de Privacidade BieMTech", subtitle: "Política de Privacidade", audience: "Versão Android atual de pré-lançamento · Público geral", rights: "Todos os direitos reservados.", app: "Aplicação", pkg: "Pacote", updated: "Última atualização", date: "15 de setembro de 2026",
+          summary: "<strong>Em resumo:</strong> Temple Vanguard <strong>não recolhe, partilha, vende ou transmite dados pessoais</strong>. A versão atual funciona totalmente offline, não contém anúncios ou análise e guarda o progresso e as definições apenas no dispositivo.",
+          sections: [
+            ["1. Sobre a aplicação", "<p>Temple Vanguard é um runner 3D vertical de esquadrão da BieMTech. O jogador conduz um comandante de pedra por portões aritméticos e perigos do templo antes de uma batalha de arena automática estilizada. A aplicação está em desenvolvimento.</p>"],
+            ["2. Informações que recolhemos", "<p>Temple Vanguard <strong>não recolhe informações pessoais</strong>. Não solicita nome, e-mail, telefone, conta, início de sessão, localização precisa, contactos, fotos, multimédia, microfone ou câmara. Dados do jogo ou dispositivo não são enviados à BieMTech ou a terceiros.</p><p>Não existe perfil de servidor nem conta remota.</p>"],
+            ["3. Dados guardados no dispositivo", "<p>São guardados apenas progresso e preferências locais: nível máximo desbloqueado, melhores tamanhos do esquadrão, estrelas, som, vibração e idioma. Estes dados ficam no armazenamento privado da aplicação e servem apenas para continuar a experiência.</p>"],
+            ["4. Utilização offline e permissões", "<p>A versão Android atual funciona totalmente offline e não declara acesso à Internet ou permissões personalizadas. O feedback tátil opcional pode usar a vibração quando ativado. Não são pedidas permissões sensíveis.</p>"],
+            ["5. Anúncios e terceiros", "<p>Temple Vanguard não contém anúncios, análise, rastreio, compras na aplicação, gravação na nuvem, funções sociais ou SDKs de terceiros para esses fins. A loja ou plataforma pode tratar dados próprios segundo a sua política; esse tratamento é separado de Temple Vanguard.</p>"],
+            ["6. Crianças e público geral", "<p>A aplicação não tem registo, conversa, perfil social, conteúdo do utilizador, definição de perfis comportamentais ou publicidade direcionada. A mesma proteção aplica-se a todos. Não recolhemos intencionalmente dados pessoais de crianças ou adultos.</p>"],
+            ["7. Retenção, eliminação e alterações", "<p>O progresso e as definições locais ficam no dispositivo até serem eliminados. Pode apagar tudo limpando o armazenamento de Temple Vanguard no Android ou desinstalando a aplicação. Como nenhum dado é enviado para servidores, não é necessário um pedido de eliminação.</p><p>Se a aplicação ou as suas práticas mudarem, atualizaremos esta política e a data antes de distribuir a versão relevante.</p>"],
+            ["8. Contacte-nos", "<p>Para questões sobre esta política ou as práticas de Temple Vanguard, contacte a BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        it: {
+          dir: "ltr", back: "← Informative sulla privacy BieMTech", subtitle: "Informativa sulla privacy", audience: "Versione Android attuale in pre-release · Pubblico generale", rights: "Tutti i diritti riservati.", app: "App", pkg: "Pacchetto", updated: "Ultimo aggiornamento", date: "15 settembre 2026",
+          summary: "<strong>In breve:</strong> Temple Vanguard <strong>non raccoglie, condivide, vende o trasmette dati personali</strong>. La versione attuale funziona completamente offline, non contiene pubblicità o analisi e conserva progressi e impostazioni solo sul dispositivo.",
+          sections: [
+            ["1. Informazioni sull'app", "<p>Temple Vanguard è un runner 3D verticale a squadre di BieMTech. Il giocatore guida un comandante di pietra attraverso portali aritmetici e pericoli del tempio prima di una battaglia automatica stilizzata nell'arena. L'app è in sviluppo.</p>"],
+            ["2. Informazioni raccolte", "<p>Temple Vanguard <strong>non raccoglie informazioni personali</strong>. Non richiede nome, e-mail, telefono, account, accesso, posizione precisa, contatti, foto, media, microfono o fotocamera. I dati di gioco o del dispositivo non vengono inviati a BieMTech o a terzi.</p><p>Non esistono profili server o account remoti.</p>"],
+            ["3. Dati memorizzati sul dispositivo", "<p>Vengono salvati solo progressi e preferenze locali: livello massimo sbloccato, migliori dimensioni della squadra, stelle, audio, vibrazione e lingua. I dati restano nello spazio privato dell'app e servono soltanto a riprendere l'esperienza.</p>"],
+            ["4. Uso offline e autorizzazioni", "<p>La versione Android attuale funziona completamente offline e non dichiara accesso a Internet o autorizzazioni personalizzate. Il feedback aptico facoltativo può usare la vibrazione quando attivato. Non vengono richieste autorizzazioni sensibili.</p>"],
+            ["5. Pubblicità e terze parti", "<p>Temple Vanguard non contiene pubblicità, analisi, tracciamento, acquisti in-app, salvataggi cloud, funzioni social o SDK di terze parti per tali scopi. Lo store o la piattaforma può trattare dati propri secondo la sua informativa; tale trattamento è separato da Temple Vanguard.</p>"],
+            ["6. Minori e pubblico generale", "<p>L'app non offre registrazione, chat, profilo social, contenuti utente, profilazione comportamentale o pubblicità mirata. La stessa protezione vale per tutti. Non raccogliamo consapevolmente dati personali di minori o adulti.</p>"],
+            ["7. Conservazione, eliminazione e modifiche", "<p>Progressi e impostazioni locali restano sul dispositivo finché non li elimini. Puoi cancellare tutto pulendo l'archivio di Temple Vanguard in Android o disinstallando l'app. Poiché nessun dato viene inviato a server, non serve una richiesta di cancellazione.</p><p>Se l'app o le pratiche cambiano, aggiorneremo questa informativa e la data prima di distribuire la versione interessata.</p>"],
+            ["8. Contatti", "<p>Per domande su questa informativa o sulle pratiche di Temple Vanguard, contatta BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ar: {
+          dir: "rtl", back: "سياسات خصوصية BieMTech ←", subtitle: "سياسة الخصوصية", audience: "إصدار Android التجريبي الحالي · جمهور عام", rights: "جميع الحقوق محفوظة.", app: "التطبيق", pkg: "الحزمة", updated: "آخر تحديث", date: "15 سبتمبر 2026",
+          summary: "<strong>باختصار:</strong> لا تقوم Temple Vanguard <strong>بجمع البيانات الشخصية أو مشاركتها أو بيعها أو إرسالها</strong>. يعمل الإصدار الحالي بالكامل دون اتصال، ولا يحتوي إعلانات أو تحليلات، ويحفظ التقدم والإعدادات على جهازك فقط.",
+          sections: [
+            ["1. حول التطبيق", "<p>Temple Vanguard لعبة ركض عمودية ثلاثية الأبعاد بفرق من BieMTech. يقود اللاعب قائداً حجرياً عبر بوابات الحساب ومخاطر المعبد، ثم يدخل معركة ساحة تلقائية بأسلوب خيالي. التطبيق قيد التطوير.</p>"],
+            ["2. المعلومات التي نجمعها", "<p>لا تجمع Temple Vanguard <strong>أي معلومات شخصية</strong>. لا تطلب الاسم أو البريد أو الهاتف أو الحساب أو تسجيل الدخول أو الموقع الدقيق أو جهات الاتصال أو الصور أو الوسائط أو الميكروفون أو الكاميرا. ولا تُرسل بيانات اللعبة أو الجهاز إلى BieMTech أو أطراف ثالثة.</p><p>لا يوجد ملف على خادم أو حساب بعيد.</p>"],
+            ["3. البيانات المحفوظة على جهازك", "<p>يُحفظ محلياً فقط أعلى مستوى مفتوح وأفضل أعداد الفرقة وتقييمات النجوم وإعدادات الصوت والاهتزاز واللغة. تبقى هذه البيانات في مساحة التطبيق الخاصة وتُستخدم فقط لمتابعة اللعب.</p>"],
+            ["4. الاستخدام دون اتصال والأذونات", "<p>يعمل إصدار Android الحالي بالكامل دون اتصال ولا يعلن إذن الإنترنت أو أذونات مخصصة. وقد يستخدم الاهتزاز الاختياري وظيفة اهتزاز الجهاز عند تفعيله. لا يطلب التطبيق أذونات حساسة.</p>"],
+            ["5. الإعلانات والأطراف الثالثة", "<p>لا تحتوي Temple Vanguard على إعلانات أو تحليلات أو تتبع أو مشتريات داخلية أو حفظ سحابي أو ميزات اجتماعية أو حزم أطراف ثالثة لهذه الأغراض. قد يعالج المتجر أو النظام بياناته الخاصة وفق سياسته؛ وهذا منفصل عن Temple Vanguard.</p>"],
+            ["6. الأطفال والجمهور العام", "<p>لا يوجد تسجيل أو دردشة أو ملف اجتماعي أو محتوى مستخدم أو تنميط سلوكي أو إعلانات موجهة. تنطبق الحماية نفسها على الجميع. نحن لا نجمع عن علم معلومات شخصية من الأطفال أو البالغين.</p>"],
+            ["7. الاحتفاظ والحذف والتغييرات", "<p>يبقى التقدم والإعدادات محلياً حتى تحذفها. يمكنك حذف كل البيانات بمسح تخزين Temple Vanguard من إعدادات Android أو بإزالة التطبيق. ولأنه لا تُرسل بيانات إلى خادم فلا حاجة إلى طلب حذف من الخادم.</p><p>إذا تغير التطبيق أو ممارسات البيانات فسنحدث هذه السياسة وتاريخها قبل توزيع الإصدار المعني.</p>"],
+            ["8. تواصل معنا", "<p>للأسئلة حول هذه السياسة أو ممارسات Temple Vanguard، تواصل مع BieMTech:</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        zh: {
+          dir: "ltr", back: "← BieMTech 隐私政策", subtitle: "隐私政策", audience: "当前 Android 预发布版本 · 普通受众", rights: "保留所有权利。", app: "应用", pkg: "软件包", updated: "最后更新", date: "2026年9月15日",
+          summary: "<strong>简而言之：</strong>Temple Vanguard <strong>不会收集、共享、出售或传输个人数据</strong>。当前版本完全离线运行，不含广告或分析，只在你的设备上保存进度和设置。",
+          sections: [
+            ["1. 关于应用", "<p>Temple Vanguard 是 BieMTech 开发的竖屏3D小队跑酷游戏。玩家操控石甲指挥官穿过算术门和神殿机关，随后进入风格化的自动竞技场战斗。应用目前正在开发中。</p>"],
+            ["2. 我们收集的信息", "<p>Temple Vanguard <strong>不收集个人信息</strong>。应用不会请求姓名、邮箱、电话、账户、登录、精确位置、联系人、照片、媒体、麦克风或相机权限。游戏或设备数据不会发送给 BieMTech 或第三方。</p><p>应用没有服务器端资料或远程账户。</p>"],
+            ["3. 保存在设备上的数据", "<p>应用只保存本地进度和偏好：最高已解锁关卡、最佳小队数量、星级、声音、振动和所选语言。这些数据位于应用的私有存储中，只用于继续游戏体验。</p>"],
+            ["4. 离线使用和权限", "<p>当前 Android 版本完全离线运行，不声明互联网或自定义权限。启用可选触觉反馈时，可能使用设备振动功能。Temple Vanguard 不请求敏感权限。</p>"],
+            ["5. 广告和第三方", "<p>Temple Vanguard 不含广告、分析、跟踪、应用内购买、云存档、社交功能，也不含用于这些目的的第三方 SDK。获取应用的商店或平台可能按其政策处理自己的数据；该处理独立于 Temple Vanguard。</p>"],
+            ["6. 儿童和普通受众", "<p>应用没有注册、聊天、社交资料、用户内容、行为画像或定向广告。相同的隐私保护适用于每位玩家。我们不会故意收集儿童或成人的个人信息。</p>"],
+            ["7. 保留、删除和变更", "<p>本地进度和设置会留在设备上，直到你删除。你可以在 Android 设置中清除 Temple Vanguard 的存储或卸载应用，以删除所有本地数据。由于应用不向服务器发送数据，无需服务器端删除请求。</p><p>如果应用或数据做法发生变化，我们会在相关版本发布前更新本政策及日期。</p>"],
+            ["8. 联系我们", "<p>如对本政策或 Temple Vanguard 的数据做法有疑问，请联系 BieMTech：</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        },
+        ja: {
+          dir: "ltr", back: "← BieMTech プライバシーポリシー", subtitle: "プライバシーポリシー", audience: "現在のAndroidプレリリース版 · 一般向け", rights: "無断転載を禁じます。", app: "アプリ", pkg: "パッケージ", updated: "最終更新", date: "2026年9月15日",
+          summary: "<strong>要約：</strong>Temple Vanguardは<strong>個人データを収集、共有、販売、送信しません</strong>。現在のバージョンは完全オフラインで動作し、広告や解析を含まず、進行状況と設定を端末内だけに保存します。",
+          sections: [
+            ["1. アプリについて", "<p>Temple VanguardはBieMTechによる縦画面3D部隊ランナーです。石の指揮官を計算ゲートと神殿の危険の間へ導き、その後スタイライズされた自動アリーナ戦に挑みます。アプリは現在開発中です。</p>"],
+            ["2. 収集する情報", "<p>Temple Vanguardは<strong>個人情報を収集しません</strong>。氏名、メール、電話、アカウント、ログイン、正確な位置、連絡先、写真、メディア、マイク、カメラを要求しません。ゲームや端末のデータがBieMTechまたは第三者へ送信されることもありません。</p><p>サーバー側プロフィールやリモートアカウントはありません。</p>"],
+            ["3. 端末に保存されるデータ", "<p>最高到達レベル、部隊のベスト人数、星評価、サウンド、振動、選択言語だけがローカル保存されます。データはアプリの非公開領域に置かれ、ゲームを再開するためだけに使われます。</p>"],
+            ["4. オフライン利用と権限", "<p>現在のAndroid版は完全オフラインで動作し、インターネットやカスタム権限を宣言していません。任意の触覚フィードバックを有効にすると端末の振動機能を使う場合があります。機密性の高い権限は要求しません。</p>"],
+            ["5. 広告と第三者", "<p>Temple Vanguardには広告、解析、追跡、アプリ内購入、クラウド保存、ソーシャル機能、またはそのための第三者SDKはありません。入手元のストアやプラットフォームが自身のポリシーでデータを処理する場合がありますが、Temple Vanguardとは別です。</p>"],
+            ["6. 子どもと一般利用者", "<p>登録、チャット、ソーシャルプロフィール、ユーザー投稿、行動プロファイリング、ターゲット広告はありません。同じプライバシー保護が全プレイヤーに適用されます。子どもまたは大人の個人情報を意図的に収集しません。</p>"],
+            ["7. 保持、削除、変更", "<p>ローカルの進行状況と設定は削除するまで端末に残ります。Android設定でTemple Vanguardのストレージを消去するか、アプリをアンインストールすると、すべて削除できます。サーバーへ送信しないため、サーバー側の削除依頼は不要です。</p><p>アプリやデータ取扱いが変わる場合、該当バージョンの配布前に本ポリシーと日付を更新します。</p>"],
+            ["8. お問い合わせ", "<p>本ポリシーまたはTemple Vanguardのデータ取扱いについては、BieMTechへお問い合わせください。</p><a class=\"contact-link\" href=\"mailto:info@biemtech.com\">info@biemtech.com</a>"]
+          ]
+        }
+      };
+
+      function render(lang) {
+        const t = T[lang] || T.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = t.dir;
+        document.querySelector('[data-i18n="back"]').textContent = t.back;
+        document.querySelector('[data-i18n="subtitle"]').textContent = t.subtitle;
+        document.querySelector('[data-i18n="audience"]').textContent = t.audience;
+        document.querySelector('[data-i18n="rights"]').textContent = t.rights;
+        document.getElementById("policy-content").innerHTML = `
+          <p class="meta">
+            ${t.app}: <strong>Temple Vanguard</strong> &nbsp;|&nbsp;
+            ${t.pkg}: <code>com.biemtech.templevanguard</code> &nbsp;|&nbsp;
+            ${t.updated}: <strong>${t.date}</strong>
+          </p>
+          <div class="summary">✓ ${t.summary}</div>
+          ${t.sections.map(([title, body]) => `<section class="card"><h2>${title}</h2>${body}</section>`).join("")}
+        `;
+      }
+
+      function switchLang(lang) {
+        render(lang);
+        try { localStorage.setItem("biemtech-lang", lang); } catch (_) {}
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+      let saved = "";
+      try { saved = localStorage.getItem("biemtech-lang") || ""; } catch (_) {}
+      const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
+      const lang = T[saved] ? saved : T[browserLang] ? browserLang : "en";
+      document.getElementById("lang-select").value = lang;
+      render(lang);
+    </script>
+  </body>
+</html>

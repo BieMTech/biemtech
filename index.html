@@ -200,6 +200,14 @@
                 <span>Neon Blocks</span>
               </a>
             </div>
+
+            <!-- Temple Vanguard -->
+            <div class="orbit-arm" style="--od: -20s">
+              <a href="temple-vanguard.html" class="hero__vis-orbit-btn">
+                <img src="img/temple-vanguard-icon.png" alt="" />
+                <span>Temple Vanguard</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -678,6 +686,43 @@
               >
             </div>
           </div>
+
+          <!-- Temple Vanguard -->
+          <div
+            class="app-card"
+            onclick="window.location = 'temple-vanguard.html'"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'temple-vanguard.html';
+              }
+            "
+            role="link"
+            tabindex="0"
+            style="cursor: pointer"
+          >
+            <div class="app-card__top">
+              <div class="app-card__icon temple-vanguard">
+                <img
+                  src="img/temple-vanguard-icon.png"
+                  alt="Temple Vanguard"
+                />
+              </div>
+              <div class="app-card__arrow">→</div>
+            </div>
+            <div class="app-card__name">Temple Vanguard</div>
+            <p class="app-card__desc" data-i18n="temple_vanguard_desc">
+              Build a stone-guardian squad through arithmetic gates, dodge
+              temple traps, and lead the survivors into automatic arena
+              battles. A fully offline 3D runner with endless generated levels.
+            </p>
+            <div class="app-card__footer">
+              <span class="chip" data-i18n="chip_arcade">Arcade Game</span>
+              <span class="chip chip-soon" data-i18n="chip_dev"
+                >In Development</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -784,6 +829,7 @@
               <li><a href="zuzu-bloomflight.html">Zuzu: Bloomflight</a></li>
               <li><a href="word-wheel.html">Word Wheel</a></li>
               <li><a href="neon-blocks.html">Neon Blocks</a></li>
+              <li><a href="temple-vanguard.html">Temple Vanguard</a></li>
             </ul>
           </div>
         </div>

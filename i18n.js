@@ -122,6 +122,8 @@ const I18N = {
       "Connect letters, find words, and unlock 50 collectible worlds across more than 60,000 puzzles in 26 languages. Core play works offline; the Google Play Games XP leaderboard is optional.",
     neon_blocks_desc:
       "Place glowing blocks on an 8×8 board, clear lines, trigger gravity cascades, and race the clock across three distinct modes. A fully offline puzzle game in 14 languages.",
+    temple_vanguard_desc:
+      "Build a stone-guardian squad through arithmetic gates, dodge temple traps, and lead the survivors into automatic arena battles. A fully offline 3D runner with endless generated levels.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -273,6 +275,8 @@ const I18N = {
       "Hərfləri birləşdir, sözləri tap və 26 dildə 60 000-dən çox tapmacada 50 kolleksiya dünyasını aç. Əsas oyun oflayn işləyir; Google Play Games XP lider cədvəli istəyə bağlıdır.",
     neon_blocks_desc:
       "Parlaq blokları 8×8 lövhəyə yerləşdir, xətləri təmizlə, cazibə kaskadları yarat və üç fərqli rejimdə saata qarşı yarış. 14 dildə tam oflayn tapmaca oyunu.",
+    temple_vanguard_desc:
+      "Riyazi qapılardan keçərək daş mühafizəçi dəstəsini böyüt, məbəd tələlərindən yayın və sağ qalanları avtomatik arena döyüşlərinə apar. Sonsuz yaradılan səviyyələri olan tam oflayn 3D qaçış oyunu.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -422,6 +426,8 @@ const I18N = {
       "Соединяйте буквы, находите слова и открывайте 50 коллекционных миров в более чем 60 000 головоломок на 26 языках. Основная игра работает офлайн; рейтинг XP Google Play Games необязателен.",
     neon_blocks_desc:
       "Размещайте светящиеся блоки на поле 8×8, очищайте линии, создавайте каскады и соревнуйтесь со временем в трёх режимах. Полностью офлайн-головоломка на 14 языках.",
+    temple_vanguard_desc:
+      "Увеличивайте отряд каменных стражей через арифметические ворота, обходите ловушки храма и ведите выживших в автоматические битвы на арене. Полностью офлайн 3D-раннер с бесконечными уровнями.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -572,6 +578,8 @@ const I18N = {
       "Harfleri birleştir, kelimeleri bul ve 26 dilde 60.000'den fazla bulmacada 50 koleksiyonluk dünyayı aç. Ana oyun çevrimdışı çalışır; Google Play Games XP liderlik tablosu isteğe bağlıdır.",
     neon_blocks_desc:
       "Parlayan blokları 8×8 tahtaya yerleştir, çizgileri temizle, yerçekimi kaskatları oluştur ve üç farklı modda zamana karşı yarış. 14 dilde tamamen çevrimdışı bulmaca oyunu.",
+    temple_vanguard_desc:
+      "Matematik kapılarından geçerek taş muhafız birliğini büyüt, tapınak tuzaklarından kaç ve hayatta kalanları otomatik arena savaşlarına taşı. Sonsuz üretilen seviyelere sahip tamamen çevrimdışı bir 3D koşu oyunu.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -723,6 +731,8 @@ const I18N = {
       "Verbinde Buchstaben, finde Wörter und schalte 50 sammelbare Welten in über 60.000 Rätseln und 26 Sprachen frei. Das Hauptspiel funktioniert offline; die Google-Play-Games-XP-Bestenliste ist optional.",
     neon_blocks_desc:
       "Setze leuchtende Blöcke auf ein 8×8-Feld, lösche Linien, erzeuge Kaskaden und spiele in drei Modi gegen die Zeit. Ein vollständig offline spielbares Puzzle in 14 Sprachen.",
+    temple_vanguard_desc:
+      "Vergrößere einen Trupp aus Steinwächtern an Rechentoren, weiche Tempelfallen aus und führe die Überlebenden in automatische Arenakämpfe. Ein vollständig offline spielbarer 3D-Runner mit endlosen Levels.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -877,6 +887,8 @@ const I18N = {
       "Reliez les lettres, trouvez des mots et débloquez 50 mondes dans plus de 60 000 énigmes en 26 langues. Le jeu principal fonctionne hors ligne ; le classement XP Google Play Games est facultatif.",
     neon_blocks_desc:
       "Placez des blocs lumineux sur une grille 8×8, effacez des lignes, déclenchez des cascades et affrontez le chrono dans trois modes. Un puzzle entièrement hors ligne en 14 langues.",
+    temple_vanguard_desc:
+      "Agrandissez une escouade de gardiens de pierre grâce aux portes arithmétiques, évitez les pièges du temple et menez les survivants aux combats automatiques de l'arène. Un runner 3D hors ligne aux niveaux infinis.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -1030,6 +1042,8 @@ const I18N = {
       "Conecta letras, encuentra palabras y desbloquea 50 mundos en más de 60.000 puzles y 26 idiomas. El juego principal funciona sin conexión; la clasificación de XP de Google Play Games es opcional.",
     neon_blocks_desc:
       "Coloca bloques brillantes en un tablero 8×8, limpia líneas, crea cascadas y compite contra el reloj en tres modos. Un puzle totalmente sin conexión en 14 idiomas.",
+    temple_vanguard_desc:
+      "Aumenta un escuadrón de guardianes de piedra con puertas aritméticas, evita las trampas del templo y lleva a los supervivientes a batallas automáticas en la arena. Un runner 3D sin conexión con niveles infinitos.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1183,6 +1197,8 @@ const I18N = {
       "Ligue letras, encontre palavras e desbloqueie 50 mundos em mais de 60.000 desafios e 26 idiomas. O jogo principal funciona offline; o placar de XP do Google Play Games é opcional.",
     neon_blocks_desc:
       "Coloque blocos brilhantes num tabuleiro 8×8, limpe linhas, crie cascatas e corra contra o relógio em três modos. Um quebra-cabeça totalmente offline em 14 idiomas.",
+    temple_vanguard_desc:
+      "Aumente um esquadrão de guardiões de pedra através de portões aritméticos, evite armadilhas do templo e leve os sobreviventes a batalhas automáticas na arena. Um runner 3D offline com níveis infinitos.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1334,6 +1350,8 @@ const I18N = {
       "Collega le lettere, trova parole e sblocca 50 mondi in oltre 60.000 rompicapi e 26 lingue. Il gioco principale funziona offline; la classifica XP di Google Play Games è facoltativa.",
     neon_blocks_desc:
       "Posiziona blocchi luminosi su una griglia 8×8, cancella linee, crea cascate e sfida il tempo in tre modalità. Un puzzle completamente offline in 14 lingue.",
+    temple_vanguard_desc:
+      "Fai crescere una squadra di guardiani di pietra attraverso portali aritmetici, evita le trappole del tempio e guida i superstiti in battaglie automatiche nell'arena. Un runner 3D offline con livelli infiniti.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1479,6 +1497,8 @@ const I18N = {
       "صل الحروف واعثر على الكلمات وافتح 50 عالماً عبر أكثر من 60,000 لغز بـ26 لغة. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة XP في Google Play Games اختيارية.",
     neon_blocks_desc:
       "ضع كتل النيون على لوحة 8×8، وامسح الخطوط، واصنع الشلالات، وتسابق مع الوقت في ثلاثة أوضاع. لعبة ألغاز تعمل بالكامل دون اتصال بـ14 لغة.",
+    temple_vanguard_desc:
+      "نمِّ فرقة من الحراس الحجريين عبر بوابات الحساب، وتجنب فخاخ المعبد، وقد الناجين إلى معارك تلقائية في الساحة. لعبة ركض ثلاثية الأبعاد تعمل دون اتصال وبمستويات لا تنتهي.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1621,6 +1641,8 @@ const I18N = {
       "连接字母、寻找单词，并在26种语言的60,000多个谜题中解锁50个收藏世界。核心游戏可离线游玩；Google Play Games XP 排行榜为可选功能。",
     neon_blocks_desc:
       "在8×8棋盘上放置霓虹方块、消除线条、触发重力连锁，并在三种模式中挑战时间。支持14种语言的完全离线益智游戏。",
+    temple_vanguard_desc:
+      "穿过算术门壮大石甲守卫小队，避开神殿陷阱，并带领幸存者进入自动竞技场战斗。这是一款拥有无限生成关卡的完全离线3D跑酷游戏。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1769,6 +1791,8 @@ const I18N = {
       "文字をつなげて単語を見つけ、26言語・60,000問以上のパズルで50の世界を解放しよう。基本ゲームはオフラインで遊べ、Google Play Games のXPランキングは任意です。",
     neon_blocks_desc:
       "8×8の盤面に光るブロックを置き、ラインを消し、重力連鎖を起こし、3つのモードで時間に挑戦。14言語対応の完全オフラインパズルです。",
+    temple_vanguard_desc:
+      "計算ゲートで石の守護者部隊を増やし、神殿の罠を避け、生存者を自動アリーナ戦へ導こう。無限に生成されるレベルを備えた完全オフライン3Dランナーです。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",
