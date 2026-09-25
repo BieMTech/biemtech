@@ -27,7 +27,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 
 ```
 index.html                 # App listing page
-mathkids/index.html        # MathKids (com.mathkids.app) privacy policy
+mathkids/index.html        # MathKids (com.biemtech.funmathkids) privacy policy
 math-kids/index.html       # Multilingual privacy policy
 times-table-master/index.html
 arrows-escape/index.html

@@ -23,7 +23,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 ### MathKids
 
-A separate maths game for ages 5–8, currently in development. Each level has 10 questions and a new animated world. The Android package is `com.mathkids.app`.
+A separate maths game for ages 5–8, currently in development. Each level has 10 questions and a new animated world. The Android package is `com.biemtech.funmathkids`.
 
 - Privacy Policy: https://biemtech.com/privacy/mathkids/
 
