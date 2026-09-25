@@ -1839,6 +1839,123 @@ const I18N = {
   },
 };
 
+/* MathKids (com.mathkids.app), a separate app from Math Kids. */
+const NEW_MATHKIDS = {
+  en: {
+    newmk_card_desc: "A colourful maths adventure for ages 5–8. Ten questions per level, 12 animated worlds and age-based learning in 12 languages.",
+    newmk_status: "In development · Ages 5–8",
+    newmk_intro: "A colourful maths adventure for ages 5, 6, 7 and 8. Children solve short, age-matched challenges and explore a new animated world with every level.",
+    newmk_privacy: "Read the privacy policy", newmk_all: "All apps",
+    newmk_features: "Learning through play",
+    newmk_features_intro: "Each level has 10 questions with three large answer choices. Children can retry a question and receive gentle feedback as they learn.",
+    newmk_age_title: "Made for ages 5–8", newmk_age_desc: "Topics grow from counting and simple sums to multiplication, division, fractions, time and word problems.",
+    newmk_worlds_title: "12 animated worlds", newmk_worlds_desc: "Travel through meadows, oceans, jungles, space and more as each level opens a new scene.",
+    newmk_progress_title: "Progress that stays", newmk_progress_desc: "Each age has its own saved level and stars. The app also offers 12 languages."
+  },
+  az: {
+    newmk_card_desc: "5–8 yaş üçün rəngarəng riyaziyyat macərası. Hər səviyyədə 10 sual, 12 animasiyalı dünya və 12 dildə yaşa uyğun öyrənmə.",
+    newmk_status: "Hazırlanır · 5–8 yaş",
+    newmk_intro: "5, 6, 7 və 8 yaşlı uşaqlar üçün rəngarəng riyaziyyat macərası. Uşaqlar yaşlarına uyğun qısa tapşırıqları həll edir və hər səviyyədə yeni animasiyalı dünyanı kəşf edirlər.",
+    newmk_privacy: "Məxfilik siyasətini oxu", newmk_all: "Bütün tətbiqlər",
+    newmk_features: "Oynayaraq öyrənmə",
+    newmk_features_intro: "Hər səviyyədə üç böyük cavab variantı olan 10 sual var. Uşaqlar səhv cavabdan sonra yenidən cəhd edir və yumşaq rəy alırlar.",
+    newmk_age_title: "5–8 yaş üçün", newmk_age_desc: "Mövzular sayma və sadə hesablamalardan vurma, bölmə, kəsrlər, vaxt və mətn məsələlərinə qədər inkişaf edir.",
+    newmk_worlds_title: "12 animasiyalı dünya", newmk_worlds_desc: "Hər səviyyə çəmənlik, okean, cəngəllik, kosmos və başqa yeni bir səhnə açır.",
+    newmk_progress_title: "Yadda qalan irəliləyiş", newmk_progress_desc: "Hər yaşın ayrıca səviyyəsi və ulduzları saxlanılır. Tətbiq 12 dili dəstəkləyir."
+  },
+  ru: {
+    newmk_card_desc: "Красочное математическое приключение для детей 5–8 лет: 10 вопросов на уровень, 12 миров и 12 языков.",
+    newmk_status: "В разработке · 5–8 лет", newmk_intro: "Красочное математическое приключение для детей 5, 6, 7 и 8 лет. Решайте задания по возрасту и открывайте новый анимированный мир на каждом уровне.",
+    newmk_privacy: "Политика конфиденциальности", newmk_all: "Все приложения", newmk_features: "Учимся играя",
+    newmk_features_intro: "На каждом уровне 10 вопросов с тремя крупными вариантами ответа. Можно попробовать снова и получить добрую подсказку.",
+    newmk_age_title: "Для детей 5–8 лет", newmk_age_desc: "От счёта и простых примеров до умножения, деления, дробей, времени и текстовых задач.",
+    newmk_worlds_title: "12 анимированных миров", newmk_worlds_desc: "Луга, океаны, джунгли, космос и другие новые сцены на каждом уровне.",
+    newmk_progress_title: "Сохранённый прогресс", newmk_progress_desc: "У каждого возраста свои уровни и звёзды. Приложение доступно на 12 языках."
+  },
+  tr: {
+    newmk_card_desc: "5–8 yaş için renkli matematik macerası: her seviyede 10 soru, 12 dünya ve 12 dil.",
+    newmk_status: "Geliştiriliyor · 5–8 yaş", newmk_intro: "5, 6, 7 ve 8 yaşındaki çocuklar için renkli bir matematik macerası. Yaşa uygun soruları çözün, her seviyede yeni bir animasyonlu dünya keşfedin.",
+    newmk_privacy: "Gizlilik politikasını oku", newmk_all: "Tüm uygulamalar", newmk_features: "Oynayarak öğrenme",
+    newmk_features_intro: "Her seviyede üç büyük cevap seçeneğiyle 10 soru vardır. Çocuklar tekrar deneyebilir ve nazik geri bildirim alır.",
+    newmk_age_title: "5–8 yaş için", newmk_age_desc: "Sayma ve basit işlemlerden çarpma, bölme, kesirler, zaman ve sözel problemlere ilerler.",
+    newmk_worlds_title: "12 animasyonlu dünya", newmk_worlds_desc: "Her seviyede çayırlar, okyanuslar, ormanlar, uzay ve daha fazlasını keşfedin.",
+    newmk_progress_title: "Kaydedilen ilerleme", newmk_progress_desc: "Her yaşın kendi seviyesi ve yıldızları saklanır. Uygulama 12 dil sunar."
+  },
+  de: {
+    newmk_card_desc: "Ein buntes Matheabenteuer für Kinder von 5–8 Jahren: 10 Fragen pro Level, 12 Welten und 12 Sprachen.",
+    newmk_status: "In Entwicklung · 5–8 Jahre", newmk_intro: "Ein buntes Matheabenteuer für Kinder von 5 bis 8 Jahren. Altersgerechte Aufgaben führen in jedem Level durch eine neue animierte Welt.",
+    newmk_privacy: "Datenschutzerklärung lesen", newmk_all: "Alle Apps", newmk_features: "Spielerisch lernen",
+    newmk_features_intro: "Jedes Level bietet 10 Fragen mit drei großen Antwortfeldern. Kinder können erneut versuchen und erhalten freundliches Feedback.",
+    newmk_age_title: "Für 5–8 Jahre", newmk_age_desc: "Vom Zählen bis zu Multiplikation, Division, Brüchen, Zeit und Textaufgaben.",
+    newmk_worlds_title: "12 animierte Welten", newmk_worlds_desc: "Wiesen, Ozeane, Dschungel, Weltraum und weitere Szenen wechseln mit jedem Level.",
+    newmk_progress_title: "Gespeicherter Fortschritt", newmk_progress_desc: "Für jedes Alter werden Level und Sterne getrennt gespeichert. Die App bietet 12 Sprachen."
+  },
+  fr: {
+    newmk_card_desc: "Une aventure de maths colorée pour les 5–8 ans : 10 questions par niveau, 12 mondes et 12 langues.",
+    newmk_status: "En développement · 5–8 ans", newmk_intro: "Une aventure de maths colorée pour les enfants de 5 à 8 ans. Des défis adaptés à leur âge et un nouveau monde animé à chaque niveau.",
+    newmk_privacy: "Lire la politique de confidentialité", newmk_all: "Toutes les applications", newmk_features: "Apprendre en jouant",
+    newmk_features_intro: "Chaque niveau propose 10 questions et trois grands choix de réponse. L'enfant peut réessayer et reçoit un retour encourageant.",
+    newmk_age_title: "Pour les 5–8 ans", newmk_age_desc: "Du comptage à la multiplication, la division, les fractions, l'heure et les problèmes.",
+    newmk_worlds_title: "12 mondes animés", newmk_worlds_desc: "Prairies, océans, jungles, espace et d'autres scènes à découvrir à chaque niveau.",
+    newmk_progress_title: "Progression sauvegardée", newmk_progress_desc: "Chaque âge garde ses niveaux et ses étoiles. L'application est proposée en 12 langues."
+  },
+  es: {
+    newmk_card_desc: "Una colorida aventura matemática para edades de 5–8 años: 10 preguntas por nivel, 12 mundos y 12 idiomas.",
+    newmk_status: "En desarrollo · 5–8 años", newmk_intro: "Una colorida aventura matemática para niños de 5 a 8 años. Retos adecuados a su edad y un nuevo mundo animado en cada nivel.",
+    newmk_privacy: "Leer la política de privacidad", newmk_all: "Todas las aplicaciones", newmk_features: "Aprender jugando",
+    newmk_features_intro: "Cada nivel tiene 10 preguntas con tres grandes opciones. Los niños pueden volver a intentarlo y reciben comentarios amables.",
+    newmk_age_title: "Para edades de 5–8", newmk_age_desc: "Desde contar hasta multiplicar, dividir, fracciones, tiempo y problemas escritos.",
+    newmk_worlds_title: "12 mundos animados", newmk_worlds_desc: "Prados, océanos, selvas, el espacio y nuevos escenarios en cada nivel.",
+    newmk_progress_title: "Progreso guardado", newmk_progress_desc: "Cada edad conserva sus niveles y estrellas. La app ofrece 12 idiomas."
+  },
+  pt: {
+    newmk_card_desc: "Uma aventura matemática colorida para 5–8 anos: 10 perguntas por nível, 12 mundos e 12 idiomas.",
+    newmk_status: "Em desenvolvimento · 5–8 anos", newmk_intro: "Uma aventura matemática colorida para crianças de 5 a 8 anos. Desafios adequados à idade e um novo mundo animado a cada nível.",
+    newmk_privacy: "Ler a política de privacidade", newmk_all: "Todos os apps", newmk_features: "Aprender brincando",
+    newmk_features_intro: "Cada nível tem 10 perguntas com três opções grandes. A criança pode tentar de novo e recebe incentivo gentil.",
+    newmk_age_title: "Para 5–8 anos", newmk_age_desc: "De contagem e somas simples a multiplicação, divisão, frações, horas e problemas.",
+    newmk_worlds_title: "12 mundos animados", newmk_worlds_desc: "Prados, oceanos, selvas, espaço e outros cenários a cada nível.",
+    newmk_progress_title: "Progresso salvo", newmk_progress_desc: "Cada idade guarda seus próprios níveis e estrelas. O app oferece 12 idiomas."
+  },
+  it: {
+    newmk_card_desc: "Un'avventura matematica colorata per i 5–8 anni: 10 domande per livello, 12 mondi e 12 lingue.",
+    newmk_status: "In sviluppo · 5–8 anni", newmk_intro: "Un'avventura matematica colorata per bambini dai 5 agli 8 anni. Sfide adatte all'età e un nuovo mondo animato a ogni livello.",
+    newmk_privacy: "Leggi l'informativa sulla privacy", newmk_all: "Tutte le app", newmk_features: "Imparare giocando",
+    newmk_features_intro: "Ogni livello ha 10 domande con tre grandi risposte. I bambini possono riprovare e ricevono incoraggiamento.",
+    newmk_age_title: "Per i 5–8 anni", newmk_age_desc: "Dal conteggio a moltiplicazioni, divisioni, frazioni, tempo e problemi.",
+    newmk_worlds_title: "12 mondi animati", newmk_worlds_desc: "Prati, oceani, giungle, spazio e nuovi scenari a ogni livello.",
+    newmk_progress_title: "Progressi salvati", newmk_progress_desc: "Ogni età conserva livelli e stelle separati. L'app offre 12 lingue."
+  },
+  ar: {
+    newmk_card_desc: "مغامرة رياضيات ملوّنة للأعمار 5–8: 10 أسئلة في كل مستوى، و12 عالمًا، و12 لغة.",
+    newmk_status: "قيد التطوير · الأعمار 5–8", newmk_intro: "مغامرة رياضيات ملوّنة للأطفال من 5 إلى 8 سنوات. تحديات مناسبة للعمر وعالم جديد متحرك في كل مستوى.",
+    newmk_privacy: "اقرأ سياسة الخصوصية", newmk_all: "كل التطبيقات", newmk_features: "التعلّم باللعب",
+    newmk_features_intro: "في كل مستوى 10 أسئلة وثلاثة خيارات كبيرة. يمكن للطفل المحاولة مجددًا مع تشجيع لطيف.",
+    newmk_age_title: "للأعمار 5–8", newmk_age_desc: "من العد والجمع البسيط إلى الضرب والقسمة والكسور والوقت والمسائل الكلامية.",
+    newmk_worlds_title: "12 عالمًا متحركًا", newmk_worlds_desc: "مروج ومحيطات وغابات وفضاء ومشاهد جديدة في كل مستوى.",
+    newmk_progress_title: "تقدّم محفوظ", newmk_progress_desc: "لكل عمر مستوياته ونجومه المحفوظة. التطبيق متاح بـ12 لغة."
+  },
+  zh: {
+    newmk_card_desc: "适合5–8岁儿童的缤纷数学冒险：每关10题、12个动画世界、12种语言。",
+    newmk_status: "开发中 · 5–8岁", newmk_intro: "专为5至8岁儿童设计的缤纷数学冒险。完成适龄挑战，每一关探索一个新的动画世界。",
+    newmk_privacy: "阅读隐私政策", newmk_all: "所有应用", newmk_features: "在游戏中学习",
+    newmk_features_intro: "每关有10道题和三个大按钮选项。答错可以重试，并获得温和的反馈。",
+    newmk_age_title: "适合5–8岁", newmk_age_desc: "从数数和简单加法，到乘除法、分数、时间和应用题。",
+    newmk_worlds_title: "12个动画世界", newmk_worlds_desc: "每关都能探索草地、海洋、丛林、太空等新场景。",
+    newmk_progress_title: "保存学习进度", newmk_progress_desc: "每个年龄分别保存关卡和星星。应用支持12种语言。"
+  },
+  ja: {
+    newmk_card_desc: "5〜8歳向けのカラフルな算数の冒険。各レベル10問、12の世界、12言語に対応。",
+    newmk_status: "開発中 · 5〜8歳", newmk_intro: "5〜8歳の子どものためのカラフルな算数の冒険。年齢に合った問題を解き、レベルごとに新しいアニメーションの世界を探検します。",
+    newmk_privacy: "プライバシーポリシーを読む", newmk_all: "すべてのアプリ", newmk_features: "遊びながら学ぶ",
+    newmk_features_intro: "各レベルには大きな3つの選択肢を持つ10問があります。間違えても再挑戦でき、優しく励まします。",
+    newmk_age_title: "5〜8歳向け", newmk_age_desc: "数え方や簡単な計算から、かけ算、わり算、分数、時間、文章題まで学べます。",
+    newmk_worlds_title: "12のアニメーション世界", newmk_worlds_desc: "草原、海、ジャングル、宇宙など、新しい舞台がレベルごとに登場します。",
+    newmk_progress_title: "保存される進捗", newmk_progress_desc: "年齢ごとにレベルと星を保存します。アプリは12言語に対応しています。"
+  }
+};
+for (const [lang, entries] of Object.entries(NEW_MATHKIDS)) Object.assign(I18N[lang], entries);
+
 /* ── Lang switcher HTML ────────────────────────────────── */
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">

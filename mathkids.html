@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathKids — BieMTech</title>
+    <meta name="description" content="MathKids is a playful maths game for children aged 5–8, with age-based questions, 12 animated worlds and 12 languages." />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .mathkids-hero { padding: 72px 24px 64px; background: radial-gradient(circle at 75% 15%, rgba(82,199,255,.24), transparent 40%), var(--bg); }
+      .mathkids-hero__inner { display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
+      .mathkids-hero__copy { flex: 1 1 410px; }
+      .mathkids-hero__icon { width: min(32vw, 230px); min-width: 160px; aspect-ratio: 1; border-radius: 27%; box-shadow: 0 20px 60px rgba(73,89,164,.24); }
+      .mathkids-hero h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.05; margin: 12px 0 20px; }
+      .mathkids-hero p { color: var(--text-muted); font-size: clamp(17px, 2vw, 21px); line-height: 1.65; max-width: 650px; }
+      .mathkids-pill { display: inline-block; padding: 7px 14px; border-radius: 100px; background: rgba(82,199,255,.16); border: 1px solid rgba(82,199,255,.35); color: var(--text); font-weight: 700; font-size: 13px; }
+      .mathkids-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+      .mathkids-info { padding: 60px 24px 80px; }
+      .mathkids-info h2 { margin-bottom: 14px; }
+      .mathkids-info__intro { max-width: 760px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+      .mathkids-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+      .mathkids-feature { padding: 26px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; }
+      .mathkids-feature__icon { font-size: 29px; margin-bottom: 12px; }
+      .mathkids-feature h3 { margin: 0 0 9px; font-size: 19px; }
+      .mathkids-feature p { margin: 0; color: var(--text-muted); line-height: 1.6; }
+      @media (max-width: 700px) { .mathkids-hero { padding-top: 42px; } .mathkids-hero__inner { justify-content: center; text-align: center; } .mathkids-hero__icon { order: -1; } .mathkids-links { justify-content: center; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+        <nav class="navbar__nav">
+          <a href="index.html#about" data-i18n="nav_about">About</a>
+          <a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a>
+          <a href="privacy/mathkids/index.html" data-i18n="nav_privacy">Privacy</a>
+        </nav>
+        <div class="navbar__actions">
+          <div class="lang-switch"><select id="lang-select" class="lang-select" onchange="setLang(this.value)" aria-label="Language">
+            <option value="en">🇬🇧 EN</option><option value="az">🇦🇿 AZ</option><option value="ru">🇷🇺 RU</option><option value="tr">🇹🇷 TR</option><option value="de">🇩🇪 DE</option><option value="fr">🇫🇷 FR</option><option value="es">🇪🇸 ES</option><option value="pt">🇵🇹 PT</option><option value="it">🇮🇹 IT</option><option value="ar">🇸🇦 AR</option><option value="zh">🇨🇳 ZH</option><option value="ja">🇯🇵 JA</option>
+          </select></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mathkids-hero">
+        <div class="container mathkids-hero__inner">
+          <div class="mathkids-hero__copy">
+            <span class="mathkids-pill" data-i18n="newmk_status">In development · Ages 5–8</span>
+            <h1>MathKids</h1>
+            <p data-i18n="newmk_intro">A colourful maths adventure for ages 5, 6, 7 and 8. Children solve short, age-matched challenges and explore a new animated world with every level.</p>
+            <div class="mathkids-links">
+              <a href="privacy/mathkids/index.html" class="btn btn-primary" data-i18n="newmk_privacy">Read the privacy policy</a>
+              <a href="index.html#apps" class="btn btn-outline" data-i18n="newmk_all">All apps</a>
+            </div>
+          </div>
+          <img class="mathkids-hero__icon" src="img/mathkids-icon.svg" alt="MathKids app icon" />
+        </div>
+      </section>
+
+      <section class="mathkids-info">
+        <div class="container">
+          <h2 class="section-title" data-i18n="newmk_features">Learning through play</h2>
+          <p class="mathkids-info__intro" data-i18n="newmk_features_intro">Each level has 10 questions with three large answer choices. Children can retry a question and receive gentle feedback as they learn.</p>
+          <div class="mathkids-features">
+            <div class="mathkids-feature"><div class="mathkids-feature__icon">🎂</div><h3 data-i18n="newmk_age_title">Made for ages 5–8</h3><p data-i18n="newmk_age_desc">Topics grow from counting and simple sums to multiplication, division, fractions, time and word problems.</p></div>
+            <div class="mathkids-feature"><div class="mathkids-feature__icon">🌍</div><h3 data-i18n="newmk_worlds_title">12 animated worlds</h3><p data-i18n="newmk_worlds_desc">Travel through meadows, oceans, jungles, space and more as each level opens a new scene.</p></div>
+            <div class="mathkids-feature"><div class="mathkids-feature__icon">⭐</div><h3 data-i18n="newmk_progress_title">Progress that stays</h3><p data-i18n="newmk_progress_desc">Each age has its own saved level and stars. The app also offers 12 languages.</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="container footer__bottom"><p class="footer__copy" data-i18n="footer_copy">© 2026 BieMTech. All rights reserved.</p><p><a href="privacy/mathkids/index.html" data-i18n="newmk_privacy">Read the privacy policy</a> · <a href="index.html">BieMTech</a></p></div></footer>
+    <script src="i18n.js"></script>
+  </body>
+</html>

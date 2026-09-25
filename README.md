@@ -7,6 +7,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | File                      | Description                                      |
 | ------------------------- | ------------------------------------------------ |
 | `index.html`              | Main landing page — about, apps, values, contact |
+| `mathkids.html`           | MathKids app page (ages 5–8)                     |
 | `math-kids.html`          | Math Kids app page                               |
 | `times-table-master.html` | Times Table Master app page                      |
 | `arrows-escape.html`      | Arrows Escape app page                           |
@@ -19,6 +20,12 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
+
+### MathKids
+
+A separate maths game for ages 5–8, currently in development. Each level has 10 questions and a new animated world. The Android package is `com.mathkids.app`.
+
+- Privacy Policy: https://biemtech.com/privacy/mathkids/
 
 ### Math Kids
 

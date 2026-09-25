@@ -7,6 +7,7 @@ const i18n = fs.readFileSync(path.join(root, "i18n.js"), "utf8");
 const combined = gi18n + i18n;
 
 const htmlFiles = [
+  "mathkids.html",
   "math-kids.html",
   "guide/index.html",
   "guide/theme.html",

@@ -10,6 +10,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 
 | App                | Languages                                      | Link                                                              |
 | ------------------ | ---------------------------------------------- | ----------------------------------------------------------------- |
+| MathKids (ages 5–8) | EN, AZ                                         | [View](https://biemtech.com/privacy/mathkids/)                     |
 | Math Kids          | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/math-kids/)                    |
 | Times Table Master | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/times-table-master/)           |
 | Arrows Escape      | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/arrows-escape/)                |
@@ -26,6 +27,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 
 ```
 index.html                 # App listing page
+mathkids/index.html        # MathKids (com.mathkids.app) privacy policy
 math-kids/index.html       # Multilingual privacy policy
 times-table-master/index.html
 arrows-escape/index.html
