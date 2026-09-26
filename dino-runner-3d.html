@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Runner 3D: Dinosaur Game — BieMTech</title>
+    <meta name="description" content="Run through a 3D Egyptian desert as a T-Rex. Jump cacti, duck birds, fight ancient gods, and chase your high score offline." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dino Runner 3D: Dinosaur Game — BieMTech" />
+    <meta property="og:description" content="A full 3D T-Rex runner in an Egyptian desert. Fight ancient gods and chase your high score offline." />
+    <meta property="og:image" content="https://biemtech.com/img/dino-runner-3d-gameplay.webp" />
+    <meta property="og:url" content="https://biemtech.com/dino-runner-3d.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="img/dino-runner-3d-icon.jpeg" />
+    <style>
+      :root { --dino-ink:#261208; --dino-brown:#3b1b0c; --dino-sand:#f3d49a; --dino-muted:#dec4a4; --dino-orange:#f18b18; --dino-gold:#ffcb54; --dino-border:rgba(255,194,92,.22); }
+      body { color:#fff4df; background:radial-gradient(circle at 80% 12%,rgba(241,139,24,.15),transparent 30rem),linear-gradient(180deg,#2c160c,var(--dino-ink)); }
+      .navbar { background:rgba(38,18,8,.94); border-color:var(--dino-border); }
+      .navbar__nav a { color:var(--dino-muted); }
+      .navbar__nav a:hover,.navbar__nav a.active { color:#fff4df; }
+      .lang-select { color:#fff4df; border-color:var(--dino-border); background:rgba(255,255,255,.07); color-scheme:dark; }
+      .lang-select option { color:#fff4df; background:var(--dino-ink); }
+      .dino-hero { padding:60px 24px 68px; border-bottom:1px solid var(--dino-border); }
+      .dino-hero__inner { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(250px,.85fr); gap:50px; align-items:center; }
+      .dino-status { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; color:var(--dino-gold); background:rgba(255,203,84,.09); border:1px solid var(--dino-border); border-radius:999px; font-weight:750; font-size:13px; }
+      .dino-status::before { content:""; width:7px; height:7px; border-radius:50%; background:#4ed088; box-shadow:0 0 10px #4ed088; }
+      .dino-hero h1 { font-size:clamp(38px,5.4vw,70px); line-height:1.06; margin:18px 0 16px; letter-spacing:-.035em; color:#fff5e5; }
+      .dino-tagline { color:var(--dino-gold); font-size:clamp(18px,2.1vw,26px); font-weight:800; margin:0 0 17px; }
+      .dino-intro { max-width:670px; color:var(--dino-muted); line-height:1.75; font-size:16px; margin:0; }
+      .dino-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+      .dino-button { display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:13px 22px; border-radius:999px; font-weight:800; text-decoration:none; transition:transform .2s ease,box-shadow .2s ease; }
+      .dino-button:hover { transform:translateY(-2px); }
+      .dino-button--play { color:#291305; background:linear-gradient(135deg,#ffe079,#f6a21c); box-shadow:0 12px 30px rgba(241,139,24,.28); }
+      .dino-button--secondary { color:#fff4df; border:1px solid var(--dino-border); background:rgba(255,255,255,.05); }
+      .dino-button svg { width:16px; height:16px; }
+      .dino-hero__icon { justify-self:center; width:min(100%,350px); aspect-ratio:1; object-fit:contain; border-radius:26px; box-shadow:0 28px 80px rgba(0,0,0,.32); }
+      .dino-facts { display:flex; flex-wrap:wrap; justify-content:center; gap:14px 32px; padding:19px 24px; border-bottom:1px solid var(--dino-border); background:rgba(255,185,75,.04); color:var(--dino-sand); font-size:14px; font-weight:750; }
+      .dino-facts span::before { content:"◆"; color:var(--dino-orange); margin-right:8px; font-size:10px; }
+      .dino-gameplay { padding:62px 24px 20px; }
+      .dino-gameplay h2,.dino-features h2 { text-align:center; color:#fff1d1; font-size:clamp(27px,3.5vw,40px); margin:0 0 13px; }
+      .dino-gameplay p { max-width:680px; text-align:center; color:var(--dino-muted); margin:0 auto 30px; line-height:1.7; }
+      .dino-gameplay img { display:block; width:100%; height:auto; border:1px solid var(--dino-border); border-radius:22px; box-shadow:0 24px 65px rgba(0,0,0,.36); }
+      .dino-features { padding:65px 24px 75px; }
+      .dino-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:16px; margin-top:33px; }
+      .dino-card { padding:25px; border:1px solid var(--dino-border); border-radius:20px; background:rgba(79,38,17,.8); }
+      .dino-card__icon { font-size:29px; line-height:1; margin-bottom:14px; }
+      .dino-card h3 { color:var(--dino-gold); font-size:19px; margin:0 0 9px; }
+      .dino-card p { color:var(--dino-muted); line-height:1.65; font-size:14px; margin:0; }
+      .dino-end { padding:50px 24px 70px; text-align:center; border-top:1px solid var(--dino-border); background:rgba(255,177,69,.035); }
+      .dino-end h2 { color:#fff1d1; font-size:clamp(26px,3vw,36px); margin:0 0 10px; }
+      .dino-end p { color:var(--dino-muted); margin:0 auto 22px; max-width:600px; }
+      .dino-footer { padding:25px 20px; text-align:center; color:#b89777; border-top:1px solid var(--dino-border); font-size:14px; }
+      .dino-footer a { color:var(--dino-gold); }
+      @media(max-width:780px) { .dino-hero__inner { grid-template-columns:1fr; text-align:center; } .dino-hero__icon { grid-row:1; width:min(55vw,230px); } .dino-actions { justify-content:center; } .dino-hero { padding:38px 20px 55px; } }
+      @media(max-width:600px) { .navbar__nav { display:none; } .dino-gameplay,.dino-features { padding-left:17px; padding-right:17px; } .dino-gameplay img { border-radius:13px; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar"><div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+      <nav class="navbar__nav"><a href="index.html#about" data-i18n="nav_about">About</a><a href="index.html#apps" class="active" data-i18n="nav_apps">Apps</a></nav>
+      <div class="navbar__actions"><div class="lang-switch"><select id="lang-select" class="lang-select" onchange="setLang(this.value)" aria-label="Language">
+        <option value="en">🇬🇧 EN</option><option value="az">🇦🇿 AZ</option><option value="ru">🇷🇺 RU</option><option value="tr">🇹🇷 TR</option><option value="de">🇩🇪 DE</option><option value="fr">🇫🇷 FR</option><option value="es">🇪🇸 ES</option><option value="pt">🇵🇹 PT</option><option value="it">🇮🇹 IT</option><option value="ar">🇸🇦 AR</option><option value="zh">🇨🇳 ZH</option><option value="ja">🇯🇵 JA</option>
+      </select></div></div>
+    </div></header>
+    <main>
+      <section class="dino-hero"><div class="container dino-hero__inner">
+        <div>
+          <span class="dino-status" data-i18n="dino_status">Available on Google Play</span>
+          <h1>Dino Runner 3D:<br />Dinosaur Game</h1>
+          <p class="dino-tagline" data-i18n="dino_tagline">Run the desert. Face the gods.</p>
+          <p class="dino-intro" data-i18n="dino_intro">The classic dinosaur game—jump the cactus, duck the birds—rebuilt as a full 3D adventure in an Egyptian desert. Run as a T-Rex, fight ancient gods and chase your high score. Play offline, wherever you are.</p>
+          <div class="dino-actions">
+            <a class="dino-button dino-button--play" href="https://play.google.com/store/apps/details?id=dino.chrome" target="_blank" rel="noopener" data-i18n="dino_download">▶ Get it on Google Play</a>
+            <a class="dino-button dino-button--secondary" href="index.html#apps" data-i18n="dino_all">Explore all apps</a>
+          </div>
+        </div>
+        <img class="dino-hero__icon" src="img/dino-runner-3d-icon.jpeg" alt="Dino Runner 3D game logo showing a T-Rex in the desert" />
+      </div></section>
+      <div class="dino-facts"><span data-i18n="dino_fact_offline">Offline play</span><span data-i18n="dino_fact_bosses">Three ancient bosses</span><span data-i18n="dino_fact_daily">Daily challenges</span><span data-i18n="dino_fact_account">No account needed</span></div>
+      <section class="dino-gameplay"><div class="container">
+        <h2 data-i18n="dino_screen_title">An Egyptian desert in full 3D</h2>
+        <p data-i18n="dino_screen_desc">Day turns to night as you run through sandstorms, dodge hazards and face gods in close-up duels.</p>
+        <img src="img/dino-runner-3d-gameplay.webp" alt="Dino Runner 3D gameplay showing a T-Rex facing Anubis in an Egyptian desert" loading="lazy" />
+      </div></section>
+      <section class="dino-features"><div class="container">
+        <h2 data-i18n="dino_features_title">Keep your run alive</h2>
+        <div class="dino-grid">
+          <article class="dino-card"><div class="dino-card__icon">⚔️</div><h3 data-i18n="dino_gods_title">Fight ancient gods</h3><p data-i18n="dino_gods_desc">Every 5,000 points, face Anubis, Thoth or the Tree Golem. Duck to block, jump to dodge, then bite or tail-swipe to strike back. Beat all three and they return stronger.</p></article>
+          <article class="dino-card"><div class="dino-card__icon">🦖</div><h3 data-i18n="dino_moves_title">Jump, bite and smash</h3><p data-i18n="dino_moves_desc">Jump cacti, duck flyers, bite birds for bonus points and tail-sweep ground obstacles. Watch for vultures, snakes, scorpions, crocodiles and a charging gorilla.</p></article>
+          <article class="dino-card"><div class="dino-card__icon">☄️</div><h3 data-i18n="dino_lanes_title">Survive the storm</h3><p data-i18n="dino_lanes_desc">Weather sandstorms. At 1,500 points, a meteor shower splits the road into three lanes—swipe to switch and stay ahead.</p></article>
+          <article class="dino-card"><div class="dino-card__icon">❤️</div><h3 data-i18n="dino_hearts_title">Hearts and coin chains</h3><p data-i18n="dino_hearts_desc">Hearts absorb hits. Chain coin pickups for up to 5× points and earn extra hearts to keep running.</p></article>
+          <article class="dino-card"><div class="dino-card__icon">📅</div><h3 data-i18n="dino_daily_title">A challenge every day</h3><p data-i18n="dino_daily_desc">Take on a new daily challenge, build your streak and try to beat your best score.</p></article>
+          <article class="dino-card"><div class="dino-card__icon">📴</div><h3 data-i18n="dino_offline_title">Run anywhere</h3><p data-i18n="dino_offline_desc">No Wi-Fi, account or sign-up needed. Open the game and run on flights, commutes or anywhere without a connection.</p></article>
+        </div>
+      </div></section>
+      <section class="dino-end"><div class="container"><h2 data-i18n="dino_cta_title">How far can your T-Rex go?</h2><p data-i18n="dino_cta_desc">Beat your best score, beat the gods, and try one more run.</p><a class="dino-button dino-button--play" href="https://play.google.com/store/apps/details?id=dino.chrome" target="_blank" rel="noopener" data-i18n="dino_download">▶ Get it on Google Play</a></div></section>
+    </main>
+    <footer class="dino-footer">© 2026 <a href="index.html">BieMTech</a> · <a href="index.html#apps" data-i18n="dino_all">Explore all apps</a></footer>
+    <script src="i18n.js"></script>
+  </body>
+</html>

@@ -8,6 +8,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | ------------------------- | ------------------------------------------------ |
 | `index.html`              | Main landing page — about, apps, values, contact |
 | `mathkids.html`           | MathKids app page (ages 5–8)                     |
+| `dino-runner-3d.html`     | Dino Runner 3D app page                          |
 | `math-kids.html`          | Math Kids app page                               |
 | `times-table-master.html` | Times Table Master app page                      |
 | `arrows-escape.html`      | Arrows Escape app page                           |
@@ -34,6 +35,13 @@ A fun math learning app for children aged 3–10, available on Google Play.
 - Google Play: https://play.google.com/store/apps/details?id=com.biemtech.mathkids
 - Support: mathkids@biemtech.com
 - Privacy Policy: https://biemtech.com/privacy/math-kids/
+
+### Dino Runner 3D: Dinosaur Game
+
+An offline 3D T-Rex runner set in an Egyptian desert, available on Google Play.
+
+- Package: `dino.chrome`
+- Google Play: https://play.google.com/store/apps/details?id=dino.chrome
 
 ### Times Table Master
 

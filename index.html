@@ -89,7 +89,7 @@
             </div>
             <div class="hero__stat-divider"></div>
             <div class="hero__stat">
-              <span class="hero__stat-num">7</span>
+              <span class="hero__stat-num">8</span>
               <span class="hero__stat-label" data-i18n="stat_app"
                 >Live App</span
               >
@@ -164,8 +164,16 @@
               </a>
             </div>
 
-            <!-- Snake 3D -->
+            <!-- Dino Runner 3D -->
             <div class="orbit-arm" style="--od: -12.5s">
+              <a href="dino-runner-3d.html" class="hero__vis-orbit-btn">
+                <img src="img/dino-runner-3d-icon.jpeg" alt="" />
+                <span>Dino Runner 3D</span>
+              </a>
+            </div>
+
+            <!-- Snake 3D -->
+            <div class="orbit-arm" style="--od: -15s">
               <a href="snake-3d.html" class="hero__vis-orbit-btn">
                 <img src="img/snake-3d-icon-1024.png" alt="" />
                 <span>Snake 3D</span>
@@ -173,7 +181,7 @@
             </div>
 
             <!-- Word Wheel -->
-            <div class="orbit-arm" style="--od: -15s">
+            <div class="orbit-arm" style="--od: -17.5s">
               <a href="word-wheel.html" class="hero__vis-orbit-btn">
                 <img src="img/word-wheel-icon.png" alt="" />
                 <span>Word Wheel</span>
@@ -181,7 +189,7 @@
             </div>
 
             <!-- Neon Blocks -->
-            <div class="orbit-arm" style="--od: -17.5s">
+            <div class="orbit-arm" style="--od: -20s">
               <a href="neon-blocks.html" class="hero__vis-orbit-btn">
                 <img src="img/neon-blocks-icon.png" alt="" />
                 <span>Neon Blocks</span>
@@ -189,7 +197,7 @@
             </div>
 
             <!-- Temple Vanguard -->
-            <div class="orbit-arm" style="--od: -20s">
+            <div class="orbit-arm" style="--od: -22.5s">
               <a href="temple-vanguard.html" class="hero__vis-orbit-btn">
                 <img src="img/temple-vanguard-icon.png" alt="" />
                 <span>Temple Vanguard</span>
@@ -197,7 +205,7 @@
             </div>
 
             <!-- MathKids (ages 5–8) -->
-            <div class="orbit-arm" style="--od: -22.5s">
+            <div class="orbit-arm" style="--od: -25s">
               <a href="mathkids.html" class="hero__vis-orbit-btn">
                 <img src="img/mathkids-icon.svg" alt="" />
                 <span>MathKids</span>
@@ -552,6 +560,44 @@
             </div>
           </div>
 
+          <!-- Dino Runner 3D: placed in the middle of the app lineup -->
+          <div
+            class="app-card"
+            onclick="window.location = 'dino-runner-3d.html'"
+            onkeydown="if (event.target === this && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); window.location = 'dino-runner-3d.html'; }"
+            role="link"
+            tabindex="0"
+            style="cursor: pointer"
+          >
+            <div class="app-card__top">
+              <div class="app-card__icon dino-runner-3d">
+                <img src="img/dino-runner-3d-icon.jpeg" alt="Dino Runner 3D" />
+              </div>
+              <div class="app-card__arrow">→</div>
+            </div>
+            <div class="app-card__name">Dino Runner 3D</div>
+            <p class="app-card__desc" data-i18n="dino_card_desc">
+              A 3D T-Rex runner in an Egyptian desert. Jump cacti, dodge birds,
+              fight ancient gods and chase your best score — even offline.
+            </p>
+            <div class="app-card__footer">
+              <span class="chip" data-i18n="chip_arcade">Arcade Game</span>
+              <a
+                href="https://play.google.com/store/apps/details?id=dino.chrome"
+                class="app-card__playbtn"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation()"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M3.18 23.76c.34.19.73.21 1.1.07l12.02-6.93-2.59-2.6-10.53 9.46zM.56 1.6C.21 1.99 0 2.58 0 3.33v17.34c0 .75.21 1.34.57 1.73l.09.08 9.71-9.71v-.23L.65 1.52.56 1.6zM20.15 10.06l-2.8-1.62-2.89 2.9 2.89 2.9 2.82-1.63c.8-.46.8-1.21-.02-1.55zM4.28.17l12.02 6.93-2.59 2.59L3.18.23C3.55.09 3.94.11 4.28.17z" />
+                </svg>
+                Google Play
+              </a>
+              <span class="chip chip-live" data-i18n="chip_live">● Live</span>
+            </div>
+          </div>
+
           <!-- Snake 3D -->
           <div
             class="app-card"
@@ -844,9 +890,10 @@
               <li><a href="math-kids.html">Math Kids</a></li>
               <li><a href="times-table-master.html">Times Table Master</a></li>
               <li><a href="arrows-escape.html">Arrows Escape</a></li>
-              <li><a href="snake-3d.html">Snake 3D</a></li>
               <li><a href="rex-dragon-flight.html">REX: Dragon Flight</a></li>
               <li><a href="zuzu-bloomflight.html">Zuzu: Bloomflight</a></li>
+              <li><a href="dino-runner-3d.html">Dino Runner 3D</a></li>
+              <li><a href="snake-3d.html">Snake 3D</a></li>
               <li><a href="word-wheel.html">Word Wheel</a></li>
               <li><a href="neon-blocks.html">Neon Blocks</a></li>
               <li><a href="temple-vanguard.html">Temple Vanguard</a></li>

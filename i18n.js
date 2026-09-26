@@ -1956,6 +1956,57 @@ const NEW_MATHKIDS = {
 };
 for (const [lang, entries] of Object.entries(NEW_MATHKIDS)) Object.assign(I18N[lang], entries);
 
+/* Dino Runner 3D. The full app page is available in EN and AZ; other site
+   languages use English for page copy while retaining translated navigation. */
+const DINO_RUNNER = {
+  en: {
+    dino_card_desc: "A 3D T-Rex runner in an Egyptian desert. Jump cacti, dodge birds, fight ancient gods and chase your best score — even offline.",
+    dino_status: "Available on Google Play", dino_tagline: "Run the desert. Face the gods.",
+    dino_intro: "The classic dinosaur game—jump the cactus, duck the birds—rebuilt as a full 3D adventure in an Egyptian desert. Run as a T-Rex, fight ancient gods and chase your high score. Play offline, wherever you are.",
+    dino_download: "▶ Get it on Google Play", dino_all: "Explore all apps",
+    dino_fact_offline: "Offline play", dino_fact_bosses: "Three ancient bosses", dino_fact_daily: "Daily challenges", dino_fact_account: "No account needed",
+    dino_screen_title: "An Egyptian desert in full 3D", dino_screen_desc: "Day turns to night as you run through sandstorms, dodge hazards and face gods in close-up duels.",
+    dino_features_title: "Keep your run alive",
+    dino_gods_title: "Fight ancient gods", dino_gods_desc: "Every 5,000 points, face Anubis, Thoth or the Tree Golem. Duck to block, jump to dodge, then bite or tail-swipe to strike back. Beat all three and they return stronger.",
+    dino_moves_title: "Jump, bite and smash", dino_moves_desc: "Jump cacti, duck flyers, bite birds for bonus points and tail-sweep ground obstacles. Watch for vultures, snakes, scorpions, crocodiles and a charging gorilla.",
+    dino_lanes_title: "Survive the storm", dino_lanes_desc: "Weather sandstorms. At 1,500 points, a meteor shower splits the road into three lanes—swipe to switch and stay ahead.",
+    dino_hearts_title: "Hearts and coin chains", dino_hearts_desc: "Hearts absorb hits. Chain coin pickups for up to 5× points and earn extra hearts to keep running.",
+    dino_daily_title: "A challenge every day", dino_daily_desc: "Take on a new daily challenge, build your streak and try to beat your best score.",
+    dino_offline_title: "Run anywhere", dino_offline_desc: "No Wi-Fi, account or sign-up needed. Open the game and run on flights, commutes or anywhere without a connection.",
+    dino_cta_title: "How far can your T-Rex go?", dino_cta_desc: "Beat your best score, beat the gods, and try one more run."
+  },
+  az: {
+    dino_card_desc: "Misir səhrasında 3D T-Rex qaçış oyunu. Kaktusların üstündən tullan, quşlardan yayın, qədim tanrılarla döyüş və internet olmadan rekordunu yenilə.",
+    dino_status: "Google Play-də mövcuddur", dino_tagline: "Səhrada qaç. Tanrılarla üzləş.",
+    dino_intro: "Hamının tanıdığı dinozavr oyunu — kaktusun üstündən tullan, quşların altından əyilərək keç — Misir səhrasında tam 3D macəraya çevrilib. T-Rex kimi qaç, qədim tanrılarla döyüş və rekordunu yenilə. İnternetsiz də oyna.",
+    dino_download: "▶ Google Play-dən yüklə", dino_all: "Bütün tətbiqlər",
+    dino_fact_offline: "İnternetsiz oyun", dino_fact_bosses: "Üç qədim boss", dino_fact_daily: "Gündəlik tapşırıqlar", dino_fact_account: "Hesab tələb olunmur",
+    dino_screen_title: "Tam 3D Misir səhrası", dino_screen_desc: "Qum fırtınaları arasından qaçarkən gündüz gecəyə çevrilir, maneələrdən yayınır və tanrılarla yaxın döyüşə girirsən.",
+    dino_features_title: "Qaçışını davam etdir",
+    dino_gods_title: "Qədim tanrılarla döyüş", dino_gods_desc: "Hər 5 000 xalda Anubis, Thoth və ya Ağac Qolemi yolunu kəsir. Əyilərək blokla, tullanaraq yayın, dişlə və ya quyruğunla cavab zərbəsi vur. Üçünü də məğlub etsən, daha güclü qayıdırlar.",
+    dino_moves_title: "Tullan, dişlə, dağıt", dino_moves_desc: "Kaktusların üstündən tullan, uçan düşmənlərin altından keç, bonus xal üçün quşları dişlə və yerdəki maneələri quyruğunla dağıt. Qartal, ilan, əqrəb, timsah və hücum edən qorilladan yayın.",
+    dino_lanes_title: "Fırtınadan sağ çıx", dino_lanes_desc: "Qum fırtınalarından keç. 1 500 xalda meteor yağışı yolu üç zolağa bölür — zolaq dəyişmək üçün barmağını sürüşdür.",
+    dino_hearts_title: "Ürəklər və sikkə zəncirləri", dino_hearts_desc: "Ürəklər zərbəni qarşılayır. Sikkələri ardıcıl toplayıb 5×-ə qədər xal qazan və əlavə ürəklər əldə et.",
+    dino_daily_title: "Hər gün yeni tapşırıq", dino_daily_desc: "Gündəlik tapşırığı yerinə yetir, ardıcıllığını qoru və rekordunu yeniləməyə çalış.",
+    dino_offline_title: "Hər yerdə qaç", dino_offline_desc: "Wi-Fi, hesab və qeydiyyat lazım deyil. Uçuşda, yolda və ya internet olmayan yerdə oyunu aç və qaç.",
+    dino_cta_title: "T-Rex-in nə qədər uzağa qaça bilər?", dino_cta_desc: "Rekordunu yenilə, tanrıları məğlub et və bir dəfə də cəhd et."
+  }
+};
+const DINO_CARD_DESCRIPTIONS = {
+  ru: "3D-раннер с тираннозавром в египетской пустыне: прыгайте через кактусы, уклоняйтесь от птиц, сражайтесь с древними богами и играйте без интернета.",
+  tr: "Mısır çölünde 3D T-Rex koşusu: kaktüsleri aş, kuşlardan kaç, antik tanrılarla savaş ve çevrimdışı rekor kır.",
+  de: "Ein 3D-T-Rex-Runner in der ägyptischen Wüste: Kakteen überspringen, Vögeln ausweichen, gegen antike Götter kämpfen und offline Rekorde jagen.",
+  fr: "Un runner 3D avec un T-Rex dans le désert égyptien : sautez les cactus, évitez les oiseaux, affrontez les dieux antiques et jouez hors ligne.",
+  es: "Un runner 3D de T-Rex en el desierto egipcio: salta cactus, esquiva aves, lucha contra dioses antiguos y juega sin conexión.",
+  pt: "Uma corrida 3D de T-Rex no deserto egípcio: pule cactos, desvie de aves, enfrente deuses antigos e jogue offline.",
+  it: "Un runner 3D con un T-Rex nel deserto egiziano: salta i cactus, evita gli uccelli, sfida gli dei antichi e gioca offline.",
+  ar: "لعبة ركض ثلاثية الأبعاد بديناصور تي ريكس في الصحراء المصرية: اقفز فوق الصبار، تفادَ الطيور، حارب الآلهة القديمة والعب دون إنترنت.",
+  zh: "在埃及沙漠中展开3D霸王龙跑酷：跳过仙人掌、躲避飞鸟、挑战古代神祇，离线也能畅玩。",
+  ja: "エジプトの砂漠を舞台にした3Dティラノサウルスランナー。サボテンを飛び越え、鳥をよけ、古代の神々と戦い、オフラインで記録を目指そう。"
+};
+for (const [lang, entries] of Object.entries(DINO_RUNNER)) Object.assign(I18N[lang], entries);
+for (const [lang, description] of Object.entries(DINO_CARD_DESCRIPTIONS)) I18N[lang].dino_card_desc = description;
+
 /* ── Lang switcher HTML ────────────────────────────────── */
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">
@@ -1985,7 +2036,8 @@ function applyLang(lang) {
   const dict = I18N[lang] || I18N.en;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) el.innerHTML = dict[key];
+    const value = dict[key] ?? I18N.en[key];
+    if (value !== undefined) el.innerHTML = value;
   });
   /* RTL support */
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
