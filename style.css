@@ -667,37 +667,6 @@ body::after {
   border-radius: 1px;
 }
 
-/* ── Announce Bar ──────────────────────────────────────── */
-.announce-bar {
-  background: linear-gradient(90deg, rgba(46,111,64,0.09), rgba(181,110,71,0.05), rgba(46,111,64,0.09));
-  border-bottom: 1px solid rgba(46,111,64,0.14);
-  padding: 9px 0;
-}
-.announce-bar__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 13px;
-  color: var(--text-muted);
-  flex-wrap: wrap;
-  text-align: center;
-}
-.announce-dot {
-  color: #16a34a;
-  font-size: 9px;
-  filter: drop-shadow(0 0 3px rgba(22,163,74,0.5));
-}
-.announce-link {
-  color: var(--primary);
-  font-weight: 600;
-  transition: color 0.2s;
-}
-.announce-link:hover {
-  text-decoration: underline;
-  color: #1f5230;
-}
-
 /* ── Hero Split Layout ─────────────────────────────────── */
 .hero--split { padding: 80px 0 100px; }
 
@@ -792,7 +761,7 @@ body::after {
 }
 
 /* ── Orbit arm system ─────────────────────────────────── */
-/* Each arm is 480×480, rotates around its center (240,240) */
+/* Ten arms rotate around the 480×480 orbit center (240,240). */
 /* Item is pinned at top (12 o'clock, radius 194) and        */
 /* counter-rotates to stay visually upright.                 */
 /* animation-delay sets the starting clock position.         */
@@ -804,7 +773,7 @@ body::after {
   top: 0;
   left: 0;
   transform-origin: 240px 240px;
-  animation: spinRing 22.5s linear infinite;
+  animation: spinRing 25s linear infinite;
   animation-delay: var(--od, 0s);
   pointer-events: none;
   z-index: 5;
@@ -833,8 +802,8 @@ body::after {
   left: 240px;
   transform: translateX(-50%) translateY(-50%);
   animation:
-    counterSpin 22.5s linear infinite,
-    orbitDepth 22.5s ease-in-out infinite;
+    counterSpin 25s linear infinite,
+    orbitDepth 25s ease-in-out infinite;
   animation-delay: var(--od, 0s), var(--od, 0s);
   pointer-events: auto;
   will-change: transform, opacity;
