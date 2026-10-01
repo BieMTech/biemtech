@@ -4,88 +4,120 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#100d18" />
-    <meta name="description" content="Privacy Policy for Dark Alive (Wallpaper Alive), the live wallpaper app by BieMTech." />
+    <meta name="description" content="Privacy Policy for Dark Alive (Wallpaper Alive) by BieMTech." />
     <title>Dark Alive Privacy Policy | BieMTech</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
     <style>
-      :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      * { box-sizing: border-box; }
-      body { margin: 0; color: #eee9f4; line-height: 1.7; background: radial-gradient(circle at 80% 0, #302043, transparent 34rem), #100d18; }
-      a { color: #c8a8ff; }
-      header, main, footer { width: min(780px, calc(100% - 36px)); margin-inline: auto; }
-      header { padding: 64px 0 32px; border-bottom: 1px solid #40364d; }
-      .brand { margin: 0 0 14px; color: #c8a8ff; font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-      h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 3.5rem); line-height: 1.1; }
-      .subtitle { margin: 12px 0 0; color: #c9c1d4; }
-      nav { display: flex; gap: 18px; margin-top: 22px; }
-      main { padding: 34px 0 54px; }
-      article + article { margin-top: 58px; padding-top: 40px; border-top: 1px solid #40364d; }
-      h2 { margin: 0 0 8px; font-size: 1.65rem; }
-      h3 { margin: 30px 0 8px; font-size: 1.04rem; color: #dac4ff; }
-      p, li { color: #d6cfdf; }
-      p { margin: 8px 0 14px; }
-      ul { padding-left: 22px; }
-      .meta { color: #b9afc7; font-size: .91rem; }
-      .summary { padding: 18px 20px; border: 1px solid #57436f; border-radius: 14px; background: #21182e; }
-      footer { padding: 24px 0 35px; color: #a99fb6; border-top: 1px solid #40364d; font-size: .85rem; }
-      @media (max-width: 600px) { header { padding-top: 42px; } }
+      :root { color-scheme: dark; --bg: #100d18; --card: #1b1527; --text: #f2edf7; --muted: #d0c6dc; --accent: #d2b1ff; --border: #493a58; }
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { min-height: 100vh; margin: 0; color: var(--text); background: radial-gradient(circle at 80% 4%, #342044, transparent 34rem), var(--bg); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
+      a { color: var(--accent); }
+      .topbar, header, main { width: min(850px, calc(100% - 36px)); margin-inline: auto; }
+      .topbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-top: 24px; }
+      .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 650; }
+      .back img { width: 28px; height: 28px; border-radius: 6px; }
+      select { max-width: 150px; padding: 9px 12px; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 10px; font: inherit; font-size: .86rem; cursor: pointer; }
+      header { padding: 46px 0 34px; text-align: center; }
+      .eyebrow { margin: 0 0 9px; color: var(--accent); font-size: .78rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(2.4rem, 8vw, 4rem); line-height: 1.08; letter-spacing: -.04em; }
+      .subtitle { margin: 14px 0 0; color: var(--muted); }
+      main { padding-bottom: 62px; }
+      .meta, .summary, .card { border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
+      .meta { padding: 13px 17px; color: var(--muted); font-size: .84rem; text-align: center; overflow-wrap: anywhere; }
+      .summary { margin: 16px 0; padding: 18px 21px; border-color: #735592; background: #281c38; }
+      .card { margin-top: 14px; padding: 23px 25px; }
+      h2 { margin: 0 0 9px; color: var(--accent); font-size: 1.1rem; line-height: 1.35; }
+      .card p { margin: 0; color: var(--muted); }
+      .contact { font-weight: 700; overflow-wrap: anywhere; }
+      footer { padding: 25px 18px; border-top: 1px solid var(--border); color: #aa9db7; text-align: center; font-size: .84rem; }
+      [dir="rtl"] .card, [dir="rtl"] .summary { text-align: right; }
+      @media (max-width: 560px) { .topbar { align-items: flex-start; } .back { max-width: 180px; } header { padding-top: 32px; } .card { padding: 20px; } .meta { text-align: start; } }
     </style>
   </head>
   <body>
+    <div class="topbar">
+      <a class="back" href="../index.html"><img src="../../img/logo-biemtech.png" alt="" /><span id="back-label">← BieMTech Privacy Policies</span></a>
+      <select id="language" aria-label="Language">
+        <option value="en">🇬🇧 English</option>
+        <option value="az">🇦🇿 Azərbaycan dili</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="tr">🇹🇷 Türkçe</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="pt">🇵🇹 Português</option>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="ar">🇸🇦 العربية</option>
+        <option value="zh">🇨🇳 中文</option>
+        <option value="ja">🇯🇵 日本語</option>
+      </select>
+    </div>
     <header>
-      <p class="brand">BieMTech</p>
+      <p class="eyebrow" id="policy-label">Privacy Policy</p>
       <h1>Dark Alive</h1>
-      <p class="subtitle">Privacy Policy · Məxfilik Siyasəti</p>
-      <nav aria-label="Languages"><a href="#english">English</a><a href="#azerbaijani">Azərbaycan dili</a></nav>
+      <p class="subtitle" id="subtitle">Wallpaper Alive · Android live wallpapers</p>
     </header>
-    <main>
-      <article id="english" lang="en">
-        <h2>Privacy Policy</h2>
-        <p class="meta">Developer: BieMTech · App: Dark Alive (Wallpaper Alive) · Android package: com.wallpaperalive.wallpaper_alive · Last updated: October 1, 2026</p>
-        <p class="summary">Dark Alive does not collect or send personal information to BieMTech. Its wallpaper gallery and playback work offline. Favorites and selected wallpaper files are kept on your device. Saving or sharing a wallpaper happens only when you choose those actions.</p>
-
-        <h3>Information and local storage</h3>
-        <p>The app does not require an account or ask for your name, email address, phone number, location, contacts, camera, or microphone. It stores the IDs of wallpapers you mark as favorites in app preferences. When you apply a live wallpaper, it copies the selected bundled video into the app's private storage so Android can display it. The app does not send this information or your activity to BieMTech servers.</p>
-
-        <h3>Wallpaper access, saving, and sharing</h3>
-        <p>Dark Alive uses Android's wallpaper functions to show a preview and apply a wallpaper when you request it. If you choose Save, the selected video is copied to your device's Movies/Dark Alive folder, where it may be available to other apps with media access. If you choose Share, the app gives the selected video and its title to the app or service you choose through Android's share interface. That recipient handles the shared content under its own privacy practices. Dark Alive does not automatically share your favorites or other personal information.</p>
-
-        <h3>Internet, third parties, and backups</h3>
-        <p>The current app has no ads, analytics, tracking, account system, in-app purchases, or app-operated cloud service. Its wallpaper content is bundled with the app. Android and Google Play may process information for installation, device services, and optional device backups under their own policies. If Android backup is enabled on your device, app preferences and private app files may be backed up or restored by the platform. BieMTech does not receive that backup data.</p>
-
-        <h3>Retention, deletion, and security</h3>
-        <p>Favorites and selected wallpaper copies remain in app storage until you clear the app's storage or uninstall it, subject to any Android backup and restore settings. Videos you saved to Movies/Dark Alive remain there until you delete them separately. Shared copies are controlled by the recipient you chose. App-private data is protected by Android's app storage controls; the app does not transmit it to BieMTech.</p>
-
-        <h3>Children and policy changes</h3>
-        <p>Dark Alive does not offer registration, chat, targeted advertising, or social profiles, and does not knowingly collect personal information from children. If the app's data practices change, we will update this page and its date before the relevant version is released.</p>
-
-        <h3>Contact</h3>
-        <p>For privacy questions, contact BieMTech at <a href="mailto:info@biemtech.com">info@biemtech.com</a>.</p>
-      </article>
-
-      <article id="azerbaijani" lang="az">
-        <h2>Məxfilik Siyasəti</h2>
-        <p class="meta">Tərtibatçı: BieMTech · Tətbiq: Dark Alive (Wallpaper Alive) · Android paket adı: com.wallpaperalive.wallpaper_alive · Son yenilənmə: 1 oktyabr 2026</p>
-        <p class="summary">Dark Alive şəxsi məlumatları toplamır və BieMTech-ə göndərmir. Divar kağızları qalereyası və oynatma oflayn işləyir. Sevimlilər və seçilmiş divar kağızı faylları cihazınızda saxlanılır. Divar kağızını yaddaşa yazmaq və ya paylaşmaq yalnız sizin seçiminizlə baş verir.</p>
-
-        <h3>Məlumatlar və cihazda saxlama</h3>
-        <p>Tətbiq hesab tələb etmir; adınızı, e-poçt ünvanınızı, telefon nömrənizi, məkanınızı, kontaktlarınızı, kameranızı və ya mikrofonunuzu istəmir. Sevimli seçdiyiniz divar kağızlarının ID-ləri tətbiqin ayarlarında saxlanılır. Canlı divar kağızını tətbiq etdikdə, Android onu göstərə bilsin deyə seçilmiş video tətbiqin özəl yaddaşına köçürülür. Tətbiq bu məlumatları və ya fəaliyyətinizi BieMTech serverlərinə göndərmir.</p>
-
-        <h3>Divar kağızını tətbiq etmək, saxlamaq və paylaşmaq</h3>
-        <p>Dark Alive, istəyinizlə önbaxış göstərmək və divar kağızını tətbiq etmək üçün Android-in divar kağızı funksiyalarından istifadə edir. Saxla seçsəniz, video cihazınızın Movies/Dark Alive qovluğuna köçürülür və media girişi olan digər tətbiqlər üçün əlçatan ola bilər. Paylaş seçsəniz, tətbiq Android paylaşma pəncərəsi vasitəsilə videonu və onun adını seçdiyiniz tətbiqə və ya xidmətə ötürür. Qəbul edən tərəf həmin məzmunu öz məxfilik qaydalarına əsasən idarə edir. Dark Alive sevimlilərinizi və digər şəxsi məlumatları avtomatik paylaşmır.</p>
-
-        <h3>İnternet, üçüncü tərəflər və ehtiyat nüsxələr</h3>
-        <p>Cari tətbiqdə reklam, analitika, izləmə, hesab sistemi, tətbiqdaxili alış və ya tətbiqə məxsus bulud xidməti yoxdur. Divar kağızları tətbiqin içində verilir. Android və Google Play quraşdırma, cihaz xidmətləri və könüllü ehtiyat nüsxələri üçün məlumatları öz qaydalarına uyğun emal edə bilər. Cihazınızda Android ehtiyat nüsxəsi aktivdirsə, tətbiqin ayarları və özəl faylları platforma tərəfindən ehtiyat nüsxəyə köçürülə və ya bərpa oluna bilər. BieMTech həmin ehtiyat nüsxə məlumatlarını almır.</p>
-
-        <h3>Saxlanma, silinmə və təhlükəsizlik</h3>
-        <p>Sevimlilər və seçilmiş divar kağızı nüsxələri tətbiq yaddaşını təmizləyənə və ya tətbiqi silənə qədər orada qalır; Android-in ehtiyat nüsxə və bərpa ayarları buna təsir edə bilər. Movies/Dark Alive qovluğuna saxladığınız videoları ayrıca silənə qədər onlar qalır. Paylaşılmış nüsxələr seçdiyiniz alıcının nəzarətindədir. Tətbiqin özəl yaddaşındakı məlumatlar Android-in tətbiq yaddaşı qoruması ilə mühafizə olunur; tətbiq onları BieMTech-ə ötürmür.</p>
-
-        <h3>Uşaqlar və siyasətdə dəyişikliklər</h3>
-        <p>Dark Alive qeydiyyat, söhbət, hədəflənmiş reklam və ya sosial profil təklif etmir və uşaqlardan bilərəkdən şəxsi məlumat toplamır. Tətbiqin məlumatlarla işləmə qaydası dəyişərsə, müvafiq versiya yayımlanmamışdan əvvəl bu səhifəni və tarixini yeniləyəcəyik.</p>
-
-        <h3>Əlaqə</h3>
-        <p>Məxfiliklə bağlı suallar üçün BieMTech ilə <a href="mailto:info@biemtech.com">info@biemtech.com</a> ünvanından əlaqə saxlayın.</p>
-      </article>
-    </main>
-    <footer>© 2026 BieMTech</footer>
+    <main id="policy-content"></main>
+    <footer>© <span id="year">2026</span> BieMTech · <span id="rights">All rights reserved.</span></footer>
+    <script src="policy-i18n.js"></script>
+    <script>
+      function render(lang) {
+        const t = DARK_ALIVE_POLICY[lang] || DARK_ALIVE_POLICY.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = t.dir || "ltr";
+        document.title = `Dark Alive ${t.policy} | BieMTech`;
+        document.getElementById("back-label").textContent = t.back;
+        document.getElementById("policy-label").textContent = t.policy;
+        document.getElementById("subtitle").textContent = t.subtitle;
+        document.getElementById("rights").textContent = t.rights;
+        const main = document.getElementById("policy-content");
+        main.replaceChildren();
+        const meta = document.createElement("p");
+        meta.className = "meta";
+        meta.textContent = `${t.developer}: BieMTech · ${t.app}: Dark Alive (Wallpaper Alive) · ${t.package}: com.wallpaperalive.wallpaper_alive · ${t.updated}: ${t.date}`;
+        main.append(meta);
+        const summary = document.createElement("p");
+        summary.className = "summary";
+        summary.textContent = t.summary;
+        main.append(summary);
+        for (const [heading, body] of t.sections) {
+          const section = document.createElement("section");
+          section.className = "card";
+          const h2 = document.createElement("h2");
+          h2.textContent = heading;
+          const p = document.createElement("p");
+          p.textContent = body;
+          section.append(h2, p);
+          main.append(section);
+        }
+        const contact = document.createElement("section");
+        contact.className = "card";
+        const h2 = document.createElement("h2");
+        h2.textContent = t.contact;
+        const p = document.createElement("p");
+        p.textContent = t.contactText + " ";
+        const a = document.createElement("a");
+        a.className = "contact";
+        a.href = "mailto:info@biemtech.com";
+        a.textContent = "info@biemtech.com";
+        p.append(a);
+        contact.append(h2, p);
+        main.append(contact);
+      }
+      const selector = document.getElementById("language");
+      selector.addEventListener("change", () => {
+        const lang = selector.value;
+        try { localStorage.setItem("biemtech-lang", lang); } catch (_) {}
+        render(lang);
+      });
+      document.getElementById("year").textContent = new Date().getFullYear();
+      let saved = "";
+      try { saved = localStorage.getItem("biemtech-lang") || ""; } catch (_) {}
+      const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
+      const initial = DARK_ALIVE_POLICY[saved] ? saved : DARK_ALIVE_POLICY[browserLang] ? browserLang : "en";
+      selector.value = initial;
+      render(initial);
+    </script>
   </body>
 </html>
