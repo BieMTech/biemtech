@@ -1,7 +1,7 @@
 const DARK_ALIVE_POLICY = {
   en: {
     dir: "ltr", back: "← BieMTech Privacy Policies", policy: "Privacy Policy", subtitle: "Wallpaper Alive · Android live wallpapers", rights: "All rights reserved.",
-    developer: "Developer", app: "App", package: "Package", updated: "Last updated", date: "October 1, 2026",
+    developer: "Developer", app: "App", package: "Package", updated: "Last updated", date: "October 2, 2026",
     summary: "Dark Alive does not collect or send personal information to BieMTech. Its wallpaper gallery and playback work offline. Saving or sharing a wallpaper happens only when you choose those actions.",
     sections: [
       ["1. About the app and data collection", "Dark Alive is an Android live wallpaper app by BieMTech. It has no account, ads, analytics, tracking, in-app purchases, or app-operated cloud service. It does not ask for your name, email, phone number, location, contacts, camera, or microphone, and does not transmit your activity or personal data to BieMTech."],
@@ -15,7 +15,7 @@ const DARK_ALIVE_POLICY = {
   },
   az: {
     dir: "ltr", back: "← BieMTech Məxfilik Siyasətləri", policy: "Məxfilik Siyasəti", subtitle: "Wallpaper Alive · Android canlı divar kağızları", rights: "Bütün hüquqlar qorunur.",
-    developer: "Tərtibatçı", app: "Tətbiq", package: "Paket", updated: "Son yenilənmə", date: "1 oktyabr 2026",
+    developer: "Tərtibatçı", app: "Tətbiq", package: "Paket", updated: "Son yenilənmə", date: "2 oktyabr 2026",
     summary: "Dark Alive şəxsi məlumatları toplamır və BieMTech-ə göndərmir. Divar kağızları qalereyası və oynatma oflayn işləyir. Divar kağızını saxlamaq və ya paylaşmaq yalnız sizin seçiminizlə baş verir.",
     sections: [
       ["1. Tətbiq və məlumatların toplanması", "Dark Alive BieMTech-in Android canlı divar kağızı tətbiqidir. Burada hesab, reklam, analitika, izləmə, tətbiqdaxili alış və ya tətbiqə məxsus bulud xidməti yoxdur. Tətbiq adınızı, e-poçtunuzu, telefon nömrənizi, məkanınızı, kontaktlarınızı, kameranızı və ya mikrofonunuzu istəmir; fəaliyyətinizi və şəxsi məlumatlarınızı BieMTech-ə ötürmür."],
@@ -29,7 +29,7 @@ const DARK_ALIVE_POLICY = {
   },
   ru: {
     dir: "ltr", back: "← Политики конфиденциальности BieMTech", policy: "Политика конфиденциальности", subtitle: "Wallpaper Alive · живые обои для Android", rights: "Все права защищены.",
-    developer: "Разработчик", app: "Приложение", package: "Пакет", updated: "Обновлено", date: "1 октября 2026 г.",
+    developer: "Разработчик", app: "Приложение", package: "Пакет", updated: "Обновлено", date: "2 октября 2026 г.",
     summary: "Dark Alive не собирает и не передаёт личные данные BieMTech. Галерея и воспроизведение обоев работают офлайн. Сохранение и отправка обоев происходят только по вашему выбору.",
     sections: [
       ["1. Приложение и сбор данных", "Dark Alive — приложение с живыми обоями для Android от BieMTech. В нём нет учётных записей, рекламы, аналитики, отслеживания, покупок и собственного облачного сервиса. Приложение не запрашивает имя, адрес электронной почты, номер телефона, местоположение, контакты, камеру или микрофон и не передаёт BieMTech ваши действия или личные данные."],
@@ -43,7 +43,7 @@ const DARK_ALIVE_POLICY = {
   },
   tr: {
     dir: "ltr", back: "← BieMTech Gizlilik Politikaları", policy: "Gizlilik Politikası", subtitle: "Wallpaper Alive · Android canlı duvar kâğıtları", rights: "Tüm hakları saklıdır.",
-    developer: "Geliştirici", app: "Uygulama", package: "Paket", updated: "Son güncelleme", date: "1 Ekim 2026",
+    developer: "Geliştirici", app: "Uygulama", package: "Paket", updated: "Son güncelleme", date: "2 Ekim 2026",
     summary: "Dark Alive kişisel bilgileri toplamaz veya BieMTech'e göndermez. Duvar kâğıdı galerisi ve oynatma çevrimdışı çalışır. Kaydetme ve paylaşma yalnızca siz seçtiğinizde gerçekleşir.",
     sections: [
       ["1. Uygulama ve veri toplama", "Dark Alive, BieMTech'in Android canlı duvar kâğıdı uygulamasıdır. Hesap, reklam, analiz, takip, uygulama içi satın alma veya uygulamaya ait bulut hizmeti içermez. Adınızı, e-postanızı, telefon numaranızı, konumunuzu, kişilerinizi, kameranızı veya mikrofonunuzu istemez; etkinliğinizi ya da kişisel verilerinizi BieMTech'e iletmez."],
@@ -57,7 +57,7 @@ const DARK_ALIVE_POLICY = {
   },
   de: {
     dir: "ltr", back: "← BieMTech Datenschutzerklärungen", policy: "Datenschutzerklärung", subtitle: "Wallpaper Alive · Android-Live-Hintergründe", rights: "Alle Rechte vorbehalten.",
-    developer: "Entwickler", app: "App", package: "Paket", updated: "Zuletzt aktualisiert", date: "1. Oktober 2026",
+    developer: "Entwickler", app: "App", package: "Paket", updated: "Zuletzt aktualisiert", date: "2. Oktober 2026",
     summary: "Dark Alive erhebt keine personenbezogenen Daten und sendet keine an BieMTech. Galerie und Wiedergabe funktionieren offline. Speichern oder Teilen erfolgt nur auf Ihre Veranlassung.",
     sections: [
       ["1. App und Datenerhebung", "Dark Alive ist eine Android-App für Live-Hintergründe von BieMTech. Sie enthält keine Konten, Werbung, Analysen, Nachverfolgung, In-App-Käufe oder einen eigenen Cloud-Dienst. Sie fragt weder Name, E-Mail-Adresse, Telefonnummer, Standort, Kontakte, Kamera noch Mikrofon ab und übermittelt Ihre Aktivitäten oder personenbezogenen Daten nicht an BieMTech."],
@@ -71,7 +71,7 @@ const DARK_ALIVE_POLICY = {
   },
   fr: {
     dir: "ltr", back: "← Politiques de confidentialité BieMTech", policy: "Politique de confidentialité", subtitle: "Wallpaper Alive · fonds d’écran animés Android", rights: "Tous droits réservés.",
-    developer: "Développeur", app: "Application", package: "Identifiant", updated: "Dernière mise à jour", date: "1er octobre 2026",
+    developer: "Développeur", app: "Application", package: "Identifiant", updated: "Dernière mise à jour", date: "2 octobre 2026",
     summary: "Dark Alive ne collecte ni ne transmet de données personnelles à BieMTech. La galerie et la lecture fonctionnent hors ligne. L’enregistrement et le partage n’ont lieu que si vous les choisissez.",
     sections: [
       ["1. Application et collecte de données", "Dark Alive est une application Android de fonds d’écran animés développée par BieMTech. Elle ne comporte ni compte, publicité, analyse, suivi, achat intégré ni service cloud propre à l’application. Elle ne demande pas votre nom, adresse e-mail, numéro de téléphone, position, contacts, appareil photo ou microphone et ne transmet pas votre activité ni vos données personnelles à BieMTech."],
@@ -85,7 +85,7 @@ const DARK_ALIVE_POLICY = {
   },
   es: {
     dir: "ltr", back: "← Políticas de privacidad de BieMTech", policy: "Política de privacidad", subtitle: "Wallpaper Alive · fondos animados para Android", rights: "Todos los derechos reservados.",
-    developer: "Desarrollador", app: "Aplicación", package: "Paquete", updated: "Última actualización", date: "1 de octubre de 2026",
+    developer: "Desarrollador", app: "Aplicación", package: "Paquete", updated: "Última actualización", date: "2 de octubre de 2026",
     summary: "Dark Alive no recopila ni envía información personal a BieMTech. La galería y la reproducción funcionan sin conexión. Guardar o compartir solo ocurre cuando usted lo decide.",
     sections: [
       ["1. Aplicación y recopilación de datos", "Dark Alive es una aplicación de fondos animados para Android de BieMTech. No tiene cuentas, anuncios, analíticas, seguimiento, compras integradas ni servicio propio en la nube. No solicita nombre, correo, teléfono, ubicación, contactos, cámara ni micrófono, y no transmite su actividad ni datos personales a BieMTech."],
@@ -99,7 +99,7 @@ const DARK_ALIVE_POLICY = {
   },
   pt: {
     dir: "ltr", back: "← Políticas de Privacidade da BieMTech", policy: "Política de Privacidade", subtitle: "Wallpaper Alive · papéis de parede animados para Android", rights: "Todos os direitos reservados.",
-    developer: "Desenvolvedor", app: "Aplicativo", package: "Pacote", updated: "Última atualização", date: "1º de outubro de 2026",
+    developer: "Desenvolvedor", app: "Aplicativo", package: "Pacote", updated: "Última atualização", date: "2 de outubro de 2026",
     summary: "O Dark Alive não coleta nem envia dados pessoais à BieMTech. A galeria e a reprodução funcionam offline. Salvar ou compartilhar ocorre apenas quando você escolhe.",
     sections: [
       ["1. Aplicativo e coleta de dados", "O Dark Alive é um aplicativo de papéis de parede animados para Android da BieMTech. Não possui conta, anúncios, análise de uso, rastreamento, compras internas nem serviço próprio na nuvem. Não solicita nome, e-mail, telefone, localização, contatos, câmera ou microfone e não transmite sua atividade nem dados pessoais à BieMTech."],
@@ -113,7 +113,7 @@ const DARK_ALIVE_POLICY = {
   },
   it: {
     dir: "ltr", back: "← Informative sulla privacy BieMTech", policy: "Informativa sulla privacy", subtitle: "Wallpaper Alive · sfondi animati Android", rights: "Tutti i diritti riservati.",
-    developer: "Sviluppatore", app: "App", package: "Pacchetto", updated: "Ultimo aggiornamento", date: "1 ottobre 2026",
+    developer: "Sviluppatore", app: "App", package: "Pacchetto", updated: "Ultimo aggiornamento", date: "2 ottobre 2026",
     summary: "Dark Alive non raccoglie né invia dati personali a BieMTech. La galleria e la riproduzione funzionano offline. Salvataggio e condivisione avvengono solo quando li scegli.",
     sections: [
       ["1. App e raccolta dei dati", "Dark Alive è un'app Android di sfondi animati di BieMTech. Non dispone di account, pubblicità, analisi, tracciamento, acquisti in-app o servizi cloud propri. Non richiede nome, email, numero di telefono, posizione, contatti, fotocamera o microfono e non trasmette a BieMTech la tua attività o i tuoi dati personali."],
@@ -127,7 +127,7 @@ const DARK_ALIVE_POLICY = {
   },
   ar: {
     dir: "rtl", back: "← سياسات الخصوصية لدى BieMTech", policy: "سياسة الخصوصية", subtitle: "Wallpaper Alive · خلفيات حية لأندرويد", rights: "جميع الحقوق محفوظة.",
-    developer: "المطور", app: "التطبيق", package: "اسم الحزمة", updated: "آخر تحديث", date: "1 أكتوبر 2026",
+    developer: "المطور", app: "التطبيق", package: "اسم الحزمة", updated: "آخر تحديث", date: "2 أكتوبر 2026",
     summary: "لا يجمع Dark Alive معلومات شخصية ولا يرسلها إلى BieMTech. يعمل معرض الخلفيات وتشغيلها دون اتصال بالإنترنت. لا يحدث الحفظ أو المشاركة إلا باختيارك.",
     sections: [
       ["1. التطبيق وجمع البيانات", "Dark Alive تطبيق خلفيات حية لأندرويد من BieMTech. لا يتضمن حسابات أو إعلانات أو تحليلات أو تتبعًا أو عمليات شراء داخل التطبيق أو خدمة سحابية تابعة له. لا يطلب اسمك أو بريدك الإلكتروني أو رقم هاتفك أو موقعك أو جهات اتصالك أو الكاميرا أو الميكروفون، ولا يرسل نشاطك أو بياناتك الشخصية إلى BieMTech."],
@@ -141,7 +141,7 @@ const DARK_ALIVE_POLICY = {
   },
   zh: {
     dir: "ltr", back: "← BieMTech 隐私政策", policy: "隐私政策", subtitle: "Wallpaper Alive · Android 动态壁纸", rights: "保留所有权利。",
-    developer: "开发者", app: "应用", package: "包名", updated: "最后更新", date: "2026年10月1日",
+    developer: "开发者", app: "应用", package: "包名", updated: "最后更新", date: "2026年10月2日",
     summary: "Dark Alive 不收集个人信息，也不会将其发送给 BieMTech。壁纸浏览和播放可离线运行。保存或分享壁纸仅在您主动选择时发生。",
     sections: [
       ["1. 应用与数据收集", "Dark Alive 是 BieMTech 开发的 Android 动态壁纸应用。它没有账户、广告、分析、跟踪、应用内购买或应用自有的云服务。应用不会索取姓名、电子邮箱、电话号码、位置、联系人、相机或麦克风权限，也不会向 BieMTech 传送您的活动或个人数据。"],
@@ -155,7 +155,7 @@ const DARK_ALIVE_POLICY = {
   },
   ja: {
     dir: "ltr", back: "← BieMTech プライバシーポリシー", policy: "プライバシーポリシー", subtitle: "Wallpaper Alive · Android ライブ壁紙", rights: "無断転載を禁じます。",
-    developer: "開発者", app: "アプリ", package: "パッケージ", updated: "最終更新", date: "2026年10月1日",
+    developer: "開発者", app: "アプリ", package: "パッケージ", updated: "最終更新", date: "2026年10月2日",
     summary: "Dark Alive は個人情報を収集せず、BieMTech に送信しません。壁紙の閲覧と再生はオフラインで動作します。保存や共有は利用者が選択した場合のみ行われます。",
     sections: [
       ["1. アプリとデータ収集", "Dark Alive は BieMTech の Android ライブ壁紙アプリです。アカウント、広告、解析、追跡、アプリ内購入、独自のクラウドサービスはありません。氏名、メールアドレス、電話番号、位置情報、連絡先、カメラ、マイクを要求せず、利用状況や個人データを BieMTech に送信しません。"],
