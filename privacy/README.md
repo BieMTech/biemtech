@@ -14,6 +14,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | Math Kids          | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/math-kids/)                    |
 | Times Table Master | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/times-table-master/)           |
 | Arrows Escape      | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/arrows-escape/)                |
+| Penguin Sled: Aurora Run | EN | [View](https://biemtech.com/privacy/penguin-sled-rush/) |
 | Snake 3D           | EN, ZH, HI, ES, AR, PT, RU, JA, DE, FR, TR, AZ | [View](https://biemtech.com/privacy/snake-3d/)                     |
 | REX: Dragon Flight | EN, ES, PT, FR, DE, RU, TR, AZ, AR, HI, ID, ZH | [View](https://biemtech.com/privacy/rex-dragon-flight/)            |
 | Zuzu: Bloomflight  | EN, ES, PT, FR, DE, RU, TR, AZ, AR, HI, ID, ZH | [View](https://biemtech.com/privacy/zuzu-bloomflight/)             |
@@ -31,6 +32,7 @@ mathkids/index.html        # MathKids (com.biemtech.funmathkids) privacy policy
 math-kids/index.html       # Multilingual privacy policy
 times-table-master/index.html
 arrows-escape/index.html
+penguin-sled-rush/index.html
 snake-3d/index.html
 rex-dragon-flight/index.html
 zuzu-bloomflight/index.html
