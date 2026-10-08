@@ -124,6 +124,8 @@ const I18N = {
       "Place glowing blocks on an 8×8 board, clear lines, trigger gravity cascades, and race the clock across three distinct modes. A fully offline puzzle game in 14 languages.",
     temple_vanguard_desc:
       "Build a stone-guardian squad through arithmetic gates, dodge temple traps, and lead the survivors into automatic arena battles. A fully offline 3D runner with endless generated levels.",
+    penguin_sled_rush_desc:
+      "Sled through an aurora-lit winter world, dodge wildlife and icy obstacles, choose arithmetic gates, and chase your high score in this offline 3D runner.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -277,6 +279,8 @@ const I18N = {
       "Parlaq blokları 8×8 lövhəyə yerləşdir, xətləri təmizlə, cazibə kaskadları yarat və üç fərqli rejimdə saata qarşı yarış. 14 dildə tam oflayn tapmaca oyunu.",
     temple_vanguard_desc:
       "Riyazi qapılardan keçərək daş mühafizəçi dəstəsini böyüt, məbəd tələlərindən yayın və sağ qalanları avtomatik arena döyüşlərinə apar. Sonsuz yaradılan səviyyələri olan tam oflayn 3D qaçış oyunu.",
+    penguin_sled_rush_desc:
+      "Qütb işıqları altında xizəklə sürüş, heyvanlardan və buzlu maneələrdən yayın, riyazi qapıları seç və bu oflayn 3D oyunda ən yüksək xala çat.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -428,6 +432,8 @@ const I18N = {
       "Размещайте светящиеся блоки на поле 8×8, очищайте линии, создавайте каскады и соревнуйтесь со временем в трёх режимах. Полностью офлайн-головоломка на 14 языках.",
     temple_vanguard_desc:
       "Увеличивайте отряд каменных стражей через арифметические ворота, обходите ловушки храма и ведите выживших в автоматические битвы на арене. Полностью офлайн 3D-раннер с бесконечными уровнями.",
+    penguin_sled_rush_desc:
+      "Мчитесь на санях под северным сиянием, обходите животных и ледяные препятствия, выбирайте арифметические ворота и побейте рекорд в этом офлайн 3D-раннере.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -580,6 +586,8 @@ const I18N = {
       "Parlayan blokları 8×8 tahtaya yerleştir, çizgileri temizle, yerçekimi kaskatları oluştur ve üç farklı modda zamana karşı yarış. 14 dilde tamamen çevrimdışı bulmaca oyunu.",
     temple_vanguard_desc:
       "Matematik kapılarından geçerek taş muhafız birliğini büyüt, tapınak tuzaklarından kaç ve hayatta kalanları otomatik arena savaşlarına taşı. Sonsuz üretilen seviyelere sahip tamamen çevrimdışı bir 3D koşu oyunu.",
+    penguin_sled_rush_desc:
+      "Kuzey ışıkları altında kızakla kay, hayvanlardan ve buzlu engellerden kaç, matematik kapılarını seç ve bu çevrimdışı 3D oyunda en yüksek puanı kovala.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -733,6 +741,8 @@ const I18N = {
       "Setze leuchtende Blöcke auf ein 8×8-Feld, lösche Linien, erzeuge Kaskaden und spiele in drei Modi gegen die Zeit. Ein vollständig offline spielbares Puzzle in 14 Sprachen.",
     temple_vanguard_desc:
       "Vergrößere einen Trupp aus Steinwächtern an Rechentoren, weiche Tempelfallen aus und führe die Überlebenden in automatische Arenakämpfe. Ein vollständig offline spielbarer 3D-Runner mit endlosen Levels.",
+    penguin_sled_rush_desc:
+      "Rase mit dem Schlitten durch eine Winterwelt unter Polarlichtern, weiche Tieren und Eis aus, wähle Rechentore und jage deinen Highscore in diesem Offline-3D-Runner.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -889,6 +899,8 @@ const I18N = {
       "Placez des blocs lumineux sur une grille 8×8, effacez des lignes, déclenchez des cascades et affrontez le chrono dans trois modes. Un puzzle entièrement hors ligne en 14 langues.",
     temple_vanguard_desc:
       "Agrandissez une escouade de gardiens de pierre grâce aux portes arithmétiques, évitez les pièges du temple et menez les survivants aux combats automatiques de l'arène. Un runner 3D hors ligne aux niveaux infinis.",
+    penguin_sled_rush_desc:
+      "Glissez en luge sous les aurores boréales, évitez les animaux et les obstacles glacés, choisissez les portes de calcul et battez votre record dans ce runner 3D hors ligne.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -1044,6 +1056,8 @@ const I18N = {
       "Coloca bloques brillantes en un tablero 8×8, limpia líneas, crea cascadas y compite contra el reloj en tres modos. Un puzle totalmente sin conexión en 14 idiomas.",
     temple_vanguard_desc:
       "Aumenta un escuadrón de guardianes de piedra con puertas aritméticas, evita las trampas del templo y lleva a los supervivientes a batallas automáticas en la arena. Un runner 3D sin conexión con niveles infinitos.",
+    penguin_sled_rush_desc:
+      "Deslízate en trineo bajo la aurora boreal, esquiva animales y obstáculos de hielo, elige puertas matemáticas y supera tu récord en este runner 3D sin conexión.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1199,6 +1213,8 @@ const I18N = {
       "Coloque blocos brilhantes num tabuleiro 8×8, limpe linhas, crie cascatas e corra contra o relógio em três modos. Um quebra-cabeça totalmente offline em 14 idiomas.",
     temple_vanguard_desc:
       "Aumente um esquadrão de guardiões de pedra através de portões aritméticos, evite armadilhas do templo e leve os sobreviventes a batalhas automáticas na arena. Um runner 3D offline com níveis infinitos.",
+    penguin_sled_rush_desc:
+      "Deslize de trenó sob a aurora boreal, desvie de animais e obstáculos de gelo, escolha portões matemáticos e supere seu recorde neste runner 3D offline.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1352,6 +1368,8 @@ const I18N = {
       "Posiziona blocchi luminosi su una griglia 8×8, cancella linee, crea cascate e sfida il tempo in tre modalità. Un puzzle completamente offline in 14 lingue.",
     temple_vanguard_desc:
       "Fai crescere una squadra di guardiani di pietra attraverso portali aritmetici, evita le trappole del tempio e guida i superstiti in battaglie automatiche nell'arena. Un runner 3D offline con livelli infiniti.",
+    penguin_sled_rush_desc:
+      "Sfreccia in slitta sotto l'aurora boreale, evita animali e ostacoli di ghiaccio, scegli i portali matematici e supera il tuo record in questo runner 3D offline.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1499,6 +1517,8 @@ const I18N = {
       "ضع كتل النيون على لوحة 8×8، وامسح الخطوط، واصنع الشلالات، وتسابق مع الوقت في ثلاثة أوضاع. لعبة ألغاز تعمل بالكامل دون اتصال بـ14 لغة.",
     temple_vanguard_desc:
       "نمِّ فرقة من الحراس الحجريين عبر بوابات الحساب، وتجنب فخاخ المعبد، وقد الناجين إلى معارك تلقائية في الساحة. لعبة ركض ثلاثية الأبعاد تعمل دون اتصال وبمستويات لا تنتهي.",
+    penguin_sled_rush_desc:
+      "انطلق بالمزلجة تحت الشفق القطبي، وتجنب الحيوانات والعوائق الجليدية، واختر بوابات الحساب، وحطّم رقمك القياسي في لعبة ركض ثلاثية الأبعاد دون اتصال.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1643,6 +1663,8 @@ const I18N = {
       "在8×8棋盘上放置霓虹方块、消除线条、触发重力连锁，并在三种模式中挑战时间。支持14种语言的完全离线益智游戏。",
     temple_vanguard_desc:
       "穿过算术门壮大石甲守卫小队，避开神殿陷阱，并带领幸存者进入自动竞技场战斗。这是一款拥有无限生成关卡的完全离线3D跑酷游戏。",
+    penguin_sled_rush_desc:
+      "乘雪橇穿越极光下的冰雪世界，躲避动物和冰障，选择算术门，在这款离线3D跑酷游戏中挑战最高分。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1793,6 +1815,8 @@ const I18N = {
       "8×8の盤面に光るブロックを置き、ラインを消し、重力連鎖を起こし、3つのモードで時間に挑戦。14言語対応の完全オフラインパズルです。",
     temple_vanguard_desc:
       "計算ゲートで石の守護者部隊を増やし、神殿の罠を避け、生存者を自動アリーナ戦へ導こう。無限に生成されるレベルを備えた完全オフライン3Dランナーです。",
+    penguin_sled_rush_desc:
+      "オーロラの下でそりを走らせ、動物や氷の障害物を避け、計算ゲートを選ぼう。オフラインの3Dランナーでハイスコアを目指そう。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",

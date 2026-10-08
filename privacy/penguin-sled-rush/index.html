@@ -1,40 +1,104 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Penguin Sled: Aurora Run — Privacy Policy</title>
-  <style>
-    body { max-width: 48rem; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #17233b; }
-    h1, h2 { line-height: 1.2; }
-    a { color: #174d9c; }
-  </style>
-</head>
-<body>
-  <p><a href="../index.html">← BieMTech Privacy Policies</a></p>
-  <h1>Penguin Sled: Aurora Run — Privacy Policy</h1>
-  <p>Effective date: October 7, 2026</p>
-  <p>Penguin Sled: Aurora Run (package name <code>com.biemtech.penguinrush</code>) is published by Biemtech (Bahram Ismayilov). This policy explains how the game handles information.</p>
-
-  <h2>Information handled by the game</h2>
-  <p>The game does not require an account or ask for your name, email address, or other personal details. Scores, progress, missions, unlocked items, and settings are stored locally on your device so the game can remember them. The game does not transmit this information to us or to third parties.</p>
-
-  <h2>Ads, analytics, and purchases</h2>
-  <p>The current version does not show advertisements, use an analytics service, or offer in-app purchases. Fish and other rewards earned while playing are game-only items and cannot be exchanged for money.</p>
-
-  <h2>Device permissions</h2>
-  <p>The current Android version does not request internet access. It may use your device's vibration feature for haptic feedback. It does not request access to your contacts, location, camera, or microphone.</p>
-
-  <h2>Children's privacy</h2>
-  <p>The game does not knowingly collect or share personal information from children. Local game progress stays on the device.</p>
-
-  <h2>Your choices</h2>
-  <p>You can remove locally stored game data by clearing the app's storage in your device settings or uninstalling the game. These actions may erase your progress.</p>
-
-  <h2>Changes to this policy</h2>
-  <p>If the game's data practices change, this policy will be updated before the relevant changes are released. The effective date above will also be updated.</p>
-
-  <h2>Contact</h2>
-  <p>For privacy questions, email <a href="mailto:info@biemtech.com">info@biemtech.com</a>.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Sled Rush Privacy Policy — BieMTech</title>
+    <meta name="description" content="Privacy policy for Penguin Sled Rush, the offline 3D runner by BieMTech." />
+    <meta name="theme-color" content="#07162f" />
+    <link rel="icon" type="image/png" href="../../img/penguin-sled-rush-icon.png" />
+    <style>
+      :root { --bg: #07162f; --surface: #102944; --text: #f3fbff; --muted: #bdd6e5; --ice: #73e6ed; --line: rgba(135, 221, 236, .24); }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--text); background: radial-gradient(circle at 75% 4%, rgba(40, 200, 191, .19), transparent 30rem), var(--bg); font: 1rem/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+      a { color: var(--ice); }
+      .topbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0; }
+      .topbar a { color: var(--muted); text-decoration: none; }
+      .topbar a:hover { color: var(--text); }
+      select { padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: var(--surface); font: inherit; }
+      header { width: min(860px, calc(100% - 32px)); margin: 25px auto 34px; text-align: center; }
+      header img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,.3); }
+      h1 { margin: 18px 0 4px; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.15; letter-spacing: -.04em; }
+      header p { margin: 0; color: var(--ice); font-weight: 700; }
+      main { width: min(860px, calc(100% - 32px)); margin: 0 auto 65px; }
+      .meta, .summary, section { margin-bottom: 14px; padding: 22px 26px; border: 1px solid var(--line); border-radius: 16px; background: rgba(16, 41, 68, .94); }
+      .meta { color: var(--muted); font-size: .88rem; }
+      .summary { border-color: rgba(115, 230, 237, .5); font-weight: 650; }
+      h2 { margin: 0 0 10px; color: var(--ice); font-size: 1.12rem; }
+      section p { margin: 0; color: var(--muted); }
+      code { color: var(--ice); }
+      footer { padding: 25px 16px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .85rem; }
+      @media (max-width: 520px) { .meta, .summary, section { padding: 19px; } }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="../index.html" id="back">← BieMTech Privacy Policies</a>
+      <select id="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select>
+    </div>
+    <header>
+      <img src="../../img/penguin-sled-rush-icon.png" alt="Penguin Sled Rush" />
+      <h1>Penguin Sled Rush</h1>
+      <p id="subtitle">Privacy Policy</p>
+    </header>
+    <main>
+      <div class="meta" id="meta">Effective date: October 8, 2026 · Android package: <code>com.biemtech.penguinrush</code></div>
+      <div class="summary" id="summary">Penguin Sled Rush does not ask for an account or collect personal information. Game progress is stored on your device.</div>
+      <section><h2 id="heading-1">About the game</h2><p id="body-1">Penguin Sled Rush is an offline 3D game published by BieMTech. This policy describes how the current Android version handles information.</p></section>
+      <section><h2 id="heading-2">Information stored on your device</h2><p id="body-2">The game saves scores, progress, missions, unlocked items, and settings locally so you can continue playing. It does not require your name, email address, or an account. The game does not send this saved information to BieMTech or third parties.</p></section>
+      <section><h2 id="heading-3">Ads, analytics, and purchases</h2><p id="body-3">The current version does not show advertisements, use an analytics service, or offer in-app purchases. Fish and other rewards are game-only items with no monetary value.</p></section>
+      <section><h2 id="heading-4">Device permissions</h2><p id="body-4">The current Android version does not request internet access. It may use device vibration for haptic feedback. It does not request access to contacts, location, camera, or microphone.</p></section>
+      <section><h2 id="heading-5">Children's privacy</h2><p id="body-5">The game does not knowingly collect or share personal information from children. Local game progress stays on the device.</p></section>
+      <section><h2 id="heading-6">Your choices</h2><p id="body-6">You can remove locally stored game data by clearing the app's storage in Android settings or uninstalling the game. These actions may erase your progress.</p></section>
+      <section><h2 id="heading-7">Changes to this policy</h2><p id="body-7">If the game's data practices change, we will update this policy before the relevant changes are released and revise the effective date above.</p></section>
+      <section><h2 id="heading-8">Contact</h2><p id="body-8">For privacy questions, email <a href="mailto:info@biemtech.com">info@biemtech.com</a>.</p></section>
+    </main>
+    <footer>© 2026 BieMTech · <a href="../../penguin-sled-rush.html" id="game-link">Penguin Sled Rush</a></footer>
+    <script>
+      const AZ = {
+        back: "← BieMTech Məxfilik Siyasətləri",
+        subtitle: "Məxfilik siyasəti",
+        meta: "Qüvvəyə minmə tarixi: 8 oktyabr 2026 · Android paket adı: <code>com.biemtech.penguinrush</code>",
+        summary: "Penguin Sled Rush hesab tələb etmir və şəxsi məlumat toplamır. Oyun irəliləyişi cihazınızda saxlanılır.",
+        headings: ["Oyun haqqında", "Cihazınızda saxlanılan məlumatlar", "Reklam, analitika və alışlar", "Cihaz icazələri", "Uşaqların məxfiliyi", "Seçimləriniz", "Siyasətdə dəyişikliklər", "Əlaqə"],
+        bodies: [
+          "Penguin Sled Rush, BieMTech tərəfindən yayımlanan oflayn 3D oyundur. Bu siyasət hazırkı Android versiyasının məlumatlarla necə işlədiyini izah edir.",
+          "Oyun, davam edə bilməyiniz üçün xalları, irəliləyişi, tapşırıqları, açılmış əşyaları və ayarları cihazınızda saxlayır. Ad, e-poçt ünvanı və ya hesab tələb etmir. Saxlanılan bu məlumatlar BieMTech-ə və ya üçüncü tərəflərə göndərilmir.",
+          "Hazırkı versiyada reklam göstərilmir, analitika xidmətindən istifadə edilmir və tətbiqdaxili alış təklif olunmur. Balıqlar və digər mükafatlar yalnız oyun daxilində istifadə edilir, pul dəyəri yoxdur.",
+          "Hazırkı Android versiyası internetə giriş icazəsi tələb etmir. Toxunma reaksiyası üçün cihazın titrəmə funksiyasından istifadə edə bilər. Kontaktlara, məkana, kameraya və ya mikrofona giriş tələb etmir.",
+          "Oyun uşaqların şəxsi məlumatlarını bilərəkdən toplamır və ya paylaşmır. Yerli oyun irəliləyişi cihazda qalır.",
+          "Android ayarlarında tətbiqin yaddaşını təmizləyərək və ya oyunu silərək yerli məlumatları silə bilərsiniz. Bu əməliyyatlar irəliləyişinizi silə bilər.",
+          "Oyunun məlumatlarla işləmə qaydası dəyişərsə, müvafiq dəyişikliklər yayımlanmadan əvvəl bu siyasəti yeniləyəcək və yuxarıdakı tarixi dəyişəcəyik.",
+          "Məxfiliklə bağlı suallar üçün <a href=\"mailto:info@biemtech.com\">info@biemtech.com</a> ünvanına yazın."
+        ]
+      };
+      const EN = {
+        back: document.getElementById("back").textContent,
+        subtitle: document.getElementById("subtitle").textContent,
+        meta: document.getElementById("meta").innerHTML,
+        summary: document.getElementById("summary").textContent,
+        headings: Array.from({ length: 8 }, (_, i) => document.getElementById(`heading-${i + 1}`).textContent),
+        bodies: Array.from({ length: 8 }, (_, i) => document.getElementById(`body-${i + 1}`).innerHTML)
+      };
+      function setPolicyLang(lang, persist = false) {
+        const selected = lang === "az" ? "az" : "en";
+        const copy = selected === "az" ? AZ : EN;
+        document.documentElement.lang = selected;
+        document.getElementById("lang-select").value = selected;
+        document.getElementById("back").textContent = copy.back;
+        document.getElementById("subtitle").textContent = copy.subtitle;
+        document.getElementById("meta").innerHTML = copy.meta;
+        document.getElementById("summary").textContent = copy.summary;
+        copy.headings.forEach((heading, i) => { document.getElementById(`heading-${i + 1}`).textContent = heading; });
+        copy.bodies.forEach((body, i) => { document.getElementById(`body-${i + 1}`).innerHTML = body; });
+        if (persist) {
+          try { localStorage.setItem("site_lang", selected); } catch (_) {}
+        }
+      }
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      setPolicyLang(saved);
+      document.getElementById("lang-select").addEventListener("change", event => setPolicyLang(event.target.value, true));
+    </script>
+  </body>
 </html>

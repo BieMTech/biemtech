@@ -1364,6 +1364,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(53, 205, 238, 0.28);
 }
 
+.app-card__icon.penguin-sled-rush {
+  background: linear-gradient(135deg, #12366a 0%, #46d7c5 100%);
+  box-shadow: 0 8px 24px rgba(70, 215, 197, 0.28);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

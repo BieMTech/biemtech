@@ -18,6 +18,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `word-wheel.html`         | Word Wheel app page                              |
 | `neon-blocks.html`        | Neon Blocks app page                             |
 | `temple-vanguard.html`    | Temple Vanguard app page                         |
+| `penguin-sled-rush.html`  | Penguin Sled Rush app page                       |
 | `style.css`               | Shared stylesheet for all pages                  |
 
 ## Apps
@@ -97,6 +98,13 @@ A fully offline portrait 3D squad runner with arithmetic gates, temple hazards, 
 - Package: `com.biemtech.templevanguard`
 - Languages: 19
 - Privacy Policy: https://biemtech.com/privacy/temple-vanguard/
+
+### Penguin Sled Rush
+
+An offline 3D endless runner through a winter world with wildlife, arithmetic gates, collectible fish, and power-ups. Currently in development.
+
+- Package: `com.biemtech.penguinrush`
+- Privacy Policy: https://biemtech.com/privacy/penguin-sled-rush/
 
 ## Contact
 
