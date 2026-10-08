@@ -101,9 +101,10 @@ A fully offline portrait 3D squad runner with arithmetic gates, temple hazards, 
 
 ### Penguin Sled: Aurora Run
 
-An offline 3D endless runner through a winter world with wildlife, arithmetic gates, collectible fish, and power-ups. Currently in development.
+An offline 3D endless runner through a winter world with wildlife, arithmetic gates, collectible fish, and power-ups. Available on Google Play.
 
 - Package: `com.biemtech.penguinrush`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.penguinrush
 - Privacy Policy: https://biemtech.com/privacy/penguin-sled-rush/
 
 ## Contact
