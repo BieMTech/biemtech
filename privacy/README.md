@@ -21,6 +21,8 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | Word Wheel         | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/word-wheel/)                    |
 | Neon Blocks        | EN, AZ, RU, TR, DE, FR, ES, PT, HI, AR, ZH, JA | [View](https://biemtech.com/privacy/neon-blocks/)                   |
 | Temple Vanguard    | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/temple-vanguard/)               |
+| Squad Surge: Army Multiplier | EN, AZ | [View](https://biemtech.com/privacy/squad-surge/) |
+| Dark Alive (Wallpaper Alive) | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/dark-alive/) |
 
 ---
 
@@ -39,6 +41,8 @@ zuzu-bloomflight/index.html
 word-wheel/index.html
 neon-blocks/index.html
 temple-vanguard/index.html
+squad-surge/index.html
+dark-alive/index.html
 ```
 
 ## Contact

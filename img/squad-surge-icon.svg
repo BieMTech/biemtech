@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Squad Surge icon">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#201b2a"/><stop offset="1" stop-color="#59306c"/></linearGradient>
+    <linearGradient id="shield" x2="0" y2="1"><stop stop-color="#a363c0"/><stop offset="1" stop-color="#633581"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <path d="M64 356h384M80 413h352" fill="none" stroke="#c7bca8" stroke-opacity=".35" stroke-width="14" stroke-linecap="round"/>
+  <path d="M103 158h306" stroke="#eac77d" stroke-width="18" stroke-linecap="round"/>
+  <path d="M153 122v72m206-72v72" stroke="#eac77d" stroke-width="28" stroke-linecap="round"/>
+  <rect x="205" y="130" width="102" height="62" rx="12" fill="#f4e8d1"/>
+  <text x="256" y="177" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="900" fill="#382541">×3</text>
+  <path d="M256 230c-31 0-55 20-55 49v41h110v-41c0-29-24-49-55-49Z" fill="#f4e8d1"/>
+  <rect x="191" y="309" width="130" height="84" rx="26" fill="url(#shield)" stroke="#d8b8e6" stroke-width="9"/>
+  <path d="M256 322l36 56h-72Z" fill="#f4e8d1"/>
+  <path d="M168 326l-28 49m204-49 28 49" stroke="#f4e8d1" stroke-width="24" stroke-linecap="round"/>
+  <path d="M228 389v42m56-42v42" stroke="#302639" stroke-width="26" stroke-linecap="round"/>
+</svg>

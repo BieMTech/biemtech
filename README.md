@@ -18,6 +18,8 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `word-wheel.html`         | Word Wheel app page                              |
 | `neon-blocks.html`        | Neon Blocks app page                             |
 | `temple-vanguard.html`    | Temple Vanguard app page                         |
+| `squad-surge.html`        | Squad Surge: Army Multiplier app page            |
+| `dark-alive.html`         | Dark Alive (Wallpaper Alive) app page            |
 | `penguin-sled-rush.html`  | Penguin Sled: Aurora Run app page                |
 | `style.css`               | Shared stylesheet for all pages                  |
 
@@ -86,9 +88,10 @@ A multilingual word puzzle with more than 60,000 levels and 50 collectible world
 
 ### Neon Blocks
 
-A fully offline 8×8 block puzzle with Classic, Gravity, and Rush modes in 14 languages. Currently in development.
+A fully offline 8×8 block puzzle with Classic, Gravity, and Rush modes in 14 languages. Available on Google Play.
 
 - Package: `com.biemtech.neonblocks`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.neonblocks
 - Privacy Policy: https://biemtech.com/privacy/neon-blocks/
 
 ### Temple Vanguard
@@ -105,6 +108,20 @@ An offline 3D endless runner through a winter world with wildlife, arithmetic ga
 
 - Package: `com.biemtech.penguinrush`
 - Privacy Policy: https://biemtech.com/privacy/penguin-sled-rush/
+
+### Squad Surge: Army Multiplier
+
+A portrait tabletop strategy game with toy soldiers, multiplier gates, and a 10-level campaign. Currently in development. The source project uses the working name Tabletop Block Guards.
+
+- Package: `com.biemtech.squadsurge`
+- Privacy Policy: https://biemtech.com/privacy/squad-surge/
+
+### Dark Alive
+
+An Android live wallpaper collection with 100 animated horror scenes, favorites, and save/share features. Currently in development. The source project is named Wallpaper Alive.
+
+- Package: `com.biemtech.wallpaper_alive`
+- Privacy Policy: https://biemtech.com/privacy/dark-alive/
 
 ## Contact
 

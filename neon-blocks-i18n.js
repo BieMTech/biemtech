@@ -1,8 +1,8 @@
 const NEON_BLOCKS_I18N = {
   en: {
-    nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "In Development", tagline: "Place. Clear. Cascade.",
+    nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "Live on Google Play", tagline: "Place. Clear. Cascade.",
     description: "Fit glowing pieces onto an 8×8 board, complete rows and columns, and build bigger scores through careful placement across three distinct modes.",
-    contact_btn: "Contact us for updates →", privacy_btn: "Privacy Policy", strip_modes: "3 game modes", strip_offline: "Fully offline", strip_languages: "14 languages", strip_ages: "Recommended 6+ · General audience",
+    contact_btn: "Get it on Google Play →", privacy_btn: "Privacy Policy", strip_modes: "3 game modes", strip_offline: "Fully offline", strip_languages: "14 languages", strip_ages: "Recommended 6+ · General audience",
     features_label: "Features", features_title: "Three ways to master the same board",
     f1_title: "8×8 Block Strategy", f1_desc: "Drag each piece into open space, complete rows or columns, and keep enough room for the next tray.",
     f2_title: "Classic, Gravity and Rush", f2_desc: "Play the calm original rule set, let cleared blocks collapse into cascades, or race a 90-second clock.",
@@ -13,9 +13,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Developer", meta_platform: "Platform", meta_status: "Status", meta_category: "Category", category: "Block Puzzle", meta_age: "Audience", age: "Recommended 6+ · General audience", meta_contact: "Contact", footer_home: "Home"
   },
   az: {
-    nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "Hazırlanır", tagline: "Yerləşdir. Təmizlə. Zəncir yarat.",
+    nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "Google Play-də yayımlanıb", tagline: "Yerləşdir. Təmizlə. Zəncir yarat.",
     description: "Parlaq fiqurları 8×8 lövhəyə yerləşdir, sətir və sütunları tamamla, üç fərqli rejimdə düşünülmüş gedişlərlə daha böyük xal qazan.",
-    contact_btn: "Yeniliklər üçün əlaqə saxla →", privacy_btn: "Məxfilik Siyasəti", strip_modes: "3 oyun rejimi", strip_offline: "Tamamilə oflayn", strip_languages: "14 dil", strip_ages: "6+ tövsiyə olunur · Ümumi auditoriya",
+    contact_btn: "Google Play-dən yüklə →", privacy_btn: "Məxfilik Siyasəti", strip_modes: "3 oyun rejimi", strip_offline: "Tamamilə oflayn", strip_languages: "14 dil", strip_ages: "6+ tövsiyə olunur · Ümumi auditoriya",
     features_label: "Xüsusiyyətlər", features_title: "Eyni lövhədə üç fərqli sınaq",
     f1_title: "8×8 blok strategiyası", f1_desc: "Hər fiquru boş sahəyə sürüşdür, sətir və ya sütunları tamamla və növbəti fiqurlar üçün yer saxla.",
     f2_title: "Klassik, Cazibə və Sürət", f2_desc: "Sakit klassik qaydalarla oyna, blokların zəncirvari düşməsini yarat və ya 90 saniyəlik saata qarşı yarış.",
@@ -26,9 +26,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Tərtibatçı", meta_platform: "Platforma", meta_status: "Status", meta_category: "Kateqoriya", category: "Blok Tapmacası", meta_age: "Auditoriya", age: "6+ tövsiyə olunur · Ümumi auditoriya", meta_contact: "Əlaqə", footer_home: "Ana səhifə"
   },
   ru: {
-    nav_about: "О нас", nav_apps: "Приложения", nav_privacy: "Конфиденциальность", status: "В разработке", tagline: "Размещай. Очищай. Создавай цепочки.",
+    nav_about: "О нас", nav_apps: "Приложения", nav_privacy: "Конфиденциальность", status: "Доступно в Google Play", tagline: "Размещай. Очищай. Создавай цепочки.",
     description: "Размещайте светящиеся фигуры на поле 8×8, заполняйте строки и столбцы и набирайте больше очков продуманными ходами в трёх режимах.",
-    contact_btn: "Узнавать об обновлениях →", privacy_btn: "Политика конфиденциальности", strip_modes: "3 режима", strip_offline: "Полностью офлайн", strip_languages: "14 языков", strip_ages: "Рекомендуется с 6 лет · Для широкой аудитории",
+    contact_btn: "Скачать в Google Play →", privacy_btn: "Политика конфиденциальности", strip_modes: "3 режима", strip_offline: "Полностью офлайн", strip_languages: "14 языков", strip_ages: "Рекомендуется с 6 лет · Для широкой аудитории",
     features_label: "Возможности", features_title: "Три способа освоить одно поле",
     f1_title: "Стратегия на поле 8×8", f1_desc: "Перетаскивайте фигуры на свободные клетки, заполняйте линии и оставляйте место для следующего набора.",
     f2_title: "Классика, Гравитация и Спринт", f2_desc: "Играйте по спокойным классическим правилам, создавайте каскады падающих блоков или соревнуйтесь с 90-секундным таймером.",
@@ -39,9 +39,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Разработчик", meta_platform: "Платформа", meta_status: "Статус", meta_category: "Категория", category: "Блочная головоломка", meta_age: "Аудитория", age: "Рекомендуется с 6 лет · Для широкой аудитории", meta_contact: "Контакт", footer_home: "Главная"
   },
   tr: {
-    nav_about: "Hakkımızda", nav_apps: "Uygulamalar", nav_privacy: "Gizlilik", status: "Geliştiriliyor", tagline: "Yerleştir. Temizle. Zincirle.",
+    nav_about: "Hakkımızda", nav_apps: "Uygulamalar", nav_privacy: "Gizlilik", status: "Google Play'de yayında", tagline: "Yerleştir. Temizle. Zincirle.",
     description: "Parlayan parçaları 8×8 tahtaya yerleştir, satır ve sütunları tamamla ve üç farklı modda dikkatli hamlelerle daha yüksek puanlar kazan.",
-    contact_btn: "Güncellemeler için iletişime geç →", privacy_btn: "Gizlilik Politikası", strip_modes: "3 oyun modu", strip_offline: "Tamamen çevrimdışı", strip_languages: "14 dil", strip_ages: "6+ önerilir · Genel kitle",
+    contact_btn: "Google Play'den indir →", privacy_btn: "Gizlilik Politikası", strip_modes: "3 oyun modu", strip_offline: "Tamamen çevrimdışı", strip_languages: "14 dil", strip_ages: "6+ önerilir · Genel kitle",
     features_label: "Özellikler", features_title: "Aynı tahtada üç farklı ustalık yolu",
     f1_title: "8×8 blok stratejisi", f1_desc: "Her parçayı boş alana sürükle, satırları veya sütunları tamamla ve sıradaki parçalar için yer bırak.",
     f2_title: "Klasik, Yerçekimi ve Hız", f2_desc: "Sakin klasik kurallarla oyna, temizlenen blokları zincir halinde düşür veya 90 saniyelik saate karşı yarış.",
@@ -52,9 +52,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Geliştirici", meta_platform: "Platform", meta_status: "Durum", meta_category: "Kategori", category: "Blok Bulmacası", meta_age: "Kitle", age: "6+ önerilir · Genel kitle", meta_contact: "İletişim", footer_home: "Ana sayfa"
   },
   de: {
-    nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "In Entwicklung", tagline: "Platzieren. Löschen. Ketten bilden.",
+    nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "Bei Google Play verfügbar", tagline: "Platzieren. Löschen. Ketten bilden.",
     description: "Setze leuchtende Formen auf ein 8×8-Feld, vervollständige Reihen und Spalten und erziele mit klugen Zügen in drei Modi höhere Punktzahlen.",
-    contact_btn: "Updates erhalten →", privacy_btn: "Datenschutzrichtlinie", strip_modes: "3 Spielmodi", strip_offline: "Vollständig offline", strip_languages: "14 Sprachen", strip_ages: "Empfohlen ab 6 · Allgemeines Publikum",
+    contact_btn: "Bei Google Play herunterladen →", privacy_btn: "Datenschutzrichtlinie", strip_modes: "3 Spielmodi", strip_offline: "Vollständig offline", strip_languages: "14 Sprachen", strip_ages: "Empfohlen ab 6 · Allgemeines Publikum",
     features_label: "Funktionen", features_title: "Drei Wege, dasselbe Feld zu meistern",
     f1_title: "8×8-Blockstrategie", f1_desc: "Ziehe jede Form auf freie Felder, vervollständige Reihen oder Spalten und halte Platz für den nächsten Satz frei.",
     f2_title: "Klassik, Schwerkraft und Tempo", f2_desc: "Spiele nach ruhigen klassischen Regeln, erzeuge fallende Kaskaden oder tritt gegen eine 90-Sekunden-Uhr an.",
@@ -65,9 +65,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Entwickler", meta_platform: "Plattform", meta_status: "Status", meta_category: "Kategorie", category: "Blockpuzzle", meta_age: "Zielgruppe", age: "Empfohlen ab 6 · Allgemeines Publikum", meta_contact: "Kontakt", footer_home: "Startseite"
   },
   fr: {
-    nav_about: "À propos", nav_apps: "Applications", nav_privacy: "Confidentialité", status: "En développement", tagline: "Placez. Effacez. Enchaînez.",
+    nav_about: "À propos", nav_apps: "Applications", nav_privacy: "Confidentialité", status: "Disponible sur Google Play", tagline: "Placez. Effacez. Enchaînez.",
     description: "Placez des pièces lumineuses sur une grille 8×8, complétez lignes et colonnes et augmentez votre score par des choix réfléchis dans trois modes.",
-    contact_btn: "Nous contacter pour les nouveautés →", privacy_btn: "Politique de confidentialité", strip_modes: "3 modes de jeu", strip_offline: "Entièrement hors ligne", strip_languages: "14 langues", strip_ages: "Recommandé dès 6 ans · Tout public",
+    contact_btn: "Télécharger sur Google Play →", privacy_btn: "Politique de confidentialité", strip_modes: "3 modes de jeu", strip_offline: "Entièrement hors ligne", strip_languages: "14 langues", strip_ages: "Recommandé dès 6 ans · Tout public",
     features_label: "Fonctionnalités", features_title: "Trois façons de maîtriser la même grille",
     f1_title: "Stratégie de blocs 8×8", f1_desc: "Glissez chaque pièce dans un espace libre, complétez lignes ou colonnes et gardez de la place pour la prochaine série.",
     f2_title: "Classique, Gravité et Chrono", f2_desc: "Jouez selon les règles classiques, créez des cascades de blocs ou affrontez un chrono de 90 secondes.",
@@ -78,9 +78,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Développeur", meta_platform: "Plateforme", meta_status: "Statut", meta_category: "Catégorie", category: "Puzzle de blocs", meta_age: "Public", age: "Recommandé dès 6 ans · Tout public", meta_contact: "Contact", footer_home: "Accueil"
   },
   es: {
-    nav_about: "Nosotros", nav_apps: "Aplicaciones", nav_privacy: "Privacidad", status: "En desarrollo", tagline: "Coloca. Limpia. Encadena.",
+    nav_about: "Nosotros", nav_apps: "Aplicaciones", nav_privacy: "Privacidad", status: "Disponible en Google Play", tagline: "Coloca. Limpia. Encadena.",
     description: "Coloca piezas brillantes en un tablero de 8×8, completa filas y columnas y consigue más puntos con movimientos medidos en tres modos distintos.",
-    contact_btn: "Contáctanos para recibir novedades →", privacy_btn: "Política de privacidad", strip_modes: "3 modos de juego", strip_offline: "Totalmente sin conexión", strip_languages: "14 idiomas", strip_ages: "Recomendado para mayores de 6 · Público general",
+    contact_btn: "Descargar en Google Play →", privacy_btn: "Política de privacidad", strip_modes: "3 modos de juego", strip_offline: "Totalmente sin conexión", strip_languages: "14 idiomas", strip_ages: "Recomendado para mayores de 6 · Público general",
     features_label: "Características", features_title: "Tres formas de dominar el mismo tablero",
     f1_title: "Estrategia de bloques 8×8", f1_desc: "Arrastra cada pieza a un espacio libre, completa filas o columnas y guarda sitio para el siguiente grupo.",
     f2_title: "Clásico, Gravedad y Contrarreloj", f2_desc: "Juega con reglas clásicas, crea cascadas de bloques o compite contra un reloj de 90 segundos.",
@@ -91,9 +91,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Desarrollador", meta_platform: "Plataforma", meta_status: "Estado", meta_category: "Categoría", category: "Puzle de bloques", meta_age: "Público", age: "Recomendado para mayores de 6 · Público general", meta_contact: "Contacto", footer_home: "Inicio"
   },
   pt: {
-    nav_about: "Sobre", nav_apps: "Aplicativos", nav_privacy: "Privacidade", status: "Em desenvolvimento", tagline: "Posicione. Limpe. Encadeie.",
+    nav_about: "Sobre", nav_apps: "Aplicativos", nav_privacy: "Privacidade", status: "Disponível no Google Play", tagline: "Posicione. Limpe. Encadeie.",
     description: "Encaixe peças brilhantes num tabuleiro 8×8, complete linhas e colunas e faça mais pontos com jogadas cuidadosas em três modos.",
-    contact_btn: "Fale conosco para receber novidades →", privacy_btn: "Política de Privacidade", strip_modes: "3 modos de jogo", strip_offline: "Totalmente offline", strip_languages: "14 idiomas", strip_ages: "Recomendado para maiores de 6 · Público geral",
+    contact_btn: "Baixar no Google Play →", privacy_btn: "Política de Privacidade", strip_modes: "3 modos de jogo", strip_offline: "Totalmente offline", strip_languages: "14 idiomas", strip_ages: "Recomendado para maiores de 6 · Público geral",
     features_label: "Recursos", features_title: "Três maneiras de dominar o mesmo tabuleiro",
     f1_title: "Estratégia de blocos 8×8", f1_desc: "Arraste cada peça para um espaço livre, complete linhas ou colunas e guarde espaço para o próximo conjunto.",
     f2_title: "Clássico, Gravidade e Corrida", f2_desc: "Jogue com regras clássicas, crie cascatas de blocos ou enfrente um relógio de 90 segundos.",
@@ -104,9 +104,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Desenvolvedor", meta_platform: "Plataforma", meta_status: "Status", meta_category: "Categoria", category: "Quebra-cabeça de blocos", meta_age: "Público", age: "Recomendado para maiores de 6 · Público geral", meta_contact: "Contato", footer_home: "Início"
   },
   it: {
-    nav_about: "Chi siamo", nav_apps: "App", nav_privacy: "Privacy", status: "In sviluppo", tagline: "Posiziona. Cancella. Concatena.",
+    nav_about: "Chi siamo", nav_apps: "App", nav_privacy: "Privacy", status: "Disponibile su Google Play", tagline: "Posiziona. Cancella. Concatena.",
     description: "Disponi i pezzi luminosi su una griglia 8×8, completa righe e colonne e aumenta il punteggio con mosse attente in tre modalità.",
-    contact_btn: "Contattaci per gli aggiornamenti →", privacy_btn: "Informativa sulla privacy", strip_modes: "3 modalità", strip_offline: "Completamente offline", strip_languages: "14 lingue", strip_ages: "Consigliato dai 6 anni · Pubblico generale",
+    contact_btn: "Scarica da Google Play →", privacy_btn: "Informativa sulla privacy", strip_modes: "3 modalità", strip_offline: "Completamente offline", strip_languages: "14 lingue", strip_ages: "Consigliato dai 6 anni · Pubblico generale",
     features_label: "Funzionalità", features_title: "Tre modi per dominare la stessa griglia",
     f1_title: "Strategia a blocchi 8×8", f1_desc: "Trascina ogni pezzo nello spazio libero, completa righe o colonne e conserva spazio per il prossimo gruppo.",
     f2_title: "Classica, Gravità e Corsa", f2_desc: "Gioca con le regole classiche, crea cascate di blocchi o sfida un timer di 90 secondi.",
@@ -117,9 +117,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "Sviluppatore", meta_platform: "Piattaforma", meta_status: "Stato", meta_category: "Categoria", category: "Puzzle a blocchi", meta_age: "Pubblico", age: "Consigliato dai 6 anni · Pubblico generale", meta_contact: "Contatto", footer_home: "Home"
   },
   ar: {
-    nav_about: "من نحن", nav_apps: "التطبيقات", nav_privacy: "الخصوصية", status: "قيد التطوير", tagline: "ضع. امسح. اصنع سلاسل.",
+    nav_about: "من نحن", nav_apps: "التطبيقات", nav_privacy: "الخصوصية", status: "متاح على Google Play", tagline: "ضع. امسح. اصنع سلاسل.",
     description: "ضع القطع المتوهجة على لوحة 8×8، وأكمل الصفوف والأعمدة، وحقق نتائج أكبر بحركات مدروسة في ثلاثة أوضاع مختلفة.",
-    contact_btn: "تواصل معنا لمعرفة التحديثات ←", privacy_btn: "سياسة الخصوصية", strip_modes: "3 أوضاع لعب", strip_offline: "دون اتصال بالكامل", strip_languages: "14 لغة", strip_ages: "موصى به لعمر 6+ · جمهور عام",
+    contact_btn: "حمّله من Google Play ←", privacy_btn: "سياسة الخصوصية", strip_modes: "3 أوضاع لعب", strip_offline: "دون اتصال بالكامل", strip_languages: "14 لغة", strip_ages: "موصى به لعمر 6+ · جمهور عام",
     features_label: "الميزات", features_title: "ثلاث طرق لإتقان اللوحة نفسها",
     f1_title: "استراتيجية كتل 8×8", f1_desc: "اسحب كل قطعة إلى مساحة فارغة، وأكمل الصفوف أو الأعمدة، واترك مكاناً للمجموعة التالية.",
     f2_title: "كلاسيكي وجاذبية وسباق", f2_desc: "العب بالقواعد الكلاسيكية، أو اصنع شلالات من الكتل، أو تسابق مع مؤقت مدته 90 ثانية.",
@@ -130,9 +130,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "المطور", meta_platform: "المنصة", meta_status: "الحالة", meta_category: "الفئة", category: "لغز كتل", meta_age: "الجمهور", age: "موصى به لعمر 6+ · جمهور عام", meta_contact: "التواصل", footer_home: "الرئيسية"
   },
   zh: {
-    nav_about: "关于我们", nav_apps: "应用", nav_privacy: "隐私", status: "开发中", tagline: "放置。消除。连锁。",
+    nav_about: "关于我们", nav_apps: "应用", nav_privacy: "隐私", status: "已在 Google Play 上线", tagline: "放置。消除。连锁。",
     description: "将发光方块放入8×8棋盘，完成整行或整列，并在三种不同模式中通过谨慎布局获得更高分数。",
-    contact_btn: "联系我们获取更新 →", privacy_btn: "隐私政策", strip_modes: "3种游戏模式", strip_offline: "完全离线", strip_languages: "14种语言", strip_ages: "建议6岁以上 · 普通受众",
+    contact_btn: "前往 Google Play 下载 →", privacy_btn: "隐私政策", strip_modes: "3种游戏模式", strip_offline: "完全离线", strip_languages: "14种语言", strip_ages: "建议6岁以上 · 普通受众",
     features_label: "特色", features_title: "用三种方式掌握同一棋盘",
     f1_title: "8×8方块策略", f1_desc: "将每个形状拖入空位，完成整行或整列，并为下一组方块保留空间。",
     f2_title: "经典、重力与竞速", f2_desc: "体验平静的经典规则，让消除后的方块坠落形成连锁，或挑战90秒计时。",
@@ -143,9 +143,9 @@ const NEON_BLOCKS_I18N = {
     meta_developer: "开发者", meta_platform: "平台", meta_status: "状态", meta_category: "类别", category: "方块益智", meta_age: "受众", age: "建议6岁以上 · 普通受众", meta_contact: "联系", footer_home: "首页"
   },
   ja: {
-    nav_about: "会社紹介", nav_apps: "アプリ", nav_privacy: "プライバシー", status: "開発中", tagline: "置く。消す。連鎖する。",
+    nav_about: "会社紹介", nav_apps: "アプリ", nav_privacy: "プライバシー", status: "Google Playで配信中", tagline: "置く。消す。連鎖する。",
     description: "光るピースを8×8の盤面に配置し、行や列を完成させ、3つの異なるモードで考え抜いた手からより高いスコアを狙います。",
-    contact_btn: "最新情報について問い合わせる →", privacy_btn: "プライバシーポリシー", strip_modes: "3つのゲームモード", strip_offline: "完全オフライン", strip_languages: "14言語", strip_ages: "6歳以上推奨 · 一般向け",
+    contact_btn: "Google Playからダウンロード →", privacy_btn: "プライバシーポリシー", strip_modes: "3つのゲームモード", strip_offline: "完全オフライン", strip_languages: "14言語", strip_ages: "6歳以上推奨 · 一般向け",
     features_label: "特徴", features_title: "同じ盤面を3つの遊び方で攻略",
     f1_title: "8×8ブロック戦略", f1_desc: "各ピースを空きスペースへドラッグし、行や列を完成させながら次のセットの場所を残します。",
     f2_title: "クラシック・重力・ラッシュ", f2_desc: "落ち着いた基本ルール、消した後にブロックが落ちる連鎖、90秒のタイムアタックを楽しめます。",

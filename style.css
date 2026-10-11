@@ -1364,6 +1364,16 @@ body::after {
   box-shadow: 0 8px 24px rgba(53, 205, 238, 0.28);
 }
 
+.app-card__icon.squad-surge {
+  background: #372445;
+  box-shadow: 0 8px 24px rgba(109, 52, 139, 0.28);
+}
+
+.app-card__icon.dark-alive {
+  background: #130812;
+  box-shadow: 0 8px 24px rgba(220, 32, 67, 0.25);
+}
+
 .app-card__icon.penguin-sled-rush {
   background: linear-gradient(135deg, #12366a 0%, #46d7c5 100%);
   box-shadow: 0 8px 24px rgba(70, 215, 197, 0.28);

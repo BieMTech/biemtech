@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Privacy policy for Squad Surge: Army Multiplier by BieMTech." />
+    <title>Squad Surge Privacy Policy — BieMTech</title>
+    <link rel="icon" type="image/svg+xml" href="../../img/squad-surge-icon.svg" />
+    <style>
+      :root { color-scheme: dark; --bg: #17121e; --panel: #2a2033; --line: #634d6b; --text: #f6f0f7; --muted: #d8cbdc; --accent: #eac77d; }
+      * { box-sizing: border-box; }
+      body { min-height: 100vh; margin: 0; color: var(--text); background: radial-gradient(circle at 14% 6%, #50315c, transparent 35rem), var(--bg); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
+      a { color: var(--accent); }
+      .wrap { width: min(850px, calc(100% - 36px)); margin-inline: auto; }
+      .topbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 23px; }
+      .back { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: .9rem; font-weight: 650; text-decoration: none; }
+      .back img { width: 28px; height: 28px; border-radius: 6px; }
+      select { min-width: 95px; padding: 8px 12px; color: var(--text); font: inherit; font-size: .87rem; border: 1px solid var(--line); border-radius: 9px; background: var(--panel); cursor: pointer; }
+      header { padding: 35px 0 32px; text-align: center; }
+      .icon { display: block; width: 102px; height: 102px; margin: 0 auto 17px; border-radius: 23px; box-shadow: 0 16px 38px #0008; }
+      .eyebrow { margin: 0 0 8px; color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(2.15rem, 6vw, 3.6rem); line-height: 1.1; letter-spacing: -.045em; }
+      header .subtitle { margin: 10px 0 0; color: var(--muted); }
+      main { padding-bottom: 66px; }
+      .meta, .summary, .card { padding: 20px 23px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+      .meta { color: var(--muted); font-size: .84rem; text-align: center; overflow-wrap: anywhere; }
+      .summary { margin-top: 14px; color: #fff4d9; border-color: #9e7b68; background: #36283a; }
+      .card { margin-top: 14px; }
+      .card h2 { margin: 0 0 9px; color: var(--accent); font-size: 1.13rem; }
+      .card p { margin: 0 0 10px; color: var(--muted); }
+      .card p:last-child { margin-bottom: 0; }
+      footer { padding: 25px 18px; border-top: 1px solid var(--line); color: #b8aabe; font-size: .84rem; text-align: center; }
+      [dir="rtl"] .card, [dir="rtl"] .summary { text-align: right; }
+      @media (max-width: 560px) { .topbar { align-items: flex-start; } .meta { text-align: start; } .card { padding: 19px; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap topbar"><a class="back" href="../index.html"><img src="../../img/logo-biemtech.png" alt="" /><span id="back">← BieMTech Privacy Policies</span></a><select id="lang-select" aria-label="Language"><option value="en">English</option><option value="az">Azərbaycan dili</option></select></div>
+    <header class="wrap"><img class="icon" src="../../img/squad-surge-icon.svg" alt="Squad Surge icon" /><p class="eyebrow" id="policy">Privacy Policy</p><h1>Squad Surge: Army Multiplier</h1><p class="subtitle" id="subtitle">Android game · In development</p></header>
+    <main class="wrap" id="policy-content"></main>
+    <footer>© 2026 BieMTech · <span id="rights">All rights reserved.</span></footer>
+    <script>
+      const POLICY = {
+        en: {
+          back: "← BieMTech Privacy Policies", policy: "Privacy Policy", subtitle: "Android game · In development", rights: "All rights reserved.", developer: "Developer", app: "App", package: "Package", updated: "Last updated", date: "11 October 2026",
+          summary: "Summary: The current development build does not ask for an account or collect, transmit, sell, or share personal information. Campaign progress is saved locally on your device.",
+          sections: [
+            ["1. About this app", "Squad Surge: Army Multiplier is a portrait Android strategy game by BieMTech. Players deploy toy soldiers, choose multiplier gates, and advance through a miniature campaign. The app is in development, so features and data practices may change before release."],
+            ["2. Information we collect", "The current build does not request your name, email address, phone number, account, precise location, contacts, photos, microphone, or camera. We do not receive gameplay or device data from the app. There is no user account or server profile."],
+            ["3. Data stored on your device", "The game saves the currently selected campaign level and which levels you have completed using Android app storage through Unity PlayerPrefs. This information is used to resume and show campaign progress. It remains on your device and is not sent to BieMTech."],
+            ["4. Connectivity, ads, and third parties", "The current gameplay works offline. It has no advertisements, analytics, tracking, in-app purchases, cloud saves, or social features. The Android operating system and the store from which you obtain the app may process their own data under their own policies; that processing is separate from the game."],
+            ["5. Children and general audience", "The app has no registration, chat, public profiles, user uploads, or targeted advertising. We do not knowingly collect personal information from children or adults. The same local-only progress model applies to all players."],
+            ["6. Retention and deletion", "Local campaign progress remains until you clear Squad Surge's app storage in Android settings or uninstall the app. We do not keep a server copy, so there is no game account or server-side record to delete."],
+            ["7. Changes to this policy", "If the app or its data practices change, we will update this policy and its date before distributing the relevant version. Review this page when the app is released or updated."],
+            ["8. Contact", "For questions about this policy or the app's privacy practices, contact BieMTech at"]
+          ]
+        },
+        az: {
+          back: "← BieMTech Məxfilik Siyasətləri", policy: "Məxfilik Siyasəti", subtitle: "Android oyunu · Hazırlanır", rights: "Bütün hüquqlar qorunur.", developer: "Tərtibatçı", app: "Tətbiq", package: "Paket", updated: "Son yenilənmə", date: "11 oktyabr 2026",
+          summary: "Qısa xülasə: Hazırkı inkişaf versiyası hesab tələb etmir və şəxsi məlumat toplamır, ötürmür, satmır və paylaşmır. Kampaniya irəliləyişi yalnız cihazınızda saxlanılır.",
+          sections: [
+            ["1. Tətbiq haqqında", "Squad Surge: Army Multiplier BieMTech tərəfindən hazırlanmış portret formatlı Android strategiya oyunudur. Oyunçular oyuncaq əsgərlər göndərir, çoxaldıcı qapılar seçir və miniatür kampaniyada irəliləyirlər. Tətbiq hazırlanır; buraxılışadək funksiyalar və məlumat təcrübələri dəyişə bilər."],
+            ["2. Topladığımız məlumatlar", "Hazırkı versiya adınızı, e-poçtunuzu, telefon nömrənizi, hesabınızı, dəqiq yerinizi, kontaktlarınızı, şəkillərinizi, mikrofonu və ya kameranı istəmir. Tətbiqdən oyun və ya cihaz məlumatları bizə göndərilmir. İstifadəçi hesabı və server profili yoxdur."],
+            ["3. Cihazınızda saxlanan məlumatlar", "Oyun seçilmiş kampaniya səviyyəsini və tamamladığınız səviyyələri Unity PlayerPrefs vasitəsilə Android tətbiq yaddaşında saxlayır. Bu məlumat oyuna davam etmək və irəliləyişi göstərmək üçündür. Cihazınızda qalır və BieMTech-ə ötürülmür."],
+            ["4. Bağlantı, reklam və üçüncü tərəflər", "Hazırkı oyun oflayn işləyir. Reklam, analitika, izləmə, tətbiqdaxili alış, bulud yaddaşı və sosial funksiya yoxdur. Android sistemi və tətbiqi əldə etdiyiniz mağaza öz qaydalarına əsasən məlumat emal edə bilər; bu, oyunun məlumat emalından ayrıdır."],
+            ["5. Uşaqlar və ümumi auditoriya", "Tətbiqdə qeydiyyat, çat, açıq profil, istifadəçi yükləmələri və hədəflənmiş reklam yoxdur. Biz uşaqlardan və böyüklərdən bilərəkdən şəxsi məlumat toplamırıq. Eyni yalnız yerli irəliləyiş modeli bütün oyunçulara aiddir."],
+            ["6. Saxlama və silinmə", "Yerli kampaniya irəliləyişi Android ayarlarında Squad Surge tətbiq yaddaşını təmizləyənə və ya tətbiqi silənə qədər qalır. Serverdə surət saxlamırıq; buna görə silinəcək oyun hesabı və ya server qeydi yoxdur."],
+            ["7. Siyasətdə dəyişikliklər", "Tətbiq və ya məlumat təcrübələri dəyişərsə, müvafiq versiyanı yayımlamadan əvvəl bu siyasəti və tarixini yeniləyəcəyik. Tətbiq çıxanda və ya yenilənəndə bu səhifəyə yenidən baxın."],
+            ["8. Əlaqə", "Bu siyasət və ya tətbiqin məxfilik təcrübəsi ilə bağlı suallar üçün BieMTech ilə əlaqə saxlayın:"]
+          ]
+        }
+      };
+      function render(lang) {
+        const t = POLICY[lang] || POLICY.en;
+        document.documentElement.lang = lang;
+        document.getElementById("lang-select").value = lang;
+        document.title = `Squad Surge ${t.policy} — BieMTech`;
+        for (const key of ["back", "policy", "subtitle", "rights"]) document.getElementById(key).textContent = t[key];
+        const main = document.getElementById("policy-content");
+        main.replaceChildren();
+        const meta = document.createElement("p"); meta.className = "meta";
+        meta.textContent = `${t.developer}: BieMTech · ${t.app}: Squad Surge: Army Multiplier · ${t.package}: com.biemtech.squadsurge · ${t.updated}: ${t.date}`;
+        const summary = document.createElement("p"); summary.className = "summary"; summary.textContent = t.summary;
+        main.append(meta, summary);
+        t.sections.forEach(([heading, body], index) => {
+          const section = document.createElement("section"); section.className = "card";
+          const h2 = document.createElement("h2"); h2.textContent = heading;
+          const p = document.createElement("p"); p.textContent = body;
+          if (index === t.sections.length - 1) { const a = document.createElement("a"); a.href = "mailto:info@biemtech.com"; a.textContent = "info@biemtech.com"; p.append(" ", a); }
+          section.append(h2, p); main.append(section);
+        });
+      }
+      let saved = "en";
+      try { saved = localStorage.getItem("biemtech-lang") || localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      if (!POLICY[saved]) saved = (navigator.language || "en").slice(0, 2).toLowerCase() === "az" ? "az" : "en";
+      render(saved);
+      document.getElementById("lang-select").addEventListener("change", event => { try { localStorage.setItem("biemtech-lang", event.target.value); localStorage.setItem("site_lang", event.target.value); } catch (_) {} render(event.target.value); });
+    </script>
+  </body>
+</html>

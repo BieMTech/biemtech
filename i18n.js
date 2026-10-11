@@ -2031,6 +2031,22 @@ const DINO_CARD_DESCRIPTIONS = {
 for (const [lang, entries] of Object.entries(DINO_RUNNER)) Object.assign(I18N[lang], entries);
 for (const [lang, description] of Object.entries(DINO_CARD_DESCRIPTIONS)) I18N[lang].dino_card_desc = description;
 
+const NEW_APP_CARDS = {
+  en: { squad_surge_desc: "Deploy toy soldiers, choose multiplier gates, and push your squad across a miniature battlefield to capture the enemy bunker.", dark_alive_desc: "Explore 100 animated horror wallpapers, preview their looping effects, save favorites, and bring them to your Android home screen.", chip_strategy: "Strategy Game", chip_personalization: "Personalization" },
+  az: { squad_surge_desc: "Oyuncaq əsgərləri yerləşdir, çoxaldıcı qapıları seç və düşmən sığınacağını ələ keçirmək üçün dəstəni miniatür döyüş meydanından keçir.", dark_alive_desc: "100 animasiyalı qorxu divar kağızını kəşf et, dövr edən effektlərə bax, sevimlilərini saxla və Android ekranına tətbiq et.", chip_strategy: "Strategiya Oyunu", chip_personalization: "Fərdiləşdirmə" },
+  ru: { squad_surge_desc: "Высаживайте игрушечных солдат, выбирайте множители и ведите отряд по миниатюрному полю боя к вражескому бункеру.", dark_alive_desc: "Откройте 100 анимированных обоев в жанре ужасов, просматривайте циклы, сохраняйте избранное и устанавливайте их на Android.", chip_strategy: "Стратегия", chip_personalization: "Персонализация" },
+  tr: { squad_surge_desc: "Oyuncak askerleri konuşlandır, çoğaltıcı kapıları seç ve düşman sığınağını ele geçirmek için birliğini minyatür savaş alanından geçir.", dark_alive_desc: "100 animasyonlu korku duvar kâğıdını keşfet, döngüleri izle, favorilerini kaydet ve Android ekranına uygula.", chip_strategy: "Strateji Oyunu", chip_personalization: "Kişiselleştirme" },
+  de: { squad_surge_desc: "Setze Spielzeugsoldaten ein, wähle Multiplikator Tore und führe deine Truppe über ein Miniatur Schlachtfeld zum feindlichen Bunker.", dark_alive_desc: "Entdecke 100 animierte Horror Hintergrundbilder, sieh dir ihre Schleifen an, speichere Favoriten und nutze sie auf Android.", chip_strategy: "Strategiespiel", chip_personalization: "Personalisierung" },
+  fr: { squad_surge_desc: "Déployez des soldats miniatures, choisissez les portes multiplicatrices et menez votre escouade jusqu'au bunker ennemi.", dark_alive_desc: "Explorez 100 fonds d'écran d'horreur animés, prévisualisez leurs boucles, gardez vos favoris et appliquez-les sur Android.", chip_strategy: "Jeu de stratégie", chip_personalization: "Personnalisation" },
+  es: { squad_surge_desc: "Despliega soldados de juguete, elige puertas multiplicadoras y guía al escuadrón por un campo de batalla en miniatura hasta el búnker enemigo.", dark_alive_desc: "Explora 100 fondos animados de terror, previsualiza sus ciclos, guarda favoritos y aplícalos en tu pantalla Android.", chip_strategy: "Estrategia", chip_personalization: "Personalización" },
+  pt: { squad_surge_desc: "Posicione soldados de brinquedo, escolha portões multiplicadores e guie seu esquadrão por um campo de batalha em miniatura até o bunker inimigo.", dark_alive_desc: "Explore 100 papéis de parede animados de terror, veja os loops, salve favoritos e aplique-os no Android.", chip_strategy: "Estratégia", chip_personalization: "Personalização" },
+  it: { squad_surge_desc: "Schiera soldatini, scegli i varchi moltiplicatori e guida la squadra su un campo di battaglia in miniatura fino al bunker nemico.", dark_alive_desc: "Scopri 100 sfondi horror animati, guarda le anteprime in loop, salva i preferiti e applicali su Android.", chip_strategy: "Strategia", chip_personalization: "Personalizzazione" },
+  ar: { squad_surge_desc: "انشر جنود الألعاب واختر بوابات المضاعفة وقُد فرقتك عبر ساحة معركة مصغّرة للاستيلاء على مخبأ العدو.", dark_alive_desc: "اكتشف 100 خلفية رعب متحركة، شاهد معايناتها المتكررة، احفظ المفضلة وطبّقها على شاشة Android.", chip_strategy: "لعبة استراتيجية", chip_personalization: "تخصيص" },
+  zh: { squad_surge_desc: "部署玩具士兵，选择倍增门，带领小队穿越微型战场并攻占敌方碉堡。", dark_alive_desc: "探索100款动态恐怖壁纸，预览循环效果，收藏喜爱的作品并应用到 Android 屏幕。", chip_strategy: "策略游戏", chip_personalization: "个性化" },
+  ja: { squad_surge_desc: "おもちゃの兵士を配置し、増員ゲートを選んで、ミニチュアの戦場を進み敵のバンカーを制圧しよう。", dark_alive_desc: "100種類の動くホラー壁紙を探し、ループをプレビューしてお気に入りを保存し、Android画面に設定しよう。", chip_strategy: "戦略ゲーム", chip_personalization: "カスタマイズ" }
+};
+for (const [lang, entries] of Object.entries(NEW_APP_CARDS)) Object.assign(I18N[lang], entries);
+
 /* ── Lang switcher HTML ────────────────────────────────── */
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">
