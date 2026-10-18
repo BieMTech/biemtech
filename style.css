@@ -1170,48 +1170,233 @@ body::after {
   border-radius: 28px;
 }
 
-.about__founders {
-  margin-top: 32px;
+/* ── Founder profiles ──────────────────────────────────── */
+.founders {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 72px;
+  align-items: stretch;
+}
+/* Don't stretch the other card to match an expanded CV */
+.founders:has(.cv[open]) { align-items: start; }
+
+.founder-profile {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-
-.founder-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 14px 18px;
+  border-radius: var(--radius);
+  padding: 28px;
   backdrop-filter: blur(40px) saturate(180%);
   -webkit-backdrop-filter: blur(40px) saturate(180%);
   box-shadow: 0 4px 20px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.50);
   transition: border-color var(--transition), background var(--transition);
 }
-.founder-card:hover {
+.founder-profile:hover {
   border-color: rgba(0,0,0,0.14);
   background: var(--bg-card2);
 }
 
+.founder-profile__head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .founder-avatar {
-  width: 40px;
-  height: 40px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
   background: linear-gradient(135deg, #3d8c54, #d4956c);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 30px;
   color: #fff;
   flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(46,111,64,0.25);
+  /* Avatar sits after the name, pushed to the card's far edge */
+  order: 1;
+  margin-inline-start: auto;
+}
+.founder-avatar--photo { object-fit: cover; }
+
+.founder-profile__name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.founder-profile__role {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.founder-profile__meta {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-top: 2px;
 }
 
-.founder-info { flex: 1; }
-.founder-name { font-size: 14px; font-weight: 600; }
-.founder-role { font-size: 12px; color: var(--text-muted); }
+.founder-profile__bio {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.founder-profile__skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.founder-profile__skills li {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--primary-dim);
+  border: 1px solid rgba(46,111,64,0.22);
+  color: var(--primary);
+}
+
+.founder-profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.founder-profile__links a {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 8px;
+  color: var(--text);
+  background: rgba(46,111,64,0.08);
+  border: 1px solid rgba(46,111,64,0.28);
+  transition: all var(--transition);
+}
+.founder-profile__links a:hover {
+  background: rgba(46,111,64,0.16);
+  border-color: rgba(46,111,64,0.5);
+}
+
+/* CV (expandable) */
+.cv {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.cv summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  list-style: none;
+}
+.cv summary::-webkit-details-marker { display: none; }
+.cv summary::after {
+  content: "▾";
+  transition: transform var(--transition);
+}
+.cv[open] summary::after { transform: rotate(180deg); }
+
+/* Download link sits on the summary row, at the card's far edge */
+.cv-wrap {
+  position: relative;
+  margin-top: auto;
+}
+.cv__download {
+  position: absolute;
+  top: 19px; /* .cv border-top + padding-top */
+  inset-inline-end: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 38%;
+  text-align: end;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  transition: opacity var(--transition);
+}
+/* Long translations wrap instead of overlapping on narrow cards */
+.cv-wrap .cv summary { max-width: 60%; }
+.cv__download::before { content: "↓"; }
+.cv__download:hover { opacity: 0.75; }
+
+.cv__heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 28px 0 14px;
+}
+
+.cv__timeline {
+  list-style: none;
+  border-inline-start: 2px solid rgba(46,111,64,0.22);
+  padding-inline-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cv__timeline > li { position: relative; }
+.cv__timeline > li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -27px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--primary);
+}
+
+.cv__when {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.cv__title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.cv__org {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.cv__points,
+.cv__list {
+  list-style: disc;
+  margin-top: 8px;
+  padding-inline-start: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.cv__points li + li,
+.cv__list li + li { margin-top: 4px; }
+
+/* CV details stay in English — keep their word order intact on RTL pages */
+.founder-profile__meta,
+.founder-profile__skills li,
+.cv__when,
+.cv__title,
+.cv__org,
+.cv__points li,
+.cv__list li { unicode-bidi: plaintext; }
 
 /* ── Apps ──────────────────────────────────────────────── */
 .apps__grid {
@@ -1951,6 +2136,8 @@ footer {
 
   .about__visual { order: -1; }
 
+  .founders { grid-template-columns: 1fr; margin-top: 48px; }
+
   .values__grid { grid-template-columns: 1fr; }
 
   .footer__inner { flex-direction: column; gap: 32px; }
@@ -1965,4 +2152,6 @@ footer {
 @media (max-width: 480px) {
   .notify-form { flex-direction: column; }
   .cta__box { padding: 48px 24px; }
+  .founder-profile { padding: 20px; }
+  .founder-avatar { width: 80px; height: 80px; font-size: 24px; }
 }
