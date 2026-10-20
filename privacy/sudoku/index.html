@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Privacy policy for Sudoku, the offline puzzle game by BieMTech." />
+    <meta name="theme-color" content="#17223b" />
+    <title>Sudoku Privacy Policy — BieMTech</title>
+    <link rel="icon" type="image/png" href="../../img/sudoku-icon.png" />
+    <style>
+      :root { --bg: #17223b; --surface: #202d48; --text: #f6f8ff; --muted: #c5d2e8; --accent: #a9c7ff; --line: #50668d; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; color: var(--text); background: radial-gradient(circle at 75% 4%, #345487, transparent 32rem), var(--bg); font: 1rem/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+      a { color: var(--accent); }
+      .topbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0; }
+      .topbar a { color: var(--muted); text-decoration: none; }
+      .topbar a:hover { color: var(--text); }
+      select { padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: var(--surface); font: inherit; }
+      header { width: min(860px, calc(100% - 32px)); margin: 25px auto 34px; text-align: center; }
+      header img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 15px 40px #0005; }
+      h1 { margin: 18px 0 4px; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.15; letter-spacing: -.04em; }
+      header p { margin: 0; color: var(--accent); font-weight: 700; }
+      main { width: min(860px, calc(100% - 32px)); margin: 0 auto 65px; }
+      .meta, .summary, section { margin-bottom: 14px; padding: 22px 26px; border: 1px solid var(--line); border-radius: 16px; background: #202d48ed; }
+      .meta { color: var(--muted); font-size: .88rem; }
+      .summary { border-color: var(--accent); font-weight: 650; }
+      h2 { margin: 0 0 10px; color: var(--accent); font-size: 1.12rem; }
+      section p { margin: 0; color: var(--muted); }
+      code { color: var(--accent); }
+      footer { padding: 25px 16px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .85rem; }
+      @media (max-width: 520px) { .meta, .summary, section { padding: 19px; } }
+    </style>
+  </head>
+  <body>
+    <div class="topbar"><a href="../index.html" data-copy="back">← BieMTech Privacy Policies</a><select id="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select></div>
+    <header><img src="../../img/sudoku-icon.png" alt="Sudoku" /><h1>Sudoku</h1><p data-copy="subtitle">Privacy Policy</p></header>
+    <main>
+      <div class="meta" data-copy="meta">Effective date: October 20, 2026 · Android package: com.biemtech.sudoku</div>
+      <div class="summary" data-copy="summary">The current development version of Sudoku does not collect or transmit personal information. Your game progress is stored on your device.</div>
+      <section><h2 data-copy="h1">About this policy</h2><p data-copy="b1">Sudoku is an offline puzzle game being developed by BieMTech. This policy describes the current Android development version. We will update it before release if the app's data practices change.</p></section>
+      <section><h2 data-copy="h2">Information stored on your device</h2><p data-copy="b2">The game stores settings, active puzzles, daily challenge results, journey progress, statistics, and achievements locally so you can continue playing. It does not require an account, name, or email address. This saved information is not sent to BieMTech or third parties.</p></section>
+      <section><h2 data-copy="h3">Ads, analytics, and purchases</h2><p data-copy="b3">The current development version has no advertisements, analytics service, or in-app purchases.</p></section>
+      <section><h2 data-copy="h4">Device features and permissions</h2><p data-copy="b4">The current Android configuration does not request internet access. The game can use vibration for optional haptic feedback and can read the device language and appearance settings to adapt its interface. It does not request access to your contacts, location, camera, or microphone.</p></section>
+      <section><h2 data-copy="h5">Children's privacy</h2><p data-copy="b5">The game does not knowingly collect or share personal information from children. Local game progress stays on the device.</p></section>
+      <section><h2 data-copy="h6">Your choices</h2><p data-copy="b6">You can reset statistics in the game settings. To remove all locally stored game data, clear the app's storage in Android settings or uninstall it. These actions may erase your progress.</p></section>
+      <section><h2 data-copy="h7">Changes to this policy</h2><p data-copy="b7">If the game's data practices change, we will revise this page and its effective date before the relevant changes are released.</p></section>
+      <section><h2 data-copy="h8">Contact</h2><p><span data-copy="b8">For privacy questions, email</span> <a href="mailto:info@biemtech.com">info@biemtech.com</a>.</p></section>
+    </main>
+    <footer>© 2026 BieMTech · <a href="../../sudoku.html">Sudoku</a></footer>
+    <script>
+      const copy = {
+        en: { back: "← BieMTech Privacy Policies", subtitle: "Privacy Policy", meta: "Effective date: October 20, 2026 · Android package: com.biemtech.sudoku", summary: "The current development version of Sudoku does not collect or transmit personal information. Your game progress is stored on your device.", h1: "About this policy", b1: "Sudoku is an offline puzzle game being developed by BieMTech. This policy describes the current Android development version. We will update it before release if the app's data practices change.", h2: "Information stored on your device", b2: "The game stores settings, active puzzles, daily challenge results, journey progress, statistics, and achievements locally so you can continue playing. It does not require an account, name, or email address. This saved information is not sent to BieMTech or third parties.", h3: "Ads, analytics, and purchases", b3: "The current development version has no advertisements, analytics service, or in-app purchases.", h4: "Device features and permissions", b4: "The current Android configuration does not request internet access. The game can use vibration for optional haptic feedback and can read the device language and appearance settings to adapt its interface. It does not request access to your contacts, location, camera, or microphone.", h5: "Children's privacy", b5: "The game does not knowingly collect or share personal information from children. Local game progress stays on the device.", h6: "Your choices", b6: "You can reset statistics in the game settings. To remove all locally stored game data, clear the app's storage in Android settings or uninstall it. These actions may erase your progress.", h7: "Changes to this policy", b7: "If the game's data practices change, we will revise this page and its effective date before the relevant changes are released.", h8: "Contact", b8: "For privacy questions, email" },
+        az: { back: "← BieMTech Məxfilik Siyasətləri", subtitle: "Məxfilik siyasəti", meta: "Qüvvəyə minmə tarixi: 20 oktyabr 2026 · Android paket adı: com.biemtech.sudoku", summary: "Sudoku-nun hazırkı hazırlanma versiyası şəxsi məlumat toplamır və ötürmür. Oyun irəliləyişiniz cihazınızda saxlanılır.", h1: "Bu siyasət haqqında", b1: "Sudoku, BieMTech tərəfindən hazırlanan oflayn tapmaca oyunudur. Bu siyasət hazırkı Android hazırlanma versiyasını təsvir edir. Tətbiqin məlumatlarla işləmə qaydası dəyişərsə, yayımlanmadan əvvəl siyasəti yeniləyəcəyik.", h2: "Cihazınızda saxlanılan məlumatlar", b2: "Oyun davam edə bilməyiniz üçün ayarları, aktiv tapmacaları, gündəlik tapşırıq nəticələrini, Uğur yolu irəliləyişini, statistikanı və nailiyyətləri cihazınızda saxlayır. Hesab, ad və ya e-poçt ünvanı tələb etmir. Bu məlumatlar BieMTech-ə və ya üçüncü tərəflərə göndərilmir.", h3: "Reklam, analitika və alışlar", b3: "Hazırkı hazırlanma versiyasında reklam, analitika xidməti və tətbiqdaxili alış yoxdur.", h4: "Cihaz funksiyaları və icazələr", b4: "Hazırkı Android konfiqurasiyası internetə giriş icazəsi tələb etmir. Oyun istəyə bağlı toxunma reaksiyası üçün vibrasiyadan istifadə edə, interfeysi uyğunlaşdırmaq üçün cihazın dilini və görünüş ayarlarını oxuya bilər. Kontaktlara, məkana, kameraya və mikrofona giriş tələb etmir.", h5: "Uşaqların məxfiliyi", b5: "Oyun uşaqların şəxsi məlumatlarını bilərəkdən toplamır və ya paylaşmır. Yerli oyun irəliləyişi cihazda qalır.", h6: "Seçimləriniz", b6: "Oyun ayarlarında statistikanı sıfırlaya bilərsiniz. Bütün yerli oyun məlumatlarını silmək üçün Android ayarlarında tətbiqin yaddaşını təmizləyin və ya tətbiqi silin. Bu əməliyyatlar irəliləyişinizi silə bilər.", h7: "Siyasətdə dəyişikliklər", b7: "Oyunun məlumatlarla işləmə qaydası dəyişərsə, müvafiq dəyişikliklər yayımlanmadan əvvəl bu səhifəni və qüvvəyə minmə tarixini yeniləyəcəyik.", h8: "Əlaqə", b8: "Məxfiliklə bağlı suallar üçün bu ünvana yazın:" }
+      };
+      const select = document.getElementById("lang-select");
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      function setLanguage(lang, persist = false) {
+        const selected = lang === "az" ? "az" : "en";
+        document.documentElement.lang = selected;
+        select.value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = copy[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      setLanguage(saved);
+      select.addEventListener("change", event => setLanguage(event.target.value, true));
+    </script>
+  </body>
+</html>

@@ -112,6 +112,7 @@ const I18N = {
     arrows_desc:
       "A strategic arrow puzzle for players aged 6 and up, including adults. Clear every arrow, build streaks, and master endlessly generated challenges.",
     chip_puzzle: "Puzzle Game",
+    sudoku_desc: "Daily puzzles, 90 journey levels, smart hints, and three themes in a fully offline Sudoku game.",
     snake_desc:
       "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
     rex_desc:
@@ -267,6 +268,7 @@ const I18N = {
     arrows_desc:
       "6 yaş və yuxarı oyunçular, o cümlədən böyüklər üçün strateji ox tapmacası. Bütün oxları lövhədən çıxarın, seriyalar qurun və sonsuz yaradılan tapşırıqları həll edin.",
     chip_puzzle: "Tapmaca Oyunu",
+    sudoku_desc: "Gündəlik tapmacalar, 90 səviyyəli Uğur yolu, ağıllı ipucları və üç tema ilə tam oflayn Sudoku oyunu.",
     snake_desc:
       "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
     rex_desc:
@@ -420,6 +422,7 @@ const I18N = {
     arrows_desc:
       "Стратегическая головоломка со стрелками для игроков от 6 лет, включая взрослых. Убирайте все стрелки, создавайте серии и проходите бесконечно генерируемые испытания.",
     chip_puzzle: "Головоломка",
+    sudoku_desc: "Ежедневные головоломки, 90 уровней, умные подсказки и три темы в полностью офлайн игре Sudoku.",
     snake_desc:
       "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
     rex_desc:
@@ -574,6 +577,7 @@ const I18N = {
     arrows_desc:
       "Yetişkinler dahil 6 yaş ve üzeri oyuncular için stratejik bir ok bulmacası. Tüm okları temizleyin, seriler oluşturun ve sonsuz üretilen mücadelelerde ustalaşın.",
     chip_puzzle: "Bulmaca Oyunu",
+    sudoku_desc: "Günlük bulmacalar, 90 bölümlük yolculuk, akıllı ipuçları ve üç tema sunan tamamen çevrimdışı Sudoku oyunu.",
     snake_desc:
       "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
     rex_desc:
@@ -729,6 +733,7 @@ const I18N = {
     arrows_desc:
       "Ein strategisches Pfeil-Puzzlespiel für Spieler ab 6 Jahren, einschließlich Erwachsene. Räume alle Pfeile ab, bilde Serien und meistere endlos generierte Herausforderungen.",
     chip_puzzle: "Puzzlespiel",
+    sudoku_desc: "Tägliche Rätsel, 90 Level, clevere Tipps und drei Designs in einem vollständig offline spielbaren Sudoku.",
     snake_desc:
       "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
     rex_desc:
@@ -887,6 +892,7 @@ const I18N = {
     arrows_desc:
       "Un jeu de réflexion stratégique avec des flèches pour les joueurs de 6 ans et plus, adultes compris. Éliminez toutes les flèches, enchaînez les séries et relevez des défis générés à l’infini.",
     chip_puzzle: "Jeu de réflexion",
+    sudoku_desc: "Des grilles quotidiennes, 90 niveaux, des indices intelligents et trois thèmes dans un Sudoku entièrement hors ligne.",
     snake_desc:
       "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
     rex_desc:
@@ -1044,6 +1050,7 @@ const I18N = {
     arrows_desc:
       "Un puzle estratégico de flechas para jugadores de 6 años en adelante, incluidos adultos. Elimina todas las flechas, crea rachas y supera desafíos generados sin fin.",
     chip_puzzle: "Juego de puzles",
+    sudoku_desc: "Puzles diarios, 90 niveles, pistas inteligentes y tres temas en un Sudoku totalmente sin conexión.",
     snake_desc:
       "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
     rex_desc:
@@ -1201,6 +1208,7 @@ const I18N = {
     arrows_desc:
       "Um quebra-cabeça estratégico de setas para jogadores a partir de 6 anos, incluindo adultos. Remova todas as setas, crie sequências e supere desafios gerados sem fim.",
     chip_puzzle: "Jogo de quebra-cabeça",
+    sudoku_desc: "Desafios diários, 90 níveis, dicas inteligentes e três temas em um Sudoku totalmente offline.",
     snake_desc:
       "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
     rex_desc:
@@ -1356,6 +1364,7 @@ const I18N = {
     arrows_desc:
       "Un rompicapo strategico con frecce per giocatori dai 6 anni in su, adulti compresi. Libera tutte le frecce, crea serie e supera sfide generate all’infinito.",
     chip_puzzle: "Gioco rompicapo",
+    sudoku_desc: "Schemi quotidiani, 90 livelli, suggerimenti intelligenti e tre temi in un Sudoku completamente offline.",
     snake_desc:
       "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
     rex_desc:
@@ -1505,6 +1514,7 @@ const I18N = {
     arrows_desc:
       "لعبة ألغاز استراتيجية بالأسهم للاعبين من عمر 6 سنوات فما فوق، بما في ذلك البالغون. أخرج جميع الأسهم، وابنِ سلاسل متتالية، وتغلّب على تحديات لا نهائية.",
     chip_puzzle: "لعبة ألغاز",
+    sudoku_desc: "ألغاز يومية و90 مستوى وتلميحات ذكية وثلاثة مظاهر في لعبة سودوكو تعمل بالكامل دون اتصال.",
     snake_desc:
       "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
     rex_desc:
@@ -1651,6 +1661,7 @@ const I18N = {
     arrows_desc:
       "一款面向6岁及以上玩家（包括成人）的策略箭头解谜游戏。清除所有箭头、连续闯关，并挑战无限生成的谜题。",
     chip_puzzle: "解谜游戏",
+    sudoku_desc: "每日数独、90 个闯关关卡、智能提示和三种主题，完全离线畅玩。",
     snake_desc:
       "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
     rex_desc:
@@ -1803,6 +1814,7 @@ const I18N = {
     arrows_desc:
       "大人を含む6歳以上のプレイヤー向け戦略アローパズル。すべての矢印を消し、連続クリアを重ね、無限に生成されるチャレンジを攻略しよう。",
     chip_puzzle: "パズルゲーム",
+    sudoku_desc: "デイリーパズル、90のステージ、スマートなヒント、3つのテーマを備えた完全オフラインの数独ゲーム。",
     snake_desc:
       "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
     rex_desc:

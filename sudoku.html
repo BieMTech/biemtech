@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sudoku by BieMTech is an offline Android puzzle game with daily challenges, a 90-level journey, and smart hints. In development." />
+    <title>Sudoku — BieMTech</title>
+    <link rel="icon" type="image/png" href="img/sudoku-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app-detail.css" />
+    <style>
+      .app-detail--sudoku { --accent: #a9c7ff; --glow: #263f6c; --panel: #202b42; --border: #465c81; }
+      .app-detail--sudoku .detail-art__frame { display: grid; place-items: center; min-height: 420px; padding: 50px; border: 1px solid var(--border); border-radius: 24px; background: radial-gradient(circle at 50% 42%, #5479bd 0, #283d66 46%, #17223b 100%); box-shadow: 0 26px 60px #0009; }
+      .app-detail--sudoku .detail-art img { width: min(100%, 330px); max-height: none; aspect-ratio: 1; object-fit: contain; border: 0; border-radius: 28%; box-shadow: 0 22px 45px #0b142990; }
+      @media (max-width: 620px) { .app-detail--sudoku .detail-art__frame { min-height: 280px; padding: 36px; } }
+    </style>
+  </head>
+  <body class="app-detail app-detail--sudoku">
+    <header class="navbar"><div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+      <nav class="navbar__nav"><a href="index.html#about" data-copy="about">About</a><a href="index.html#apps" data-copy="apps">Apps</a><a href="privacy/sudoku/index.html" data-copy="privacy">Privacy</a></nav>
+      <div class="navbar__actions"><select class="lang-select" id="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select></div>
+    </div></header>
+    <main>
+      <section class="detail-hero detail-wrap">
+        <div class="detail-copy">
+          <img class="detail-icon" src="img/sudoku-icon.png" alt="Sudoku icon" width="100" height="100" />
+          <span class="detail-status" data-copy="status">● In Development</span>
+          <h1 class="detail-title">Sudoku</h1>
+          <p class="detail-tagline" data-copy="tagline">A fresh puzzle, every day.</p>
+          <p class="detail-description" data-copy="description">Play daily challenges, choose from Easy, Normal, and Hard quick games, or follow a 90-level journey. Smart hints explain the next logical step, and progress stays on your device.</p>
+          <div class="detail-actions"><a class="detail-button" href="mailto:info@biemtech.com" data-copy="contact">Contact us for updates →</a><a class="detail-button detail-button--outline" href="privacy/sudoku/index.html" data-copy="policy">Privacy Policy</a></div>
+        </div>
+        <figure class="detail-art"><div class="detail-art__frame"><img src="img/sudoku-icon.png" alt="Sudoku app artwork" /></div></figure>
+      </section>
+      <div class="detail-strip"><div class="detail-wrap"><span data-copy="strip1">Daily challenges</span><span data-copy="strip2">90 journey levels</span><span data-copy="strip3">14 game languages</span><span data-copy="strip4">Offline play</span></div></div>
+      <section class="detail-section detail-wrap"><p class="detail-section-label" data-copy="features">Features</p><h2 data-copy="featuresTitle">A thoughtful Sudoku experience</h2><div class="detail-grid">
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">▦</span><h3 data-copy="f1Title">Daily puzzles</h3><p data-copy="f1Body">Return each day for a new puzzle, revisit earlier dates, and build a completion streak.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">✦</span><h3 data-copy="f2Title">Journey mode</h3><p data-copy="f2Body">Advance through six chapters and 90 levels, earning up to three stars on each.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">◇</span><h3 data-copy="f3Title">Smart hints</h3><p data-copy="f3Body">Get an explanation of the logical move instead of an unexplained answer.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">◐</span><h3 data-copy="f4Title">Make it yours</h3><p data-copy="f4Body">Choose from three themes, track statistics and achievements, and play in 14 languages.</p></article>
+      </div></section>
+      <section class="detail-meta"><dl class="detail-wrap"><div><dt data-copy="developer">Developer</dt><dd>BieMTech</dd></div><div><dt data-copy="platform">Platform</dt><dd>Android</dd></div><div><dt data-copy="statusLabel">Status</dt><dd data-copy="statusPlain">In Development</dd></div><div><dt data-copy="package">Package</dt><dd>com.biemtech.sudoku</dd></div><div><dt data-copy="contactLabel">Contact</dt><dd><a href="mailto:info@biemtech.com">info@biemtech.com</a></dd></div></dl></section>
+    </main>
+    <footer class="detail-footer">© 2026 BieMTech · <a href="index.html" data-copy="home">Home</a> · <a href="privacy/sudoku/index.html" data-copy="policy">Privacy Policy</a></footer>
+    <script>
+      const copy = {
+        en: { about: "About", apps: "Apps", privacy: "Privacy", status: "● In Development", statusPlain: "In Development", tagline: "A fresh puzzle, every day.", description: "Play daily challenges, choose from Easy, Normal, and Hard quick games, or follow a 90-level journey. Smart hints explain the next logical step, and progress stays on your device.", contact: "Contact us for updates →", policy: "Privacy Policy", strip1: "Daily challenges", strip2: "90 journey levels", strip3: "14 game languages", strip4: "Offline play", features: "Features", featuresTitle: "A thoughtful Sudoku experience", f1Title: "Daily puzzles", f1Body: "Return each day for a new puzzle, revisit earlier dates, and build a completion streak.", f2Title: "Journey mode", f2Body: "Advance through six chapters and 90 levels, earning up to three stars on each.", f3Title: "Smart hints", f3Body: "Get an explanation of the logical move instead of an unexplained answer.", f4Title: "Make it yours", f4Body: "Choose from three themes, track statistics and achievements, and play in 14 languages.", developer: "Developer", platform: "Platform", statusLabel: "Status", package: "Package", contactLabel: "Contact", home: "Home" },
+        az: { about: "Haqqımızda", apps: "Tətbiqlər", privacy: "Məxfilik", status: "● Hazırlanır", statusPlain: "Hazırlanır", tagline: "Hər gün yeni tapmaca.", description: "Gündəlik tapmacaları həll edin, Asan, Normal və Çətin sürətli oyunlardan birini seçin və ya 90 səviyyəli Uğur yoluna çıxın. Ağıllı ipucları növbəti məntiqi addımı izah edir, irəliləyişiniz isə cihazınızda qalır.", contact: "Yeniliklər üçün bizə yazın →", policy: "Məxfilik siyasəti", strip1: "Gündəlik tapmacalar", strip2: "90 səviyyəli Uğur yolu", strip3: "Oyunda 14 dil", strip4: "Oflayn oyun", features: "Xüsusiyyətlər", featuresTitle: "Düşünülmüş Sudoku təcrübəsi", f1Title: "Gündəlik tapmacalar", f1Body: "Hər gün yeni tapmaca oynayın, əvvəlki günlərə qayıdın və ardıcıl tamamlama seriyası yaradın.", f2Title: "Uğur yolu", f2Body: "Altı fəsildə 90 səviyyəni keçin və hər birində üç ulduza qədər qazanın.", f3Title: "Ağıllı ipucları", f3Body: "Sadəcə cavabı deyil, növbəti məntiqi addımın izahını alın.", f4Title: "Özünüzə uyğunlaşdırın", f4Body: "Üç temadan birini seçin, statistika və nailiyyətlərinizi izləyin, 14 dildə oynayın.", developer: "Tərtibatçı", platform: "Platforma", statusLabel: "Status", package: "Paket", contactLabel: "Əlaqə", home: "Ana səhifə" }
+      };
+      const select = document.getElementById("lang-select");
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      function setLanguage(lang, persist = false) {
+        const selected = lang === "az" ? "az" : "en";
+        document.documentElement.lang = selected;
+        select.value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = copy[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      setLanguage(saved);
+      select.addEventListener("change", event => setLanguage(event.target.value, true));
+    </script>
+  </body>
+</html>

@@ -1564,6 +1564,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(70, 215, 197, 0.28);
 }
 
+.app-card__icon.sudoku {
+  background: #eff3fa;
+  box-shadow: 0 8px 24px rgba(73, 104, 160, 0.25);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

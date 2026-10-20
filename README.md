@@ -123,6 +123,13 @@ An Android live wallpaper collection with 100 animated horror scenes, favorites,
 - Package: `com.biemtech.wallpaper_alive`
 - Privacy Policy: https://biemtech.com/privacy/dark-alive/
 
+### Sudoku
+
+An offline portrait Sudoku game with daily puzzles, 90 journey levels, smart hints, achievements, and three themes. Currently in development.
+
+- Package: `com.biemtech.sudoku`
+- Privacy Policy: https://biemtech.com/privacy/sudoku/
+
 ## Contact
 
 - **General / Company:** info@biemtech.com
