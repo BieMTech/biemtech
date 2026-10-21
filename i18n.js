@@ -2059,6 +2059,22 @@ const NEW_APP_CARDS = {
 };
 for (const [lang, entries] of Object.entries(NEW_APP_CARDS)) Object.assign(I18N[lang], entries);
 
+const LID_TRAINER_CARDS = {
+  en: "Prepare for the Leben in Deutschland and naturalisation tests with official questions, focused practice, and realistic mock exams.",
+  az: "Rəsmi suallar, məqsədli məşq və real sınaq imtahanları ilə Leben in Deutschland və vətəndaşlıq testlərinə hazırlaş.",
+  ru: "Готовьтесь к тестам Leben in Deutschland и на гражданство: официальные вопросы, тренировка и пробные экзамены.",
+  tr: "Resmî sorular, odaklı çalışma ve gerçekçi deneme sınavlarıyla Leben in Deutschland ve vatandaşlık testlerine hazırlan.",
+  de: "Bereite dich mit offiziellen Fragen, gezieltem Üben und realistischen Probeprüfungen auf Leben in Deutschland und den Einbürgerungstest vor.",
+  fr: "Préparez les tests Leben in Deutschland et de naturalisation avec des questions officielles, des exercices ciblés et des examens blancs.",
+  es: "Prepárate para Leben in Deutschland y el examen de ciudadanía con preguntas oficiales, práctica y simulacros realistas.",
+  pt: "Prepare-se para o Leben in Deutschland e a prova de cidadania com questões oficiais, prática focada e simulados realistas.",
+  it: "Preparati ai test Leben in Deutschland e di cittadinanza con domande ufficiali, esercizi mirati e simulazioni realistiche.",
+  ar: "استعد لاختبار Leben in Deutschland واختبار التجنّس بأسئلة رسمية وتدريب مركّز وامتحانات تجريبية واقعية.",
+  zh: "通过官方题目、针对性练习和模拟考试，备考 Leben in Deutschland 与德国入籍考试。",
+  ja: "公式問題、重点練習、本番に近い模擬試験で Leben in Deutschland とドイツ帰化試験に備えましょう。"
+};
+for (const [lang, description] of Object.entries(LID_TRAINER_CARDS)) I18N[lang].lid_trainer_desc = description;
+
 const FOUNDER_PROFILES = {
   en: { cv_show: "View full CV", cv_download: "Download CV", cv_experience: "Experience", cv_education: "Education", cv_certs: "Certifications", cv_languages: "Languages", bahram_bio: "Frontend developer with 7 years of experience building fast, responsive web apps with React.js, JavaScript and TypeScript. At Kibrit he builds production web applications, including real-time in-browser calling with SIP.js (WebRTC). Before switching to software he studied business administration at UNEC, worked as a tax inspector, and lived and worked in Japan. Outside of work he builds mobile games with Godot.", mehman_bio: "Senior backend engineer in Berlin with nearly 10 years of experience building scalable systems with Java, Kotlin, Spring Boot and Kubernetes. At GLS/NXT he owns the backend services behind Purchase Flow and Track and Trace, and connects parcel lockers into the logistics operation. Before that he built EU-market features at Wayfair, led the escrow migration of nearly 2M accounts at Trade Republic and shipped eCommerce microservices at diconium. He started his career in Baku at GoldenPay and Kibrit." },
   az: { cv_show: "Tam CV-ni göstər", cv_download: "CV-ni yüklə", cv_experience: "İş təcrübəsi", cv_education: "Təhsil", cv_certs: "Sertifikatlar", cv_languages: "Dillər", bahram_bio: "React.js, JavaScript və TypeScript ilə sürətli, responsiv veb tətbiqlər hazırlayan, 7 illik təcrübəyə malik frontend proqramçı. Kibrit-də real istifadəçilərə xidmət edən veb tətbiqlər, o cümlədən SIP.js (WebRTC) ilə brauzerdaxili real vaxt zəngləri hazırlayır. Proqramlaşdırmaya keçməzdən əvvəl UNEC-də biznesin idarə edilməsi üzrə təhsil alıb, vergi müfəttişi işləyib, Yaponiyada yaşayıb və çalışıb. İşdən kənar vaxtlarda Godot ilə mobil oyunlar yaradır.", mehman_bio: "Berlində yaşayan, Java, Kotlin, Spring Boot və Kubernetes ilə miqyaslana bilən sistemlər quran, təxminən 10 illik təcrübəyə malik senior backend mühəndisi. GLS/NXT-də Purchase Flow və Track and Trace axınlarının arxasındakı backend servislərə cavabdehdir və bağlama terminallarını logistika əməliyyatlarına inteqrasiya edir. Daha əvvəl Wayfair-də Aİ bazarı üçün funksiyalar hazırlayıb, Trade Republic-də təxminən 2 milyon hesabın escrow miqrasiyasına rəhbərlik edib, diconium-da isə eCommerce mikroservisləri qurub. Karyerasına Bakıda GoldenPay və Kibrit-də başlayıb." },

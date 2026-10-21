@@ -1569,6 +1569,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(73, 104, 160, 0.25);
 }
 
+.app-card__icon.lid-trainer {
+  background: #4f46e5;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.3);
+}
+
 .app-card__top {
   display: flex;
   align-items: flex-start;

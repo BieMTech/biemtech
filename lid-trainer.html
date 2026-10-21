@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LiD Trainer is an Android study app in development for the Leben in Deutschland and German naturalisation tests." />
+    <title>LiD Trainer — BieMTech</title>
+    <link rel="icon" type="image/svg+xml" href="img/lid-trainer-icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app-detail.css" />
+    <style>
+      .app-detail--lid { --accent: #c7c3ff; --glow: #343188; --panel: #24233f; --border: #555484; }
+      .lid-preview { min-height: 390px; padding: clamp(24px, 5vw, 50px); border: 1px solid var(--border); border-radius: 24px; background: radial-gradient(circle at 86% 12%, #776bea55, transparent 15rem), #24233f; box-shadow: 0 26px 60px #0009; }
+      .lid-preview__eyebrow { margin: 0 0 25px; color: var(--accent); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+      .lid-preview__number { color: #fff; font-size: clamp(3.5rem, 8vw, 5.8rem); font-weight: 800; line-height: 1; letter-spacing: -.07em; }
+      .lid-preview__label { margin: 9px 0 31px; color: #e0dcff; font-size: 1.05rem; }
+      .lid-preview__line { height: 11px; margin: 12px 0; border-radius: 99px; background: #ffffff18; }
+      .lid-preview__line:nth-of-type(2) { width: 78%; }
+      .lid-preview__line:nth-of-type(3) { width: 91%; }
+      .lid-preview__line:nth-of-type(4) { width: 63%; }
+      .lid-preview__foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 32px; color: #c9c5ef; font-size: .85rem; }
+      .lid-note { max-width: 850px; margin: 0 auto; padding: 0 20px 62px; color: #cfcbe4; font-size: .88rem; line-height: 1.6; text-align: center; }
+    </style>
+  </head>
+  <body class="app-detail app-detail--lid">
+    <header class="navbar"><div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="BieMTech home"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+      <nav class="navbar__nav"><a href="index.html#about" data-copy="nav_about">About</a><a href="index.html#apps" data-copy="nav_apps">Apps</a><a href="privacy/lid-trainer/index.html" data-copy="nav_privacy">Privacy</a></nav>
+      <div class="navbar__actions"><select class="lang-select" id="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option><option value="de">DE</option></select></div>
+    </div></header>
+    <main>
+      <section class="detail-hero detail-wrap">
+        <div class="detail-copy">
+          <img class="detail-icon" src="img/lid-trainer-icon.svg" alt="LiD Trainer icon" width="100" height="100" />
+          <span class="detail-status" data-copy="status">● In Development</span>
+          <h1 class="detail-title">LiD Trainer</h1>
+          <p class="detail-tagline" data-copy="tagline">Learn with purpose. Walk into the test prepared.</p>
+          <p class="detail-description" data-copy="description">Study for the Leben in Deutschland and Einbürgerungstest with the official question catalogue, focused daily practice, clear explanations, and realistic mock exams.</p>
+          <div class="detail-actions"><a class="detail-button" href="mailto:info@biemtech.com" data-copy="contact_btn">Contact us for updates →</a><a class="detail-button detail-button--outline" href="privacy/lid-trainer/index.html" data-copy="privacy_btn">Privacy Policy</a></div>
+        </div>
+        <div class="lid-preview" aria-label="LiD Trainer study overview">
+          <p class="lid-preview__eyebrow" data-copy="preview_eyebrow">Study at your pace</p>
+          <div class="lid-preview__number">300 + 10</div>
+          <p class="lid-preview__label" data-copy="preview_label">General questions + questions for your Bundesland</p>
+          <div class="lid-preview__line"></div><div class="lid-preview__line"></div><div class="lid-preview__line"></div>
+          <div class="lid-preview__foot"><span data-copy="preview_one">Daily practice</span><span data-copy="preview_two">33-question mock exams</span></div>
+        </div>
+      </section>
+      <div class="detail-strip"><div class="detail-wrap"><span data-copy="strip_one">Android study app</span><span data-copy="strip_two">Official question catalogue</span><span data-copy="strip_three">Offline learning</span><span data-copy="strip_four">No account required</span></div></div>
+      <section class="detail-section detail-wrap"><p class="detail-section-label" data-copy="features_label">Features</p><h2 data-copy="features_title">A focused path to test day</h2><div class="detail-grid">
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">◎</span><h3 data-copy="f1_title">Practice what matters</h3><p data-copy="f1_desc">Spaced repetition puts mistakes and due reviews before new questions.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">▤</span><h3 data-copy="f2_title">Realistic mock exams</h3><p data-copy="f2_desc">A timed 33-question exam uses German questions and the selected Bundesland.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">◈</span><h3 data-copy="f3_title">Understand each answer</h3><p data-copy="f3_desc">Simple German and English explanations, with optional helper translations.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">↗</span><h3 data-copy="f4_title">See your progress</h3><p data-copy="f4_desc">Review accuracy, bookmarks, study activity, and exam history on your device.</p></article>
+      </div></section>
+      <p class="lid-note" data-copy="disclaimer">LiD Trainer is an independent learning aid by BieMTech and is not an official BAMF app. Explanations and translations are for study support, not legal advice.</p>
+      <section class="detail-meta"><dl class="detail-wrap"><div><dt data-copy="meta_developer">Developer</dt><dd>BieMTech</dd></div><div><dt data-copy="meta_platform">Platform</dt><dd>Android</dd></div><div><dt data-copy="meta_status">Status</dt><dd data-copy="status_plain">In Development</dd></div><div><dt data-copy="meta_package">Package</dt><dd>com.biemtech.lid</dd></div><div><dt data-copy="meta_contact">Contact</dt><dd><a href="mailto:info@biemtech.com">info@biemtech.com</a></dd></div></dl></section>
+    </main>
+    <footer class="detail-footer">© 2026 BieMTech · <a href="index.html" data-copy="home">Home</a> · <a href="privacy/lid-trainer/index.html" data-copy="privacy_btn">Privacy Policy</a></footer>
+    <script>
+      const copy = {
+        en: { nav_about: "About", nav_apps: "Apps", nav_privacy: "Privacy", status: "● In Development", status_plain: "In Development", tagline: "Learn with purpose. Walk into the test prepared.", description: "Study for the Leben in Deutschland and Einbürgerungstest with the official question catalogue, focused daily practice, clear explanations, and realistic mock exams.", contact_btn: "Contact us for updates →", privacy_btn: "Privacy Policy", preview_eyebrow: "Study at your pace", preview_label: "General questions + questions for your Bundesland", preview_one: "Daily practice", preview_two: "33-question mock exams", strip_one: "Android study app", strip_two: "Official question catalogue", strip_three: "Offline learning", strip_four: "No account required", features_label: "Features", features_title: "A focused path to test day", f1_title: "Practice what matters", f1_desc: "Spaced repetition puts mistakes and due reviews before new questions.", f2_title: "Realistic mock exams", f2_desc: "A timed 33-question exam uses German questions and the selected Bundesland.", f3_title: "Understand each answer", f3_desc: "Simple German and English explanations, with optional helper translations.", f4_title: "See your progress", f4_desc: "Review accuracy, bookmarks, study activity, and exam history on your device.", disclaimer: "LiD Trainer is an independent learning aid by BieMTech and is not an official BAMF app. Explanations and translations are for study support, not legal advice.", meta_developer: "Developer", meta_platform: "Platform", meta_status: "Status", meta_package: "Package", meta_contact: "Contact", home: "Home" },
+        az: { nav_about: "Haqqımızda", nav_apps: "Tətbiqlər", nav_privacy: "Məxfilik", status: "● Hazırlanır", status_plain: "Hazırlanır", tagline: "Məqsədlə öyrən. İmtahana hazır get.", description: "Leben in Deutschland və vətəndaşlıq imtahanına rəsmi sual kataloqu, gündəlik məşq, aydın izahlar və real sınaq imtahanları ilə hazırlaş.", contact_btn: "Yeniliklər üçün əlaqə saxla →", privacy_btn: "Məxfilik siyasəti", preview_eyebrow: "Öz tempində öyrən", preview_label: "Ümumi suallar + seçdiyin federal əyalətin sualları", preview_one: "Gündəlik məşq", preview_two: "33 suallıq sınaq imtahanı", strip_one: "Android təhsil tətbiqi", strip_two: "Rəsmi sual kataloqu", strip_three: "Oflayn öyrənmə", strip_four: "Hesab tələb olunmur", features_label: "Xüsusiyyətlər", features_title: "İmtahan gününə məqsədli hazırlıq", f1_title: "Vacib sualları məşq et", f1_desc: "Aralı təkrar sistemi səhvləri və təkrar vaxtı çatmış sualları önə çəkir.", f2_title: "Real sınaq imtahanları", f2_desc: "Vaxt məhdudiyyətli 33 suallıq imtahan alman dilindədir və seçilmiş əyaləti əhatə edir.", f3_title: "Cavabları anla", f3_desc: "Sadə alman və ingilis dilində izahlar, istəyə bağlı köməkçi tərcümələr.", f4_title: "İrəliləyişini gör", f4_desc: "Dəqiqliyə, əlfəcinlərə, məşq fəaliyyətinə və imtahan tarixçəsinə cihazında bax.", disclaimer: "LiD Trainer BieMTech-in müstəqil öyrənmə vasitəsidir, rəsmi BAMF tətbiqi deyil. İzahlar və tərcümələr öyrənməyə kömək üçündür, hüquqi məsləhət deyil.", meta_developer: "Tərtibatçı", meta_platform: "Platforma", meta_status: "Status", meta_package: "Paket", meta_contact: "Əlaqə", home: "Ana səhifə" },
+        de: { nav_about: "Über uns", nav_apps: "Apps", nav_privacy: "Datenschutz", status: "● In Entwicklung", status_plain: "In Entwicklung", tagline: "Gezielt lernen. Gut vorbereitet zur Prüfung.", description: "Bereite dich mit dem offiziellen Fragenkatalog, täglichem Üben, verständlichen Erklärungen und realistischen Probeprüfungen auf Leben in Deutschland und den Einbürgerungstest vor.", contact_btn: "Für Neuigkeiten kontaktieren →", privacy_btn: "Datenschutzerklärung", preview_eyebrow: "Lerne in deinem Tempo", preview_label: "Allgemeine Fragen + Fragen zu deinem Bundesland", preview_one: "Tägliches Üben", preview_two: "Probeprüfungen mit 33 Fragen", strip_one: "Android Lernapp", strip_two: "Offizieller Fragenkatalog", strip_three: "Offline lernen", strip_four: "Kein Konto erforderlich", features_label: "Funktionen", features_title: "Gezielt auf den Prüfungstag vorbereiten", f1_title: "Das Wichtige üben", f1_desc: "Wiederholungen und falsch beantwortete Fragen kommen vor neuen Fragen.", f2_title: "Realistische Probeprüfungen", f2_desc: "Eine Prüfung mit Zeitlimit umfasst 33 deutsche Fragen und dein gewähltes Bundesland.", f3_title: "Antworten verstehen", f3_desc: "Einfache Erklärungen auf Deutsch und Englisch sowie optionale Übersetzungen.", f4_title: "Fortschritt sehen", f4_desc: "Sieh dir Trefferquote, Lesezeichen, Lernaktivität und Prüfungsverlauf auf deinem Gerät an.", disclaimer: "LiD Trainer ist eine unabhängige Lernhilfe von BieMTech und keine offizielle BAMF-App. Erklärungen und Übersetzungen dienen dem Lernen und sind keine Rechtsberatung.", meta_developer: "Entwickler", meta_platform: "Plattform", meta_status: "Status", meta_package: "Paket", meta_contact: "Kontakt", home: "Startseite" }
+      };
+      const select = document.getElementById("lang-select");
+      let saved = "en";
+      try { saved = localStorage.getItem("biemtech-lang") || localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      if (!copy[saved]) saved = copy[(navigator.language || "en").slice(0, 2)] ? (navigator.language || "en").slice(0, 2) : "en";
+      function setLanguage(lang, persist = false) {
+        const selected = copy[lang] ? lang : "en";
+        document.documentElement.lang = selected;
+        select.value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = copy[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("biemtech-lang", selected); localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      setLanguage(saved);
+      select.addEventListener("change", event => setLanguage(event.target.value, true));
+    </script>
+  </body>
+</html>
