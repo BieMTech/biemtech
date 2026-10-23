@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Coil is a real-time multiplayer snake arena game in development at BieMTech. Collect orbs, grow, boost, and climb the leaderboard." />
+    <meta name="theme-color" content="#071a27" />
+    <meta property="og:title" content="Coil — BieMTech" />
+    <meta property="og:description" content="A real-time multiplayer snake arena game in development." />
+    <meta property="og:image" content="https://biemtech.com/img/coil-feature.png" />
+    <title>Coil — BieMTech</title>
+    <link rel="icon" type="image/png" href="img/coil-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app-detail.css" />
+    <style>
+      .app-detail--coil { --accent: #64e5ee; --glow: #12475a; --panel: #112c3b; --border: #326271; background-color: #071a27; }
+      .app-detail--coil .detail-art img { aspect-ratio: 16 / 9; object-fit: cover; }
+      .app-detail--coil .detail-art figcaption { color: #b8d2d6; }
+    </style>
+  </head>
+  <body class="app-detail app-detail--coil">
+    <header class="navbar"><div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+      <nav class="navbar__nav"><a href="index.html#about" data-copy="about">About</a><a href="index.html#apps" data-copy="apps">Apps</a><a href="privacy/coil/index.html" data-copy="privacy">Privacy</a></nav>
+      <div class="navbar__actions"><select class="lang-select" id="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select></div>
+    </div></header>
+    <main>
+      <section class="detail-hero detail-wrap">
+        <div class="detail-copy">
+          <img class="detail-icon" src="img/coil-icon.png" alt="Coil concept icon" width="100" height="100" />
+          <span class="detail-status" data-copy="status">● In Development</span>
+          <h1 class="detail-title">Coil</h1>
+          <p class="detail-tagline" data-copy="tagline">Eat. Grow. Boost. Survive.</p>
+          <p class="detail-description" data-copy="description">Enter a shared arena as a colorful worm. Collect glowing orbs to grow, spend mass to boost, and outmaneuver other players. See how high you can climb on the live leaderboard.</p>
+          <div class="detail-actions"><a class="detail-button" href="mailto:info@biemtech.com" data-copy="contact">Contact us for updates →</a><a class="detail-button detail-button--outline" href="privacy/coil/index.html" data-copy="policy">Privacy Policy</a></div>
+        </div>
+        <figure class="detail-art"><img src="img/coil-feature.png" alt="Concept illustration of colorful worms collecting glowing orbs in a multiplayer arena" /><figcaption data-copy="artNote">Concept artwork — final game visuals may change.</figcaption></figure>
+      </section>
+      <div class="detail-strip"><div class="detail-wrap"><span data-copy="strip1">Real-time multiplayer</span><span data-copy="strip2">Grow and boost</span><span data-copy="strip3">Leaderboards</span><span data-copy="strip4">Web and Android in development</span></div></div>
+      <section class="detail-section detail-wrap"><p class="detail-section-label" data-copy="features">Features</p><h2 data-copy="featuresTitle">A fast arena, one more run</h2><div class="detail-grid">
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">◎</span><h3 data-copy="f1Title">Shared arena</h3><p data-copy="f1Body">Play in real time with other worms. Steer around rivals and stay inside the arena.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">✦</span><h3 data-copy="f2Title">Collect and grow</h3><p data-copy="f2Body">Pick up glowing food and claim the orbs left behind when a worm is eliminated.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">↗</span><h3 data-copy="f3Title">Risky boost</h3><p data-copy="f3Body">Trade some of your mass for speed to escape danger or make a move.</p></article>
+        <article class="detail-feature"><span class="feature-icon" aria-hidden="true">★</span><h3 data-copy="f4Title">Chase a record</h3><p data-copy="f4Body">Follow the live standings and compare your best runs on daily, monthly, and all-time boards.</p></article>
+      </div></section>
+      <section class="detail-meta"><dl class="detail-wrap"><div><dt data-copy="developer">Developer</dt><dd>BieMTech</dd></div><div><dt data-copy="platform">Platforms</dt><dd data-copy="platformValue">Web, Android (online and offline builds)</dd></div><div><dt data-copy="statusLabel">Status</dt><dd data-copy="statusPlain">In Development</dd></div><div><dt data-copy="nameLabel">Name</dt><dd data-copy="nameValue">Working title</dd></div><div><dt data-copy="contactLabel">Contact</dt><dd><a href="mailto:info@biemtech.com">info@biemtech.com</a></dd></div></dl></section>
+    </main>
+    <footer class="detail-footer">© 2026 BieMTech · <a href="index.html" data-copy="home">Home</a> · <a href="privacy/coil/index.html" data-copy="policy">Privacy Policy</a></footer>
+    <script>
+      const copy = {
+        en: { about: "About", apps: "Apps", privacy: "Privacy", status: "● In Development", statusPlain: "In Development", tagline: "Eat. Grow. Boost. Survive.", description: "Enter a shared arena as a colorful worm. Collect glowing orbs to grow, spend mass to boost, and outmaneuver other players. See how high you can climb on the live leaderboard.", contact: "Contact us for updates →", policy: "Privacy Policy", artNote: "Concept artwork — final game visuals may change.", strip1: "Real-time multiplayer", strip2: "Grow and boost", strip3: "Leaderboards", strip4: "Web and Android in development", features: "Features", featuresTitle: "A fast arena, one more run", f1Title: "Shared arena", f1Body: "Play in real time with other worms. Steer around rivals and stay inside the arena.", f2Title: "Collect and grow", f2Body: "Pick up glowing food and claim the orbs left behind when a worm is eliminated.", f3Title: "Risky boost", f3Body: "Trade some of your mass for speed to escape danger or make a move.", f4Title: "Chase a record", f4Body: "Follow the live standings and compare your best runs on daily, monthly, and all-time boards.", developer: "Developer", platform: "Platforms", platformValue: "Web, Android (online and offline builds)", statusLabel: "Status", nameLabel: "Name", nameValue: "Working title", contactLabel: "Contact", home: "Home" },
+        az: { about: "Haqqımızda", apps: "Tətbiqlər", privacy: "Məxfilik", status: "● Hazırlanır", statusPlain: "Hazırlanır", tagline: "Topla. Böyü. Sürətlən. Sağ qal.", description: "Rəngarəng ilanla ortaq arenaya daxil ol. Parlaq kürələri toplayıb böyü, sürətlənmək üçün kütlənin bir hissəsini xərclə və digər oyunçuları üstələ. Canlı liderlər cədvəlində yüksəl.", contact: "Yeniliklər üçün bizə yazın →", policy: "Məxfilik siyasəti", artNote: "Konsept təsviri — oyunun son görünüşü dəyişə bilər.", strip1: "Real vaxtlı çoxoyunçulu oyun", strip2: "Böyümə və sürətlənmə", strip3: "Liderlər cədvəli", strip4: "Veb və Android hazırlanır", features: "Xüsusiyyətlər", featuresTitle: "Sürətli arena, yeni bir cəhd", f1Title: "Ortaq arena", f1Body: "Digər ilanlarla real vaxtda oyna. Rəqiblərdən yayın və arena sərhədləri daxilində qal.", f2Title: "Topla və böyü", f2Body: "Parlaq qidaları və oyundan çıxan ilanların buraxdığı kürələri topla.", f3Title: "Riskli sürətlənmə", f3Body: "Təhlükədən qaçmaq və ya fürsət qazanmaq üçün kütlənin bir hissəsini sürətə dəyiş.", f4Title: "Rekord qazan", f4Body: "Canlı sıralamanı izlə və ən yaxşı nəticələrini gündəlik, aylıq və ümumi cədvəllərdə müqayisə et.", developer: "Tərtibatçı", platform: "Platformalar", platformValue: "Veb, Android (onlayn və oflayn versiyalar)", statusLabel: "Status", nameLabel: "Ad", nameValue: "İşçi ad", contactLabel: "Əlaqə", home: "Ana səhifə" }
+      };
+      const select = document.getElementById("lang-select");
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      function setLanguage(lang, persist = false) {
+        const selected = lang === "az" ? "az" : "en";
+        document.documentElement.lang = selected;
+        select.value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = copy[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      setLanguage(saved);
+      select.addEventListener("change", event => setLanguage(event.target.value, true));
+    </script>
+  </body>
+</html>

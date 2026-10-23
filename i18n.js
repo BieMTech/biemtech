@@ -2091,6 +2091,22 @@ const FOUNDER_PROFILES = {
 };
 for (const [lang, entries] of Object.entries(FOUNDER_PROFILES)) Object.assign(I18N[lang], entries);
 
+const COIL_CARDS = {
+  en: "Enter a real-time multiplayer arena, collect glowing orbs, grow your worm, and climb the leaderboard.",
+  az: "Real vaxtlı çoxoyunçulu arenaya qoşul, parlaq kürələri topla, ilanını böyüt və liderlər cədvəlində yüksəl.",
+  ru: "Выходите на многопользовательскую арену в реальном времени, собирайте светящиеся сферы, растите змейку и поднимайтесь в таблице лидеров.",
+  tr: "Gerçek zamanlı çok oyunculu arenaya gir, parlayan küreleri topla, yılanını büyüt ve liderlik tablosunda yüksel.",
+  de: "Betritt eine Multiplayer-Arena in Echtzeit, sammle leuchtende Kugeln, lass deine Schlange wachsen und steige in der Bestenliste auf.",
+  fr: "Entrez dans une arène multijoueur en temps réel, ramassez des orbes lumineux, faites grandir votre serpent et grimpez au classement.",
+  es: "Entra en una arena multijugador en tiempo real, recoge orbes brillantes, haz crecer tu serpiente y sube en la clasificación.",
+  pt: "Entre numa arena multijogador em tempo real, apanhe orbes brilhantes, faça a sua cobra crescer e suba na classificação.",
+  it: "Entra in un'arena multigiocatore in tempo reale, raccogli sfere luminose, fai crescere il tuo serpente e scala la classifica.",
+  ar: "ادخل ساحة متعددة اللاعبين في الوقت الفعلي، واجمع الكرات المضيئة، وزد طول ثعبانك، وتقدم في لوحة الصدارة.",
+  zh: "进入实时多人竞技场，收集发光能量球，让你的蛇不断成长，冲击排行榜。",
+  ja: "リアルタイムのマルチプレイヤーアリーナで光るオーブを集め、ヘビを成長させてランキングを上げよう。"
+};
+for (const [lang, description] of Object.entries(COIL_CARDS)) I18N[lang].coil_desc = description;
+
 /* ── Lang switcher HTML ────────────────────────────────── */
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">

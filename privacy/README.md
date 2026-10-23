@@ -24,6 +24,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | Squad Surge: Army Multiplier | EN, AZ | [View](https://biemtech.com/privacy/squad-surge/) |
 | Dark Alive (Wallpaper Alive) | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/dark-alive/) |
 | LiD Trainer | EN, AZ, DE | [View](https://biemtech.com/privacy/lid-trainer/) |
+| Coil | EN, AZ | [View](https://biemtech.com/privacy/coil/) |
 
 ---
 
@@ -45,6 +46,7 @@ temple-vanguard/index.html
 squad-surge/index.html
 dark-alive/index.html
 lid-trainer/index.html
+coil/index.html
 ```
 
 ## Contact

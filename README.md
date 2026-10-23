@@ -22,6 +22,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `dark-alive.html`         | Dark Alive (Wallpaper Alive) app page            |
 | `penguin-sled-rush.html`  | Penguin Sled: Aurora Run app page                |
 | `style.css`               | Shared stylesheet for all pages                  |
+| `coil.html`               | Coil game page (in development)                 |
 
 ## Apps
 
@@ -129,6 +130,13 @@ An offline portrait Sudoku game with daily puzzles, 90 journey levels, smart hin
 
 - Package: `com.biemtech.sudoku`
 - Privacy Policy: https://biemtech.com/privacy/sudoku/
+
+### Coil
+
+A real-time multiplayer snake arena game with web and Android clients, plus a separate offline Android build. Currently in development; Coil is a working title. The site uses temporary concept artwork.
+
+- Online Android package: `com.biemtech.coil`
+- Privacy Policy: https://biemtech.com/privacy/coil/
 
 ## Contact
 
