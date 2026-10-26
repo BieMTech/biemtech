@@ -761,7 +761,7 @@ body::after {
 }
 
 /* ── Orbit arm system ─────────────────────────────────── */
-/* Eleven arms rotate around the 480×480 orbit center (240,240). */
+/* Fourteen arms rotate around the 480×480 orbit center (240,240). */
 /* Item is pinned at top (12 o'clock, radius 194) and        */
 /* counter-rotates to stay visually upright.                 */
 /* animation-delay sets the starting clock position.         */
@@ -773,7 +773,7 @@ body::after {
   top: 0;
   left: 0;
   transform-origin: 240px 240px;
-  animation: spinRing 27.5s linear infinite;
+  animation: spinRing 35s linear infinite;
   animation-delay: var(--od, 0s);
   pointer-events: none;
   z-index: 5;
@@ -802,8 +802,8 @@ body::after {
   left: 240px;
   transform: translateX(-50%) translateY(-50%);
   animation:
-    counterSpin 27.5s linear infinite,
-    orbitDepth 27.5s ease-in-out infinite;
+    counterSpin 35s linear infinite,
+    orbitDepth 35s ease-in-out infinite;
   animation-delay: var(--od, 0s), var(--od, 0s);
   pointer-events: auto;
   will-change: transform, opacity;
@@ -1562,6 +1562,16 @@ body::after {
 .app-card__icon.penguin-sled-rush {
   background: linear-gradient(135deg, #12366a 0%, #46d7c5 100%);
   box-shadow: 0 8px 24px rgba(70, 215, 197, 0.28);
+}
+
+.app-card__icon.pocket-highway {
+  background: linear-gradient(135deg, #ffd65c 0%, #ff851b 100%);
+  box-shadow: 0 8px 24px rgba(255, 133, 27, 0.28);
+}
+
+.app-card__icon.kitefall {
+  background: linear-gradient(135deg, #f5bba2 0%, #70a6d6 100%);
+  box-shadow: 0 8px 24px rgba(84, 127, 174, 0.28);
 }
 
 .app-card__icon.sudoku {

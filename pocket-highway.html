@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff5df" />
+    <title>Pocket Highway — BieMTech</title>
+    <meta name="description" content="Pocket Highway is a miniature Android racing game with the Forest Cup, Endless and Daily Challenge modes, and 24 collectible cars." />
+    <meta property="og:title" content="Pocket Highway — BieMTech" />
+    <meta property="og:description" content="A little road. A big race. Meet Pocket Highway, the miniature Android racer from BieMTech." />
+    <meta property="og:image" content="https://biemtech.com/img/pocket-highway-race.jpg" />
+    <link rel="icon" type="image/png" href="img/pocket-highway-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root { --ph-ink: #183348; --ph-muted: #4d6470; --ph-orange: #ff8b24; --ph-sky: #1bb8d8; --ph-cream: #fff5df; }
+      body { color: var(--ph-ink); background: var(--ph-cream); }
+      .navbar { background: rgba(255, 245, 223, .94); }
+      .ph-hero { position: relative; overflow: hidden; padding: clamp(48px, 8vw, 106px) 0 88px; background: radial-gradient(circle at 72% 12%, #fff 0, transparent 32%), linear-gradient(180deg, #fff7e6, #ffeac6); }
+      .ph-hero::after { content: ""; position: absolute; inset: auto 0 0; height: 12px; background: repeating-linear-gradient(90deg, var(--ph-ink) 0 42px, transparent 42px 76px); opacity: .13; }
+      .ph-hero__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); gap: clamp(30px, 6vw, 90px); align-items: center; }
+      .ph-kicker { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 25px; color: var(--ph-muted); font-size: 13px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+      .ph-kicker img { width: 48px; height: 48px; border-radius: 12px; box-shadow: 0 8px 20px rgba(210, 110, 19, .2); }
+      .ph-hero h1 { max-width: 620px; margin: 0; color: var(--ph-ink); font-size: clamp(3.5rem, 8vw, 7.4rem); line-height: .91; letter-spacing: -.075em; }
+      .ph-hero h1 span { color: #e87513; }
+      .ph-tagline { margin: 28px 0 12px; font-size: clamp(1.2rem, 2vw, 1.55rem); font-weight: 800; }
+      .ph-intro { max-width: 560px; margin: 0; color: var(--ph-muted); font-size: 1.03rem; line-height: 1.75; }
+      .ph-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 31px; }
+      .ph-button { display: inline-flex; align-items: center; justify-content: center; min-height: 47px; padding: 11px 20px; border-radius: 13px; font-weight: 800; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+      .ph-button:hover { transform: translateY(-2px); }
+      .ph-button:focus-visible { outline: 3px solid var(--ph-sky); outline-offset: 3px; }
+      .ph-button--primary { color: #fff; background: var(--ph-ink); box-shadow: 0 10px 25px rgba(24, 51, 72, .18); }
+      .ph-button--secondary { color: var(--ph-ink); border: 1px solid rgba(24, 51, 72, .25); background: rgba(255, 255, 255, .6); }
+      .ph-hero__art { width: min(100%, 380px); margin: 0 auto; padding: 10px; border: 1px solid rgba(24, 51, 72, .15); border-radius: 32px; background: #fff; box-shadow: 0 30px 70px rgba(81, 59, 29, .22); transform: rotate(3deg); }
+      .ph-hero__art img { display: block; width: 100%; height: auto; border-radius: 23px; }
+      .ph-section { padding: 84px 0; }
+      .ph-section h2 { margin: 0 0 28px; color: var(--ph-ink); font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.05em; }
+      .ph-modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .ph-mode { padding: 29px; border: 1px solid rgba(24, 51, 72, .12); border-radius: 22px; background: #fffdf8; box-shadow: 0 12px 35px rgba(81, 59, 29, .06); }
+      .ph-mode__num { display: inline-block; margin-bottom: 18px; color: #dc7318; font-size: 13px; font-weight: 900; letter-spacing: .1em; }
+      .ph-mode h3 { margin: 0 0 10px; color: var(--ph-ink); font-size: 1.28rem; }
+      .ph-mode p { margin: 0; color: var(--ph-muted); line-height: 1.68; }
+      .ph-gallery { padding: 78px 0 90px; background: #dff5f5; }
+      .ph-gallery__heading { max-width: 620px; margin-bottom: 32px; }
+      .ph-gallery__heading p { color: var(--ph-muted); line-height: 1.7; }
+      .ph-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 3vw, 32px); max-width: 960px; }
+      .ph-shots figure { margin: 0; }
+      .ph-shots img { display: block; width: 100%; height: auto; border: 7px solid #fff; border-radius: 22px; box-shadow: 0 15px 35px rgba(24, 51, 72, .16); }
+      .ph-shots figcaption { padding: 12px 4px 0; color: var(--ph-ink); font-size: .93rem; font-weight: 750; text-align: center; }
+      .ph-note { padding: 65px 0; text-align: center; }
+      .ph-note p { max-width: 620px; margin: 0 auto 22px; color: var(--ph-muted); line-height: 1.7; }
+      .ph-footer { padding: 28px 20px; border-top: 1px solid rgba(24, 51, 72, .14); color: var(--ph-muted); text-align: center; font-size: .9rem; }
+      .ph-footer a { color: var(--ph-ink); }
+      @media (max-width: 780px) { .ph-hero__grid { grid-template-columns: 1fr; } .ph-hero__art { grid-row: 1; width: min(65%, 260px); transform: rotate(2deg); } .ph-modes { grid-template-columns: 1fr; } }
+      @media (max-width: 520px) { .ph-hero { padding-top: 36px; } .ph-shots { gap: 8px; } .ph-shots img { border-width: 3px; border-radius: 12px; } .ph-shots figcaption { font-size: .76rem; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+        <nav class="navbar__nav"><a href="index.html#apps" data-copy="apps">Apps</a><a href="privacy/pocket-highway/index.html" data-copy="privacy">Privacy</a></nav>
+        <div class="navbar__actions"><select id="lang-select" class="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select></div>
+      </div>
+    </header>
+    <main>
+      <section class="ph-hero">
+        <div class="container ph-hero__grid">
+          <div>
+            <div class="ph-kicker"><img src="img/pocket-highway-icon.png" alt="" /><span data-copy="status">Android game · In development</span></div>
+            <h1>Pocket<br /><span>Highway</span></h1>
+            <p class="ph-tagline" data-copy="tagline">A little road. A big race.</p>
+            <p class="ph-intro" data-copy="intro">Take the wheel of a toy car and race through a bright miniature world. Overtake traffic, master the bends, and collect new cars for your garage.</p>
+            <div class="ph-actions">
+              <a class="ph-button ph-button--primary" href="#gameplay" data-copy="explore">Explore the game ↓</a>
+              <a class="ph-button ph-button--secondary" href="privacy/pocket-highway/index.html" data-copy="policy">Privacy Policy</a>
+            </div>
+          </div>
+          <figure class="ph-hero__art"><img src="img/pocket-highway-race.jpg" alt="Pocket Highway race on the Lake Bridge" /></figure>
+        </div>
+      </section>
+      <section class="ph-section" id="gameplay">
+        <div class="container">
+          <h2 data-copy="modes">Pick your drive</h2>
+          <div class="ph-modes">
+            <article class="ph-mode"><span class="ph-mode__num">01 / CUP</span><h3 data-copy="cupTitle">Forest Cup</h3><p data-copy="cupBody">Race through Pine Bend, Lake Bridge, and Village Sprint against three rival drivers.</p></article>
+            <article class="ph-mode"><span class="ph-mode__num">02 / ENDLESS</span><h3 data-copy="endlessTitle">Endless road</h3><p data-copy="endlessBody">Drive as far as you can, make clean passes, and chase a new best score.</p></article>
+            <article class="ph-mode"><span class="ph-mode__num">03 / DAILY</span><h3 data-copy="dailyTitle">Daily Challenge</h3><p data-copy="dailyBody">Return for a fresh route, daily target, and missions that reward your progress.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="ph-gallery">
+        <div class="container">
+          <div class="ph-gallery__heading"><h2 data-copy="garageTitle">Build your dream garage</h2><p data-copy="garageBody">Collect 24 cars, choose your favourite, and make it yours with stripes and wheels. Steering wheel, drag pad, and tilt controls let you drive your way.</p></div>
+          <div class="ph-shots">
+            <figure><img src="img/pocket-highway-home.jpg" loading="lazy" alt="Pocket Highway home screen" /><figcaption data-copy="shotHome">Your car, ready to drive</figcaption></figure>
+            <figure><img src="img/pocket-highway-race.jpg" loading="lazy" alt="Pocket Highway race on the Lake Bridge" /><figcaption data-copy="shotRace">Race through the Forest Cup</figcaption></figure>
+            <figure><img src="img/pocket-highway-garage.jpg" loading="lazy" alt="Pocket Highway car collection in the garage" /><figcaption data-copy="shotGarage">24 cars to collect</figcaption></figure>
+          </div>
+        </div>
+      </section>
+      <section class="ph-note"><div class="container"><h2 data-copy="offlineTitle">Made for the open road</h2><p data-copy="offlineBody">Pocket Highway plays offline. Progress and settings are saved on your device. The current version has no ads or in-app purchases.</p><a class="ph-button ph-button--secondary" href="mailto:info@biemtech.com" data-copy="contact">Contact us for updates →</a></div></section>
+    </main>
+    <footer class="ph-footer">© 2026 BieMTech · <a href="index.html" data-copy="home">Home</a> · <a href="privacy/pocket-highway/index.html" data-copy="policy">Privacy Policy</a></footer>
+    <script>
+      const COPY = {
+        en: { apps: "Apps", privacy: "Privacy", status: "Android game · In development", tagline: "A little road. A big race.", intro: "Take the wheel of a toy car and race through a bright miniature world. Overtake traffic, master the bends, and collect new cars for your garage.", explore: "Explore the game ↓", policy: "Privacy Policy", modes: "Pick your drive", cupTitle: "Forest Cup", cupBody: "Race through Pine Bend, Lake Bridge, and Village Sprint against three rival drivers.", endlessTitle: "Endless road", endlessBody: "Drive as far as you can, make clean passes, and chase a new best score.", dailyTitle: "Daily Challenge", dailyBody: "Return for a fresh route, daily target, and missions that reward your progress.", garageTitle: "Build your dream garage", garageBody: "Collect 24 cars, choose your favourite, and make it yours with stripes and wheels. Steering wheel, drag pad, and tilt controls let you drive your way.", shotHome: "Your car, ready to drive", shotRace: "Race through the Forest Cup", shotGarage: "24 cars to collect", offlineTitle: "Made for the open road", offlineBody: "Pocket Highway plays offline. Progress and settings are saved on your device. The current version has no ads or in-app purchases.", contact: "Contact us for updates →", home: "Home" },
+        az: { apps: "Tətbiqlər", privacy: "Məxfilik", status: "Android oyunu · Hazırlanır", tagline: "Kiçik yol. Böyük yarış.", intro: "Oyuncaq maşının sükanına keç və rəngarəng miniatür dünyada yarış. Nəqliyyatı ötməyi, döngələri keçməyi öyrən və qarajın üçün yeni maşınlar topla.", explore: "Oyunu kəşf et ↓", policy: "Məxfilik siyasəti", modes: "Yarışını seç", cupTitle: "Meşə Kuboku", cupBody: "Şam Döngəsi, Göl Körpüsü və Kənd Sprinti marşrutlarında üç rəqibə qarşı yarış.", endlessTitle: "Sonsuz yol", endlessBody: "Bacardığın qədər uzağa sür, təhlükəsiz ötmələr et və yeni rekord qır.", dailyTitle: "Gündəlik Çağırış", dailyBody: "Hər gün yeni marşrut, hədəf və irəliləyişinə görə mükafat verən tapşırıqlar səni gözləyir.", garageTitle: "Xəyalındakı qarajı qur", garageBody: "24 maşın topla, sevdiyini seç, zolaqlar və təkərlərlə görünüşünü dəyiş. Sükan, toxunma paneli və telefonu əyərək idarəetmə arasından seçim et.", shotHome: "Maşının sürüşə hazırdır", shotRace: "Meşə Kubokunda yarış", shotGarage: "Toplanacaq 24 maşın", offlineTitle: "Yola hazır", offlineBody: "Pocket Highway oflayn oynanır. İrəliləyiş və ayarlar cihazında saxlanılır. Hazırkı versiyada reklam və tətbiqdaxili alış yoxdur.", contact: "Yeniliklər üçün əlaqə saxla →", home: "Ana səhifə" }
+      };
+      function setPageLang(lang, persist = false) {
+        const selected = COPY[lang] ? lang : "en";
+        document.documentElement.lang = selected;
+        document.getElementById("lang-select").value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = COPY[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      setPageLang(saved);
+      document.getElementById("lang-select").addEventListener("change", event => setPageLang(event.target.value, true));
+    </script>
+  </body>
+</html>

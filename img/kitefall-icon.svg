@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Kitefall</title>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1">
+      <stop stop-color="#f5bba2"/>
+      <stop offset="1" stop-color="#70a6d6"/>
+    </linearGradient>
+    <clipPath id="rounded"><rect width="512" height="512" rx="94"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <circle cx="394" cy="106" r="46" fill="#fff8d8"/>
+    <path d="M0 320 82 225 161 302 255 183 360 297 454 214 512 275v237H0Z" fill="#7fa8cd"/>
+    <path d="M0 354 111 272 191 347 313 248 430 339 512 285v227H0Z" fill="#547fae"/>
+    <path d="M0 395c111-54 230-19 328-65 63-29 131-29 184-14v196H0Z" fill="#e9eff1"/>
+    <path d="M0 453c137-39 223-29 324-80 70-35 131-33 188-20v159H0Z" fill="#fffaf1"/>
+    <path d="M109 175c54-67 154-73 226-11l-16 31c-62-48-131-44-184 5Z" fill="#f77660" stroke="#243244" stroke-width="9" stroke-linejoin="round"/>
+    <path d="m233 153 32 5-9 21-32-6Z" fill="#fff3e8"/>
+    <path d="M191 191 250 304M309 190l-59 114" fill="none" stroke="#243244" stroke-width="5"/>
+    <circle cx="250" cy="290" r="18" fill="#fffaf1" stroke="#243244" stroke-width="6"/>
+    <path d="m243 308-5 45 23 13 20-6m-43-8-26 24m49-12 24 22" fill="none" stroke="#243244" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m210 380 80 12" fill="none" stroke="#243244" stroke-width="14" stroke-linecap="round"/>
+    <path d="m75 432 73-15m-38 46 116-27" fill="none" stroke="#b6d1df" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  </g>
+</svg>

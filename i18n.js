@@ -127,6 +127,10 @@ const I18N = {
       "Build a stone-guardian squad through arithmetic gates, dodge temple traps, and lead the survivors into automatic arena battles. A fully offline 3D runner with endless generated levels.",
     penguin_sled_rush_desc:
       "Sled through an aurora-lit winter world, dodge wildlife and icy obstacles, choose arithmetic gates, and chase your high score in this offline 3D runner.",
+    pocket_highway_desc:
+      "Race toy cars through a miniature world. Take on the Forest Cup, chase your best score in Endless and Daily Challenge, and build a 24-car garage.",
+    kitefall_desc:
+      "Ride the snow, catch the wind, and glide between mountain refuges in a one-touch snowboarding journey. Explore two trails and Free Ride.",
     chip_arcade: "Arcade Game",
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
@@ -283,6 +287,10 @@ const I18N = {
       "Riyazi qapılardan keçərək daş mühafizəçi dəstəsini böyüt, məbəd tələlərindən yayın və sağ qalanları avtomatik arena döyüşlərinə apar. Sonsuz yaradılan səviyyələri olan tam oflayn 3D qaçış oyunu.",
     penguin_sled_rush_desc:
       "Qütb işıqları altında xizəklə sürüş, heyvanlardan və buzlu maneələrdən yayın, riyazi qapıları seç və bu oflayn 3D oyunda ən yüksək xala çat.",
+    pocket_highway_desc:
+      "Miniatür dünyada oyuncaq maşınlarla yarış. Meşə Kubokunda mübarizə apar, Sonsuz Yarışda və Gündəlik Çağırışda rekord qır, 24 maşınlıq qarajını qur.",
+    kitefall_desc:
+      "Qarda sürüş, küləyi tut və bir toxunuşla idarə olunan səyahətdə dağ sığınacaqları arasında uç. İki marşrutu və Sərbəst Sürüşü kəşf et.",
     chip_arcade: "Arkada Oyunu",
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
@@ -437,6 +445,10 @@ const I18N = {
       "Увеличивайте отряд каменных стражей через арифметические ворота, обходите ловушки храма и ведите выживших в автоматические битвы на арене. Полностью офлайн 3D-раннер с бесконечными уровнями.",
     penguin_sled_rush_desc:
       "Мчитесь на санях под северным сиянием, обходите животных и ледяные препятствия, выбирайте арифметические ворота и побейте рекорд в этом офлайн 3D-раннере.",
+    pocket_highway_desc:
+      "Гоняйте на игрушечных машинах в миниатюрном мире. Пройдите Лесной кубок, ставьте рекорды в бесконечном и ежедневном режимах и соберите гараж из 24 машин.",
+    kitefall_desc:
+      "Скользите по снегу, ловите ветер и летите между горными убежищами в игре с управлением одним касанием. Доступны две трассы и свободное катание.",
     chip_arcade: "Аркада",
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
@@ -592,6 +604,10 @@ const I18N = {
       "Matematik kapılarından geçerek taş muhafız birliğini büyüt, tapınak tuzaklarından kaç ve hayatta kalanları otomatik arena savaşlarına taşı. Sonsuz üretilen seviyelere sahip tamamen çevrimdışı bir 3D koşu oyunu.",
     penguin_sled_rush_desc:
       "Kuzey ışıkları altında kızakla kay, hayvanlardan ve buzlu engellerden kaç, matematik kapılarını seç ve bu çevrimdışı 3D oyunda en yüksek puanı kovala.",
+    pocket_highway_desc:
+      "Minyatür bir dünyada oyuncak arabalarla yarış. Orman Kupası'na katıl, Sonsuz ve Günlük Mücadele modlarında rekor kır, 24 arabalık garajını kur.",
+    kitefall_desc:
+      "Karda kay, rüzgârı yakala ve tek dokunuşla yönetilen bir yolculukta dağ sığınakları arasında süzül. İki parkuru ve Serbest Sürüş'ü keşfet.",
     chip_arcade: "Arcade Oyunu",
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
@@ -748,6 +764,10 @@ const I18N = {
       "Vergrößere einen Trupp aus Steinwächtern an Rechentoren, weiche Tempelfallen aus und führe die Überlebenden in automatische Arenakämpfe. Ein vollständig offline spielbarer 3D-Runner mit endlosen Levels.",
     penguin_sled_rush_desc:
       "Rase mit dem Schlitten durch eine Winterwelt unter Polarlichtern, weiche Tieren und Eis aus, wähle Rechentore und jage deinen Highscore in diesem Offline-3D-Runner.",
+    pocket_highway_desc:
+      "Fahre mit Spielzeugautos durch eine Miniaturwelt. Starte im Wald-Cup, jage Rekorde im Endlosmodus und in der täglichen Herausforderung und sammle 24 Autos.",
+    kitefall_desc:
+      "Gleite durch den Schnee, fange den Wind und schwebe mit nur einer Berührung zwischen Berghütten. Entdecke zwei Strecken und den freien Modus.",
     chip_arcade: "Arcade-Spiel",
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
@@ -907,6 +927,10 @@ const I18N = {
       "Agrandissez une escouade de gardiens de pierre grâce aux portes arithmétiques, évitez les pièges du temple et menez les survivants aux combats automatiques de l'arène. Un runner 3D hors ligne aux niveaux infinis.",
     penguin_sled_rush_desc:
       "Glissez en luge sous les aurores boréales, évitez les animaux et les obstacles glacés, choisissez les portes de calcul et battez votre record dans ce runner 3D hors ligne.",
+    pocket_highway_desc:
+      "Pilotez des voitures miniatures dans un monde réduit. Disputez la Coupe de la forêt, battez vos records en mode infini et dans le défi du jour, et collectionnez 24 voitures.",
+    kitefall_desc:
+      "Glissez sur la neige, attrapez le vent et volez entre les refuges de montagne avec une seule touche. Découvrez deux pistes et le mode libre.",
     chip_arcade: "Jeu d'arcade",
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
@@ -1065,6 +1089,10 @@ const I18N = {
       "Aumenta un escuadrón de guardianes de piedra con puertas aritméticas, evita las trampas del templo y lleva a los supervivientes a batallas automáticas en la arena. Un runner 3D sin conexión con niveles infinitos.",
     penguin_sled_rush_desc:
       "Deslízate en trineo bajo la aurora boreal, esquiva animales y obstáculos de hielo, elige puertas matemáticas y supera tu récord en este runner 3D sin conexión.",
+    pocket_highway_desc:
+      "Compite con coches de juguete en un mundo en miniatura. Corre en la Copa del Bosque, bate récords en el modo infinito y el desafío diario, y reúne 24 coches.",
+    kitefall_desc:
+      "Deslízate por la nieve, atrapa el viento y vuela entre refugios de montaña con un solo toque. Explora dos rutas y el modo libre.",
     chip_arcade: "Juego arcade",
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
@@ -1223,6 +1251,10 @@ const I18N = {
       "Aumente um esquadrão de guardiões de pedra através de portões aritméticos, evite armadilhas do templo e leve os sobreviventes a batalhas automáticas na arena. Um runner 3D offline com níveis infinitos.",
     penguin_sled_rush_desc:
       "Deslize de trenó sob a aurora boreal, desvie de animais e obstáculos de gelo, escolha portões matemáticos e supere seu recorde neste runner 3D offline.",
+    pocket_highway_desc:
+      "Corra com carros de brinquedo num mundo em miniatura. Dispute a Taça da Floresta, bata recordes no modo infinito e no desafio diário e reúna 24 carros.",
+    kitefall_desc:
+      "Deslize na neve, apanhe o vento e voe entre refúgios de montanha com um só toque. Explore dois percursos e o modo livre.",
     chip_arcade: "Jogo arcade",
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
@@ -1379,6 +1411,10 @@ const I18N = {
       "Fai crescere una squadra di guardiani di pietra attraverso portali aritmetici, evita le trappole del tempio e guida i superstiti in battaglie automatiche nell'arena. Un runner 3D offline con livelli infiniti.",
     penguin_sled_rush_desc:
       "Sfreccia in slitta sotto l'aurora boreale, evita animali e ostacoli di ghiaccio, scegli i portali matematici e supera il tuo record in questo runner 3D offline.",
+    pocket_highway_desc:
+      "Gareggia con auto giocattolo in un mondo in miniatura. Affronta la Coppa della foresta, insegui record nella modalità infinita e nella sfida giornaliera e colleziona 24 auto.",
+    kitefall_desc:
+      "Scivola sulla neve, cattura il vento e vola tra i rifugi di montagna con un solo tocco. Esplora due percorsi e la modalità libera.",
     chip_arcade: "Gioco arcade",
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
@@ -1529,6 +1565,10 @@ const I18N = {
       "نمِّ فرقة من الحراس الحجريين عبر بوابات الحساب، وتجنب فخاخ المعبد، وقد الناجين إلى معارك تلقائية في الساحة. لعبة ركض ثلاثية الأبعاد تعمل دون اتصال وبمستويات لا تنتهي.",
     penguin_sled_rush_desc:
       "انطلق بالمزلجة تحت الشفق القطبي، وتجنب الحيوانات والعوائق الجليدية، واختر بوابات الحساب، وحطّم رقمك القياسي في لعبة ركض ثلاثية الأبعاد دون اتصال.",
+    pocket_highway_desc:
+      "تسابق بسيارات لعبة في عالم مصغّر. خض كأس الغابة، وحطّم أرقامك في الوضع اللانهائي والتحدي اليومي، واجمع 24 سيارة.",
+    kitefall_desc:
+      "انزلق على الثلج، والتقط الريح، وحلّق بين الملاجئ الجبلية بلمسة واحدة. استكشف مسارين ونمط الركوب الحر.",
     chip_arcade: "لعبة أركيد",
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
@@ -1676,6 +1716,10 @@ const I18N = {
       "穿过算术门壮大石甲守卫小队，避开神殿陷阱，并带领幸存者进入自动竞技场战斗。这是一款拥有无限生成关卡的完全离线3D跑酷游戏。",
     penguin_sled_rush_desc:
       "乘雪橇穿越极光下的冰雪世界，躲避动物和冰障，选择算术门，在这款离线3D跑酷游戏中挑战最高分。",
+    pocket_highway_desc:
+      "驾驶玩具车穿越微缩世界。挑战森林杯、无尽模式和每日挑战，刷新纪录并收集 24 辆车。",
+    kitefall_desc:
+      "在雪地滑行，借风飞翔，只需轻触即可穿梭于山间小屋。探索两条路线和自由滑行模式。",
     chip_arcade: "街机游戏",
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
@@ -1829,6 +1873,10 @@ const I18N = {
       "計算ゲートで石の守護者部隊を増やし、神殿の罠を避け、生存者を自動アリーナ戦へ導こう。無限に生成されるレベルを備えた完全オフライン3Dランナーです。",
     penguin_sled_rush_desc:
       "オーロラの下でそりを走らせ、動物や氷の障害物を避け、計算ゲートを選ぼう。オフラインの3Dランナーでハイスコアを目指そう。",
+    pocket_highway_desc:
+      "ミニチュアの世界でおもちゃの車を走らせよう。フォレストカップ、エンドレス、デイリーチャレンジで記録を更新し、24台の車を集めよう。",
+    kitefall_desc:
+      "雪を滑り、風をつかみ、ワンタッチで山の小屋の間を飛ぼう。2つのコースとフリーライドを楽しめる。",
     chip_arcade: "アーケードゲーム",
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",

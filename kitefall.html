@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eaf2f5" />
+    <title>Kitefall — BieMTech</title>
+    <meta name="description" content="Kitefall is a one-touch snowboarding and snowkite game for Android. Ride two mountain trails, catch the wind, and explore Free Ride." />
+    <meta property="og:title" content="Kitefall — BieMTech" />
+    <meta property="og:description" content="Ride the snow. Borrow the sky. Discover Kitefall, a one-touch mountain journey from BieMTech." />
+    <meta property="og:image" content="https://biemtech.com/img/kitefall-ride.png" />
+    <link rel="icon" type="image/svg+xml" href="img/kitefall-icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root { --kf-ink: #263549; --kf-muted: #526578; --kf-coral: #ee715b; --kf-blue: #5b8bb8; --kf-snow: #f6f8f7; }
+      body { color: var(--kf-ink); background: var(--kf-snow); }
+      .navbar { background: rgba(246, 248, 247, .94); }
+      .kf-hero { position: relative; overflow: hidden; padding: clamp(55px, 8vw, 112px) 0 93px; background: linear-gradient(115deg, rgba(250, 207, 186, .72), rgba(142, 181, 214, .62) 60%, rgba(232, 244, 249, .8)); }
+      .kf-hero::after { content: ""; position: absolute; left: -4%; right: -4%; bottom: -58px; height: 110px; border-radius: 50% 50% 0 0; background: var(--kf-snow); }
+      .kf-hero__grid { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(34px, 5vw, 78px); align-items: center; }
+      .kf-eyebrow { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 27px; color: var(--kf-ink); font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+      .kf-eyebrow img { width: 55px; height: 55px; border-radius: 15px; box-shadow: 0 10px 26px rgba(41, 73, 104, .2); }
+      .kf-hero h1 { margin: 0; color: var(--kf-ink); font-size: clamp(3.7rem, 8vw, 7.8rem); line-height: .93; letter-spacing: -.075em; }
+      .kf-tagline { margin: 27px 0 14px; color: #bd503f; font-size: clamp(1.18rem, 2vw, 1.5rem); font-weight: 800; }
+      .kf-intro { max-width: 490px; margin: 0; color: var(--kf-ink); font-size: 1.04rem; line-height: 1.73; }
+      .kf-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 31px; }
+      .kf-button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 11px 20px; border-radius: 12px; font-weight: 800; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+      .kf-button:hover { transform: translateY(-2px); }
+      .kf-button:focus-visible { outline: 3px solid var(--kf-blue); outline-offset: 3px; }
+      .kf-button--primary { color: #fff; background: var(--kf-ink); box-shadow: 0 12px 24px rgba(38, 53, 73, .2); }
+      .kf-button--outline { color: var(--kf-ink); border: 1px solid rgba(38, 53, 73, .3); background: rgba(255, 255, 255, .55); }
+      .kf-hero__art { margin: 0; padding: 7px; border: 1px solid rgba(38, 53, 73, .17); border-radius: 21px; background: rgba(255, 255, 255, .7); box-shadow: 0 25px 65px rgba(52, 82, 109, .19); }
+      .kf-hero__art img { display: block; width: 100%; height: auto; border-radius: 14px; }
+      .kf-section { padding: 88px 0; }
+      .kf-section h2 { margin: 0 0 27px; color: var(--kf-ink); font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.05em; }
+      .kf-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .kf-feature { padding: 28px; border: 1px solid rgba(38, 53, 73, .11); border-radius: 19px; background: #fff; box-shadow: 0 12px 32px rgba(48, 82, 110, .06); }
+      .kf-feature span { display: inline-block; margin-bottom: 19px; color: #d4644f; font-size: .8rem; font-weight: 900; letter-spacing: .1em; }
+      .kf-feature h3 { margin: 0 0 10px; color: var(--kf-ink); font-size: 1.24rem; }
+      .kf-feature p { margin: 0; color: var(--kf-muted); line-height: 1.67; }
+      .kf-gallery { padding: 83px 0 90px; background: #e7eff4; }
+      .kf-gallery__intro { max-width: 670px; margin: 0 0 29px; color: var(--kf-muted); line-height: 1.7; }
+      .kf-gallery__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+      .kf-gallery figure { margin: 0; }
+      .kf-gallery img { display: block; width: 100%; height: auto; border: 6px solid #fff; border-radius: 17px; box-shadow: 0 15px 35px rgba(52, 82, 109, .14); }
+      .kf-gallery figcaption { padding: 12px 5px 0; color: var(--kf-ink); font-size: .92rem; font-weight: 750; }
+      .kf-note { padding: 72px 0; text-align: center; }
+      .kf-note p { max-width: 640px; margin: 0 auto 23px; color: var(--kf-muted); line-height: 1.7; }
+      .kf-footer { padding: 27px 20px; border-top: 1px solid rgba(38, 53, 73, .14); color: var(--kf-muted); text-align: center; font-size: .9rem; }
+      .kf-footer a { color: var(--kf-ink); }
+      @media (max-width: 900px) { .kf-hero__grid { grid-template-columns: 1fr; } .kf-hero__art { grid-row: 1; } }
+      @media (max-width: 700px) { .kf-features, .kf-gallery__grid { grid-template-columns: 1fr; } .kf-hero { padding-top: 40px; } }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo"><img src="img/logo-biemtech.png" alt="BieMTech" class="logo-mark" /></a>
+        <nav class="navbar__nav"><a href="index.html#apps" data-copy="apps">Apps</a><a href="privacy/kitefall/index.html" data-copy="privacy">Privacy</a></nav>
+        <div class="navbar__actions"><select id="lang-select" class="lang-select" aria-label="Language"><option value="en">EN</option><option value="az">AZ</option></select></div>
+      </div>
+    </header>
+    <main>
+      <section class="kf-hero">
+        <div class="container kf-hero__grid">
+          <div>
+            <div class="kf-eyebrow"><img src="img/kitefall-icon.svg" alt="" /><span data-copy="status">Android game · In development</span></div>
+            <h1>Kitefall</h1>
+            <p class="kf-tagline" data-copy="tagline">Ride the snow. Borrow the sky.</p>
+            <p class="kf-intro" data-copy="intro">You are a mountain courier restoring wind beacons at remote refuges. Stay low to build speed, then open your snowkite to catch the wind and reach the next slope.</p>
+            <div class="kf-actions"><a class="kf-button kf-button--primary" href="#features" data-copy="explore">Explore the game ↓</a><a class="kf-button kf-button--outline" href="privacy/kitefall/index.html" data-copy="policy">Privacy Policy</a></div>
+          </div>
+          <figure class="kf-hero__art"><img src="img/kitefall-ride.png" alt="Kitefall rider gliding over a mountain slope" /></figure>
+        </div>
+      </section>
+      <section class="kf-section" id="features">
+        <div class="container"><h2 data-copy="features">A journey shaped by the wind</h2>
+          <div class="kf-features">
+            <article class="kf-feature"><span>01 / RIDE</span><h3 data-copy="oneTitle">One-touch flow</h3><p data-copy="oneBody">Hold to crouch and charge an ollie, release to jump, then tap in the air to open your kite.</p></article>
+            <article class="kf-feature"><span>02 / ROUTES</span><h3 data-copy="trailsTitle">Two mountain trails</h3><p data-copy="trailsBody">Ride Dawn Reach and Whisperwood, complete route challenges, or chase distance in Free Ride.</p></article>
+            <article class="kf-feature"><span>03 / GEAR</span><h3 data-copy="gearTitle">A workshop to grow into</h3><p data-copy="gearBody">Earn Windglass on your runs and unlock boards and kites as you restore the mountain beacons.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="kf-gallery">
+        <div class="container"><h2 data-copy="gallery">From the slopes</h2><p class="kf-gallery__intro" data-copy="galleryIntro">The current playable build includes two trails, Free Ride, and a workshop. Further regions shown in the game are planned for later.</p>
+          <div class="kf-gallery__grid">
+            <figure><img src="img/kitefall-home.png" loading="lazy" alt="Kitefall home screen with Dawn Reach route" /><figcaption data-copy="homeShot">Choose your next trail</figcaption></figure>
+            <figure><img src="img/kitefall-workshop.png" loading="lazy" alt="Kitefall workshop showing snowboards" /><figcaption data-copy="workshopShot">Choose your board and kite</figcaption></figure>
+          </div>
+        </div>
+      </section>
+      <section class="kf-note"><div class="container"><h2 data-copy="offlineTitle">Made to play offline</h2><p data-copy="offlineBody">Kitefall saves progress and settings on your device. The current build has no ads, analytics SDKs, or in-app purchases.</p><a class="kf-button kf-button--outline" href="mailto:info@biemtech.com" data-copy="contact">Contact us for updates →</a></div></section>
+    </main>
+    <footer class="kf-footer">© 2026 BieMTech · <a href="index.html" data-copy="home">Home</a> · <a href="privacy/kitefall/index.html" data-copy="policy">Privacy Policy</a></footer>
+    <script>
+      const COPY = {
+        en: { apps: "Apps", privacy: "Privacy", status: "Android game · In development", tagline: "Ride the snow. Borrow the sky.", intro: "You are a mountain courier restoring wind beacons at remote refuges. Stay low to build speed, then open your snowkite to catch the wind and reach the next slope.", explore: "Explore the game ↓", policy: "Privacy Policy", features: "A journey shaped by the wind", oneTitle: "One-touch flow", oneBody: "Hold to crouch and charge an ollie, release to jump, then tap in the air to open your kite.", trailsTitle: "Two mountain trails", trailsBody: "Ride Dawn Reach and Whisperwood, complete route challenges, or chase distance in Free Ride.", gearTitle: "A workshop to grow into", gearBody: "Earn Windglass on your runs and unlock boards and kites as you restore the mountain beacons.", gallery: "From the slopes", galleryIntro: "The current playable build includes two trails, Free Ride, and a workshop. Further regions shown in the game are planned for later.", homeShot: "Choose your next trail", workshopShot: "Choose your board and kite", offlineTitle: "Made to play offline", offlineBody: "Kitefall saves progress and settings on your device. The current build has no ads, analytics SDKs, or in-app purchases.", contact: "Contact us for updates →", home: "Home" },
+        az: { apps: "Tətbiqlər", privacy: "Məxfilik", status: "Android oyunu · Hazırlanır", tagline: "Qarda sürüş. Göy üzünü fəth et.", intro: "Uzaq dağ sığınacaqlarında külək mayaklarını yenidən yandıran kuryersən. Sürət toplamaq üçün alçaqdan sürüş, sonra küləyi tutub növbəti yamaca çatmaq üçün qar uçurtmanı aç.", explore: "Oyunu kəşf et ↓", policy: "Məxfilik siyasəti", features: "Küləyin yönəltdiyi səyahət", oneTitle: "Bir toxunuşla idarəetmə", oneBody: "Çömbəlib tullanışa hazırlaşmaq üçün basıb saxla, tullanmaq üçün burax, havada uçurtmanı açmaq üçün yenidən toxun.", trailsTitle: "İki dağ marşrutu", trailsBody: "Dawn Reach və Whisperwood marşrutlarında sürüş, tapşırıqları tamamla və ya Sərbəst Sürüşdə məsafə rekordu qır.", gearTitle: "Avadanlıq emalatxanası", gearBody: "Yarışlarda Windglass qazan, dağ mayaklarını bərpa etdikcə lövhələr və uçurtmalar aç.", gallery: "Yamacdan görüntülər", galleryIntro: "Hazırkı oynanıla bilən versiyada iki marşrut, Sərbəst Sürüş və emalatxana var. Oyunda görünən digər bölgələr gələcək üçün planlaşdırılıb.", homeShot: "Növbəti marşrutunu seç", workshopShot: "Lövhəni və uçurtmanı seç", offlineTitle: "Oflayn oynamaq üçün", offlineBody: "Kitefall irəliləyişini və ayarları cihazında saxlayır. Hazırkı versiyada reklam, analitika SDK-sı və tətbiqdaxili alış yoxdur.", contact: "Yeniliklər üçün əlaqə saxla →", home: "Ana səhifə" }
+      };
+      function setPageLang(lang, persist = false) {
+        const selected = COPY[lang] ? lang : "en";
+        document.documentElement.lang = selected;
+        document.getElementById("lang-select").value = selected;
+        document.querySelectorAll("[data-copy]").forEach(el => { el.textContent = COPY[selected][el.dataset.copy]; });
+        if (persist) { try { localStorage.setItem("site_lang", selected); } catch (_) {} }
+      }
+      let saved = "en";
+      try { saved = localStorage.getItem("site_lang") || "en"; } catch (_) {}
+      setPageLang(saved);
+      document.getElementById("lang-select").addEventListener("change", event => setPageLang(event.target.value, true));
+    </script>
+  </body>
+</html>
