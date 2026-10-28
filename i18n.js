@@ -1923,11 +1923,11 @@ const I18N = {
   },
 };
 
-/* MathKids (com.mathkids.app), a separate app from Math Kids. */
+/* Math Games for Kids Ages 5-8 (com.biemtech.funmathkids), separate from Math Kids. */
 const NEW_MATHKIDS = {
   en: {
     newmk_card_desc: "A colourful maths adventure for ages 5–8. Ten questions per level, 12 animated worlds and age-based learning in 12 languages.",
-    newmk_status: "In development · Ages 5–8",
+    newmk_status: "Available on Google Play · Ages 5–8", newmk_download: "Get it on Google Play ↗",
     newmk_intro: "A colourful maths adventure for ages 5, 6, 7 and 8. Children solve short, age-matched challenges and explore a new animated world with every level.",
     newmk_privacy: "Read the privacy policy", newmk_all: "All apps",
     newmk_features: "Learning through play",
@@ -1938,7 +1938,7 @@ const NEW_MATHKIDS = {
   },
   az: {
     newmk_card_desc: "5–8 yaş üçün rəngarəng riyaziyyat macərası. Hər səviyyədə 10 sual, 12 animasiyalı dünya və 12 dildə yaşa uyğun öyrənmə.",
-    newmk_status: "Hazırlanır · 5–8 yaş",
+    newmk_status: "Google Play-də mövcuddur · 5–8 yaş", newmk_download: "Google Play-dən yüklə ↗",
     newmk_intro: "5, 6, 7 və 8 yaşlı uşaqlar üçün rəngarəng riyaziyyat macərası. Uşaqlar yaşlarına uyğun qısa tapşırıqları həll edir və hər səviyyədə yeni animasiyalı dünyanı kəşf edirlər.",
     newmk_privacy: "Məxfilik siyasətini oxu", newmk_all: "Bütün tətbiqlər",
     newmk_features: "Oynayaraq öyrənmə",
@@ -1949,7 +1949,7 @@ const NEW_MATHKIDS = {
   },
   ru: {
     newmk_card_desc: "Красочное математическое приключение для детей 5–8 лет: 10 вопросов на уровень, 12 миров и 12 языков.",
-    newmk_status: "В разработке · 5–8 лет", newmk_intro: "Красочное математическое приключение для детей 5, 6, 7 и 8 лет. Решайте задания по возрасту и открывайте новый анимированный мир на каждом уровне.",
+    newmk_status: "Доступно в Google Play · 5–8 лет", newmk_download: "Скачать в Google Play ↗", newmk_intro: "Красочное математическое приключение для детей 5, 6, 7 и 8 лет. Решайте задания по возрасту и открывайте новый анимированный мир на каждом уровне.",
     newmk_privacy: "Политика конфиденциальности", newmk_all: "Все приложения", newmk_features: "Учимся играя",
     newmk_features_intro: "На каждом уровне 10 вопросов с тремя крупными вариантами ответа. Можно попробовать снова и получить добрую подсказку.",
     newmk_age_title: "Для детей 5–8 лет", newmk_age_desc: "От счёта и простых примеров до умножения, деления, дробей, времени и текстовых задач.",
@@ -1958,7 +1958,7 @@ const NEW_MATHKIDS = {
   },
   tr: {
     newmk_card_desc: "5–8 yaş için renkli matematik macerası: her seviyede 10 soru, 12 dünya ve 12 dil.",
-    newmk_status: "Geliştiriliyor · 5–8 yaş", newmk_intro: "5, 6, 7 ve 8 yaşındaki çocuklar için renkli bir matematik macerası. Yaşa uygun soruları çözün, her seviyede yeni bir animasyonlu dünya keşfedin.",
+    newmk_status: "Google Play’de mevcut · 5–8 yaş", newmk_download: "Google Play’den indir ↗", newmk_intro: "5, 6, 7 ve 8 yaşındaki çocuklar için renkli bir matematik macerası. Yaşa uygun soruları çözün, her seviyede yeni bir animasyonlu dünya keşfedin.",
     newmk_privacy: "Gizlilik politikasını oku", newmk_all: "Tüm uygulamalar", newmk_features: "Oynayarak öğrenme",
     newmk_features_intro: "Her seviyede üç büyük cevap seçeneğiyle 10 soru vardır. Çocuklar tekrar deneyebilir ve nazik geri bildirim alır.",
     newmk_age_title: "5–8 yaş için", newmk_age_desc: "Sayma ve basit işlemlerden çarpma, bölme, kesirler, zaman ve sözel problemlere ilerler.",
@@ -1967,7 +1967,7 @@ const NEW_MATHKIDS = {
   },
   de: {
     newmk_card_desc: "Ein buntes Matheabenteuer für Kinder von 5–8 Jahren: 10 Fragen pro Level, 12 Welten und 12 Sprachen.",
-    newmk_status: "In Entwicklung · 5–8 Jahre", newmk_intro: "Ein buntes Matheabenteuer für Kinder von 5 bis 8 Jahren. Altersgerechte Aufgaben führen in jedem Level durch eine neue animierte Welt.",
+    newmk_status: "Bei Google Play verfügbar · 5–8 Jahre", newmk_download: "Bei Google Play herunterladen ↗", newmk_intro: "Ein buntes Matheabenteuer für Kinder von 5 bis 8 Jahren. Altersgerechte Aufgaben führen in jedem Level durch eine neue animierte Welt.",
     newmk_privacy: "Datenschutzerklärung lesen", newmk_all: "Alle Apps", newmk_features: "Spielerisch lernen",
     newmk_features_intro: "Jedes Level bietet 10 Fragen mit drei großen Antwortfeldern. Kinder können erneut versuchen und erhalten freundliches Feedback.",
     newmk_age_title: "Für 5–8 Jahre", newmk_age_desc: "Vom Zählen bis zu Multiplikation, Division, Brüchen, Zeit und Textaufgaben.",
@@ -1976,7 +1976,7 @@ const NEW_MATHKIDS = {
   },
   fr: {
     newmk_card_desc: "Une aventure de maths colorée pour les 5–8 ans : 10 questions par niveau, 12 mondes et 12 langues.",
-    newmk_status: "En développement · 5–8 ans", newmk_intro: "Une aventure de maths colorée pour les enfants de 5 à 8 ans. Des défis adaptés à leur âge et un nouveau monde animé à chaque niveau.",
+    newmk_status: "Disponible sur Google Play · 5–8 ans", newmk_download: "Télécharger sur Google Play ↗", newmk_intro: "Une aventure de maths colorée pour les enfants de 5 à 8 ans. Des défis adaptés à leur âge et un nouveau monde animé à chaque niveau.",
     newmk_privacy: "Lire la politique de confidentialité", newmk_all: "Toutes les applications", newmk_features: "Apprendre en jouant",
     newmk_features_intro: "Chaque niveau propose 10 questions et trois grands choix de réponse. L'enfant peut réessayer et reçoit un retour encourageant.",
     newmk_age_title: "Pour les 5–8 ans", newmk_age_desc: "Du comptage à la multiplication, la division, les fractions, l'heure et les problèmes.",
@@ -1985,7 +1985,7 @@ const NEW_MATHKIDS = {
   },
   es: {
     newmk_card_desc: "Una colorida aventura matemática para edades de 5–8 años: 10 preguntas por nivel, 12 mundos y 12 idiomas.",
-    newmk_status: "En desarrollo · 5–8 años", newmk_intro: "Una colorida aventura matemática para niños de 5 a 8 años. Retos adecuados a su edad y un nuevo mundo animado en cada nivel.",
+    newmk_status: "Disponible en Google Play · 5–8 años", newmk_download: "Descargar en Google Play ↗", newmk_intro: "Una colorida aventura matemática para niños de 5 a 8 años. Retos adecuados a su edad y un nuevo mundo animado en cada nivel.",
     newmk_privacy: "Leer la política de privacidad", newmk_all: "Todas las aplicaciones", newmk_features: "Aprender jugando",
     newmk_features_intro: "Cada nivel tiene 10 preguntas con tres grandes opciones. Los niños pueden volver a intentarlo y reciben comentarios amables.",
     newmk_age_title: "Para edades de 5–8", newmk_age_desc: "Desde contar hasta multiplicar, dividir, fracciones, tiempo y problemas escritos.",
@@ -1994,7 +1994,7 @@ const NEW_MATHKIDS = {
   },
   pt: {
     newmk_card_desc: "Uma aventura matemática colorida para 5–8 anos: 10 perguntas por nível, 12 mundos e 12 idiomas.",
-    newmk_status: "Em desenvolvimento · 5–8 anos", newmk_intro: "Uma aventura matemática colorida para crianças de 5 a 8 anos. Desafios adequados à idade e um novo mundo animado a cada nível.",
+    newmk_status: "Disponível no Google Play · 5–8 anos", newmk_download: "Baixar no Google Play ↗", newmk_intro: "Uma aventura matemática colorida para crianças de 5 a 8 anos. Desafios adequados à idade e um novo mundo animado a cada nível.",
     newmk_privacy: "Ler a política de privacidade", newmk_all: "Todos os apps", newmk_features: "Aprender brincando",
     newmk_features_intro: "Cada nível tem 10 perguntas com três opções grandes. A criança pode tentar de novo e recebe incentivo gentil.",
     newmk_age_title: "Para 5–8 anos", newmk_age_desc: "De contagem e somas simples a multiplicação, divisão, frações, horas e problemas.",
@@ -2003,7 +2003,7 @@ const NEW_MATHKIDS = {
   },
   it: {
     newmk_card_desc: "Un'avventura matematica colorata per i 5–8 anni: 10 domande per livello, 12 mondi e 12 lingue.",
-    newmk_status: "In sviluppo · 5–8 anni", newmk_intro: "Un'avventura matematica colorata per bambini dai 5 agli 8 anni. Sfide adatte all'età e un nuovo mondo animato a ogni livello.",
+    newmk_status: "Disponibile su Google Play · 5–8 anni", newmk_download: "Scarica da Google Play ↗", newmk_intro: "Un'avventura matematica colorata per bambini dai 5 agli 8 anni. Sfide adatte all'età e un nuovo mondo animato a ogni livello.",
     newmk_privacy: "Leggi l'informativa sulla privacy", newmk_all: "Tutte le app", newmk_features: "Imparare giocando",
     newmk_features_intro: "Ogni livello ha 10 domande con tre grandi risposte. I bambini possono riprovare e ricevono incoraggiamento.",
     newmk_age_title: "Per i 5–8 anni", newmk_age_desc: "Dal conteggio a moltiplicazioni, divisioni, frazioni, tempo e problemi.",
@@ -2012,7 +2012,7 @@ const NEW_MATHKIDS = {
   },
   ar: {
     newmk_card_desc: "مغامرة رياضيات ملوّنة للأعمار 5–8: 10 أسئلة في كل مستوى، و12 عالمًا، و12 لغة.",
-    newmk_status: "قيد التطوير · الأعمار 5–8", newmk_intro: "مغامرة رياضيات ملوّنة للأطفال من 5 إلى 8 سنوات. تحديات مناسبة للعمر وعالم جديد متحرك في كل مستوى.",
+    newmk_status: "متاح على Google Play · الأعمار 5–8", newmk_download: "تنزيل من Google Play ↗", newmk_intro: "مغامرة رياضيات ملوّنة للأطفال من 5 إلى 8 سنوات. تحديات مناسبة للعمر وعالم جديد متحرك في كل مستوى.",
     newmk_privacy: "اقرأ سياسة الخصوصية", newmk_all: "كل التطبيقات", newmk_features: "التعلّم باللعب",
     newmk_features_intro: "في كل مستوى 10 أسئلة وثلاثة خيارات كبيرة. يمكن للطفل المحاولة مجددًا مع تشجيع لطيف.",
     newmk_age_title: "للأعمار 5–8", newmk_age_desc: "من العد والجمع البسيط إلى الضرب والقسمة والكسور والوقت والمسائل الكلامية.",
@@ -2021,7 +2021,7 @@ const NEW_MATHKIDS = {
   },
   zh: {
     newmk_card_desc: "适合5–8岁儿童的缤纷数学冒险：每关10题、12个动画世界、12种语言。",
-    newmk_status: "开发中 · 5–8岁", newmk_intro: "专为5至8岁儿童设计的缤纷数学冒险。完成适龄挑战，每一关探索一个新的动画世界。",
+    newmk_status: "已在 Google Play 上架 · 5–8岁", newmk_download: "从 Google Play 下载 ↗", newmk_intro: "专为5至8岁儿童设计的缤纷数学冒险。完成适龄挑战，每一关探索一个新的动画世界。",
     newmk_privacy: "阅读隐私政策", newmk_all: "所有应用", newmk_features: "在游戏中学习",
     newmk_features_intro: "每关有10道题和三个大按钮选项。答错可以重试，并获得温和的反馈。",
     newmk_age_title: "适合5–8岁", newmk_age_desc: "从数数和简单加法，到乘除法、分数、时间和应用题。",
@@ -2030,7 +2030,7 @@ const NEW_MATHKIDS = {
   },
   ja: {
     newmk_card_desc: "5〜8歳向けのカラフルな算数の冒険。各レベル10問、12の世界、12言語に対応。",
-    newmk_status: "開発中 · 5〜8歳", newmk_intro: "5〜8歳の子どものためのカラフルな算数の冒険。年齢に合った問題を解き、レベルごとに新しいアニメーションの世界を探検します。",
+    newmk_status: "Google Playで配信中 · 5〜8歳", newmk_download: "Google Playでダウンロード ↗", newmk_intro: "5〜8歳の子どものためのカラフルな算数の冒険。年齢に合った問題を解き、レベルごとに新しいアニメーションの世界を探検します。",
     newmk_privacy: "プライバシーポリシーを読む", newmk_all: "すべてのアプリ", newmk_features: "遊びながら学ぶ",
     newmk_features_intro: "各レベルには大きな3つの選択肢を持つ10問があります。間違えても再挑戦でき、優しく励まします。",
     newmk_age_title: "5〜8歳向け", newmk_age_desc: "数え方や簡単な計算から、かけ算、わり算、分数、時間、文章題まで学べます。",

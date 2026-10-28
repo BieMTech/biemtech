@@ -7,7 +7,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | File                      | Description                                      |
 | ------------------------- | ------------------------------------------------ |
 | `index.html`              | Main landing page — about, apps, values, contact |
-| `mathkids.html`           | MathKids app page (ages 5–8)                     |
+| `mathkids.html`           | Math Games for Kids Ages 5-8 app page (ages 5–8)                     |
 | `dino-runner-3d.html`     | Dino Runner 3D app page                          |
 | `math-kids.html`          | Math Kids app page                               |
 | `times-table-master.html` | Times Table Master app page                      |
@@ -27,10 +27,11 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 ## Apps
 
-### MathKids
+### Math Games for Kids Ages 5-8
 
-A separate maths game for ages 5–8, currently in development. Each level has 10 questions and a new animated world. The Android package is `com.biemtech.funmathkids`.
+A separate maths game for ages 5–8, available on Google Play. Each level has 10 questions and a new animated world. The Android package is `com.biemtech.funmathkids`.
 
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.funmathkids
 - Privacy Policy: https://biemtech.com/privacy/mathkids/
 
 ### Math Kids

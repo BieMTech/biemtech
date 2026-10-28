@@ -89,7 +89,7 @@
             </div>
             <div class="hero__stat-divider"></div>
             <div class="hero__stat">
-              <span class="hero__stat-num">10</span>
+              <span class="hero__stat-num">11</span>
               <span class="hero__stat-label" data-i18n="stat_app"
                 >Live App</span
               >
@@ -204,11 +204,11 @@
               </a>
             </div>
 
-            <!-- MathKids (ages 5–8) -->
+            <!-- Math Games for Kids Ages 5-8 -->
             <div class="orbit-arm" style="--od: -25s">
               <a href="mathkids.html" class="hero__vis-orbit-btn">
                 <img src="img/mathkids-icon.svg" alt="" />
-                <span>MathKids</span>
+                <span>Math Games for Kids Ages 5-8</span>
               </a>
             </div>
 
@@ -1183,6 +1183,50 @@
             </div>
           </div>
 
+          <!-- Math Games for Kids Ages 5-8 -->
+          <div
+            class="app-card"
+            onclick="window.location = 'mathkids.html'"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location = 'mathkids.html';
+              }
+            "
+            role="link"
+            tabindex="0"
+            style="cursor: pointer"
+          >
+            <div class="app-card__top">
+              <div class="app-card__icon mathkids-new">
+                <img src="img/mathkids-icon.svg" alt="Math Games for Kids Ages 5-8" />
+              </div>
+              <div class="app-card__arrow">→</div>
+            </div>
+            <div class="app-card__name">Math Games for Kids Ages 5-8</div>
+            <p class="app-card__desc" data-i18n="newmk_card_desc">
+              A colourful maths adventure for ages 5–8. Ten questions per level,
+              12 animated worlds and age-based learning in 12 languages.
+            </p>
+            <div class="app-card__footer">
+              <span class="chip chip-orange" data-i18n="chip_education"
+                >Education</span
+              >
+              <a
+                href="https://play.google.com/store/apps/details?id=com.biemtech.funmathkids"
+                class="app-card__playbtn"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="event.stopPropagation()"
+                onkeydown="event.stopPropagation()"
+                >Google Play</a
+              >
+              <span class="chip chip-live" data-i18n="chip_live"
+                >● Live</span
+              >
+            </div>
+          </div>
+
           <!-- Temple Vanguard -->
           <div
             class="app-card"
@@ -1244,41 +1288,6 @@
             </p>
             <div class="app-card__footer">
               <span class="chip" data-i18n="chip_strategy">Strategy Game</span>
-              <span class="chip chip-soon" data-i18n="chip_dev"
-                >In Development</span
-              >
-            </div>
-          </div>
-
-          <!-- MathKids (new app for ages 5–8) -->
-          <div
-            class="app-card"
-            onclick="window.location = 'mathkids.html'"
-            onkeydown="
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                window.location = 'mathkids.html';
-              }
-            "
-            role="link"
-            tabindex="0"
-            style="cursor: pointer"
-          >
-            <div class="app-card__top">
-              <div class="app-card__icon mathkids-new">
-                <img src="img/mathkids-icon.svg" alt="MathKids" />
-              </div>
-              <div class="app-card__arrow">→</div>
-            </div>
-            <div class="app-card__name">MathKids</div>
-            <p class="app-card__desc" data-i18n="newmk_card_desc">
-              A colourful maths adventure for ages 5–8. Ten questions per level,
-              12 animated worlds and age-based learning in 12 languages.
-            </p>
-            <div class="app-card__footer">
-              <span class="chip chip-orange" data-i18n="chip_education"
-                >Education</span
-              >
               <span class="chip chip-soon" data-i18n="chip_dev"
                 >In Development</span
               >
@@ -1592,7 +1601,7 @@
               <li><a href="coil.html">Coil</a></li>
               <li><a href="kurikulum.html">Kurikulum Dəftəri</a></li>
               <li><a href="lid-trainer.html">LiD Trainer</a></li>
-              <li><a href="mathkids.html">MathKids</a></li>
+              <li><a href="mathkids.html">Math Games for Kids Ages 5-8</a></li>
               <li>
                 <a href="penguin-sled-rush.html">Penguin Sled: Aurora Run</a>
               </li>
