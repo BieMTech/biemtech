@@ -1509,6 +1509,11 @@ body::after {
   box-shadow: 0 8px 24px rgba(82, 118, 255, 0.3);
 }
 
+.app-card__icon.kurikulum {
+  background: #2b3fa0;
+  box-shadow: 0 8px 24px rgba(43, 63, 160, 0.3);
+}
+
 .app-card__icon.times-table {
   background: linear-gradient(135deg, #7A421F 0%, #C98237 100%);
   box-shadow: 0 8px 24px rgba(122,66,31,0.3);

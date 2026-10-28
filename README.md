@@ -23,6 +23,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `penguin-sled-rush.html`  | Penguin Sled: Aurora Run app page                |
 | `style.css`               | Shared stylesheet for all pages                  |
 | `coil.html`               | Coil game page (in development)                 |
+| `kurikulum.html`          | Kurikulum Dəftəri teacher exam preparation page  |
 
 ## Apps
 
@@ -137,6 +138,16 @@ A real-time multiplayer snake arena game with web and Android clients, plus a se
 
 - Online Android package: `com.biemtech.coil`
 - Privacy Policy: https://biemtech.com/privacy/coil/
+
+### Kurikulum Dəftəri
+
+A teacher preparation app for the curriculum, methodology, and pedagogy components of Azerbaijan's MİQ and teacher certification exams. It offers topic practice with explanations and sources, timed tests, mistake review, bookmarks, and account-based progress. Web/PWA and Expo Android/iOS clients are in development; preparation sets do not cover the complete official exam.
+
+- App page: https://biemtech.com/kurikulum.html
+- App ID: `com.biemtech.kurikulum`
+- Privacy Policy (EN/AZ): https://biemtech.com/privacy/kurikulum/
+- Account deletion: https://biemtech.com/privacy/kurikulum/#delete-account
+- Support: info@biemtech.com
 
 ## Contact
 

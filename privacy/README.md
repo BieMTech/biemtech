@@ -25,6 +25,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | Dark Alive (Wallpaper Alive) | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/dark-alive/) |
 | LiD Trainer | EN, AZ, DE | [View](https://biemtech.com/privacy/lid-trainer/) |
 | Coil | EN, AZ | [View](https://biemtech.com/privacy/coil/) |
+| Kurikulum Dəftəri | EN, AZ | [View](https://biemtech.com/privacy/kurikulum/) |
 
 ---
 
@@ -47,6 +48,7 @@ squad-surge/index.html
 dark-alive/index.html
 lid-trainer/index.html
 coil/index.html
+kurikulum/index.html        # Privacy policy and #delete-account request path
 ```
 
 ## Contact

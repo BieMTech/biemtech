@@ -2155,6 +2155,22 @@ const COIL_CARDS = {
 };
 for (const [lang, description] of Object.entries(COIL_CARDS)) I18N[lang].coil_desc = description;
 
+const KURIKULUM_CARDS = {
+  en: "Prepare for MİQ and teacher certification with topic-based practice, explained answers, timed tests, and personal progress tracking.",
+  az: "Mövzular üzrə məşq, izahlı cavablar, vaxtlı sınaqlar və fərdi irəliləyişlə MİQ və müəllimlərin sertifikasiya imtahanlarına hazırlaşın.",
+  ru: "Готовьтесь к MİQ и сертификации учителей: задания по темам, ответы с объяснениями, тесты на время и отслеживание прогресса.",
+  tr: "Konu bazlı alıştırmalar, açıklamalı cevaplar, süreli testler ve kişisel ilerleme takibiyle MİQ ve öğretmen sertifikasyon sınavlarına hazırlanın.",
+  de: "Bereite dich mit thematischen Übungen, erklärten Antworten, Tests mit Zeitlimit und persönlicher Fortschrittsübersicht auf MİQ und die Lehrerzertifizierung vor.",
+  fr: "Préparez le MİQ et la certification des enseignants avec des exercices par thème, des réponses expliquées, des tests chronométrés et un suivi personnel.",
+  es: "Prepara el MİQ y la certificación docente con práctica por temas, respuestas explicadas, pruebas cronometradas y seguimiento de tu progreso.",
+  pt: "Prepare-se para o MİQ e a certificação de professores com exercícios por tema, respostas explicadas, testes cronometrados e acompanhamento do progresso.",
+  it: "Preparati al MİQ e alla certificazione degli insegnanti con esercizi per argomento, risposte spiegate, test a tempo e monitoraggio dei progressi.",
+  ar: "استعد لامتحانات MİQ وشهادة المعلمين من خلال تمارين حسب الموضوع وإجابات مشروحة واختبارات محددة الوقت ومتابعة تقدمك الشخصي.",
+  zh: "通过按主题练习、答案解析、限时测试和个人进度追踪，准备 MİQ 和教师认证考试。",
+  ja: "テーマ別の練習、解説付きの解答、時間制限付きテスト、学習進捗の記録で、MİQと教員認定試験に備えましょう。"
+};
+for (const [lang, description] of Object.entries(KURIKULUM_CARDS)) I18N[lang].kurikulum_desc = description;
+
 /* ── Lang switcher HTML ────────────────────────────────── */
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">
