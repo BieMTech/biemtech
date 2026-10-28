@@ -22,7 +22,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | Neon Blocks        | EN, AZ, RU, TR, DE, FR, ES, PT, HI, AR, ZH, JA | [View](https://biemtech.com/privacy/neon-blocks/)                   |
 | Temple Vanguard    | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/temple-vanguard/)               |
 | Squad Surge: Army Multiplier | EN, AZ | [View](https://biemtech.com/privacy/squad-surge/) |
-| Dark Alive (Wallpaper Alive) | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/dark-alive/) |
+| Live Wallpaper: Dark Horror | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/dark-alive/) |
 | LiD Trainer | EN, AZ, DE | [View](https://biemtech.com/privacy/lid-trainer/) |
 | Coil | EN, AZ | [View](https://biemtech.com/privacy/coil/) |
 | Kurikulum Dəftəri | EN, AZ | [View](https://biemtech.com/privacy/kurikulum/) |

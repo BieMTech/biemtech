@@ -19,7 +19,7 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 | `neon-blocks.html`        | Neon Blocks app page                             |
 | `temple-vanguard.html`    | Temple Vanguard app page                         |
 | `squad-surge.html`        | Squad Surge: Army Multiplier app page            |
-| `dark-alive.html`         | Dark Alive (Wallpaper Alive) app page            |
+| `dark-alive.html`         | Live Wallpaper: Dark Horror app page            |
 | `penguin-sled-rush.html`  | Penguin Sled: Aurora Run app page                |
 | `style.css`               | Shared stylesheet for all pages                  |
 | `coil.html`               | Coil game page (in development)                 |
@@ -118,11 +118,12 @@ A portrait tabletop strategy game with toy soldiers, multiplier gates, and a 10-
 - Package: `com.biemtech.squadsurge`
 - Privacy Policy: https://biemtech.com/privacy/squad-surge/
 
-### Dark Alive
+### Live Wallpaper: Dark Horror
 
-An Android live wallpaper collection with 100 animated horror scenes, favorites, and save/share features. Currently in development. The source project is named Wallpaper Alive.
+An Android live wallpaper collection with 100 animated horror scenes, favorites, and save/share features. Available on Google Play. The source project is named Wallpaper Alive.
 
 - Package: `com.biemtech.wallpaper_alive`
+- Google Play: https://play.google.com/store/apps/details?id=com.biemtech.wallpaper_alive
 - Privacy Policy: https://biemtech.com/privacy/dark-alive/
 
 ### Sudoku
