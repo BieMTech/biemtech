@@ -56,9 +56,11 @@
     <main id="policy-content"></main>
     <footer>&copy; <span id="year"></span> BieMTech · <span data-i18n="rights">All rights reserved.</span></footer>
     <script src="policy-i18n.js"></script>
+    <script src="ad-plans-i18n.js"></script>
     <script>
       function render(lang) {
         const t = WORD_WHEEL_POLICY[lang] || WORD_WHEEL_POLICY.en;
+        const ad = WORD_WHEEL_AD_PLANS[lang] || WORD_WHEEL_AD_PLANS.en;
         document.documentElement.lang = lang;
         document.documentElement.dir = t.dir;
         document.querySelector('[data-i18n="back"]').textContent = t.back;
@@ -66,9 +68,10 @@
         document.querySelector('[data-i18n="audience"]').textContent = t.audience;
         document.querySelector('[data-i18n="rights"]').textContent = t.rights;
         document.getElementById("policy-content").innerHTML = `
-          <p class="meta">${t.app}: <strong>Word Wheel</strong> &nbsp;|&nbsp; ${t.statusLabel}: <strong>${t.status}</strong> &nbsp;|&nbsp; ${t.updated}: <strong>${t.date}</strong></p>
+          <p class="meta">${t.app}: <strong>Word Wheel</strong> &nbsp;|&nbsp; ${t.statusLabel}: <strong>${t.status}</strong> &nbsp;|&nbsp; ${t.updated}: <strong>${ad.date}</strong></p>
           <div class="summary">✓ ${t.summary}</div>
           <div class="future-notice">ⓘ ${t.future}</div>
+          <section class="card" id="advertising"><h2>${ad.title}</h2><p>${ad.current}</p><p>${ad.planned}</p><p>${ad.data}</p><p>${ad.children}</p><p><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">${ad.googleLink}</a></p></section>
           ${t.sections.map(([title, body]) => `<section class="card"><h2>${title}</h2>${body}</section>`).join("")}
         `;
       }
