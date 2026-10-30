@@ -27,6 +27,17 @@ Official web presence of **BieMTech**, an independent app studio founded by **Ba
 
 ## Apps
 
+### Notik
+
+A personal notebook with rich-text notes, checklists, drawings, voice notes, local reminders, and PDF/text/JSON exports. Currently in development; no public store download is advertised. The current app stores its notebook locally and does not require an account.
+
+- App page: https://biemtech.com/notik.html
+- Android package: `com.biemtech.notepad`
+- Source project: `../notepad-app`
+- Privacy Policy (EN/AZ): https://biemtech.com/privacy/notik/
+- Local data deletion: https://biemtech.com/privacy/notik/#delete-data
+- Support: info@biemtech.com
+
 ### Math Games for Kids Ages 5-8
 
 A separate maths game for ages 5–8, available on Google Play. Each level has 10 questions and a new animated world. The Android package is `com.biemtech.funmathkids`.

@@ -2172,6 +2172,24 @@ const KURIKULUM_CARDS = {
 for (const [lang, description] of Object.entries(KURIKULUM_CARDS)) I18N[lang].kurikulum_desc = description;
 
 /* ── Lang switcher HTML ────────────────────────────────── */
+const NOTIK_CARDS = {
+  en: ["Productivity", "Keep notes, checklists, drawings, voice notes, and reminders together. Organize your ideas on your device, with no account required."],
+  az: ["Məhsuldarlıq", "Qeydlər, siyahılar, rəsmlər, səsli qeydlər və xatırlatmalar bir yerdə. Fikirlərinizi hesab yaratmadan cihazınızda nizamlayın."],
+  ru: ["Продуктивность", "Заметки, списки, рисунки, голосовые записи и напоминания в одном месте. Организуйте идеи на устройстве без создания аккаунта."],
+  tr: ["Verimlilik", "Notlar, listeler, çizimler, sesli notlar ve hatırlatıcılar bir arada. Fikirlerinizi hesap oluşturmadan cihazınızda düzenleyin."],
+  de: ["Produktivität", "Notizen, Checklisten, Zeichnungen, Sprachnotizen und Erinnerungen an einem Ort. Organisiere deine Ideen auf deinem Gerät, ohne Konto."],
+  fr: ["Productivité", "Notes, listes, dessins, mémos vocaux et rappels au même endroit. Organisez vos idées sur votre appareil, sans compte."],
+  es: ["Productividad", "Notas, listas, dibujos, notas de voz y recordatorios en un solo lugar. Organiza tus ideas en tu dispositivo sin crear una cuenta."],
+  pt: ["Produtividade", "Notas, listas, desenhos, notas de voz e lembretes num só lugar. Organize as suas ideias no dispositivo, sem criar uma conta."],
+  it: ["Produttività", "Note, elenchi, disegni, memo vocali e promemoria in un unico posto. Organizza le idee sul tuo dispositivo senza creare un account."],
+  ar: ["الإنتاجية", "ملاحظات وقوائم ورسومات وملاحظات صوتية وتذكيرات في مكان واحد. نظّم أفكارك على جهازك دون إنشاء حساب."],
+  zh: ["效率工具", "将笔记、清单、绘图、语音备忘和提醒汇集一处。无需注册账号，即可在设备上整理想法。"],
+  ja: ["仕事効率化", "ノート、チェックリスト、描画、音声メモ、リマインダーをひとつに。アカウント不要で、端末上でアイデアを整理できます。"]
+};
+for (const [lang, [category, description]] of Object.entries(NOTIK_CARDS)) {
+  Object.assign(I18N[lang], { chip_productivity: category, notik_desc: description });
+}
+
 const LANG_SWITCHER_HTML = `
 <div class="lang-switch">
   <select id="lang-select" class="lang-select" onchange="setLang(this.value)" aria-label="Language">

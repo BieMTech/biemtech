@@ -26,6 +26,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 | LiD Trainer | EN, AZ, DE | [View](https://biemtech.com/privacy/lid-trainer/) |
 | Coil | EN, AZ | [View](https://biemtech.com/privacy/coil/) |
 | Kurikulum Dəftəri | EN, AZ | [View](https://biemtech.com/privacy/kurikulum/) |
+| Notik | EN, AZ | [View](https://biemtech.com/privacy/notik/) |
 
 ---
 
@@ -49,6 +50,7 @@ dark-alive/index.html
 lid-trainer/index.html
 coil/index.html
 kurikulum/index.html        # Privacy policy and #delete-account request path
+notik/index.html            # Local notebook, permissions, backups, and #delete-data
 ```
 
 ## Contact
