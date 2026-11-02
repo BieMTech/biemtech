@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy — Word Wheel | BieMTech</title>
-    <meta name="description" content="Privacy Policy for Word Wheel by BieMTech. Core play works offline; optional Google Play Games features use Google services." />
+    <meta name="description" content="Privacy Policy for Word Wheel by BieMTech, for ages 13 and up. Offline core play, optional AdMob rewarded ads, and optional Google Play Games features." />
     <link rel="icon" type="image/png" href="../../img/word-wheel-icon.png" />
     <style>
       :root { --emerald:#087b68; --deep:#08263a; --gold:#d99b13; --coral:#cf6e52; --bg:#eef7f3; --card:rgba(255,255,255,.91); --text:#172b2c; --muted:#4b6462; --dim:#758783; --border:rgba(8,123,104,.14); }
@@ -29,6 +29,7 @@
       .card p { margin:0 0 10px; color:var(--muted); font-size:.93rem; }
       .card p:last-child { margin-bottom:0; }
       .card ul { margin:8px 0 10px; padding-left:24px; color:var(--muted); font-size:.93rem; }
+      .card a { color:var(--emerald); overflow-wrap:anywhere; }
       .contact-link { display:inline-block; margin-top:3px; color:var(--emerald); font-weight:750; }
       footer { padding:25px 20px; color:var(--dim); font-size:.82rem; text-align:center; border-top:1px solid var(--border); }
       footer a { color:var(--emerald); }
@@ -51,16 +52,14 @@
       <img class="app-icon" src="../../img/word-wheel-icon.png" alt="Word Wheel" />
       <p class="eyebrow" data-i18n="subtitle">Privacy Policy</p>
       <h1>Word Wheel</h1>
-      <p class="audience" data-i18n="audience">Recommended for ages 12+ · General-audience game</p>
+      <p class="audience" data-i18n="audience">Ages 13 and up · General-audience game</p>
     </header>
     <main id="policy-content"></main>
     <footer>&copy; <span id="year"></span> BieMTech · <span data-i18n="rights">All rights reserved.</span></footer>
     <script src="policy-i18n.js"></script>
-    <script src="ad-plans-i18n.js"></script>
     <script>
       function render(lang) {
         const t = WORD_WHEEL_POLICY[lang] || WORD_WHEEL_POLICY.en;
-        const ad = WORD_WHEEL_AD_PLANS[lang] || WORD_WHEEL_AD_PLANS.en;
         document.documentElement.lang = lang;
         document.documentElement.dir = t.dir;
         document.querySelector('[data-i18n="back"]').textContent = t.back;
@@ -68,11 +67,10 @@
         document.querySelector('[data-i18n="audience"]').textContent = t.audience;
         document.querySelector('[data-i18n="rights"]').textContent = t.rights;
         document.getElementById("policy-content").innerHTML = `
-          <p class="meta">${t.app}: <strong>Word Wheel</strong> &nbsp;|&nbsp; ${t.statusLabel}: <strong>${t.status}</strong> &nbsp;|&nbsp; ${t.updated}: <strong>${ad.date}</strong></p>
+          <p class="meta">${t.app}: <strong>Word Wheel</strong> &nbsp;|&nbsp; ${t.statusLabel}: <strong>${t.status}</strong> &nbsp;|&nbsp; ${t.updated}: <strong>${t.date}</strong></p>
           <div class="summary">✓ ${t.summary}</div>
           <div class="future-notice">ⓘ ${t.future}</div>
-          <section class="card" id="advertising"><h2>${ad.title}</h2><p>${ad.current}</p><p>${ad.planned}</p><p>${ad.data}</p><p>${ad.children}</p><p><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">${ad.googleLink}</a></p></section>
-          ${t.sections.map(([title, body]) => `<section class="card"><h2>${title}</h2>${body}</section>`).join("")}
+          ${t.sections.map(([title, body], index) => `<section class="card"${index === 2 ? ' id="advertising"' : ""}><h2>${title}</h2>${body}</section>`).join("")}
         `;
       }
       function switchLang(lang) { if (!WORD_WHEEL_POLICY[lang]) lang="en"; try { localStorage.setItem("site_lang",lang); } catch (_) {} document.getElementById("lang-select").value=lang; render(lang); }

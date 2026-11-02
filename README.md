@@ -93,7 +93,7 @@ A garden arcade game for ages 6 and up, available on Google Play with optional P
 
 ### Word Wheel
 
-A multilingual word puzzle with more than 60,000 levels and 50 collectible worlds, recommended for ages 12 and up. Available on Google Play with an optional Play Games leaderboard.
+A multilingual word puzzle with more than 60,000 levels and 50 collectible worlds, for ages 13 and up. Available on Google Play with optional AdMob rewarded video ads and a Play Games leaderboard.
 
 - Package: `com.biemtech.wordwheel`
 - Google Play: https://play.google.com/store/apps/details?id=com.biemtech.wordwheel
