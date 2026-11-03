@@ -69,7 +69,7 @@ A multiplication learning and practice app for all ages, available on Google Pla
 
 ### Snake 3D
 
-A cheerful, fully offline 3D arcade game for ages 6 and up, available on Google Play.
+A cheerful 3D arcade game for ages 13 and up, with offline play and optional rewarded video ads, available on Google Play.
 
 - Package: `com.biemtech.snake3d`
 - Google Play: https://play.google.com/store/apps/details?id=com.biemtech.snake3d

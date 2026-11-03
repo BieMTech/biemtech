@@ -114,7 +114,7 @@ const I18N = {
     chip_puzzle: "Puzzle Game",
     sudoku_desc: "Daily puzzles, 90 journey levels, smart hints, and three themes in a fully offline Sudoku game.",
     snake_desc:
-      "A cheerful 3D arcade game for everyone aged 6 and up. Explore growing islands, chase high scores, build combos, and play fully offline.",
+      "A cheerful 3D arcade game for players aged 13 and up. Explore growing islands, chase high scores, build combos, and play offline; optional rewarded videos need internet.",
     rex_desc:
       "Fly through ten changing worlds, breathe fire to reshape the route, collect power-ups, and chase a new high score. Core play works offline; the Google Play Games leaderboard is optional.",
     zuzu_desc:
@@ -274,7 +274,7 @@ const I18N = {
     chip_puzzle: "Tapmaca Oyunu",
     sudoku_desc: "Gündəlik tapmacalar, 90 səviyyəli Uğur yolu, ağıllı ipucları və üç tema ilə tam oflayn Sudoku oyunu.",
     snake_desc:
-      "6 yaşdan yuxarı hər kəs üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və tamamilə oflayn oynayın.",
+      "13 yaş və yuxarı oyunçular üçün şən 3D arkada oyunu. Böyüyən adaları kəşf edin, rekordlar qırın, kombolar qurun və oflayn oynayın; istəyə bağlı mükafatlı videolar internet tələb edir.",
     rex_desc:
       "On dəyişən dünyada uç, yolu dəyişmək üçün od püskür, gücləndiricilər topla və yeni rekord qazan. Əsas oyun oflayn işləyir; Google Play Games lider cədvəli istəyə bağlıdır.",
     zuzu_desc:
@@ -432,7 +432,7 @@ const I18N = {
     chip_puzzle: "Головоломка",
     sudoku_desc: "Ежедневные головоломки, 90 уровней, умные подсказки и три темы в полностью офлайн игре Sudoku.",
     snake_desc:
-      "Весёлая трёхмерная аркада для всех от 6 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте полностью офлайн.",
+      "Весёлая трёхмерная аркада для игроков от 13 лет. Исследуйте растущие острова, ставьте рекорды, собирайте комбо и играйте офлайн; добровольные видео с наградой требуют интернета.",
     rex_desc:
       "Летите через десять меняющихся миров, меняйте путь огнём, собирайте усиления и ставьте новые рекорды. Основная игра работает офлайн; рейтинг Google Play Games необязателен.",
     zuzu_desc:
@@ -591,7 +591,7 @@ const I18N = {
     chip_puzzle: "Bulmaca Oyunu",
     sudoku_desc: "Günlük bulmacalar, 90 bölümlük yolculuk, akıllı ipuçları ve üç tema sunan tamamen çevrimdışı Sudoku oyunu.",
     snake_desc:
-      "6 yaş ve üzeri herkes için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve tamamen çevrimdışı oynayın.",
+      "13 yaş ve üzeri oyuncular için neşeli bir 3D arcade oyunu. Büyüyen adaları keşfedin, rekor kovalayın, kombolar yapın ve çevrimdışı oynayın; isteğe bağlı ödüllü videolar internet gerektirir.",
     rex_desc:
       "Değişen on dünyada uç, yolu şekillendirmek için ateş püskürt, güçlendirmeleri topla ve yeni bir rekor peşinde koş. Ana oyun çevrimdışı çalışır; Google Play Games liderlik tablosu isteğe bağlıdır.",
     zuzu_desc:
@@ -751,7 +751,7 @@ const I18N = {
     chip_puzzle: "Puzzlespiel",
     sudoku_desc: "Tägliche Rätsel, 90 Level, clevere Tipps und drei Designs in einem vollständig offline spielbaren Sudoku.",
     snake_desc:
-      "Ein fröhliches 3D-Arcade-Spiel für alle ab 6 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele vollständig offline.",
+      "Ein fröhliches 3D-Arcade-Spiel für Spieler ab 13 Jahren. Erkunde wachsende Inseln, jage Rekorde, bilde Kombos und spiele offline; freiwillige Belohnungsvideos benötigen Internet.",
     rex_desc:
       "Fliege durch zehn wechselnde Welten, forme den Weg mit Feuer, sammle Power-ups und jage einen neuen Rekord. Das Hauptspiel funktioniert offline; die Google-Play-Games-Bestenliste ist optional.",
     zuzu_desc:
@@ -914,7 +914,7 @@ const I18N = {
     chip_puzzle: "Jeu de réflexion",
     sudoku_desc: "Des grilles quotidiennes, 90 niveaux, des indices intelligents et trois thèmes dans un Sudoku entièrement hors ligne.",
     snake_desc:
-      "Un joyeux jeu d'arcade 3D pour tous dès 6 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez entièrement hors ligne.",
+      "Un joyeux jeu d'arcade 3D pour les joueurs dès 13 ans. Explorez des îles grandissantes, visez les records, enchaînez les combos et jouez hors ligne ; les vidéos récompensées facultatives nécessitent Internet.",
     rex_desc:
       "Volez à travers dix mondes changeants, façonnez le passage avec le feu, ramassez des bonus et visez un nouveau record. Le jeu principal fonctionne hors ligne ; le classement Google Play Games est facultatif.",
     zuzu_desc:
@@ -1076,7 +1076,7 @@ const I18N = {
     chip_puzzle: "Juego de puzles",
     sudoku_desc: "Puzles diarios, 90 niveles, pistas inteligentes y tres temas en un Sudoku totalmente sin conexión.",
     snake_desc:
-      "Un alegre juego arcade 3D para todas las personas a partir de 6 años. Explora islas crecientes, busca récords, crea combos y juega totalmente sin conexión.",
+      "Un alegre juego arcade 3D para jugadores a partir de 13 años. Explora islas crecientes, busca récords, crea combos y juega sin conexión; los vídeos recompensados opcionales necesitan Internet.",
     rex_desc:
       "Vuela por diez mundos cambiantes, abre camino con fuego, recoge potenciadores y busca un nuevo récord. El juego principal funciona sin conexión; la clasificación de Google Play Games es opcional.",
     zuzu_desc:
@@ -1238,7 +1238,7 @@ const I18N = {
     chip_puzzle: "Jogo de quebra-cabeça",
     sudoku_desc: "Desafios diários, 90 níveis, dicas inteligentes e três temas em um Sudoku totalmente offline.",
     snake_desc:
-      "Um alegre jogo arcade 3D para todas as pessoas a partir de 6 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue totalmente offline.",
+      "Um alegre jogo arcade 3D para jogadores a partir de 13 anos. Explore ilhas crescentes, busque recordes, faça combos e jogue offline; os vídeos com recompensa opcionais precisam de Internet.",
     rex_desc:
       "Voe por dez mundos em transformação, abra caminho com fogo, colete poderes e busque um novo recorde. O jogo principal funciona offline; o placar do Google Play Games é opcional.",
     zuzu_desc:
@@ -1398,7 +1398,7 @@ const I18N = {
     chip_puzzle: "Gioco rompicapo",
     sudoku_desc: "Schemi quotidiani, 90 livelli, suggerimenti intelligenti e tre temi in un Sudoku completamente offline.",
     snake_desc:
-      "Un allegro gioco arcade 3D per tutti dai 6 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca completamente offline.",
+      "Un allegro gioco arcade 3D per giocatori dai 13 anni in su. Esplora isole in crescita, insegui nuovi record, crea combo e gioca offline; i video con premio facoltativi richiedono Internet.",
     rex_desc:
       "Vola attraverso dieci mondi mutevoli, plasma il percorso con il fuoco, raccogli potenziamenti e insegui un nuovo record. Il gioco principale funziona offline; la classifica di Google Play Games è facoltativa.",
     zuzu_desc:
@@ -1552,7 +1552,7 @@ const I18N = {
     chip_puzzle: "لعبة ألغاز",
     sudoku_desc: "ألغاز يومية و90 مستوى وتلميحات ذكية وثلاثة مظاهر في لعبة سودوكو تعمل بالكامل دون اتصال.",
     snake_desc:
-      "لعبة أركيد ثلاثية الأبعاد ممتعة للجميع من عمر 6 سنوات فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال بالكامل.",
+      "لعبة أركيد ثلاثية الأبعاد ممتعة للاعبين من عمر 13 سنة فما فوق. استكشف جزرًا متنامية، وحطّم الأرقام، وابنِ سلاسل، والعب دون اتصال؛ تحتاج الفيديوهات الاختيارية بمكافأة إلى الإنترنت.",
     rex_desc:
       "حلّق عبر عشرة عوالم متغيرة، وشكّل الطريق بالنار، واجمع التعزيزات، وحطّم رقمك القياسي. تعمل اللعبة الأساسية دون اتصال؛ ولوحة صدارة Google Play Games اختيارية.",
     zuzu_desc:
@@ -1703,7 +1703,7 @@ const I18N = {
     chip_puzzle: "解谜游戏",
     sudoku_desc: "每日数独、90 个闯关关卡、智能提示和三种主题，完全离线畅玩。",
     snake_desc:
-      "一款适合6岁及以上所有玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并完全离线游玩。",
+      "一款面向13岁及以上玩家的欢乐3D街机游戏。探索不断扩大的岛屿、挑战高分、建立连击，并离线游玩；可选激励视频需要联网。",
     rex_desc:
       "飞越十个不断变化的世界，用火焰改变路线，收集强化道具并挑战新纪录。核心游戏可离线游玩；Google Play Games 排行榜为可选功能。",
     zuzu_desc:
@@ -1860,7 +1860,7 @@ const I18N = {
     chip_puzzle: "パズルゲーム",
     sudoku_desc: "デイリーパズル、90のステージ、スマートなヒント、3つのテーマを備えた完全オフラインの数独ゲーム。",
     snake_desc:
-      "6歳以上のすべての方が楽しめる陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、完全オフラインで遊べます。",
+      "13歳以上の方向けの陽気な3Dアーケードゲーム。広がる島を探索し、ハイスコアとコンボに挑み、オフラインで遊べます。任意のリワード動画にはインターネットが必要です。",
     rex_desc:
       "変化する10の世界を飛び、炎で進路を切り開き、パワーアップを集めて新記録に挑もう。基本ゲームはオフラインで遊べ、Google Play Games のランキングは任意です。",
     zuzu_desc:
