@@ -110,7 +110,7 @@ const I18N = {
     ttm_desc:
       "A fun app for learning and practising multiplication tables. Build times-table skills through engaging practice, games, and progress tracking.",
     arrows_desc:
-      "A strategic arrow puzzle for players aged 6 and up, including adults. Clear every arrow, build streaks, and master endlessly generated challenges.",
+      "A strategic arrow puzzle for players aged 13 and up, including adults. Clear every arrow, build streaks, and master endlessly generated challenges.",
     chip_puzzle: "Puzzle Game",
     sudoku_desc: "Daily puzzles, 90 journey levels, smart hints, and three themes in a fully offline Sudoku game.",
     snake_desc:
@@ -135,7 +135,7 @@ const I18N = {
     chip_next: "Coming Next",
     arrows_page_tagline: "Find the Clear Path",
     arrows_page_desc:
-      "Solve strategic arrow puzzles with endless procedural levels, daily challenges, achievements, and 12 languages. Made for players aged 6+ and adults. Available now on Google Play.",
+      "Solve strategic arrow puzzles with endless procedural levels, daily challenges, achievements, and 12 languages. Made for players aged 13+ and adults. Available now on Google Play.",
     arrows_notify_btn: "Contact us to stay updated →",
     arrows_download_btn: "Download on Google Play →",
     arrows_privacy_btn: "Privacy Policy",
@@ -165,7 +165,7 @@ const I18N = {
     meta_category: "Category",
     meta_age: "Audience",
     meta_contact: "Contact",
-    arrows_age: "Ages 6+",
+    arrows_age: "Ages 13+",
     footer_home: "Home",
     ttm_page_tagline: "Learn the Times Tables",
     ttm_page_desc:
@@ -270,7 +270,7 @@ const I18N = {
     ttm_desc:
       "Vurma cədvəlini öyrənmək və məşq etmək üçün əyləncəli tətbiq. Cəlbedici məşqlər, oyunlar və irəliləyişin izlənməsi ilə vurma cədvəli bacarıqlarınızı gücləndirin.",
     arrows_desc:
-      "6 yaş və yuxarı oyunçular, o cümlədən böyüklər üçün strateji ox tapmacası. Bütün oxları lövhədən çıxarın, seriyalar qurun və sonsuz yaradılan tapşırıqları həll edin.",
+      "13 yaş və yuxarı oyunçular, o cümlədən böyüklər üçün strateji ox tapmacası. Bütün oxları lövhədən çıxarın, seriyalar qurun və sonsuz yaradılan tapşırıqları həll edin.",
     chip_puzzle: "Tapmaca Oyunu",
     sudoku_desc: "Gündəlik tapmacalar, 90 səviyyəli Uğur yolu, ağıllı ipucları və üç tema ilə tam oflayn Sudoku oyunu.",
     snake_desc:
@@ -295,7 +295,7 @@ const I18N = {
     chip_next: "Növbəti Tətbiq",
     arrows_page_tagline: "Açıq Yolu Tap",
     arrows_page_desc:
-      "Sonsuz prosedural səviyyələr, gündəlik tapşırıqlar, nailiyyətlər və 12 dil ilə strateji ox tapmacalarını həll edin. 6+ yaşlı oyunçular və böyüklər üçün hazırlanıb. İndi Google Play-də mövcuddur.",
+      "Sonsuz prosedural səviyyələr, gündəlik tapşırıqlar, nailiyyətlər və 12 dil ilə strateji ox tapmacalarını həll edin. 13+ yaşlı oyunçular və böyüklər üçün hazırlanıb. İndi Google Play-də mövcuddur.",
     arrows_notify_btn: "Yeniliklər üçün bizimlə əlaqə saxlayın →",
     arrows_download_btn: "Google Play-dən yükləyin →",
     arrows_privacy_btn: "Məxfilik Siyasəti",
@@ -325,7 +325,7 @@ const I18N = {
     meta_category: "Kateqoriya",
     meta_age: "Auditoriya",
     meta_contact: "Əlaqə",
-    arrows_age: "6 yaş və yuxarı",
+    arrows_age: "13 yaş və yuxarı",
     footer_home: "Ana səhifə",
     ttm_page_tagline: "Vurma Cədvəllərini Öyrənin",
     ttm_page_desc:
@@ -428,7 +428,7 @@ const I18N = {
     ttm_desc:
       "Увлекательное приложение для изучения и практики таблицы умножения. Закрепляйте навыки умножения с помощью упражнений, игр и отслеживания прогресса.",
     arrows_desc:
-      "Стратегическая головоломка со стрелками для игроков от 6 лет, включая взрослых. Убирайте все стрелки, создавайте серии и проходите бесконечно генерируемые испытания.",
+      "Стратегическая головоломка со стрелками для игроков от 13 лет, включая взрослых. Убирайте все стрелки, создавайте серии и проходите бесконечно генерируемые испытания.",
     chip_puzzle: "Головоломка",
     sudoku_desc: "Ежедневные головоломки, 90 уровней, умные подсказки и три темы в полностью офлайн игре Sudoku.",
     snake_desc:
@@ -453,7 +453,7 @@ const I18N = {
     chip_next: "Следующее приложение",
     arrows_page_tagline: "Найдите свободный путь",
     arrows_page_desc:
-      "Решайте стратегические головоломки со стрелками: бесконечные процедурные уровни, ежедневные испытания, достижения и 12 языков. Для игроков от 6 лет и взрослых. Уже доступно в Google Play.",
+      "Решайте стратегические головоломки со стрелками: бесконечные процедурные уровни, ежедневные испытания, достижения и 12 языков. Для игроков от 13 лет и взрослых. Уже доступно в Google Play.",
     arrows_notify_btn: "Свяжитесь с нами, чтобы следить за новостями →",
     arrows_download_btn: "Скачать в Google Play →",
     arrows_privacy_btn: "Политика конфиденциальности",
@@ -483,7 +483,7 @@ const I18N = {
     meta_category: "Категория",
     meta_age: "Аудитория",
     meta_contact: "Контакт",
-    arrows_age: "От 6 лет",
+    arrows_age: "От 13 лет",
     footer_home: "Главная",
     ttm_page_tagline: "Учите таблицу умножения",
     ttm_page_desc:
@@ -587,7 +587,7 @@ const I18N = {
     ttm_desc:
       "Çarpım tablolarını öğrenmek ve alıştırma yapmak için eğlenceli bir uygulama. Alıştırmalar, oyunlar ve ilerleme takibi ile çarpım tablosu becerilerinizi geliştirin.",
     arrows_desc:
-      "Yetişkinler dahil 6 yaş ve üzeri oyuncular için stratejik bir ok bulmacası. Tüm okları temizleyin, seriler oluşturun ve sonsuz üretilen mücadelelerde ustalaşın.",
+      "Yetişkinler dahil 13 yaş ve üzeri oyuncular için stratejik bir ok bulmacası. Tüm okları temizleyin, seriler oluşturun ve sonsuz üretilen mücadelelerde ustalaşın.",
     chip_puzzle: "Bulmaca Oyunu",
     sudoku_desc: "Günlük bulmacalar, 90 bölümlük yolculuk, akıllı ipuçları ve üç tema sunan tamamen çevrimdışı Sudoku oyunu.",
     snake_desc:
@@ -612,7 +612,7 @@ const I18N = {
     chip_next: "Sıradaki Uygulama",
     arrows_page_tagline: "Açık Yolu Bul",
     arrows_page_desc:
-      "Sonsuz prosedürel seviyeler, günlük mücadeleler, başarımlar ve 12 dil ile stratejik ok bulmacalarını çözün. 6 yaş ve üzeri oyuncular ile yetişkinler için. Google Play'de şimdi mevcut.",
+      "Sonsuz prosedürel seviyeler, günlük mücadeleler, başarımlar ve 12 dil ile stratejik ok bulmacalarını çözün. 13 yaş ve üzeri oyuncular ile yetişkinler için. Google Play'de şimdi mevcut.",
     arrows_notify_btn: "Güncellemeler için bize ulaşın →",
     arrows_download_btn: "Google Play'den indirin →",
     arrows_privacy_btn: "Gizlilik Politikası",
@@ -642,7 +642,7 @@ const I18N = {
     meta_category: "Kategori",
     meta_age: "Kitle",
     meta_contact: "İletişim",
-    arrows_age: "6 yaş ve üzeri",
+    arrows_age: "13 yaş ve üzeri",
     footer_home: "Ana Sayfa",
     ttm_page_tagline: "Çarpım Tablolarını Öğrenin",
     ttm_page_desc:
@@ -747,7 +747,7 @@ const I18N = {
     ttm_desc:
       "Eine unterhaltsame App zum Lernen und Üben des Einmaleins. Festigen Sie Ihre Einmaleins-Kenntnisse mit Übungen, Spielen und Fortschrittsverfolgung.",
     arrows_desc:
-      "Ein strategisches Pfeil-Puzzlespiel für Spieler ab 6 Jahren, einschließlich Erwachsene. Räume alle Pfeile ab, bilde Serien und meistere endlos generierte Herausforderungen.",
+      "Ein strategisches Pfeil-Puzzlespiel für Spieler ab 13 Jahren, einschließlich Erwachsene. Räume alle Pfeile ab, bilde Serien und meistere endlos generierte Herausforderungen.",
     chip_puzzle: "Puzzlespiel",
     sudoku_desc: "Tägliche Rätsel, 90 Level, clevere Tipps und drei Designs in einem vollständig offline spielbaren Sudoku.",
     snake_desc:
@@ -772,7 +772,7 @@ const I18N = {
     chip_next: "Als Nächstes",
     arrows_page_tagline: "Finde den freien Weg",
     arrows_page_desc:
-      "Löse strategische Pfeilrätsel mit endlosen prozeduralen Levels, täglichen Herausforderungen, Erfolgen und 12 Sprachen. Für Spieler ab 6 Jahren und Erwachsene. Jetzt bei Google Play verfügbar.",
+      "Löse strategische Pfeilrätsel mit endlosen prozeduralen Levels, täglichen Herausforderungen, Erfolgen und 12 Sprachen. Für Spieler ab 13 Jahren und Erwachsene. Jetzt bei Google Play verfügbar.",
     arrows_notify_btn: "Kontaktiere uns für Neuigkeiten →",
     arrows_download_btn: "Bei Google Play herunterladen →",
     arrows_privacy_btn: "Datenschutzerklärung",
@@ -802,7 +802,7 @@ const I18N = {
     meta_category: "Kategorie",
     meta_age: "Zielgruppe",
     meta_contact: "Kontakt",
-    arrows_age: "Ab 6 Jahren",
+    arrows_age: "Ab 13 Jahren",
     footer_home: "Startseite",
     ttm_page_tagline: "Das Einmaleins lernen",
     ttm_page_desc:
@@ -910,7 +910,7 @@ const I18N = {
     ttm_desc:
       "Une application amusante pour apprendre et pratiquer les tables de multiplication. Progressez avec des exercices, des jeux et un suivi de la progression.",
     arrows_desc:
-      "Un jeu de réflexion stratégique avec des flèches pour les joueurs de 6 ans et plus, adultes compris. Éliminez toutes les flèches, enchaînez les séries et relevez des défis générés à l’infini.",
+      "Un jeu de réflexion stratégique avec des flèches pour les joueurs de 13 ans et plus, adultes compris. Éliminez toutes les flèches, enchaînez les séries et relevez des défis générés à l’infini.",
     chip_puzzle: "Jeu de réflexion",
     sudoku_desc: "Des grilles quotidiennes, 90 niveaux, des indices intelligents et trois thèmes dans un Sudoku entièrement hors ligne.",
     snake_desc:
@@ -935,7 +935,7 @@ const I18N = {
     chip_next: "Prochaine sortie",
     arrows_page_tagline: "Trouvez le chemin libre",
     arrows_page_desc:
-      "Résolvez des puzzles stratégiques de flèches avec des niveaux procéduraux infinis, des défis quotidiens, des succès et 12 langues. Pour les joueurs de 6 ans et plus, adultes compris. Disponible dès maintenant sur Google Play.",
+      "Résolvez des puzzles stratégiques de flèches avec des niveaux procéduraux infinis, des défis quotidiens, des succès et 12 langues. Pour les joueurs de 13 ans et plus, adultes compris. Disponible dès maintenant sur Google Play.",
     arrows_notify_btn: "Contactez-nous pour suivre les nouveautés →",
     arrows_download_btn: "Télécharger sur Google Play →",
     arrows_privacy_btn: "Politique de confidentialité",
@@ -965,7 +965,7 @@ const I18N = {
     meta_category: "Catégorie",
     meta_age: "Public",
     meta_contact: "Contact",
-    arrows_age: "6 ans et plus",
+    arrows_age: "13 ans et plus",
     footer_home: "Accueil",
     ttm_page_tagline: "Apprenez les tables de multiplication",
     ttm_page_desc:
@@ -1072,7 +1072,7 @@ const I18N = {
     ttm_desc:
       "Una divertida aplicación para aprender y practicar las tablas de multiplicar. Mejora tus habilidades con ejercicios, juegos y seguimiento del progreso.",
     arrows_desc:
-      "Un puzle estratégico de flechas para jugadores de 6 años en adelante, incluidos adultos. Elimina todas las flechas, crea rachas y supera desafíos generados sin fin.",
+      "Un puzle estratégico de flechas para jugadores de 13 años en adelante, incluidos adultos. Elimina todas las flechas, crea rachas y supera desafíos generados sin fin.",
     chip_puzzle: "Juego de puzles",
     sudoku_desc: "Puzles diarios, 90 niveles, pistas inteligentes y tres temas en un Sudoku totalmente sin conexión.",
     snake_desc:
@@ -1097,7 +1097,7 @@ const I18N = {
     chip_next: "Próxima app",
     arrows_page_tagline: "Encuentra el camino libre",
     arrows_page_desc:
-      "Resuelve puzles estratégicos de flechas con niveles procedurales infinitos, desafíos diarios, logros y 12 idiomas. Para jugadores de 6 años en adelante, incluidos adultos. Ya disponible en Google Play.",
+      "Resuelve puzles estratégicos de flechas con niveles procedurales infinitos, desafíos diarios, logros y 12 idiomas. Para jugadores de 13 años en adelante, incluidos adultos. Ya disponible en Google Play.",
     arrows_notify_btn: "Contáctanos para recibir novedades →",
     arrows_download_btn: "Descargar en Google Play →",
     arrows_privacy_btn: "Política de privacidad",
@@ -1127,7 +1127,7 @@ const I18N = {
     meta_category: "Categoría",
     meta_age: "Público",
     meta_contact: "Contacto",
-    arrows_age: "A partir de 6 años",
+    arrows_age: "A partir de 13 años",
     footer_home: "Inicio",
     ttm_page_tagline: "Aprende las tablas de multiplicar",
     ttm_page_desc:
@@ -1234,7 +1234,7 @@ const I18N = {
     ttm_desc:
       "Um aplicativo divertido para aprender e praticar a tabuada. Desenvolva suas habilidades com exercícios, jogos e acompanhamento do progresso.",
     arrows_desc:
-      "Um quebra-cabeça estratégico de setas para jogadores a partir de 6 anos, incluindo adultos. Remova todas as setas, crie sequências e supere desafios gerados sem fim.",
+      "Um quebra-cabeça estratégico de setas para jogadores a partir de 13 anos, incluindo adultos. Remova todas as setas, crie sequências e supere desafios gerados sem fim.",
     chip_puzzle: "Jogo de quebra-cabeça",
     sudoku_desc: "Desafios diários, 90 níveis, dicas inteligentes e três temas em um Sudoku totalmente offline.",
     snake_desc:
@@ -1259,7 +1259,7 @@ const I18N = {
     chip_next: "Próximo lançamento",
     arrows_page_tagline: "Encontre o caminho livre",
     arrows_page_desc:
-      "Resolva quebra-cabeças estratégicos de setas com níveis procedurais infinitos, desafios diários, conquistas e 12 idiomas. Para jogadores a partir de 6 anos, incluindo adultos. Já disponível no Google Play.",
+      "Resolva quebra-cabeças estratégicos de setas com níveis procedurais infinitos, desafios diários, conquistas e 12 idiomas. Para jogadores a partir de 13 anos, incluindo adultos. Já disponível no Google Play.",
     arrows_notify_btn: "Entre em contato para receber novidades →",
     arrows_download_btn: "Baixar no Google Play →",
     arrows_privacy_btn: "Política de Privacidade",
@@ -1289,7 +1289,7 @@ const I18N = {
     meta_category: "Categoria",
     meta_age: "Público",
     meta_contact: "Contato",
-    arrows_age: "A partir de 6 anos",
+    arrows_age: "A partir de 13 anos",
     footer_home: "Início",
     ttm_page_tagline: "Aprenda a tabuada",
     ttm_page_desc:
@@ -1394,7 +1394,7 @@ const I18N = {
     ttm_desc:
       "Un'app divertente per imparare e praticare le tabelline. Migliora le tue abilità con esercizi, giochi e monitoraggio dei progressi.",
     arrows_desc:
-      "Un rompicapo strategico con frecce per giocatori dai 6 anni in su, adulti compresi. Libera tutte le frecce, crea serie e supera sfide generate all’infinito.",
+      "Un rompicapo strategico con frecce per giocatori dai 13 anni in su, adulti compresi. Libera tutte le frecce, crea serie e supera sfide generate all’infinito.",
     chip_puzzle: "Gioco rompicapo",
     sudoku_desc: "Schemi quotidiani, 90 livelli, suggerimenti intelligenti e tre temi in un Sudoku completamente offline.",
     snake_desc:
@@ -1419,7 +1419,7 @@ const I18N = {
     chip_next: "Prossima uscita",
     arrows_page_tagline: "Trova il percorso libero",
     arrows_page_desc:
-      "Risolvi rompicapi strategici con frecce, livelli procedurali infiniti, sfide giornaliere, obiettivi e 12 lingue. Per giocatori dai 6 anni in su, adulti compresi. Ora disponibile su Google Play.",
+      "Risolvi rompicapi strategici con frecce, livelli procedurali infiniti, sfide giornaliere, obiettivi e 12 lingue. Per giocatori dai 13 anni in su, adulti compresi. Ora disponibile su Google Play.",
     arrows_notify_btn: "Contattaci per ricevere aggiornamenti →",
     arrows_download_btn: "Scarica da Google Play →",
     arrows_privacy_btn: "Informativa sulla privacy",
@@ -1449,7 +1449,7 @@ const I18N = {
     meta_category: "Categoria",
     meta_age: "Pubblico",
     meta_contact: "Contatti",
-    arrows_age: "Dai 6 anni in su",
+    arrows_age: "Dai 13 anni in su",
     footer_home: "Home",
     ttm_page_tagline: "Impara le tabelline",
     ttm_page_desc:
@@ -1548,7 +1548,7 @@ const I18N = {
     ttm_desc:
       "تطبيق ممتع لتعلم جداول الضرب والتدرب عليها. طوّر مهاراتك في جداول الضرب من خلال التمارين الممتعة والألعاب وتتبع التقدم.",
     arrows_desc:
-      "لعبة ألغاز استراتيجية بالأسهم للاعبين من عمر 6 سنوات فما فوق، بما في ذلك البالغون. أخرج جميع الأسهم، وابنِ سلاسل متتالية، وتغلّب على تحديات لا نهائية.",
+      "لعبة ألغاز استراتيجية بالأسهم للاعبين من عمر 13 سنة فما فوق، بما في ذلك البالغون. أخرج جميع الأسهم، وابنِ سلاسل متتالية، وتغلّب على تحديات لا نهائية.",
     chip_puzzle: "لعبة ألغاز",
     sudoku_desc: "ألغاز يومية و90 مستوى وتلميحات ذكية وثلاثة مظاهر في لعبة سودوكو تعمل بالكامل دون اتصال.",
     snake_desc:
@@ -1573,7 +1573,7 @@ const I18N = {
     chip_next: "الإصدار القادم",
     arrows_page_tagline: "اعثر على المسار المفتوح",
     arrows_page_desc:
-      "حل ألغاز الأسهم الاستراتيجية مع مستويات إجرائية لا نهائية وتحديات يومية وإنجازات و12 لغة. للاعبين من عمر 6 سنوات فما فوق، بمن فيهم البالغون. متوفّرة الآن على Google Play.",
+      "حل ألغاز الأسهم الاستراتيجية مع مستويات إجرائية لا نهائية وتحديات يومية وإنجازات و12 لغة. للاعبين من عمر 13 سنة فما فوق، بمن فيهم البالغون. متوفّرة الآن على Google Play.",
     arrows_notify_btn: "تواصل معنا لمتابعة التحديثات ←",
     arrows_download_btn: "حمّل من Google Play ←",
     arrows_privacy_btn: "سياسة الخصوصية",
@@ -1603,7 +1603,7 @@ const I18N = {
     meta_category: "الفئة",
     meta_age: "الجمهور",
     meta_contact: "التواصل",
-    arrows_age: "من 6 سنوات فما فوق",
+    arrows_age: "من 13 سنة فما فوق",
     footer_home: "الرئيسية",
     ttm_page_tagline: "تعلّم جداول الضرب",
     ttm_page_desc:
@@ -1699,7 +1699,7 @@ const I18N = {
     ttm_desc:
       "一款有趣的乘法表学习与练习应用。通过互动练习、游戏和进度追踪提升乘法表能力。",
     arrows_desc:
-      "一款面向6岁及以上玩家（包括成人）的策略箭头解谜游戏。清除所有箭头、连续闯关，并挑战无限生成的谜题。",
+      "一款面向13岁及以上玩家（包括成人）的策略箭头解谜游戏。清除所有箭头、连续闯关，并挑战无限生成的谜题。",
     chip_puzzle: "解谜游戏",
     sudoku_desc: "每日数独、90 个闯关关卡、智能提示和三种主题，完全离线畅玩。",
     snake_desc:
@@ -1724,7 +1724,7 @@ const I18N = {
     chip_next: "即将推出",
     arrows_page_tagline: "找到畅通路径",
     arrows_page_desc:
-      "挑战策略箭头谜题，体验无限程序生成关卡、每日挑战、成就和12种语言。适合6岁及以上玩家，包括成人。现已在Google Play上线。",
+      "挑战策略箭头谜题，体验无限程序生成关卡、每日挑战、成就和12种语言。适合13岁及以上玩家，包括成人。现已在Google Play上线。",
     arrows_notify_btn: "联系我们获取最新消息 →",
     arrows_download_btn: "在Google Play下载 →",
     arrows_privacy_btn: "隐私政策",
@@ -1754,7 +1754,7 @@ const I18N = {
     meta_category: "类别",
     meta_age: "适用人群",
     meta_contact: "联系",
-    arrows_age: "6岁及以上",
+    arrows_age: "13岁及以上",
     footer_home: "首页",
     ttm_page_tagline: "学习乘法表",
     ttm_page_desc:
@@ -1856,7 +1856,7 @@ const I18N = {
     ttm_desc:
       "九九を楽しく学んで練習できるアプリ。練習、ゲーム、進捗追跡で九九の力を伸ばそう。",
     arrows_desc:
-      "大人を含む6歳以上のプレイヤー向け戦略アローパズル。すべての矢印を消し、連続クリアを重ね、無限に生成されるチャレンジを攻略しよう。",
+      "大人を含む13歳以上のプレイヤー向け戦略アローパズル。すべての矢印を消し、連続クリアを重ね、無限に生成されるチャレンジを攻略しよう。",
     chip_puzzle: "パズルゲーム",
     sudoku_desc: "デイリーパズル、90のステージ、スマートなヒント、3つのテーマを備えた完全オフラインの数独ゲーム。",
     snake_desc:
@@ -1881,7 +1881,7 @@ const I18N = {
     chip_next: "次回リリース",
     arrows_page_tagline: "開いた道を見つけよう",
     arrows_page_desc:
-      "無限に生成されるレベル、デイリーチャレンジ、実績、12言語に対応した戦略アローパズル。大人を含む6歳以上のプレイヤー向け。Google Playで配信中。",
+      "無限に生成されるレベル、デイリーチャレンジ、実績、12言語に対応した戦略アローパズル。大人を含む13歳以上のプレイヤー向け。Google Playで配信中。",
     arrows_notify_btn: "最新情報はお問い合わせください →",
     arrows_download_btn: "Google Playでダウンロード →",
     arrows_privacy_btn: "プライバシーポリシー",
@@ -1911,7 +1911,7 @@ const I18N = {
     meta_category: "カテゴリー",
     meta_age: "対象",
     meta_contact: "連絡先",
-    arrows_age: "6歳以上",
+    arrows_age: "13歳以上",
     footer_home: "ホーム",
     ttm_page_tagline: "九九を学ぼう",
     ttm_page_desc:
