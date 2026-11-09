@@ -1,0 +1,11 @@
+.policy-wrap { width: min(800px, calc(100% - 36px)); margin-inline: auto; }
+.policy-nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-block: 24px; }
+.policy-nav a, .policy-copy a { color: var(--accent); text-decoration: underline; }
+.policy-header { padding-block: 22px 28px; text-align: center; }
+.policy-header .detail-icon { margin: 0 auto 20px; }
+.policy-header h1 { margin-bottom: 12px; font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.15; }
+.policy-header p { color: #dacddc; overflow-wrap: anywhere; }
+.policy-copy { padding-bottom: 24px; }
+.policy-copy section { margin-bottom: 14px; }
+.policy-copy h2 { color: var(--accent); }
+.policy-copy p + p { margin-top: 10px; }

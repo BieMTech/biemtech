@@ -2224,7 +2224,26 @@ const WILDWOOD_CARD_COPY = {
 };
 
 for (const [lang, [description, privacy]] of Object.entries(WILDWOOD_CARD_COPY)) {
-  Object.assign(I18N[lang], { wildwood_drive_desc: description, wildwood_privacy: privacy });
+  Object.assign(I18N[lang], { wildwood_drive_desc: description, app_privacy_policy: privacy });
+}
+
+const SKY_HOOK_DESCRIPTIONS = {
+  en: "Grapple onto rings and swing across floating islands in a one-touch physics game for Android.",
+  az: "Android üçün bir toxunuşla idarə olunan fizika oyununda qarmağı halqalara keçir və üzən adalar arasında yellən.",
+  ru: "Цепляйтесь за кольца и раскачивайтесь между парящими островами в физической игре для Android с управлением одним касанием.",
+  tr: "Android için tek dokunuşla oynanan bu fizik oyununda halkalara tutun ve yüzen adalar arasında sallan.",
+  de: "Hake dich an Ringen ein und schwinge zwischen schwebenden Inseln in diesem Physikspiel für Android mit Ein-Finger-Steuerung.",
+  fr: "Accrochez-vous aux anneaux et balancez-vous entre les îles flottantes dans ce jeu de physique pour Android jouable d’un doigt.",
+  es: "Engánchate a los aros y balancéate entre islas flotantes en un juego de física para Android que se controla con un toque.",
+  pt: "Prende-te às argolas e balança entre ilhas flutuantes num jogo de física para Android com controlos de um toque.",
+  it: "Agganciati agli anelli e dondola tra isole fluttuanti in un gioco di fisica per Android da controllare con un tocco.",
+  ar: "تعلّق بالحلقات وتأرجح بين الجزر العائمة في لعبة فيزياء لنظام Android بتحكم بلمسة واحدة.",
+  zh: "在这款 Android 单触物理游戏中，用钩索抓住圆环，在浮空岛屿之间荡跃。",
+  ja: "Android向けのワンタッチ物理アクション。フックをリングに掛け、浮島の間をスイングしよう。"
+};
+
+for (const [lang, description] of Object.entries(SKY_HOOK_DESCRIPTIONS)) {
+  I18N[lang].sky_hook_desc = description;
 }
 
 /* ── Core functions ────────────────────────────────────── */

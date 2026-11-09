@@ -773,7 +773,7 @@ body::after {
   top: 0;
   left: 0;
   transform-origin: 240px 240px;
-  animation: spinRing 37.5s linear infinite;
+  animation: spinRing 40s linear infinite;
   animation-delay: var(--od, 0s);
   pointer-events: none;
   z-index: 5;
@@ -802,8 +802,8 @@ body::after {
   left: 240px;
   transform: translateX(-50%) translateY(-50%);
   animation:
-    counterSpin 37.5s linear infinite,
-    orbitDepth 37.5s ease-in-out infinite;
+    counterSpin 40s linear infinite,
+    orbitDepth 40s ease-in-out infinite;
   animation-delay: var(--od, 0s), var(--od, 0s);
   pointer-events: auto;
   will-change: transform, opacity;

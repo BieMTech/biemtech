@@ -16,6 +16,20 @@ const DETAIL_COMMON = {
 
 const APP_DETAIL_KEYS = ["tagline", "description", "strip_one", "strip_two", "strip_three", "strip_four", "features_title", "f1_title", "f1_desc", "f2_title", "f2_desc", "f3_title", "f3_desc", "f4_title", "f4_desc", "concept_note", "art_note"];
 const APP_DETAILS = {
+  skyHook: {
+    en: ["Hold to hook. Let go to fly.", "Catch glowing rings with your grappling hook, build momentum, and time your release. Climb through ten stages with changing hazards, earn stars, and upgrade your gear for the next run.", "One-touch controls", "Ten stages", "Gear upgrades", "Offline play", "Gameplay concept artwork · final game visuals may differ"],
+    az: ["Qarmağı atmaq üçün basılı saxla. Uçmaq üçün burax.", "Qarmaqla parlayan halqalardan yapış, sürət yığ və doğru anda burax. Müxtəlif maneələri olan on mərhələdə yüksəl, ulduzlar qazan və növbəti cəhd üçün avadanlığını təkmilləşdir.", "Bir toxunuşla idarəetmə", "On mərhələ", "Avadanlıq təkmilləşdirmələri", "Oflayn oyun", "Oyun konsepti · yekun görüntülər fərqlənə bilər"],
+    ru: ["Удерживайте, чтобы зацепиться. Отпустите, чтобы взлететь.", "Хватайтесь крюком за светящиеся кольца, набирайте скорость и отпускайте в нужный момент. Пройдите десять этапов с разными препятствиями, заработайте звёзды и улучшите снаряжение.", "Управление одним касанием", "Десять этапов", "Улучшение снаряжения", "Игра без сети", "Концепт игры · итоговый вид может отличаться"],
+    tr: ["Tutunmak için basılı tut. Uçmak için bırak.", "Kancanla parlayan halkalara tutun, hız kazan ve doğru anda bırak. Farklı tehlikelerle dolu on bölümde yüksel, yıldız kazan ve ekipmanını geliştir.", "Tek dokunuşla kontrol", "On bölüm", "Ekipman geliştirmeleri", "Çevrimdışı oyun", "Oyun konsept görseli · son sürüm farklı görünebilir"],
+    de: ["Halte zum Einhaken. Lass zum Fliegen los.", "Hake dich an leuchtenden Ringen ein, hole Schwung und lass im richtigen Moment los. Steige durch zehn Level mit wechselnden Gefahren auf, verdiene Sterne und verbessere deine Ausrüstung.", "Steuerung mit einem Finger", "Zehn Level", "Ausrüstungsupgrades", "Offline spielbar", "Konzeptgrafik · die fertige Spielgrafik kann abweichen"],
+    fr: ["Maintenez pour vous accrocher. Relâchez pour vous envoler.", "Accrochez votre grappin aux anneaux lumineux, prenez de l’élan et lâchez au bon moment. Grimpez dans dix niveaux aux dangers variés, gagnez des étoiles et améliorez votre équipement.", "Contrôle à un doigt", "Dix niveaux", "Améliorations d’équipement", "Jeu hors ligne", "Illustration conceptuelle · le jeu final peut différer"],
+    es: ["Mantén pulsado para engancharte. Suelta para volar.", "Atrapa aros brillantes con el gancho, toma impulso y suelta en el momento justo. Asciende por diez niveles con peligros distintos, gana estrellas y mejora tu equipo.", "Control con un toque", "Diez niveles", "Mejoras de equipo", "Juego sin conexión", "Arte conceptual · la versión final puede verse distinta"],
+    pt: ["Mantém pressionado para te prenderes. Larga para voar.", "Apanha argolas brilhantes com o gancho, ganha balanço e larga no momento certo. Sobe por dez níveis com perigos diferentes, ganha estrelas e melhora o teu equipamento.", "Controlos de um toque", "Dez níveis", "Melhorias de equipamento", "Jogo offline", "Arte conceptual · o aspeto do jogo final pode variar"],
+    it: ["Tieni premuto per agganciarti. Rilascia per volare.", "Afferra gli anelli luminosi con il rampino, prendi slancio e lascia al momento giusto. Sali attraverso dieci livelli con pericoli diversi, guadagna stelle e potenzia l’attrezzatura.", "Comandi con un tocco", "Dieci livelli", "Potenziamenti dell’attrezzatura", "Gioco offline", "Illustrazione concettuale · la grafica finale può variare"],
+    ar: ["اضغط مطوّلًا لتتعلّق. ارفع إصبعك لتنطلق.", "أمسك الحلقات المضيئة بخطافك واكتسب الزخم ثم أفلت في اللحظة المناسبة. اصعد عبر عشر مراحل تتنوع فيها المخاطر، واكسب النجوم وطوّر معداتك.", "تحكم بلمسة واحدة", "عشر مراحل", "تطوير المعدات", "لعب دون اتصال", "رسم تصوّري للعبة · قد تختلف الرسومات النهائية"],
+    zh: ["按住钩索，松手飞跃。", "用钩索抓住发光圆环，积蓄动量并在恰当时机松手。攀登十个障碍各异的关卡，赚取星星并升级装备。", "单触操作", "十个关卡", "装备升级", "离线游玩", "玩法概念图 · 最终画面可能有所不同"],
+    ja: ["長押しでフックを掛け、指を離して飛ぼう。", "光るリングにフックを掛け、勢いをつけてタイミングよく離そう。さまざまな障害が待つ10ステージを登り、星を集めて装備を強化しよう。", "ワンタッチ操作", "10ステージ", "装備の強化", "オフラインプレイ", "ゲームプレイのコンセプト画像 · 最終版の画面は異なる場合があります"]
+  },
   wildwood: {
     en: ["How far can you drive on a tank?", "Balance gas and brake over bumpy hills and crumbling bridges. Collect stars and fuel, beat your distance record, and upgrade three vehicles as you drive through Foothills and unlock Pine Forest.", "Endless hill driving", "Three upgradeable vehicles", "Foothills and Pine Forest", "Offline play"],
     az: ["Bir çən yanacaqla nə qədər uzağa gedə bilərsən?", "Kələ-kötür təpələrdə və uçulan körpülərdə qazla əyləci tarazla. Ulduz və yanacaq topla, məsafə rekordunu yenilə və üç maşını təkmilləşdir. Dağətəyində sürərək Şam meşəsinin kilidini aç.", "Sonsuz təpə sürüşü", "Təkmilləşdirilə bilən üç maşın", "Dağətəyi və Şam meşəsi", "Oflayn oyun"],
@@ -82,7 +96,8 @@ function renderDetail(language) {
   const common = DETAIL_COMMON[lang];
   const details = APP_DETAILS[app][lang] || APP_DETAILS[app].en;
   const translations = Object.fromEntries(DETAIL_KEYS.map((key, index) => [key, common[index]]));
-  APP_DETAIL_KEYS.forEach((key, index) => { translations[key] = details[index]; });
+  const detailKeys = app === "skyHook" ? [...APP_DETAIL_KEYS.slice(0, 6), "concept_note"] : APP_DETAIL_KEYS;
+  detailKeys.forEach((key, index) => { translations[key] = details[index]; });
   if (app === "dark") {
     const [status, download] = DARK_RELEASE_COPY[lang];
     translations.status = "● " + status;
