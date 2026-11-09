@@ -2208,6 +2208,25 @@ const LANG_SWITCHER_HTML = `
   </select>
 </div>`;
 
+const WILDWOOD_CARD_COPY = {
+  en: ["Drive over rolling hills, collect stars and fuel, and upgrade your cars in an endless off-road game for Android.", "Privacy Policy"],
+  az: ["Android üçün sonsuz yolsuzluq oyununda təpələri aş, ulduz və yanacaq topla, maşınlarını təkmilləşdir.", "Məxfilik Siyasəti"],
+  ru: ["Преодолевайте холмы, собирайте звёзды и топливо и улучшайте машины в бесконечной игре про бездорожье для Android.", "Политика конфиденциальности"],
+  tr: ["Android için bu sonsuz arazi oyununda tepeleri aş, yıldız ve yakıt topla, araçlarını geliştir.", "Gizlilik Politikası"],
+  de: ["Fahre über Hügel, sammle Sterne und Treibstoff und verbessere deine Autos in einem endlosen Geländespiel für Android.", "Datenschutzrichtlinie"],
+  fr: ["Franchissez des collines, récoltez des étoiles et du carburant et améliorez vos voitures dans un jeu tout-terrain sans fin pour Android.", "Politique de confidentialité"],
+  es: ["Conduce por colinas, recoge estrellas y combustible y mejora tus coches en un juego todoterreno sin fin para Android.", "Política de privacidad"],
+  pt: ["Conduz por colinas, recolhe estrelas e combustível e melhora os teus carros num jogo de todo-o-terreno sem fim para Android.", "Política de privacidade"],
+  it: ["Guida tra le colline, raccogli stelle e carburante e potenzia le tue auto in un gioco fuoristrada senza fine per Android.", "Informativa sulla privacy"],
+  ar: ["قُد عبر التلال واجمع النجوم والوقود وطوّر سياراتك في لعبة قيادة لا نهائية على الطرق الوعرة لنظام Android.", "سياسة الخصوصية"],
+  zh: ["在这款 Android 无尽越野游戏中翻越山丘、收集星星和燃料，并升级你的车辆。", "隐私政策"],
+  ja: ["Android向けのエンドレスなオフロードゲームで、丘を越え、星と燃料を集めて車を強化しよう。", "プライバシーポリシー"]
+};
+
+for (const [lang, [description, privacy]] of Object.entries(WILDWOOD_CARD_COPY)) {
+  Object.assign(I18N[lang], { wildwood_drive_desc: description, wildwood_privacy: privacy });
+}
+
 /* ── Core functions ────────────────────────────────────── */
 
 /**

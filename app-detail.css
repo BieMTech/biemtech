@@ -3,6 +3,7 @@
 body.app-detail { margin: 0; color: #f7f3ed; background: radial-gradient(circle at 13% 9%, var(--glow), transparent 34rem), #17151d; }
 body.app-detail--squad { --accent: #eac77d; --glow: #55305d; --panel: #2c2434; --border: #6d5476; }
 body.app-detail--dark { --accent: #ff6c82; --glow: #4a142a; --panel: #251a28; --border: #5a3546; }
+body.app-detail--wildwood { --accent: #f4cf81; --glow: #344b32; --panel: #252e27; --border: #596b50; }
 .app-detail .navbar { background: rgba(19, 16, 23, .9); border-color: var(--border); }
 .app-detail .navbar__nav a, .app-detail .navbar__actions { color: #e3dbe5; }
 .app-detail .navbar__nav a:hover { color: var(--accent); }
@@ -24,6 +25,7 @@ body.app-detail--dark { --accent: #ff6c82; --glow: #4a142a; --panel: #251a28; --
 .detail-art img { display: block; width: 100%; max-height: 580px; object-fit: cover; border: 1px solid var(--border); border-radius: 24px; box-shadow: 0 26px 60px #0009; }
 .app-detail--squad .detail-art img { object-position: center 55%; aspect-ratio: 4/3; }
 .app-detail--dark .detail-art img { aspect-ratio: 2/1; }
+.app-detail--wildwood .detail-art img { height: auto; }
 .detail-art figcaption { margin-top: 9px; color: #bcb0c1; font-size: .78rem; text-align: right; }
 .detail-strip { padding: 19px 20px; border-block: 1px solid var(--border); background: #ffffff09; }
 .detail-strip .detail-wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px; color: #e9dfea; font-size: .88rem; font-weight: 700; }

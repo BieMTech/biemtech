@@ -761,7 +761,7 @@ body::after {
 }
 
 /* ── Orbit arm system ─────────────────────────────────── */
-/* Fourteen arms rotate around the 480×480 orbit center (240,240). */
+/* The arms rotate around the 480×480 orbit center (240,240). */
 /* Item is pinned at top (12 o'clock, radius 194) and        */
 /* counter-rotates to stay visually upright.                 */
 /* animation-delay sets the starting clock position.         */
@@ -773,7 +773,7 @@ body::after {
   top: 0;
   left: 0;
   transform-origin: 240px 240px;
-  animation: spinRing 35s linear infinite;
+  animation: spinRing 37.5s linear infinite;
   animation-delay: var(--od, 0s);
   pointer-events: none;
   z-index: 5;
@@ -802,8 +802,8 @@ body::after {
   left: 240px;
   transform: translateX(-50%) translateY(-50%);
   animation:
-    counterSpin 35s linear infinite,
-    orbitDepth 35s ease-in-out infinite;
+    counterSpin 37.5s linear infinite,
+    orbitDepth 37.5s ease-in-out infinite;
   animation-delay: var(--od, 0s), var(--od, 0s);
   pointer-events: auto;
   will-change: transform, opacity;
@@ -1610,6 +1610,21 @@ body::after {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.01em;
+}
+
+.app-card__detail-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-card__detail-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.app-card__detail-link:focus-visible {
+  text-decoration: underline;
 }
 
 .app-card__desc {
