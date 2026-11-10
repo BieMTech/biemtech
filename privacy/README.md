@@ -10,6 +10,7 @@ Static privacy policy pages for BieMTech mobile applications, hosted on GitHub P
 
 | App                | Languages                                      | Link                                                              |
 | ------------------ | ---------------------------------------------- | ----------------------------------------------------------------- |
+| Deep Rover | EN, AZ | [View](https://biemtech.com/privacy/deep-rover/) |
 | Math Games for Kids Ages 5-8 | EN, AZ                                         | [View](https://biemtech.com/privacy/mathkids/)                     |
 | Math Kids          | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/math-kids/)                    |
 | Times Table Master | EN, AZ, RU, TR, DE, FR, ES, PT, IT, AR, ZH, JA | [View](https://biemtech.com/privacy/times-table-master/)           |

@@ -2242,6 +2242,9 @@ const SKY_HOOK_DESCRIPTIONS = {
   ja: "Android向けのワンタッチ物理アクション。フックをリングに掛け、浮島の間をスイングしよう。"
 };
 
+I18N.en.deep_rover_desc = "Dive into an underwater world, upgrade your rover, and discover lost artifacts.";
+I18N.az.deep_rover_desc = "Sualtı dünyaya dal, roverini təkmilləşdir və itirilmiş artefaktları kəşf et.";
+
 for (const [lang, description] of Object.entries(SKY_HOOK_DESCRIPTIONS)) {
   I18N[lang].sky_hook_desc = description;
 }
