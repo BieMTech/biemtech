@@ -2244,6 +2244,8 @@ const SKY_HOOK_DESCRIPTIONS = {
 
 I18N.en.deep_rover_desc = "Dive into an underwater world, upgrade your rover, and discover lost artifacts.";
 I18N.az.deep_rover_desc = "Sualtı dünyaya dal, roverini təkmilləşdir və itirilmiş artefaktları kəşf et.";
+I18N.en.inkborn_desc = "Fight your way through a painted world in this 2D action game.";
+I18N.az.inkborn_desc = "Bu 2D döyüş oyununda rəngli bir dünyada mübarizə apar.";
 
 for (const [lang, description] of Object.entries(SKY_HOOK_DESCRIPTIONS)) {
   I18N[lang].sky_hook_desc = description;
